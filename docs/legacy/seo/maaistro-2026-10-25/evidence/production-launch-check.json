@@ -1,0 +1,369 @@
+{
+  "auditDate": "2026-10-25",
+  "base": "http://localhost:3001",
+  "canonicalOrigin": "https://www.maaistro.nl",
+  "scope": "HTTP launch gate; not proof of Google indexing or Core Web Vitals",
+  "passed": true,
+  "checks": [
+    {
+      "check": "/ HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/"
+      }
+    },
+    {
+      "check": "/ canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl"
+      ]
+    },
+    {
+      "check": "/ indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/ on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Maaistro — vind de robotmaaier voor jouw tuin",
+        "description": [
+          "Minder maaien, meer weekend. Ontdek welke robotmaaier bij jouw tuin past, gebruik de gratis keuzehulp en lees heldere koopgidsen."
+        ]
+      }
+    },
+    {
+      "check": "/advies HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/advies"
+      }
+    },
+    {
+      "check": "/advies canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/advies"
+      ]
+    },
+    {
+      "check": "/advies indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/advies on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Koopgidsen: kies de robotmaaier voor jouw tuin | Maaistro",
+        "description": [
+          "Heldere koopgidsen over robotmaaiers zonder draad en modellen voor kleine en grote tuinen. Begrijp de verschillen voordat je kiest."
+        ]
+      }
+    },
+    {
+      "check": "/over-maaistro HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/over-maaistro"
+      }
+    },
+    {
+      "check": "/over-maaistro canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/over-maaistro"
+      ]
+    },
+    {
+      "check": "/over-maaistro indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/over-maaistro on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Over Maaistro: slim kiezen, eerlijk vergelijken | Maaistro",
+        "description": [
+          "Wat Maaistro doet, hoe we naar robotmaaiers kijken en hoe we omgaan met affiliatecommissies en commerciële samenwerkingen."
+        ]
+      }
+    },
+    {
+      "check": "/privacy HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/privacy"
+      }
+    },
+    {
+      "check": "/privacy canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/privacy"
+      ]
+    },
+    {
+      "check": "/privacy indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/privacy on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Privacy bij Maaistro | Maaistro",
+        "description": [
+          "Hoe Maaistro met de invoer van de keuzehulp en externe links omgaat."
+        ]
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-zonder-draad HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/advies/robotmaaier-zonder-draad"
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-zonder-draad canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/advies/robotmaaier-zonder-draad"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-zonder-draad indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-zonder-draad on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Robotmaaier zonder draad: past dat bij jouw tuin? | Maaistro",
+        "description": [
+          "Geen kabel langs je borders klinkt prettig. Toch begint een goede keuze bij de vraag hoe een draadloze robotmaaier zijn weg door jouw tuin vindt."
+        ]
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-kleine-tuin HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/advies/robotmaaier-kleine-tuin"
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-kleine-tuin canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/advies/robotmaaier-kleine-tuin"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-kleine-tuin indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-kleine-tuin on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Robotmaaier voor een kleine tuin: kijk verder dan de m² | Maaistro",
+        "description": [
+          "Een klein gazon vraagt niet automatisch om de eenvoudigste maaier. De vorm van je tuin en de ruimte om te bewegen zijn minstens zo interessant."
+        ]
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-grote-tuin HTTP",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "final": "http://localhost:3001/advies/robotmaaier-grote-tuin"
+      }
+    },
+    {
+      "check": "/advies/robotmaaier-grote-tuin canonical",
+      "passed": true,
+      "detail": [
+        "https://www.maaistro.nl/advies/robotmaaier-grote-tuin"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-grote-tuin indexable",
+      "passed": true,
+      "detail": [
+        "index, follow"
+      ]
+    },
+    {
+      "check": "/advies/robotmaaier-grote-tuin on-page",
+      "passed": true,
+      "detail": {
+        "h1": 1,
+        "title": "Robotmaaier voor een grote tuin: capaciteit is pas het begin | Maaistro",
+        "description": [
+          "Een flinke lap gras, meerdere zones of hoogteverschillen? Maak eerst een overzicht van het werk dat de maaier moet doen."
+        ]
+      }
+    },
+    {
+      "check": "sitemap launch allowlist",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "urls": [
+          "https://www.maaistro.nl/",
+          "https://www.maaistro.nl/advies",
+          "https://www.maaistro.nl/over-maaistro",
+          "https://www.maaistro.nl/privacy",
+          "https://www.maaistro.nl/advies/robotmaaier-zonder-draad",
+          "https://www.maaistro.nl/advies/robotmaaier-kleine-tuin",
+          "https://www.maaistro.nl/advies/robotmaaier-grote-tuin"
+        ]
+      }
+    },
+    {
+      "check": "robots allows Googlebot",
+      "passed": true,
+      "detail": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://www.maaistro.nl/sitemap.xml\n"
+    },
+    {
+      "check": "robots sitemap",
+      "passed": true,
+      "detail": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://www.maaistro.nl/sitemap.xml\n"
+    },
+    {
+      "check": "internal routes and anchors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "legacy /cabinecheck",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/cabinecheck"
+      }
+    },
+    {
+      "check": "legacy /reistassen",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/reistassen"
+      }
+    },
+    {
+      "check": "legacy /reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm"
+      }
+    },
+    {
+      "check": "legacy /luchtvaartmaatschappijen",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/luchtvaartmaatschappijen"
+      }
+    },
+    {
+      "check": "legacy /luchtvaartmaatschappijen/klm",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/luchtvaartmaatschappijen/klm"
+      }
+    },
+    {
+      "check": "legacy /over-paspoot",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/over-paspoot"
+      }
+    },
+    {
+      "check": "legacy /nieuws",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/nieuws"
+      }
+    },
+    {
+      "check": "legacy /nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes"
+      }
+    },
+    {
+      "check": "legacy /volunteer",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/volunteer"
+      }
+    },
+    {
+      "check": "legacy /projects",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/projects"
+      }
+    },
+    {
+      "check": "legacy /events",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/events"
+      }
+    },
+    {
+      "check": "legacy /blogs",
+      "passed": true,
+      "detail": {
+        "status": 404,
+        "final": "http://localhost:3001/blogs"
+      }
+    }
+  ],
+  "passedCount": 44,
+  "total": 44
+}

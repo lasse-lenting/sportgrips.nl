@@ -1,0 +1,404 @@
+{
+  "title": "Hond of kat in de Lufthansa-cabine: gewicht en reistas | Maaistro",
+  "meta_description": "Lufthansa staat kleine honden en katten toe in een zachte tas van maximaal 55 × 40 × 23 cm en maximaal 8 kg voor huisdier en tas samen.",
+  "meta_robots": null,
+  "x_robots_tag": null,
+  "canonical": "http://localhost:3000/luchtvaartmaatschappijen/lufthansa",
+  "lang": "nl",
+  "charset": "utf-8",
+  "viewport": "width=device-width, initial-scale=1",
+  "favicon": "http://localhost:3000/favicon.ico",
+  "h1": [
+    "Huisdier meenemen metLufthansa: wat zijn de regels?"
+  ],
+  "h2": [
+    "Een huisdier meenemen in de Lufthansa-cabine",
+    "Totaalgewicht en buitenmaten",
+    "Aanvullende beperkingen",
+    "Officiële bron",
+    "Reistassen die bij deze buitenmaten passen",
+    "Vind jouw maaier",
+    "Op de homepage",
+    "Goed om te weten"
+  ],
+  "h3": [
+    "Begin bij jouw tuin. Ontdek wat telt.",
+    "Flypet vliegtuigreistas 55 × 40 × 23 cm",
+    "Miravia reistas 55 × 40 × 23 cm",
+    "Vul je huisdier, tas en maatschappij in."
+  ],
+  "h4": [],
+  "h5": [],
+  "h6": [],
+  "images": [
+    {
+      "src": "http://localhost:3000/assets/maaistro/logo.svg",
+      "alt": "",
+      "width": "140",
+      "height": "34",
+      "is_responsive_fill": false,
+      "loading": null
+    },
+    {
+      "src": "http://localhost:3000/assets/paspoot/measure-carrier-real-life.png",
+      "alt": "Reizen met een huisdier via Lufthansa",
+      "width": null,
+      "height": null,
+      "is_responsive_fill": false,
+      "loading": null
+    },
+    {
+      "src": "http://localhost:3000/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0880%2F8874%2F0178%2Ffiles%2Fpet-carrier-bag-tui-finnair-00-finnair-approved_0f3cd7cd-5895-4433-bdfc-de2169e73de4.jpg%3Fv%3D1740641606&w=3840&q=75",
+      "alt": "Flypet vliegtuigreistas 55 × 40 × 23 cm",
+      "width": null,
+      "height": null,
+      "is_responsive_fill": true,
+      "loading": "lazy"
+    },
+    {
+      "src": "http://localhost:3000/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0880%2F8874%2F0178%2Ffiles%2Fmiravia-lufthansa-pet-carrier-main.jpg%3Fv%3D1783439340&w=3840&q=75",
+      "alt": "Miravia reistas 55 × 40 × 23 cm",
+      "width": null,
+      "height": null,
+      "is_responsive_fill": true,
+      "loading": "lazy"
+    },
+    {
+      "src": "http://localhost:3000/assets/maaistro/logo.svg",
+      "alt": "",
+      "width": "658",
+      "height": "150",
+      "is_responsive_fill": false,
+      "loading": null
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "http://localhost:3000/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "Keuzehulp",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#in-progress",
+        "text": "Robotmaaiers",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/advies",
+        "text": "Koopgidsen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Over Maaistro",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "Vind jouw maaier",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/luchtvaartmaatschappijen",
+        "text": "Luchtvaartmaatschappijen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "Start de keuzehulp",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/cabinecheck",
+        "text": "cabinecheck",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/reistassen/pet-carrier-55x40x23-cm-airline-approved",
+        "text": "Bekijk tas",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/reistassen/miravia-lufthansa-pet-carrier",
+        "text": "Bekijk tas",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/cabinecheck",
+        "text": "Doe de Paspoot-check",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/",
+        "text": "Homepage",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "De keuzehulp",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#in-progress",
+        "text": "Jouw type tuin",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/advies",
+        "text": "Koopgidsen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Over Maaistro",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#our-purpose",
+        "text": "Wat vul je in?",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#goals",
+        "text": "Zo werkt het",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#faq",
+        "text": "Veelgestelde vragen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Onze werkwijze en het verdienmodel",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/privacy",
+        "text": "Privacy",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Eerlijk over ons advies",
+        "rel": []
+      }
+    ],
+    "external": [
+      {
+        "href": "https://www.lufthansa.com/by/en/tiere-als-handgepaeck",
+        "text": "de officiële Lufthansa-pagina voor dieren als handbagage",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "prev": null,
+    "next": null
+  },
+  "resource_hints": {
+    "preload": [
+      {
+        "href": "http://localhost:3000/assets/maaistro/logo.svg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "http://localhost:3000/assets/paspoot/measure-carrier-real-life.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnect": [],
+    "dns-prefetch": [],
+    "prefetch": [],
+    "prerender": []
+  },
+  "schema": [
+    {
+      "@type": "Article",
+      "@types": [
+        "Article"
+      ],
+      "@id": null,
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": false,
+      "raw": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Huisdier meenemen met Lufthansa: wat zijn de regels?",
+        "description": "Lufthansa staat kleine honden en katten toe in een zachte tas van maximaal 55 × 40 × 23 cm en maximaal 8 kg voor huisdier en tas samen.",
+        "image": "http://localhost:3000/assets/paspoot/measure-carrier-real-life.png",
+        "datePublished": "2026-09-13",
+        "dateModified": "2026-09-13",
+        "inLanguage": "nl-NL",
+        "mainEntityOfPage": "http://localhost:3000/luchtvaartmaatschappijen/lufthansa",
+        "author": {
+          "@id": "http://localhost:3000/#organization"
+        },
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@types": [
+        "BreadcrumbList"
+      ],
+      "@id": null,
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": false,
+      "raw": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Luchtvaartmaatschappijen",
+            "item": "http://localhost:3000/luchtvaartmaatschappijen"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Lufthansa",
+            "item": "http://localhost:3000/luchtvaartmaatschappijen/lufthansa"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Unknown",
+      "@types": [
+        "Unknown"
+      ],
+      "@id": null,
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": false,
+      "from_graph": false,
+      "raw": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@types": [
+        "Organization"
+      ],
+      "@id": "http://localhost:3000/#organization",
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": true,
+      "raw": {
+        "@type": "Organization",
+        "@id": "http://localhost:3000/#organization",
+        "name": "Maaistro",
+        "url": "http://localhost:3000/",
+        "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@types": [
+        "WebSite"
+      ],
+      "@id": "http://localhost:3000/#website",
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": true,
+      "raw": {
+        "@type": "WebSite",
+        "@id": "http://localhost:3000/#website",
+        "name": "Maaistro",
+        "url": "http://localhost:3000/",
+        "inLanguage": "nl-NL",
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      }
+    }
+  ],
+  "open_graph": {
+    "og:title": "Hond of kat in de Lufthansa-cabine: gewicht en reistas",
+    "og:description": "Lufthansa staat kleine honden en katten toe in een zachte tas van maximaal 55 × 40 × 23 cm en maximaal 8 kg voor huisdier en tas samen.",
+    "og:url": "http://localhost:3000/luchtvaartmaatschappijen/lufthansa",
+    "og:site_name": "Maaistro",
+    "og:locale": "nl_NL",
+    "og:image": "http://localhost:3000/assets/paspoot/measure-carrier-real-life.png",
+    "og:image:alt": "Hond of kat in de Lufthansa-cabine: gewicht en reistas",
+    "og:type": "article"
+  },
+  "twitter_card": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Hond of kat in de Lufthansa-cabine: gewicht en reistas",
+    "twitter:description": "Lufthansa staat kleine honden en katten toe in een zachte tas van maximaal 55 × 40 × 23 cm en maximaal 8 kg voor huisdier en tas samen.",
+    "twitter:image": "http://localhost:3000/assets/paspoot/measure-carrier-real-life.png"
+  },
+  "word_count": 273,
+  "hreflang": []
+}

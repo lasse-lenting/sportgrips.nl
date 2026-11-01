@@ -1,0 +1,10 @@
+node_modules/
+node_modules-recovery/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+.data/
+.vercel
+
+.DS_Store

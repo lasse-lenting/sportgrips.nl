@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-09-13T18:57:56.374Z",
+  "airlinesReadyForAutomaticRecommendations": [
+    "KLM",
+    "Transavia",
+    "Lufthansa",
+    "Brussels Airlines"
+  ],
+  "airlinesRequiringManualReview": [
+    {
+      "name": "Air France",
+      "reason": "De officiële pagina bevestigt de gewichtsdrempel, maar de maximale lengte, breedte en hoogte van de cabinetas zijn niet eenduidig gepubliceerd in de geraadpleegde inhoud."
+    }
+  ],
+  "sourceFetchWarnings": [
+    {
+      "name": "Transavia",
+      "reason": "Broncontrole gaf HTTP 403; verwachte waarden zijn niet allemaal teruggevonden."
+    },
+    {
+      "name": "Lufthansa",
+      "reason": "Broncontrole gaf HTTP 403; verwachte waarden zijn niet allemaal teruggevonden."
+    },
+    {
+      "name": "Brussels Airlines",
+      "reason": "Broncontrole gaf HTTP 403; verwachte waarden zijn niet allemaal teruggevonden."
+    }
+  ],
+  "productsRequiringManualReview": [],
+  "outOfStockProducts": ["Aurora cabinerijstas 40 × 30 × 24 cm"]
+}

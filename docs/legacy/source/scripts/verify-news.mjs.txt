@@ -1,0 +1,87 @@
+import { readFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+const guides = JSON.parse(readFileSync(`${root}src/content/advice.json`, 'utf8'));
+
+export function verifyNews(articles, today = new Date().toISOString().slice(0, 10)) {
+  const errors = [];
+  const slugs = new Set();
+  const topics = new Set();
+  const date = (value) =>
+    typeof value === 'string' &&
+    /^\d{4}-\d{2}-\d{2}$/.test(value) &&
+    !Number.isNaN(Date.parse(value)) &&
+    new Date(value).toISOString().slice(0, 10) === value &&
+    value <= today;
+  for (const article of articles) {
+    const fail = (message) => errors.push(`${article.slug ?? '?'}: ${message}`);
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.slug) || slugs.has(article.slug))
+      fail('Invalid or duplicate slug');
+    if (!article.topicKey || topics.has(article.topicKey)) fail('Missing or duplicate topicKey');
+    slugs.add(article.slug);
+    topics.add(article.topicKey);
+    if (!['draft', 'published'].includes(article.status)) fail('Invalid status');
+    for (const key of ['title', 'description', 'summary'])
+      if (!article[key]?.trim()) fail(`Missing ${key}`);
+    for (const key of ['eventDate', 'updatedAt', 'verifiedAt'])
+      if (!date(article[key])) fail(`Invalid or future ${key}`);
+    if (article.status === 'draft' && article.publishedAt !== null)
+      fail('Draft must have publishedAt: null');
+    if (article.status === 'published') {
+      if (!date(article.publishedAt) || article.publishedAt > article.updatedAt)
+        fail('Invalid publication date');
+      if (!date(article.approvedAt) || !article.approvalRef?.trim())
+        fail('Publication needs a recorded user approval');
+    }
+    if (
+      !article.image?.startsWith('/assets/') ||
+      article.image.includes('..') ||
+      !existsSync(`${root}public${article.image}`)
+    )
+      fail('Missing local image');
+    if (!Array.isArray(article.sources) || !article.sources.length) fail('No sources');
+    for (const source of article.sources ?? []) {
+      try {
+        if (new URL(source.url).protocol !== 'https:' || !source.name?.trim())
+          fail('Invalid source');
+      } catch {
+        fail('Invalid source URL');
+      }
+      if (source.updatedAt !== null && !date(source.updatedAt)) fail('Invalid source date');
+    }
+    if (
+      !article.relatedAdvice?.length ||
+      article.relatedAdvice.some((slug) => !guides.some((guide) => guide.slug === slug))
+    )
+      fail('Missing or unknown related advice');
+    if (
+      !article.body?.some((block) => block.tag === 'h2') ||
+      !article.body?.some((block) => block.tag === 'p')
+    )
+      fail('Missing article structure');
+    for (const block of article.body ?? []) {
+      if (!['h2', 'h3', 'p', 'ul', 'ol'].includes(block.tag) || !block.html?.trim())
+        fail('Invalid content block');
+      // RichContent renders repository content as HTML. Restrict it to prose and safe links.
+      if (
+        /<(?!\/?(?:a|li|strong|em|br)\b)[^>]+>|\bon\w+\s*=|(?:javascript|data):/i.test(block.html)
+      )
+        fail('Unsafe HTML');
+      for (const match of block.html.matchAll(/href\s*=\s*["']([^"']+)["']/g)) {
+        if (!/^\/(?!\/)|^https:\/\//.test(match[1])) fail('Unsafe link');
+      }
+    }
+  }
+  return errors;
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const articles = JSON.parse(readFileSync(`${root}src/content/news.json`, 'utf8'));
+  const errors = verifyNews(articles);
+  for (const error of errors) console.error(error);
+  console.log(
+    `${articles.length} articles; ${articles.filter((article) => article.status === 'draft').length} drafts; ${errors.length} errors.`,
+  );
+  process.exitCode = errors.length ? 1 : 0;
+}

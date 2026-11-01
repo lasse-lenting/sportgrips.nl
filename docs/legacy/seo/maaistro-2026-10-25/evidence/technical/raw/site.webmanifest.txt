@@ -1,0 +1,16 @@
+{
+  "name": "Maaistro",
+  "short_name": "Maaistro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#052E2A",
+  "theme_color": "#052E2A",
+  "icons": [
+    {
+      "src": "/assets/maaistro/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

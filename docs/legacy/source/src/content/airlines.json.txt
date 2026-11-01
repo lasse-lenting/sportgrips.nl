@@ -1,0 +1,125 @@
+[
+  {
+    "name": "KLM",
+    "slug": "klm",
+    "cabinAllowed": true,
+    "dogAllowed": true,
+    "catAllowed": true,
+    "maxTotalWeight": 8,
+    "maxLength": 46,
+    "maxWidth": 28,
+    "maxHeight": 24,
+    "routeRestrictions": [
+      "Cabinevervoer is mogelijk in Economy Class en in Business Class binnen Europa.",
+      "Niet toegestaan in Premium Comfort Class of Business Class op intercontinentale routes.",
+      "Plaats is beperkt en moet vooraf worden gereserveerd; bestemming en uitvoerende maatschappij kunnen extra regels stellen."
+    ],
+    "breedRestrictions": [
+      "KLM kan vervoer weigeren wanneer het huisdier niet comfortabel rechtop kan staan, draaien en normaal kan ademen in de gesloten tas."
+    ],
+    "officialSource": "https://www.klm.nl/information/pets/reservation",
+    "checkedAt": "2026-09-13",
+    "verified": true,
+    "automaticRecommendations": true,
+    "manualReview": false,
+    "manualReviewReason": null
+  },
+  {
+    "name": "Transavia",
+    "slug": "transavia",
+    "cabinAllowed": true,
+    "dogAllowed": true,
+    "catAllowed": true,
+    "maxTotalWeight": 8,
+    "maxLength": 40,
+    "maxWidth": 30,
+    "maxHeight": 24,
+    "routeRestrictions": [
+      "Transavia vervoert geen huisdieren van en naar het Verenigd Koninkrijk, Ierland, IJsland, Schotland, Marokko, de Verenigde Arabische Emiraten en Chambéry.",
+      "De reistas moet flexibel, volledig afsluitbaar en geventileerd zijn en tijdens de vlucht onder de stoel blijven."
+    ],
+    "breedRestrictions": [
+      "Het huisdier mag geen agressief gedrag tonen.",
+      "Stompneuzige dieren kunnen extra gezondheids- en vervoersbeperkingen hebben."
+    ],
+    "officialSource": "https://www.transavia.com/service/nl-be/kinderen-huisdieren-groepen/huisdieren-in-vliegtuig/cabine",
+    "checkedAt": "2026-09-13",
+    "verified": true,
+    "automaticRecommendations": true,
+    "manualReview": false,
+    "manualReviewReason": null
+  },
+  {
+    "name": "Lufthansa",
+    "slug": "lufthansa",
+    "cabinAllowed": true,
+    "dogAllowed": true,
+    "catAllowed": true,
+    "maxTotalWeight": 8,
+    "maxLength": 55,
+    "maxWidth": 40,
+    "maxHeight": 23,
+    "routeRestrictions": [
+      "De plek moet uiterlijk 72 uur voor vertrek worden aangevraagd en blijft afhankelijk van beschikbaarheid.",
+      "Invoer-, uitvoer- en transitregels van alle betrokken landen blijven van toepassing."
+    ],
+    "breedRestrictions": [
+      "Voor vechthonden en kortsnuitige rassen gelden aanvullende Lufthansa-regels.",
+      "Het dier moet natuurlijk kunnen staan, liggen en draaien in de gesloten zachte tas."
+    ],
+    "officialSource": "https://www.lufthansa.com/by/en/tiere-als-handgepaeck",
+    "checkedAt": "2026-09-13",
+    "verified": true,
+    "automaticRecommendations": true,
+    "manualReview": false,
+    "manualReviewReason": null
+  },
+  {
+    "name": "Air France",
+    "slug": "air-france",
+    "cabinAllowed": true,
+    "dogAllowed": true,
+    "catAllowed": true,
+    "maxTotalWeight": 8,
+    "maxLength": null,
+    "maxWidth": null,
+    "maxHeight": null,
+    "routeRestrictions": [
+      "Vervoer blijft afhankelijk van beschikbaarheid en de route; voor reizen naar de Verenigde Staten gelden aanvullende regels."
+    ],
+    "breedRestrictions": [
+      "De geraadpleegde officiële pagina bevat aanvullende beperkingen voor bepaalde dieren, maar publiceert in de beschikbare inhoud geen eenduidige buitenmaten voor de cabinetas."
+    ],
+    "officialSource": "https://wwws.airfrance.nl/information/passagers/voyager-avec-son-animal-chien-chat",
+    "checkedAt": "2026-09-13",
+    "verified": false,
+    "automaticRecommendations": false,
+    "manualReview": true,
+    "manualReviewReason": "De officiële pagina bevestigt de gewichtsdrempel, maar de maximale lengte, breedte en hoogte van de cabinetas zijn niet eenduidig gepubliceerd in de geraadpleegde inhoud."
+  },
+  {
+    "name": "Brussels Airlines",
+    "slug": "brussels-airlines",
+    "cabinAllowed": true,
+    "dogAllowed": true,
+    "catAllowed": true,
+    "maxTotalWeight": 8,
+    "maxLength": 55,
+    "maxWidth": 40,
+    "maxHeight": 23,
+    "routeRestrictions": [
+      "De plek moet vooraf worden geboekt; per vliegtuig worden maximaal vier transporttassen toegelaten.",
+      "Een reiziger met een huisdier mag niet bij een nooduitgang of scheidingswand zitten."
+    ],
+    "breedRestrictions": [
+      "Alleen kleine honden en katten die volledig in de gesloten tas passen zijn toegestaan.",
+      "Voor honden naar de Verenigde Staten geldt een minimumleeftijd van zes maanden."
+    ],
+    "officialSource": "https://www.brusselsairlines.com/es/es/special-care/pets/cats-and-small-dogs-in-the-cabin",
+    "checkedAt": "2026-09-13",
+    "verified": true,
+    "automaticRecommendations": true,
+    "manualReview": false,
+    "manualReviewReason": null
+  }
+]

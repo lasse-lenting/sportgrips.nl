@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "docs/seo/maaistro-2026-10-25/skill-source/scripts/social_meta.py",
+    "http://localhost:3000",
+    "--json"
+  ],
+  "exitCode": 0,
+  "stdout": "{\n  \"url\": \"http://localhost:3000\",\n  \"score\": 0,\n  \"og_tags\": {},\n  \"twitter_tags\": {},\n  \"og_present\": [],\n  \"og_missing\": [],\n  \"twitter_present\": [],\n  \"twitter_missing\": [],\n  \"issues\": [],\n  \"recommendations\": [],\n  \"preview\": {\n    \"title\": null,\n    \"description\": null,\n    \"image\": null,\n    \"site_name\": null\n  },\n  \"error\": \"Blocked: URL resolves to private/internal IP (127.0.0.1)\"\n}\n",
+  "stderr": "/Users/lasselenting/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n  warnings.warn(\n"
+}

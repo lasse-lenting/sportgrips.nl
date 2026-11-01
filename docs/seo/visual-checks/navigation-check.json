@@ -1,0 +1,120 @@
+{
+  "failures": [],
+  "errors": [],
+  "menuLinks": [
+    {
+      "href": "/",
+      "status": 200
+    },
+    {
+      "href": "/keuzehulp/",
+      "status": 200
+    },
+    {
+      "href": "/grips/",
+      "status": 200
+    },
+    {
+      "href": "/golfgrips/",
+      "status": 200
+    },
+    {
+      "href": "/golfgrips/maat/",
+      "status": 200
+    },
+    {
+      "href": "/golfgrips/putter/",
+      "status": 200
+    },
+    {
+      "href": "/golfgrips/vervangen/",
+      "status": 200
+    },
+    {
+      "href": "/tennisgrips/",
+      "status": 200
+    },
+    {
+      "href": "/tennisgrips/overgrips/",
+      "status": 200
+    },
+    {
+      "href": "/tennisgrips/basisgrips/",
+      "status": 200
+    },
+    {
+      "href": "/tennisgrips/gripmaat/",
+      "status": 200
+    },
+    {
+      "href": "/tennisgrips/vervangen/",
+      "status": 200
+    },
+    {
+      "href": "/padelgrips/",
+      "status": 200
+    },
+    {
+      "href": "/padelgrips/vervangen/",
+      "status": 200
+    },
+    {
+      "href": "/badmintongrips/",
+      "status": 200
+    },
+    {
+      "href": "/badmintongrips/vervangen/",
+      "status": 200
+    },
+    {
+      "href": "/squashgrips/",
+      "status": 200
+    },
+    {
+      "href": "/hockeygrips/",
+      "status": 200
+    },
+    {
+      "href": "/hockeygrips/vervangen/",
+      "status": 200
+    },
+    {
+      "href": "/hockeygrips/chamois/",
+      "status": 200
+    },
+    {
+      "href": "/kennis/",
+      "status": 200
+    },
+    {
+      "href": "/kennis/verschil-basisgrip-overgrip/",
+      "status": 200
+    },
+    {
+      "href": "/kennis/grips-schoonmaken/",
+      "status": 200
+    },
+    {
+      "href": "/kennis/grip-bij-zweethanden/",
+      "status": 200
+    },
+    {
+      "href": "/vergelijken/",
+      "status": 200
+    },
+    {
+      "href": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+      "status": 200
+    },
+    {
+      "href": "/over-sportgrips/",
+      "status": 200
+    }
+  ],
+  "mobileWidths": [
+    390,
+    320,
+    768
+  ],
+  "desktopWidth": 1440
+}

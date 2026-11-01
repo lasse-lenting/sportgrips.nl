@@ -1,0 +1,203 @@
+[
+  {
+    "name": "seo-audit",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/seo-audit",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/seo-audit/SKILL.md",
+    "skillSha256": "f79aebc633d5fcf53d67fd4d39ea6210577485f2a5e46125b3bd757e03baa634",
+    "status": "installed"
+  },
+  {
+    "name": "site-architecture",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/site-architecture",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/site-architecture/SKILL.md",
+    "skillSha256": "55c0128ac29f628944444f8850b97913517f57131673824ebcad4d5ffb26ddd2",
+    "status": "installed"
+  },
+  {
+    "name": "schema",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/schema",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/schema/SKILL.md",
+    "skillSha256": "d298f5d6e1b33b6825f38ecaa05c4d33ba9e45e346b224bd86f9834e46f67a94",
+    "status": "installed"
+  },
+  {
+    "name": "content-strategy",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/content-strategy",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/content-strategy/SKILL.md",
+    "skillSha256": "dce9f4027ae129691e92623541a360bee9356137a7eecf68afa95674af118e68",
+    "status": "installed"
+  },
+  {
+    "name": "programmatic-seo",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/programmatic-seo",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/programmatic-seo/SKILL.md",
+    "skillSha256": "b31208c88e2b018214f61f514bce9bbc7724ceef794c0bcf6a9f762cb91cf254",
+    "status": "installed"
+  },
+  {
+    "name": "ai-seo",
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "sourcePath": "skills/ai-seo",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/ai-seo/SKILL.md",
+    "skillSha256": "97424245fab155d065e39fae5fda8c031bb2f195083411842379fddb5e035e03",
+    "status": "installed"
+  },
+  {
+    "name": "web-quality-seo",
+    "repository": "https://github.com/addyosmani/web-quality-skills",
+    "sourcePath": "skills/seo",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/web-quality-seo/SKILL.md",
+    "skillSha256": "57cd16566c2c706186b643644dec2884da89c42f296843364c65a40a4d566ae6",
+    "status": "installed"
+  },
+  {
+    "name": "web-quality-core-web-vitals",
+    "repository": "https://github.com/addyosmani/web-quality-skills",
+    "sourcePath": "skills/core-web-vitals",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/web-quality-core-web-vitals/SKILL.md",
+    "skillSha256": "731aa78c0347e8b3e191b75962175bee058ce73817278e610ac0fe546e685914",
+    "status": "installed"
+  },
+  {
+    "name": "web-quality-web-quality-audit",
+    "repository": "https://github.com/addyosmani/web-quality-skills",
+    "sourcePath": "skills/web-quality-audit",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/web-quality-web-quality-audit/SKILL.md",
+    "skillSha256": "1903cfb4dcba987d50dc7a51f6c19ec43830ff924c2c8f78979d8775fbe20f91",
+    "status": "installed"
+  },
+  {
+    "name": "website-structure",
+    "repository": "https://github.com/kostja94/marketing-skills",
+    "sourcePath": "skills/strategies/structure/website-structure",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/website-structure/SKILL.md",
+    "skillSha256": "2c68877ada41336a0de78f37f6af77ec272f5a2d40588ec13e73cf88eac42cda",
+    "status": "installed"
+  },
+  {
+    "name": "internal-links",
+    "repository": "https://github.com/kostja94/marketing-skills",
+    "sourcePath": "skills/seo/on-page/internal-links",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/internal-links/SKILL.md",
+    "skillSha256": "388956d57e69004e8c8c4e51d19e3107777ac319ea1a09190bba31f8eb95c53e",
+    "status": "installed"
+  },
+  {
+    "name": "google-search-console",
+    "repository": "https://github.com/kostja94/marketing-skills",
+    "sourcePath": "skills/analytics/seo/google-search-console",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/google-search-console/SKILL.md",
+    "skillSha256": "0649408558f273cd32148cc4f46a2a745531b50f30867f47a052ac536d359ba7",
+    "status": "installed"
+  },
+  {
+    "name": "best-aeo",
+    "repository": "https://github.com/metawhisp/best-aeo-skill",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/best-aeo/SKILL.md",
+    "skillSha256": "b8cb8a534d32fcc50a23ca722cdc76d589b5e322ad0984d3fdfac4e2e5d2b1fc",
+    "status": "installed"
+  },
+  {
+    "name": "local-seo-audit",
+    "repository": "https://github.com/garrettjsmith/localseoskills",
+    "sourcePath": "skills/local-seo-audit",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/local-seo-audit/SKILL.md",
+    "skillSha256": "dd85b7ebca0805ec44beefb1f50c39e0f58167f33684c4e899c7db094ff9264f",
+    "status": "installed"
+  },
+  {
+    "name": "google-search-console-tool",
+    "repository": "https://github.com/garrettjsmith/localseoskills",
+    "sourcePath": "skills/google-search-console-tool",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/google-search-console-tool/SKILL.md",
+    "skillSha256": "98385982403472e33362ced616625f6055a7c5c541597b44a06d1da7762ee8f6",
+    "status": "installed"
+  },
+  {
+    "name": "seo-geo-aeo",
+    "repository": "https://github.com/SNLabat/SEO-GEO-AEO-Skill",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/seo-geo-aeo/SKILL.md",
+    "skillSha256": "bad5ad92f0f23e5cb3486bb4dece1a285bd703155dc101e1d227412bee8eb9cf",
+    "status": "installed"
+  },
+  {
+    "name": "rampify-seo-audit",
+    "repository": "https://github.com/rampify-dev/rampify-seo-audit-skill",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/rampify-seo-audit/SKILL.md",
+    "skillSha256": "0cd90e433516e229ab071c701d23f752656331a5d9a7c23cc3266eae89385680",
+    "status": "installed"
+  },
+  {
+    "name": "ecommerce-seo-audit",
+    "repository": "https://github.com/affilino/ecommerce-seo-audit-skill",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/ecommerce-seo-audit/SKILL.md",
+    "skillSha256": "1af4dfaed0d38612e82b7b8b48546a6faec819f64cad8fcba964e47877e3a91d",
+    "status": "installed"
+  },
+  {
+    "name": "distribb",
+    "repository": "https://github.com/Bomx/distribb-skill",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/distribb/SKILL.md",
+    "skillSha256": "ac69297eb3fbc81f516275662f664c853ab5fee23e9db9fca79276d8b7bd4551",
+    "status": "installed"
+  },
+  {
+    "name": "python-seo-automation-pack",
+    "repository": "https://github.com/carloocchiena/python_seo_automation_pack",
+    "sourcePath": ".",
+    "ref": "main",
+    "installedAt": "2026-10-11",
+    "installedPath": "/Users/lasselenting/.codex/skills/python-seo-automation-pack/SKILL.md",
+    "status": "installed-adapter",
+    "notes": "Original repository has no SKILL.md. Legacy source retained as reference; current Paspoot automation uses scripts/audit-seo.py.",
+    "skillSha256": "e47c4d6e05f10ef511f9b85c082010ba652e67cae73eca95c410c1d8f1083bdf"
+  }
+]

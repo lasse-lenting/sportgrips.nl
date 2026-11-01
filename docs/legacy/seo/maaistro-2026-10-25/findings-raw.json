@@ -1,0 +1,413 @@
+[
+  {
+    "id": "TECH-01",
+    "area": "Indexability / brand migration",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch gate",
+    "finding": "18 gekopieerde Paspoot-pagina’s zijn nog bereikbaar en technisch indexeerbaar op de Maaistro-runtime.",
+    "evidence": "route-inventory.json: /cabinecheck, /reistassen + 7 details, /luchtvaartmaatschappijen + 5 details, /over-paspoot, /nieuws en 1 nieuwsdetail retourneren 200, een eigen localhost-canonical en geen meta robots noindex of X-Robots-Tag; robots.txt staat / toe. src/content/news.json heeft een Paspoot-bericht met status published en historische Paspoot approvalRef. | /luchtvaartmaatschappijen/klm linkt naar /advies/hondenreistas-opmeten, /advies/hond-meenemen-vliegtuig en /advies/kat-meenemen-vliegtuig; het legacy-nieuwsbericht linkt naar de laatste twee. Alle drie doelen retourneren 404. Geen kapotte interne route of ontbrekend anker gevonden op de zeven bedoelde Maaistro-pagina’s binnen deze crawl.",
+    "impact": "Bij ongewijzigde publicatie kunnen ongerelateerde reisinhoud en gekopieerde content onder Maaistro crawlbaar worden. Sitemap-uitsluiting voorkomt dat niet. Dit is een bevestigd lokaal launchrisico, geen aangetoonde publieke indexatie of rankingstraf.",
+    "fix": "Verwijder de legacy routegroepen en de bijbehorende importketens uit de Maaistro-publicatie. Laat onbestaande Maaistro-URL’s 404/410 geven; behoud archief buiten publieke routes. Neem een expliciete legacy-URL denylist op in de launchcontrole. Behoud alle echte Maaistro-componenten en gedeelde code die nog nodig is. Zet gekopieerde Paspoot-publicatiegoedkeuringen niet om in Maaistro-goedkeuringen. Los dit op door de onbedoelde legacy-pagina’s te verwijderen, niet door voor Maaistro nieuwe huisdierartikelen te schrijven. Herhaal daarna de interne-linkcrawl op de volledige publicatiebuild.",
+    "evidence_files": [
+      "evidence/technical/route-summary.json",
+      "evidence/technical/raw/cabinecheck.html",
+      "evidence/technical/raw/nieuws__huisdier-groot-brittannie-goedgekeurde-vliegroutes.html",
+      "evidence/technical/raw/robots.txt.txt"
+    ],
+    "effort": "M",
+    "dependency": "Voor publieke deployment",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-01",
+      "TECH-03"
+    ]
+  },
+  {
+    "id": "TECH-02",
+    "area": "Redirects / crawl paths",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch gate",
+    "finding": "Zes van zeven geconfigureerde oude redirectregels sturen nog naar Paspoot-reisonderdelen.",
+    "evidence": "next.config.ts redirects: /volunteer -> /cabinecheck, /projects -> /reistassen, /projects/:slug -> /reistassen/:slug, /events -> /luchtvaartmaatschappijen, /events/:slug en /blogs/:slug -> /luchtvaartmaatschappijen/:slug. HTTP-steekproeven bevestigen 308 en einddoelen 200; /blogs -> /advies is de enige inhoudelijk Maaistro-passende indexredirect.",
+    "impact": "Verwijderen van zichtbare navigatie is onvoldoende zolang oude routes en redirects de reisinhoud bereikbaar houden. Een nieuw domein heeft geen bewezen behoefte aan Paspoot-historische redirects.",
+    "fix": "Verwijder Paspoot-specifieke redirectregels op Maaistro. Voeg alleen redirects toe voor werkelijk bestaande Maaistro-URL-wijzigingen met inhoudelijk gelijkwaardige bestemming. Leid oude huisdier-URL’s niet massaal naar home of een robotmaaiergids. Behoud de gebruikelijke trailing-slash-normalisatie.",
+    "evidence_files": [
+      "evidence/technical/redirect-map.json",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "Samen met TECH-01",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-02"
+    ]
+  },
+  {
+    "id": "TECH-04",
+    "area": "Canonical origin / preview protection",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch configuration",
+    "finding": "De metadata is nog lokaal en er bestaat geen generieke noindex-instelling voor een publiek bereikbare preview.",
+    "evidence": "Alle zeven actieve routes hebben localhost-canonicals; robots.txt verwijst naar http://localhost:3000/sitemap.xml; sitemap bevat zeven localhost-URL’s. src/lib/seo.ts gebruikt NEXT_PUBLIC_SITE_URL, anders VERCEL_PROJECT_PRODUCTION_URL, anders localhost. src/app/robots.ts bevat alleen allow:/ en disallow:/api/. De normale actieve pagina’s hebben geen noindex. | Alle zes HTMLcaptures bevatten Organization.url en @id op http://localhost:3000. src/lib/seo.ts gebruikt NEXT_PUBLIC_SITE_URL of Vercel host, anders localhost. Gebruiker bevestigt maaistro.nl en nog niet online.",
+    "impact": "Dit is normaal voor de huidige uitsluitend lokale site en nog geen productieprobleem. Zonder expliciete releaseconfiguratie kunnen een toekomstige previewhost of localhost in canonicals/schema/sitemap terechtkomen, of kan een publieke preview worden geïndexeerd.",
+    "fix": "Stel bij lancering NEXT_PUBLIC_SITE_URL=https://maaistro.nl in; bevestig of dit de voorkeursvariant zonder www is en laat de andere publieke host + HTTP in één permanente stap naar die host verwijzen. Bescherm publieke previews via authenticatie of noindex-header en controleer dat productie juist indexeerbaar is. Crawl de echte publieke HTML, redirects, robots, schema en sitemap opnieuw na deployment. Stel bij goedgekeurde lancering NEXT_PUBLIC_SITE_URL=https://maaistro.nl in en controleer SSR canonical, OG en alle JSON-LD-URLs na deployment. Kies wwwbeleid met redirects.",
+    "evidence_files": [
+      "evidence/technical/raw/sitemap.xml.txt",
+      "evidence/technical/raw/robots.txt.txt",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "Domein + hosting bij launch",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-04",
+      "SIP-01"
+    ]
+  },
+  {
+    "id": "TECH-05",
+    "area": "Rendered HTML / on-page baseline",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline",
+    "finding": "De zeven actieve Maaistro-pagina’s leveren hun hoofdinhoud en metadata al in de HTML-respons.",
+    "evidence": "Alle zeven HTTP 200; alle hebben exact één H1, een eigen title, description en canonical. De drie gidsen bevatten hun H2-koppen, alinea’s, bronnen en Article/BreadcrumbList JSON-LD in raw HTML. Alle actieve interne routes en ankers die uit de HTML werden gevonden, bestaan binnen deze crawl.",
+    "impact": "Essentiële inhoud en linkpaden zijn te lezen zonder eerst cliënt-JavaScript uit te voeren. Dit bewijst geen volledige crawler-rendering, visuele bruikbaarheid, rich-result-eligibility of indexatie.",
+    "fix": "Behoud servergerenderde inhoud; laat nieuwe gidsen dit patroon volgen. Herhaal op een productiebuild en op de uiteindelijke publieke host.",
+    "evidence_files": [
+      "evidence/technical/technical-summary.json",
+      "evidence/technical/route-inventory.json",
+      "evidence/technical/raw/advies__robotmaaier-zonder-draad.html"
+    ],
+    "effort": "S",
+    "dependency": "Regressiecontrole",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-05"
+    ]
+  },
+  {
+    "id": "TECH-06",
+    "area": "Sitemap scope",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline with launch follow-up",
+    "finding": "De Maaistro-sitemap bevat uitsluitend de zeven bedoelde Maaistro-pagina’s.",
+    "evidence": "GET /sitemap.xml retourneert 200 met /, /advies, /over-maaistro, /privacy en de drie robotmaaiergidsen; alle zeven retourneren lokaal 200. Geen Paspoot-route opgenomen.",
+    "impact": "De sitemap heeft de juiste inhoudelijke scope, maar is geen toegangscontrole en verwijdert de 18 legacy-URLs niet uit crawlbaarheid. Canonical origin moet bij launch nog naar maaistro.nl.",
+    "fix": "Behoud de scope en voeg alleen goedgekeurde, canonieke publicatie-URL’s toe. Laat lastModified later per echte inhoudswijziging bepalen; nu staat overal een vaste 2026-10-25.",
+    "evidence_files": [
+      "evidence/technical/raw/sitemap.xml.txt",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "TECH-01 en TECH-04",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-06"
+    ]
+  },
+  {
+    "id": "TECH-07",
+    "area": "404 handling / URL normalization",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline",
+    "finding": "Onbekende routes geven echte 404-responses met noindex en een trailing slash normaliseert permanent.",
+    "evidence": "/bestaat-niet-seo-audit en /advies/bestaat-niet-seo-audit retourneren 404 met meta robots noindex, follow. /advies/robotmaaier-zonder-draad/ retourneert 308 Location:/advies/robotmaaier-zonder-draad, dat 200 geeft.",
+    "impact": "Geen soft-404 gevonden in deze steekproeven. 308 is een permanente redirect; er is geen reden om dit alleen wegens de statuscode als fout aan te merken.",
+    "fix": "Behoud dit gedrag, en controleer na legacy-verwijdering dat ook oude Paspoot-routes daadwerkelijk 404/410 geven.",
+    "evidence_files": [
+      "evidence/technical/route-summary.json",
+      "evidence/technical/redirect-map.json"
+    ],
+    "effort": "S",
+    "dependency": "Regressiecontrole",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-07"
+    ]
+  },
+  {
+    "id": "TECH-08",
+    "area": "Audit limitations",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "priority": "Follow-up after deployment",
+    "finding": "Publieke HTTPS/hostredirects, indexatie, veld-CWV en echte zoekprestaties zijn nog niet meetbaar voor Maaistro.",
+    "evidence": "Gebruiker bevestigt: site is nog niet online, beoogd domein maaistro.nl. Deze controle gebruikt localhost:3000 in Next.js development mode. Geen publieke Maaistro-versie, CrUX, GSC of productiebuild werd in deze technische subaudit onderzocht. De skill-fetcher blokkeert private IPs; het meegeleverde parse_html is daarom offline op lokale raw responses toegepast. | Gebruiker bevestigde op 2026-10-25 dat maaistro.nl nog niet online staat; geen GSC/traffic/reputatiegegevens aangeleverd. | Site is volgens gebruiker nog niet live. Alleen lokale Next devserver HTTPcaptures; geen PSI, Lighthouse, CrUX of RUMdata verzameld.",
+    "impact": "Lokale dev-headers, laadtijden en HTML-bewijs mogen niet als publieke rankings, indexatie, securityconfiguratie of gemeten Core Web Vitals worden gepresenteerd.",
+    "fix": "Na publicatie een beperkte productiecontrole uitvoeren, Search Console eigendom + sitemap instellen, robots/canonical/redirects/noindex controleren; labmetingen en later beschikbare velddata apart rapporteren. Ontbrekende llms.txt is hier informatie, geen indexing blocker. Na echte publicatie eigen meetperioden en echte citaties verzamelen. Na productiebuild op apartepoort labmeting mobile/desktop, daarna publiekeURLtest na geautoriseerde lancering. Meet LCP<=2.5s, INP<=200ms, CLS<=0.1 op75epercentiel velddata zodra beschikbaar.",
+    "evidence_files": [
+      "evidence/technical/skill-fetch-attempt.txt",
+      "evidence/technical/technical-summary.json"
+    ],
+    "effort": "S",
+    "dependency": "Gebruikersgoedkeuring voor publicatie + live host",
+    "source": "technical-findings.json",
+    "originIds": [
+      "TECH-08",
+      "C09",
+      "SIP-09"
+    ]
+  },
+  {
+    "id": "C01",
+    "area": "Intent match",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "De drie koopgidsen bieden nog geen volledige productkeuze.",
+    "evidence": "src/content/advice.json: body-only 277, 315 en 309 whitespacewoorden na HTML-strip; geen modelvergelijkingstabel of doorgerekend voorbeeld.",
+    "impact": "Oriëntatie is mogelijk, concrete commerciële afweging blijft bij de lezer.",
+    "fix": "Verdiep bestaande gidsen met meet-/besliscases en gecontroleerde vergelijkingsdata; geen winnaar zonder methodiek.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C01"
+    ]
+  },
+  {
+    "id": "C02",
+    "area": "Source quality",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Alle vier bronlinks van de drie gidsen zijn van één fabrikant.",
+    "evidence": "src/content/advice.json: vier hrefs, allemaal husqvarna.com; voorbeelden gecontroleerd op eigen fabrikantpagina’s op 2026-10-25.",
+    "impact": "Geschikt voor eigen modelclaims, ontoereikend als basis voor marktbrede onafhankelijkheid.",
+    "fix": "Voeg relevante andere primaire systemen toe en registreer per claim exacte uitvoering, URL en echte controledatum.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C02"
+    ]
+  },
+  {
+    "id": "C03",
+    "area": "Choice helper",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Keuzehulp routeert beperkt en gebruikt terrein niet voor de geselecteerde vervolggids.",
+    "evidence": "src/components/garden-form.tsx:208: wireless ? zonder-draad : squareMetres <= 500 ? kleine-tuin : grote-tuin; terrain verandert een advieszin; geen productdata.",
+    "impact": "Niet alle antwoorden bepalen het vervolg; specifieke modellen zijn terecht nog niet beloofd.",
+    "fix": "Behoud eerste-tuinadviesbelofte en voeg situatiepassende secundaire gidslinks toe; modellen pas met gevalideerde dataset.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C03"
+    ]
+  },
+  {
+    "id": "C04",
+    "area": "Accountability",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Merkbyline en over-pagina tonen nog geen verantwoordelijke maker of correctiekanaal.",
+    "evidence": "src/components/page-sections.tsx:353-384: Door Maaistro; src/app/over-maaistro/page.tsx: aanpak/verdienmodel zonder naam/contactlink.",
+    "impact": "Lezer kan expertise en correcties beperkt controleren.",
+    "fix": "Voeg echte naam/rol, aantoonbare ervaring en werkend contact/correctiepad toe, zonder kwalificaties te verzinnen.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C04"
+    ]
+  },
+  {
+    "id": "C05",
+    "area": "Experience evidence",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "Illustratieve gegenereerde fotografie is intern gedocumenteerd; een openbaar beeldbeleid is nog niet uitgewerkt.",
+    "evidence": "docs/photography-prompts.json registreert generatieprompts voor o.a. installatie en owner-inspection; geen eigen praktijktestlog in beoordeelde content. | docs/photography-prompts.json noemt21gegenereerde illustratieve fotos, geen tests. Sharpmetadata op21WebPs toont hasExif/hasIptc/hasXmp=false. OverMaaistro spreekt wel over geen verzonnen tests, niet over beeldcreatie.",
+    "impact": "Beeldherkomst verduidelijken helpt lezers illustratie en werkelijk testbewijs onderscheiden; dit is geen aangetoonde ranking- of Merchant Center-overtreding.",
+    "fix": "Beschrijf illustratieve generatieve beeldkeuze transparant in werkwijze; waar nodig contextlabel; echte foto-/meetlogs alleen na uitvoering. Geef op werkwijzepagina passende context over illustratieve AIbeelden en gebruik echte eigen fotos voor testclaims. Bewaar/voeg juiste herkomstmetadata toe. Als laterMerchantCenter gebruikt wordt gelden afzonderlijke verplichte AIbeeldmetadata.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C05",
+      "SIP-05"
+    ]
+  },
+  {
+    "id": "C06",
+    "area": "Contextual internal links",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "De eigen body van de drie gidsen bevat geen contextuele onderlinge links.",
+    "evidence": "src/content/advice.json bevat vier externe hrefs en geen interne href; gedeelde navigatie en CTA bestaan wel.",
+    "impact": "Techniek- en tuinvragen zijn minder direct verbonden.",
+    "fix": "Voeg relevante kruislinks toe tussen draadloos en kleine/grote tuin op het beslismoment.",
+    "priority": "P1",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C06"
+    ]
+  },
+  {
+    "id": "C07",
+    "area": "Commercial transparency",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Beperkingen en affiliateverdienmodel zijn in de huidige preview duidelijk beschreven.",
+    "evidence": "src/app/over-maaistro/page.tsx:35-58; garden-form.tsx:213-214; geen modelselectie of eigen tests geclaimd.",
+    "impact": "Sterke basis voor eerlijk verwachtingsmanagement.",
+    "fix": "Behouden; bij echte winkelintegratie labels en selectiemethodiek aan concrete werking aanpassen.",
+    "priority": "Maintenance",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C07"
+    ]
+  },
+  {
+    "id": "C08",
+    "area": "Readability",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Gidsen hebben korte paragrafen, H2’s, samenvattingen en praktische opsommingen.",
+    "evidence": "src/content/advice.json heeft per gids 5-6 bodyparagrafen; page-sections.tsx AdviceDetail rendert samenvatting en inhoud.",
+    "impact": "Scannen en oriënteren worden ondersteund.",
+    "fix": "Vorm behouden bij verdieping; geen uitbreiding uitsluitend om woordquota.",
+    "priority": "Maintenance",
+    "source": "content-findings.json",
+    "scope": "local-prelaunch",
+    "checked_at": "2026-10-25",
+    "originIds": [
+      "C08"
+    ]
+  },
+  {
+    "id": "SIP-02",
+    "area": "Images / performance",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Vier kleine decoratieve herofotos laden grote originele bestanden en worden in HTML gepreload.",
+    "evidence": "Hero avatars bevatten vier plain img zonder srcset/sizes/loading, elk1536x1024. Hun totaal is1684978 bytes. home.html bevat vier preload-links voor die originele WebPs. CSS avatarafmeting is klein, geen overeenkomstige bronselectie.",
+    "impact": "Onnodige netwerkbelasting rond de eerste hero-render; daadwerkelijke LCPimpact nog niet gemeten.",
+    "fix": "Maak kleine responsive varianten of gebruik next/image met passende sizes/vaste afmetingen. Geef alleen werkelijk kritieke hero prioriteit; geen lazy voor het echte LCPbeeld.",
+    "priority": "P1 quick win",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-02"
+    ]
+  },
+  {
+    "id": "SIP-03",
+    "area": "Images / performance",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Artikelhero en diverse lifestylebeelden worden zonder responsive bronselectie geladen.",
+    "evidence": "De3artikelheros zijn plain img src zonder srcset/sizes/width/height. Homepage purposebeelden en impact/fomachtergrond eveneens plain img. Artikelbron1536x1024, urban-courtyard675768bytes.",
+    "impact": "Ook mobiel vraagt browser dezelfde bron op; besparingskans zonder beeldhergebruik of verandering van ontwerp.",
+    "fix": "Gebruik responsive next/image/picture/srcset met realistische sizes. Reserveer huidigeverhouding/hoogte; lazy alleen voor onder-de-vouwbeelden. Meet uiteindelijke transfers.",
+    "priority": "P1 quick win",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-03"
+    ]
+  },
+  {
+    "id": "SIP-04",
+    "area": "Schema",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "FAQPage is nog aanwezig, maar Google heeft FAQ rich results volledig beëindigd.",
+    "evidence": "src/app/page.tsx injecteert FAQPage uit dezelfde zes FAQvragen. Officiële Google changelog May8,2026 noemt einde perMay7; June15 noemt verwijderde docs. Skillreferentie beperkt zich onjuist nog tot overheids-/gezondheidswebsites.",
+    "impact": "Geen FAQrichresultbelofte of prioriteit; geen aangetoonde indexeringsfout of penalty.",
+    "fix": "Behoud zichtbare FAQ voor bezoekers. FAQPage kan voor eenvoud weg; presenteer verwijderen niet als rankingfix.",
+    "priority": "P2 maintenance",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-04"
+    ]
+  },
+  {
+    "id": "SIP-06",
+    "area": "Schema",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "JSON-LDvoor Organization, WebSite, Article en BreadcrumbList is servergerenderd en basisstructuur klopt.",
+    "evidence": "6captures HTTP200; alle JSONblokken parsebaar. 3Articleobjecten met passende title/image/modifieddate/Organizationauthor en BreadcrumbList met1-based posities. Graphawarecheck geen fouten.",
+    "impact": "Zoekmachines hoeven voor deze gegevens niet op clientinteractie te wachten. Geen garantie op richresults.",
+    "fix": "Behoud deze basis; valideer bij lancering in Rich Results Test en URLInspection. Voeg pas echte publicatiedatum toe bij publicatie.",
+    "priority": "maintain",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-06"
+    ]
+  },
+  {
+    "id": "SIP-07",
+    "area": "Schema / trust",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Geen fictieve Product, Offer, Review of AggregateRatingmarkup op de6huidigeMaaistropaginas.",
+    "evidence": "DezesHTMLinventarissen tonen alleenFAQPage/Organization/WebSite/Article/BreadcrumbList. ZichtbareOverMaaistro zegt modelvergelijkingen noglater en geen eigen testen verzinnen.",
+    "impact": "Huidige schema claimt geen nietbestaande prijzen, sterren, voorraadofpraktijktests.",
+    "fix": "Voeg product-/reviewdata alleen op echte passende modelpaginas toe als zichtbare, geverifieerde data bestaat. Geen afgeleide ratings van anderewebsites.",
+    "priority": "maintain",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-07"
+    ]
+  },
+  {
+    "id": "SIP-08",
+    "area": "Images",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Hero, categoriekaarten en missiefotos gebruiken Nextimage; 22 rasterbronbestanden zijn uniek.",
+    "evidence": "Homepage heeft7responsiveimgs; hero2048x1152 met sizes100vw en preload,3categoriekaarten fill+sizes,3missies width1536height1024. Assetinventory22uniekeSHA256s;3koopgidsfotoshergebruik opdebijbehorendegids is passend.",
+    "impact": "Een deel van de site levert al responsive varianten en reserveert ruimte. Uniciteit is een ontwerpkeuze, geen bewezenseorankingfactor.",
+    "fix": "Trek dit patroon door naar overige beelden; behoud passende decoratieve altleeg en betekenisvolle tekst voor inhoudelijke fotos.",
+    "priority": "maintain",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-08"
+    ]
+  },
+  {
+    "id": "SIP-10",
+    "area": "Tool interpretation",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "Bundled validatorwaarschuwingen bevatten een falsepositive voor legale graphen en verouderde FAQstatus.",
+    "evidence": "validate_schema.py geeft Missing@type voor@context+@graphenvelope opalle6paginas; dat is geen verplicht getypeerd knooppunt. FAQmelding verwijst alleen naar2023. Customgraphcheck parseert de daadwerkelijke nodes zonder errors.",
+    "impact": "Ongecontroleerd overnemen zou nietbestaande schemadefecten rapporteren.",
+    "fix": "Gebruik de scriptuitvoer als bewijsinput, controleer graphsemantiek handmatig en toets richresultondersteuning aan actueleGooglebronnen.",
+    "priority": "audit context",
+    "source": "schema-images-findings.json",
+    "originIds": [
+      "SIP-10"
+    ]
+  },
+  {
+    "id": "GSC-01",
+    "area": "Environment limitations",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "De gekoppelde GSC Wizard-dienst weigert dataverzoeken wegens ontbreken van een actief abonnement.",
+    "evidence": "list_sites-respons op2026-10-25: payment_required/subscription_required; geen sitegegevens teruggegeven. De gebruiker bevestigt daarnaast dat Maaistro nog niet online staat.",
+    "impact": "Geen eigen zoekperformance, indexatie of volumes als auditbewijs beschikbaar. Dit bewijst niet dat Google Search Console zelf een betaald abonnement vereist.",
+    "fix": "Na lancering eigendom in Google Search Console verifiëren. Eigen exports of de gratis interface kunnen meetdata leveren; een betaald connectorabonnement is niet vereist om de planning uit te voeren.",
+    "source": "Connected tool response",
+    "originIds": [
+      "GSC-01"
+    ]
+  }
+]

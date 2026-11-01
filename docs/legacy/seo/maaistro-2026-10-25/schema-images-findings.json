@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SIP-01",
+    "area": "Schema / launch",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Lokale schema-identiteiten verwijzen nog naar localhost; productie-origin moet voor lancering worden gezet.",
+    "evidence": "Alle zes HTMLcaptures bevatten Organization.url en @id op http://localhost:3000. src/lib/seo.ts gebruikt NEXT_PUBLIC_SITE_URL of Vercel host, anders localhost. Gebruiker bevestigt maaistro.nl en nog niet online.",
+    "impact": "Een verkeerde productie-origin zou entiteiten, canonical en gedeelde afbeeldingen aan de verkeerde host koppelen; lokaal is dit verwacht.",
+    "fix": "Stel bij goedgekeurde lancering NEXT_PUBLIC_SITE_URL=https://maaistro.nl in en controleer SSR canonical, OG en alle JSON-LD-URLs na deployment. Kies wwwbeleid met redirects.",
+    "priority": "P0 before launch",
+    "source": "evidence/schema-images/summary.json"
+  },
+  {
+    "id": "SIP-02",
+    "area": "Images / performance",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Vier kleine decoratieve herofotos laden grote originele bestanden en worden in HTML gepreload.",
+    "evidence": "Hero avatars bevatten vier plain img zonder srcset/sizes/loading, elk1536x1024. Hun totaal is1684978 bytes. home.html bevat vier preload-links voor die originele WebPs. CSS avatarafmeting is klein, geen overeenkomstige bronselectie.",
+    "impact": "Onnodige netwerkbelasting rond de eerste hero-render; daadwerkelijke LCPimpact nog niet gemeten.",
+    "fix": "Maak kleine responsive varianten of gebruik next/image met passende sizes/vaste afmetingen. Geef alleen werkelijk kritieke hero prioriteit; geen lazy voor het echte LCPbeeld.",
+    "priority": "P1 quick win",
+    "source": "evidence/schema-images/asset-inventory.json + rendered-inventory.json"
+  },
+  {
+    "id": "SIP-03",
+    "area": "Images / performance",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Artikelhero en diverse lifestylebeelden worden zonder responsive bronselectie geladen.",
+    "evidence": "De3artikelheros zijn plain img src zonder srcset/sizes/width/height. Homepage purposebeelden en impact/fomachtergrond eveneens plain img. Artikelbron1536x1024, urban-courtyard675768bytes.",
+    "impact": "Ook mobiel vraagt browser dezelfde bron op; besparingskans zonder beeldhergebruik of verandering van ontwerp.",
+    "fix": "Gebruik responsive next/image/picture/srcset met realistische sizes. Reserveer huidigeverhouding/hoogte; lazy alleen voor onder-de-vouwbeelden. Meet uiteindelijke transfers.",
+    "priority": "P1 quick win",
+    "source": "src/components/page-sections.tsx:389; src/components/interactions.tsx; evidence/schema-images/rendered-inventory.json"
+  },
+  {
+    "id": "SIP-04",
+    "area": "Schema",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "FAQPage is nog aanwezig, maar Google heeft FAQ rich results volledig beëindigd.",
+    "evidence": "src/app/page.tsx injecteert FAQPage uit dezelfde zes FAQvragen. Officiële Google changelog May8,2026 noemt einde perMay7; June15 noemt verwijderde docs. Skillreferentie beperkt zich onjuist nog tot overheids-/gezondheidswebsites.",
+    "impact": "Geen FAQrichresultbelofte of prioriteit; geen aangetoonde indexeringsfout of penalty.",
+    "fix": "Behoud zichtbare FAQ voor bezoekers. FAQPage kan voor eenvoud weg; presenteer verwijderen niet als rankingfix.",
+    "priority": "P2 maintenance",
+    "source": "https://developers.google.com/search/updates"
+  },
+  {
+    "id": "SIP-05",
+    "area": "Images / trust",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "finding": "Illustratieve AI-fotografie heeft intern herkomstbewijs maar geen ingebedde provenancevelden in de WebPbestanden.",
+    "evidence": "docs/photography-prompts.json noemt21gegenereerde illustratieve fotos, geen tests. Sharpmetadata op21WebPs toont hasExif/hasIptc/hasXmp=false. OverMaaistro spreekt wel over geen verzonnen tests, niet over beeldcreatie.",
+    "impact": "Lezers kunnen fotorealisme als eigen productervaring interpreteren; illustraties vormen geen testbewijs. Ontbrekend IPTC is op deze huidige affiliatesite geen aangetoonde GoogleSearchblokkade.",
+    "fix": "Geef op werkwijzepagina passende context over illustratieve AIbeelden en gebruik echte eigen fotos voor testclaims. Bewaar/voeg juiste herkomstmetadata toe. Als laterMerchantCenter gebruikt wordt gelden afzonderlijke verplichte AIbeeldmetadata.",
+    "priority": "P1 prepublication trust",
+    "source": "docs/photography-prompts.json; evidence/schema-images/asset-inventory.json"
+  },
+  {
+    "id": "SIP-06",
+    "area": "Schema",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "JSON-LDvoor Organization, WebSite, Article en BreadcrumbList is servergerenderd en basisstructuur klopt.",
+    "evidence": "6captures HTTP200; alle JSONblokken parsebaar. 3Articleobjecten met passende title/image/modifieddate/Organizationauthor en BreadcrumbList met1-based posities. Graphawarecheck geen fouten.",
+    "impact": "Zoekmachines hoeven voor deze gegevens niet op clientinteractie te wachten. Geen garantie op richresults.",
+    "fix": "Behoud deze basis; valideer bij lancering in Rich Results Test en URLInspection. Voeg pas echte publicatiedatum toe bij publicatie.",
+    "priority": "maintain",
+    "source": "evidence/schema-images/graph-aware-validation.json"
+  },
+  {
+    "id": "SIP-07",
+    "area": "Schema / trust",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Geen fictieve Product, Offer, Review of AggregateRatingmarkup op de6huidigeMaaistropaginas.",
+    "evidence": "DezesHTMLinventarissen tonen alleenFAQPage/Organization/WebSite/Article/BreadcrumbList. ZichtbareOverMaaistro zegt modelvergelijkingen noglater en geen eigen testen verzinnen.",
+    "impact": "Huidige schema claimt geen nietbestaande prijzen, sterren, voorraadofpraktijktests.",
+    "fix": "Voeg product-/reviewdata alleen op echte passende modelpaginas toe als zichtbare, geverifieerde data bestaat. Geen afgeleide ratings van anderewebsites.",
+    "priority": "maintain",
+    "source": "evidence/schema-images/summary.json"
+  },
+  {
+    "id": "SIP-08",
+    "area": "Images",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "finding": "Hero, categoriekaarten en missiefotos gebruiken Nextimage; 22 rasterbronbestanden zijn uniek.",
+    "evidence": "Homepage heeft7responsiveimgs; hero2048x1152 met sizes100vw en preload,3categoriekaarten fill+sizes,3missies width1536height1024. Assetinventory22uniekeSHA256s;3koopgidsfotoshergebruik opdebijbehorendegids is passend.",
+    "impact": "Een deel van de site levert al responsive varianten en reserveert ruimte. Uniciteit is een ontwerpkeuze, geen bewezenseorankingfactor.",
+    "fix": "Trek dit patroon door naar overige beelden; behoud passende decoratieve altleeg en betekenisvolle tekst voor inhoudelijke fotos.",
+    "priority": "maintain",
+    "source": "evidence/schema-images/rendered-inventory.json + asset-inventory.json"
+  },
+  {
+    "id": "SIP-09",
+    "area": "Performance",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "Publieke CWV en productieprestaties zijn nog niet gemeten.",
+    "evidence": "Site is volgens gebruiker nog niet live. Alleen lokale Next devserver HTTPcaptures; geen PSI, Lighthouse, CrUX of RUMdata verzameld.",
+    "impact": "Geen prestatie- of CWVpass/failscore en geen oorzaakconclusie over LCP/INP/CLS mogelijk.",
+    "fix": "Na productiebuild op apartepoort labmeting mobile/desktop, daarna publiekeURLtest na geautoriseerde lancering. Meet LCP<=2.5s, INP<=200ms, CLS<=0.1 op75epercentiel velddata zodra beschikbaar.",
+    "priority": "launch measurement",
+    "source": "https://web.dev/articles/vitals"
+  },
+  {
+    "id": "SIP-10",
+    "area": "Tool interpretation",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "finding": "Bundled validatorwaarschuwingen bevatten een falsepositive voor legale graphen en verouderde FAQstatus.",
+    "evidence": "validate_schema.py geeft Missing@type voor@context+@graphenvelope opalle6paginas; dat is geen verplicht getypeerd knooppunt. FAQmelding verwijst alleen naar2023. Customgraphcheck parseert de daadwerkelijke nodes zonder errors.",
+    "impact": "Ongecontroleerd overnemen zou nietbestaande schemadefecten rapporteren.",
+    "fix": "Gebruik de scriptuitvoer als bewijsinput, controleer graphsemantiek handmatig en toets richresultondersteuning aan actueleGooglebronnen.",
+    "priority": "audit context",
+    "source": "evidence/schema-images/script-results.json + graph-aware-validation.json"
+  }
+]

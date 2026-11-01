@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "status": true,
+      "h1": "400",
+      "logos": [
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        },
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        }
+      ],
+      "primary": "#d4f542",
+      "hover": "#e4ff76",
+      "accent": "#bc4825",
+      "headerBackground": "rgb(5, 46, 42)",
+      "footerBackground": "rgb(5, 46, 42)"
+    },
+    {
+      "width": 390,
+      "status": true,
+      "h1": "400",
+      "logos": [
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        },
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        }
+      ],
+      "primary": "#d4f542",
+      "hover": "#e4ff76",
+      "accent": "#bc4825",
+      "headerBackground": "rgb(5, 46, 42)",
+      "footerBackground": "rgb(5, 46, 42)"
+    },
+    {
+      "width": 320,
+      "status": true,
+      "h1": "400",
+      "logos": [
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        },
+        {
+          "src": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        }
+      ],
+      "primary": "#d4f542",
+      "hover": "#e4ff76",
+      "accent": "#bc4825",
+      "headerBackground": "rgb(5, 46, 42)",
+      "footerBackground": "rgb(5, 46, 42)"
+    }
+  ],
+  "errors": [],
+  "svgStatus": 200,
+  "vectorLetters": 10,
+  "containsTextElement": false,
+  "containsPink": false
+}

@@ -1,0 +1,47 @@
+// Homepage content uses the original Paspoot card layouts, without its travel data.
+export const homeProjects = [
+  {
+    slug: 'robotmaaier-zonder-draad',
+    title: 'Robotmaaier zonder draad',
+    location:
+      'Virtuele grenzen in plaats van een kabel door je tuin. Ontdek waar je op let bij de installatie.',
+    raised: 'Draadloos',
+    image: '/assets/maaistro/photos/robot-charging.webp',
+  },
+  {
+    slug: 'robotmaaier-kleine-tuin',
+    title: 'Robotmaaier voor een kleine tuin',
+    location:
+      'Klein gazon, slimme keuze. Let op doorgangen, randen en een handige plek voor het laadstation.',
+    raised: 'Kleine tuin',
+    image: '/assets/maaistro/photos/compact-garden.webp',
+  },
+  {
+    slug: 'robotmaaier-grote-tuin',
+    title: 'Robotmaaier voor een grote tuin',
+    location:
+      'Meer gras vraagt om passende capaciteit. Kijk ook naar zones, hellingen en de tijd om te maaien.',
+    raised: 'Grote tuin',
+    image: '/assets/maaistro/photos/large-garden.webp',
+  },
+];
+export const homeEvents = [
+  {
+    slug: 'robotmaaier-zonder-draad',
+    title: 'Met of zonder draad: wat past bij jou?',
+    location: 'Navigatie & installatie',
+    image: '/assets/maaistro/photos/wireless-open-lawn.webp',
+  },
+  {
+    slug: 'robotmaaier-kleine-tuin',
+    title: 'Een kleine tuin? Kies op meer dan vierkante meters.',
+    location: 'Kleine tuinen',
+    image: '/assets/maaistro/photos/urban-courtyard.webp',
+  },
+  {
+    slug: 'robotmaaier-grote-tuin',
+    title: 'Veel gras, meerdere zones. Waar begin je?',
+    location: 'Grote tuinen',
+    image: '/assets/maaistro/photos/connected-lawn-zones.webp',
+  },
+];

@@ -1,0 +1,182 @@
+{
+  "desktop": {
+    "sections": [
+      {
+        "id": "hero",
+        "class": "hero",
+        "padding": "10px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "",
+        "class": "recognition",
+        "padding": "60px 60px 40px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "our-purpose",
+        "class": "purpose",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "in-progress",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 ongoing",
+        "padding": "80px 60px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "goals",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 missions",
+        "padding": "80px 60px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "impacts",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 impacts",
+        "padding": "80px 60px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "faq",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 questions",
+        "padding": "80px 60px",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "volunteer-apply",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 volunteer-section",
+        "padding": "80px 60px",
+        "background": "rgb(5, 46, 42)",
+        "borderRadius": "0px"
+      }
+    ],
+    "h1": {
+      "fontFamily": "stackSansNotch, \"stackSansNotch Fallback\", Arial, sans-serif, Arial, sans-serif",
+      "fontSize": "48px",
+      "fontWeight": "400"
+    },
+    "images": [
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-dew-grass.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-planter.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-mower-wheel.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-lawn-edge.webp&w=3840&q=75",
+      "/assets/maaistro/photos/measure-lawn.webp",
+      "/assets/maaistro/photos/measure-lawn.webp",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=3840&q=75",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/quiet-garden-background.webp"
+    ]
+  },
+  "mobile": {
+    "sections": [
+      {
+        "id": "hero",
+        "class": "hero",
+        "padding": "10px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "",
+        "class": "recognition",
+        "padding": "60px 20px 40px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "our-purpose",
+        "class": "purpose",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "in-progress",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 ongoing",
+        "padding": "40px 20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "goals",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 missions",
+        "padding": "40px 20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "impacts",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 impacts",
+        "padding": "40px 20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "faq",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 questions",
+        "padding": "40px 20px",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "0px"
+      },
+      {
+        "id": "volunteer-apply",
+        "class": "section px-15 py-20 max-lg:px-10 max-lg:py-15 max-sm:px-5 max-sm:py-10 volunteer-section",
+        "padding": "40px 20px",
+        "background": "rgb(5, 46, 42)",
+        "borderRadius": "0px"
+      }
+    ],
+    "h1": {
+      "fontFamily": "stackSansNotch, \"stackSansNotch Fallback\", Arial, sans-serif, Arial, sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "400"
+    },
+    "images": [
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-dew-grass.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-planter.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-mower-wheel.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fdetail-lawn-edge.webp&w=3840&q=75",
+      "/assets/maaistro/photos/measure-lawn.webp",
+      "/assets/maaistro/photos/measure-lawn.webp",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=3840&q=75",
+      "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=3840&q=75",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/family-garden.webp",
+      "/assets/maaistro/photos/comparison-notes.webp",
+      "/assets/maaistro/photos/garden-consultation.webp",
+      "/assets/maaistro/photos/quiet-garden-background.webp"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "klm": {
+    "verifiedAt": "2026-10-11",
+    "source": "https://www.klm.nl/information/pets/reservation",
+    "routeRestrictions": [
+      "Reserveer uiterlijk 48 uur voor vertrek; het huisdier moet minimaal 15 weken oud zijn.",
+      "Naar het Verenigd Koninkrijk zijn huisdieren niet toegestaan als passagiersbagage in cabine of ruim."
+    ],
+    "body": [
+      { "tag": "h2", "html": "Mag je hond of kat mee in de cabine bij KLM?" },
+      {
+        "tag": "p",
+        "html": "Bij KLM kan één kleine hond of kat mee in Economy Class, of in Business Class op vluchten binnen Europa. Huisdier en gesloten tas mogen samen maximaal 8 kg wegen. De tas mag maximaal 46 × 28 × 24 cm zijn en moet onder de stoel voor je passen. Premium Comfort en intercontinentale Business Class laten geen huisdieren in de cabine toe."
+      },
+      { "tag": "h2", "html": "Hoe zwaar mag je hond of kat samen met de tas zijn?" },
+      {
+        "tag": "p",
+        "html": "Het maximum van <strong>8 kg</strong> geldt voor het totaal: huisdier plus lege reistas of kennel. Weeg ze daarom samen. Een huisdier van 7 kg met een tas van 1,5 kg overschrijdt bijvoorbeeld de limiet. De maten tellen ook mee, dus alleen het gewicht controleren is niet voldoende."
+      },
+      { "tag": "h2", "html": "Welke reistasmaten gelden bij KLM?" },
+      {
+        "tag": "p",
+        "html": "KLM noemt maximaal <strong>46 × 28 × 24 cm</strong> voor de gesloten reistas of kennel. Je huisdier moet er rechtop in kunnen staan, zich kunnen omdraaien en normaal kunnen ademen. Een tas die binnen de maximale maten valt, is daarom niet automatisch geschikt voor iedere kleine hond of kat. Lees hoe je de <a href=\"/advies/hondenreistas-opmeten\">buitenmaten van je reistas meet</a> en bekijk de <a href=\"/reistassen\">reistassen met vermelde maten en leeggewicht</a>."
+      },
+      { "tag": "h2", "html": "Mag je hond tijdens de KLM-vlucht op schoot?" },
+      {
+        "tag": "p",
+        "html": "Nee. KLM zegt dat je huisdier tijdens de vlucht niet uit de kennel mag. Je hond of kat blijft in de gesloten tas onder de stoel voor je. Een kleine hond die op schoot past, voldoet daardoor niet vanzelf aan de regels: hij moet comfortabel in de tas kunnen blijven."
+      },
+      { "tag": "h2", "html": "Wanneer reserveer je een plek voor je huisdier?" },
+      {
+        "tag": "p",
+        "html": "Reserveer zo snel mogelijk na het boeken, uiterlijk <strong>48 uur voor vertrek</strong>. KLM noemt een minimumleeftijd van <strong>15 weken</strong>. Het aantal huisdierplekken hangt af van vliegtuigtype, bestemming en de uitvoerende maatschappij. Controleer daarom de beschikbaarheid voor je exacte vlucht; een algemene cabinecheck reserveert geen plek."
+      },
+      { "tag": "h2", "html": "Let op de bestemming en de richting van je vlucht" },
+      {
+        "tag": "p",
+        "html": "KLM meldt dat huisdieren naar het Verenigd Koninkrijk niet als passagiersbagage in de cabine of het ruim kunnen reizen. De KLM-pagina noemt die beperking niet voor reizen vanuit het Verenigd Koninkrijk. Laat de vervoerder bevestigen welke vervoersvorm bij jouw route mogelijk is. Controleer de bestemming ook wanneer gewicht en tasafmetingen aan de algemene cabineregels voldoen."
+      },
+      { "tag": "h2", "html": "Controleer jouw combinatie voordat je een tas kiest" },
+      {
+        "tag": "p",
+        "html": "Vul het gewicht van je huisdier, het leeggewicht van de tas en de buitenmaten in bij de <a href=\"/cabinecheck\">Paspoot-cabinecheck</a> en kies KLM. Voor de voorbereiding kun je verder lezen in de gids voor <a href=\"/advies/hond-meenemen-vliegtuig\">vliegen met een hond</a> of <a href=\"/advies/kat-meenemen-vliegtuig\">vliegen met een kat</a>. Bespreek routevoorwaarden en toelating altijd met KLM."
+      },
+      { "tag": "h2", "html": "Officiële bron" },
+      {
+        "tag": "p",
+        "html": "Inhoud gecontroleerd op 11 oktober 2026 via <a href=\"https://www.klm.nl/information/pets/reservation\">de officiële KLM-reserveringspagina voor huisdieren</a>. De genoemde rekenvoorbeelden zijn illustraties van de gepubliceerde gewichtslimiet, geen door Paspoot geteste vluchten."
+      }
+    ]
+  }
+}

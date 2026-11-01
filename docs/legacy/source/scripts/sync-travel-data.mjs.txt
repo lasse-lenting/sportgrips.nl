@@ -1,0 +1,139 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+
+const root = resolve(import.meta.dirname, '..');
+const productsPath = resolve(root, 'src/content/projects.json');
+const airlinesPath = resolve(root, 'src/content/airlines.json');
+const statusPath = resolve(root, 'src/content/data-status.json');
+const checkedAt = new Date().toISOString().slice(0, 10);
+
+const [products, airlines] = await Promise.all([readJson(productsPath), readJson(airlinesPath)]);
+
+const airlineSignals = {
+  klm: ['46', '28', '24', '8'],
+  transavia: ['40', '30', '24', '8'],
+  lufthansa: ['55', '40', '23', '8'],
+  'air-france': ['8'],
+  'brussels-airlines': ['55', '40', '23', '8'],
+};
+
+const sourceFetchWarnings = [];
+for (const airline of airlines) {
+  try {
+    const response = await fetch(airline.officialSource, {
+      headers: { 'user-agent': 'Paspoot source checker/1.0' },
+      redirect: 'follow',
+    });
+    const body = await response.text();
+    const signals = airlineSignals[airline.slug] ?? [];
+    const signalsPresent = signals.every((signal) => body.includes(signal));
+
+    if (!response.ok || !signalsPresent) {
+      sourceFetchWarnings.push({
+        name: airline.name,
+        reason: `Broncontrole gaf HTTP ${response.status}; verwachte waarden zijn niet allemaal teruggevonden.`,
+      });
+    }
+  } catch (error) {
+    sourceFetchWarnings.push({
+      name: airline.name,
+      reason: `Officiële bron kon niet worden opgehaald: ${messageOf(error)}`,
+    });
+  }
+}
+
+const refreshedProducts = [];
+const productsRequiringManualReview = [];
+for (const product of products) {
+  try {
+    const response = await fetch(product.sourceUrl, {
+      headers: { 'user-agent': 'Paspoot product sync/1.0' },
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const source = await response.json();
+    const availableVariant = source.variants?.find((variant) => variant.available);
+    const inStock = Boolean(availableVariant);
+    const priceCents = availableVariant?.price ?? source.price ?? null;
+    const image = normalizeImage(source.featured_image) ?? product.image;
+    const isComplete =
+      product.dimensions?.length === 3 &&
+      product.dimensions.every((value) => Number.isFinite(value) && value > 0) &&
+      Number.isFinite(product.weight) &&
+      product.weight > 0 &&
+      product.pets?.length > 0 &&
+      Boolean(image) &&
+      Number.isFinite(priceCents);
+
+    if (!isComplete) {
+      productsRequiringManualReview.push({
+        name: product.title,
+        reason: 'Afmetingen, leeggewicht, huisdiertype, afbeelding of prijs ontbreken.',
+      });
+    }
+
+    refreshedProducts.push({
+      ...product,
+      image,
+      priceCents,
+      price: priceCents === null ? null : formatPrice(priceCents),
+      inStock,
+      location: `Zoospot · ${inStock ? 'direct leverbaar' : 'uitverkocht'}`,
+      checkedAt,
+      manualReview: !isComplete,
+    });
+  } catch (error) {
+    refreshedProducts.push({ ...product, manualReview: true });
+    productsRequiringManualReview.push({
+      name: product.title,
+      reason: `Productfeed kon niet worden opgehaald: ${messageOf(error)}`,
+    });
+  }
+}
+
+const airlinesRequiringManualReview = airlines
+  .filter((airline) => airline.manualReview)
+  .map((airline) => ({
+    name: airline.name,
+    reason: airline.manualReviewReason,
+  }));
+const status = {
+  generatedAt: new Date().toISOString(),
+  airlinesReadyForAutomaticRecommendations: airlines
+    .filter((airline) => airline.automaticRecommendations && !airline.manualReview)
+    .map(({ name }) => name),
+  airlinesRequiringManualReview,
+  sourceFetchWarnings,
+  productsRequiringManualReview,
+  outOfStockProducts: refreshedProducts
+    .filter((product) => !product.inStock)
+    .map(({ title }) => title),
+};
+
+await Promise.all([writeJson(productsPath, refreshedProducts), writeJson(statusPath, status)]);
+
+console.log(JSON.stringify(status, null, 2));
+
+async function readJson(path) {
+  return JSON.parse(await readFile(path, 'utf8'));
+}
+
+async function writeJson(path, value) {
+  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+function normalizeImage(value) {
+  if (!value) return null;
+  return value.startsWith('//') ? `https:${value}` : value;
+}
+
+function formatPrice(cents) {
+  return new Intl.NumberFormat('nl-NL', {
+    style: 'currency',
+    currency: 'EUR',
+  }).format(cents / 100);
+}
+
+function messageOf(error) {
+  return error instanceof Error ? error.message : String(error);
+}

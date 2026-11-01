@@ -1,0 +1,16 @@
+{
+  "source": "/Users/lasselenting/Documents/ChatGPT/MAAISTRO",
+  "buildPath": "/private/tmp/maaistro-launch-review-lzrp25xe",
+  "canonicalOrigin": "https://www.maaistro.nl",
+  "scope": "isolated production build; not a deployment",
+  "finalBuildPassed": true,
+  "typecheckPassed": true,
+  "lintPassed": true,
+  "verifiedAt": "2026-10-25T15:59:54.802615+00:00",
+  "includes": [
+    "latest contact address",
+    "supplied favicon package",
+    "removed legacy routes",
+    "www as canonical origin, per user"
+  ]
+}

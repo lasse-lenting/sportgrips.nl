@@ -1,0 +1,4958 @@
+{
+  "Longlist zoekwoorden": [
+    {
+      "A1": "Zoekwoorden (schatting)",
+      "F1": "Vragen (schatting)",
+      "K1": "Uitgesloten (andere intentie / buiten scope)"
+    },
+    {
+      "A2": "Zoekwoord",
+      "B2": "Sport",
+      "C2": "KD",
+      "D2": "Volume",
+      "F2": "Vraag",
+      "G2": "Sport",
+      "H2": "KD",
+      "I2": "Volume",
+      "K2": "Zoekwoord",
+      "L2": "Reden",
+      "M2": "Volume"
+    },
+    {
+      "A3": "golfgrips",
+      "B3": "Golf",
+      "D3": "600",
+      "F3": "welke gripmaat tennis",
+      "G3": "Tennis",
+      "I3": "70",
+      "K3": "golf grip techniek",
+      "L3": "Techniek (hoe vasthouden)",
+      "M3": "150"
+    },
+    {
+      "A4": "golfgrips vervangen",
+      "B4": "Golf",
+      "D4": "500",
+      "F4": "hoe vaak golfgrips vervangen",
+      "G4": "Golf",
+      "I4": "50",
+      "K4": "interlocking grip",
+      "L4": "Techniek",
+      "M4": "90"
+    },
+    {
+      "A5": "overgrip",
+      "B5": "Tennis",
+      "D5": "400",
+      "F5": "wat is een overgrip",
+      "G5": "Algemeen",
+      "I5": "40",
+      "K5": "forehand grip",
+      "L5": "Techniek",
+      "M5": "70"
+    },
+    {
+      "A6": "overgrips",
+      "B6": "Tennis",
+      "D6": "300",
+      "F6": "hoe vaak overgrip vervangen",
+      "G6": "Tennis",
+      "I6": "30",
+      "K6": "tennis grip vasthouden",
+      "L6": "Techniek",
+      "M6": "30"
+    },
+    {
+      "A7": "padel grip",
+      "B7": "Padel",
+      "D7": "300",
+      "F7": "verschil basisgrip en overgrip",
+      "G7": "Algemeen",
+      "I7": "30",
+      "K7": "tafeltennis grip",
+      "L7": "Techniek (penhouder/shakehand)",
+      "M7": "40"
+    },
+    {
+      "A8": "tennisgrip",
+      "B8": "Tennis",
+      "D8": "300",
+      "F8": "welke maat golfgrip",
+      "G8": "Golf",
+      "I8": "30",
+      "K8": "grips",
+      "L8": "Te breed: fiets, gaming, techniek",
+      "M8": "600"
+    },
+    {
+      "A9": "golfgrip",
+      "B9": "Golf",
+      "D9": "250",
+      "F9": "hoe overgrip aanbrengen",
+      "G9": "Tennis",
+      "I9": "20",
+      "K9": "fiets grips",
+      "L9": "Buiten scope (geen racket-/sticksport)",
+      "M9": "200"
+    },
+    {
+      "A10": "hockey grip",
+      "B10": "Hockey",
+      "D10": "250",
+      "F10": "overgrip of basisgrip",
+      "G10": "Algemeen",
+      "I10": "20",
+      "K10": "grips fitness",
+      "L10": "Buiten scope (fitness)",
+      "M10": "40"
+    },
+    {
+      "A11": "tennis grip",
+      "B11": "Tennis",
+      "D11": "250",
+      "F11": "welke overgrip",
+      "G11": "Tennis",
+      "I11": "20"
+    },
+    {
+      "A12": "golf grips vervangen",
+      "B12": "Golf",
+      "D12": "200",
+      "F12": "hoe vaak hockeygrip vervangen",
+      "G12": "Hockey",
+      "I12": "10"
+    },
+    {
+      "A13": "golf pride grips",
+      "B13": "Golf",
+      "D13": "200",
+      "F13": "hoe vaak padel grip vervangen",
+      "G13": "Padel",
+      "I13": "10"
+    },
+    {
+      "A14": "overgrip tennis",
+      "B14": "Tennis",
+      "D14": "200",
+      "F14": "wat is een basisgrip",
+      "G14": "Algemeen",
+      "I14": "10"
+    },
+    {
+      "A15": "padel overgrip",
+      "B15": "Padel",
+      "D15": "200",
+      "F15": "welke grip kiezen",
+      "G15": "Algemeen",
+      "I15": "10"
+    },
+    {
+      "A16": "golfgrip vervangen",
+      "B16": "Golf",
+      "D16": "150",
+      "F16": "welke grip past bij mij",
+      "G16": "Algemeen",
+      "I16": "10"
+    },
+    {
+      "A17": "grip tennisracket",
+      "B17": "Tennis",
+      "D17": "150"
+    },
+    {
+      "A18": "gripmaat tennis",
+      "B18": "Tennis",
+      "D18": "150"
+    },
+    {
+      "A19": "gripmaat tennisracket",
+      "B19": "Tennis",
+      "D19": "150"
+    },
+    {
+      "A20": "hockeygrip",
+      "B20": "Hockey",
+      "D20": "150"
+    },
+    {
+      "A21": "putter grip",
+      "B21": "Golf",
+      "D21": "150"
+    },
+    {
+      "A22": "golf pride grip",
+      "B22": "Golf",
+      "D22": "100"
+    },
+    {
+      "A23": "tennisgrip vervangen",
+      "B23": "Tennis",
+      "D23": "100"
+    },
+    {
+      "A24": "badminton grip",
+      "B24": "Badminton",
+      "D24": "90"
+    },
+    {
+      "A25": "golf grips kopen",
+      "B25": "Golf",
+      "D25": "90"
+    },
+    {
+      "A26": "golfgrips vervangen kosten",
+      "B26": "Golf",
+      "D26": "90"
+    },
+    {
+      "A27": "grip tennisracket vervangen",
+      "B27": "Tennis",
+      "D27": "90"
+    },
+    {
+      "A28": "grips kopen",
+      "B28": "Algemeen",
+      "D28": "90"
+    },
+    {
+      "A29": "hockeystick grip",
+      "B29": "Hockey",
+      "D29": "90"
+    },
+    {
+      "A30": "overgrip aanbrengen",
+      "B30": "Tennis",
+      "D30": "90"
+    },
+    {
+      "A31": "overgrip padel",
+      "B31": "Padel",
+      "D31": "90"
+    },
+    {
+      "A32": "padel grip vervangen",
+      "B32": "Padel",
+      "D32": "90"
+    },
+    {
+      "A33": "padel grips",
+      "B33": "Padel",
+      "D33": "90"
+    },
+    {
+      "A34": "padelgrip",
+      "B34": "Padel",
+      "D34": "90"
+    },
+    {
+      "A35": "superstroke grip",
+      "B35": "Golf",
+      "D35": "90"
+    },
+    {
+      "A36": "tennis overgrip",
+      "B36": "Tennis",
+      "D36": "90"
+    },
+    {
+      "A37": "tennisgrips",
+      "B37": "Tennis",
+      "D37": "90"
+    },
+    {
+      "A38": "wilson overgrip",
+      "B38": "Tennis",
+      "D38": "90"
+    },
+    {
+      "A39": "babolat overgrip",
+      "B39": "Tennis",
+      "D39": "70"
+    },
+    {
+      "A40": "chamois grip",
+      "B40": "Hockey",
+      "D40": "70"
+    },
+    {
+      "A41": "golf pride tour velvet",
+      "B41": "Golf",
+      "D41": "70"
+    },
+    {
+      "A42": "golfgrips kopen",
+      "B42": "Golf",
+      "D42": "70"
+    },
+    {
+      "A43": "golfgrips laten vervangen",
+      "B43": "Golf",
+      "D43": "70"
+    },
+    {
+      "A44": "golfgrips zelf vervangen",
+      "B44": "Golf",
+      "D44": "70"
+    },
+    {
+      "A45": "grip hockeystick",
+      "B45": "Hockey",
+      "D45": "70"
+    },
+    {
+      "A46": "hockey grip vervangen",
+      "B46": "Hockey",
+      "D46": "70"
+    },
+    {
+      "A47": "hockeygrip vervangen",
+      "B47": "Hockey",
+      "D47": "70"
+    },
+    {
+      "A48": "puttergrip",
+      "B48": "Golf",
+      "D48": "70"
+    },
+    {
+      "A49": "sportgrips",
+      "B49": "Algemeen",
+      "D49": "70"
+    },
+    {
+      "A50": "tennisracket grip",
+      "B50": "Tennis",
+      "D50": "70"
+    },
+    {
+      "A51": "tourna grip",
+      "B51": "Tennis",
+      "D51": "70"
+    },
+    {
+      "A52": "wilson pro overgrip",
+      "B52": "Tennis",
+      "D52": "70"
+    },
+    {
+      "A53": "golf pride mcc",
+      "B53": "Golf",
+      "D53": "60"
+    },
+    {
+      "A54": "badminton overgrip",
+      "B54": "Badminton",
+      "D54": "50"
+    },
+    {
+      "A55": "basisgrip",
+      "B55": "Tennis",
+      "D55": "50"
+    },
+    {
+      "A56": "beste golfgrips",
+      "B56": "Golf",
+      "D56": "50"
+    },
+    {
+      "A57": "beste overgrip tennis",
+      "B57": "Tennis",
+      "D57": "50"
+    },
+    {
+      "A58": "chamois grip hockey",
+      "B58": "Hockey",
+      "D58": "50"
+    },
+    {
+      "A59": "golfgrip maat",
+      "B59": "Golf",
+      "D59": "50"
+    },
+    {
+      "A60": "hockeygrips",
+      "B60": "Hockey",
+      "D60": "50"
+    },
+    {
+      "A61": "midsize golfgrips",
+      "B61": "Golf",
+      "D61": "50"
+    },
+    {
+      "A62": "overgrip kopen",
+      "B62": "Tennis",
+      "D62": "50"
+    },
+    {
+      "A63": "padel overgrip aanbrengen",
+      "B63": "Padel",
+      "D63": "50"
+    },
+    {
+      "A64": "putter grips",
+      "B64": "Golf",
+      "D64": "50"
+    },
+    {
+      "A65": "squash grip",
+      "B65": "Squash",
+      "D65": "50"
+    },
+    {
+      "A66": "superstroke putter grip",
+      "B66": "Golf",
+      "D66": "50"
+    },
+    {
+      "A67": "tennis gripmaat",
+      "B67": "Tennis",
+      "D67": "50"
+    },
+    {
+      "A68": "babolat grip",
+      "B68": "Tennis",
+      "D68": "40"
+    },
+    {
+      "A69": "badminton grip vervangen",
+      "B69": "Badminton",
+      "D69": "40"
+    },
+    {
+      "A70": "basisgrip tennis",
+      "B70": "Tennis",
+      "D70": "40"
+    },
+    {
+      "A71": "beste overgrip",
+      "B71": "Tennis",
+      "D71": "40"
+    },
+    {
+      "A72": "beste padel grip",
+      "B72": "Padel",
+      "D72": "40"
+    },
+    {
+      "A73": "dikke golfgrips",
+      "B73": "Golf",
+      "D73": "40"
+    },
+    {
+      "A74": "grip badmintonracket",
+      "B74": "Badminton",
+      "D74": "40"
+    },
+    {
+      "A75": "grip hockeystick vervangen",
+      "B75": "Hockey",
+      "D75": "40"
+    },
+    {
+      "A76": "grip kopen",
+      "B76": "Algemeen",
+      "D76": "40"
+    },
+    {
+      "A77": "grip padelracket",
+      "B77": "Padel",
+      "D77": "40"
+    },
+    {
+      "A78": "gripmaat meten tennis",
+      "B78": "Tennis",
+      "D78": "40"
+    },
+    {
+      "A79": "head overgrip",
+      "B79": "Tennis",
+      "D79": "40"
+    },
+    {
+      "A80": "lamkin grips",
+      "B80": "Golf",
+      "D80": "40"
+    },
+    {
+      "A81": "midsize grips",
+      "B81": "Golf",
+      "D81": "40"
+    },
+    {
+      "A82": "overgrip wikkelen",
+      "B82": "Tennis",
+      "D82": "40"
+    },
+    {
+      "A83": "overgrips tennis",
+      "B83": "Tennis",
+      "D83": "40"
+    },
+    {
+      "A84": "padel grip dikker maken",
+      "B84": "Padel",
+      "D84": "40"
+    },
+    {
+      "A85": "putter grip vervangen",
+      "B85": "Golf",
+      "D85": "40"
+    },
+    {
+      "A86": "wilson grip",
+      "B86": "Tennis",
+      "D86": "40"
+    },
+    {
+      "A87": "yonex super grap",
+      "B87": "Tennis",
+      "D87": "40"
+    },
+    {
+      "A88": "adidas padel overgrip",
+      "B88": "Padel",
+      "D88": "30"
+    },
+    {
+      "A89": "badmintongrip",
+      "B89": "Badminton",
+      "D89": "30"
+    },
+    {
+      "A90": "basisgrip vervangen",
+      "B90": "Tennis",
+      "D90": "30"
+    },
+    {
+      "A91": "beste padel overgrip",
+      "B91": "Padel",
+      "D91": "30"
+    },
+    {
+      "A92": "beste putter grip",
+      "B92": "Golf",
+      "D92": "30"
+    },
+    {
+      "A93": "beste tennisgrip",
+      "B93": "Tennis",
+      "D93": "30"
+    },
+    {
+      "A94": "bullpadel overgrip",
+      "B94": "Padel",
+      "D94": "30"
+    },
+    {
+      "A95": "chamois grip wikkelen",
+      "B95": "Hockey",
+      "D95": "30"
+    },
+    {
+      "A96": "dikke putter grip",
+      "B96": "Golf",
+      "D96": "30"
+    },
+    {
+      "A97": "goedkope golfgrips",
+      "B97": "Golf",
+      "D97": "30"
+    },
+    {
+      "A98": "golf pride align",
+      "B98": "Golf",
+      "D98": "30"
+    },
+    {
+      "A99": "golf pride cp2",
+      "B99": "Golf",
+      "D99": "30"
+    },
+    {
+      "A100": "golfgrips aanbieding",
+      "B100": "Golf",
+      "D100": "30"
+    },
+    {
+      "A101": "golfgrips dames",
+      "B101": "Golf",
+      "D101": "30"
+    },
+    {
+      "A102": "golfgrips maten",
+      "B102": "Golf",
+      "D102": "30"
+    },
+    {
+      "A103": "golfgrips schoonmaken",
+      "B103": "Algemeen",
+      "D103": "30"
+    },
+    {
+      "A104": "golfgrips vervangen decathlon",
+      "B104": "Golf",
+      "D104": "30"
+    },
+    {
+      "A105": "grip badmintonracket vervangen",
+      "B105": "Badminton",
+      "D105": "30"
+    },
+    {
+      "A106": "grip om tennisracket wikkelen",
+      "B106": "Tennis",
+      "D106": "30"
+    },
+    {
+      "A107": "hockey chamois grip",
+      "B107": "Hockey",
+      "D107": "30"
+    },
+    {
+      "A108": "hockeygrip wikkelen",
+      "B108": "Hockey",
+      "D108": "30"
+    },
+    {
+      "A109": "ijshockey tape",
+      "B109": "Overig",
+      "D109": "30"
+    },
+    {
+      "A110": "indian maharadja grip",
+      "B110": "Hockey",
+      "D110": "30"
+    },
+    {
+      "A111": "jumbo golfgrips",
+      "B111": "Golf",
+      "D111": "30"
+    },
+    {
+      "A112": "overgrip padel aanbrengen",
+      "B112": "Padel",
+      "D112": "30"
+    },
+    {
+      "A113": "overgrips kopen",
+      "B113": "Tennis",
+      "D113": "30"
+    },
+    {
+      "A114": "oversize golfgrips",
+      "B114": "Golf",
+      "D114": "30"
+    },
+    {
+      "A115": "padel grip kopen",
+      "B115": "Padel",
+      "D115": "30"
+    },
+    {
+      "A116": "sport grips",
+      "B116": "Algemeen",
+      "D116": "30"
+    },
+    {
+      "A117": "tenniselleboog grip",
+      "B117": "Tennis",
+      "D117": "30"
+    },
+    {
+      "A118": "tennisgrip kopen",
+      "B118": "Tennis",
+      "D118": "30"
+    },
+    {
+      "A119": "tennisgrip wikkelen",
+      "B119": "Tennis",
+      "D119": "30"
+    },
+    {
+      "A120": "tennisracket grip dikker maken",
+      "B120": "Tennis",
+      "D120": "30"
+    },
+    {
+      "A121": "winn grips",
+      "B121": "Golf",
+      "D121": "30"
+    },
+    {
+      "A122": "yonex badminton grip",
+      "B122": "Badminton",
+      "D122": "30"
+    },
+    {
+      "A123": "yonex overgrip",
+      "B123": "Tennis",
+      "D123": "30"
+    },
+    {
+      "A124": "adidas hockey grip",
+      "B124": "Hockey",
+      "D124": "20"
+    },
+    {
+      "A125": "babolat vs original",
+      "B125": "Tennis",
+      "D125": "20"
+    },
+    {
+      "A126": "badminton grip wikkelen",
+      "B126": "Badminton",
+      "D126": "20"
+    },
+    {
+      "A127": "badstof grip",
+      "B127": "Badminton",
+      "D127": "20"
+    },
+    {
+      "A128": "basisgrip tennisracket",
+      "B128": "Tennis",
+      "D128": "20"
+    },
+    {
+      "A129": "beste hockeygrip",
+      "B129": "Hockey",
+      "D129": "20"
+    },
+    {
+      "A130": "bullpadel grip",
+      "B130": "Padel",
+      "D130": "20"
+    },
+    {
+      "A131": "chamois hockeygrip",
+      "B131": "Hockey",
+      "D131": "20"
+    },
+    {
+      "A132": "cord golfgrips",
+      "B132": "Golf",
+      "D132": "20"
+    },
+    {
+      "A133": "dikke hockeygrip",
+      "B133": "Hockey",
+      "D133": "20"
+    },
+    {
+      "A134": "droge overgrip",
+      "B134": "Tennis",
+      "D134": "20"
+    },
+    {
+      "A135": "golf grip kopen",
+      "B135": "Golf",
+      "D135": "20"
+    },
+    {
+      "A136": "golf pride z grip",
+      "B136": "Golf",
+      "D136": "20"
+    },
+    {
+      "A137": "golfgrips artrose",
+      "B137": "Golf",
+      "D137": "20"
+    },
+    {
+      "A138": "golfgrips decathlon",
+      "B138": "Golf",
+      "D138": "20"
+    },
+    {
+      "A139": "golfgrips set",
+      "B139": "Golf",
+      "D139": "20"
+    },
+    {
+      "A140": "golfgrips vervangen set",
+      "B140": "Golf",
+      "D140": "20"
+    },
+    {
+      "A141": "golfgrips verwijderen",
+      "B141": "Golf",
+      "D141": "20"
+    },
+    {
+      "A142": "grays grip",
+      "B142": "Hockey",
+      "D142": "20"
+    },
+    {
+      "A143": "grip plakkerig maken",
+      "B143": "Algemeen",
+      "D143": "20"
+    },
+    {
+      "A144": "grip squashracket",
+      "B144": "Squash",
+      "D144": "20"
+    },
+    {
+      "A145": "grip zweethanden",
+      "B145": "Algemeen",
+      "D145": "20"
+    },
+    {
+      "A146": "gripmaat l2 of l3",
+      "B146": "Tennis",
+      "D146": "20"
+    },
+    {
+      "A147": "gripmaat tennisracket dikker maken",
+      "B147": "Tennis",
+      "D147": "20"
+    },
+    {
+      "A148": "grips schoonmaken",
+      "B148": "Algemeen",
+      "D148": "20"
+    },
+    {
+      "A149": "head padel overgrip",
+      "B149": "Padel",
+      "D149": "20"
+    },
+    {
+      "A150": "head prime tour overgrip",
+      "B150": "Tennis",
+      "D150": "20"
+    },
+    {
+      "A151": "hockeygrip kopen",
+      "B151": "Hockey",
+      "D151": "20"
+    },
+    {
+      "A152": "hockeystick grip omwikkelen",
+      "B152": "Hockey",
+      "D152": "20"
+    },
+    {
+      "A153": "jumbo grips golf",
+      "B153": "Golf",
+      "D153": "20"
+    },
+    {
+      "A154": "karakal grip",
+      "B154": "Squash",
+      "D154": "20"
+    },
+    {
+      "A155": "lamkin crossline",
+      "B155": "Golf",
+      "D155": "20"
+    },
+    {
+      "A156": "lamkin golfgrips",
+      "B156": "Golf",
+      "D156": "20"
+    },
+    {
+      "A157": "maat golfgrip bepalen",
+      "B157": "Golf",
+      "D157": "20"
+    },
+    {
+      "A158": "midsize grip golf",
+      "B158": "Golf",
+      "D158": "20"
+    },
+    {
+      "A159": "nox overgrip",
+      "B159": "Padel",
+      "D159": "20"
+    },
+    {
+      "A160": "overgrip zweethanden",
+      "B160": "Algemeen",
+      "D160": "20"
+    },
+    {
+      "A161": "padel basisgrip",
+      "B161": "Padel",
+      "D161": "20"
+    },
+    {
+      "A162": "padel grip anti zweet",
+      "B162": "Padel",
+      "D162": "20"
+    },
+    {
+      "A163": "padel grip wikkelen",
+      "B163": "Padel",
+      "D163": "20"
+    },
+    {
+      "A164": "padel overgrips kopen",
+      "B164": "Padel",
+      "D164": "20"
+    },
+    {
+      "A165": "padelracket grip vervangen",
+      "B165": "Padel",
+      "D165": "20"
+    },
+    {
+      "A166": "plakkerige overgrip",
+      "B166": "Tennis",
+      "D166": "20"
+    },
+    {
+      "A167": "putter grip kopen",
+      "B167": "Golf",
+      "D167": "20"
+    },
+    {
+      "A168": "sportgrip",
+      "B168": "Algemeen",
+      "D168": "20"
+    },
+    {
+      "A169": "squash grip vervangen",
+      "B169": "Squash",
+      "D169": "20"
+    },
+    {
+      "A170": "squash overgrip",
+      "B170": "Squash",
+      "D170": "20"
+    },
+    {
+      "A171": "squashgrip",
+      "B171": "Squash",
+      "D171": "20"
+    },
+    {
+      "A172": "tape golfgrips",
+      "B172": "Golf",
+      "D172": "20"
+    },
+    {
+      "A173": "tennis basisgrip",
+      "B173": "Tennis",
+      "D173": "20"
+    },
+    {
+      "A174": "tennis grips kopen",
+      "B174": "Tennis",
+      "D174": "20"
+    },
+    {
+      "A175": "tenniselleboog gripmaat",
+      "B175": "Tennis",
+      "D175": "20"
+    },
+    {
+      "A176": "tourna overgrip",
+      "B176": "Tennis",
+      "D176": "20"
+    },
+    {
+      "A177": "undersize golfgrips",
+      "B177": "Golf",
+      "D177": "20"
+    },
+    {
+      "A178": "zweethanden tennis",
+      "B178": "Algemeen",
+      "D178": "20"
+    },
+    {
+      "A179": "adidas padel grip",
+      "B179": "Padel",
+      "D179": "10"
+    },
+    {
+      "A180": "babolat padel grip",
+      "B180": "Padel",
+      "D180": "10"
+    },
+    {
+      "A181": "badstof grip aanbrengen",
+      "B181": "Badminton",
+      "D181": "10"
+    },
+    {
+      "A182": "basisgrip padel",
+      "B182": "Padel",
+      "D182": "10"
+    },
+    {
+      "A183": "beste badminton grip",
+      "B183": "Badminton",
+      "D183": "10"
+    },
+    {
+      "A184": "beste grip bij zweethanden",
+      "B184": "Algemeen",
+      "D184": "10"
+    },
+    {
+      "A185": "chamois of rubber grip hockey",
+      "B185": "Hockey",
+      "D185": "10"
+    },
+    {
+      "A186": "dunne golfgrips",
+      "B186": "Golf",
+      "D186": "10"
+    },
+    {
+      "A187": "dunne overgrip",
+      "B187": "Tennis",
+      "D187": "10"
+    },
+    {
+      "A188": "gladde grip",
+      "B188": "Algemeen",
+      "D188": "10"
+    },
+    {
+      "A189": "golf pride vs lamkin",
+      "B189": "Golf",
+      "D189": "10"
+    },
+    {
+      "A190": "golfgrips nat weer",
+      "B190": "Golf",
+      "D190": "10"
+    },
+    {
+      "A191": "grip weer stroef maken",
+      "B191": "Algemeen",
+      "D191": "10"
+    },
+    {
+      "A192": "grips voor sport",
+      "B192": "Algemeen",
+      "D192": "10"
+    },
+    {
+      "A193": "handdoekgrip badminton",
+      "B193": "Badminton",
+      "D193": "10"
+    },
+    {
+      "A194": "hockeygrip schoonmaken",
+      "B194": "Algemeen",
+      "D194": "10"
+    },
+    {
+      "A195": "iomic grips",
+      "B195": "Golf",
+      "D195": "10"
+    },
+    {
+      "A196": "leren grip tennis",
+      "B196": "Tennis",
+      "D196": "10"
+    },
+    {
+      "A197": "overgrip over basisgrip",
+      "B197": "Algemeen",
+      "D197": "10"
+    },
+    {
+      "A198": "pickleball grip",
+      "B198": "Overig",
+      "D198": "10"
+    },
+    {
+      "A199": "racketgrip",
+      "B199": "Algemeen",
+      "D199": "10"
+    },
+    {
+      "A200": "rubber golfgrips",
+      "B200": "Golf",
+      "D200": "10"
+    },
+    {
+      "A201": "solinco overgrip",
+      "B201": "Tennis",
+      "D201": "10"
+    },
+    {
+      "A202": "standaard golfgrip",
+      "B202": "Golf",
+      "D202": "10"
+    },
+    {
+      "A203": "tenniselleboog racket grip",
+      "B203": "Tennis",
+      "D203": "10"
+    },
+    {
+      "A204": "tennisgrip schoonmaken",
+      "B204": "Algemeen",
+      "D204": "10"
+    },
+    {
+      "A205": "winn golfgrips",
+      "B205": "Golf",
+      "D205": "10"
+    },
+    {
+      "A207": "Totaal volume zoekwoorden",
+      "D207": "11390",
+      "F207": "Totaal volume vragen",
+      "I207": "360"
+    },
+    {
+      "A209": "Legenda"
+    },
+    {
+      "A210": "Geel gemarkeerde volumes zijn schattingen (Claude, nov. 2026), geen Ahrefs-data. Valideer met Ahrefs of Keyword Planner (NL) en overschrijf de gele cellen: alle andere tabbladen rekenen automatisch mee."
+    },
+    {
+      "A211": "KD is leeg gelaten: invullen na validatie. Volumes afgerond op de buckets die Ahrefs ook gebruikt (10, 20, 30 ... 100, 150, 200 ...)."
+    },
+    {
+      "A212": "Scope: Nederlands, racket- en sticksporten. Engelstalige varianten uitgesloten; losgeschreven Nederlandse varianten (bijv. 'golf grips vervangen', 'tennis grip') wel meegenomen."
+    }
+  ],
+  "Gecategoriseerd": [
+    {
+      "A1": "Onderwerp clusters",
+      "B1": "Deelonderwerpen",
+      "C1": "Volume",
+      "D1": "Sport",
+      "E1": "Bestaande pagina?",
+      "F1": "Fase",
+      "G1": "Soort pagina"
+    },
+    {
+      "A2": "Welke hoofdonderwerpen komen naar voren uit de analyse?",
+      "B2": "Welke sub-onderwerpen kunnen hierbij bedacht worden?",
+      "E2": "JA/NEE/n.t.b.",
+      "F2": "S/T/D/C",
+      "G2": "Wat voor een pagina wordt het?"
+    },
+    {
+      "A4": "Sportgrips (algemeen)"
+    },
+    {
+      "B5": "grips kopen",
+      "C5": "90",
+      "D5": "Algemeen",
+      "E5": "n.t.b.",
+      "F5": "T/D",
+      "G5": "Homepagina"
+    },
+    {
+      "B6": "sportgrips",
+      "C6": "70",
+      "D6": "Algemeen",
+      "E6": "n.t.b.",
+      "F6": "T/D",
+      "G6": "Homepagina"
+    },
+    {
+      "B7": "grip kopen",
+      "C7": "40",
+      "D7": "Algemeen",
+      "E7": "n.t.b.",
+      "F7": "T/D",
+      "G7": "Homepagina"
+    },
+    {
+      "B8": "sport grips",
+      "C8": "30",
+      "D8": "Algemeen",
+      "E8": "n.t.b.",
+      "F8": "T/D",
+      "G8": "Homepagina"
+    },
+    {
+      "B9": "sportgrip",
+      "C9": "20",
+      "D9": "Algemeen",
+      "E9": "n.t.b.",
+      "F9": "T/D",
+      "G9": "Homepagina"
+    },
+    {
+      "B10": "grips voor sport",
+      "C10": "10",
+      "D10": "Algemeen",
+      "E10": "n.t.b.",
+      "F10": "T/D",
+      "G10": "Homepagina"
+    },
+    {
+      "B11": "racketgrip",
+      "C11": "10",
+      "D11": "Algemeen",
+      "E11": "n.t.b.",
+      "F11": "T/D",
+      "G11": "Homepagina"
+    },
+    {
+      "A13": "Golfgrips (algemeen)"
+    },
+    {
+      "B14": "golfgrips",
+      "C14": "600",
+      "D14": "Golf",
+      "E14": "n.t.b.",
+      "F14": "T/D",
+      "G14": "Hub: vergelijkend"
+    },
+    {
+      "B15": "golfgrip",
+      "C15": "250",
+      "D15": "Golf",
+      "E15": "n.t.b.",
+      "F15": "T/D",
+      "G15": "Hub: vergelijkend"
+    },
+    {
+      "B16": "golf grips kopen",
+      "C16": "90",
+      "D16": "Golf",
+      "E16": "n.t.b.",
+      "F16": "T/D",
+      "G16": "Hub: vergelijkend"
+    },
+    {
+      "B17": "golfgrips kopen",
+      "C17": "70",
+      "D17": "Golf",
+      "E17": "n.t.b.",
+      "F17": "T/D",
+      "G17": "Hub: vergelijkend"
+    },
+    {
+      "B18": "beste golfgrips",
+      "C18": "50",
+      "D18": "Golf",
+      "E18": "n.t.b.",
+      "F18": "T/D",
+      "G18": "Hub: vergelijkend"
+    },
+    {
+      "B19": "golfgrips aanbieding",
+      "C19": "30",
+      "D19": "Golf",
+      "E19": "n.t.b.",
+      "F19": "T/D",
+      "G19": "Hub: vergelijkend"
+    },
+    {
+      "B20": "goedkope golfgrips",
+      "C20": "30",
+      "D20": "Golf",
+      "E20": "n.t.b.",
+      "F20": "T/D",
+      "G20": "Hub: vergelijkend"
+    },
+    {
+      "B21": "winn grips",
+      "C21": "30",
+      "D21": "Golf",
+      "E21": "n.t.b.",
+      "F21": "T/D",
+      "G21": "Hub: vergelijkend"
+    },
+    {
+      "B22": "golf grip kopen",
+      "C22": "20",
+      "D22": "Golf",
+      "E22": "n.t.b.",
+      "F22": "T/D",
+      "G22": "Hub: vergelijkend"
+    },
+    {
+      "B23": "golfgrips set",
+      "C23": "20",
+      "D23": "Golf",
+      "E23": "n.t.b.",
+      "F23": "T/D",
+      "G23": "Hub: vergelijkend"
+    },
+    {
+      "B24": "cord golfgrips",
+      "C24": "20",
+      "D24": "Golf",
+      "E24": "n.t.b.",
+      "F24": "T/D",
+      "G24": "Hub: vergelijkend"
+    },
+    {
+      "B25": "golfgrips decathlon",
+      "C25": "20",
+      "D25": "Golf",
+      "E25": "n.t.b.",
+      "F25": "T/D",
+      "G25": "Hub: vergelijkend"
+    },
+    {
+      "B26": "rubber golfgrips",
+      "C26": "10",
+      "D26": "Golf",
+      "E26": "n.t.b.",
+      "F26": "T/D",
+      "G26": "Hub: vergelijkend"
+    },
+    {
+      "B27": "golfgrips nat weer",
+      "C27": "10",
+      "D27": "Golf",
+      "E27": "n.t.b.",
+      "F27": "T/D",
+      "G27": "Hub: vergelijkend"
+    },
+    {
+      "B28": "winn golfgrips",
+      "C28": "10",
+      "D28": "Golf",
+      "E28": "n.t.b.",
+      "F28": "T/D",
+      "G28": "Hub: vergelijkend"
+    },
+    {
+      "B29": "iomic grips",
+      "C29": "10",
+      "D29": "Golf",
+      "E29": "n.t.b.",
+      "F29": "T/D",
+      "G29": "Hub: vergelijkend"
+    },
+    {
+      "A31": "Golfgrips merken"
+    },
+    {
+      "B32": "golf pride grips",
+      "C32": "200",
+      "D32": "Golf",
+      "E32": "n.t.b.",
+      "F32": "T/D",
+      "G32": "Merkpagina: vergelijkend"
+    },
+    {
+      "B33": "golf pride grip",
+      "C33": "100",
+      "D33": "Golf",
+      "E33": "n.t.b.",
+      "F33": "T/D",
+      "G33": "Merkpagina: vergelijkend"
+    },
+    {
+      "B34": "superstroke grip",
+      "C34": "90",
+      "D34": "Golf",
+      "E34": "n.t.b.",
+      "F34": "T/D",
+      "G34": "Merkpagina: vergelijkend"
+    },
+    {
+      "B35": "golf pride tour velvet",
+      "C35": "70",
+      "D35": "Golf",
+      "E35": "n.t.b.",
+      "F35": "T/D",
+      "G35": "Merkpagina: vergelijkend"
+    },
+    {
+      "B36": "golf pride mcc",
+      "C36": "60",
+      "D36": "Golf",
+      "E36": "n.t.b.",
+      "F36": "T/D",
+      "G36": "Merkpagina: vergelijkend"
+    },
+    {
+      "B37": "superstroke putter grip",
+      "C37": "50",
+      "D37": "Golf",
+      "E37": "n.t.b.",
+      "F37": "T/D",
+      "G37": "Merkpagina: vergelijkend"
+    },
+    {
+      "B38": "lamkin grips",
+      "C38": "40",
+      "D38": "Golf",
+      "E38": "n.t.b.",
+      "F38": "T/D",
+      "G38": "Merkpagina: vergelijkend"
+    },
+    {
+      "B39": "golf pride cp2",
+      "C39": "30",
+      "D39": "Golf",
+      "E39": "n.t.b.",
+      "F39": "T/D",
+      "G39": "Merkpagina: vergelijkend"
+    },
+    {
+      "B40": "golf pride align",
+      "C40": "30",
+      "D40": "Golf",
+      "E40": "n.t.b.",
+      "F40": "T/D",
+      "G40": "Merkpagina: vergelijkend"
+    },
+    {
+      "B41": "golf pride z grip",
+      "C41": "20",
+      "D41": "Golf",
+      "E41": "n.t.b.",
+      "F41": "T/D",
+      "G41": "Merkpagina: vergelijkend"
+    },
+    {
+      "B42": "lamkin golfgrips",
+      "C42": "20",
+      "D42": "Golf",
+      "E42": "n.t.b.",
+      "F42": "T/D",
+      "G42": "Merkpagina: vergelijkend"
+    },
+    {
+      "B43": "lamkin crossline",
+      "C43": "20",
+      "D43": "Golf",
+      "E43": "n.t.b.",
+      "F43": "T/D",
+      "G43": "Merkpagina: vergelijkend"
+    },
+    {
+      "A45": "Puttergrips"
+    },
+    {
+      "B46": "putter grip",
+      "C46": "150",
+      "D46": "Golf",
+      "E46": "n.t.b.",
+      "F46": "T/D",
+      "G46": "Submenu: vergelijkend"
+    },
+    {
+      "B47": "puttergrip",
+      "C47": "70",
+      "D47": "Golf",
+      "E47": "n.t.b.",
+      "F47": "T/D",
+      "G47": "Submenu: vergelijkend"
+    },
+    {
+      "B48": "putter grips",
+      "C48": "50",
+      "D48": "Golf",
+      "E48": "n.t.b.",
+      "F48": "T/D",
+      "G48": "Submenu: vergelijkend"
+    },
+    {
+      "B49": "dikke putter grip",
+      "C49": "30",
+      "D49": "Golf",
+      "E49": "n.t.b.",
+      "F49": "T/D",
+      "G49": "Submenu: vergelijkend"
+    },
+    {
+      "B50": "beste putter grip",
+      "C50": "30",
+      "D50": "Golf",
+      "E50": "n.t.b.",
+      "F50": "T/D",
+      "G50": "Submenu: vergelijkend"
+    },
+    {
+      "B51": "putter grip kopen",
+      "C51": "20",
+      "D51": "Golf",
+      "E51": "n.t.b.",
+      "F51": "T/D",
+      "G51": "Submenu: vergelijkend"
+    },
+    {
+      "A53": "Golfgrips maat"
+    },
+    {
+      "B54": "golfgrip maat",
+      "C54": "50",
+      "D54": "Golf",
+      "E54": "n.t.b.",
+      "F54": "T",
+      "G54": "Kennis + vergelijkend"
+    },
+    {
+      "B55": "midsize golfgrips",
+      "C55": "50",
+      "D55": "Golf",
+      "E55": "n.t.b.",
+      "F55": "T/D",
+      "G55": "Submenu: vergelijkend"
+    },
+    {
+      "B56": "midsize grips",
+      "C56": "40",
+      "D56": "Golf",
+      "E56": "n.t.b.",
+      "F56": "T/D",
+      "G56": "Submenu: vergelijkend"
+    },
+    {
+      "B57": "dikke golfgrips",
+      "C57": "40",
+      "D57": "Golf",
+      "E57": "n.t.b.",
+      "F57": "T/D",
+      "G57": "Submenu: vergelijkend"
+    },
+    {
+      "B58": "welke maat golfgrip",
+      "C58": "30",
+      "D58": "Golf",
+      "E58": "n.t.b.",
+      "F58": "T",
+      "G58": "Kennis + vergelijkend"
+    },
+    {
+      "B59": "golfgrips maten",
+      "C59": "30",
+      "D59": "Golf",
+      "E59": "n.t.b.",
+      "F59": "T",
+      "G59": "Kennis + vergelijkend"
+    },
+    {
+      "B60": "golfgrips dames",
+      "C60": "30",
+      "D60": "Golf",
+      "E60": "n.t.b.",
+      "F60": "T/D",
+      "G60": "Submenu: vergelijkend"
+    },
+    {
+      "B61": "oversize golfgrips",
+      "C61": "30",
+      "D61": "Golf",
+      "E61": "n.t.b.",
+      "F61": "T/D",
+      "G61": "Submenu: vergelijkend"
+    },
+    {
+      "B62": "jumbo golfgrips",
+      "C62": "30",
+      "D62": "Golf",
+      "E62": "n.t.b.",
+      "F62": "T/D",
+      "G62": "Submenu: vergelijkend"
+    },
+    {
+      "B63": "maat golfgrip bepalen",
+      "C63": "20",
+      "D63": "Golf",
+      "E63": "n.t.b.",
+      "F63": "T",
+      "G63": "Kennis + vergelijkend"
+    },
+    {
+      "B64": "undersize golfgrips",
+      "C64": "20",
+      "D64": "Golf",
+      "E64": "n.t.b.",
+      "F64": "T/D",
+      "G64": "Submenu: vergelijkend"
+    },
+    {
+      "B65": "midsize grip golf",
+      "C65": "20",
+      "D65": "Golf",
+      "E65": "n.t.b.",
+      "F65": "T/D",
+      "G65": "Submenu: vergelijkend"
+    },
+    {
+      "B66": "jumbo grips golf",
+      "C66": "20",
+      "D66": "Golf",
+      "E66": "n.t.b.",
+      "F66": "T/D",
+      "G66": "Submenu: vergelijkend"
+    },
+    {
+      "B67": "golfgrips artrose",
+      "C67": "20",
+      "D67": "Golf",
+      "E67": "n.t.b.",
+      "F67": "T/D",
+      "G67": "Submenu: vergelijkend"
+    },
+    {
+      "B68": "standaard golfgrip",
+      "C68": "10",
+      "D68": "Golf",
+      "E68": "n.t.b.",
+      "F68": "T",
+      "G68": "Kennis + vergelijkend"
+    },
+    {
+      "B69": "dunne golfgrips",
+      "C69": "10",
+      "D69": "Golf",
+      "E69": "n.t.b.",
+      "F69": "T/D",
+      "G69": "Submenu: vergelijkend"
+    },
+    {
+      "A71": "Golfgrips vervangen"
+    },
+    {
+      "B72": "golfgrips vervangen",
+      "C72": "500",
+      "D72": "Golf",
+      "E72": "n.t.b.",
+      "F72": "T/D",
+      "G72": "Kennis + vergelijkend"
+    },
+    {
+      "B73": "golf grips vervangen",
+      "C73": "200",
+      "D73": "Golf",
+      "E73": "n.t.b.",
+      "F73": "T/D",
+      "G73": "Kennis + vergelijkend"
+    },
+    {
+      "B74": "golfgrip vervangen",
+      "C74": "150",
+      "D74": "Golf",
+      "E74": "n.t.b.",
+      "F74": "T/D",
+      "G74": "Kennis + vergelijkend"
+    },
+    {
+      "B75": "golfgrips vervangen kosten",
+      "C75": "90",
+      "D75": "Golf",
+      "E75": "n.t.b.",
+      "F75": "T/D",
+      "G75": "Kennis + vergelijkend"
+    },
+    {
+      "B76": "golfgrips zelf vervangen",
+      "C76": "70",
+      "D76": "Golf",
+      "E76": "n.t.b.",
+      "F76": "T/D",
+      "G76": "Kennis + vergelijkend"
+    },
+    {
+      "B77": "golfgrips laten vervangen",
+      "C77": "70",
+      "D77": "Golf",
+      "E77": "n.t.b.",
+      "F77": "T/D",
+      "G77": "Kennis + vergelijkend"
+    },
+    {
+      "B78": "hoe vaak golfgrips vervangen",
+      "C78": "50",
+      "D78": "Golf",
+      "E78": "n.t.b.",
+      "F78": "T/D",
+      "G78": "Kennis + vergelijkend"
+    },
+    {
+      "B79": "putter grip vervangen",
+      "C79": "40",
+      "D79": "Golf",
+      "E79": "n.t.b.",
+      "F79": "T/D",
+      "G79": "Kennis + vergelijkend"
+    },
+    {
+      "B80": "golfgrips vervangen decathlon",
+      "C80": "30",
+      "D80": "Golf",
+      "E80": "n.t.b.",
+      "F80": "T/D",
+      "G80": "Kennis + vergelijkend"
+    },
+    {
+      "B81": "tape golfgrips",
+      "C81": "20",
+      "D81": "Golf",
+      "E81": "n.t.b.",
+      "F81": "T/D",
+      "G81": "Kennis + vergelijkend"
+    },
+    {
+      "B82": "golfgrips verwijderen",
+      "C82": "20",
+      "D82": "Golf",
+      "E82": "n.t.b.",
+      "F82": "T/D",
+      "G82": "Kennis + vergelijkend"
+    },
+    {
+      "B83": "golfgrips vervangen set",
+      "C83": "20",
+      "D83": "Golf",
+      "E83": "n.t.b.",
+      "F83": "T/D",
+      "G83": "Kennis + vergelijkend"
+    },
+    {
+      "A85": "Tennisgrips (algemeen)"
+    },
+    {
+      "B86": "tennisgrip",
+      "C86": "300",
+      "D86": "Tennis",
+      "E86": "n.t.b.",
+      "F86": "T/D",
+      "G86": "Hub: vergelijkend"
+    },
+    {
+      "B87": "tennis grip",
+      "C87": "250",
+      "D87": "Tennis",
+      "E87": "n.t.b.",
+      "F87": "T/D",
+      "G87": "Hub: vergelijkend"
+    },
+    {
+      "B88": "grip tennisracket",
+      "C88": "150",
+      "D88": "Tennis",
+      "E88": "n.t.b.",
+      "F88": "T/D",
+      "G88": "Hub: vergelijkend"
+    },
+    {
+      "B89": "tennisgrips",
+      "C89": "90",
+      "D89": "Tennis",
+      "E89": "n.t.b.",
+      "F89": "T/D",
+      "G89": "Hub: vergelijkend"
+    },
+    {
+      "B90": "tennisracket grip",
+      "C90": "70",
+      "D90": "Tennis",
+      "E90": "n.t.b.",
+      "F90": "T/D",
+      "G90": "Hub: vergelijkend"
+    },
+    {
+      "B91": "tennisgrip kopen",
+      "C91": "30",
+      "D91": "Tennis",
+      "E91": "n.t.b.",
+      "F91": "T/D",
+      "G91": "Hub: vergelijkend"
+    },
+    {
+      "B92": "beste tennisgrip",
+      "C92": "30",
+      "D92": "Tennis",
+      "E92": "n.t.b.",
+      "F92": "T/D",
+      "G92": "Hub: vergelijkend"
+    },
+    {
+      "B93": "tennis grips kopen",
+      "C93": "20",
+      "D93": "Tennis",
+      "E93": "n.t.b.",
+      "F93": "T/D",
+      "G93": "Hub: vergelijkend"
+    },
+    {
+      "B94": "solinco overgrip",
+      "C94": "10",
+      "D94": "Tennis",
+      "E94": "n.t.b.",
+      "F94": "T/D",
+      "G94": "Hub: vergelijkend"
+    },
+    {
+      "A96": "Tennisgrips type"
+    },
+    {
+      "B97": "overgrip",
+      "C97": "400",
+      "D97": "Tennis",
+      "E97": "n.t.b.",
+      "F97": "T/D",
+      "G97": "Submenu: vergelijkend"
+    },
+    {
+      "B98": "overgrips",
+      "C98": "300",
+      "D98": "Tennis",
+      "E98": "n.t.b.",
+      "F98": "T/D",
+      "G98": "Submenu: vergelijkend"
+    },
+    {
+      "B99": "overgrip tennis",
+      "C99": "200",
+      "D99": "Tennis",
+      "E99": "n.t.b.",
+      "F99": "T/D",
+      "G99": "Submenu: vergelijkend"
+    },
+    {
+      "B100": "tennis overgrip",
+      "C100": "90",
+      "D100": "Tennis",
+      "E100": "n.t.b.",
+      "F100": "T/D",
+      "G100": "Submenu: vergelijkend"
+    },
+    {
+      "B101": "overgrip kopen",
+      "C101": "50",
+      "D101": "Tennis",
+      "E101": "n.t.b.",
+      "F101": "T/D",
+      "G101": "Submenu: vergelijkend"
+    },
+    {
+      "B102": "beste overgrip tennis",
+      "C102": "50",
+      "D102": "Tennis",
+      "E102": "n.t.b.",
+      "F102": "T/D",
+      "G102": "Submenu: vergelijkend"
+    },
+    {
+      "B103": "basisgrip",
+      "C103": "50",
+      "D103": "Tennis",
+      "E103": "n.t.b.",
+      "F103": "T/D",
+      "G103": "Submenu: vergelijkend"
+    },
+    {
+      "B104": "beste overgrip",
+      "C104": "40",
+      "D104": "Tennis",
+      "E104": "n.t.b.",
+      "F104": "T/D",
+      "G104": "Submenu: vergelijkend"
+    },
+    {
+      "B105": "overgrips tennis",
+      "C105": "40",
+      "D105": "Tennis",
+      "E105": "n.t.b.",
+      "F105": "T/D",
+      "G105": "Submenu: vergelijkend"
+    },
+    {
+      "B106": "basisgrip tennis",
+      "C106": "40",
+      "D106": "Tennis",
+      "E106": "n.t.b.",
+      "F106": "T/D",
+      "G106": "Submenu: vergelijkend"
+    },
+    {
+      "B107": "overgrips kopen",
+      "C107": "30",
+      "D107": "Tennis",
+      "E107": "n.t.b.",
+      "F107": "T/D",
+      "G107": "Submenu: vergelijkend"
+    },
+    {
+      "B108": "welke overgrip",
+      "C108": "20",
+      "D108": "Tennis",
+      "E108": "n.t.b.",
+      "F108": "T/D",
+      "G108": "Submenu: vergelijkend"
+    },
+    {
+      "B109": "droge overgrip",
+      "C109": "20",
+      "D109": "Tennis",
+      "E109": "n.t.b.",
+      "F109": "T/D",
+      "G109": "Submenu: vergelijkend"
+    },
+    {
+      "B110": "plakkerige overgrip",
+      "C110": "20",
+      "D110": "Tennis",
+      "E110": "n.t.b.",
+      "F110": "T/D",
+      "G110": "Submenu: vergelijkend"
+    },
+    {
+      "B111": "tennis basisgrip",
+      "C111": "20",
+      "D111": "Tennis",
+      "E111": "n.t.b.",
+      "F111": "T/D",
+      "G111": "Submenu: vergelijkend"
+    },
+    {
+      "B112": "basisgrip tennisracket",
+      "C112": "20",
+      "D112": "Tennis",
+      "E112": "n.t.b.",
+      "F112": "T/D",
+      "G112": "Submenu: vergelijkend"
+    },
+    {
+      "B113": "dunne overgrip",
+      "C113": "10",
+      "D113": "Tennis",
+      "E113": "n.t.b.",
+      "F113": "T/D",
+      "G113": "Submenu: vergelijkend"
+    },
+    {
+      "B114": "leren grip tennis",
+      "C114": "10",
+      "D114": "Tennis",
+      "E114": "n.t.b.",
+      "F114": "T/D",
+      "G114": "Submenu: vergelijkend"
+    },
+    {
+      "A116": "Tennisgrips maat"
+    },
+    {
+      "B117": "gripmaat tennis",
+      "C117": "150",
+      "D117": "Tennis",
+      "E117": "n.t.b.",
+      "F117": "T",
+      "G117": "Kennis + vergelijkend"
+    },
+    {
+      "B118": "gripmaat tennisracket",
+      "C118": "150",
+      "D118": "Tennis",
+      "E118": "n.t.b.",
+      "F118": "T",
+      "G118": "Kennis + vergelijkend"
+    },
+    {
+      "B119": "welke gripmaat tennis",
+      "C119": "70",
+      "D119": "Tennis",
+      "E119": "n.t.b.",
+      "F119": "T",
+      "G119": "Kennis + vergelijkend"
+    },
+    {
+      "B120": "tennis gripmaat",
+      "C120": "50",
+      "D120": "Tennis",
+      "E120": "n.t.b.",
+      "F120": "T",
+      "G120": "Kennis + vergelijkend"
+    },
+    {
+      "B121": "gripmaat meten tennis",
+      "C121": "40",
+      "D121": "Tennis",
+      "E121": "n.t.b.",
+      "F121": "T",
+      "G121": "Kennis + vergelijkend"
+    },
+    {
+      "B122": "tennisracket grip dikker maken",
+      "C122": "30",
+      "D122": "Tennis",
+      "E122": "n.t.b.",
+      "F122": "T",
+      "G122": "Kennis + vergelijkend"
+    },
+    {
+      "B123": "gripmaat l2 of l3",
+      "C123": "20",
+      "D123": "Tennis",
+      "E123": "n.t.b.",
+      "F123": "T",
+      "G123": "Kennis + vergelijkend"
+    },
+    {
+      "B124": "gripmaat tennisracket dikker maken",
+      "C124": "20",
+      "D124": "Tennis",
+      "E124": "n.t.b.",
+      "F124": "T",
+      "G124": "Kennis + vergelijkend"
+    },
+    {
+      "A126": "Tennisgrips vervangen"
+    },
+    {
+      "B127": "tennisgrip vervangen",
+      "C127": "100",
+      "D127": "Tennis",
+      "E127": "n.t.b.",
+      "F127": "T/D",
+      "G127": "Kennis + vergelijkend"
+    },
+    {
+      "B128": "grip tennisracket vervangen",
+      "C128": "90",
+      "D128": "Tennis",
+      "E128": "n.t.b.",
+      "F128": "T/D",
+      "G128": "Kennis + vergelijkend"
+    },
+    {
+      "B129": "overgrip aanbrengen",
+      "C129": "90",
+      "D129": "Tennis",
+      "E129": "n.t.b.",
+      "F129": "T/D",
+      "G129": "Kennis + vergelijkend"
+    },
+    {
+      "B130": "overgrip wikkelen",
+      "C130": "40",
+      "D130": "Tennis",
+      "E130": "n.t.b.",
+      "F130": "T/D",
+      "G130": "Kennis + vergelijkend"
+    },
+    {
+      "B131": "tennisgrip wikkelen",
+      "C131": "30",
+      "D131": "Tennis",
+      "E131": "n.t.b.",
+      "F131": "T/D",
+      "G131": "Kennis + vergelijkend"
+    },
+    {
+      "B132": "grip om tennisracket wikkelen",
+      "C132": "30",
+      "D132": "Tennis",
+      "E132": "n.t.b.",
+      "F132": "T/D",
+      "G132": "Kennis + vergelijkend"
+    },
+    {
+      "B133": "hoe vaak overgrip vervangen",
+      "C133": "30",
+      "D133": "Tennis",
+      "E133": "n.t.b.",
+      "F133": "T/D",
+      "G133": "Kennis + vergelijkend"
+    },
+    {
+      "B134": "basisgrip vervangen",
+      "C134": "30",
+      "D134": "Tennis",
+      "E134": "n.t.b.",
+      "F134": "T/D",
+      "G134": "Kennis + vergelijkend"
+    },
+    {
+      "B135": "hoe overgrip aanbrengen",
+      "C135": "20",
+      "D135": "Tennis",
+      "E135": "n.t.b.",
+      "F135": "T/D",
+      "G135": "Kennis + vergelijkend"
+    },
+    {
+      "A137": "Tennisgrips merken"
+    },
+    {
+      "B138": "wilson overgrip",
+      "C138": "90",
+      "D138": "Tennis",
+      "E138": "n.t.b.",
+      "F138": "T/D",
+      "G138": "Merkpagina: vergelijkend"
+    },
+    {
+      "B139": "wilson pro overgrip",
+      "C139": "70",
+      "D139": "Tennis",
+      "E139": "n.t.b.",
+      "F139": "T/D",
+      "G139": "Merkpagina: vergelijkend"
+    },
+    {
+      "B140": "babolat overgrip",
+      "C140": "70",
+      "D140": "Tennis",
+      "E140": "n.t.b.",
+      "F140": "T/D",
+      "G140": "Merkpagina: vergelijkend"
+    },
+    {
+      "B141": "tourna grip",
+      "C141": "70",
+      "D141": "Tennis",
+      "E141": "n.t.b.",
+      "F141": "T/D",
+      "G141": "Merkpagina: vergelijkend"
+    },
+    {
+      "B142": "wilson grip",
+      "C142": "40",
+      "D142": "Tennis",
+      "E142": "n.t.b.",
+      "F142": "T/D",
+      "G142": "Merkpagina: vergelijkend"
+    },
+    {
+      "B143": "babolat grip",
+      "C143": "40",
+      "D143": "Tennis",
+      "E143": "n.t.b.",
+      "F143": "T/D",
+      "G143": "Merkpagina: vergelijkend"
+    },
+    {
+      "B144": "head overgrip",
+      "C144": "40",
+      "D144": "Tennis",
+      "E144": "n.t.b.",
+      "F144": "T/D",
+      "G144": "Merkpagina: vergelijkend"
+    },
+    {
+      "B145": "yonex super grap",
+      "C145": "40",
+      "D145": "Tennis",
+      "E145": "n.t.b.",
+      "F145": "T/D",
+      "G145": "Merkpagina: vergelijkend"
+    },
+    {
+      "B146": "yonex overgrip",
+      "C146": "30",
+      "D146": "Tennis",
+      "E146": "n.t.b.",
+      "F146": "T/D",
+      "G146": "Merkpagina: vergelijkend"
+    },
+    {
+      "B147": "babolat vs original",
+      "C147": "20",
+      "D147": "Tennis",
+      "E147": "n.t.b.",
+      "F147": "T/D",
+      "G147": "Merkpagina: vergelijkend"
+    },
+    {
+      "B148": "tourna overgrip",
+      "C148": "20",
+      "D148": "Tennis",
+      "E148": "n.t.b.",
+      "F148": "T/D",
+      "G148": "Merkpagina: vergelijkend"
+    },
+    {
+      "B149": "head prime tour overgrip",
+      "C149": "20",
+      "D149": "Tennis",
+      "E149": "n.t.b.",
+      "F149": "T/D",
+      "G149": "Merkpagina: vergelijkend"
+    },
+    {
+      "A151": "Padelgrips (algemeen)"
+    },
+    {
+      "B152": "padel grip",
+      "C152": "300",
+      "D152": "Padel",
+      "E152": "n.t.b.",
+      "F152": "T/D",
+      "G152": "Hub: vergelijkend"
+    },
+    {
+      "B153": "padel overgrip",
+      "C153": "200",
+      "D153": "Padel",
+      "E153": "n.t.b.",
+      "F153": "T/D",
+      "G153": "Hub: vergelijkend"
+    },
+    {
+      "B154": "padelgrip",
+      "C154": "90",
+      "D154": "Padel",
+      "E154": "n.t.b.",
+      "F154": "T/D",
+      "G154": "Hub: vergelijkend"
+    },
+    {
+      "B155": "padel grips",
+      "C155": "90",
+      "D155": "Padel",
+      "E155": "n.t.b.",
+      "F155": "T/D",
+      "G155": "Hub: vergelijkend"
+    },
+    {
+      "B156": "overgrip padel",
+      "C156": "90",
+      "D156": "Padel",
+      "E156": "n.t.b.",
+      "F156": "T/D",
+      "G156": "Hub: vergelijkend"
+    },
+    {
+      "B157": "beste padel grip",
+      "C157": "40",
+      "D157": "Padel",
+      "E157": "n.t.b.",
+      "F157": "T/D",
+      "G157": "Hub: vergelijkend"
+    },
+    {
+      "B158": "grip padelracket",
+      "C158": "40",
+      "D158": "Padel",
+      "E158": "n.t.b.",
+      "F158": "T/D",
+      "G158": "Hub: vergelijkend"
+    },
+    {
+      "B159": "beste padel overgrip",
+      "C159": "30",
+      "D159": "Padel",
+      "E159": "n.t.b.",
+      "F159": "T/D",
+      "G159": "Hub: vergelijkend"
+    },
+    {
+      "B160": "padel grip kopen",
+      "C160": "30",
+      "D160": "Padel",
+      "E160": "n.t.b.",
+      "F160": "T/D",
+      "G160": "Hub: vergelijkend"
+    },
+    {
+      "B161": "padel basisgrip",
+      "C161": "20",
+      "D161": "Padel",
+      "E161": "n.t.b.",
+      "F161": "T/D",
+      "G161": "Hub: vergelijkend"
+    },
+    {
+      "B162": "padel overgrips kopen",
+      "C162": "20",
+      "D162": "Padel",
+      "E162": "n.t.b.",
+      "F162": "T/D",
+      "G162": "Hub: vergelijkend"
+    },
+    {
+      "B163": "padel grip anti zweet",
+      "C163": "20",
+      "D163": "Padel",
+      "E163": "n.t.b.",
+      "F163": "T/D",
+      "G163": "Hub: vergelijkend"
+    },
+    {
+      "B164": "head padel overgrip",
+      "C164": "20",
+      "D164": "Padel",
+      "E164": "n.t.b.",
+      "F164": "T/D",
+      "G164": "Hub: vergelijkend"
+    },
+    {
+      "B165": "nox overgrip",
+      "C165": "20",
+      "D165": "Padel",
+      "E165": "n.t.b.",
+      "F165": "T/D",
+      "G165": "Hub: vergelijkend"
+    },
+    {
+      "B166": "basisgrip padel",
+      "C166": "10",
+      "D166": "Padel",
+      "E166": "n.t.b.",
+      "F166": "T/D",
+      "G166": "Hub: vergelijkend"
+    },
+    {
+      "B167": "babolat padel grip",
+      "C167": "10",
+      "D167": "Padel",
+      "E167": "n.t.b.",
+      "F167": "T/D",
+      "G167": "Hub: vergelijkend"
+    },
+    {
+      "A169": "Padelgrips vervangen"
+    },
+    {
+      "B170": "padel grip vervangen",
+      "C170": "90",
+      "D170": "Padel",
+      "E170": "n.t.b.",
+      "F170": "T/D",
+      "G170": "Kennis + vergelijkend"
+    },
+    {
+      "B171": "padel overgrip aanbrengen",
+      "C171": "50",
+      "D171": "Padel",
+      "E171": "n.t.b.",
+      "F171": "T/D",
+      "G171": "Kennis + vergelijkend"
+    },
+    {
+      "B172": "padel grip dikker maken",
+      "C172": "40",
+      "D172": "Padel",
+      "E172": "n.t.b.",
+      "F172": "T/D",
+      "G172": "Kennis + vergelijkend"
+    },
+    {
+      "B173": "overgrip padel aanbrengen",
+      "C173": "30",
+      "D173": "Padel",
+      "E173": "n.t.b.",
+      "F173": "T/D",
+      "G173": "Kennis + vergelijkend"
+    },
+    {
+      "B174": "padelracket grip vervangen",
+      "C174": "20",
+      "D174": "Padel",
+      "E174": "n.t.b.",
+      "F174": "T/D",
+      "G174": "Kennis + vergelijkend"
+    },
+    {
+      "B175": "padel grip wikkelen",
+      "C175": "20",
+      "D175": "Padel",
+      "E175": "n.t.b.",
+      "F175": "T/D",
+      "G175": "Kennis + vergelijkend"
+    },
+    {
+      "B176": "hoe vaak padel grip vervangen",
+      "C176": "10",
+      "D176": "Padel",
+      "E176": "n.t.b.",
+      "F176": "T/D",
+      "G176": "Kennis + vergelijkend"
+    },
+    {
+      "A178": "Padelgrips merken"
+    },
+    {
+      "B179": "bullpadel overgrip",
+      "C179": "30",
+      "D179": "Padel",
+      "E179": "n.t.b.",
+      "F179": "T/D",
+      "G179": "Merkpagina: vergelijkend"
+    },
+    {
+      "B180": "adidas padel overgrip",
+      "C180": "30",
+      "D180": "Padel",
+      "E180": "n.t.b.",
+      "F180": "T/D",
+      "G180": "Merkpagina: vergelijkend"
+    },
+    {
+      "B181": "bullpadel grip",
+      "C181": "20",
+      "D181": "Padel",
+      "E181": "n.t.b.",
+      "F181": "T/D",
+      "G181": "Merkpagina: vergelijkend"
+    },
+    {
+      "B182": "adidas padel grip",
+      "C182": "10",
+      "D182": "Padel",
+      "E182": "n.t.b.",
+      "F182": "T/D",
+      "G182": "Merkpagina: vergelijkend"
+    },
+    {
+      "A184": "Badmintongrips"
+    },
+    {
+      "B185": "badminton grip",
+      "C185": "90",
+      "D185": "Badminton",
+      "E185": "n.t.b.",
+      "F185": "T/D",
+      "G185": "Hub: vergelijkend"
+    },
+    {
+      "B186": "badminton overgrip",
+      "C186": "50",
+      "D186": "Badminton",
+      "E186": "n.t.b.",
+      "F186": "T/D",
+      "G186": "Hub: vergelijkend"
+    },
+    {
+      "B187": "grip badmintonracket",
+      "C187": "40",
+      "D187": "Badminton",
+      "E187": "n.t.b.",
+      "F187": "T/D",
+      "G187": "Hub: vergelijkend"
+    },
+    {
+      "B188": "badminton grip vervangen",
+      "C188": "40",
+      "D188": "Badminton",
+      "E188": "n.t.b.",
+      "F188": "T/D",
+      "G188": "Kennis + vergelijkend"
+    },
+    {
+      "B189": "badmintongrip",
+      "C189": "30",
+      "D189": "Badminton",
+      "E189": "n.t.b.",
+      "F189": "T/D",
+      "G189": "Hub: vergelijkend"
+    },
+    {
+      "B190": "yonex badminton grip",
+      "C190": "30",
+      "D190": "Badminton",
+      "E190": "n.t.b.",
+      "F190": "T/D",
+      "G190": "Hub: vergelijkend"
+    },
+    {
+      "B191": "grip badmintonracket vervangen",
+      "C191": "30",
+      "D191": "Badminton",
+      "E191": "n.t.b.",
+      "F191": "T/D",
+      "G191": "Kennis + vergelijkend"
+    },
+    {
+      "B192": "badstof grip",
+      "C192": "20",
+      "D192": "Badminton",
+      "E192": "n.t.b.",
+      "F192": "T/D",
+      "G192": "Hub: vergelijkend"
+    },
+    {
+      "B193": "badminton grip wikkelen",
+      "C193": "20",
+      "D193": "Badminton",
+      "E193": "n.t.b.",
+      "F193": "T/D",
+      "G193": "Kennis + vergelijkend"
+    },
+    {
+      "B194": "beste badminton grip",
+      "C194": "10",
+      "D194": "Badminton",
+      "E194": "n.t.b.",
+      "F194": "T/D",
+      "G194": "Hub: vergelijkend"
+    },
+    {
+      "B195": "handdoekgrip badminton",
+      "C195": "10",
+      "D195": "Badminton",
+      "E195": "n.t.b.",
+      "F195": "T/D",
+      "G195": "Hub: vergelijkend"
+    },
+    {
+      "B196": "badstof grip aanbrengen",
+      "C196": "10",
+      "D196": "Badminton",
+      "E196": "n.t.b.",
+      "F196": "T/D",
+      "G196": "Kennis + vergelijkend"
+    },
+    {
+      "A198": "Squashgrips"
+    },
+    {
+      "B199": "squash grip",
+      "C199": "50",
+      "D199": "Squash",
+      "E199": "n.t.b.",
+      "F199": "T/D",
+      "G199": "Hub: vergelijkend"
+    },
+    {
+      "B200": "squashgrip",
+      "C200": "20",
+      "D200": "Squash",
+      "E200": "n.t.b.",
+      "F200": "T/D",
+      "G200": "Hub: vergelijkend"
+    },
+    {
+      "B201": "squash overgrip",
+      "C201": "20",
+      "D201": "Squash",
+      "E201": "n.t.b.",
+      "F201": "T/D",
+      "G201": "Hub: vergelijkend"
+    },
+    {
+      "B202": "grip squashracket",
+      "C202": "20",
+      "D202": "Squash",
+      "E202": "n.t.b.",
+      "F202": "T/D",
+      "G202": "Hub: vergelijkend"
+    },
+    {
+      "B203": "squash grip vervangen",
+      "C203": "20",
+      "D203": "Squash",
+      "E203": "n.t.b.",
+      "F203": "T/D",
+      "G203": "Hub: vergelijkend"
+    },
+    {
+      "B204": "karakal grip",
+      "C204": "20",
+      "D204": "Squash",
+      "E204": "n.t.b.",
+      "F204": "T/D",
+      "G204": "Hub: vergelijkend"
+    },
+    {
+      "A206": "Hockeygrips (algemeen)"
+    },
+    {
+      "B207": "hockey grip",
+      "C207": "250",
+      "D207": "Hockey",
+      "E207": "n.t.b.",
+      "F207": "T/D",
+      "G207": "Hub: vergelijkend"
+    },
+    {
+      "B208": "hockeygrip",
+      "C208": "150",
+      "D208": "Hockey",
+      "E208": "n.t.b.",
+      "F208": "T/D",
+      "G208": "Hub: vergelijkend"
+    },
+    {
+      "B209": "hockeystick grip",
+      "C209": "90",
+      "D209": "Hockey",
+      "E209": "n.t.b.",
+      "F209": "T/D",
+      "G209": "Hub: vergelijkend"
+    },
+    {
+      "B210": "grip hockeystick",
+      "C210": "70",
+      "D210": "Hockey",
+      "E210": "n.t.b.",
+      "F210": "T/D",
+      "G210": "Hub: vergelijkend"
+    },
+    {
+      "B211": "hockeygrips",
+      "C211": "50",
+      "D211": "Hockey",
+      "E211": "n.t.b.",
+      "F211": "T/D",
+      "G211": "Hub: vergelijkend"
+    },
+    {
+      "B212": "indian maharadja grip",
+      "C212": "30",
+      "D212": "Hockey",
+      "E212": "n.t.b.",
+      "F212": "T/D",
+      "G212": "Hub: vergelijkend"
+    },
+    {
+      "B213": "beste hockeygrip",
+      "C213": "20",
+      "D213": "Hockey",
+      "E213": "n.t.b.",
+      "F213": "T/D",
+      "G213": "Hub: vergelijkend"
+    },
+    {
+      "B214": "hockeygrip kopen",
+      "C214": "20",
+      "D214": "Hockey",
+      "E214": "n.t.b.",
+      "F214": "T/D",
+      "G214": "Hub: vergelijkend"
+    },
+    {
+      "B215": "dikke hockeygrip",
+      "C215": "20",
+      "D215": "Hockey",
+      "E215": "n.t.b.",
+      "F215": "T/D",
+      "G215": "Hub: vergelijkend"
+    },
+    {
+      "B216": "grays grip",
+      "C216": "20",
+      "D216": "Hockey",
+      "E216": "n.t.b.",
+      "F216": "T/D",
+      "G216": "Hub: vergelijkend"
+    },
+    {
+      "B217": "adidas hockey grip",
+      "C217": "20",
+      "D217": "Hockey",
+      "E217": "n.t.b.",
+      "F217": "T/D",
+      "G217": "Hub: vergelijkend"
+    },
+    {
+      "A219": "Hockeygrips type"
+    },
+    {
+      "B220": "chamois grip",
+      "C220": "70",
+      "D220": "Hockey",
+      "E220": "n.t.b.",
+      "F220": "T/D",
+      "G220": "Submenu: vergelijkend"
+    },
+    {
+      "B221": "chamois grip hockey",
+      "C221": "50",
+      "D221": "Hockey",
+      "E221": "n.t.b.",
+      "F221": "T/D",
+      "G221": "Submenu: vergelijkend"
+    },
+    {
+      "B222": "hockey chamois grip",
+      "C222": "30",
+      "D222": "Hockey",
+      "E222": "n.t.b.",
+      "F222": "T/D",
+      "G222": "Submenu: vergelijkend"
+    },
+    {
+      "B223": "chamois hockeygrip",
+      "C223": "20",
+      "D223": "Hockey",
+      "E223": "n.t.b.",
+      "F223": "T/D",
+      "G223": "Submenu: vergelijkend"
+    },
+    {
+      "A225": "Hockeygrips vervangen"
+    },
+    {
+      "B226": "hockeygrip vervangen",
+      "C226": "70",
+      "D226": "Hockey",
+      "E226": "n.t.b.",
+      "F226": "T/D",
+      "G226": "Kennis + vergelijkend"
+    },
+    {
+      "B227": "hockey grip vervangen",
+      "C227": "70",
+      "D227": "Hockey",
+      "E227": "n.t.b.",
+      "F227": "T/D",
+      "G227": "Kennis + vergelijkend"
+    },
+    {
+      "B228": "grip hockeystick vervangen",
+      "C228": "40",
+      "D228": "Hockey",
+      "E228": "n.t.b.",
+      "F228": "T/D",
+      "G228": "Kennis + vergelijkend"
+    },
+    {
+      "B229": "hockeygrip wikkelen",
+      "C229": "30",
+      "D229": "Hockey",
+      "E229": "n.t.b.",
+      "F229": "T/D",
+      "G229": "Kennis + vergelijkend"
+    },
+    {
+      "B230": "chamois grip wikkelen",
+      "C230": "30",
+      "D230": "Hockey",
+      "E230": "n.t.b.",
+      "F230": "T/D",
+      "G230": "Kennis + vergelijkend"
+    },
+    {
+      "B231": "hockeystick grip omwikkelen",
+      "C231": "20",
+      "D231": "Hockey",
+      "E231": "n.t.b.",
+      "F231": "T/D",
+      "G231": "Kennis + vergelijkend"
+    },
+    {
+      "B232": "hoe vaak hockeygrip vervangen",
+      "C232": "10",
+      "D232": "Hockey",
+      "E232": "n.t.b.",
+      "F232": "T/D",
+      "G232": "Kennis + vergelijkend"
+    },
+    {
+      "A234": "Vergelijkingen"
+    },
+    {
+      "B235": "golf pride vs lamkin",
+      "C235": "10",
+      "D235": "Golf",
+      "E235": "n.t.b.",
+      "F235": "T",
+      "G235": "Vergelijking"
+    },
+    {
+      "B236": "chamois of rubber grip hockey",
+      "C236": "10",
+      "D236": "Hockey",
+      "E236": "n.t.b.",
+      "F236": "T",
+      "G236": "Vergelijking"
+    },
+    {
+      "A238": "Keuzehulp"
+    },
+    {
+      "B239": "welke grip past bij mij",
+      "C239": "10",
+      "D239": "Algemeen",
+      "E239": "n.t.b.",
+      "F239": "T",
+      "G239": "Tool"
+    },
+    {
+      "B240": "welke grip kiezen",
+      "C240": "10",
+      "D240": "Algemeen",
+      "E240": "n.t.b.",
+      "F240": "T",
+      "G240": "Tool"
+    },
+    {
+      "A242": "Kennis (sportoverstijgend)"
+    },
+    {
+      "B243": "wat is een overgrip",
+      "C243": "40",
+      "D243": "Algemeen",
+      "E243": "n.t.b.",
+      "F243": "S/T",
+      "G243": "Kennispagina"
+    },
+    {
+      "B244": "verschil basisgrip en overgrip",
+      "C244": "30",
+      "D244": "Algemeen",
+      "E244": "n.t.b.",
+      "F244": "S/T",
+      "G244": "Kennispagina"
+    },
+    {
+      "B245": "golfgrips schoonmaken",
+      "C245": "30",
+      "D245": "Algemeen",
+      "E245": "n.t.b.",
+      "F245": "S/T",
+      "G245": "Kennispagina"
+    },
+    {
+      "B246": "overgrip of basisgrip",
+      "C246": "20",
+      "D246": "Algemeen",
+      "E246": "n.t.b.",
+      "F246": "S/T",
+      "G246": "Kennispagina"
+    },
+    {
+      "B247": "grips schoonmaken",
+      "C247": "20",
+      "D247": "Algemeen",
+      "E247": "n.t.b.",
+      "F247": "S/T",
+      "G247": "Kennispagina"
+    },
+    {
+      "B248": "grip plakkerig maken",
+      "C248": "20",
+      "D248": "Algemeen",
+      "E248": "n.t.b.",
+      "F248": "S/T",
+      "G248": "Kennispagina"
+    },
+    {
+      "B249": "grip zweethanden",
+      "C249": "20",
+      "D249": "Algemeen",
+      "E249": "n.t.b.",
+      "F249": "S/T",
+      "G249": "Kennispagina"
+    },
+    {
+      "B250": "overgrip zweethanden",
+      "C250": "20",
+      "D250": "Algemeen",
+      "E250": "n.t.b.",
+      "F250": "S/T",
+      "G250": "Kennispagina"
+    },
+    {
+      "B251": "zweethanden tennis",
+      "C251": "20",
+      "D251": "Algemeen",
+      "E251": "n.t.b.",
+      "F251": "S/T",
+      "G251": "Kennispagina"
+    },
+    {
+      "B252": "wat is een basisgrip",
+      "C252": "10",
+      "D252": "Algemeen",
+      "E252": "n.t.b.",
+      "F252": "S/T",
+      "G252": "Kennispagina"
+    },
+    {
+      "B253": "overgrip over basisgrip",
+      "C253": "10",
+      "D253": "Algemeen",
+      "E253": "n.t.b.",
+      "F253": "S/T",
+      "G253": "Kennispagina"
+    },
+    {
+      "B254": "tennisgrip schoonmaken",
+      "C254": "10",
+      "D254": "Algemeen",
+      "E254": "n.t.b.",
+      "F254": "S/T",
+      "G254": "Kennispagina"
+    },
+    {
+      "B255": "hockeygrip schoonmaken",
+      "C255": "10",
+      "D255": "Algemeen",
+      "E255": "n.t.b.",
+      "F255": "S/T",
+      "G255": "Kennispagina"
+    },
+    {
+      "B256": "grip weer stroef maken",
+      "C256": "10",
+      "D256": "Algemeen",
+      "E256": "n.t.b.",
+      "F256": "S/T",
+      "G256": "Kennispagina"
+    },
+    {
+      "B257": "gladde grip",
+      "C257": "10",
+      "D257": "Algemeen",
+      "E257": "n.t.b.",
+      "F257": "S/T",
+      "G257": "Kennispagina"
+    },
+    {
+      "B258": "beste grip bij zweethanden",
+      "C258": "10",
+      "D258": "Algemeen",
+      "E258": "n.t.b.",
+      "F258": "S/T",
+      "G258": "Kennispagina"
+    },
+    {
+      "A260": "Blog"
+    },
+    {
+      "B261": "tenniselleboog grip",
+      "C261": "30",
+      "D261": "Tennis",
+      "E261": "n.t.b.",
+      "F261": "S/T",
+      "G261": "Informerende blog"
+    },
+    {
+      "B262": "tenniselleboog gripmaat",
+      "C262": "20",
+      "D262": "Tennis",
+      "E262": "n.t.b.",
+      "F262": "S/T",
+      "G262": "Informerende blog"
+    },
+    {
+      "B263": "tenniselleboog racket grip",
+      "C263": "10",
+      "D263": "Tennis",
+      "E263": "n.t.b.",
+      "F263": "S/T",
+      "G263": "Informerende blog"
+    },
+    {
+      "A265": "Nog in te delen"
+    },
+    {
+      "B266": "ijshockey tape",
+      "C266": "30",
+      "D266": "Overig",
+      "E266": "n.t.b."
+    },
+    {
+      "B267": "pickleball grip",
+      "C267": "10",
+      "D267": "Overig",
+      "E267": "n.t.b."
+    }
+  ],
+  "Menustructuur + URL": [
+    {
+      "A1": "Menustructuur",
+      "B1": "Level",
+      "C1": "Menu / URL's",
+      "D1": "Bestaat de URL al?",
+      "E1": "Focus zoekwoorden",
+      "F1": "Opmerking/advies",
+      "G1": "Zoekvolume (som)",
+      "H1": "Prioriteit"
+    },
+    {
+      "C2": "URL van menu-item",
+      "G2": "Som uit tabblad URL-zoekwoord mapping",
+      "H2": "Formule op basis van drempels (kolom K)",
+      "J2": "Prioriteitsdrempels"
+    },
+    {
+      "A3": "Home",
+      "B3": "1",
+      "C3": "/",
+      "D3": "n.t.b.",
+      "E3": "Sportgrips, grips kopen, grip kopen, sport grips, sportgrip, grips voor sport, racketgrip",
+      "F3": "Vergelijkershub: per sport de toppicks en doorlinks naar de sporthubs. Nooit sportspecifieke zoekwoorden (golfgrips, overgrip tennis) in title of H1: die horen op de hubs. Losse term 'grips' bewust niet gemapt (fiets, gaming, techniek).",
+      "G3": "270",
+      "H3": "Middel",
+      "J3": "Hoog vanaf (volume/mnd)",
+      "K3": "300"
+    },
+    {
+      "A4": "Golfgrips",
+      "B4": "1",
+      "C4": "/golfgrips/",
+      "D4": "n.t.b.",
+      "E4": "Golfgrips, golfgrip, golf grips kopen, golfgrips kopen, beste golfgrips, golfgrips aanbieding, goedkope golfgrips, winn grips, golf grip kopen, golfgrips set, cord golfgrips, golfgrips decathlon, rubber golfgrips, golfgrips nat weer, winn golfgrips, iomic grips",
+      "F4": "Hub én toplijst in één: 'beste golfgrips' bewust hier i.p.v. eigen /beste/-pagina (laag volume, vrijwel dezelfde SERP). Secties: materiaal (rubber, cord, wrap), kleine merken (Winn, Iomic), budget (aanbieding, goedkoop, Decathlon). Splitsen pas als de SERP voor 'beste golfgrips' duidelijk lijstjes toont.",
+      "G4": "1270",
+      "H4": "Hoog",
+      "J4": "Middel vanaf (volume/mnd)",
+      "K4": "100"
+    },
+    {
+      "A5": "Golf Pride",
+      "B5": "2",
+      "C5": "/golfgrips/golf-pride/",
+      "D5": "n.t.b.",
+      "E5": "Golf pride grips, golf pride grip, golf pride tour velvet, golf pride mcc, golf pride cp2, golf pride align, golf pride z grip",
+      "F5": "Modellen onderling vergelijken (Tour Velvet, MCC, CP2, Z-Grip, Align) in één tabel. Modellen voorlopig als secties; Tour Velvet en MCC kunnen later naar niveau 3.",
+      "G5": "510",
+      "H5": "Hoog",
+      "J5": "Daaronder: Laag"
+    },
+    {
+      "A6": "Lamkin",
+      "B6": "2",
+      "C6": "/golfgrips/lamkin/",
+      "D6": "n.t.b.",
+      "E6": "Lamkin grips, lamkin golfgrips, lamkin crossline",
+      "F6": "Crossline als hoofdmodel; link naar /vergelijken/golf-pride-vs-lamkin/.",
+      "G6": "80",
+      "H6": "Laag",
+      "J6": "Gele cellen aanpassen; kolom H rekent mee."
+    },
+    {
+      "A7": "SuperStroke",
+      "B7": "2",
+      "C7": "/golfgrips/superstroke/",
+      "D7": "n.t.b.",
+      "E7": "Superstroke grip, superstroke putter grip",
+      "F7": "Kannibalisatierisico met /golfgrips/putter/: hier alléén merkzoekwoorden. 'Putter grip' niet in title/H1; wel doorlinken naar de putterpagina.",
+      "G7": "140",
+      "H7": "Middel"
+    },
+    {
+      "A8": "Puttergrips",
+      "B8": "2",
+      "C8": "/golfgrips/putter/",
+      "D8": "n.t.b.",
+      "E8": "Putter grip, puttergrip, putter grips, dikke putter grip, beste putter grip, putter grip kopen",
+      "F8": "Type-pagina. Vergelijk vorm (pistol, dik/plat) en dikte. SuperStroke als toppick met link naar merkpagina (merknaam als anker). 'Putter grip vervangen' staat op /golfgrips/vervangen/.",
+      "G8": "350",
+      "H8": "Hoog"
+    },
+    {
+      "A9": "Gripmaat golf",
+      "B9": "2",
+      "C9": "/golfgrips/maat/",
+      "D9": "n.t.b.",
+      "E9": "Golfgrip maat, welke maat golfgrip, golfgrips maten, maat golfgrip bepalen, standaard golfgrip",
+      "F9": "Think-pagina: maattabel op basis van handschoenmaat; 'standard' als sectie (geen eigen pagina, is de default). Undersize, midsize en oversize alleen kort aanstippen en doorlinken: de maatnamen staan niet in title/H1 van deze hub.",
+      "G9": "140",
+      "H9": "Middel"
+    },
+    {
+      "A10": "Undersize",
+      "B10": "3",
+      "C10": "/golfgrips/maat/undersize/",
+      "D10": "n.t.b.",
+      "E10": "Golfgrips dames, undersize golfgrips, dunne golfgrips",
+      "F10": "Dames- en juniorinsteek. 'Golfgrips dames' bewust hier i.p.v. een aparte damespagina (zelfde producten, zelfde intentie).",
+      "G10": "60",
+      "H10": "Laag"
+    },
+    {
+      "A11": "Midsize",
+      "B11": "3",
+      "C11": "/golfgrips/maat/midsize/",
+      "D11": "n.t.b.",
+      "E11": "Midsize golfgrips, midsize grips, midsize grip golf",
+      "F11": "Uitleg voor wie (handschoenmaat L/XL) en effect op swing; toppicks per merk.",
+      "G11": "110",
+      "H11": "Middel"
+    },
+    {
+      "A12": "Oversize",
+      "B12": "3",
+      "C12": "/golfgrips/maat/oversize/",
+      "D12": "n.t.b.",
+      "E12": "Dikke golfgrips, oversize golfgrips, jumbo golfgrips, jumbo grips golf, golfgrips artrose",
+      "F12": "Oversize, jumbo en 'dikke golfgrips' zijn één intentie. Sterke think-hoek: grips bij artrose en minder knijpkracht.",
+      "G12": "140",
+      "H12": "Middel"
+    },
+    {
+      "A13": "Golfgrips vervangen",
+      "B13": "2",
+      "C13": "/golfgrips/vervangen/",
+      "D13": "n.t.b.",
+      "E13": "Golfgrips vervangen, golf grips vervangen, golfgrip vervangen, golfgrips vervangen kosten, golfgrips zelf vervangen, golfgrips laten vervangen, hoe vaak golfgrips vervangen, putter grip vervangen, golfgrips vervangen decathlon, tape golfgrips, golfgrips verwijderen, golfgrips vervangen set",
+      "F13": "Grootste kans na de hub. Stappenplan zelf vervangen + benodigdheden (tape, solvent, klem) met affiliatelinks + kostenvergelijking 'laten vervangen' (golfwinkel vs zelf). Kosten en zelf vervangen bewust op één pagina: aparte pagina's zouden elkaar beconcurreren.",
+      "G13": "1260",
+      "H13": "Hoog"
+    },
+    {
+      "A14": "Tennisgrips",
+      "B14": "1",
+      "C14": "/tennisgrips/",
+      "D14": "n.t.b.",
+      "E14": "Tennisgrip, tennis grip, grip tennisracket, tennisgrips, tennisracket grip, tennisgrip kopen, beste tennisgrip, tennis grips kopen, solinco overgrip",
+      "F14": "Hub met uitleg basisgrip vs overgrip en toppicks per type. 'Overgrip' niet in title/H1 (staat op /tennisgrips/overgrips/). Kleine merken (Solinco) als sectie.",
+      "G14": "950",
+      "H14": "Hoog"
+    },
+    {
+      "A15": "Overgrips",
+      "B15": "2",
+      "C15": "/tennisgrips/overgrips/",
+      "D15": "n.t.b.",
+      "E15": "Overgrip, overgrips, overgrip tennis, tennis overgrip, overgrip kopen, beste overgrip tennis, beste overgrip, overgrips tennis, overgrips kopen, welke overgrip, droge overgrip, plakkerige overgrip, dunne overgrip",
+      "F15": "Belangrijkste think-pagina van de site: vergelijk op droog vs plakkerig, dikte, zweetabsorptie en prijs per stuk. Generieke 'overgrip(s)' bewust hier (tennis domineert naar verwachting de SERP): SERP checken. Linkblok naar padel, badminton en squash.",
+      "G15": "1270",
+      "H15": "Hoog"
+    },
+    {
+      "A16": "Basisgrips",
+      "B16": "2",
+      "C16": "/tennisgrips/basisgrips/",
+      "D16": "n.t.b.",
+      "E16": "Basisgrip, basisgrip tennis, tennis basisgrip, basisgrip tennisracket, leren grip tennis",
+      "F16": "Productpagina basisgrips (comfort, demping, leer vs synthetisch). Definitievragen ('wat is een basisgrip') op /kennis/verschil-basisgrip-overgrip/.",
+      "G16": "140",
+      "H16": "Middel"
+    },
+    {
+      "A17": "Gripmaat tennis",
+      "B17": "2",
+      "C17": "/tennisgrips/gripmaat/",
+      "D17": "n.t.b.",
+      "E17": "Gripmaat tennis, gripmaat tennisracket, welke gripmaat tennis, tennis gripmaat, gripmaat meten tennis, tennisracket grip dikker maken, gripmaat l2 of l3, gripmaat tennisracket dikker maken",
+      "F17": "Tennis kent L0 t/m L5, geen undersize/midsize. Meetinstructie + 'dikker maken met overgrip' (link naar overgrips). Tenniselleboog alleen kort noemen en doorlinken naar de blog.",
+      "G17": "530",
+      "H17": "Hoog"
+    },
+    {
+      "A18": "Tennisgrips vervangen",
+      "B18": "2",
+      "C18": "/tennisgrips/vervangen/",
+      "D18": "n.t.b.",
+      "E18": "Tennisgrip vervangen, grip tennisracket vervangen, overgrip aanbrengen, overgrip wikkelen, tennisgrip wikkelen, grip om tennisracket wikkelen, hoe vaak overgrip vervangen, basisgrip vervangen, hoe overgrip aanbrengen",
+      "F18": "How-to voor basisgrip én overgrip (video/afbeeldingen). Generieke 'overgrip aanbrengen' bewust hier; padel heeft eigen variant met 'padel' in het zoekwoord.",
+      "G18": "460",
+      "H18": "Hoog"
+    },
+    {
+      "A19": "Wilson",
+      "B19": "2",
+      "C19": "/tennisgrips/wilson/",
+      "D19": "n.t.b.",
+      "E19": "Wilson overgrip, wilson pro overgrip, wilson grip",
+      "F19": "Pro Overgrip als hoofdproduct. Generieke 'wilson overgrip' naar tennis; padelvarianten bevatten altijd 'padel'.",
+      "G19": "200",
+      "H19": "Middel"
+    },
+    {
+      "A20": "Babolat",
+      "B20": "2",
+      "C20": "/tennisgrips/babolat/",
+      "D20": "n.t.b.",
+      "E20": "Babolat overgrip, babolat grip, babolat vs original",
+      "F20": "VS Original vs Pro Tour. Babolat padel als sectie op /padelgrips/.",
+      "G20": "130",
+      "H20": "Middel"
+    },
+    {
+      "A21": "Tourna",
+      "B21": "2",
+      "C21": "/tennisgrips/tourna/",
+      "D21": "n.t.b.",
+      "E21": "Tourna grip, tourna overgrip",
+      "F21": "Tourna Grip (blauw, droog) is een begrip: vergelijk met plakkerige overgrips.",
+      "G21": "90",
+      "H21": "Laag"
+    },
+    {
+      "A22": "Head",
+      "B22": "2",
+      "C22": "/tennisgrips/head/",
+      "D22": "n.t.b.",
+      "E22": "Head overgrip, head prime tour overgrip",
+      "F22": "Prime Tour als hoofdproduct. 'Head padel overgrip' staat op /padelgrips/.",
+      "G22": "60",
+      "H22": "Laag"
+    },
+    {
+      "A23": "Yonex",
+      "B23": "2",
+      "C23": "/tennisgrips/yonex/",
+      "D23": "n.t.b.",
+      "E23": "Yonex super grap, yonex overgrip",
+      "F23": "Super Grap wordt in tennis én badminton gebruikt; 'yonex badminton grip' staat op /badmintongrips/. Over en weer linken.",
+      "G23": "70",
+      "H23": "Laag"
+    },
+    {
+      "A24": "Padelgrips",
+      "B24": "1",
+      "C24": "/padelgrips/",
+      "D24": "n.t.b.",
+      "E24": "Padel grip, padel overgrip, padelgrip, padel grips, overgrip padel, beste padel grip, grip padelracket, beste padel overgrip, padel grip kopen, padel basisgrip, padel overgrips kopen, padel grip anti zweet, head padel overgrip, nox overgrip, basisgrip padel, babolat padel grip",
+      "F24": "In padel is 'grip' bijna altijd een overgrip: hub en overgrips samengevoegd, géén aparte /padelgrips/overgrips/ (zou de hub kannibaliseren). Basisgrips als sectie (te weinig volume voor eigen pagina). Kleine merken (Head, Nox, Babolat) als sectie.",
+      "G24": "1030",
+      "H24": "Hoog"
+    },
+    {
+      "A25": "Padelgrips vervangen",
+      "B25": "2",
+      "C25": "/padelgrips/vervangen/",
+      "D25": "n.t.b.",
+      "E25": "Padel grip vervangen, padel overgrip aanbrengen, padel grip dikker maken, overgrip padel aanbrengen, padelracket grip vervangen, padel grip wikkelen, hoe vaak padel grip vervangen",
+      "F25": "How-to + 'dikker maken' (padel kent geen maatsystemen; dikte regel je met extra overgrips).",
+      "G25": "260",
+      "H25": "Middel"
+    },
+    {
+      "A26": "Bullpadel",
+      "B26": "2",
+      "C26": "/padelgrips/bullpadel/",
+      "D26": "n.t.b.",
+      "E26": "Bullpadel overgrip, bullpadel grip",
+      "F26": "Grootste padelmerk in de zoekdata.",
+      "G26": "50",
+      "H26": "Laag"
+    },
+    {
+      "A27": "Adidas",
+      "B27": "2",
+      "C27": "/padelgrips/adidas/",
+      "D27": "n.t.b.",
+      "E27": "Adidas padel overgrip, adidas padel grip",
+      "F27": "Adidas hockey staat als sectie op /hockeygrips/; zoekwoorden bevatten de sport, dus laag risico.",
+      "G27": "40",
+      "H27": "Laag"
+    },
+    {
+      "A28": "Badmintongrips",
+      "B28": "1",
+      "C28": "/badmintongrips/",
+      "D28": "n.t.b.",
+      "E28": "Badminton grip, badminton overgrip, grip badmintonracket, badmintongrip, yonex badminton grip, badstof grip, beste badminton grip, handdoekgrip badminton",
+      "F28": "Vergelijk overgrip vs badstof (handdoek)grip. Yonex als sectie met link naar /tennisgrips/yonex/.",
+      "G28": "280",
+      "H28": "Middel"
+    },
+    {
+      "A29": "Badmintongrips vervangen",
+      "B29": "2",
+      "C29": "/badmintongrips/vervangen/",
+      "D29": "n.t.b.",
+      "E29": "Badminton grip vervangen, grip badmintonracket vervangen, badminton grip wikkelen, badstof grip aanbrengen",
+      "F29": "Lage prioriteit; kan eerst als sectie op de hub en later worden afgesplitst.",
+      "G29": "100",
+      "H29": "Middel"
+    },
+    {
+      "A30": "Squashgrips",
+      "B30": "1",
+      "C30": "/squashgrips/",
+      "D30": "n.t.b.",
+      "E30": "Squash grip, squashgrip, squash overgrip, grip squashracket, squash grip vervangen, karakal grip",
+      "F30": "Eén pagina volstaat: vervangen en Karakal als secties. Geen subpagina's tot het volume dat rechtvaardigt.",
+      "G30": "150",
+      "H30": "Middel"
+    },
+    {
+      "A31": "Hockeygrips",
+      "B31": "1",
+      "C31": "/hockeygrips/",
+      "D31": "n.t.b.",
+      "E31": "Hockey grip, hockeygrip, hockeystick grip, grip hockeystick, hockeygrips, indian maharadja grip, beste hockeygrip, hockeygrip kopen, dikke hockeygrip, grays grip, adidas hockey grip",
+      "F31": "Hockey is groot in NL: verrassend sterk cluster. Vergelijk rubber/ribbel vs chamois en dik vs dun. Merken (Indian Maharadja, Grays, Adidas) als secties. 'Chamois' niet in title/H1 van de hub.",
+      "G31": "740",
+      "H31": "Hoog"
+    },
+    {
+      "A32": "Chamois",
+      "B32": "2",
+      "C32": "/hockeygrips/chamois/",
+      "D32": "n.t.b.",
+      "E32": "Chamois grip, chamois grip hockey, hockey chamois grip, chamois hockeygrip",
+      "F32": "Type-pagina: voor- en nadelen chamois (gevoel vs slijtage, nat veld).",
+      "G32": "170",
+      "H32": "Middel"
+    },
+    {
+      "A33": "Hockeygrips vervangen",
+      "B33": "2",
+      "C33": "/hockeygrips/vervangen/",
+      "D33": "n.t.b.",
+      "E33": "Hockeygrip vervangen, hockey grip vervangen, grip hockeystick vervangen, hockeygrip wikkelen, chamois grip wikkelen, hockeystick grip omwikkelen, hoe vaak hockeygrip vervangen",
+      "F33": "How-to voor rubber én chamois; 'chamois grip wikkelen' bewust hier (how-to), niet op /chamois/.",
+      "G33": "270",
+      "H33": "Middel"
+    },
+    {
+      "A34": "Vergelijken",
+      "B34": "1",
+      "C34": "/vergelijken/",
+      "D34": "n.t.b.",
+      "E34": "(geen zoekwoorden in onderzoek)",
+      "F34": "Hub voor head-to-heads. Pure think-content; nauwelijks volume, wel sterk voor interne links en affiliateclicks.",
+      "G34": "0",
+      "H34": "Laag"
+    },
+    {
+      "A35": "Golf Pride vs Lamkin",
+      "B35": "2",
+      "C35": "/vergelijken/golf-pride-vs-lamkin/",
+      "D35": "n.t.b.",
+      "E35": "Golf pride vs lamkin",
+      "G35": "10",
+      "H35": "Laag"
+    },
+    {
+      "A36": "Wilson Pro vs Tourna",
+      "B36": "2",
+      "C36": "/vergelijken/wilson-pro-overgrip-vs-tourna-grip/",
+      "D36": "n.t.b.",
+      "E36": "(geen zoekwoorden in onderzoek)",
+      "F36": "Aanvulling, niet in onderzoek: plakkerig vs droog als kernvraag.",
+      "G36": "0",
+      "H36": "Laag"
+    },
+    {
+      "A37": "Chamois vs rubber",
+      "B37": "2",
+      "C37": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+      "D37": "n.t.b.",
+      "E37": "Chamois of rubber grip hockey",
+      "G37": "10",
+      "H37": "Laag"
+    },
+    {
+      "A38": "Keuzehulp",
+      "B38": "1",
+      "C38": "/keuzehulp/",
+      "D38": "n.t.b.",
+      "E38": "Welke grip past bij mij, welke grip kiezen",
+      "F38": "Interactieve vragenlijst (sport, zweet, gevoel, budget) met affiliateadvies als uitkomst. Sportspecifieke 'welke ...'-vragen staan op de sportpagina's.",
+      "G38": "20",
+      "H38": "Laag"
+    },
+    {
+      "A39": "Kennis",
+      "B39": "1",
+      "C39": "/kennis/",
+      "D39": "n.t.b.",
+      "E39": "(geen zoekwoorden in onderzoek)",
+      "F39": "Hub voor sportoverstijgende uitleg.",
+      "G39": "0",
+      "H39": "Laag"
+    },
+    {
+      "A40": "Basisgrip vs overgrip",
+      "B40": "2",
+      "C40": "/kennis/verschil-basisgrip-overgrip/",
+      "D40": "n.t.b.",
+      "E40": "Wat is een overgrip, verschil basisgrip en overgrip, overgrip of basisgrip, wat is een basisgrip, overgrip over basisgrip",
+      "F40": "Definitievragen hier, productkeuze op /tennisgrips/basisgrips/ en /overgrips/.",
+      "G40": "110",
+      "H40": "Middel"
+    },
+    {
+      "A41": "Grips schoonmaken",
+      "B41": "2",
+      "C41": "/kennis/grips-schoonmaken/",
+      "D41": "n.t.b.",
+      "E41": "Golfgrips schoonmaken, grips schoonmaken, tennisgrip schoonmaken, hockeygrip schoonmaken",
+      "F41": "Secties per sport; golf het grootst.",
+      "G41": "70",
+      "H41": "Laag"
+    },
+    {
+      "A42": "Grip weer stroef maken",
+      "B42": "2",
+      "C42": "/kennis/grip-stroef-maken/",
+      "D42": "n.t.b.",
+      "E42": "Grip plakkerig maken, grip weer stroef maken, gladde grip",
+      "F42": "Uitkomst: vaak 'vervangen' → link naar vervangen-pagina's per sport.",
+      "G42": "40",
+      "H42": "Laag"
+    },
+    {
+      "A43": "Zweethanden",
+      "B43": "2",
+      "C43": "/kennis/grip-bij-zweethanden/",
+      "D43": "n.t.b.",
+      "E43": "Grip zweethanden, overgrip zweethanden, zweethanden tennis, beste grip bij zweethanden",
+      "F43": "Think-onderwerp met duidelijke productuitkomst (droge overgrips, badstof).",
+      "G43": "70",
+      "H43": "Laag"
+    },
+    {
+      "A44": "Blog",
+      "B44": "1",
+      "C44": "/blog/",
+      "D44": "n.t.b.",
+      "E44": "(geen zoekwoorden in onderzoek)",
+      "F44": "Blog-URL's zonder datum of categorie.",
+      "G44": "0",
+      "H44": "Laag"
+    },
+    {
+      "A45": "Tenniselleboog en grip",
+      "B45": "2",
+      "C45": "/blog/tenniselleboog-en-grip/",
+      "D45": "n.t.b.",
+      "E45": "Tenniselleboog grip, tenniselleboog gripmaat, tenniselleboog racket grip",
+      "F45": "Link naar /tennisgrips/gripmaat/ en /basisgrips/ (demping). Geen medisch advies, verwijs naar fysio.",
+      "G45": "60",
+      "H45": "Laag"
+    },
+    {
+      "A46": "Nog in te delen",
+      "B46": "1",
+      "C46": "(n.t.b.)",
+      "D46": "n.t.b.",
+      "E46": "Ijshockey tape, pickleball grip",
+      "F46": "IJshockey: tape i.p.v. grip, SERP checken. Pickleball: snelgroeiend, later eventueel /pickleballgrips/.",
+      "G46": "40",
+      "H46": "n.v.t."
+    },
+    {
+      "F48": "Totaal gemapt volume",
+      "G48": "11750"
+    },
+    {
+      "F49": "Controle: totaal longlist (moet gelijk zijn)",
+      "G49": "11750"
+    },
+    {
+      "A51": "Algemene richtlijnen"
+    },
+    {
+      "A52": "Hoofdpagina's dragen het zoekwoord in de slug (/golfgrips/, /tennisgrips/); subpagina's alleen de modifier (/overgrips/, /vervangen/, /midsize/)."
+    },
+    {
+      "A53": "Maximaal drie niveaus diep. Menu hoeft niet gelijk te lopen met de URL: menukopjes 'Merken', 'Type' en 'Maat' zonder eigen URL; merken staan direct onder de sporthub (/golfgrips/golf-pride/)."
+    },
+    {
+      "A54": "Merken per sport, niet centraal: Wilson, Babolat en Head bestaan in tennis én padel, en een centrale /merken/wilson/ zou beide intenties mengen. Merkpagina alleen bij ±40+ volume; kleinere merken als sectie op de sporthub."
+    },
+    {
+      "A55": "Typen (basisgrip/overgrip) alleen als pagina waar het volume dat draagt: tennis twee pagina's, padel samengevoegd op de hub, badminton/squash/hockey als secties of één type-pagina (chamois)."
+    },
+    {
+      "A56": "Maat alleen waar relevant: golf undersize/standard/midsize/oversize (standard als sectie); tennis L0–L5 op één gripmaatpagina; padel 'dikker maken' als sectie; overige sporten geen maatpagina's. Geen kleurpagina's."
+    },
+    {
+      "A57": "Focus op de think-fase: elke commerciële pagina krijgt een vergelijkingstabel (gevoel, dikte, zweetabsorptie, duurzaamheid, prijs per stuk) en een korte keuzeuitleg vóór de toppicks."
+    },
+    {
+      "A58": "Affiliate-links via een eigen redirectmap (/go/wilson-pro-overgrip/), met rel=\"sponsored\"; /go/ uitsluiten in robots.txt."
+    },
+    {
+      "A59": "Geen jaartallen in URL's; zet het jaartal alleen in de title tag. Overal kleine letters en consequent een trailing slash."
+    },
+    {
+      "A60": "Eén zoekwoord = één URL. Zie tabblad 'Kannibalisatie' voor alle bewuste keuzes en hoe je ze controleert."
+    },
+    {
+      "A61": "Zoekvolumes zijn schattingen: valideer vóór je prioriteiten definitief maakt. Vooral 'overgrip', 'golfgrips vervangen' en de hockeyclusters kunnen sterk afwijken."
+    }
+  ],
+  "URL-zoekwoord mapping": [
+    {
+      "A1": "URL",
+      "B1": "Zoekwoord",
+      "C1": "Volume",
+      "D1": "Sport"
+    },
+    {
+      "A2": "/",
+      "B2": "sportgrips",
+      "C2": "70",
+      "D2": "Algemeen"
+    },
+    {
+      "A3": "/",
+      "B3": "grips kopen",
+      "C3": "90",
+      "D3": "Algemeen"
+    },
+    {
+      "A4": "/",
+      "B4": "grip kopen",
+      "C4": "40",
+      "D4": "Algemeen"
+    },
+    {
+      "A5": "/",
+      "B5": "sport grips",
+      "C5": "30",
+      "D5": "Algemeen"
+    },
+    {
+      "A6": "/",
+      "B6": "sportgrip",
+      "C6": "20",
+      "D6": "Algemeen"
+    },
+    {
+      "A7": "/",
+      "B7": "grips voor sport",
+      "C7": "10",
+      "D7": "Algemeen"
+    },
+    {
+      "A8": "/",
+      "B8": "racketgrip",
+      "C8": "10",
+      "D8": "Algemeen"
+    },
+    {
+      "A9": "/golfgrips/",
+      "B9": "golfgrips",
+      "C9": "600",
+      "D9": "Golf"
+    },
+    {
+      "A10": "/golfgrips/",
+      "B10": "golfgrip",
+      "C10": "250",
+      "D10": "Golf"
+    },
+    {
+      "A11": "/golfgrips/",
+      "B11": "golf grips kopen",
+      "C11": "90",
+      "D11": "Golf"
+    },
+    {
+      "A12": "/golfgrips/",
+      "B12": "golfgrips kopen",
+      "C12": "70",
+      "D12": "Golf"
+    },
+    {
+      "A13": "/golfgrips/",
+      "B13": "beste golfgrips",
+      "C13": "50",
+      "D13": "Golf"
+    },
+    {
+      "A14": "/golfgrips/",
+      "B14": "golfgrips aanbieding",
+      "C14": "30",
+      "D14": "Golf"
+    },
+    {
+      "A15": "/golfgrips/",
+      "B15": "goedkope golfgrips",
+      "C15": "30",
+      "D15": "Golf"
+    },
+    {
+      "A16": "/golfgrips/",
+      "B16": "winn grips",
+      "C16": "30",
+      "D16": "Golf"
+    },
+    {
+      "A17": "/golfgrips/",
+      "B17": "golf grip kopen",
+      "C17": "20",
+      "D17": "Golf"
+    },
+    {
+      "A18": "/golfgrips/",
+      "B18": "golfgrips set",
+      "C18": "20",
+      "D18": "Golf"
+    },
+    {
+      "A19": "/golfgrips/",
+      "B19": "cord golfgrips",
+      "C19": "20",
+      "D19": "Golf"
+    },
+    {
+      "A20": "/golfgrips/",
+      "B20": "golfgrips decathlon",
+      "C20": "20",
+      "D20": "Golf"
+    },
+    {
+      "A21": "/golfgrips/",
+      "B21": "rubber golfgrips",
+      "C21": "10",
+      "D21": "Golf"
+    },
+    {
+      "A22": "/golfgrips/",
+      "B22": "golfgrips nat weer",
+      "C22": "10",
+      "D22": "Golf"
+    },
+    {
+      "A23": "/golfgrips/",
+      "B23": "winn golfgrips",
+      "C23": "10",
+      "D23": "Golf"
+    },
+    {
+      "A24": "/golfgrips/",
+      "B24": "iomic grips",
+      "C24": "10",
+      "D24": "Golf"
+    },
+    {
+      "A25": "/golfgrips/golf-pride/",
+      "B25": "golf pride grips",
+      "C25": "200",
+      "D25": "Golf"
+    },
+    {
+      "A26": "/golfgrips/golf-pride/",
+      "B26": "golf pride grip",
+      "C26": "100",
+      "D26": "Golf"
+    },
+    {
+      "A27": "/golfgrips/golf-pride/",
+      "B27": "golf pride tour velvet",
+      "C27": "70",
+      "D27": "Golf"
+    },
+    {
+      "A28": "/golfgrips/golf-pride/",
+      "B28": "golf pride mcc",
+      "C28": "60",
+      "D28": "Golf"
+    },
+    {
+      "A29": "/golfgrips/golf-pride/",
+      "B29": "golf pride cp2",
+      "C29": "30",
+      "D29": "Golf"
+    },
+    {
+      "A30": "/golfgrips/golf-pride/",
+      "B30": "golf pride align",
+      "C30": "30",
+      "D30": "Golf"
+    },
+    {
+      "A31": "/golfgrips/golf-pride/",
+      "B31": "golf pride z grip",
+      "C31": "20",
+      "D31": "Golf"
+    },
+    {
+      "A32": "/golfgrips/lamkin/",
+      "B32": "lamkin grips",
+      "C32": "40",
+      "D32": "Golf"
+    },
+    {
+      "A33": "/golfgrips/lamkin/",
+      "B33": "lamkin golfgrips",
+      "C33": "20",
+      "D33": "Golf"
+    },
+    {
+      "A34": "/golfgrips/lamkin/",
+      "B34": "lamkin crossline",
+      "C34": "20",
+      "D34": "Golf"
+    },
+    {
+      "A35": "/golfgrips/superstroke/",
+      "B35": "superstroke grip",
+      "C35": "90",
+      "D35": "Golf"
+    },
+    {
+      "A36": "/golfgrips/superstroke/",
+      "B36": "superstroke putter grip",
+      "C36": "50",
+      "D36": "Golf"
+    },
+    {
+      "A37": "/golfgrips/putter/",
+      "B37": "putter grip",
+      "C37": "150",
+      "D37": "Golf"
+    },
+    {
+      "A38": "/golfgrips/putter/",
+      "B38": "puttergrip",
+      "C38": "70",
+      "D38": "Golf"
+    },
+    {
+      "A39": "/golfgrips/putter/",
+      "B39": "putter grips",
+      "C39": "50",
+      "D39": "Golf"
+    },
+    {
+      "A40": "/golfgrips/putter/",
+      "B40": "dikke putter grip",
+      "C40": "30",
+      "D40": "Golf"
+    },
+    {
+      "A41": "/golfgrips/putter/",
+      "B41": "beste putter grip",
+      "C41": "30",
+      "D41": "Golf"
+    },
+    {
+      "A42": "/golfgrips/putter/",
+      "B42": "putter grip kopen",
+      "C42": "20",
+      "D42": "Golf"
+    },
+    {
+      "A43": "/golfgrips/maat/",
+      "B43": "golfgrip maat",
+      "C43": "50",
+      "D43": "Golf"
+    },
+    {
+      "A44": "/golfgrips/maat/",
+      "B44": "welke maat golfgrip",
+      "C44": "30",
+      "D44": "Golf"
+    },
+    {
+      "A45": "/golfgrips/maat/",
+      "B45": "golfgrips maten",
+      "C45": "30",
+      "D45": "Golf"
+    },
+    {
+      "A46": "/golfgrips/maat/",
+      "B46": "maat golfgrip bepalen",
+      "C46": "20",
+      "D46": "Golf"
+    },
+    {
+      "A47": "/golfgrips/maat/",
+      "B47": "standaard golfgrip",
+      "C47": "10",
+      "D47": "Golf"
+    },
+    {
+      "A48": "/golfgrips/maat/undersize/",
+      "B48": "golfgrips dames",
+      "C48": "30",
+      "D48": "Golf"
+    },
+    {
+      "A49": "/golfgrips/maat/undersize/",
+      "B49": "undersize golfgrips",
+      "C49": "20",
+      "D49": "Golf"
+    },
+    {
+      "A50": "/golfgrips/maat/undersize/",
+      "B50": "dunne golfgrips",
+      "C50": "10",
+      "D50": "Golf"
+    },
+    {
+      "A51": "/golfgrips/maat/midsize/",
+      "B51": "midsize golfgrips",
+      "C51": "50",
+      "D51": "Golf"
+    },
+    {
+      "A52": "/golfgrips/maat/midsize/",
+      "B52": "midsize grips",
+      "C52": "40",
+      "D52": "Golf"
+    },
+    {
+      "A53": "/golfgrips/maat/midsize/",
+      "B53": "midsize grip golf",
+      "C53": "20",
+      "D53": "Golf"
+    },
+    {
+      "A54": "/golfgrips/maat/oversize/",
+      "B54": "dikke golfgrips",
+      "C54": "40",
+      "D54": "Golf"
+    },
+    {
+      "A55": "/golfgrips/maat/oversize/",
+      "B55": "oversize golfgrips",
+      "C55": "30",
+      "D55": "Golf"
+    },
+    {
+      "A56": "/golfgrips/maat/oversize/",
+      "B56": "jumbo golfgrips",
+      "C56": "30",
+      "D56": "Golf"
+    },
+    {
+      "A57": "/golfgrips/maat/oversize/",
+      "B57": "jumbo grips golf",
+      "C57": "20",
+      "D57": "Golf"
+    },
+    {
+      "A58": "/golfgrips/maat/oversize/",
+      "B58": "golfgrips artrose",
+      "C58": "20",
+      "D58": "Golf"
+    },
+    {
+      "A59": "/golfgrips/vervangen/",
+      "B59": "golfgrips vervangen",
+      "C59": "500",
+      "D59": "Golf"
+    },
+    {
+      "A60": "/golfgrips/vervangen/",
+      "B60": "golf grips vervangen",
+      "C60": "200",
+      "D60": "Golf"
+    },
+    {
+      "A61": "/golfgrips/vervangen/",
+      "B61": "golfgrip vervangen",
+      "C61": "150",
+      "D61": "Golf"
+    },
+    {
+      "A62": "/golfgrips/vervangen/",
+      "B62": "golfgrips vervangen kosten",
+      "C62": "90",
+      "D62": "Golf"
+    },
+    {
+      "A63": "/golfgrips/vervangen/",
+      "B63": "golfgrips zelf vervangen",
+      "C63": "70",
+      "D63": "Golf"
+    },
+    {
+      "A64": "/golfgrips/vervangen/",
+      "B64": "golfgrips laten vervangen",
+      "C64": "70",
+      "D64": "Golf"
+    },
+    {
+      "A65": "/golfgrips/vervangen/",
+      "B65": "hoe vaak golfgrips vervangen",
+      "C65": "50",
+      "D65": "Golf"
+    },
+    {
+      "A66": "/golfgrips/vervangen/",
+      "B66": "putter grip vervangen",
+      "C66": "40",
+      "D66": "Golf"
+    },
+    {
+      "A67": "/golfgrips/vervangen/",
+      "B67": "golfgrips vervangen decathlon",
+      "C67": "30",
+      "D67": "Golf"
+    },
+    {
+      "A68": "/golfgrips/vervangen/",
+      "B68": "tape golfgrips",
+      "C68": "20",
+      "D68": "Golf"
+    },
+    {
+      "A69": "/golfgrips/vervangen/",
+      "B69": "golfgrips verwijderen",
+      "C69": "20",
+      "D69": "Golf"
+    },
+    {
+      "A70": "/golfgrips/vervangen/",
+      "B70": "golfgrips vervangen set",
+      "C70": "20",
+      "D70": "Golf"
+    },
+    {
+      "A71": "/tennisgrips/",
+      "B71": "tennisgrip",
+      "C71": "300",
+      "D71": "Tennis"
+    },
+    {
+      "A72": "/tennisgrips/",
+      "B72": "tennis grip",
+      "C72": "250",
+      "D72": "Tennis"
+    },
+    {
+      "A73": "/tennisgrips/",
+      "B73": "grip tennisracket",
+      "C73": "150",
+      "D73": "Tennis"
+    },
+    {
+      "A74": "/tennisgrips/",
+      "B74": "tennisgrips",
+      "C74": "90",
+      "D74": "Tennis"
+    },
+    {
+      "A75": "/tennisgrips/",
+      "B75": "tennisracket grip",
+      "C75": "70",
+      "D75": "Tennis"
+    },
+    {
+      "A76": "/tennisgrips/",
+      "B76": "tennisgrip kopen",
+      "C76": "30",
+      "D76": "Tennis"
+    },
+    {
+      "A77": "/tennisgrips/",
+      "B77": "beste tennisgrip",
+      "C77": "30",
+      "D77": "Tennis"
+    },
+    {
+      "A78": "/tennisgrips/",
+      "B78": "tennis grips kopen",
+      "C78": "20",
+      "D78": "Tennis"
+    },
+    {
+      "A79": "/tennisgrips/",
+      "B79": "solinco overgrip",
+      "C79": "10",
+      "D79": "Tennis"
+    },
+    {
+      "A80": "/tennisgrips/overgrips/",
+      "B80": "overgrip",
+      "C80": "400",
+      "D80": "Tennis"
+    },
+    {
+      "A81": "/tennisgrips/overgrips/",
+      "B81": "overgrips",
+      "C81": "300",
+      "D81": "Tennis"
+    },
+    {
+      "A82": "/tennisgrips/overgrips/",
+      "B82": "overgrip tennis",
+      "C82": "200",
+      "D82": "Tennis"
+    },
+    {
+      "A83": "/tennisgrips/overgrips/",
+      "B83": "tennis overgrip",
+      "C83": "90",
+      "D83": "Tennis"
+    },
+    {
+      "A84": "/tennisgrips/overgrips/",
+      "B84": "overgrip kopen",
+      "C84": "50",
+      "D84": "Tennis"
+    },
+    {
+      "A85": "/tennisgrips/overgrips/",
+      "B85": "beste overgrip tennis",
+      "C85": "50",
+      "D85": "Tennis"
+    },
+    {
+      "A86": "/tennisgrips/overgrips/",
+      "B86": "beste overgrip",
+      "C86": "40",
+      "D86": "Tennis"
+    },
+    {
+      "A87": "/tennisgrips/overgrips/",
+      "B87": "overgrips tennis",
+      "C87": "40",
+      "D87": "Tennis"
+    },
+    {
+      "A88": "/tennisgrips/overgrips/",
+      "B88": "overgrips kopen",
+      "C88": "30",
+      "D88": "Tennis"
+    },
+    {
+      "A89": "/tennisgrips/overgrips/",
+      "B89": "welke overgrip",
+      "C89": "20",
+      "D89": "Tennis"
+    },
+    {
+      "A90": "/tennisgrips/overgrips/",
+      "B90": "droge overgrip",
+      "C90": "20",
+      "D90": "Tennis"
+    },
+    {
+      "A91": "/tennisgrips/overgrips/",
+      "B91": "plakkerige overgrip",
+      "C91": "20",
+      "D91": "Tennis"
+    },
+    {
+      "A92": "/tennisgrips/overgrips/",
+      "B92": "dunne overgrip",
+      "C92": "10",
+      "D92": "Tennis"
+    },
+    {
+      "A93": "/tennisgrips/basisgrips/",
+      "B93": "basisgrip",
+      "C93": "50",
+      "D93": "Tennis"
+    },
+    {
+      "A94": "/tennisgrips/basisgrips/",
+      "B94": "basisgrip tennis",
+      "C94": "40",
+      "D94": "Tennis"
+    },
+    {
+      "A95": "/tennisgrips/basisgrips/",
+      "B95": "tennis basisgrip",
+      "C95": "20",
+      "D95": "Tennis"
+    },
+    {
+      "A96": "/tennisgrips/basisgrips/",
+      "B96": "basisgrip tennisracket",
+      "C96": "20",
+      "D96": "Tennis"
+    },
+    {
+      "A97": "/tennisgrips/basisgrips/",
+      "B97": "leren grip tennis",
+      "C97": "10",
+      "D97": "Tennis"
+    },
+    {
+      "A98": "/tennisgrips/gripmaat/",
+      "B98": "gripmaat tennis",
+      "C98": "150",
+      "D98": "Tennis"
+    },
+    {
+      "A99": "/tennisgrips/gripmaat/",
+      "B99": "gripmaat tennisracket",
+      "C99": "150",
+      "D99": "Tennis"
+    },
+    {
+      "A100": "/tennisgrips/gripmaat/",
+      "B100": "welke gripmaat tennis",
+      "C100": "70",
+      "D100": "Tennis"
+    },
+    {
+      "A101": "/tennisgrips/gripmaat/",
+      "B101": "tennis gripmaat",
+      "C101": "50",
+      "D101": "Tennis"
+    },
+    {
+      "A102": "/tennisgrips/gripmaat/",
+      "B102": "gripmaat meten tennis",
+      "C102": "40",
+      "D102": "Tennis"
+    },
+    {
+      "A103": "/tennisgrips/gripmaat/",
+      "B103": "tennisracket grip dikker maken",
+      "C103": "30",
+      "D103": "Tennis"
+    },
+    {
+      "A104": "/tennisgrips/gripmaat/",
+      "B104": "gripmaat l2 of l3",
+      "C104": "20",
+      "D104": "Tennis"
+    },
+    {
+      "A105": "/tennisgrips/gripmaat/",
+      "B105": "gripmaat tennisracket dikker maken",
+      "C105": "20",
+      "D105": "Tennis"
+    },
+    {
+      "A106": "/tennisgrips/vervangen/",
+      "B106": "tennisgrip vervangen",
+      "C106": "100",
+      "D106": "Tennis"
+    },
+    {
+      "A107": "/tennisgrips/vervangen/",
+      "B107": "grip tennisracket vervangen",
+      "C107": "90",
+      "D107": "Tennis"
+    },
+    {
+      "A108": "/tennisgrips/vervangen/",
+      "B108": "overgrip aanbrengen",
+      "C108": "90",
+      "D108": "Tennis"
+    },
+    {
+      "A109": "/tennisgrips/vervangen/",
+      "B109": "overgrip wikkelen",
+      "C109": "40",
+      "D109": "Tennis"
+    },
+    {
+      "A110": "/tennisgrips/vervangen/",
+      "B110": "tennisgrip wikkelen",
+      "C110": "30",
+      "D110": "Tennis"
+    },
+    {
+      "A111": "/tennisgrips/vervangen/",
+      "B111": "grip om tennisracket wikkelen",
+      "C111": "30",
+      "D111": "Tennis"
+    },
+    {
+      "A112": "/tennisgrips/vervangen/",
+      "B112": "hoe vaak overgrip vervangen",
+      "C112": "30",
+      "D112": "Tennis"
+    },
+    {
+      "A113": "/tennisgrips/vervangen/",
+      "B113": "basisgrip vervangen",
+      "C113": "30",
+      "D113": "Tennis"
+    },
+    {
+      "A114": "/tennisgrips/vervangen/",
+      "B114": "hoe overgrip aanbrengen",
+      "C114": "20",
+      "D114": "Tennis"
+    },
+    {
+      "A115": "/tennisgrips/wilson/",
+      "B115": "wilson overgrip",
+      "C115": "90",
+      "D115": "Tennis"
+    },
+    {
+      "A116": "/tennisgrips/wilson/",
+      "B116": "wilson pro overgrip",
+      "C116": "70",
+      "D116": "Tennis"
+    },
+    {
+      "A117": "/tennisgrips/wilson/",
+      "B117": "wilson grip",
+      "C117": "40",
+      "D117": "Tennis"
+    },
+    {
+      "A118": "/tennisgrips/babolat/",
+      "B118": "babolat overgrip",
+      "C118": "70",
+      "D118": "Tennis"
+    },
+    {
+      "A119": "/tennisgrips/babolat/",
+      "B119": "babolat grip",
+      "C119": "40",
+      "D119": "Tennis"
+    },
+    {
+      "A120": "/tennisgrips/babolat/",
+      "B120": "babolat vs original",
+      "C120": "20",
+      "D120": "Tennis"
+    },
+    {
+      "A121": "/tennisgrips/tourna/",
+      "B121": "tourna grip",
+      "C121": "70",
+      "D121": "Tennis"
+    },
+    {
+      "A122": "/tennisgrips/tourna/",
+      "B122": "tourna overgrip",
+      "C122": "20",
+      "D122": "Tennis"
+    },
+    {
+      "A123": "/tennisgrips/head/",
+      "B123": "head overgrip",
+      "C123": "40",
+      "D123": "Tennis"
+    },
+    {
+      "A124": "/tennisgrips/head/",
+      "B124": "head prime tour overgrip",
+      "C124": "20",
+      "D124": "Tennis"
+    },
+    {
+      "A125": "/tennisgrips/yonex/",
+      "B125": "yonex super grap",
+      "C125": "40",
+      "D125": "Tennis"
+    },
+    {
+      "A126": "/tennisgrips/yonex/",
+      "B126": "yonex overgrip",
+      "C126": "30",
+      "D126": "Tennis"
+    },
+    {
+      "A127": "/padelgrips/",
+      "B127": "padel grip",
+      "C127": "300",
+      "D127": "Padel"
+    },
+    {
+      "A128": "/padelgrips/",
+      "B128": "padel overgrip",
+      "C128": "200",
+      "D128": "Padel"
+    },
+    {
+      "A129": "/padelgrips/",
+      "B129": "padelgrip",
+      "C129": "90",
+      "D129": "Padel"
+    },
+    {
+      "A130": "/padelgrips/",
+      "B130": "padel grips",
+      "C130": "90",
+      "D130": "Padel"
+    },
+    {
+      "A131": "/padelgrips/",
+      "B131": "overgrip padel",
+      "C131": "90",
+      "D131": "Padel"
+    },
+    {
+      "A132": "/padelgrips/",
+      "B132": "beste padel grip",
+      "C132": "40",
+      "D132": "Padel"
+    },
+    {
+      "A133": "/padelgrips/",
+      "B133": "grip padelracket",
+      "C133": "40",
+      "D133": "Padel"
+    },
+    {
+      "A134": "/padelgrips/",
+      "B134": "beste padel overgrip",
+      "C134": "30",
+      "D134": "Padel"
+    },
+    {
+      "A135": "/padelgrips/",
+      "B135": "padel grip kopen",
+      "C135": "30",
+      "D135": "Padel"
+    },
+    {
+      "A136": "/padelgrips/",
+      "B136": "padel basisgrip",
+      "C136": "20",
+      "D136": "Padel"
+    },
+    {
+      "A137": "/padelgrips/",
+      "B137": "padel overgrips kopen",
+      "C137": "20",
+      "D137": "Padel"
+    },
+    {
+      "A138": "/padelgrips/",
+      "B138": "padel grip anti zweet",
+      "C138": "20",
+      "D138": "Padel"
+    },
+    {
+      "A139": "/padelgrips/",
+      "B139": "head padel overgrip",
+      "C139": "20",
+      "D139": "Padel"
+    },
+    {
+      "A140": "/padelgrips/",
+      "B140": "nox overgrip",
+      "C140": "20",
+      "D140": "Padel"
+    },
+    {
+      "A141": "/padelgrips/",
+      "B141": "basisgrip padel",
+      "C141": "10",
+      "D141": "Padel"
+    },
+    {
+      "A142": "/padelgrips/",
+      "B142": "babolat padel grip",
+      "C142": "10",
+      "D142": "Padel"
+    },
+    {
+      "A143": "/padelgrips/vervangen/",
+      "B143": "padel grip vervangen",
+      "C143": "90",
+      "D143": "Padel"
+    },
+    {
+      "A144": "/padelgrips/vervangen/",
+      "B144": "padel overgrip aanbrengen",
+      "C144": "50",
+      "D144": "Padel"
+    },
+    {
+      "A145": "/padelgrips/vervangen/",
+      "B145": "padel grip dikker maken",
+      "C145": "40",
+      "D145": "Padel"
+    },
+    {
+      "A146": "/padelgrips/vervangen/",
+      "B146": "overgrip padel aanbrengen",
+      "C146": "30",
+      "D146": "Padel"
+    },
+    {
+      "A147": "/padelgrips/vervangen/",
+      "B147": "padelracket grip vervangen",
+      "C147": "20",
+      "D147": "Padel"
+    },
+    {
+      "A148": "/padelgrips/vervangen/",
+      "B148": "padel grip wikkelen",
+      "C148": "20",
+      "D148": "Padel"
+    },
+    {
+      "A149": "/padelgrips/vervangen/",
+      "B149": "hoe vaak padel grip vervangen",
+      "C149": "10",
+      "D149": "Padel"
+    },
+    {
+      "A150": "/padelgrips/bullpadel/",
+      "B150": "bullpadel overgrip",
+      "C150": "30",
+      "D150": "Padel"
+    },
+    {
+      "A151": "/padelgrips/bullpadel/",
+      "B151": "bullpadel grip",
+      "C151": "20",
+      "D151": "Padel"
+    },
+    {
+      "A152": "/padelgrips/adidas/",
+      "B152": "adidas padel overgrip",
+      "C152": "30",
+      "D152": "Padel"
+    },
+    {
+      "A153": "/padelgrips/adidas/",
+      "B153": "adidas padel grip",
+      "C153": "10",
+      "D153": "Padel"
+    },
+    {
+      "A154": "/badmintongrips/",
+      "B154": "badminton grip",
+      "C154": "90",
+      "D154": "Badminton"
+    },
+    {
+      "A155": "/badmintongrips/",
+      "B155": "badminton overgrip",
+      "C155": "50",
+      "D155": "Badminton"
+    },
+    {
+      "A156": "/badmintongrips/",
+      "B156": "grip badmintonracket",
+      "C156": "40",
+      "D156": "Badminton"
+    },
+    {
+      "A157": "/badmintongrips/",
+      "B157": "badmintongrip",
+      "C157": "30",
+      "D157": "Badminton"
+    },
+    {
+      "A158": "/badmintongrips/",
+      "B158": "yonex badminton grip",
+      "C158": "30",
+      "D158": "Badminton"
+    },
+    {
+      "A159": "/badmintongrips/",
+      "B159": "badstof grip",
+      "C159": "20",
+      "D159": "Badminton"
+    },
+    {
+      "A160": "/badmintongrips/",
+      "B160": "beste badminton grip",
+      "C160": "10",
+      "D160": "Badminton"
+    },
+    {
+      "A161": "/badmintongrips/",
+      "B161": "handdoekgrip badminton",
+      "C161": "10",
+      "D161": "Badminton"
+    },
+    {
+      "A162": "/badmintongrips/vervangen/",
+      "B162": "badminton grip vervangen",
+      "C162": "40",
+      "D162": "Badminton"
+    },
+    {
+      "A163": "/badmintongrips/vervangen/",
+      "B163": "grip badmintonracket vervangen",
+      "C163": "30",
+      "D163": "Badminton"
+    },
+    {
+      "A164": "/badmintongrips/vervangen/",
+      "B164": "badminton grip wikkelen",
+      "C164": "20",
+      "D164": "Badminton"
+    },
+    {
+      "A165": "/badmintongrips/vervangen/",
+      "B165": "badstof grip aanbrengen",
+      "C165": "10",
+      "D165": "Badminton"
+    },
+    {
+      "A166": "/squashgrips/",
+      "B166": "squash grip",
+      "C166": "50",
+      "D166": "Squash"
+    },
+    {
+      "A167": "/squashgrips/",
+      "B167": "squashgrip",
+      "C167": "20",
+      "D167": "Squash"
+    },
+    {
+      "A168": "/squashgrips/",
+      "B168": "squash overgrip",
+      "C168": "20",
+      "D168": "Squash"
+    },
+    {
+      "A169": "/squashgrips/",
+      "B169": "grip squashracket",
+      "C169": "20",
+      "D169": "Squash"
+    },
+    {
+      "A170": "/squashgrips/",
+      "B170": "squash grip vervangen",
+      "C170": "20",
+      "D170": "Squash"
+    },
+    {
+      "A171": "/squashgrips/",
+      "B171": "karakal grip",
+      "C171": "20",
+      "D171": "Squash"
+    },
+    {
+      "A172": "/hockeygrips/",
+      "B172": "hockey grip",
+      "C172": "250",
+      "D172": "Hockey"
+    },
+    {
+      "A173": "/hockeygrips/",
+      "B173": "hockeygrip",
+      "C173": "150",
+      "D173": "Hockey"
+    },
+    {
+      "A174": "/hockeygrips/",
+      "B174": "hockeystick grip",
+      "C174": "90",
+      "D174": "Hockey"
+    },
+    {
+      "A175": "/hockeygrips/",
+      "B175": "grip hockeystick",
+      "C175": "70",
+      "D175": "Hockey"
+    },
+    {
+      "A176": "/hockeygrips/",
+      "B176": "hockeygrips",
+      "C176": "50",
+      "D176": "Hockey"
+    },
+    {
+      "A177": "/hockeygrips/",
+      "B177": "indian maharadja grip",
+      "C177": "30",
+      "D177": "Hockey"
+    },
+    {
+      "A178": "/hockeygrips/",
+      "B178": "beste hockeygrip",
+      "C178": "20",
+      "D178": "Hockey"
+    },
+    {
+      "A179": "/hockeygrips/",
+      "B179": "hockeygrip kopen",
+      "C179": "20",
+      "D179": "Hockey"
+    },
+    {
+      "A180": "/hockeygrips/",
+      "B180": "dikke hockeygrip",
+      "C180": "20",
+      "D180": "Hockey"
+    },
+    {
+      "A181": "/hockeygrips/",
+      "B181": "grays grip",
+      "C181": "20",
+      "D181": "Hockey"
+    },
+    {
+      "A182": "/hockeygrips/",
+      "B182": "adidas hockey grip",
+      "C182": "20",
+      "D182": "Hockey"
+    },
+    {
+      "A183": "/hockeygrips/chamois/",
+      "B183": "chamois grip",
+      "C183": "70",
+      "D183": "Hockey"
+    },
+    {
+      "A184": "/hockeygrips/chamois/",
+      "B184": "chamois grip hockey",
+      "C184": "50",
+      "D184": "Hockey"
+    },
+    {
+      "A185": "/hockeygrips/chamois/",
+      "B185": "hockey chamois grip",
+      "C185": "30",
+      "D185": "Hockey"
+    },
+    {
+      "A186": "/hockeygrips/chamois/",
+      "B186": "chamois hockeygrip",
+      "C186": "20",
+      "D186": "Hockey"
+    },
+    {
+      "A187": "/hockeygrips/vervangen/",
+      "B187": "hockeygrip vervangen",
+      "C187": "70",
+      "D187": "Hockey"
+    },
+    {
+      "A188": "/hockeygrips/vervangen/",
+      "B188": "hockey grip vervangen",
+      "C188": "70",
+      "D188": "Hockey"
+    },
+    {
+      "A189": "/hockeygrips/vervangen/",
+      "B189": "grip hockeystick vervangen",
+      "C189": "40",
+      "D189": "Hockey"
+    },
+    {
+      "A190": "/hockeygrips/vervangen/",
+      "B190": "hockeygrip wikkelen",
+      "C190": "30",
+      "D190": "Hockey"
+    },
+    {
+      "A191": "/hockeygrips/vervangen/",
+      "B191": "chamois grip wikkelen",
+      "C191": "30",
+      "D191": "Hockey"
+    },
+    {
+      "A192": "/hockeygrips/vervangen/",
+      "B192": "hockeystick grip omwikkelen",
+      "C192": "20",
+      "D192": "Hockey"
+    },
+    {
+      "A193": "/hockeygrips/vervangen/",
+      "B193": "hoe vaak hockeygrip vervangen",
+      "C193": "10",
+      "D193": "Hockey"
+    },
+    {
+      "A194": "/vergelijken/golf-pride-vs-lamkin/",
+      "B194": "golf pride vs lamkin",
+      "C194": "10",
+      "D194": "Golf"
+    },
+    {
+      "A195": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+      "B195": "chamois of rubber grip hockey",
+      "C195": "10",
+      "D195": "Hockey"
+    },
+    {
+      "A196": "/keuzehulp/",
+      "B196": "welke grip past bij mij",
+      "C196": "10",
+      "D196": "Algemeen"
+    },
+    {
+      "A197": "/keuzehulp/",
+      "B197": "welke grip kiezen",
+      "C197": "10",
+      "D197": "Algemeen"
+    },
+    {
+      "A198": "/kennis/verschil-basisgrip-overgrip/",
+      "B198": "wat is een overgrip",
+      "C198": "40",
+      "D198": "Algemeen"
+    },
+    {
+      "A199": "/kennis/verschil-basisgrip-overgrip/",
+      "B199": "verschil basisgrip en overgrip",
+      "C199": "30",
+      "D199": "Algemeen"
+    },
+    {
+      "A200": "/kennis/verschil-basisgrip-overgrip/",
+      "B200": "overgrip of basisgrip",
+      "C200": "20",
+      "D200": "Algemeen"
+    },
+    {
+      "A201": "/kennis/verschil-basisgrip-overgrip/",
+      "B201": "wat is een basisgrip",
+      "C201": "10",
+      "D201": "Algemeen"
+    },
+    {
+      "A202": "/kennis/verschil-basisgrip-overgrip/",
+      "B202": "overgrip over basisgrip",
+      "C202": "10",
+      "D202": "Algemeen"
+    },
+    {
+      "A203": "/kennis/grips-schoonmaken/",
+      "B203": "golfgrips schoonmaken",
+      "C203": "30",
+      "D203": "Algemeen"
+    },
+    {
+      "A204": "/kennis/grips-schoonmaken/",
+      "B204": "grips schoonmaken",
+      "C204": "20",
+      "D204": "Algemeen"
+    },
+    {
+      "A205": "/kennis/grips-schoonmaken/",
+      "B205": "tennisgrip schoonmaken",
+      "C205": "10",
+      "D205": "Algemeen"
+    },
+    {
+      "A206": "/kennis/grips-schoonmaken/",
+      "B206": "hockeygrip schoonmaken",
+      "C206": "10",
+      "D206": "Algemeen"
+    },
+    {
+      "A207": "/kennis/grip-stroef-maken/",
+      "B207": "grip plakkerig maken",
+      "C207": "20",
+      "D207": "Algemeen"
+    },
+    {
+      "A208": "/kennis/grip-stroef-maken/",
+      "B208": "grip weer stroef maken",
+      "C208": "10",
+      "D208": "Algemeen"
+    },
+    {
+      "A209": "/kennis/grip-stroef-maken/",
+      "B209": "gladde grip",
+      "C209": "10",
+      "D209": "Algemeen"
+    },
+    {
+      "A210": "/kennis/grip-bij-zweethanden/",
+      "B210": "grip zweethanden",
+      "C210": "20",
+      "D210": "Algemeen"
+    },
+    {
+      "A211": "/kennis/grip-bij-zweethanden/",
+      "B211": "overgrip zweethanden",
+      "C211": "20",
+      "D211": "Algemeen"
+    },
+    {
+      "A212": "/kennis/grip-bij-zweethanden/",
+      "B212": "zweethanden tennis",
+      "C212": "20",
+      "D212": "Algemeen"
+    },
+    {
+      "A213": "/kennis/grip-bij-zweethanden/",
+      "B213": "beste grip bij zweethanden",
+      "C213": "10",
+      "D213": "Algemeen"
+    },
+    {
+      "A214": "/blog/tenniselleboog-en-grip/",
+      "B214": "tenniselleboog grip",
+      "C214": "30",
+      "D214": "Tennis"
+    },
+    {
+      "A215": "/blog/tenniselleboog-en-grip/",
+      "B215": "tenniselleboog gripmaat",
+      "C215": "20",
+      "D215": "Tennis"
+    },
+    {
+      "A216": "/blog/tenniselleboog-en-grip/",
+      "B216": "tenniselleboog racket grip",
+      "C216": "10",
+      "D216": "Tennis"
+    },
+    {
+      "A217": "(n.t.b.)",
+      "B217": "ijshockey tape",
+      "C217": "30",
+      "D217": "Overig"
+    },
+    {
+      "A218": "(n.t.b.)",
+      "B218": "pickleball grip",
+      "C218": "10",
+      "D218": "Overig"
+    }
+  ],
+  "Kannibalisatie": [
+    {
+      "A1": "#",
+      "B1": "Conflict",
+      "C1": "Zoekwoorden",
+      "D1": "Pagina A (krijgt het zoekwoord)",
+      "E1": "Pagina B (mag er niet op ranken)",
+      "F1": "Risico",
+      "G1": "Besluit",
+      "H1": "Controle"
+    },
+    {
+      "A2": "1",
+      "B2": "Homepagina vs sporthubs",
+      "C2": "sportgrips, grips kopen vs golfgrips, tennisgrip, padel grip",
+      "D2": "/",
+      "E2": "/golfgrips/, /tennisgrips/, /padelgrips/ e.a.",
+      "F2": "Middel",
+      "G2": "Homepagina targett alleen sportoverstijgende termen. Geen sportnaam + grip in title/H1 van home; sportblokken op home linken met exacte hubnaam als anker.",
+      "H2": "Ranking-URL per zoekwoord in Search Console: 'golfgrips' mag nooit op / ranken."
+    },
+    {
+      "A3": "2",
+      "B3": "Generieke 'overgrip(s)'",
+      "C3": "overgrip, overgrips, overgrip kopen, beste overgrip",
+      "D3": "/tennisgrips/overgrips/",
+      "E3": "/padelgrips/",
+      "F3": "Hoog",
+      "G3": "Toegewezen aan tennis (grootste markt). Padel-hub gebruikt uitsluitend zoekwoorden mét 'padel'. Eerst SERP checken: als padel- en tennisresultaten gemengd zijn, overweeg een sportoverstijgende /overgrips/-vergelijker.",
+      "H3": "SERP-check vóór livegang; maandelijks ranking-URL voor 'overgrip'."
+    },
+    {
+      "A4": "3",
+      "B4": "Padel-hub vs padel-overgrips",
+      "C4": "padel grip, padel overgrip",
+      "D4": "/padelgrips/",
+      "E4": "(geen aparte overgrips-pagina)",
+      "F4": "Hoog",
+      "G4": "Bewust samengevoegd: in padel is grip vrijwel altijd overgrip. Aparte /padelgrips/overgrips/ niet aanmaken.",
+      "H4": "n.v.t."
+    },
+    {
+      "A5": "4",
+      "B5": "Tennis-hub vs tennis-overgrips",
+      "C5": "tennisgrip, grip tennisracket vs overgrip tennis",
+      "D5": "/tennisgrips/",
+      "E5": "/tennisgrips/overgrips/",
+      "F5": "Middel",
+      "G5": "Hub: 'tennisgrip' en uitleg basisgrip vs overgrip. 'Overgrip' niet in title/H1 van de hub.",
+      "H5": "Ranking-URL 'overgrip tennis' moet de subpagina zijn."
+    },
+    {
+      "A6": "5",
+      "B6": "Golfgrips vs beste golfgrips",
+      "C6": "golfgrips, beste golfgrips",
+      "D6": "/golfgrips/",
+      "E6": "(geen /beste/-pagina)",
+      "F6": "Middel",
+      "G6": "Samengevoegd op de hub. Pas splitsen als de SERP voor 'beste golfgrips' duidelijk andere resultaten (toplijsten) toont dan 'golfgrips'.",
+      "H6": "SERP-vergelijking beide zoekwoorden."
+    },
+    {
+      "A7": "6",
+      "B7": "Puttergrips vs SuperStroke",
+      "C7": "putter grip vs superstroke putter grip",
+      "D7": "/golfgrips/putter/",
+      "E7": "/golfgrips/superstroke/",
+      "F7": "Hoog",
+      "G7": "Generiek (putter grip, dikke putter grip) naar /putter/; alles met 'superstroke' naar de merkpagina. SuperStroke-pagina zonder 'putter grip' in title/H1.",
+      "H7": "Ranking-URL 'putter grip'."
+    },
+    {
+      "A8": "7",
+      "B8": "Puttergrips vs vervangen",
+      "C8": "putter grip vervangen",
+      "D8": "/golfgrips/vervangen/",
+      "E8": "/golfgrips/putter/",
+      "F8": "Laag",
+      "G8": "How-to-intentie: op /vervangen/ als sectie. Putterpagina linkt ernaar.",
+      "H8": "n.v.t."
+    },
+    {
+      "A9": "8",
+      "B9": "Maat-hub vs maatpagina's",
+      "C9": "golfgrip maat vs midsize/oversize/undersize golfgrips",
+      "D9": "/golfgrips/maat/",
+      "E9": "/golfgrips/maat/midsize/ e.a.",
+      "F9": "Middel",
+      "G9": "Hub: 'welke maat'-vragen + standard. Maatnamen niet in title/H1 van de hub. 'Dikke golfgrips' en 'jumbo' naar oversize.",
+      "H9": "Ranking-URL 'midsize golfgrips'."
+    },
+    {
+      "A10": "9",
+      "B10": "Undersize vs damesgrips",
+      "C10": "golfgrips dames",
+      "D10": "/golfgrips/maat/undersize/",
+      "E10": "(geen damespagina)",
+      "F10": "Laag",
+      "G10": "Geen aparte damespagina; dezelfde producten. Dameshoek in H2 van undersize.",
+      "H10": "n.v.t."
+    },
+    {
+      "A11": "10",
+      "B11": "Golfgrips vervangen: kosten vs zelf",
+      "C11": "golfgrips vervangen kosten, laten vervangen, zelf vervangen",
+      "D11": "/golfgrips/vervangen/",
+      "E11": "(geen aparte kostenpagina)",
+      "F11": "Middel",
+      "G11": "Eén sterke pagina i.p.v. drie zwakke. Kosten en 'laten vervangen' als H2-secties.",
+      "H11": "Alleen splitsen als 'kosten' > 200/mnd blijkt."
+    },
+    {
+      "A12": "11",
+      "B12": "Merken over sporten heen",
+      "C12": "wilson overgrip, babolat overgrip, head overgrip",
+      "D12": "/tennisgrips/wilson/ e.a.",
+      "E12": "/padelgrips/ (secties)",
+      "F12": "Middel",
+      "G12": "Generieke merk + overgrip naar tennis. Padelvarianten bevatten altijd 'padel' en staan op /padelgrips/ of de padelmerkpagina.",
+      "H12": "Ranking-URL generieke merkzoekwoorden."
+    },
+    {
+      "A13": "12",
+      "B13": "Yonex tennis vs badminton",
+      "C13": "yonex overgrip, yonex super grap vs yonex badminton grip",
+      "D13": "/tennisgrips/yonex/",
+      "E13": "/badmintongrips/",
+      "F13": "Middel",
+      "G13": "Super Grap en 'yonex overgrip' naar tennis; 'yonex badminton grip' naar badmintonhub. Over en weer linken.",
+      "H13": "SERP-check 'yonex overgrip' (badminton dominant?)."
+    },
+    {
+      "A14": "13",
+      "B14": "Adidas padel vs hockey",
+      "C14": "adidas padel overgrip vs adidas hockey grip",
+      "D14": "/padelgrips/adidas/",
+      "E14": "/hockeygrips/",
+      "F14": "Laag",
+      "G14": "Zoekwoorden bevatten de sport; geen actie nodig.",
+      "H14": "n.v.t."
+    },
+    {
+      "A15": "14",
+      "B15": "Overgrip aanbrengen: tennis vs padel",
+      "C15": "overgrip aanbrengen vs padel overgrip aanbrengen",
+      "D15": "/tennisgrips/vervangen/",
+      "E15": "/padelgrips/vervangen/",
+      "F15": "Middel",
+      "G15": "Generiek naar tennis; padel alleen met 'padel' in het zoekwoord. Padelpagina richt zich op dikte (dikker maken) om te onderscheiden.",
+      "H15": "Ranking-URL 'overgrip aanbrengen'."
+    },
+    {
+      "A16": "15",
+      "B16": "Overgrips (product) vs vervangen (how-to)",
+      "C16": "overgrip kopen vs overgrip wikkelen",
+      "D16": "/tennisgrips/overgrips/",
+      "E16": "/tennisgrips/vervangen/",
+      "F16": "Laag",
+      "G16": "Product- en how-to-intentie gescheiden. Overgripspagina linkt naar how-to, niet andersom dupliceren.",
+      "H16": "n.v.t."
+    },
+    {
+      "A17": "16",
+      "B17": "Basisgrips vs kennis",
+      "C17": "basisgrip vs wat is een basisgrip",
+      "D17": "/tennisgrips/basisgrips/",
+      "E17": "/kennis/verschil-basisgrip-overgrip/",
+      "F17": "Middel",
+      "G17": "Definitie- en verschilvragen op kennispagina; product op basisgrips. Geen uitgebreide definitie op de productpagina.",
+      "H17": "Ranking-URL 'wat is een overgrip'."
+    },
+    {
+      "A18": "17",
+      "B18": "Gripmaat vs tenniselleboog",
+      "C18": "gripmaat tennis vs tenniselleboog gripmaat",
+      "D18": "/tennisgrips/gripmaat/",
+      "E18": "/blog/tenniselleboog-en-grip/",
+      "F18": "Laag",
+      "G18": "Elleboog-zoekwoorden alleen op de blog; gripmaatpagina noemt het kort met link.",
+      "H18": "n.v.t."
+    },
+    {
+      "A19": "18",
+      "B19": "Hockey-hub vs chamois",
+      "C19": "hockey grip vs chamois grip",
+      "D19": "/hockeygrips/",
+      "E19": "/hockeygrips/chamois/",
+      "F19": "Middel",
+      "G19": "'Chamois' niet in title/H1 van de hub. 'Chamois grip wikkelen' naar /hockeygrips/vervangen/.",
+      "H19": "Ranking-URL 'chamois grip'."
+    },
+    {
+      "A20": "19",
+      "B20": "'Hoe vaak vervangen' per sport",
+      "C20": "hoe vaak overgrip vervangen, hoe vaak golfgrips vervangen",
+      "D20": "vervangen-pagina per sport",
+      "E20": "/kennis/",
+      "F20": "Laag",
+      "G20": "Per sport op de eigen vervangen-pagina; geen sportoverstijgende 'hoe vaak'-pagina maken.",
+      "H20": "n.v.t."
+    }
+  ]
+}

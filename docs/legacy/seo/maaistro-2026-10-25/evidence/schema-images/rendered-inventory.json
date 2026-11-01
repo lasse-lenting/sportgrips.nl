@@ -1,0 +1,991 @@
+[
+  {
+    "page": "home",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Welke robotmaaier is de beste?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De beste robotmaaier is de maaier die bij jouw tuin past. Begin bij het grasoppervlak, de indeling en eventuele hellingen. Vergelijk daarna navigatie, installatie en service. Meer functies maken een model niet automatisch geschikter voor jouw gazon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is een robotmaaier zonder draad altijd handiger?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Je hoeft geen begrenzingsdraad rond je gazon aan te leggen. Daar staat tegenover dat de navigatie en installatie bij je tuin moeten passen. Kijk bij satellietgestuurde modellen naar ontvangst, bomen en bebouwing. Controleer de eisen van het specifieke model."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is een robotmaaier met GPS altijd draadloos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee. GPS kan ook een functie hebben voor positiebepaling of diefstalbeveiliging. Controleer expliciet of de maaier met virtuele grenzen werkt en of je daarvoor extra hardware of een verbinding nodig hebt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wat levert de keuzehulp op?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Je krijgt een eerste advies over de eigenschappen en aandachtspunten die bij jouw tuin passen. De keuzehulp kiest op dit moment nog geen specifiek model voor je. Gebruik de uitkomst als vertrekpunt voor de koopgidsen en de controle van fabrikantspecificaties."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe verdient Maaistro geld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maaistro is opgezet als affiliatevergelijker. Als je later via een als affiliatelink gemarkeerde winkelverwijzing koopt, kunnen wij een commissie ontvangen. Daar betaal je niets extra voor. Een samenwerking mag onze aanbevelingen niet bepalen. In deze preview zijn nog geen affiliatelinks aangesloten."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hebben jullie de robotmaaiers zelf getest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We claimen geen eigen praktijktests die we niet hebben uitgevoerd. De huidige gidsen leggen uit waar je op kunt letten. Bij latere modelvergelijkingen maken we duidelijk welke informatie van een fabrikant komt en wat we zelf hebben onderzocht."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=3840&q=75",
+        "alt": "Robotmaaier op een strak gemaaid groen gazon",
+        "width": "2048",
+        "height": "1152",
+        "loading": null,
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=3840&q=75 3840w",
+        "sizes": "100vw",
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/detail-dew-grass.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/detail-planter.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/detail-mower-wheel.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/detail-lawn-edge.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/measure-lawn.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/measure-lawn.webp",
+        "alt": "Je gazon",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=3840&q=75",
+        "alt": "Robotmaaier zonder draad",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Frobot-charging.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, (max-width: 1199px) 50vw, 400px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=3840&q=75",
+        "alt": "Robotmaaier voor een kleine tuin",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fcompact-garden.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, (max-width: 1199px) 50vw, 400px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=3840&q=75",
+        "alt": "Robotmaaier voor een grote tuin",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Flarge-garden.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, (max-width: 1199px) 50vw, 400px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=3840&q=75",
+        "alt": "Begin bij je tuin",
+        "width": "1536",
+        "height": "1024",
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fgarden-plan.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 680px) 85vw, 45vw",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=3840&q=75",
+        "alt": "Ontdek wat voor jou telt",
+        "width": "1536",
+        "height": "1024",
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fnarrow-passage.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 680px) 85vw, 45vw",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=3840&q=75",
+        "alt": "Kies met een helder verhaal",
+        "width": "1536",
+        "height": "1024",
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=384&q=75 384w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fowner-inspection.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 680px) 85vw, 45vw",
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/family-garden.webp",
+        "alt": "Jouw tuin staat voorop",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/comparison-notes.webp",
+        "alt": "Heldere afwegingen",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/garden-consultation.webp",
+        "alt": "Eerlijk over samenwerkingen",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/family-garden.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/comparison-notes.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/garden-consultation.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/family-garden.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/comparison-notes.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/garden-consultation.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/quiet-garden-background.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "image",
+        "imagesrcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fhero-grass.jpg&w=3840&q=75 3840w",
+        "imagesizes": "100vw"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/detail-dew-grass.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/detail-planter.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/detail-mower-wheel.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/detail-lawn-edge.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 25,
+      "responsive": 7,
+      "lazy": 16,
+      "missing_alt_attribute": 0,
+      "empty_alt": 14
+    }
+  },
+  {
+    "page": "about",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Over Maaistro",
+            "item": "http://localhost:3000/over-maaistro"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 2,
+      "responsive": 0,
+      "lazy": 0,
+      "missing_alt_attribute": 0,
+      "empty_alt": 2
+    }
+  },
+  {
+    "page": "advice-index",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=3840&q=75",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fwireless-open-lawn.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, 600px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=3840&q=75",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Furban-courtyard.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, 600px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=3840&q=75",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "srcset": "/_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fmaaistro%2Fphotos%2Fconnected-lawn-zones.webp&w=3840&q=75 3840w",
+        "sizes": "(max-width: 679px) 100vw, 600px",
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 5,
+      "responsive": 3,
+      "lazy": 3,
+      "missing_alt_attribute": 0,
+      "empty_alt": 5
+    }
+  },
+  {
+    "page": "wireless",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "http://localhost:3000/advies/robotmaaier-zonder-draad#article",
+        "headline": "Robotmaaier zonder draad: past dat bij jouw tuin?",
+        "description": "Vergelijk de manier van navigeren, de installatievoorwaarden en wat je nodig hebt om grenzen te veranderen. Draadloos is een optie om te onderzoeken, geen garantie dat ieder gazon geschikt is.",
+        "image": "http://localhost:3000/assets/maaistro/photos/wireless-open-lawn.webp",
+        "dateModified": "2026-10-25",
+        "inLanguage": "nl-NL",
+        "mainEntityOfPage": "http://localhost:3000/advies/robotmaaier-zonder-draad",
+        "author": {
+          "@type": "Organization",
+          "@id": "http://localhost:3000/#organization",
+          "name": "Maaistro",
+          "url": "http://localhost:3000/over-maaistro"
+        },
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Advies",
+            "item": "http://localhost:3000/advies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Robotmaaier zonder draad: past dat bij jouw tuin?",
+            "item": "http://localhost:3000/advies/robotmaaier-zonder-draad"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/wireless-open-lawn.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/wireless-open-lawn.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 3,
+      "responsive": 0,
+      "lazy": 0,
+      "missing_alt_attribute": 0,
+      "empty_alt": 3
+    }
+  },
+  {
+    "page": "small",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "http://localhost:3000/advies/robotmaaier-kleine-tuin#article",
+        "headline": "Robotmaaier voor een kleine tuin: kijk verder dan de m\u00b2",
+        "description": "Meet het gras, teken de doorgangen en bepaal waar het laadstation kan staan. Vergelijk vervolgens de installatie, afmetingen en service van het model dat je overweegt.",
+        "image": "http://localhost:3000/assets/maaistro/photos/urban-courtyard.webp",
+        "dateModified": "2026-10-25",
+        "inLanguage": "nl-NL",
+        "mainEntityOfPage": "http://localhost:3000/advies/robotmaaier-kleine-tuin",
+        "author": {
+          "@type": "Organization",
+          "@id": "http://localhost:3000/#organization",
+          "name": "Maaistro",
+          "url": "http://localhost:3000/over-maaistro"
+        },
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Advies",
+            "item": "http://localhost:3000/advies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Robotmaaier voor een kleine tuin: kijk verder dan de m\u00b2",
+            "item": "http://localhost:3000/advies/robotmaaier-kleine-tuin"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/urban-courtyard.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/urban-courtyard.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 3,
+      "responsive": 0,
+      "lazy": 0,
+      "missing_alt_attribute": 0,
+      "empty_alt": 3
+    }
+  },
+  {
+    "page": "large",
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "http://localhost:3000/advies/robotmaaier-grote-tuin#article",
+        "headline": "Robotmaaier voor een grote tuin: capaciteit is pas het begin",
+        "description": "Vergelijk capaciteit onder de juiste omstandigheden. Neem afzonderlijke grasvelden, hellingen, installatie en de gewenste maaitijden mee voordat je een model kiest.",
+        "image": "http://localhost:3000/assets/maaistro/photos/connected-lawn-zones.webp",
+        "dateModified": "2026-10-25",
+        "inLanguage": "nl-NL",
+        "mainEntityOfPage": "http://localhost:3000/advies/robotmaaier-grote-tuin",
+        "author": {
+          "@type": "Organization",
+          "@id": "http://localhost:3000/#organization",
+          "name": "Maaistro",
+          "url": "http://localhost:3000/over-maaistro"
+        },
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Advies",
+            "item": "http://localhost:3000/advies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Robotmaaier voor een grote tuin: capaciteit is pas het begin",
+            "item": "http://localhost:3000/advies/robotmaaier-grote-tuin"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "140",
+        "height": "34",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/photos/connected-lawn-zones.webp",
+        "alt": "",
+        "width": null,
+        "height": null,
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      },
+      {
+        "src": "/assets/maaistro/logo.svg",
+        "alt": "",
+        "width": "658",
+        "height": "150",
+        "loading": null,
+        "srcset": null,
+        "sizes": null,
+        "fetchpriority": null
+      }
+    ],
+    "preloads": [
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/logo.svg",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "href": "/assets/maaistro/photos/connected-lawn-zones.webp",
+        "as": "image"
+      },
+      {
+        "rel": [
+          "preload"
+        ],
+        "as": "script",
+        "fetchpriority": "low",
+        "href": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js"
+      }
+    ],
+    "counts": {
+      "images": 3,
+      "responsive": 0,
+      "lazy": 0,
+      "missing_alt_attribute": 0,
+      "empty_alt": 3
+    }
+  }
+]

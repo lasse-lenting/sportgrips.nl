@@ -1,0 +1,31 @@
+import newsData from './news.json';
+import type { RichBlock } from './site';
+
+export type NewsArticle = {
+  slug: string;
+  topicKey: string;
+  status: 'draft' | 'published';
+  title: string;
+  description: string;
+  summary: string;
+  eventDate: string;
+  publishedAt: string | null;
+  approvedAt?: string;
+  approvalRef?: string;
+  updatedAt: string;
+  verifiedAt: string;
+  image: string;
+  tags: string[];
+  sources: Array<{ name: string; url: string; updatedAt: string | null }>;
+  relatedAdvice: string[];
+  body: RichBlock[];
+};
+
+export const newsArticles = newsData as NewsArticle[];
+export const publishedNews = newsArticles
+  .filter((article) => article.status === 'published' && article.publishedAt)
+  .sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''));
+
+// Local review is explicit; drafts never enter the sitemap.
+export const visibleNews =
+  process.env.PASPOOT_PREVIEW_DRAFTS === '1' ? newsArticles : publishedNews;

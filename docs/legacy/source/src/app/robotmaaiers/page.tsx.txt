@@ -1,0 +1,216 @@
+import Link from 'next/link';
+import { Container, Eyebrow } from '@/components/ui';
+import { MowerSelection } from '@/components/mower-selection';
+import { JsonLd } from '@/components/json-ld';
+import { mowers } from '@/content/mowers';
+import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo';
+
+export const metadata = pageMetadata({
+  title: 'Robotmaaiers vergelijken: kies voor jouw gazon',
+  description:
+    'Vergelijk robotmaaiers op gazoncapaciteit, draad, navigatie en hellingen. Bekijk de afwegingen per model en check de huidige prijs bij bol.',
+  path: '/robotmaaiers',
+});
+
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const query = await searchParams;
+  const area = typeof query.oppervlakte === 'string' ? query.oppervlakte : '';
+  const filter = query.draad === 'wireless' ? 'wireless' : 'all';
+  const terrain = query.terrein === 'sloped' ? 'sloped' : '';
+  const layout = ['single', 'connected', 'separate', 'unsure'].includes(String(query.indeling))
+    ? String(query.indeling)
+    : '';
+  const surroundings = ['open', 'sheltered', 'unsure'].includes(String(query.omgeving))
+    ? String(query.omgeving)
+    : '';
+  const slope = typeof query.helling === 'string' ? query.helling : '';
+  return (
+    <div className="mower-page">
+      <header className="mower-hero">
+        <Container>
+          <div className="mower-hero-copy">
+            <Eyebrow>Jouw gras. Jouw keuze.</Eyebrow>
+            <h1>
+              De juiste maaier.
+              <br />
+              Meer weekend.
+            </h1>
+            <p>
+              Geen eindeloze modellenbrij. Vergelijk onze eerste selectie op wat er in jouw tuin toe
+              doet. Van een klein gazon met draad tot draadloos maaien met vierwielaandrijving.
+            </p>
+            <div className="mower-hero-links">
+              <a className="button mower-price-button" href="#selectie">
+                Bekijk de modellen
+              </a>
+              <Link href="/#volunteer-apply">Help mij kiezen</Link>
+            </div>
+          </div>
+          <aside className="mower-hero-note">
+            <strong>Het begint bij jouw gazon.</strong>
+            <p>
+              Oppervlakte, grenzen, hellingen, indeling en omgeving: samen bepalen ze welke modellen
+              je verder wilt vergelijken.
+            </p>
+            <span>Specificaties vergeleken · geen eigen praktijktest</span>
+          </aside>
+        </Container>
+      </header>
+      <div className="mower-page-body">
+        <Container>
+          <MowerSelection
+            key={JSON.stringify(query)}
+            initialArea={area}
+            initialFilter={filter}
+            terrain={terrain}
+            layout={layout}
+            surroundings={surroundings}
+            initialSlope={slope}
+          />
+          <section
+            className="mower-comparison"
+            id="vergelijking"
+            aria-labelledby="comparison-heading"
+          >
+            <h2 id="comparison-heading">De verschillen in één oogopslag.</h2>
+            <p>
+              De capaciteiten en hellingen zijn fabrikantspecificaties. Lees de voorwaarden bij elk
+              model.
+            </p>
+            <div
+              className="mower-table-scroll"
+              tabIndex={0}
+              role="region"
+              aria-label="Vergelijkingstabel, horizontaal te scrollen op een klein scherm"
+            >
+              <table>
+                <caption>De {mowers.length} modellen uit de Maaistro-selectie</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Gazon</th>
+                    <th scope="col">Navigatie</th>
+                    <th scope="col">Draad nodig?</th>
+                    <th scope="col">Belangrijkste afweging</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {mowers.map((mower) => (
+                    <tr key={mower.slug}>
+                      <th scope="row">
+                        {mower.name.startsWith(mower.brand)
+                          ? mower.name
+                          : `${mower.brand} ${mower.name}`}
+                      </th>
+                      <td>{mower.capacity}</td>
+                      <td>{mower.navigation}</td>
+                      <td>{mower.wireless ? 'Nee' : 'Ja'}</td>
+                      <td>
+                        {mower.technology === 'rtk'
+                          ? 'Satellietontvangst en antenne- of netwerkvoorwaarden'
+                          : mower.technology === 'camera'
+                            ? 'Herkenbare randen, licht en doorgangen'
+                            : mower.technology === 'lidar'
+                              ? 'Maaimodus en beschikbare maaitijd'
+                              : 'Draad, installatiekit en doorgangen'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section className="mower-reading" aria-labelledby="navigation-heading">
+            <h2 id="navigation-heading">Welke navigatie past bij je tuin?</h2>
+            <div className="mower-navigation-explainer">
+              <article>
+                <h3>Begrenzingsdraad</h3>
+                <p>
+                  Je legt de grens fysiek vast. Bomen hoeven de grensbepaling niet te verstoren,
+                  maar aanleg, reparatie en wijzigingen aan de tuin vragen aandacht. GPS in een
+                  specificatie betekent op zichzelf niet dat een maaier zonder draad werkt.
+                </p>
+              </article>
+              <article>
+                <h3>RTK en camera</h3>
+                <p>
+                  Satellietpositionering helpt de maaier zijn plek te bepalen. Controleer ontvangst
+                  onder bomen, langs gevels en in hoeken. Sommige modellen gebruiken een eigen
+                  antenne, andere een netwerkdienst. Dat verschilt zelfs binnen één modelserie.
+                </p>
+              </article>
+              <article>
+                <h3>Camera of LiDAR</h3>
+                <p>
+                  Deze modellen gebruiken camerabeeld of een laserscanner. Ze hebben geen
+                  RTK-antenne nodig, maar zijn daarmee niet geschikt voor elke tuin. Bekijk
+                  herkenbare randen, licht, doorgangen en de voorwaarden voor het in kaart brengen.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section className="mower-method" id="werkwijze" aria-labelledby="method-heading">
+            <div>
+              <Eyebrow>Helder over onze selectie</Eyebrow>
+              <h2 id="method-heading">Zo stellen we de selectie samen.</h2>
+            </div>
+            <div>
+              <p>
+                We vergelijken fabrikantgegevens over installatie, navigatie, oppervlak en terrein.
+                De modellen zijn gekozen om verschillende situaties naast elkaar te zetten. Het
+                eerste model is geen universele winnaar. De keuzehulp sluit modellen uit die te
+                weinig capaciteit hebben; een onbekende capaciteit of hellinglimiet wordt niet
+                ingevuld met een aanname.
+              </p>
+              <p>
+                Wij hebben deze maaiers niet zelf getest. Bij ieder model vind je de fabrikantbron.
+                Productfoto’s komen van de fabrikanten; de sfeerbeelden elders op Maaistro zijn
+                illustratief.
+              </p>
+              <p>
+                Prijzen, voorraad en verkopers wisselen. Daarom tonen we geen vaste bedragen.
+                Controleer bij bol ook de modeluitvoering, conditie, pakketinhoud en garantie.
+              </p>
+              <p>
+                Specificaties en bronpagina’s bekeken op 25 oktober 2026. De selectie loopt tot
+                1.200 m² bekende gazoncapaciteit. Voor grotere tuinen geven we geen automatische
+                aanbeveling. Bij eufy gebruiken we circa 32% (18°), omdat de fabrikant op andere
+                pagina’s een tegenstrijdig percentage noemt.
+              </p>
+              <p>
+                De selectie is geen volledige marktvergelijking. We kiezen modellen met
+                verschillende installatieprincipes en een vindbare fabrikantbron. E15 en E18 zijn
+                varianten van dezelfde familie, met verschillende capaciteiten.
+              </p>
+              <Link className="mower-text-link" href="/over-maaistro">
+                Meer over Maaistro
+              </Link>
+            </div>
+          </section>
+          <section className="mower-reading" aria-labelledby="reading-heading">
+            <h2 id="reading-heading">Nog iets uitzoeken?</h2>
+            <div>
+              <Link href="/advies/robotmaaier-zonder-draad">Wat vraagt maaien zonder draad?</Link>
+              <Link href="/advies/robotmaaier-kleine-tuin">
+                Waar let je op bij een kleine tuin?
+              </Link>
+              <Link href="/advies/robotmaaier-grote-tuin">
+                Hoe vergelijk je capaciteit voor meer gras?
+              </Link>
+            </div>
+          </section>
+        </Container>
+      </div>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Robotmaaiers vergelijken', path: '/robotmaaiers' },
+        ])}
+      />
+    </div>
+  );
+}

@@ -1,0 +1,106 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { addPaspootAffiliateRef } from '../src/lib/affiliate.ts';
+import { findMatchingProducts } from '../src/lib/travel-match.ts';
+
+const root = resolve(import.meta.dirname, '..');
+const [products, airlines] = await Promise.all([
+  readJson(resolve(root, 'src/content/projects.json')),
+  readJson(resolve(root, 'src/content/airlines.json')),
+]);
+
+const klm = findAirline('klm');
+const transavia = findAirline('transavia');
+const airFrance = findAirline('air-france');
+
+const affiliate = new URL(
+  addPaspootAffiliateRef('https://zoospot.nl/products/test?variant=123&utm_source=paspoot'),
+);
+assert.equal(affiliate.searchParams.get('variant'), '123');
+assert.equal(affiliate.searchParams.get('utm_source'), 'paspoot');
+assert.equal(affiliate.searchParams.get('ref'), 'paspoot');
+
+const klmMatches = findMatchingProducts({
+  rule: klm,
+  products,
+  petType: 'dog',
+  petWeight: 6.5,
+});
+assert.equal(klmMatches.length, 1);
+assert.equal(klmMatches[0].project.dimensions.join('x'), '46x28x24');
+assert.ok(klmMatches[0].totalWeight <= klm.maxTotalWeight);
+
+const tooHeavy = findMatchingProducts({
+  rule: klm,
+  products,
+  petType: 'cat',
+  petWeight: 7.5,
+});
+assert.equal(tooHeavy.length, 0);
+
+const incompleteAirline = findMatchingProducts({
+  rule: airFrance,
+  products,
+  petType: 'dog',
+  petWeight: 3,
+});
+assert.equal(incompleteAirline.length, 0);
+
+const directDimensions = findMatchingProducts({
+  rule: transavia,
+  products: [
+    {
+      ...products[0],
+      id: 'rotated-only',
+      dimensions: [30, 40, 24],
+      airlineSlugs: ['transavia'],
+    },
+  ],
+  petType: 'dog',
+  petWeight: 3,
+});
+assert.equal(directDimensions.length, 0);
+
+const unavailable = findMatchingProducts({
+  rule: transavia,
+  products: products.map((product) => ({ ...product, inStock: false })),
+  petType: 'dog',
+  petWeight: 3,
+});
+assert.equal(unavailable.length, 0);
+
+const missingProductData = findMatchingProducts({
+  rule: transavia,
+  products: [{ ...products[1], weight: null }],
+  petType: 'dog',
+  petWeight: 3,
+});
+assert.equal(missingProductData.length, 0);
+
+const cabinNotAllowed = findMatchingProducts({
+  rule: { ...transavia, cabinAllowed: false },
+  products,
+  petType: 'dog',
+  petWeight: 3,
+});
+assert.equal(cabinNotAllowed.length, 0);
+
+for (const product of products) {
+  assert.equal(product.dimensions.length, 3);
+  assert.ok(product.weight > 0);
+  assert.ok(product.productUrl.startsWith('https://zoospot.nl/products/'));
+  assert.ok(product.sourceUrl.endsWith('.js'));
+}
+
+console.log('Travel-data checks passed: matching, weight, dimensions, stock and affiliate URLs.');
+
+function findAirline(slug) {
+  const airline = airlines.find((candidate) => candidate.slug === slug);
+  assert.ok(airline, `Airline ${slug} ontbreekt.`);
+  return airline;
+}
+
+async function readJson(path) {
+  return JSON.parse(await readFile(path, 'utf8'));
+}

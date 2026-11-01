@@ -1,0 +1,3 @@
+⚠️  Schema validation warnings:
+  - Block 1: @type 'FAQPage' is restricted to government and healthcare sites only (Aug 2023) — verify site qualifies
+  - Block 2: Missing @type

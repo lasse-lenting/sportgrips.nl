@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "docs/seo/maaistro-2026-10-25/skill-source/scripts/llms_txt_checker.py",
+    "http://localhost:3000",
+    "--json"
+  ],
+  "exitCode": 0,
+  "stdout": "{\n  \"url\": \"http://localhost:3000/llms.txt\",\n  \"full_url\": \"http://localhost:3000/llms-full.txt\",\n  \"exists\": false,\n  \"full_exists\": false,\n  \"status\": null,\n  \"full_status\": null,\n  \"parsed\": {\n    \"title\": null,\n    \"description\": null,\n    \"sections\": [],\n    \"links\": []\n  },\n  \"quality\": {\n    \"score\": 0,\n    \"issues\": [],\n    \"suggestions\": []\n  },\n  \"error\": \"Blocked: URL resolves to private/internal IP (127.0.0.1)\"\n}\n",
+  "stderr": "/Users/lasselenting/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n  warnings.warn(\n"
+}

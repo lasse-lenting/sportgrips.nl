@@ -1,0 +1,94 @@
+import Link from 'next/link';
+import { Container, SectionHeader } from '@/components/ui';
+import { pageMetadata, breadcrumbJsonLd } from '@/lib/seo';
+import { JsonLd } from '@/components/json-ld';
+export const metadata = pageMetadata({
+  title: 'Over Maaistro: slim kiezen, eerlijk vergelijken',
+  description:
+    'Wat Maaistro doet, hoe we naar robotmaaiers kijken en hoe we omgaan met affiliatecommissies en commerciële samenwerkingen.',
+  path: '/over-maaistro',
+});
+export default function Page() {
+  return (
+    <>
+      <section className="listing-hero">
+        <Container>
+          <SectionHeader
+            as="h1"
+            eyebrow="Over Maaistro"
+            title="Jij het weekend. Hij het gras."
+            description="Een robotmaaier kiezen mag overzichtelijker. Maaistro helpt je begrijpen wat bij jouw tuin past."
+          />
+        </Container>
+      </section>
+      <section className="listing-body">
+        <Container className="max-w-[850px]">
+          <div className="rich-content">
+            <h2>Goed kiezen begint bij jouw tuin</h2>
+            <p>
+              Je kunt uren verdwalen in robotmaaiers. Maaistro begint liever bij je grasoppervlak,
+              de indeling van je tuin en de manier waarop je wilt maaien. Vanuit die vragen leggen
+              we uit welke eigenschappen ertoe doen en welke informatie je nog moet controleren.
+            </p>
+            <p>
+              Op Maaistro vind je een{' '}
+              <Link href="/#volunteer-apply">keuzehulp voor een eerste tuinadvies</Link> en{' '}
+              <Link href="/advies">koopgidsen</Link> over draadloos maaien en kleine en grote
+              tuinen. Vanuit de keuzehulp kun je direct naar onze{' '}
+              <Link href="/robotmaaiers">eerste productselectie</Link>, gefilterd op oppervlak en
+              begrenzing. De selectie is beperkt; niet voor iedere tuin zit er al een model bij.
+            </p>
+            <h2>Geen testervaring verzinnen</h2>
+            <p>
+              Onze huidige gidsen zijn gebaseerd op documentonderzoek: we lezen
+              fabrikantspecificaties en installatie-informatie. Dat is iets anders dan een
+              beoordeling na gebruik. We claimen geen eigen praktijktest. Als we een concreet
+              product als voorbeeld noemen, verwijzen we naar de bron. We laten zien waar informatie
+              vandaan komt en benoemen de beperkingen.
+            </p>
+            <p>
+              We gebruiken met AI gegenereerde sfeerbeelden als illustratie. Deze beelden zijn geen
+              bewijs van eigen gebruik, een uitgevoerde installatie of een praktijktest.
+            </p>
+            <h2>Hoe Maaistro geld kan verdienen</h2>
+            <p>
+              Maaistro is opgezet als affiliatevergelijker. Koop je via een als affiliatelink
+              gemarkeerde winkelverwijzing, dan kunnen wij een commissie ontvangen. Jij betaalt
+              daardoor niets extra aan Maaistro. De knoppen ‘Check huidige prijs’ verwijzen via
+              het bol Affiliate Programma naar het product bij bol. Prijs, voorraad, verkoper en
+              pakketinhoud controleer je daar.
+            </p>
+            <p>
+              Een commerciële samenwerking moet zichtbaar zijn. Een vergoeding mag niet bepalen welk
+              model bovenaan staat of welke nadelen we benoemen. Ook een gesponsorde plaatsing moet
+              herkenbaar zijn als reclame. We verkopen de robotmaaiers niet zelf; de webshop
+              verzorgt de bestelling en afhandeling.
+            </p>
+            <h2>Uitleg waar je iets aan hebt</h2>
+            <p>
+              We bouwen aan duidelijke antwoorden op concrete vragen. Wanneer is draadloos handig?
+              Wat telt bij een kleine tuin? Hoe vergelijk je capaciteit voor een groot gazon? Liever
+              een nuttige gids die je verder helpt dan tientallen pagina’s die hetzelfde herhalen.
+            </p>
+            <p>
+              Lees ook hoe Maaistro met je invoer omgaat op de{' '}
+              <Link href="/privacy">privacypagina</Link>.
+            </p>
+            <h2>Vragen of een fout gezien?</h2>
+            <p>
+              Mail ons via <a href="mailto:lasse@puntwerk.nl">lasse@puntwerk.nl</a>. Heb je een
+              onjuistheid gevonden? Stuur de pagina en de informatie die volgens jou moet worden
+              aangepast mee, zodat we dit kunnen controleren.
+            </p>
+          </div>
+        </Container>
+      </section>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Over Maaistro', path: '/over-maaistro' },
+        ])}
+      />
+    </>
+  );
+}

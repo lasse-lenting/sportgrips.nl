@@ -1,0 +1,274 @@
+[
+  {
+    "id": "zoospot-flypet-klm-46",
+    "slug": "reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "title": "Flypet reistas 46 × 28 × 24 cm",
+    "description": "Zachte, opvouwbare vliegtuigreistas met ventilatie voor een kleine hond of kat.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "46 × 28 × 24 cm",
+    "goal": "1,1 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569",
+    "dimensions": [46, 28, 24],
+    "weight": 1.1,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 89,95",
+    "priceCents": 8995,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "sourceUrl": "https://zoospot.nl/products/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["klm"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten: <strong>46 × 28 × 24 cm</strong>. Leeggewicht: <strong>1,1 kg</strong>. Geschikt voor een kleine hond of kat die comfortabel in de gesloten tas past."
+      },
+      {
+        "tag": "h3",
+        "html": "Controleer voor vertrek"
+      },
+      {
+        "tag": "p",
+        "html": "Meet je huisdier en controleer de actuele voorwaarden van je airline. Paspoot vergelijkt uitsluitend de gepubliceerde maximale afmetingen en het totale gewicht."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-selene-40",
+    "slug": "selene-air-pet-bag-40x30x24",
+    "title": "Selene vliegtuigreistas 40 × 30 × 24 cm",
+    "description": "Compacte zachte cabinerijstas met ventilatie voor honden en katten.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "40 × 30 × 24 cm",
+    "goal": "1,2 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/selene-airline-pet-bag-40x30x24_922c794f-4f65-4ff8-9efa-77ac514deed6.jpg?v=1786879820",
+    "dimensions": [40, 30, 24],
+    "weight": 1.2,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 74,95",
+    "priceCents": 7495,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/selene-air-pet-bag-40x30x24",
+    "sourceUrl": "https://zoospot.nl/products/selene-air-pet-bag-40x30x24.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["transavia"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten: <strong>40 × 30 × 24 cm</strong>. Leeggewicht: <strong>1,2 kg</strong>. De zwarte variant was bij de laatste controle beschikbaar."
+      },
+      {
+        "tag": "h3",
+        "html": "Comfort gaat voor"
+      },
+      {
+        "tag": "p",
+        "html": "Controleer of je hond of kat natuurlijk kan staan, liggen en draaien. Airlinevoorwaarden en voorraad kunnen veranderen."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-ventora-40",
+    "slug": "ventora-air-pet-carrier-40x30x24-expandable",
+    "title": "Ventora uitbreidbare reistas 40 × 30 × 24 cm",
+    "description": "Zachte vliegtuigreistas met een uitbreidbaar zijpaneel voor gebruik buiten de vlucht.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "40 × 30 × 24 cm",
+    "goal": "1,3 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/ventora-airline-pet-bag-40x30x24-expandable.jpg?v=1786885225",
+    "dimensions": [40, 30, 24],
+    "weight": 1.3,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 84,95",
+    "priceCents": 8495,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/ventora-air-pet-carrier-40x30x24-expandable",
+    "sourceUrl": "https://zoospot.nl/products/ventora-air-pet-carrier-40x30x24-expandable.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["transavia"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten in vluchtstand: <strong>40 × 30 × 24 cm</strong>. Leeggewicht: <strong>1,3 kg</strong>. De grijze variant was bij de laatste controle beschikbaar voor € 84,95."
+      },
+      {
+        "tag": "h3",
+        "html": "Gebruik in de cabine"
+      },
+      {
+        "tag": "p",
+        "html": "Gebruik de tas tijdens controle en vlucht in de ingeklapte stand. Paspoot gaat niet uit van samendrukbaarheid of gedraaide afmetingen."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-flypet-55",
+    "slug": "pet-carrier-55x40x23-cm-airline-approved",
+    "title": "Flypet vliegtuigreistas 55 × 40 × 23 cm",
+    "description": "Ruime zachte reistas met ventilatie en een leeggewicht van 1,46 kg.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "55 × 40 × 23 cm",
+    "goal": "1,46 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/pet-carrier-bag-tui-finnair-00-finnair-approved_0f3cd7cd-5895-4433-bdfc-de2169e73de4.jpg?v=1740641606",
+    "dimensions": [55, 40, 23],
+    "weight": 1.46,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 89,95",
+    "priceCents": 8995,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/pet-carrier-55x40x23-cm-airline-approved",
+    "sourceUrl": "https://zoospot.nl/products/pet-carrier-55x40x23-cm-airline-approved.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["lufthansa", "brussels-airlines"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten: <strong>55 × 40 × 23 cm</strong>. Leeggewicht: <strong>1,46 kg</strong>. Geschikt voor een kleine hond of kat."
+      },
+      {
+        "tag": "h3",
+        "html": "Controleer de combinatie"
+      },
+      {
+        "tag": "p",
+        "html": "De tas kan alleen worden aanbevolen wanneer iedere buitenmaat en het berekende totaalgewicht binnen de airlinegrenzen vallen."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-miravia-lufthansa",
+    "slug": "miravia-lufthansa-pet-carrier",
+    "title": "Miravia reistas 55 × 40 × 23 cm",
+    "description": "Rechthoekige zachte reistas met privacygordijnen voor hond of kat.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "55 × 40 × 23 cm",
+    "goal": "1,95 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/miravia-lufthansa-pet-carrier-main.jpg?v=1783439340",
+    "dimensions": [55, 40, 23],
+    "weight": 1.95,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 74,95",
+    "priceCents": 7495,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/miravia-lufthansa-pet-carrier",
+    "sourceUrl": "https://zoospot.nl/products/miravia-lufthansa-pet-carrier.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["lufthansa"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten: <strong>55 × 40 × 23 cm</strong>. Leeggewicht: <strong>1,95 kg</strong>. De privacygordijnen kunnen prikkels onderweg beperken."
+      },
+      {
+        "tag": "h3",
+        "html": "Geen automatische goedkeuring"
+      },
+      {
+        "tag": "p",
+        "html": "Paspoot vergelijkt alleen de gepubliceerde maxima. De airline beslist uiteindelijk over toelating aan boord."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-miravia-brussels",
+    "slug": "miravia-brussels-airlines-pet-carrier",
+    "title": "Miravia Brussels reistas 55 × 40 × 23 cm",
+    "description": "Zachte, rechthoekige reistas met privacygordijnen en ventilatie.",
+    "location": "Zoospot · direct leverbaar",
+    "raised": "55 × 40 × 23 cm",
+    "goal": "1,95 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/miravia-brussels-airlines-pet-carrier-main.jpg?v=1788782750",
+    "dimensions": [55, 40, 23],
+    "weight": 1.95,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 74,95",
+    "priceCents": 7495,
+    "inStock": true,
+    "productUrl": "https://zoospot.nl/products/miravia-brussels-airlines-pet-carrier",
+    "sourceUrl": "https://zoospot.nl/products/miravia-brussels-airlines-pet-carrier.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["brussels-airlines"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Productgegevens"
+      },
+      {
+        "tag": "p",
+        "html": "Buitenmaten: <strong>55 × 40 × 23 cm</strong>. Leeggewicht: <strong>1,95 kg</strong>. Geschikt voor een kleine hond of kat."
+      },
+      {
+        "tag": "h3",
+        "html": "Blijf zelf controleren"
+      },
+      {
+        "tag": "p",
+        "html": "Controleer comfort, actuele airlinevoorwaarden en beschikbaarheid voordat je boekt of bestelt."
+      }
+    ]
+  },
+  {
+    "id": "zoospot-aurora-40",
+    "slug": "aurora-airline-pet-carrier-40x30x24",
+    "title": "Aurora cabinerijstas 40 × 30 × 24 cm",
+    "description": "Zachte cabinerijstas voor honden en katten; momenteel niet beschikbaar.",
+    "location": "Zoospot · uitverkocht",
+    "raised": "40 × 30 × 24 cm",
+    "goal": "1,4 kg leeggewicht",
+    "image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/aurora-airline-pet-carrier-main-p2.jpg?v=1786464975",
+    "dimensions": [40, 30, 24],
+    "weight": 1.4,
+    "pets": ["dog", "cat"],
+    "store": "Zoospot",
+    "price": "€ 89,95",
+    "priceCents": 8995,
+    "inStock": false,
+    "productUrl": "https://zoospot.nl/products/aurora-airline-pet-carrier-40x30x24",
+    "sourceUrl": "https://zoospot.nl/products/aurora-airline-pet-carrier-40x30x24.js",
+    "checkedAt": "2026-09-13",
+    "manualReview": false,
+    "airlineSlugs": ["transavia"],
+    "body": [
+      {
+        "tag": "h3",
+        "html": "Voorraadstatus"
+      },
+      {
+        "tag": "p",
+        "html": "Deze tas was bij de laatste controle uitverkocht en wordt daarom niet automatisch aanbevolen."
+      }
+    ]
+  }
+]

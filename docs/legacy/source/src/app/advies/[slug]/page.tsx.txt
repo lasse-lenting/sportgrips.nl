@@ -1,0 +1,56 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { adviceGuides } from '@/content/site';
+import { AdviceDetail } from '@/components/page-sections';
+import { JsonLd } from '@/components/json-ld';
+import { articleJsonLd, breadcrumbJsonLd, pageMetadata } from '@/lib/seo';
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return adviceGuides.map(({ slug }) => ({ slug }));
+}
+
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const guide = adviceGuides.find((item) => item.slug === slug);
+  if (!guide) return {};
+  return pageMetadata({
+    title: guide.title,
+    description: guide.description,
+    path: `/advies/${guide.slug}`,
+    image: guide.image,
+    type: 'article',
+  });
+}
+
+export default async function Page({ params }: Props) {
+  const { slug } = await params;
+  const guide = adviceGuides.find((item) => item.slug === slug);
+  if (!guide) notFound();
+  const path = `/advies/${guide.slug}`;
+
+  return (
+    <>
+      <AdviceDetail guide={guide} />
+      <JsonLd
+        data={articleJsonLd({
+          title: guide.title,
+          description: guide.summary,
+          path,
+          image: guide.image,
+          modifiedAt: guide.updatedAt,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Advies', path: '/advies' },
+          { name: guide.title, path },
+        ])}
+      />
+    </>
+  );
+}

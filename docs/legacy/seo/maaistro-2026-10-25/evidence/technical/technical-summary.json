@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-25",
+  "scope": "Local prelaunch development server; not a public indexing audit",
+  "intended_origin": "https://maaistro.nl",
+  "audited_origin": "http://localhost:3000",
+  "total_requests": 43,
+  "active_maaistro_routes": 7,
+  "active_all_200": true,
+  "legacy_paspoot_routes": 18,
+  "legacy_200_without_noindex": 18,
+  "active_link_errors": [],
+  "legacy_link_error_instances": 5,
+  "legacy_distinct_404_targets": 3,
+  "redirects_observed": 8,
+  "all_active_single_h1": true,
+  "all_active_have_title_description_canonical": true,
+  "no_public_rankings_or_cwv_claims": true
+}

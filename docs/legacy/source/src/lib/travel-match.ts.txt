@@ -1,0 +1,98 @@
+import type { AirlineRule, Project } from '../content/site';
+
+export type PetType = 'dog' | 'cat';
+
+export type ProductMatch = {
+  project: Project;
+  label: 'Beste match' | 'Lichtste keuze' | 'Past volledig';
+  reason: string;
+  totalWeight: number;
+};
+
+export function airlineDimensions(rule: AirlineRule) {
+  const dimensions = [rule.maxLength, rule.maxWidth, rule.maxHeight];
+  return dimensions.every((value): value is number => value !== null) ? dimensions : null;
+}
+
+export function findMatchingProducts({
+  rule,
+  products,
+  petType,
+  petWeight,
+  limit = 3,
+}: {
+  rule: AirlineRule;
+  products: Project[];
+  petType: PetType;
+  petWeight: number | null;
+  limit?: number;
+}): ProductMatch[] {
+  const maximumDimensions = airlineDimensions(rule);
+  const petAllowed = petType === 'dog' ? rule.dogAllowed : rule.catAllowed;
+
+  if (
+    !maximumDimensions ||
+    petWeight === null ||
+    petWeight <= 0 ||
+    rule.cabinAllowed !== true ||
+    petAllowed !== true ||
+    !rule.verified ||
+    !rule.automaticRecommendations ||
+    rule.manualReview ||
+    rule.maxTotalWeight === null
+  ) {
+    return [];
+  }
+
+  const matches = products
+    .filter((project) => {
+      if (
+        project.manualReview ||
+        !project.inStock ||
+        !project.productUrl ||
+        !project.image ||
+        project.priceCents === null ||
+        project.weight === null ||
+        project.dimensions.length !== 3 ||
+        !project.pets.includes(petType) ||
+        !project.airlineSlugs.includes(rule.slug)
+      ) {
+        return false;
+      }
+
+      const dimensionsFit = project.dimensions.every(
+        (dimension, index) => dimension <= maximumDimensions[index],
+      );
+      const totalWeightFits = petWeight + project.weight <= rule.maxTotalWeight!;
+      return dimensionsFit && totalWeightFits;
+    })
+    .sort((first, second) => {
+      const firstVolume = first.dimensions.reduce((total, value) => total * value, 1);
+      const secondVolume = second.dimensions.reduce((total, value) => total * value, 1);
+      if (firstVolume !== secondVolume) return secondVolume - firstVolume;
+      return (
+        (first.weight ?? Number.POSITIVE_INFINITY) - (second.weight ?? Number.POSITIVE_INFINITY)
+      );
+    })
+    .slice(0, Math.max(0, limit));
+
+  if (!matches.length) return [];
+
+  const lightestWeight = Math.min(...matches.map((project) => project.weight!));
+
+  return matches.map((project, index) => ({
+    project,
+    label:
+      index === 0
+        ? 'Beste match'
+        : project.weight === lightestWeight
+          ? 'Lichtste keuze'
+          : 'Past volledig',
+    reason: `Past binnen de gepubliceerde maximale afmetingen van ${rule.name}. Huisdier en tas wegen samen ${formatKg(petWeight + project.weight!)} kg, binnen de limiet van ${formatKg(rule.maxTotalWeight!)} kg.`,
+    totalWeight: petWeight + project.weight!,
+  }));
+}
+
+function formatKg(value: number) {
+  return new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 2 }).format(value);
+}

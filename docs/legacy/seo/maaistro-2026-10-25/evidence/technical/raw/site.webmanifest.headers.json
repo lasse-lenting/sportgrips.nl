@@ -1,0 +1,11 @@
+{
+  "Accept-Ranges": "bytes",
+  "Cache-Control": "public, max-age=0",
+  "Last-Modified": "Sun, 25 Oct 2026 13:31:53 GMT",
+  "ETag": "W/\"135-1a17342b395\"",
+  "Content-Type": "application/manifest+json",
+  "Content-Length": "309",
+  "Vary": "Accept-Encoding",
+  "Date": "Sun, 25 Oct 2026 15:19:13 GMT",
+  "Connection": "close"
+}

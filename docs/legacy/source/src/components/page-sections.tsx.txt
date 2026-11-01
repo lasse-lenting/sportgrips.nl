@@ -1,0 +1,491 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { publishedNews, type NewsArticle } from '@/content/news';
+import {
+  airlineRules,
+  projects,
+  type AdviceGuide,
+  type CharityEvent,
+  type Project,
+  type RichBlock,
+  images,
+} from '@/content/site';
+import { Button, Container, Icon, SectionHeader } from './ui';
+import { Ribbon } from './ribbon';
+import { ApplicationForm } from './forms';
+import { ProjectCard } from './cards';
+import { GuideMowers } from './mower-card';
+import { mowersForGuide } from '@/content/mowers';
+
+export function ListingHero({ kind }: { kind: 'projects' | 'events' | 'advice' }) {
+  const content = {
+    projects: {
+      eyebrow: 'Reistassen',
+      title: 'Kies een tas die echt past',
+      description:
+        'Vergelijk buitenmaten, leeggewicht, voorraad en praktische eigenschappen van actuele Zoospot-reistassen.',
+      ribbon: 'Meet buitenkant • Weeg samen • Controleer opnieuw',
+    },
+    events: {
+      eyebrow: 'Luchtvaartmaatschappijen',
+      title: 'Vind de regel voor jouw vlucht',
+      description:
+        'Bekijk voorbeeldrichtlijnen voor cabinevervoer, inclusief status en controledatum.',
+      ribbon: 'Cabine • Ruim • Niet toegestaan',
+    },
+    advice: {
+      eyebrow: 'Maaistro koopgidsen',
+      title: 'Word wijzer. Maai minder.',
+      description:
+        'Van begrenzingsdraad tot een groot gazon: heldere uitleg om de robotmaaier te kiezen die bij jouw tuin past.',
+      ribbon: 'Jouw gazon • Slim kiezen • Meer vrije tijd',
+    },
+  }[kind];
+
+  return (
+    <section className="listing-hero">
+      <Container>
+        <SectionHeader
+          as="h1"
+          eyebrow={content.eyebrow}
+          title={content.title}
+          description={content.description}
+        />
+      </Container>
+      <Ribbon text={content.ribbon} className="listing-ribbon" />
+    </section>
+  );
+}
+export function RichContent({ blocks }: { blocks: RichBlock[] }) {
+  return (
+    <div className="rich-content">
+      {blocks.map((b, i) => {
+        const Tag = (['h2', 'h3', 'p', 'ul', 'ol'].includes(b.tag) ? b.tag : 'p') as
+          | 'h2'
+          | 'h3'
+          | 'p'
+          | 'ul'
+          | 'ol';
+        const id = Tag === 'h2' ? headingId(b.html) : undefined;
+
+        return <Tag id={id} key={i} dangerouslySetInnerHTML={{ __html: b.html }} />;
+      })}
+    </div>
+  );
+}
+
+function plainText(html: string) {
+  return html
+    .replace(/<[^>]*>/g, '')
+    .replace(/&amp;/g, '&')
+    .trim();
+}
+
+function headingId(html: string) {
+  return plainText(html)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+function formatDate(date: string) {
+  return new Intl.DateTimeFormat('nl-NL', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${date}T12:00:00Z`));
+}
+
+function TableOfContents({ blocks }: { blocks: RichBlock[] }) {
+  const headings = blocks.filter((block) => block.tag === 'h2');
+  return (
+    <details className="article-toc" open>
+      <summary>Inhoudsopgave</summary>
+      <ol>
+        {headings.map((heading) => (
+          <li key={heading.html}>
+            <a href={`#${headingId(heading.html)}`}>{plainText(heading.html)}</a>
+          </li>
+        ))}
+      </ol>
+    </details>
+  );
+}
+
+function CheckPromoCard() {
+  return (
+    <div className="article-check-card">
+      <span className="eyebrow">Maaistro-keuzehulp</span>
+      <h3>Begin bij jouw tuin. Ontdek wat telt.</h3>
+      <Button href="/#volunteer-apply">Start de keuzehulp</Button>
+      <ul aria-label="Wat de Maaistro-keuzehulp biedt">
+        <li>
+          <Icon name="check" /> Vijf vragen over je tuin
+        </li>
+        <li>
+          <Icon name="check" /> Een eerste tuinadvies
+        </li>
+        <li>
+          <Icon name="check" /> Gratis en zonder account
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function ArticleSidebar({ blocks }: { blocks: RichBlock[] }) {
+  return (
+    <aside className="article-sidebar">
+      <div className="article-sidebar-sticky">
+        <TableOfContents blocks={blocks} />
+        <CheckPromoCard />
+      </div>
+    </aside>
+  );
+}
+
+export function Breadcrumb({
+  parentHref,
+  parentLabel,
+  title,
+}: {
+  parentHref: string;
+  parentLabel: string;
+  title: string;
+}) {
+  return (
+    <nav className="breadcrumb" aria-label="Kruimelpad">
+      <Link href={parentHref}>{parentLabel}</Link>
+      <Icon name="arrow" />
+      <span>{title}</span>
+    </nav>
+  );
+}
+export function DetailForm({
+  kind,
+  item,
+}: {
+  kind: 'project' | 'event';
+  item: Project | CharityEvent;
+}) {
+  return (
+    <aside className="detail-sidebar">
+      <div className="detail-form-card">
+        <div>
+          <h2>
+            {kind === 'project' ? 'Past deze tas bij je vlucht?' : 'Doe de check voor deze reis'}
+          </h2>
+          {kind === 'event' && <p>{item.location}</p>}
+        </div>
+        <img src={item.image} alt={item.title} />
+        <ApplicationForm kind={kind} context={item.slug} variant="compact" />
+      </div>
+    </aside>
+  );
+}
+
+/** Airline pages the given product is registered for, e.g. to link a bag to its matching airlines. */
+function ProductAirlineLinks({ project }: { project: Project }) {
+  const matches = airlineRules.filter((rule) => project.airlineSlugs.includes(rule.slug));
+  if (!matches.length) return null;
+
+  return (
+    <div className="rich-content">
+      <h2>Past bij deze luchtvaartmaatschappijen</h2>
+      <p>
+        Deze buitenmaten zijn eerder vergeleken met de gepubliceerde cabineregels van:{' '}
+        {matches.map((rule, index) => (
+          <span key={rule.slug}>
+            <Link href={`/luchtvaartmaatschappijen/${rule.slug}`}>Cabineregels {rule.name}</Link>
+            {index < matches.length - 1 ? ', ' : '.'}
+          </span>
+        ))}{' '}
+        Controleer bij je maatschappij altijd de actuele voorwaarden.
+      </p>
+    </div>
+  );
+}
+
+export function ProjectDetail({ project }: { project: Project }) {
+  return (
+    <div className="detail-layout project-detail">
+      <article className="detail-article">
+        <div className="article-inner">
+          <div className="project-detail-heading">
+            <Breadcrumb parentHref="/reistassen" parentLabel="Reistassen" title={project.title} />
+            <div>
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+            </div>
+          </div>
+          <img className="project-detail-image" src={project.image} alt={project.title} />
+          <div className="fundraising">
+            <div>
+              <span>Buitenmaten</span>
+              <strong>{project.raised}</strong>
+            </div>
+            <div>
+              <span>Leeggewicht</span>
+              <strong>{project.goal}</strong>
+            </div>
+          </div>
+          <RichContent blocks={project.body} />
+          <ProductAirlineLinks project={project} />
+        </div>
+      </article>
+      <DetailForm kind="project" item={project} />
+    </div>
+  );
+}
+
+/** Reistassen that are registered for this airline, shown as an extra, editorial section. */
+function AirlineProductPicks({ slug }: { slug: string }) {
+  const matches = projects.filter((project) => project.airlineSlugs.includes(slug)).slice(0, 3);
+  if (!matches.length) return null;
+
+  return (
+    <section className="result-products" aria-labelledby="airline-products-title">
+      <div>
+        <span className="wizard-kicker">Reistassen</span>
+        <h2 id="airline-products-title">Reistassen die bij deze buitenmaten passen</h2>
+        <p>
+          Deze reistassen zijn vergeleken met de hierboven genoemde maximale afmetingen. Doe de{' '}
+          <Link href="/cabinecheck">cabinecheck</Link> voor een uitslag op basis van jouw huisdier
+          en gewicht.
+        </p>
+      </div>
+      <div className="result-product-grid">
+        {matches.map((project) => (
+          <ProjectCard key={project.id} project={project} placement="airline_page" />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function EventDetail({ event }: { event: CharityEvent }) {
+  const rule = airlineRules.find((item) => item.slug === event.slug);
+
+  return (
+    <div className="event-article-page">
+      <header className="article-hero">
+        <div className="article-hero-inner">
+          <div className="article-hero-copy">
+            <Breadcrumb
+              parentHref="/luchtvaartmaatschappijen"
+              parentLabel="Luchtvaartmaatschappijen"
+              title={event.title}
+            />
+            <div className="article-tags" aria-label="Onderwerpen">
+              {event.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+            <h1>Huisdier meenemen met {event.title}: wat zijn de regels?</h1>
+            <div className="article-read-time">
+              <span aria-hidden="true">◷</span> {event.readTime}
+            </div>
+            <dl className="article-metadata">
+              <div>
+                <dt>Gepubliceerd</dt>
+                <dd>{formatDate(event.date)}</dd>
+              </div>
+              <div>
+                <dt>Laatst gecontroleerd</dt>
+                <dd>{event.updatedAt}</dd>
+              </div>
+            </dl>
+          </div>
+          <div className="article-hero-image">
+            <img src={event.hero} alt={`Reizen met een huisdier via ${event.title}`} />
+            <span>
+              {event.tags.includes('Handmatige controle')
+                ? 'Handmatige controle nodig'
+                : `Officiële bron · gecontroleerd ${event.updatedAt}`}
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <div className="article-layout">
+        <ArticleSidebar blocks={event.body} />
+        <article className="article-content">
+          <div className="article-summary">
+            <span>Samenvatting</span>
+            <p>{event.summary}</p>
+          </div>
+          <p className="article-intro">{event.description}</p>
+          <RichContent blocks={event.body} />
+          {rule && <AirlineProductPicks slug={rule.slug} />}
+          <div className="article-inline-cta">
+            <div>
+              <span className="eyebrow">Klaar om te controleren?</span>
+              <h3>Vul je huisdier, tas en maatschappij in.</h3>
+            </div>
+            <Button href="/cabinecheck">Doe de Paspoot-check</Button>
+          </div>
+        </article>
+      </div>
+    </div>
+  );
+}
+
+export function AdviceDetail({ guide, news }: { guide: AdviceGuide; news?: NewsArticle }) {
+  const relatedNews = news
+    ? []
+    : publishedNews.filter((article) => article.relatedAdvice.includes(guide.slug));
+  return (
+    <div className="event-article-page">
+      <header className="article-hero">
+        <div className="article-hero-inner">
+          <div className="article-hero-copy">
+            <Breadcrumb
+              parentHref={news ? '/nieuws' : '/advies'}
+              parentLabel={news ? 'Nieuws' : 'Advies'}
+              title={guide.title}
+            />
+            <div className="article-tags" aria-label="Onderwerpen">
+              {guide.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+            <h1>{guide.title}</h1>
+            <dl className="article-metadata">
+              <div>
+                <dt>Door</dt>
+                <dd>
+                  <Link href="/over-maaistro">Maaistro</Link>
+                </dd>
+              </div>
+              {news && (
+                <>
+                  <div>
+                    <dt>Gebeurtenis</dt>
+                    <dd>
+                      <time dateTime={news.eventDate}>{formatDate(news.eventDate)}</time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>{news.status === 'draft' ? 'Status' : 'Gepubliceerd'}</dt>
+                    <dd>
+                      {news.publishedAt ? (
+                        <time dateTime={news.publishedAt}>{formatDate(news.publishedAt)}</time>
+                      ) : (
+                        'Concept — ter beoordeling'
+                      )}
+                    </dd>
+                  </div>
+                </>
+              )}
+              <div>
+                <dt>Laatst bijgewerkt</dt>
+                <dd>
+                  <time dateTime={guide.updatedAt}>{formatDate(guide.updatedAt)}</time>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div className="article-hero-image">
+            <Image
+              src={guide.image}
+              alt=""
+              width={1536}
+              height={1024}
+              sizes="(max-width: 679px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 80px), (max-width: 1319px) 45vw, 550px"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </header>
+
+      <div className="article-layout">
+        <ArticleSidebar blocks={guide.body} />
+        <article className="article-content">
+          <div className="article-summary">
+            <span>Samenvatting</span>
+            <p>{guide.summary}</p>
+          </div>
+          <p className="article-intro">{guide.description}</p>
+          <RichContent blocks={guide.body} />
+          {news && (
+            <section className="mt-12 border-t border-brand/20 pt-8" aria-labelledby="news-sources">
+              <h2 id="news-sources" className="text-[28px]">
+                Officiële bronnen
+              </h2>
+              <p className="mt-3 text-muted">
+                Gecontroleerd op{' '}
+                <time dateTime={news.verifiedAt}>{formatDate(news.verifiedAt)}</time>.
+              </p>
+              <ul className="mt-4 grid gap-3">
+                {news.sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} className="underline">
+                      {source.name}
+                    </a>
+                    {source.updatedAt && (
+                      <span className="text-muted">
+                        {' '}
+                        · bron bijgewerkt {formatDate(source.updatedAt)}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {relatedNews.length > 0 && (
+            <section className="mt-12" aria-labelledby="related-news">
+              <h2 id="related-news" className="text-[28px]">
+                Actuele wijzigingen bij deze gids
+              </h2>
+              <ul className="mt-4 grid gap-3">
+                {relatedNews.map((article) => (
+                  <li key={article.slug}>
+                    <Link className="underline" href={`/nieuws/${article.slug}`}>
+                      {article.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          <div className="article-inline-cta">
+            <div>
+              <span className="eyebrow">Jouw tuin als vertrekpunt</span>
+              <h3>Vertel over je gazon, grenzen en terrein.</h3>
+            </div>
+            <Button href="/#volunteer-apply">Start de keuzehulp</Button>
+          </div>
+        </article>
+      </div>
+      {!news && <GuideMowers mowers={mowersForGuide(guide.slug)} slug={guide.slug} />}
+    </div>
+  );
+}
+
+export function CabinecheckHero() {
+  return (
+    <section className="volunteer-page">
+      <img src={images.sky} alt="" className="sky-background" />
+      <div className="volunteer-page-content">
+        <SectionHeader
+          as="h1"
+          center
+          eyebrow="De Paspoot-check"
+          title="Past jouw reis in de cabine?"
+          description="Kies je maatschappij en vul gewicht en buitenmaten in voor een directe, transparante uitslag."
+        />
+        <div className="volunteer-page-form">
+          <ApplicationForm variant="page" context="checker" />
+        </div>
+      </div>
+      <Ribbon
+        text="Maatschappij • Gewicht • Buitenmaten • Check"
+        className="volunteer-page-ribbon"
+      />
+    </section>
+  );
+}

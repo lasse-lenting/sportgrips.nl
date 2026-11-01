@@ -1,0 +1,140 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { mowerSourceChecked, type Mower } from '@/content/mowers';
+import { bolAffiliateUrl } from '@/lib/bol-affiliate';
+import { Icon } from './ui';
+
+export function AffiliateDisclosure() {
+  return (
+    <p className="mower-disclosure">
+      Deze pagina bevat affiliatelinks. Bij een aankoop kunnen we een commissie krijgen, zonder
+      extra kosten voor jou.
+    </p>
+  );
+}
+
+export function MowerCard({
+  mower,
+  placement = 'selectie',
+  reasons = [],
+  checks = [],
+}: {
+  mower: Mower;
+  placement?: string;
+  reasons?: string[];
+  checks?: string[];
+}) {
+  return (
+    <article className="mower-card" id={mower.slug}>
+      <div className="mower-card-visual">
+        <span className="mower-label">{mower.label}</span>
+        <Image
+          src={mower.image}
+          alt={mower.name.startsWith(mower.brand) ? mower.name : `${mower.brand} ${mower.name}`}
+          width={800}
+          height={600}
+          sizes="(max-width: 679px) calc(100vw - 80px), (max-width: 1199px) 40vw, 500px"
+          className="mower-product-image"
+        />
+      </div>
+      <div className="mower-card-copy">
+        <span className="mower-brand">{mower.brand}</span>
+        <h3>{mower.name}</h3>
+        <dl className="mower-specs">
+          <div>
+            <dt>Gazon</dt>
+            <dd>{mower.capacity}</dd>
+          </div>
+          <div>
+            <dt>Navigatie</dt>
+            <dd>{mower.navigation}</dd>
+          </div>
+          <div>
+            <dt>Begrenzingsdraad</dt>
+            <dd>{mower.wireless ? 'Niet nodig' : 'Wel nodig'}</dd>
+          </div>
+          <div>
+            <dt>Helling</dt>
+            <dd>{mower.slope}</dd>
+          </div>
+        </dl>
+        {reasons.length > 0 && (
+          <div className="mower-match">
+            <strong>Waarom vergelijken?</strong>
+            <ul>
+              {reasons.map((reason) => (
+                <li key={reason}>{reason}</li>
+              ))}
+            </ul>
+            {checks[0] && <p className="mower-match-check">Nog controleren: {checks[0]}</p>}
+          </div>
+        )}
+        <details className="mower-extra-details">
+          <summary>Meer over dit model</summary>
+          {checks.length > 0 && (
+            <div className="mower-consideration">
+              <strong>Voor jouw tuin controleren</strong>
+              <ul>
+                {checks.map((check) => (
+                  <li key={check}>{check}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <p className="mower-intro">{mower.intro}</p>
+          {mower.capacityNote && <p className="mower-capacity-note">{mower.capacityNote}</p>}
+          <ul className="mower-strengths">
+            {mower.strengths.map((point) => (
+              <li key={point}>
+                <Icon name="check" className="size-5" />
+                {point}
+              </li>
+            ))}
+          </ul>
+          <div className="mower-consideration">
+            <strong>Even opletten</strong>
+            <p>{mower.consideration}</p>
+          </div>
+        </details>
+        <div className="mower-buy">
+          <a
+            href={bolAffiliateUrl(mower.bolUrl, `${placement}-${mower.slug}`)}
+            className="button mower-price-button"
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            aria-label={`Check huidige prijs van ${mower.name.startsWith(mower.brand) ? mower.name : `${mower.brand} ${mower.name}`} bij bol (nieuw tabblad)`}
+          >
+            Check huidige prijs <span aria-hidden="true">↗</span>
+          </a>
+          <span>Bij bol</span>
+        </div>
+        <a className="mower-source" href={mower.source} target="_blank" rel="noopener noreferrer">
+          Bron: {mower.brand} · bekeken {mowerSourceChecked}
+        </a>
+      </div>
+    </article>
+  );
+}
+
+export function GuideMowers({ mowers, slug }: { mowers: Mower[]; slug: string }) {
+  if (!mowers.length) return null;
+  return (
+    <section className="guide-mowers" aria-labelledby="guide-selection-heading">
+      <h2 id="guide-selection-heading">Modellen om te vergelijken</h2>
+      <p>
+        {slug === 'robotmaaier-grote-tuin'
+          ? 'Vergelijk capaciteit en navigatie tot 1.000 en 1.200 m². Voor een groter gazon bevat onze selectie nog geen passend model. Laat de benodigde capaciteit en installatie beoordelen.'
+          : 'Begin bij deze modellen. Bekijk hoe ze je gazon afbakenen, wat de installatie vraagt en waar je op moet letten.'}
+      </p>
+      <AffiliateDisclosure />
+      <div className="mower-grid">
+        {mowers.map((mower) => (
+          <MowerCard key={mower.slug} mower={mower} placement={slug} />
+        ))}
+      </div>
+      <Link className="mower-text-link" href="/robotmaaiers">
+        Vergelijk de hele selectie
+      </Link>
+    </section>
+  );
+}

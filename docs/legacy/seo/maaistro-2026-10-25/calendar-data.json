@@ -1,0 +1,150 @@
+[
+  {
+    "week": 1,
+    "theme": "Meten vanaf nu + draadloosgids",
+    "work": "Volg Search Console/Bing-verificatie en indexatie; verdiep I01 met een situatieschema. Vercel Analytics is consent-afhankelijk; formulierafrondingen en winkelklikken zijn nog niet apart ingericht.",
+    "done": "Eén verbeterconcept onderbouwd; meetstatus vastgelegd zonder indexatie of omzet te veronderstellen.",
+    "ids": [
+      "I01"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-10-26",
+    "end": "2026-11-01"
+  },
+  {
+    "week": 2,
+    "theme": "Smalle doorgangen",
+    "work": "Werk het bestaande doorgangsconcept I06 af met modelhandleidingen en meetvoorbeeld. Gebruik tuincheck I38 als bijlage als dat dezelfde vraag beter afmaakt.",
+    "done": "Eén nieuwe beslisvraag gereed voor inhoudelijke beoordeling; geen algemene minimumdoorgang verzonnen.",
+    "ids": [
+      "I06",
+      "I38"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-11-02",
+    "end": "2026-11-08"
+  },
+  {
+    "week": 3,
+    "theme": "Kleine-tuinhub verdiepen",
+    "work": "Werk I02 uit met routes, randwerk en laadstation. Gebruik schetsen; benoem fictieve voorbeeldmaten expliciet.",
+    "done": "Bestaande gids inhoudelijk sterker; geen nieuwe m²-varianten.",
+    "ids": [
+      "I02"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-11-09",
+    "end": "2026-11-15"
+  },
+  {
+    "week": 4,
+    "theme": "Bomen en ontvangst",
+    "work": "Onderzoek I08 en vul de bestaande navigatiegids aan met modelvoorwaarden. I18 wordt daar geïntegreerd.",
+    "done": "Extra waarde tegenover huidige resultaten beschreven vóór schrijven; satellietontvangst en schaduw niet verwarren.",
+    "ids": [
+      "I08",
+      "I18"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-11-16",
+    "end": "2026-11-22"
+  },
+  {
+    "week": 5,
+    "theme": "Grote-tuinhub verdiepen",
+    "work": "Werk I03 uit met maaitijd, zones en capaciteitsdefinities. Maak de huidige grens van 1.200 m² in de modelselectie duidelijk.",
+    "done": "Rekenvoorbeeld met aannames; geen model boven geverifieerde capaciteit aanraden.",
+    "ids": [
+      "I03"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-11-23",
+    "end": "2026-11-29"
+  },
+  {
+    "week": 6,
+    "theme": "Hellingen onderbouwen",
+    "work": "Onderzoek I04 met werkgebied- en randlimieten en een echt of duidelijk illustratief meetvoorbeeld. De bestaande procentinvoer hoeft niet opnieuw gebouwd.",
+    "done": "Nieuwe gids gereed voor beoordeling; aparte calculator I05 alleen bij aantoonbare extra taakwaarde.",
+    "ids": [
+      "I04"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-11-30",
+    "end": "2026-12-06"
+  },
+  {
+    "week": 7,
+    "theme": "Eén modeldossier",
+    "work": "Kies voor I33 één van de onderzochte uitvoeringen met een echte uitlegbehoefte. Controleer pakket, installatie en beperkingen; schrijf eerst de unieke toevoeging op.",
+    "done": "Zelfstandig nuttig dossier of bewust geen nieuwe pagina; geen praktijktest claimen.",
+    "ids": [
+      "I33"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-12-07",
+    "end": "2026-12-13"
+  },
+  {
+    "week": 8,
+    "theme": "Eigen bewijs verzamelen",
+    "work": "Verzamel voor I37 één echte tuinmeting of installatiecasus met toestemming en originele beelden. Herbeoordeel prioriteiten met beschikbare zoek-/gebruiksdata.",
+    "done": "Casus met herkomst en beperkingen, of afhankelijkheid vastgelegd; ontbreken van data is geen groei.",
+    "ids": [
+      "I37"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-12-14",
+    "end": "2026-12-20"
+  },
+  {
+    "week": 9,
+    "theme": "Losse gazons en zones",
+    "work": "Onderzoek I07: zelfstandig verplaatsen, handmatig overzetten en laden per veld. Meetblad I12 alleen toevoegen als het de vraag helpt.",
+    "done": "Eén beslisgids, geen garantie op autonoom transport uit alleen multi-zone-ondersteuning.",
+    "ids": [
+      "I07"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-12-21",
+    "end": "2026-12-27"
+  },
+  {
+    "week": 10,
+    "theme": "Installatie voorbereiden",
+    "work": "Werk I19 uit op installatievoorwaarden en het gesprek met een installateur. Prijsclaims wachten op betrouwbare offertes.",
+    "done": "Praktische installatiecheck met primaire bronnen, gereed voor beoordeling.",
+    "ids": [
+      "I19"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2026-12-28",
+    "end": "2027-01-03"
+  },
+  {
+    "week": 11,
+    "theme": "Station of randwerk",
+    "work": "Kies I20 óf I21 op basis van echte vragen. Besteed het oude vergelijkerbouwblok aan onderhoud van de al live dataset en één inhoudelijke vraag.",
+    "done": "Eén onderbouwde hoofdtaak afgemaakt; acht modellen niet automatisch tot een beste-lijst promoveren.",
+    "ids": [
+      "I20",
+      "I21"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2027-01-04",
+    "end": "2027-01-10"
+  },
+  {
+    "week": 12,
+    "theme": "Evalueren en volgende sprint kiezen",
+    "work": "Bekijk beschikbare indexatie-, query- en gebruiksgegevens; actualiseer bronconflicten en modeldekking. Kies het volgende blok. Kostencontent alleen inplannen als de prijs-/offertebronnen gereed zijn.",
+    "done": "Nieuwe prioriteiten met echte meetperiode of expliciet ontbrekende gegevens; geen verplichte extra publicatie.",
+    "ids": [
+      "I13",
+      "I37"
+    ],
+    "status": "Gepland — nog niet uitgevoerd",
+    "start": "2027-01-11",
+    "end": "2027-01-17"
+  }
+]

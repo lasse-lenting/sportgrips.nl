@@ -1,0 +1,775 @@
+'use client';
+
+import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } from 'react';
+import { airlineRules, projects, type AirlineRule } from '@/content/site';
+import {
+  airlineDimensions,
+  findMatchingProducts,
+  type PetType,
+  type ProductMatch,
+} from '@/lib/travel-match';
+import { trackEvent } from '@/lib/analytics';
+import { ProjectCard } from './cards';
+
+type BagChoice = 'yes' | 'no' | '';
+type ResultStatus = 'suitable' | 'conditional' | 'not-suitable';
+type WizardStep = 1 | 2 | 3 | 4;
+
+type WizardValues = {
+  petType: PetType;
+  petWeight: string;
+  airline: string;
+  hasBag: BagChoice;
+  length: string;
+  width: string;
+  height: string;
+  bagWeight: string;
+};
+
+type CabinResult = {
+  status: ResultStatus;
+  title: string;
+  reasons: string[];
+  notes: string[];
+  totalWeight: number | null;
+  bagFitsDimensions: boolean | null;
+};
+
+const initialValues: WizardValues = {
+  petType: 'dog',
+  petWeight: '',
+  airline: '',
+  hasBag: '',
+  length: '',
+  width: '',
+  height: '',
+  bagWeight: '',
+};
+
+const stepLabels = ['Huisdier', 'Vlucht', 'Reistas', 'Uitslag'];
+
+function numberValue(value: string) {
+  if (value.trim() === '') return null;
+  const parsed = Number(value.replace(',', '.'));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function formatMeasurement(value: number | null, suffix: string) {
+  if (value === null) return 'Niet beschikbaar';
+  const formatted = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 1 }).format(value);
+  return `${formatted} ${suffix}`;
+}
+
+function safeHostname(url: string) {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return undefined;
+  }
+}
+
+function formatCheckedAt(value: string) {
+  return new Intl.DateTimeFormat('nl-NL', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${value}T12:00:00Z`));
+}
+
+export function evaluateCabinCheck(values: WizardValues, rule: AirlineRule): CabinResult {
+  const petWeight = numberValue(values.petWeight) ?? 0;
+  const bagWeight = values.hasBag === 'yes' ? (numberValue(values.bagWeight) ?? 0) : null;
+  const totalWeight = bagWeight === null ? null : petWeight + bagWeight;
+  const reasons: string[] = [];
+  const notes: string[] = [];
+  const maximumDimensions = airlineDimensions(rule);
+  const bagDimensions =
+    values.hasBag === 'yes'
+      ? [numberValue(values.length), numberValue(values.width), numberValue(values.height)]
+      : null;
+  let bagFitsDimensions: boolean | null = null;
+
+  if (rule.cabinAllowed === false) {
+    reasons.push(
+      `${rule.name} staat op basis van de beschikbare regel geen huisdieren toe in de cabine.`,
+    );
+  } else if (rule.cabinAllowed === null) {
+    notes.push('Of huisdieren in de cabine zijn toegestaan, is nog niet betrouwbaar vastgelegd.');
+  }
+
+  const petAllowed = values.petType === 'dog' ? rule.dogAllowed : rule.catAllowed;
+  if (petAllowed === false) {
+    reasons.push(
+      `${values.petType === 'dog' ? 'Honden' : 'Katten'} zijn volgens de beschikbare regel niet toegestaan.`,
+    );
+  } else if (petAllowed === null) {
+    notes.push(
+      `De toelating van ${values.petType === 'dog' ? 'honden' : 'katten'} is nog niet bevestigd.`,
+    );
+  }
+
+  if (totalWeight !== null && rule.maxTotalWeight !== null) {
+    if (totalWeight > rule.maxTotalWeight) {
+      reasons.push(
+        `Het totaalgewicht is ${formatMeasurement(totalWeight, 'kg')}; dat is hoger dan de opgeslagen limiet van ${formatMeasurement(rule.maxTotalWeight, 'kg')}.`,
+      );
+    }
+  } else if (values.hasBag === 'no') {
+    notes.push('Het uiteindelijke totaalgewicht kan pas worden berekend zodra je een tas kiest.');
+  } else {
+    notes.push('Er is nog geen betrouwbare maximale gewichtslimiet beschikbaar.');
+  }
+
+  if (bagDimensions && maximumDimensions) {
+    bagFitsDimensions = bagDimensions.every(
+      (value, index) => value !== null && value <= maximumDimensions[index],
+    );
+    if (!bagFitsDimensions) {
+      const labels = ['lengte', 'breedte', 'hoogte'];
+      const oversized = bagDimensions
+        .map((value, index) =>
+          value !== null && value > maximumDimensions[index]
+            ? `${labels[index]} ${formatMeasurement(value, 'cm')} (max. ${formatMeasurement(maximumDimensions[index], 'cm')})`
+            : null,
+        )
+        .filter(Boolean);
+      reasons.push(`De tas is te groot: ${oversized.join(', ')}.`);
+    }
+  } else if (values.hasBag === 'yes') {
+    notes.push('De maximale tasafmetingen zijn nog niet volledig of betrouwbaar vastgelegd.');
+  }
+
+  if (rule.manualReview || !rule.automaticRecommendations || !rule.verified) {
+    notes.push(
+      rule.manualReviewReason ??
+        'Deze regelset is nog niet compleet genoeg voor een automatische aanbeveling.',
+    );
+  }
+
+  if (rule.routeRestrictions.length) {
+    notes.push(...rule.routeRestrictions);
+  }
+
+  if (rule.breedRestrictions.length) {
+    notes.push(...rule.breedRestrictions);
+  }
+
+  const status: ResultStatus = reasons.length
+    ? 'not-suitable'
+    : notes.length
+      ? 'conditional'
+      : 'suitable';
+  const title =
+    status === 'suitable'
+      ? `Jouw reiscombinatie lijkt binnen de cabinerichtlijnen van ${rule.name} te passen.`
+      : status === 'conditional'
+        ? 'Het lijkt mogelijk, maar controleer deze punten voordat je boekt.'
+        : `Deze combinatie past niet binnen de huidige cabinerichtlijnen van ${rule.name}.`;
+
+  return { status, title, reasons, notes, totalWeight, bagFitsDimensions };
+}
+
+export function ApplicationForm({
+  kind = 'volunteer',
+  context = 'homepage',
+  variant = 'home',
+}: {
+  kind?: 'volunteer' | 'event' | 'project';
+  context?: string;
+  variant?: 'home' | 'page' | 'compact';
+}) {
+  const [started, setStarted] = useState(false);
+  const [step, setStep] = useState<WizardStep>(1);
+  const [values, setValues] = useState<WizardValues>(initialValues);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [result, setResult] = useState<CabinResult | null>(null);
+  const stepHeading = useRef<HTMLHeadingElement>(null);
+  const activeRule = useMemo(
+    () => airlineRules.find((rule) => rule.name.toLowerCase() === values.airline.toLowerCase()),
+    [values.airline],
+  );
+  const recommendations = useMemo(
+    () =>
+      result && activeRule
+        ? findMatchingProducts({
+            rule: activeRule,
+            products: projects,
+            petType: values.petType,
+            petWeight: numberValue(values.petWeight),
+          })
+        : [],
+    [activeRule, result, values.petType, values.petWeight],
+  );
+
+  useEffect(() => {
+    if (started) stepHeading.current?.focus();
+  }, [started, step]);
+
+  function updateValue<Key extends keyof WizardValues>(key: Key, value: WizardValues[Key]) {
+    setValues((current) => ({ ...current, [key]: value }));
+    setErrors((current) => {
+      if (!current[key]) return current;
+      const next = { ...current };
+      delete next[key];
+      return next;
+    });
+  }
+
+  function validateCurrentStep() {
+    const nextErrors: Record<string, string> = {};
+
+    if (step === 1) {
+      const weight = numberValue(values.petWeight);
+      if (weight === null || weight <= 0) {
+        nextErrors.petWeight = 'Vul een geldig gewicht groter dan 0 kg in.';
+      }
+    }
+
+    if (step === 2 && !activeRule) {
+      nextErrors.airline = 'Kies een luchtvaartmaatschappij uit de lijst.';
+    }
+
+    if (step === 3) {
+      if (!values.hasBag) nextErrors.hasBag = 'Kies of je al een reistas hebt.';
+      if (values.hasBag === 'yes') {
+        const dimensionFields = [
+          ['length', 'lengte'],
+          ['width', 'breedte'],
+          ['height', 'hoogte'],
+        ] as const;
+        dimensionFields.forEach(([field, label]) => {
+          const measurement = numberValue(values[field]);
+          if (measurement === null || measurement <= 0) {
+            nextErrors[field] = `Vul een geldige ${label} groter dan 0 cm in.`;
+          }
+        });
+        const weight = numberValue(values.bagWeight);
+        if (weight === null || weight <= 0) {
+          nextErrors.bagWeight = 'Vul het lege gewicht van de tas in.';
+        }
+      }
+    }
+
+    setErrors(nextErrors);
+    return Object.keys(nextErrors).length === 0;
+  }
+
+  function continueWizard(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!validateCurrentStep()) return;
+
+    trackEvent('checker_step_completed', {
+      step_number: step,
+      step_name: stepLabels[step - 1],
+      pet_type: values.petType,
+      airline: activeRule?.slug,
+    });
+
+    if (step < 3) {
+      setStep((step + 1) as WizardStep);
+      return;
+    }
+
+    if (step === 3 && activeRule) {
+      const cabinResult = evaluateCabinCheck(values, activeRule);
+      const matches = findMatchingProducts({
+        rule: activeRule,
+        products: projects,
+        petType: values.petType,
+        petWeight: numberValue(values.petWeight),
+      });
+      const eventParams = {
+        airline: activeRule.slug,
+        pet_type: values.petType,
+        result_status: cabinResult.status,
+        matches_count: matches.length,
+      };
+      trackEvent('checker_completed', eventParams);
+      if (cabinResult.status === 'not-suitable' || matches.length === 0) {
+        trackEvent('checker_no_match', eventParams);
+      }
+      if (matches.length > 0) {
+        trackEvent('products_shown', { ...eventParams, placement: 'checker_result' });
+      }
+      setResult(cabinResult);
+      setStep(4);
+    }
+  }
+
+  function goBack() {
+    setErrors({});
+    setResult(null);
+    setStep((current) => Math.max(1, current - 1) as WizardStep);
+  }
+
+  function restart() {
+    setValues(initialValues);
+    setErrors({});
+    setResult(null);
+    setStep(1);
+  }
+
+  if (!started) {
+    return (
+      <div
+        className={`application-form form-${variant} wizard-launch`}
+        data-context={context}
+        data-kind={kind}
+      >
+        <span className="wizard-kicker">Gratis · ongeveer 2 minuten</span>
+        <h3>Controleer jouw combinatie stap voor stap.</h3>
+        <p>
+          Houd het gewicht van je huisdier en, als je die al hebt, de maten van je tas bij de hand.
+        </p>
+        <button
+          className="button"
+          type="button"
+          onClick={() => {
+            setStarted(true);
+            trackEvent('checker_started', { placement: context });
+          }}
+        >
+          Start de cabinecheck
+        </button>
+        <p className="demo-note">
+          Gebaseerd op gepubliceerde airlineregels en actuele Zoospot-data.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      data-clarity-mask="true"
+      onSubmit={continueWizard}
+      className={`application-form form-${variant} cabin-wizard ${step === 4 ? 'wizard-complete' : ''}`}
+      data-context={context}
+      data-kind={kind}
+      noValidate
+    >
+      <ol className="wizard-progress" aria-label="Voortgang cabinecheck">
+        {stepLabels.map((label, index) => {
+          const itemStep = (index + 1) as WizardStep;
+          return (
+            <li
+              key={label}
+              className={itemStep < step ? 'is-complete' : itemStep === step ? 'is-active' : ''}
+              aria-current={itemStep === step ? 'step' : undefined}
+            >
+              <span>{itemStep}</span>
+              <small>{label}</small>
+            </li>
+          );
+        })}
+      </ol>
+
+      <div className="wizard-panel" key={step}>
+        {step === 1 && (
+          <>
+            <h3 ref={stepHeading} tabIndex={-1}>
+              Wie vliegt er met je mee?
+            </h3>
+            <fieldset className="wizard-fieldset">
+              <legend>Jouw huisdier</legend>
+              <div className="choice-grid two-choices">
+                {(
+                  [
+                    ['dog', 'Hond'],
+                    ['cat', 'Kat'],
+                  ] as const
+                ).map(([value, label]) => (
+                  <label className="choice-card" key={value}>
+                    <input
+                      type="radio"
+                      name="petType"
+                      value={value}
+                      checked={values.petType === value}
+                      onChange={() => updateValue('petType', value)}
+                    />
+                    <span aria-hidden="true">{value === 'dog' ? '🐕' : '🐈'}</span>
+                    <strong>{label}</strong>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <label className="wizard-field">
+              Hoeveel weegt je huisdier?
+              <span className="input-with-unit">
+                <input
+                  name="petWeight"
+                  type="number"
+                  min="0.1"
+                  max="100"
+                  step="0.1"
+                  inputMode="decimal"
+                  value={values.petWeight}
+                  onChange={(event) => updateValue('petWeight', event.target.value)}
+                  aria-describedby={errors.petWeight ? 'pet-weight-error' : undefined}
+                  aria-invalid={Boolean(errors.petWeight)}
+                  autoComplete="off"
+                />
+                <span>kg</span>
+              </span>
+              {errors.petWeight && (
+                <small className="field-error" id="pet-weight-error">
+                  {errors.petWeight}
+                </small>
+              )}
+            </label>
+          </>
+        )}
+
+        {step === 2 && (
+          <>
+            <h3 ref={stepHeading} tabIndex={-1}>
+              Met welke airline vlieg je?
+            </h3>
+            <label className="wizard-field">
+              Zoek en kies je luchtvaartmaatschappij
+              <input
+                name="airline"
+                type="search"
+                list="airline-options"
+                placeholder="Bijvoorbeeld KLM"
+                value={values.airline}
+                onChange={(event) => updateValue('airline', event.target.value)}
+                aria-describedby={errors.airline ? 'airline-error' : 'airline-help'}
+                aria-invalid={Boolean(errors.airline)}
+                autoComplete="off"
+              />
+              <datalist id="airline-options">
+                {airlineRules.map((rule) => (
+                  <option key={rule.slug} value={rule.name} />
+                ))}
+              </datalist>
+              {errors.airline ? (
+                <small className="field-error" id="airline-error">
+                  {errors.airline}
+                </small>
+              ) : (
+                <small className="field-help" id="airline-help">
+                  Kies een maatschappij uit de beschikbare lijst.
+                </small>
+              )}
+            </label>
+            {activeRule && (
+              <div className="rule-preview" aria-live="polite">
+                <span>{activeRule.name}</span>
+                <strong>
+                  {activeRule.maxTotalWeight === null
+                    ? 'Regelset nog niet compleet'
+                    : `Max. ${activeRule.maxTotalWeight} kg totaal`}
+                </strong>
+                <small>
+                  {activeRule.verified
+                    ? `Gecontroleerd ${formatCheckedAt(activeRule.checkedAt)}`
+                    : 'Handmatige controle nodig'}
+                </small>
+              </div>
+            )}
+          </>
+        )}
+
+        {step === 3 && (
+          <>
+            <h3 ref={stepHeading} tabIndex={-1}>
+              Heb je al een reistas?
+            </h3>
+            <fieldset className="wizard-fieldset">
+              <legend>Kies wat op jou van toepassing is</legend>
+              <div className="choice-grid">
+                {(
+                  [
+                    ['yes', 'Ja, controleer mijn tas'],
+                    ['no', 'Nee, help mij een passende tas vinden'],
+                  ] as const
+                ).map(([value, label]) => (
+                  <label className="choice-card text-choice" key={value}>
+                    <input
+                      type="radio"
+                      name="hasBag"
+                      value={value}
+                      checked={values.hasBag === value}
+                      onChange={() => updateValue('hasBag', value)}
+                    />
+                    <strong>{label}</strong>
+                  </label>
+                ))}
+              </div>
+              {errors.hasBag && <small className="field-error">{errors.hasBag}</small>}
+            </fieldset>
+
+            {values.hasBag === 'yes' && (
+              <div className="bag-fields">
+                <fieldset className="wizard-fieldset dimensions-field">
+                  <legend>Buitenmaten van je tas</legend>
+                  <div className="dimension-grid">
+                    {(
+                      [
+                        ['length', 'Lengte'],
+                        ['width', 'Breedte'],
+                        ['height', 'Hoogte'],
+                      ] as const
+                    ).map(([field, label]) => (
+                      <label key={field}>
+                        {label}
+                        <span className="input-with-unit">
+                          <input
+                            name={field}
+                            type="number"
+                            min="0.1"
+                            max="200"
+                            step="0.1"
+                            inputMode="decimal"
+                            value={values[field]}
+                            onChange={(event) => updateValue(field, event.target.value)}
+                            aria-invalid={Boolean(errors[field])}
+                          />
+                          <span>cm</span>
+                        </span>
+                        {errors[field] && <small className="field-error">{errors[field]}</small>}
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+                <label className="wizard-field">
+                  Gewicht van de lege tas
+                  <span className="input-with-unit">
+                    <input
+                      name="bagWeight"
+                      type="number"
+                      min="0.1"
+                      max="30"
+                      step="0.1"
+                      inputMode="decimal"
+                      value={values.bagWeight}
+                      onChange={(event) => updateValue('bagWeight', event.target.value)}
+                      aria-invalid={Boolean(errors.bagWeight)}
+                    />
+                    <span>kg</span>
+                  </span>
+                  {errors.bagWeight && <small className="field-error">{errors.bagWeight}</small>}
+                </label>
+              </div>
+            )}
+          </>
+        )}
+
+        {step === 4 && result && activeRule && (
+          <ResultPanel
+            headingRef={stepHeading}
+            result={result}
+            rule={activeRule}
+            values={values}
+            recommendations={recommendations}
+          />
+        )}
+      </div>
+
+      <div className="wizard-actions">
+        {step > 1 && (
+          <button className="wizard-back" type="button" onClick={goBack}>
+            Vorige
+          </button>
+        )}
+        {step < 4 ? (
+          <button className="button" type="submit">
+            {step === 3 ? 'Controleer mijn reiscombinatie' : 'Volgende'}
+          </button>
+        ) : (
+          <button className="button" type="button" onClick={restart}>
+            Nieuwe check
+          </button>
+        )}
+      </div>
+
+      <p className="demo-note">
+        Controleer altijd de actuele voorwaarden bij de airline. Je beoordeelt zelf of je huisdier
+        comfortabel in de tas kan staan, liggen en draaien.
+      </p>
+    </form>
+  );
+}
+
+function ResultPanel({
+  headingRef,
+  result,
+  rule,
+  values,
+  recommendations,
+}: {
+  headingRef: RefObject<HTMLHeadingElement | null>;
+  result: CabinResult;
+  rule: AirlineRule;
+  values: WizardValues;
+  recommendations: ProductMatch[];
+}) {
+  const petWeight = numberValue(values.petWeight);
+  const bagWeight = values.hasBag === 'yes' ? numberValue(values.bagWeight) : null;
+  const enteredDimensions =
+    values.hasBag === 'yes'
+      ? [numberValue(values.length), numberValue(values.width), numberValue(values.height)]
+      : null;
+  const maximumDimensions = airlineDimensions(rule);
+  const officialSource = rule.officialSource;
+  const petAllowed = values.petType === 'dog' ? rule.dogAllowed : rule.catAllowed;
+  const hasWeightRoom =
+    rule.maxTotalWeight === null || petWeight === null || petWeight < rule.maxTotalWeight;
+  const showRecommendations =
+    rule.cabinAllowed !== false &&
+    petAllowed !== false &&
+    hasWeightRoom &&
+    recommendations.length > 0;
+
+  return (
+    <div className="wizard-result" aria-live="polite" data-clarity-mask="true">
+      <div className={`result-summary result-${result.status}`}>
+        <span className="result-label">
+          {result.status === 'suitable'
+            ? 'Geschikt'
+            : result.status === 'conditional'
+              ? 'Voorwaardelijk geschikt'
+              : 'Niet geschikt'}
+        </span>
+        <h3 ref={headingRef} tabIndex={-1}>
+          {result.title}
+        </h3>
+        {result.reasons.length > 0 && (
+          <ul className="result-points result-reasons">
+            {result.reasons.map((reason) => (
+              <li key={reason}>{reason}</li>
+            ))}
+          </ul>
+        )}
+        {result.notes.length > 0 && (
+          <ul className="result-points">
+            {result.notes.map((note) => (
+              <li key={note}>{note}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <dl className="result-breakdown">
+        <div>
+          <dt>Maximaal totaalgewicht</dt>
+          <dd>{formatMeasurement(rule.maxTotalWeight, 'kg')}</dd>
+        </div>
+        <div>
+          <dt>Gewicht huisdier</dt>
+          <dd>{formatMeasurement(petWeight, 'kg')}</dd>
+        </div>
+        <div>
+          <dt>Gewicht tas</dt>
+          <dd>{values.hasBag === 'yes' ? formatMeasurement(bagWeight, 'kg') : 'Nog te kiezen'}</dd>
+        </div>
+        <div>
+          <dt>Berekend totaalgewicht</dt>
+          <dd>{formatMeasurement(result.totalWeight, 'kg')}</dd>
+        </div>
+        <div>
+          <dt>Maximale tasafmetingen</dt>
+          <dd>{maximumDimensions ? `${maximumDimensions.join(' × ')} cm` : 'Niet beschikbaar'}</dd>
+        </div>
+        <div>
+          <dt>Ingevoerde tasafmetingen</dt>
+          <dd>
+            {enteredDimensions
+              ? `${enteredDimensions.map((value) => value ?? '—').join(' × ')} cm`
+              : 'Nog te kiezen'}
+          </dd>
+        </div>
+        <div>
+          <dt>Laatst gecontroleerd</dt>
+          <dd>{formatCheckedAt(rule.checkedAt)}</dd>
+        </div>
+        <div>
+          <dt>Officiële bron</dt>
+          <dd>
+            {officialSource ? (
+              <a
+                href={officialSource}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent('airline_source_click', {
+                    airline: rule.slug,
+                    placement: 'checker_result',
+                    destination_domain: safeHostname(officialSource),
+                  })
+                }
+              >
+                Bekijk de bron
+              </a>
+            ) : (
+              'Nog niet toegevoegd'
+            )}
+          </dd>
+        </div>
+      </dl>
+
+      {values.hasBag === 'yes' && result.bagFitsDimensions === true && (
+        <p className="current-bag-confirmation">
+          Je huidige tas past binnen de opgeslagen buitenmaten. Je hoeft geen nieuwe tas te kiezen;
+          controleer nog wel het totaalgewicht en de actuele airlinevoorwaarden.
+        </p>
+      )}
+
+      {showRecommendations ? (
+        <section className="result-products" aria-labelledby="result-products-title">
+          <div>
+            <span className="wizard-kicker">Alleen na jouw check</span>
+            <h3 id="result-products-title">Deze reistassen passen bij jouw combinatie</h3>
+            <p>
+              Iedere tas hieronder past per buitenmaat én totaalgewicht bij je invoer. Controleer
+              voor vertrek altijd de actuele voorwaarden en beoordeel zelf of je huisdier
+              comfortabel in de tas past.
+            </p>
+          </div>
+          <div className="result-product-grid">
+            {recommendations.map(({ project, label, reason }) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                ctaLabel="Bekijk deze tas"
+                matchLabel={label}
+                matchReason={reason}
+                showProductDetails
+                useAffiliate
+                placement="checker_result"
+                onAffiliateClick={() =>
+                  trackEvent('affiliate_product_click', {
+                    product_slug: project.slug,
+                    airline: rule.slug,
+                    placement: 'checker_result',
+                    destination_domain: 'zoospot.nl',
+                  })
+                }
+              />
+            ))}
+          </div>
+          <p className="product-data-note">
+            Als je via een van deze links iets koopt, kan Paspoot een commissie ontvangen. Jij
+            betaalt hierdoor niets extra.
+          </p>
+        </section>
+      ) : (
+        rule.cabinAllowed === true &&
+        petAllowed === true && (
+          <section className="result-products result-products-empty" aria-live="polite">
+            <div>
+              <span className="wizard-kicker">Geen volledige match</span>
+              <h3>We tonen geen bijna-passende tas</h3>
+              <p>
+                Voor deze combinatie is geen beschikbare tas gevonden waarvan alle maten,
+                leeggewicht, huisdiertype en productgegevens volledig voldoen. Controleer de
+                officiële voorwaarden van {rule.name} of probeer later opnieuw.
+              </p>
+            </div>
+          </section>
+        )
+      )}
+    </div>
+  );
+}

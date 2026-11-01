@@ -1,0 +1,27 @@
+{
+  "sourceFindings": 27,
+  "manualMerges": {
+    "TECH-01": [
+      "TECH-03"
+    ],
+    "TECH-04": [
+      "SIP-01"
+    ],
+    "C05": [
+      "SIP-05"
+    ],
+    "TECH-08": [
+      "C09",
+      "SIP-09"
+    ]
+  },
+  "severityAdjustments": {
+    "C05": "Info: no false test claim established; provenance is transparency opportunity"
+  },
+  "environmentFindingAdded": "GSC-01",
+  "scriptResult": {
+    "dropped": [],
+    "raw_count": 23,
+    "verified_count": 23
+  }
+}

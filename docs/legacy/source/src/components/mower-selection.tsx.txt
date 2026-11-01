@@ -1,0 +1,222 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { mowers } from '@/content/mowers';
+import { matchMowers, type GardenProfile } from '@/lib/mower-matching';
+import { AffiliateDisclosure, MowerCard } from './mower-card';
+
+type Filter = 'all' | 'wireless' | 'wire' | 'awd';
+const filters: [Filter, string][] = [
+  ['all', 'Alle modellen'],
+  ['wireless', 'Zonder draad'],
+  ['wire', 'Met draad'],
+  ['awd', 'Met vierwielaandrijving'],
+];
+
+export function MowerSelection({
+  initialArea = '',
+  initialFilter = 'all',
+  terrain = '',
+  layout = '',
+  surroundings = '',
+  initialSlope = '',
+}: {
+  initialArea?: string;
+  initialFilter?: Filter;
+  terrain?: string;
+  layout?: string;
+  surroundings?: string;
+  initialSlope?: string;
+}) {
+  const [filter, setFilter] = useState<Filter>(initialFilter);
+  const [area, setArea] = useState(initialArea);
+  const parsedArea = Number(area);
+  const areaValid =
+    !area || (Number.isFinite(parsedArea) && parsedArea >= 1 && parsedArea <= 1000000);
+  const [slope, setSlope] = useState(initialSlope);
+  const slopeValid =
+    !slope || (Number.isFinite(Number(slope)) && Number(slope) >= 0 && Number(slope) <= 100);
+  const profile: GardenProfile = {
+    area: area && areaValid ? parsedArea : undefined,
+    filter,
+    terrain,
+    layout,
+    surroundings,
+    slope: slope && slopeValid ? Number(slope) : undefined,
+  };
+  const { matches, excluded } = matchMowers(mowers, profile);
+  const selected = areaValid && slopeValid ? matches : [];
+
+  return (
+    <section className="mower-selection" id="selectie" aria-labelledby="selection-heading">
+      <div className="mower-selection-heading">
+        <div>
+          <h2 id="selection-heading">Minder zoeken. Gerichter kiezen.</h2>
+          <p>
+            {mowers.length} modellen met draad, camera, RTK of LiDAR. Vergelijk wat jouw tuin nodig
+            heeft.
+          </p>
+        </div>
+        <a className="mower-text-link" href="#vergelijking">
+          Snel naast elkaar
+        </a>
+      </div>
+      <div className="mower-filters">
+        <div
+          className="mower-filter-buttons"
+          role="group"
+          aria-label="Filter op installatie en aandrijving"
+        >
+          {filters.map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={filter === value}
+              onClick={() => setFilter(value)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <label className="mower-area">
+          Jouw grasoppervlak
+          <span>
+            <input
+              type="number"
+              min="1"
+              max="1000000"
+              step="1"
+              inputMode="numeric"
+              value={area}
+              placeholder="Bijv. 350"
+              aria-invalid={!areaValid}
+              aria-describedby="mower-area-note"
+              onChange={(event) => setArea(event.target.value)}
+            />{' '}
+            m²
+          </span>
+        </label>
+        <label className="mower-area">
+          Steilste helling (optioneel)
+          <span>
+            <input
+              type="number"
+              min="0"
+              max="100"
+              value={slope}
+              placeholder="Bijv. 20"
+              aria-invalid={!slopeValid}
+              aria-describedby="mower-slope-note"
+              onChange={(event) => setSlope(event.target.value)}
+            />{' '}
+            %
+          </span>
+        </label>
+      </div>
+      <p id="mower-slope-note" className={slopeValid ? 'mower-filter-note' : 'mower-filter-error'}>
+        {slopeValid
+          ? 'Gebruik procenten, geen graden. Helling (%) = hoogteverschil ÷ horizontale afstand × 100. De grens langs de gazonrand kan lager liggen.'
+          : 'Vul een helling tussen 0 en 100% in.'}
+      </p>
+      <p id="mower-area-note" className={areaValid ? 'mower-filter-note' : 'mower-filter-error'}>
+        {areaValid
+          ? 'Oppervlakte ingevuld? Dan tonen we alleen modellen met een bekende opgegeven gazoncapaciteit vanaf dat oppervlak. Houd rekening met zones en beschikbare maaitijd.'
+          : 'Vul een grasoppervlak tussen 1 en 1.000.000 m² in.'}
+      </p>
+      {terrain === 'sloped' && !slope && (
+        <p className="mower-context-note">
+          Je gaf aan dat je tuin hellingen heeft. Meet eerst de steilste stukken in procenten. Een
+          hogere fabrieksopgave of AWD bewijst nog niet dat het model bij jouw helling en gazonrand
+          past.
+        </p>
+      )}
+      {area && areaValid && (
+        <p className="mower-filter-note">
+          De MOVA 1000 blijft bij dit filter buiten de selectie: de fabrikant noemt maaiprestatie
+          per dag en per modus, geen rechtstreeks vergelijkbare maximale gazoncapaciteit.
+        </p>
+      )}
+      {(layout || surroundings) && (
+        <div className="mower-context-note">
+          <p>
+            Jouw tuin:{' '}
+            {layout === 'separate'
+              ? 'losse grasvelden'
+              : layout === 'connected'
+                ? 'grasvelden met doorgangen'
+                : layout === 'single'
+                  ? 'één grasveld'
+                  : 'indeling nog onbekend'}{' '}
+            ·{' '}
+            {surroundings === 'sheltered'
+              ? 'bomen of bebouwing rondom'
+              : surroundings === 'open'
+                ? 'vooral open'
+                : 'omgeving nog onbekend'}
+            .
+          </p>
+          <Link className="mower-text-link" href="/#volunteer-apply">
+            Antwoorden aanpassen
+          </Link>
+        </div>
+      )}
+      <AffiliateDisclosure />
+      <p className="mower-count" role="status" aria-live="polite">
+        {areaValid
+          ? `${selected.length} ${selected.length === 1 ? 'model' : 'modellen'} om te vergelijken`
+          : 'Controleer je grasoppervlak'}
+      </p>
+      {areaValid && selected.length > 0 ? (
+        <div className="mower-grid">
+          {selected.map(({ mower, reasons, checks }) => (
+            <MowerCard key={mower.slug} mower={mower} reasons={reasons} checks={checks} />
+          ))}
+        </div>
+      ) : (
+        <div className="mower-empty">
+          <h3>
+            {areaValid && slopeValid ? 'Geen model in deze selectie.' : 'Controleer je invoer.'}
+          </h3>
+          <p>
+            {areaValid && slopeValid
+              ? 'We willen je geen te kleine maaier aanraden. Pas de filters aan of laat je tuin beoordelen door een installateur. Onze selectie dekt niet elke tuin en niet elk verkrijgbaar model.'
+              : 'Pas het getal hierboven aan om de selectie te bekijken.'}
+          </p>
+          <button
+            type="button"
+            className="button mower-price-button"
+            onClick={() => {
+              setArea('');
+              setFilter('all');
+              setSlope('');
+            }}
+          >
+            Toon alle modellen
+          </button>
+        </div>
+      )}
+      {excluded.length > 0 && areaValid && slopeValid && (
+        <details className="mower-exclusions">
+          <summary>Waarom vallen andere modellen af?</summary>
+          <ul>
+            {excluded.map(({ mower, reason }) => (
+              <li key={mower.slug}>
+                <strong>
+                  {mower.brand} {mower.name}:
+                </strong>{' '}
+                {reason}
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+      <p className="mower-filter-note">
+        Volgorde: eerst modellen zonder extra satellietcontrole bij een beschutte tuin, daarna
+        oplopende opgegeven capaciteit. Prijs of commissie bepaalt deze volgorde niet. Vul je een
+        oppervlak of helling in? Dan vallen modellen zonder bevestigde limiet buiten die
+        vergelijking.
+      </p>
+    </section>
+  );
+}

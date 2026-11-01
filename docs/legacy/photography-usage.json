@@ -1,0 +1,32 @@
+{
+  "rule": "Each distinct landing-page content role has a unique photograph.",
+  "allowedReuse": [
+    "A purpose tab uses its image as panel illustration and matching background within the same component.",
+    "Looping marquees repeat the same cards within the same component; the duplicates are aria-hidden.",
+    "A guide cover is shared between its corresponding card, index thumbnail, article and metadata."
+  ],
+  "assignments": {
+    "hero": "/assets/maaistro/hero-grass.jpg",
+    "hero-thumbnail-1": "/assets/maaistro/photos/detail-dew-grass.webp",
+    "hero-thumbnail-2": "/assets/maaistro/photos/detail-planter.webp",
+    "hero-thumbnail-3": "/assets/maaistro/photos/detail-mower-wheel.webp",
+    "hero-thumbnail-4": "/assets/maaistro/photos/detail-lawn-edge.webp",
+    "purpose-tab-1": "/assets/maaistro/photos/measure-lawn.webp",
+    "purpose-tab-2": "/assets/maaistro/photos/boundary-installation.webp",
+    "purpose-tab-3": "/assets/maaistro/photos/sloping-terrain.webp",
+    "purpose-tab-4": "/assets/maaistro/photos/weekend-patio.webp",
+    "garden-category-1": "/assets/maaistro/photos/robot-charging.webp",
+    "garden-category-2": "/assets/maaistro/photos/compact-garden.webp",
+    "garden-category-3": "/assets/maaistro/photos/large-garden.webp",
+    "mission-step-1": "/assets/maaistro/photos/garden-plan.webp",
+    "mission-step-2": "/assets/maaistro/photos/narrow-passage.webp",
+    "mission-step-3": "/assets/maaistro/photos/owner-inspection.webp",
+    "editorial-value-1": "/assets/maaistro/photos/family-garden.webp",
+    "editorial-value-2": "/assets/maaistro/photos/comparison-notes.webp",
+    "editorial-value-3": "/assets/maaistro/photos/garden-consultation.webp",
+    "guide-cover-1": "/assets/maaistro/photos/wireless-open-lawn.webp",
+    "guide-cover-2": "/assets/maaistro/photos/urban-courtyard.webp",
+    "guide-cover-3": "/assets/maaistro/photos/connected-lawn-zones.webp",
+    "garden-form-background": "/assets/maaistro/photos/quiet-garden-background.webp"
+  }
+}

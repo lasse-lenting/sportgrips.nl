@@ -1,0 +1,204 @@
+"""Crawl rendered HTML with the standard library; report evidence, not ranking scores."""
+import argparse
+import concurrent.futures
+import json
+from collections import Counter, deque
+from datetime import datetime, timezone
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.error import HTTPError
+from urllib.parse import urljoin, urlsplit
+from urllib.request import Request, urlopen
+from urllib.robotparser import RobotFileParser
+from xml.etree import ElementTree
+
+
+class Page(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.title = ''
+        self.h1 = []
+        self.meta = {}
+        self.canonicals = []
+        self.links = []
+        self.schemas = []
+        self.missing_alt = 0
+        self._capture = None
+        self._text = ''
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag in ('title', 'h1') or (tag == 'script' and a.get('type') == 'application/ld+json'):
+            self._capture, self._text = tag, ''
+        if tag == 'meta':
+            self.meta[a.get('name', a.get('property', '')).lower()] = a.get('content', '')
+        if tag == 'link' and 'canonical' in a.get('rel', '').split():
+            self.canonicals.append(a.get('href', ''))
+        if tag == 'a' and a.get('href'):
+            self.links.append(a['href'])
+        if tag == 'img' and 'alt' not in a:
+            self.missing_alt += 1
+
+    def handle_data(self, data):
+        if self._capture:
+            self._text += data
+
+    def handle_endtag(self, tag):
+        if tag != self._capture:
+            return
+        text = ' '.join(self._text.split())
+        if tag == 'title':
+            self.title = text
+        elif tag == 'h1':
+            self.h1.append(text)
+        else:
+            try:
+                self.schemas.append(json.loads(self._text))
+            except json.JSONDecodeError:
+                self.schemas.append({'_invalid': True})
+        self._capture = None
+
+
+def fetch(url):
+    try:
+        with urlopen(Request(url, headers={'User-Agent': 'PaspootSEOAudit/1.0'}), timeout=25) as response:
+            return response.status, response.geturl(), dict(response.headers.items()), response.read().decode('utf-8', 'replace')
+    except HTTPError as error:
+        return error.code, error.geturl(), dict(error.headers.items()), error.read().decode('utf-8', 'replace')
+    except Exception as error:
+        return 0, url, {}, str(error)
+
+
+def audit(base, canonical_origin, limit=100):
+    base, canonical_origin = base.rstrip('/'), canonical_origin.rstrip('/')
+    issues, pages = [], {}
+
+    def issue(severity, path, check, evidence):
+        issues.append(dict(severity=severity, path=path, check=check, evidence=evidence))
+
+    status, _, _, robots_text = fetch(base + '/robots.txt')
+    robots = RobotFileParser()
+    robots.parse(robots_text.splitlines() if status == 200 else [])
+    if status != 200:
+        issue('error', '/robots.txt', 'robots_response', status)
+    if canonical_origin + '/sitemap.xml' not in robots_text:
+        issue('error', '/robots.txt', 'sitemap_reference', robots_text)
+
+    status, _, _, sitemap_text = fetch(base + '/sitemap.xml')
+    sitemap_paths = set()
+    if status != 200:
+        issue('error', '/sitemap.xml', 'sitemap_response', status)
+    try:
+        root = ElementTree.fromstring(sitemap_text)
+        for node in root.findall('{*}url'):
+            loc = node.findtext('{*}loc') or ''
+            parsed = urlsplit(loc)
+            path = parsed.path or '/'
+            if parsed.scheme + '://' + parsed.netloc != canonical_origin or parsed.query or parsed.fragment:
+                issue('error', path, 'sitemap_origin', loc)
+            if path in sitemap_paths:
+                issue('error', path, 'sitemap_duplicate', loc)
+            sitemap_paths.add(path)
+            date = node.findtext('{*}lastmod')
+            if date:
+                try:
+                    modified = datetime.fromisoformat(date.replace('Z', '+00:00'))
+                    if modified.date() > datetime.now(timezone.utc).date():
+                        issue('error', path, 'future_lastmod', date)
+                except ValueError:
+                    issue('error', path, 'invalid_lastmod', date)
+    except ElementTree.ParseError:
+        issue('error', '/sitemap.xml', 'sitemap_xml', 'Invalid XML')
+
+    pending = sitemap_paths | {'/'}
+    while pending and len(pages) < limit:
+        batch = sorted(pending - pages.keys())[:limit - len(pages)]
+        pending = set()
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+            results = list(pool.map(lambda path: fetch(base + path), batch))
+        for path, (status, final, headers, html) in zip(batch, results):
+            page = Page()
+            page.feed(html)
+            links = set()
+            for link in page.links:
+                u = urlsplit(urljoin(base + path, link))
+                if u.netloc in {urlsplit(base).netloc, urlsplit(canonical_origin).netloc}:
+                    p = u.path or '/'
+                    if not u.query and not p.startswith('/api/') and not Path(p).suffix:
+                        links.add(p)
+            pages[path] = dict(status=status, finalUrl=final, title=page.title,
+                               description=page.meta.get('description', ''), h1=page.h1,
+                               canonical=page.canonicals, links=sorted(links),
+                               schemaTypes=sorted({str(item.get('@type', 'graph')) for item in page.schemas if isinstance(item, dict)}))
+            pending.update(links - pages.keys())
+            if status != 200:
+                issue('error', path, 'page_response', {'status': status, 'url': final})
+                continue
+            if path in sitemap_paths and urlsplit(final).path != path:
+                issue('error', path, 'sitemap_redirect', final)
+            if not robots.can_fetch('Googlebot', base + path):
+                issue('error', path, 'robots_block', 'Googlebot disallowed')
+            robots_values = ' '.join([page.meta.get('robots', ''), page.meta.get('googlebot', '')] +
+                                     [v for k, v in headers.items() if k.lower() == 'x-robots-tag']).lower()
+            if path in sitemap_paths and ('noindex' in robots_values or 'none' in robots_values.split(',')):
+                issue('error', path, 'noindex', robots_values)
+            expected = canonical_origin + path
+            canonicals = [u + '/' if urlsplit(u).path == '' else u for u in page.canonicals]
+            if canonicals != [expected]:
+                issue('error', path, 'canonical', page.canonicals)
+            if not page.title or not page.meta.get('description'):
+                issue('error', path, 'metadata', 'Missing title or description')
+            if len(page.h1) != 1:
+                issue('error', path, 'h1', page.h1)
+            for name in ['og:title', 'og:description', 'og:image', 'twitter:card', 'viewport']:
+                if not page.meta.get(name):
+                    issue('warning', path, 'social_or_viewport', name)
+            if page.missing_alt:
+                issue('warning', path, 'image_alt', page.missing_alt)
+            if not page.schemas:
+                issue('warning', path, 'schema', 'No server-rendered JSON-LD; browser inspection may be needed')
+            if any(isinstance(item, dict) and item.get('_invalid') for item in page.schemas):
+                issue('error', path, 'schema_json', 'Invalid JSON-LD')
+
+    depth, queue = {'/': 0}, deque(['/'])
+    while queue:
+        path = queue.popleft()
+        for link in pages.get(path, {}).get('links', []):
+            if link not in depth:
+                depth[link] = depth[path] + 1
+                queue.append(link)
+    for path in sitemap_paths:
+        if path not in depth:
+            issue('error', path, 'orphan', 'No crawlable link path from homepage')
+        elif depth[path] > 3:
+            issue('warning', path, 'link_depth', depth[path])
+    for field in ['title', 'description']:
+        counts = Counter(page[field] for page in pages.values() if page['status'] == 200 and page[field])
+        for value, count in counts.items():
+            if count > 1:
+                issue('warning', '/', 'duplicate_' + field, {'value': value, 'count': count})
+    if pending:
+        issue('error', '/', 'crawl_limit', 'Incomplete crawl; increase --limit')
+    return dict(checkedAt=datetime.now(timezone.utc).isoformat(), base=base,
+                canonicalOrigin=canonical_origin, sitemapPages=len(sitemap_paths),
+                pages=pages, depth=depth, issues=issues,
+                limits=['HTML/HTTP audit; not a ranking or indexation guarantee',
+                        'No field Core Web Vitals, Search Console data or Google schema validation'])
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--base', default='https://www.paspoot.nl')
+    parser.add_argument('--canonical-origin', default='https://www.paspoot.nl')
+    parser.add_argument('--limit', type=int, default=100)
+    parser.add_argument('--output', default='.data/seo/audit.json')
+    args = parser.parse_args()
+    report = audit(args.base, args.canonical_origin, args.limit)
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
+    errors = sum(item['severity'] == 'error' for item in report['issues'])
+    print(f"{report['sitemapPages']} sitemap pages; {len(report['pages'])} crawled; {errors} errors; {len(report['issues']) - errors} warnings. {out}")
+    for item in report['issues']:
+        print(f"{item['severity']}: {item['path']} {item['check']}: {item['evidence']}")
+    raise SystemExit(1 if errors else 0)

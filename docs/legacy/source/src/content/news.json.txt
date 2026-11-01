@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+    "topicKey": "gb-approved-air-carriers-2026-10-09",
+    "status": "published",
+    "title": "Met je huisdier naar Groot-Brittannië? Controleer de bijgewerkte routelijst",
+    "description": "De Britse lijst van airlines en luchthavens voor huisdierreizen is op 9 oktober bijgewerkt. Dit controleer je voordat je een vlucht boekt.",
+    "summary": "GOV.UK heeft op 9 oktober 2026 de lijst voor huisdierreizen per vliegtuig bijgewerkt. Controleer je vervoerder én aankomstluchthaven voordat je boekt; een algemene cabinerichtlijn is voor deze bestemming niet voldoende.",
+    "eventDate": "2026-10-09",
+    "publishedAt": "2026-10-11",
+    "approvedAt": "2026-10-11",
+    "approvalRef": "User in this Paspoot chat on 2026-10-11: ja publiceer alles en laten we die workflow in gang zetten",
+    "updatedAt": "2026-10-11",
+    "verifiedAt": "2026-10-11",
+    "image": "/assets/paspoot/airport-pets-real-life.png",
+    "tags": ["Groot-Brittannië", "Vliegroutes"],
+    "sources": [
+      {
+        "name": "GOV.UK / APHA — bijgewerkte vervoerders en routes",
+        "url": "https://www.gov.uk/government/publications/pet-travel-approved-air-sea-and-rail-carriers-and-routes",
+        "updatedAt": "2026-10-09"
+      },
+      {
+        "name": "GOV.UK — reisroutes en vervoer als cargo",
+        "url": "https://www.gov.uk/bring-pet-to-great-britain/travel-routes-pets",
+        "updatedAt": null
+      },
+      {
+        "name": "GOV.UK — voorbereiding en reisdocumenten",
+        "url": "https://www.gov.uk/bring-pet-to-great-britain",
+        "updatedAt": null
+      },
+      {
+        "name": "KLM — reserveringen en uitzondering voor het Verenigd Koninkrijk",
+        "url": "https://www.klm.nl/information/pets/reservation",
+        "updatedAt": null
+      }
+    ],
+    "relatedAdvice": ["hond-meenemen-vliegtuig", "kat-meenemen-vliegtuig"],
+    "body": [
+      {
+        "tag": "h2",
+        "html": "Wat is er bijgewerkt?"
+      },
+      {
+        "tag": "p",
+        "html": "De Animal and Plant Health Agency meldt in de <a href=\"https://www.gov.uk/government/publications/pet-travel-approved-air-sea-and-rail-carriers-and-routes\">officiële wijzigingsgeschiedenis</a> dat de lijst met luchtvaartmaatschappijen en luchthavens op 9 oktober is aangepast. De melding benoemt niet welke afzonderlijke verbindingen zijn veranderd. We presenteren dit daarom als een actualisering van het overzicht, niet als bewijs dat een specifieke nieuwe vlucht nu huisdieren toelaat."
+      },
+      {
+        "tag": "h2",
+        "html": "Wat betekent dit voor een vlucht vanuit Nederland?"
+      },
+      {
+        "tag": "p",
+        "html": "Voor reizen met een hond of kat naar Engeland, Schotland of Wales moet de gekozen vervoerder en route zijn toegestaan. Bekijk vóór het boeken de Britse lijst en laat de vervoerder bevestigen hoe je huisdier op jouw vlucht kan reizen. Dat voorkomt dat je alleen op de algemene huisdierpagina van een airline afgaat."
+      },
+      {
+        "tag": "h2",
+        "html": "Een geschikte cabinetas geeft geen toestemming voor deze route"
+      },
+      {
+        "tag": "p",
+        "html": "Volgens <a href=\"https://www.gov.uk/bring-pet-to-great-britain/travel-routes-pets\">de Britse route-informatie</a> reizen huisdieren bij aankomst per vliegtuig als cargo, met uitzonderingen voor gecharterde privévliegtuigen en geleide- of assistentiehonden. Een kleine hond of kat die qua gewicht in de cabine van een maatschappij zou passen, kan daardoor alsnog niet op die manier mee naar deze bestemming."
+      },
+      {
+        "tag": "p",
+        "html": "Een concreet voorbeeld is KLM: op de <a href=\"https://www.klm.nl/information/pets/reservation\">officiële reserveringspagina</a> staat dat huisdieren naar het Verenigd Koninkrijk niet als passagiersbagage in de cabine of het ruim kunnen reizen. KLM noemt die beperking niet voor reizen vanuit het Verenigd Koninkrijk. Bekijk de <a href=\"/luchtvaartmaatschappijen/klm\">algemene KLM-cabineregels</a>, maar laat de vervoerder de mogelijkheden voor jouw richting en vlucht bevestigen."
+      },
+      {
+        "tag": "p",
+        "html": "De <a href=\"/cabinecheck\">Paspoot-cabinecheck</a> vergelijkt gewicht en tasafmetingen met algemene maatschappijregels. Gebruik die uitslag samen met de routevoorwaarden; de check is geen bevestiging van de Britse toelating. Voor de algemene voorbereiding vind je stappen in onze gidsen voor <a href=\"/advies/hond-meenemen-vliegtuig\">vliegen met een hond</a> en <a href=\"/advies/kat-meenemen-vliegtuig\">vliegen met een kat</a>."
+      },
+      {
+        "tag": "h2",
+        "html": "Controleer dit voordat je boekt"
+      },
+      {
+        "tag": "ol",
+        "html": "<li>Vergelijk vervoerder en aankomstluchthaven met de actuele Britse lijst.</li><li>Vraag de vervoerder naar de beschikbare vervoersvorm en de reservering voor je huisdier.</li><li>Controleer bij GOV.UK welke reisdocumenten en voorbereiding bij jouw vertrekland horen.</li><li>Lees voor de terugreis ook de toelatingsregels van je volgende bestemming.</li>"
+      },
+      {
+        "tag": "p",
+        "html": "De <a href=\"https://www.gov.uk/bring-pet-to-great-britain\">Britse voorbereidingsgids</a> beschrijft onder meer de chip, vaccinatie en documenten. Noord-Ierland heeft afzonderlijke regels. Bewaar de bevestiging van je vervoerder en controleer de bronnen opnieuw kort voor vertrek, ook als je eerder met hetzelfde huisdier op dezelfde route hebt gereisd."
+      }
+    ]
+  }
+]

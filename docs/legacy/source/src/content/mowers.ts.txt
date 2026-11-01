@@ -1,0 +1,222 @@
+export type Mower = {
+  slug: string;
+  brand: string;
+  name: string;
+  label: string;
+  intro: string;
+  image: string;
+  capacityM2: number | null;
+  capacity: string;
+  capacityNote?: string;
+  wireless: boolean;
+  navigation: string;
+  slope: string;
+  maxSlopePercent: number | null;
+  technology: 'wire' | 'rtk' | 'camera' | 'lidar';
+  awd: boolean;
+  strengths: string[];
+  consideration: string;
+  source: string;
+  bolUrl: string;
+};
+
+// Editorial comparison, not an own-use test. Sources checked on 25 October 2026.
+// No price, availability, rating or seller data is inferred from search snippets.
+export const mowers: Mower[] = [
+  {
+    slug: 'segway-navimow-i105e',
+    brand: 'Segway',
+    name: 'Navimow i105E',
+    label: 'Klein gazon, zonder draad',
+    intro:
+      'Voor wie een compact gazon digitaal wil afbakenen. De i105E combineert satellietpositionering met een camera, in plaats van een draad rondom het gras.',
+    image: 'https://nl.navimow.com/cdn/shop/files/i105-square-right.png?v=1768245188&width=1000',
+    capacityM2: 500,
+    capacity: 'Tot 500 m²',
+    wireless: true,
+    navigation: 'RTK + camera',
+    slope: 'Controleer de handleiding',
+    maxSlopePercent: null,
+    technology: 'rtk',
+    awd: false,
+    strengths: ['Virtuele grenzen en zones in de app', 'EFLS 2.0 combineert RTK met camerabeeld'],
+    consideration:
+      'Een geschikte plek voor de antenne blijft nodig. Controleer de ontvangst bij bomen en bebouwing. Let bij aanbiedingen op nieuw of gereviseerd.',
+    source: 'https://nl.navimow.com/products/navimow-i105e-robotic-lawn-mower-refurbished',
+    bolUrl:
+      'https://www.bol.com/nl/nl/p/segway-navimow-i105e-robotmaaier-500-m-zonder-perimeterdraad-gps-rtk-ai-bediening-via-app-stil-slim-maaien-18-cm-maaibreedte/9300000177752213/',
+  },
+  {
+    slug: 'gardena-sileno-minimo-500',
+    brand: 'GARDENA',
+    name: 'SILENO minimo 500',
+    label: 'Klein gazon, met draad',
+    intro:
+      'Een alternatief als een vaste draad rond je gazon prima is. Je stelt het maaischema in met de Bluetooth-app, wanneer je bij de maaier in de buurt bent.',
+    image:
+      'https://media.husqvarnagroup.com/image/YX-862968.png?optimize=low&format=webply&height=530&width=1000&fit=bounds',
+    capacityM2: 500,
+    capacity: 'Tot 500 m²',
+    wireless: false,
+    navigation: 'Begrenzingsdraad',
+    slope: '25% werkgebied · 10% rand',
+    maxSlopePercent: 25,
+    technology: 'wire',
+    awd: false,
+    strengths: ['Fysieke grenzen rond het gazon', 'Bediening met de GARDENA Bluetooth-app'],
+    consideration:
+      'Begrenzings- en geleidingsdraad aanleggen hoort bij de installatie. Bluetooth werkt volgens GARDENA tot ongeveer 10 meter; dit is geen bediening via internet.',
+    source:
+      'https://www.gardena.com/nl/producten/gazononderhoud/robotmaaiers/robotmaaier-sileno-minimo-500-m/970462906.html',
+    bolUrl: 'https://www.bol.com/nl/nl/p/gardena-mhroboter-sileno-minimo-500-qm/9300000032327992/',
+  },
+  {
+    slug: 'mova-1000',
+    brand: 'MOVA',
+    name: 'MOVA 1000',
+    label: 'Zonder draad én zonder RTK-paal',
+    intro:
+      'Liever geen kabel of satellietantenne in je tuin? De MOVA 1000 gebruikt een 3D-laserscanner om zijn omgeving te herkennen en met virtuele grenzen te werken.',
+    image: 'https://www.mova.tech/cdn/shop/files/MOVAMower-1000Thumb_6.jpg?v=1747361091&width=1620',
+    capacityM2: null,
+    capacity: 'Afhankelijk van maaimodus',
+    capacityNote:
+      'MOVA noemt 800 m² per 24 uur in Standard Mode en 1.200 m² per 24 uur in Efficient Mode. Dat is dagelijkse maaiprestatie, geen gegarandeerde maximale tuingrootte.',
+    wireless: true,
+    navigation: '3D LiDAR',
+    slope: 'Tot 45% volgens MOVA',
+    maxSlopePercent: 45,
+    technology: 'lidar',
+    awd: false,
+    strengths: [
+      'Geen begrenzingsdraad of RTK-station nodig',
+      'Meerdere zones en verboden gebieden instellen',
+    ],
+    consideration:
+      'Vergelijk de maaimodus met de tijd die je de maaier wilt geven. Over een verhoogde gazonrand kan hij niet zomaar heen maaien; randwerk kan nodig blijven.',
+    source: 'https://www.mova.tech/products/mova-1000-robot-lawn-mower',
+    bolUrl:
+      'https://www.bol.com/nl/nl/p/mova-1000-robotmaaier-extreem-nauwkeurig-eenvoudig-instellen-huisdier-en-obstakel-detectie/9300000225188590/',
+  },
+  {
+    slug: 'mammotion-luba-mini-2-awd-1000',
+    brand: 'Mammotion',
+    name: 'LUBA mini 2 AWD 1000',
+    label: 'Vierwielaandrijving vergelijken',
+    intro:
+      'Voor wie naast draadloos maaien ook vierwielaandrijving wil vergelijken. Dit 1000-model gebruikt NetRTK en drie camera’s; de gelijknamige 1500-versie werkt met andere navigatie.',
+    image:
+      'https://nl.mammotion.com/cdn/shop/files/LUBAMini2LeftThree-QuarterView.png?v=1788857240&width=1400',
+    capacityM2: 1000,
+    capacity: 'Tot 1.000 m²',
+    wireless: true,
+    navigation: 'NetRTK + AI Vision',
+    slope: 'Tot 80% volgens Mammotion',
+    maxSlopePercent: 80,
+    technology: 'rtk',
+    awd: true,
+    strengths: ['Vierwielaandrijving (AWD)', 'NetRTK zonder eigen RTK-basisstation'],
+    consideration:
+      'Meet je helling en controleer ook de randvoorwaarden en netwerkdekking. De 80% is een opgave van de fabrikant. Controleer de voorwaarden voor 4G na de inbegrepen periode.',
+    source: 'https://nl.mammotion.com/products/robotmaaier-luba-mini-2-awd-1000',
+    bolUrl:
+      'https://www.bol.com/nl/nl/p/mammotion-luba-mini-2-awd-1000-robotmaaier-draadloos-gps-ai-vision-rtk-4-wielaandrijving/9300000271254449/',
+  },
+  {
+    slug: 'husqvarna-aspire-r4',
+    brand: 'Husqvarna',
+    name: 'Automower Aspire R4',
+    label: 'Compact gazon met vaste grenzen',
+    intro:
+      'Voor een gazon tot 400 m² als je begrenzingsdraad wilt aanleggen. De app werkt via wifi en Bluetooth; er is geen satellietantenne nodig.',
+    image:
+      'https://www.husqvarna.com/-/images/aprimo/husqvarna/robotic-mowers/photos/studio/k/kv/kv-306675.webp?v=ab08e909148fd9b9&format=WEBP_LANDSCAPE_CONTAIN_XXL',
+    capacityM2: 400,
+    capacity: 'Tot 400 m²',
+    wireless: false,
+    navigation: 'Begrenzingsdraad',
+    technology: 'wire',
+    slope: '25% werkgebied · 10% rand',
+    maxSlopePercent: 25,
+    awd: false,
+    strengths: ['Wifi- en Bluetooth-bediening', 'Compact model voor een klein gazon'],
+    consideration:
+      'Controleer het pakket: de standaarduitvoering van de fabrikant bevat geen installatiedraad of haringen. Er is ook een pakket met installatiekit. Dit model heeft geen obstakelvermijding.',
+    source: 'https://www.husqvarna.com/nl/robotmaaiers/automower-aspire-r4/',
+    bolUrl:
+      'https://www.bol.com/nl/nl/p/husqvarna-maairobot-aspire-r4-voor-400-m-accu-grasmaaierrobot-bediening-via-connect-app/9300000196972575/',
+  },
+  {
+    slug: 'worx-landroid-vision-m600',
+    brand: 'Worx',
+    name: 'Landroid Vision M600 (WR206E)',
+    label: 'Camera in plaats van een draad',
+    intro:
+      'De M600 herkent gras en grenzen met een camera. Een overzichtelijk gazon met herkenbare randen is het vertrekpunt; meerdere zones vragen extra aandacht bij de installatie.',
+    image:
+      'https://eu.worx.com/wp-content/plugins/woocommerce-onpage/storage/cache/77bbaf817fb927ae928b3920d6cd986c6fc2a1cd.900x.webp/WR206E%20M600%20%20%282%29.webp',
+    capacityM2: 600,
+    capacity: 'Tot 600 m²',
+    wireless: true,
+    navigation: 'Vision-camera',
+    technology: 'camera',
+    slope: 'Tot 30% volgens Worx',
+    maxSlopePercent: 30,
+    awd: false,
+    strengths: [
+      'Geen begrenzingsdraad of RTK-antenne',
+      'Wifi en Bluetooth; PowerShare-accuplatform',
+    ],
+    consideration:
+      'Worx beschrijft één maaizone als ideale situatie. Voor meerdere zones kunnen RFID-tags nodig zijn; uitsluitingen kunnen een magneetstrip vragen. Controleer de accu en accessoires van het WR206E-pakket.',
+    source: 'https://eu.worx.com/en/robot-mower-landroid-vision-ai-for-lawns-up-to-600-m2-wr206e/',
+    bolUrl:
+      'https://www.bol.com/nl/nl/p/worx-accu-robotmaaier-landroid-vision-m600-wr206e-incl-accu-en-laadstation-voor-gazons-tot-600-m-vision-ai-technologie-zonder-perimeterdraad-20v-accu/9300000187092038/',
+  },
+  ...(
+    [
+      ['15', 800, 'b975d18f-b2f4-4aa7-90a6-046d6926d904_1', '1741246884', '9300000227311141'],
+      ['18', 1200, '2d4102b8-e237-4b51-ae61-9687654f922c', '1741246883', '9300000227311142'],
+    ] as const
+  ).map(
+    ([model, capacity, imageId, version, bolId]): Mower => ({
+      slug: `eufy-e${model}`,
+      brand: 'eufy',
+      name: `E${model}`,
+      label: model === '18' ? 'Camera voor meer gras' : 'Zonder draad of RTK-antenne',
+      intro: `De E${model} brengt het gazon met camera's in kaart en gebruikt geen RTK-station. De opgegeven capaciteit is ${capacity.toLocaleString('nl-NL')} m²; controleer of de grenzen en doorgangen van jouw tuin bij de installatie passen.`,
+      image: `https://cdn.shopify.com/s/files/1/0523/0005/4719/files/E${model}_png_2400x2400_${imageId}.png?v=${version}`,
+      capacityM2: capacity,
+      capacity: `Tot ${capacity.toLocaleString('nl-NL')} m²`,
+      wireless: true,
+      navigation: 'TrueVision-camera',
+      technology: 'camera',
+      slope: 'Tot 18° (circa 32%)',
+      maxSlopePercent: 32,
+      awd: false,
+      strengths: [
+        'Cameranavigatie zonder RTK-station',
+        'Virtuele grenzen en meerdere zones in de app',
+      ],
+      consideration:
+        'Controleer herkenbare gazonranden en de eisen aan licht en doorgangen. De fabrikant noemt 18° en circa 32% op de seriepagina, maar elders ook 40% bij 18°. We gebruiken de lagere grens; laat een hellende tuin vooraf beoordelen. Controleer of een garage is inbegrepen.',
+      source: 'https://www.eufy.com/nl/robot-lawn-mower-e-series',
+      bolUrl: `https://www.bol.com/nl/nl/p/eufy-robotgrasmaaier-e${model}-draadloos-geen-rtk-geen-signaalproblemen-handsfree-auto-mapping-obstakelvermijding-slimme-navigatie-${model === '15' ? 'nauwkeurig-maaien-met-de-ride-on-edge-technologie-beheer-van-meerdere-zones-800m2-app-bediening-ultrastil' : 'ride-on-edge-technologie-beheer-van-meerdere-zones-1200m2-app-bediening-55db-geruisloos'}/${bolId}/`,
+    }),
+  ),
+];
+
+export const mowerSourceChecked = '25 oktober 2026';
+
+export function mowersForGuide(slug: string) {
+  const selection: Record<string, string[]> = {
+    'robotmaaier-zonder-draad': ['segway-navimow-i105e', 'worx-landroid-vision-m600', 'mova-1000'],
+    'robotmaaier-kleine-tuin': [
+      'husqvarna-aspire-r4',
+      'gardena-sileno-minimo-500',
+      'segway-navimow-i105e',
+    ],
+    'robotmaaier-grote-tuin': ['mammotion-luba-mini-2-awd-1000', 'eufy-e18'],
+  };
+  return (selection[slug] ?? []).flatMap((id) => mowers.filter((mower) => mower.slug === id));
+}

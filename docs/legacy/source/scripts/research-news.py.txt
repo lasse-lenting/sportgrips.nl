@@ -1,0 +1,100 @@
+"""Prepare a deduplicated research queue. It never writes or publishes articles."""
+import argparse
+import hashlib
+import json
+import re
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+from xml.etree import ElementTree
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def get(url):
+    with urlopen(Request(url, headers={'User-Agent': 'PaspootNewsResearch/1.0'}), timeout=25) as response:
+        return response.read().decode('utf-8', 'replace')
+
+
+def research(days=7, output=None):
+    now = datetime.now(timezone.utc)
+    state_file = ROOT / '.data/seo/news-source-state.json'
+    state = json.loads(state_file.read_text()) if state_file.exists() else {}
+    articles = json.loads((ROOT / 'src/content/news.json').read_text())
+    watchlist = json.loads((ROOT / 'docs/seo/news-sources.json').read_text())
+    sources, candidates, errors = [], [], []
+    for source in watchlist:
+        if source.get('fetchMode') == 'browser':
+            item = dict(**source, status='requires-browser', sourceUpdatedAt=None, alreadyCovered=False)
+            sources.append(item)
+            candidates.append(dict(kind='official-source', **item, verified=False))
+            continue
+        try:
+            raw = get(source.get('apiUrl', source['url']))
+            updated = None
+            note = None
+            if source.get('apiUrl'):
+                data = json.loads(raw)
+                updated = (data.get('public_updated_at') or '')[:10] or None
+                changes = data.get('details', {}).get('change_history', [])
+                note = changes[0].get('note') if changes else None
+                raw = json.dumps({'updatedAt': updated, 'changeNote': note, 'details': data.get('details')}, sort_keys=True)
+            else:
+                # A diff is a research lead, never proof of a policy change.
+                raw = re.sub(r'<(script|style)\b[^>]*>.*?</\1>', '', raw, flags=re.S | re.I)
+                raw = re.sub(r'\s+', ' ', re.sub(r'<[^>]*>', ' ', raw)).strip()
+            digest = hashlib.sha256(raw.encode()).hexdigest()
+            previous = state.get(source['url'])
+            status = 'baseline' if not previous else ('changed' if previous['hash'] != digest else 'unchanged')
+            covered = any(s['url'] == source['url'] and s.get('updatedAt') == updated for article in articles for s in article['sources']) if updated else False
+            item = dict(**source, sourceUpdatedAt=updated, changeNote=note, status=status, alreadyCovered=covered)
+            sources.append(item)
+            state[source['url']] = dict(hash=digest, checkedAt=now.isoformat())
+            fresh = bool(updated and datetime.fromisoformat(updated).date() >= (now - timedelta(days=days)).date())
+            if not covered and (status == 'changed' or fresh):
+                candidates.append(dict(kind='official-source', **item, verified=False))
+        except Exception as error:
+            errors.append(dict(url=source['url'], error=str(error)))
+    for query in ['(hond OR kat OR huisdier) (vliegtuig OR airline OR vliegen) when:7d', 'pet travel airline policy when:7d']:
+        try:
+            feed_url = 'https://news.google.com/rss/search?' + urlencode(dict(q=query, hl='nl', gl='NL', ceid='NL:nl'))
+            for item in ElementTree.fromstring(get(feed_url)).findall('./channel/item'):
+                title, url, date = item.findtext('title'), item.findtext('link'), item.findtext('pubDate')
+                if not title or not url or not date:
+                    continue
+                published = parsedate_to_datetime(date)
+                if published < now - timedelta(days=days):
+                    continue
+                if not re.search(r'\b(hond|honden|kat|katten|huisdier|huisdieren|pet|pets|dog|dogs|cat|cats)\b', title, re.I):
+                    continue
+                if not re.search(r'\b(vlieg\w*|luchtvaart\w*|airline\w*|air\s+travel|flight\w*|plane\w*|airport\w*|cabine|cargo|reisregels|pet\s+travel)\b', title, re.I):
+                    continue
+                candidates.append(dict(kind='news-discovery', title=title, url=url, sourcePublishedAt=published.isoformat(), verified=False))
+        except Exception as error:
+            errors.append(dict(query=query, error=str(error)))
+    candidates = list({item['url']: item for item in candidates}.values())
+    report = dict(researchedAt=now.isoformat(), lookbackDays=days, sources=sources, candidates=candidates, errors=errors,
+                  nextStep='Open candidate and primary source; verify date, change and Dutch pet-flight relevance. Update an existing guide where appropriate. Prepare a draft, then request publication approval.',
+                  limitations=['News feed dates can differ from event dates', 'Source changes can be navigation edits; verify the actual change', 'No candidates is a valid result; never manufacture news'])
+    path = Path(output) if output else ROOT / '.data/seo/news-research.json'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    state_file.parent.mkdir(parents=True, exist_ok=True)
+    state_file.write_text(json.dumps(state, indent=2) + '\n')
+    path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
+    browser_pending = sum(source['status'] == 'requires-browser' for source in sources)
+    print(f'{len(sources) - browser_pending} sources fetched; {browser_pending} await browser verification; {len(candidates)} research leads; {len(errors)} fetch errors. {path}')
+    for error in errors:
+        print(error)
+    return report
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--days', type=int, default=7)
+    parser.add_argument('--output')
+    args = parser.parse_args()
+    report = research(args.days, args.output)
+    # Partial coverage is visible and must not masquerade as a clean run.
+    raise SystemExit(1 if report['errors'] else 0)

@@ -1,0 +1,2 @@
+⚠️  Schema validation warnings:
+  - Block 2: Missing @type

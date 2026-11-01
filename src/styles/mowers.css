@@ -1,0 +1,636 @@
+/* Product comparisons use the existing Maaistro palette, type and content width. */
+@layer components {
+  .mower-hero {
+    padding: 160px 60px 64px;
+    background: var(--color-stone);
+  }
+  .mower-hero > .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 70px;
+    align-items: center;
+  }
+  .mower-hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .mower-hero h1 {
+    font-size: clamp(46px, 5.5vw, 74px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-weight: var(--font-weight-page-heading);
+  }
+  .mower-hero-copy > p {
+    max-width: 630px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--color-body);
+  }
+  .mower-hero-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .mower-hero-links > a:last-child {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: 600;
+  }
+  .mower-hero-note {
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--color-brand-dark);
+    color: #fff;
+  }
+  .mower-hero-note strong {
+    display: block;
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--color-brand);
+    font-weight: 400;
+  }
+  .mower-hero-note p {
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  .mower-hero-note > span {
+    display: block;
+    border-top: 1px solid #ffffff30;
+    padding-top: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffffc9;
+  }
+  .mower-page-body {
+    padding: 64px 60px 100px;
+  }
+  .mower-selection,
+  .mower-comparison,
+  .mower-method,
+  .mower-reading {
+    scroll-margin-top: 115px;
+  }
+  .mower-selection-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  .mower-selection h2,
+  .mower-comparison h2,
+  .mower-method h2,
+  .mower-reading h2,
+  .guide-mowers h2 {
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+  }
+  .mower-selection-heading p,
+  .mower-comparison > p,
+  .guide-mowers > p {
+    margin-top: 14px;
+    color: var(--color-muted);
+    line-height: 1.6;
+  }
+  .mower-text-link {
+    display: inline-block;
+    flex: none;
+    color: var(--color-brand-dark);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  .mower-filters {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 22px;
+    padding-block: 22px;
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .mower-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .mower-filter-buttons button {
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid var(--color-line);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .mower-filter-buttons button:hover {
+    background: var(--color-stone);
+  }
+  .mower-filter-buttons button[aria-pressed='true'] {
+    color: #fff;
+    background: var(--color-brand-dark);
+    border-color: var(--color-brand-dark);
+  }
+  .mower-area {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .mower-area > span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .mower-area input {
+    width: 136px;
+    height: 44px;
+    padding: 10px 12px;
+    border: 1px solid var(--color-line);
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+  }
+  .mower-area input[aria-invalid='true'] {
+    border-color: var(--color-negative);
+  }
+  .mower-filter-note {
+    margin-top: 12px;
+    max-width: 820px;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .mower-filter-error {
+    margin-top: 12px;
+    color: var(--color-negative);
+    font-size: 14px;
+  }
+  .mower-context-note {
+    padding: 18px 20px;
+    margin-top: 20px;
+    background: var(--color-positive-bg);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .mower-disclosure {
+    margin-block: 24px;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.65;
+  }
+  .mower-count {
+    margin-block: 26px 18px;
+    font-size: 14px;
+    color: var(--color-muted);
+  }
+  .mower-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+  }
+  .mower-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    scroll-margin-top: 115px;
+  }
+  .mower-card-visual {
+    position: relative;
+    padding: 62px 20px 16px;
+    background: #fff;
+  }
+  .mower-product-image {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+  }
+  /* This manufacturer image includes substantial space above the product. */
+  #worx-landroid-vision-m600 .mower-product-image {
+    object-fit: cover;
+    object-position: center 80%;
+  }
+  .mower-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    padding: 7px 9px;
+    border-radius: 6px;
+    color: #fff;
+    background: var(--color-accent);
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .mower-card-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .mower-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-muted);
+    margin-bottom: 8px;
+  }
+  .mower-card h3 {
+    font-size: 23px;
+    line-height: 1.12;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+  }
+  .mower-intro {
+    margin-top: 16px;
+    color: var(--color-body);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .mower-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+    gap: 16px 14px;
+    padding-block: 18px;
+    border-block: 1px solid var(--color-line);
+  }
+  .mower-specs div {
+    min-width: 0;
+  }
+  .mower-specs dt {
+    font-size: 12px;
+    color: var(--color-muted);
+  }
+  .mower-specs dd {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .mower-capacity-note {
+    margin-top: 14px;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .mower-match {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    background: var(--color-positive-bg);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .mower-match ul,
+  .mower-consideration ul,
+  .mower-exclusions ul {
+    padding-left: 18px;
+    list-style: disc;
+  }
+  .mower-match li + li,
+  .mower-consideration li + li,
+  .mower-exclusions li + li {
+    margin-top: 8px;
+  }
+  .mower-exclusions {
+    margin-block: 26px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .mower-exclusions summary {
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+  .mower-extra-details {
+    margin-block: 18px 22px;
+  }
+  .mower-extra-details summary {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .mower-strengths {
+    display: grid;
+    gap: 10px;
+    margin-block: 24px 20px;
+  }
+  .mower-strengths li {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .mower-strengths svg {
+    color: var(--color-positive);
+    margin-top: 1px;
+  }
+  .mower-consideration {
+    padding: 17px 18px;
+    border-radius: 10px;
+    background: var(--color-stone);
+    margin-bottom: 26px;
+  }
+  .mower-consideration strong {
+    font-size: 13px;
+  }
+  .mower-consideration p {
+    margin-top: 7px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--color-body);
+  }
+  .mower-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-top: auto;
+    text-align: center;
+  }
+  .mower-price-button {
+    gap: 16px;
+    width: 100%;
+    min-height: 50px;
+    background: var(--color-brand);
+    color: var(--color-brand-dark);
+  }
+  .mower-hero-links .mower-price-button {
+    width: auto;
+  }
+  .mower-buy > span {
+    font-size: 13px;
+    color: var(--color-brand-dark);
+    font-weight: 600;
+  }
+  .mower-source {
+    align-self: center;
+    margin-top: 18px;
+    font-size: 11px;
+    color: var(--color-muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .mower-empty {
+    padding: 40px;
+    border-radius: 18px;
+    background: var(--color-stone);
+  }
+  .mower-empty h3 {
+    font-size: 25px;
+  }
+  .mower-empty p {
+    margin-block: 16px 22px;
+    max-width: 600px;
+    line-height: 1.7;
+  }
+  .mower-empty .button {
+    width: auto;
+  }
+  .mower-comparison {
+    margin-top: 90px;
+  }
+  .mower-table-scroll {
+    margin-top: 28px;
+    overflow-x: auto;
+    border: 1px solid var(--color-line);
+    border-radius: 14px;
+  }
+  .mower-comparison table {
+    width: 100%;
+    min-width: 800px;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .mower-comparison caption {
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 12px;
+    color: var(--color-muted);
+  }
+  .mower-comparison thead {
+    color: #fff;
+    background: var(--color-brand-dark);
+  }
+  .mower-comparison th,
+  .mower-comparison td {
+    padding: 20px;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  .mower-comparison tbody tr + tr {
+    border-top: 1px solid var(--color-line);
+  }
+  .mower-comparison tbody th {
+    max-width: 230px;
+  }
+  .mower-comparison tbody tr:nth-child(even) {
+    background: var(--color-stone);
+  }
+  .mower-method {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 90px;
+    padding-top: 55px;
+    border-top: 1px solid var(--color-line);
+  }
+  .mower-method h2 {
+    margin-top: 22px;
+  }
+  .mower-method p {
+    margin-bottom: 18px;
+    font-size: 15px;
+    color: var(--color-body);
+    line-height: 1.7;
+  }
+  .mower-reading {
+    margin-top: 70px;
+  }
+  .mower-reading > div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 26px;
+  }
+  .mower-match-check {
+    margin-top: 12px;
+    color: var(--color-body);
+  }
+  .mower-navigation-explainer article {
+    padding: 24px;
+    background: var(--color-stone);
+    border-radius: 14px;
+  }
+  .mower-navigation-explainer h3 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+  .mower-navigation-explainer p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-body);
+  }
+  .mower-reading a {
+    display: block;
+    padding: 24px;
+    border-radius: 14px;
+    background: var(--color-stone);
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 600;
+  }
+  .mower-reading a:hover {
+    background: var(--color-positive-bg);
+  }
+  .guide-mowers {
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    margin: 0 auto 90px;
+  }
+  .event-article-page:has(.guide-mowers) .article-layout {
+    padding-bottom: 50px;
+  }
+  .guide-mowers > .mower-text-link {
+    margin-top: 26px;
+  }
+  @media (width < 1200px) {
+    .mower-hero {
+      padding: 150px 40px 50px;
+    }
+    .mower-hero > .container {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 32px;
+    }
+    .mower-page-body {
+      padding: 50px 40px 70px;
+    }
+    .mower-filters {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .mower-product-image {
+      height: 160px;
+    }
+    .mower-selection h2,
+    .mower-comparison h2,
+    .mower-method h2,
+    .mower-reading h2,
+    .guide-mowers h2 {
+      font-size: 30px;
+    }
+    .guide-mowers {
+      width: calc(100% - 80px);
+    }
+  }
+  @media (width < 1000px) {
+    .mower-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (width < 680px) {
+    .mower-hero {
+      padding: 132px 20px 38px;
+    }
+    .mower-hero > .container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .mower-hero-copy {
+      gap: 20px;
+    }
+    .mower-hero h1 {
+      font-size: 46px;
+    }
+    .mower-hero-copy > p {
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .mower-hero-note {
+      padding: 24px;
+    }
+    .mower-hero-note strong {
+      font-size: 24px;
+    }
+    .mower-page-body {
+      padding: 38px 20px 60px;
+    }
+    .mower-selection-heading {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .mower-selection h2,
+    .mower-comparison h2,
+    .mower-method h2,
+    .mower-reading h2,
+    .guide-mowers h2 {
+      font-size: 28px;
+    }
+    .mower-filter-buttons button {
+      font-size: 13px;
+      padding-inline: 12px;
+    }
+    .mower-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .mower-card-visual {
+      padding: 62px 20px 20px;
+    }
+    .mower-product-image {
+      height: 170px;
+    }
+    .mower-card-copy {
+      padding: 20px;
+    }
+    .mower-card h3 {
+      font-size: 23px;
+    }
+    .mower-specs {
+      gap: 18px 14px;
+    }
+    .mower-buy .button {
+      white-space: normal;
+    }
+    .mower-method {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .mower-comparison,
+    .mower-method {
+      margin-top: 60px;
+    }
+    .mower-reading > div {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .mower-empty {
+      padding: 26px;
+    }
+    .guide-mowers {
+      width: calc(100% - 40px);
+      margin-block: 0 50px;
+    }
+  }
+}

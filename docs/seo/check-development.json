@@ -1,0 +1,11 @@
+{
+  "base": "http://localhost:3025",
+  "mode": "development",
+  "page_count": 28,
+  "internal_links_checked": 1015,
+  "public_files_preserved": 160,
+  "manifest_text_updated": [
+    "public/site.webmanifest"
+  ],
+  "failures": []
+}

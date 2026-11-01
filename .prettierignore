@@ -1,0 +1,9 @@
+node_modules/
+node_modules-recovery/
+.next/
+reference/
+verification/
+public/
+package-lock.json
+next-env.d.ts
+*.tsbuildinfo

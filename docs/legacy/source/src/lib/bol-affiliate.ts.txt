@@ -1,0 +1,21 @@
+// Maaistro website code, observed in bol Account > Website on 25 October 2026.
+// Format: https://affiliate.bol.com/nl/handleiding/tracking-url/
+export const bolSiteId = '1553044';
+
+export function bolAffiliateUrl(productUrl: string, placement: string) {
+  const destination = new URL(productUrl);
+  if (
+    destination.origin !== 'https://www.bol.com' ||
+    !destination.pathname.startsWith('/nl/nl/p/')
+  ) {
+    throw new Error('A bol product link is required');
+  }
+  const params = new URLSearchParams({
+    t: 'url',
+    s: bolSiteId,
+    url: destination.toString(),
+    f: 'txl',
+    name: `maaistro-${placement}`,
+  });
+  return `https://partner.bol.com/click/click?${params}`;
+}

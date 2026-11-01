@@ -1,0 +1,137 @@
+[
+  {
+    "id": "G1",
+    "title": "Google: people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "use": "Originaliteit en hulp bij echte keuzes; geen voorkeurswoordenaantal.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G2",
+    "title": "Google: reviews schrijven",
+    "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
+    "use": "Onderbouw vergelijkingen en praktijkclaims; toon afwegingen.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G3",
+    "title": "Google: Search-documentatie-updates",
+    "url": "https://developers.google.com/search/updates",
+    "use": "FAQ rich results gestopt op 7 mei 2026; llms.txt geen Google-vereiste.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G4",
+    "title": "Google: noindex",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+    "use": "Noindex vereist crawltoegang; robots-disallow is geen indexeringsbescherming.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G5",
+    "title": "Google: sitemap",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "use": "Canonical URLs en feitelijke lastmod.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G6",
+    "title": "Google: canonical",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "use": "Eén voorkeursorigin en consistente signalen.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "G7",
+    "title": "Google: AI-functies",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "use": "Vindbare tekst, zichtbare bronnen en normale SEO; geen speciaal AI-schema vereist.",
+    "accessed": "2026-10-25",
+    "type": "official-search-guidance",
+    "independentTest": false
+  },
+  {
+    "id": "M1",
+    "title": "Husqvarna: draadloze installatie plannen",
+    "url": "https://www.husqvarna.com/nl/leer-en-ontdek/plan-draadloze-robotmaaier-installatiegids/",
+    "use": "Tuinsituatie, satellietzicht en installatievoorwaarden; alleen toepassen op betreffende systemen.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M2",
+    "title": "Husqvarna: EPOS-installatieopties",
+    "url": "https://www.husqvarna.com/nl/ondersteuning/virtuele-grenzen-installeren-met-husqvarna-epos-twee-installatieopties-ka-70323/",
+    "use": "Cloud versus referentiestation; model/markt/jaar controleren.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M3",
+    "title": "Husqvarna: Support by Wire",
+    "url": "https://www.husqvarna.com/nl/ondersteuning/epos-support-by-wire-voor-gazongebieden-met-een-zwak-satellietsignaal-ka-70234/",
+    "use": "Niet elk draadloos systeem lost zwakke ontvangst hetzelfde op.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M4",
+    "title": "GARDENA: robotmaaiers",
+    "url": "https://www.gardena.com/nl/c/ontdek/producten/gazononderhoud/robotmaaier",
+    "use": "Primaire bron voor verschillende grens- en navigatieconcepten, geen onafhankelijke test.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M5",
+    "title": "Navimow: H2",
+    "url": "https://navimow.segway.com/pages/navimow-h2-robot-lawn-mower",
+    "use": "Primaire productclaims over combinaties van navigatie; verifiëren per uitvoering.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M6",
+    "title": "STIHL: wintervoorbereiding",
+    "url": "https://www.stihl.nl/nl/tuinadvies-inspiratie/gebruikstips-machineonderhoud/robotmaaiers-tips/robotmaaier-winter",
+    "use": "Onderhoudsadvies is expliciet modelafhankelijk; geen universele accu-instructie.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M7",
+    "title": "GARDENA: winterstalling",
+    "url": "https://www.gardena.com/nl/c/ondersteuning/planning-en-advies/robotmaaier-support-center/onderhoud/robotmaaier-opslaan-voor-de-winter",
+    "use": "Winteronderhoud en opslag; actuele handleiding blijft leidend.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  },
+  {
+    "id": "M8",
+    "title": "GARDENA: voorjaarscheck",
+    "url": "https://www.gardena.com/nl/c/ontdek/tuininspiratie/tuinmagazine/robotmaaier-uit-winterslaap",
+    "use": "Seizoensgebonden onderhoudsvragen; instructies niet op alle merken generaliseren.",
+    "accessed": "2026-10-25",
+    "type": "manufacturer-primary",
+    "independentTest": false
+  }
+]

@@ -1,0 +1,76 @@
+#cc-main {
+  color-scheme: dark;
+  --cc-font-family: var(--font-golos), Arial, sans-serif;
+  --cc-bg: #052e2a;
+  --cc-primary-color: #ffffff;
+  --cc-secondary-color: #d2e6df;
+  --cc-modal-border-radius: 1.25rem;
+  --cc-btn-border-radius: 0.75rem;
+  --cc-modal-margin: 1.25rem;
+  --cc-link-color: var(--color-brand);
+  --cc-btn-primary-bg: var(--color-brand);
+  --cc-btn-primary-color: #052e2a;
+  --cc-btn-primary-border-color: var(--color-brand);
+  --cc-btn-primary-hover-bg: var(--color-brand-hover);
+  --cc-btn-primary-hover-color: #052e2a;
+  --cc-btn-primary-hover-border-color: var(--color-brand-hover);
+  --cc-btn-secondary-bg: #16433d;
+  --cc-btn-secondary-color: #ffffff;
+  --cc-btn-secondary-border-color: #52786d;
+  --cc-btn-secondary-hover-bg: #24574c;
+  --cc-btn-secondary-hover-color: #ffffff;
+  --cc-btn-secondary-hover-border-color: var(--color-brand);
+  --cc-separator-border-color: #345a50;
+  --cc-toggle-on-bg: var(--color-brand);
+  --cc-toggle-on-knob-bg: #052e2a;
+  --cc-toggle-off-bg: #52786d;
+  --cc-toggle-off-knob-bg: #ffffff;
+  --cc-toggle-readonly-bg: #345a50;
+  --cc-toggle-readonly-knob-bg: #d2e6df;
+  --cc-toggle-readonly-knob-icon-color: #052e2a;
+  --cc-cookie-category-block-bg: #123d35;
+  --cc-cookie-category-block-border: #345a50;
+  --cc-cookie-category-block-hover-bg: #1a4a40;
+  --cc-cookie-category-block-hover-border: #52786d;
+  --cc-cookie-category-expanded-block-bg: #052e2a;
+  --cc-cookie-category-expanded-block-hover-bg: #123d35;
+  --cc-section-category-border: #345a50;
+  --cc-footer-bg: #052e2a;
+  --cc-footer-color: #d2e6df;
+  --cc-footer-border-color: #345a50;
+  --cc-overlay-bg: rgb(5 46 42 / 65%);
+}
+
+#cc-main .cm,
+#cc-main .pm {
+  border: 1px solid #345a50;
+  box-shadow: 0 16px 60px rgb(5 46 42 / 22%);
+}
+
+#cc-main .cm__title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-brand);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+#cc-main .cm__title img {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+}
+
+#cc-main .pm__title {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+#cc-main button:focus-visible,
+#cc-main a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}

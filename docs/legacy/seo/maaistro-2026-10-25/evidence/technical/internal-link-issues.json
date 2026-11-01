@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/luchtvaartmaatschappijen/klm",
+    "href": "/advies/hondenreistas-opmeten",
+    "text": "buitenmaten van je reistas meet",
+    "target_status": 404,
+    "kind": "http"
+  },
+  {
+    "source": "/luchtvaartmaatschappijen/klm",
+    "href": "/advies/hond-meenemen-vliegtuig",
+    "text": "vliegen met een hond",
+    "target_status": 404,
+    "kind": "http"
+  },
+  {
+    "source": "/luchtvaartmaatschappijen/klm",
+    "href": "/advies/kat-meenemen-vliegtuig",
+    "text": "vliegen met een kat",
+    "target_status": 404,
+    "kind": "http"
+  },
+  {
+    "source": "/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+    "href": "/advies/hond-meenemen-vliegtuig",
+    "text": "vliegen met een hond",
+    "target_status": 404,
+    "kind": "http"
+  },
+  {
+    "source": "/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+    "href": "/advies/kat-meenemen-vliegtuig",
+    "text": "vliegen met een kat",
+    "target_status": 404,
+    "kind": "http"
+  }
+]

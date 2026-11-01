@@ -1,0 +1,30 @@
+import type { Metadata } from 'next';
+import { AdviceCard } from '@/components/cards';
+import { ListingHero } from '@/components/page-sections';
+import { Container } from '@/components/ui';
+import { adviceGuides } from '@/content/site';
+import { pageMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = pageMetadata({
+  title: 'Koopgidsen: kies de robotmaaier voor jouw tuin',
+  description:
+    'Heldere koopgidsen over robotmaaiers zonder draad en modellen voor kleine en grote tuinen. Begrijp de verschillen voordat je kiest.',
+  path: '/advies',
+});
+
+export default function AdviesPage() {
+  return (
+    <>
+      <ListingHero kind="advice" />
+      <section className="listing-body blog-listing">
+        <Container>
+          <div className="blog-grid">
+            {adviceGuides.map((guide) => (
+              <AdviceCard key={guide.slug} guide={guide} />
+            ))}
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}

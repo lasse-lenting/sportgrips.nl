@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "klm",
+    "title": "KLM",
+    "location": "Gecontroleerd · hond en kat in cabine",
+    "description": "De gepubliceerde KLM-cabineregels voor een kleine hond of kat, gecontroleerd op de officiële website.",
+    "date": "2026-09-13",
+    "updatedAt": "13 september 2026",
+    "readTime": "4 min leestijd",
+    "tags": ["Cabineregels", "Hond en kat"],
+    "summary": "Bij KLM mag één hond of kat in een gesloten tas van maximaal 46 × 28 × 24 cm mee, zolang huisdier en tas samen maximaal 8 kg wegen en de boekingsklasse dit toestaat.",
+    "image": "/assets/paspoot/airport-pets-real-life.png",
+    "hero": "/assets/paspoot/cat-in-cabin-real-life.png",
+    "body": [
+      { "tag": "h2", "html": "Mag je hond of kat mee in de cabine bij KLM?" },
+      {
+        "tag": "p",
+        "html": "Ja, in Economy Class en in Business Class binnen Europa kan één kleine hond of kat in de cabine reizen. In Premium Comfort Class en Business Class op intercontinentale routes kan dit niet."
+      },
+      { "tag": "h2", "html": "Gewicht en buitenmaten" },
+      {
+        "tag": "p",
+        "html": "Huisdier en gesloten reistas mogen samen maximaal <strong>8 kg</strong> wegen. De tas mag maximaal <strong>46 × 28 × 24 cm</strong> zijn en moet onder de stoel voor je passen."
+      },
+      { "tag": "h2", "html": "Comfort en reservering" },
+      {
+        "tag": "p",
+        "html": "Je huisdier moet in de gesloten tas kunnen staan, draaien en vrij ademen. De ruimte per vlucht is beperkt; reserveer de plek vooraf en controleer ook bestemming, vliegtuigtype en uitvoerende maatschappij."
+      },
+      { "tag": "h2", "html": "Officiële bron" },
+      {
+        "tag": "p",
+        "html": "Gecontroleerd op 13 september 2026 via <a href=\"https://www.klm.nl/information/pets/reservation\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële KLM-pagina over reizen met huisdieren</a>. Controleer de voorwaarden opnieuw voor je boekt."
+      }
+    ]
+  },
+  {
+    "slug": "transavia",
+    "title": "Transavia",
+    "location": "Gecontroleerd · hond en kat in cabine",
+    "description": "De gepubliceerde Transavia-cabineregels voor honden en katten, inclusief routebeperkingen.",
+    "date": "2026-09-13",
+    "updatedAt": "13 september 2026",
+    "readTime": "4 min leestijd",
+    "tags": ["Cabineregels", "Reistas"],
+    "summary": "Transavia staat een hond of kat toe in een gesloten flexibele tas van maximaal 40 × 30 × 24 cm. Het totale gewicht van dier en tas mag maximaal 8 kg zijn.",
+    "image": "/assets/paspoot/measure-carrier-real-life.png",
+    "hero": "/assets/paspoot/airport-pets-real-life.png",
+    "body": [
+      { "tag": "h2", "html": "Mag je huisdier mee in de cabine bij Transavia?" },
+      {
+        "tag": "p",
+        "html": "Ja. Een hond of kat kan in een volledig gesloten, flexibele en geventileerde reistas onder de stoel voor je reizen. Een harde plastic kennel is in de cabine niet toegestaan."
+      },
+      { "tag": "h2", "html": "Gewicht en buitenmaten" },
+      {
+        "tag": "p",
+        "html": "De maximale buitenmaten zijn <strong>40 × 30 × 24 cm</strong>. Huisdier en tas mogen samen maximaal <strong>8 kg</strong> wegen."
+      },
+      { "tag": "h2", "html": "Route- en rasbeperkingen" },
+      {
+        "tag": "p",
+        "html": "Transavia vervoert geen huisdieren van en naar het Verenigd Koninkrijk, Ierland, IJsland, Schotland, Marokko, de Verenigde Arabische Emiraten en Chambéry. Voor stompneuzige dieren gelden aanvullende aandachtspunten."
+      },
+      { "tag": "h2", "html": "Officiële bronnen" },
+      {
+        "tag": "p",
+        "html": "Gecontroleerd op 13 september 2026 via <a href=\"https://www.transavia.com/service/nl-be/kinderen-huisdieren-groepen/huisdieren-in-vliegtuig/cabine\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële cabinevoorwaarden</a> en <a href=\"https://www.transavia.com/service/nl-nl/kinderen-huisdieren-groepen/huisdieren-in-vliegtuig/niet-toegestaan\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële routebeperkingen</a>."
+      }
+    ]
+  },
+  {
+    "slug": "lufthansa",
+    "title": "Lufthansa",
+    "location": "Gecontroleerd · hond en kat in cabine",
+    "description": "De gepubliceerde Lufthansa-cabineregels voor kleine honden en katten in een zachte reistas.",
+    "date": "2026-09-13",
+    "updatedAt": "13 september 2026",
+    "readTime": "4 min leestijd",
+    "tags": ["Cabineregels", "Voor vertrek"],
+    "summary": "Lufthansa staat kleine honden en katten toe in een zachte tas van maximaal 55 × 40 × 23 cm en maximaal 8 kg voor huisdier en tas samen.",
+    "image": "/assets/paspoot/cat-in-cabin-real-life.png",
+    "hero": "/assets/paspoot/measure-carrier-real-life.png",
+    "body": [
+      { "tag": "h2", "html": "Een huisdier meenemen in de Lufthansa-cabine" },
+      {
+        "tag": "p",
+        "html": "Een kleine hond of kat kan in een zachte, lekvrije en afsluitbare tas onder de stoel voor je reizen. Vraag de plek uiterlijk 72 uur voor vertrek aan; toelating blijft afhankelijk van beschikbaarheid."
+      },
+      { "tag": "h2", "html": "Totaalgewicht en buitenmaten" },
+      {
+        "tag": "p",
+        "html": "De tas mag maximaal <strong>55 × 40 × 23 cm</strong> zijn. Het gezamenlijke gewicht van huisdier en tas mag maximaal <strong>8 kg</strong> zijn."
+      },
+      { "tag": "h2", "html": "Aanvullende beperkingen" },
+      {
+        "tag": "p",
+        "html": "Voor vechthonden en kortsnuitige rassen gelden aanvullende Lufthansa-regels. Controleer daarnaast de invoer-, uitvoer- en transitregels voor iedere betrokken bestemming."
+      },
+      { "tag": "h2", "html": "Officiële bron" },
+      {
+        "tag": "p",
+        "html": "Gecontroleerd op 13 september 2026 via <a href=\"https://www.lufthansa.com/by/en/tiere-als-handgepaeck\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële Lufthansa-pagina voor dieren als handbagage</a>."
+      }
+    ]
+  },
+  {
+    "slug": "air-france",
+    "title": "Air France",
+    "location": "Handmatige controle nodig",
+    "description": "De officiële Air France-pagina bevestigt de gewichtsdrempel, maar de tasafmetingen zijn nog niet eenduidig genoeg voor automatische matching.",
+    "date": "2026-09-13",
+    "updatedAt": "13 september 2026",
+    "readTime": "3 min leestijd",
+    "tags": ["Cabineregels", "Handmatige controle"],
+    "summary": "Air France vermeldt dat honden en katten boven 8 kg inclusief tas in het ruim moeten reizen. De maximale lengte, breedte en hoogte van de cabinetas ontbreken in de geraadpleegde officiële inhoud.",
+    "image": "/assets/paspoot/pet-documents-real-life.png",
+    "hero": "/assets/paspoot/airport-pets-real-life.png",
+    "body": [
+      { "tag": "h2", "html": "Waarom Paspoot hier geen tas aanbeveelt" },
+      {
+        "tag": "p",
+        "html": "De officiële Air France-pagina bevestigt de grens van <strong>8 kg inclusief tas</strong>, maar publiceert in de geraadpleegde inhoud geen eenduidige maximale lengte, breedte en hoogte voor de cabinetas. Zonder alle drie de maten sluit Paspoot deze airline uit van automatische productaanbevelingen."
+      },
+      { "tag": "h2", "html": "Route- en dierbeperkingen" },
+      {
+        "tag": "p",
+        "html": "Vervoer is afhankelijk van beschikbaarheid en bestemming. Voor reizen naar de Verenigde Staten gelden aanvullende voorwaarden. Controleer ook ras, leeftijd en reisdocumenten rechtstreeks bij Air France."
+      },
+      { "tag": "h2", "html": "Officiële bron" },
+      {
+        "tag": "p",
+        "html": "Handmatig te controleren op basis van <a href=\"https://wwws.airfrance.nl/information/passagers/voyager-avec-son-animal-chien-chat\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële Air France-pagina over reizen met huisdieren</a>, geraadpleegd op 13 september 2026."
+      }
+    ]
+  },
+  {
+    "slug": "brussels-airlines",
+    "title": "Brussels Airlines",
+    "location": "Gecontroleerd · kleine hond en kat in cabine",
+    "description": "De gepubliceerde Brussels Airlines-regels voor kleine honden en katten in de cabine.",
+    "date": "2026-09-13",
+    "updatedAt": "13 september 2026",
+    "readTime": "4 min leestijd",
+    "tags": ["Cabineregels", "Hond en kat"],
+    "summary": "Bij Brussels Airlines mogen kleine honden en katten in een tas van maximaal 55 × 40 × 23 cm mee. Huisdier en tas mogen samen maximaal 8 kg wegen.",
+    "image": "/assets/paspoot/weigh-pet-real-life.png",
+    "hero": "/assets/paspoot/pet-documents-real-life.png",
+    "body": [
+      { "tag": "h2", "html": "Voor hond en kat" },
+      {
+        "tag": "p",
+        "html": "Alleen kleine honden en katten die volledig in een gesloten, zachte tas passen zijn toegestaan. Het dier moet in de tas kunnen staan, liggen en draaien en blijft tijdens de hele vlucht in de tas."
+      },
+      { "tag": "h2", "html": "Gewicht en buitenmaten" },
+      {
+        "tag": "p",
+        "html": "De maximale maat is <strong>55 × 40 × 23 cm</strong>. Het totale gewicht van huisdier en tas mag maximaal <strong>8 kg</strong> zijn."
+      },
+      { "tag": "h2", "html": "Reservering en beperkingen" },
+      {
+        "tag": "p",
+        "html": "Boek het huisdier vooraf; per vliegtuig zijn maximaal vier tassen toegestaan. Voor honden naar de Verenigde Staten geldt een minimumleeftijd van zes maanden. Bepaalde zitplaatsen zijn uitgesloten."
+      },
+      { "tag": "h2", "html": "Officiële bron" },
+      {
+        "tag": "p",
+        "html": "Gecontroleerd op 13 september 2026 via <a href=\"https://www.brusselsairlines.com/es/es/special-care/pets/cats-and-small-dogs-in-the-cabin\" target=\"_blank\" rel=\"noopener noreferrer\">de officiële Brussels Airlines-pagina voor katten en kleine honden in de cabine</a>."
+      }
+    ]
+  }
+]

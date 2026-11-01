@@ -1,0 +1,32 @@
+[
+  {
+    "name": "development",
+    "indexable": false,
+    "canonicalOrigin": "https://maaistro.nl",
+    "passed": true
+  },
+  {
+    "name": "production",
+    "indexable": true,
+    "canonicalOrigin": "https://maaistro.nl",
+    "passed": true
+  },
+  {
+    "name": "Vercel preview",
+    "indexable": false,
+    "canonicalOrigin": "https://maaistro.nl",
+    "passed": true
+  },
+  {
+    "name": "Vercel development",
+    "indexable": false,
+    "canonicalOrigin": "https://maaistro.nl",
+    "passed": true
+  },
+  {
+    "name": "generic preview",
+    "indexable": false,
+    "canonicalOrigin": "https://maaistro.nl",
+    "passed": true
+  }
+]

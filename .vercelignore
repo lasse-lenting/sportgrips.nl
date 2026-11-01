@@ -1,0 +1,4 @@
+# Preserve source records in Git; they are not needed for building the website.
+docs/
+*.tsbuildinfo
+.DS_Store

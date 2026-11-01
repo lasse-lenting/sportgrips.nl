@@ -1,0 +1,351 @@
+'use client';
+
+import { useEffect, useRef, useState, type FormEvent } from 'react';
+import Link from 'next/link';
+
+const steps = ['Gazon', 'Grenzen', 'Terrein', 'Indeling', 'Omgeving', 'Advies'];
+const layouts = [
+  ['single', 'Eén aaneengesloten grasveld'],
+  ['connected', 'Meerdere velden met doorgangen'],
+  ['separate', 'Losse velden zonder grasverbinding'],
+  ['unsure', 'Dat weet ik nog niet'],
+] as const;
+const surroundings = [
+  ['open', 'Vooral open, weinig hoge obstakels'],
+  ['sheltered', 'Veel bomen of bebouwing rondom'],
+  ['unsure', 'Dat weet ik nog niet'],
+] as const;
+const boundaries = [
+  ['wireless', 'Liever zonder draad'],
+  ['wire', 'Draad aanleggen is prima'],
+  ['unsure', 'Dat wil ik nog uitzoeken'],
+] as const;
+const terrains = [
+  ['flat', 'Vlak of licht glooiend'],
+  ['sloped', 'Duidelijke hellingen'],
+  ['unsure', 'Dat weet ik nog niet'],
+] as const;
+
+export function GardenForm() {
+  const [started, setStarted] = useState(false);
+  const [step, setStep] = useState(1);
+  const [area, setArea] = useState('');
+  const [boundary, setBoundary] = useState('');
+  const [terrain, setTerrain] = useState('');
+  const [layout, setLayout] = useState('');
+  const [surrounding, setSurrounding] = useState('');
+  const [slope, setSlope] = useState('');
+  const [error, setError] = useState('');
+  const heading = useRef<HTMLHeadingElement>(null);
+  const squareMetres = Number(area.replace(',', '.'));
+
+  useEffect(() => {
+    if (started) heading.current?.focus();
+  }, [started, step]);
+
+  function next(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const message =
+      step === 1 && (!Number.isFinite(squareMetres) || squareMetres <= 0 || squareMetres > 1000000)
+        ? 'Vul je grasoppervlak in, tussen 1 en 1.000.000 m².'
+        : step === 2 && !boundary
+          ? 'Kies hoe je denkt over begrenzingsdraad.'
+          : step === 3 && !terrain
+            ? 'Kies wat jouw terrein het beste beschrijft.'
+            : step === 3 &&
+                terrain === 'sloped' &&
+                slope &&
+                (!Number.isFinite(Number(slope)) || Number(slope) < 0 || Number(slope) > 100)
+              ? 'Vul een helling tussen 0 en 100% in, of laat het veld leeg.'
+              : step === 4 && !layout
+                ? 'Kies hoe jouw grasvelden verbonden zijn.'
+                : step === 5 && !surrounding
+                  ? 'Kies wat jouw omgeving het beste beschrijft.'
+                  : '';
+    setError(message);
+    if (!message) setStep((current) => Math.min(current + 1, 6));
+  }
+
+  if (!started)
+    return (
+      <div className="application-form form-home wizard-launch">
+        <span className="wizard-kicker">Gratis · zonder account</span>
+        <h3>Begin bij jouw stukje groen.</h3>
+        <p>
+          Vijf korte vragen over je gazon, begrenzing, terrein, indeling en omgeving. Daarna weet je
+          waar je op kunt letten en kun je direct modellen vergelijken.
+        </p>
+        <button className="button" type="button" onClick={() => setStarted(true)}>
+          Start de keuzehulp
+        </button>
+        <p className="demo-note">
+          Een eerste tuinadvies met een gerichte route naar de productselectie.
+        </p>
+      </div>
+    );
+
+  return (
+    <form
+      onSubmit={next}
+      noValidate
+      className={`application-form form-home cabin-wizard garden-wizard ${step === 6 ? 'wizard-complete' : ''}`}
+    >
+      <ol className="wizard-progress" aria-label="Voortgang keuzehulp">
+        {steps.map((label, index) => (
+          <li
+            key={label}
+            className={index + 1 < step ? 'is-complete' : index + 1 === step ? 'is-active' : ''}
+            aria-current={index + 1 === step ? 'step' : undefined}
+          >
+            <span>{index + 1}</span>
+            <small>{label}</small>
+          </li>
+        ))}
+      </ol>
+      <div className="wizard-panel" key={step}>
+        <h3 ref={heading} tabIndex={-1}>
+          {
+            [
+              'Hoeveel gras heb je?',
+              'Met of zonder draad?',
+              'Hoe loopt jouw terrein?',
+              'Hoe liggen jouw grasvelden?',
+              'Wat staat er rondom je gazon?',
+              'Dit telt voor jouw tuin.',
+            ][step - 1]
+          }
+        </h3>
+        {step === 1 && (
+          <label className="wizard-field">
+            Oppervlakte van je gazon
+            <span className="input-with-unit">
+              <input
+                name="area"
+                type="number"
+                min="1"
+                max="1000000"
+                step="1"
+                inputMode="numeric"
+                value={area}
+                onChange={(e) => {
+                  setArea(e.target.value);
+                  setError('');
+                }}
+                aria-invalid={Boolean(error)}
+                aria-describedby="garden-area-help garden-error"
+              />
+              <span>m²</span>
+            </span>
+            <small id="garden-area-help">
+              Tel alleen het gras mee. Terras, borders en oprit kun je weglaten.
+            </small>
+          </label>
+        )}
+        {step === 2 && (
+          <fieldset className="wizard-fieldset">
+            <legend>Wat heeft jouw voorkeur?</legend>
+            <div className="choice-grid">
+              {boundaries.map(([value, label]) => (
+                <label key={value} className="choice-card text-choice">
+                  <input
+                    type="radio"
+                    name="boundary"
+                    value={value}
+                    checked={boundary === value}
+                    onChange={() => {
+                      setBoundary(value);
+                      setError('');
+                    }}
+                    aria-describedby="garden-error"
+                  />
+                  <strong>{label}</strong>
+                </label>
+              ))}
+            </div>
+            <p className="demo-note">
+              Zonder draad betekent dat de maaier op een andere manier de grenzen van je gazon
+              bepaalt.
+            </p>
+          </fieldset>
+        )}
+        {step === 3 && (
+          <fieldset className="wizard-fieldset">
+            <legend>Kies wat het beste past</legend>
+            <div className="choice-grid">
+              {terrains.map(([value, label]) => (
+                <label key={value} className="choice-card text-choice">
+                  <input
+                    type="radio"
+                    name="terrain"
+                    value={value}
+                    checked={terrain === value}
+                    onChange={() => {
+                      setTerrain(value);
+                      setError('');
+                    }}
+                    aria-describedby="garden-error"
+                  />
+                  <strong>{label}</strong>
+                </label>
+              ))}
+            </div>
+            {terrain === 'sloped' && (
+              <label className="wizard-field">
+                Steilste helling in procenten (optioneel)
+                <span className="input-with-unit">
+                  <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    value={slope}
+                    onChange={(event) => setSlope(event.target.value)}
+                    aria-describedby="slope-help garden-error"
+                  />
+                  <span>%</span>
+                </span>
+                <small id="slope-help">
+                  Hoogteverschil ÷ horizontale afstand × 100. Eén meter stijging op vijf meter
+                  horizontaal is 20%. Laat leeg als je nog moet meten.
+                </small>
+              </label>
+            )}
+          </fieldset>
+        )}
+        {(step === 4 || step === 5) && (
+          <fieldset className="wizard-fieldset">
+            <legend>{step === 4 ? 'Kies de indeling' : 'Kies de omgeving'}</legend>
+            <div className="choice-grid">
+              {(step === 4 ? layouts : surroundings).map(([value, label]) => (
+                <label key={value} className="choice-card text-choice">
+                  <input
+                    type="radio"
+                    name={step === 4 ? 'layout' : 'surroundings'}
+                    value={value}
+                    checked={(step === 4 ? layout : surrounding) === value}
+                    onChange={() => {
+                      if (step === 4) setLayout(value);
+                      else setSurrounding(value);
+                      setError('');
+                    }}
+                    aria-describedby="garden-error"
+                  />
+                  <strong>{label}</strong>
+                </label>
+              ))}
+            </div>
+            <p className="demo-note">
+              {step === 4
+                ? 'Zones in een app zijn iets anders dan zelfstandig tussen losse gazons kunnen rijden.'
+                : 'Bomen en gebouwen kunnen satellietontvangst beperken. Camera en LiDAR hebben hun eigen installatievoorwaarden.'}
+            </p>
+          </fieldset>
+        )}
+        {error && (
+          <p className="field-error" id="garden-error" role="alert">
+            {error}
+          </p>
+        )}
+        {!error && step < 6 && <span id="garden-error" />}
+        {step === 6 && (
+          <div className="wizard-result" aria-live="polite">
+            <p>
+              Voor jouw gazon van <strong>{squareMetres.toLocaleString('nl-NL')} m²</strong> zijn
+              dit goede punten om mee te beginnen:
+            </p>
+            <div className="rich-content">
+              <ul>
+                <li>
+                  <strong>Capaciteit:</strong> vergelijk de aanbevolen grasoppervlakte per model en
+                  kijk onder welke omstandigheden die geldt. Meerdere zones en beperkte maaitijden
+                  tellen ook mee.
+                </li>
+                <li>
+                  <strong>Begrenzing:</strong>{' '}
+                  {boundary === 'wireless'
+                    ? 'je voorkeur is draadloos. Controleer per model welke ontvangst, antenne of verbinding de installatie nodig heeft.'
+                    : boundary === 'wire'
+                      ? 'een model met draad is ook een optie. Bekijk hoe de draad rond je gazon, borders en doorgangen gelegd moet worden.'
+                      : 'vergelijk beide opties. Draad vraagt aanlegwerk; bij draadloze modellen moet de navigatie bij je tuin passen.'}
+                </li>
+                <li>
+                  <strong>Terrein:</strong>{' '}
+                  {terrain === 'sloped'
+                    ? slope
+                      ? `je gaf ${slope}% op. We vergelijken dat met de werkgebiedlimiet. Controleer apart de helling langs de gazonrand en het laadstation.`
+                      : 'meet de steilste stukken. Vergelijk de limiet in het werkgebied én de eisen langs de rand; die kunnen verschillen.'
+                    : terrain === 'flat'
+                      ? 'kijk naast de oppervlakte naar doorgangen, randen en een geschikte plaats voor het laadstation.'
+                      : 'bekijk eerst de hoogteverschillen. Hellingpercentages en graden zijn verschillende maten: gebruik de eenheid uit de handleiding.'}
+                </li>
+                <li>
+                  <strong>Indeling:</strong>{' '}
+                  {layout === 'separate'
+                    ? 'je hebt losse grasvelden. Controleer per model hoe verplaatsen, starten en laden op een tweede veld werkt.'
+                    : layout === 'connected'
+                      ? 'meet de smalste doorgangen. Vergelijk de minimale doorgang in de installatiehandleiding.'
+                      : layout === 'single'
+                        ? 'één grasveld maakt de route overzichtelijker. Controleer nog steeds obstakels en de route naar het laadstation.'
+                        : 'breng de grasvelden en doorgangen eerst in kaart.'}
+                </li>
+                <li>
+                  <strong>Omgeving:</strong>{' '}
+                  {surrounding === 'sheltered'
+                    ? 'we zetten modellen zonder RTK-satellietpositionering eerder in de vergelijking. Bij RTK blijft een ontvangstcontrole nodig.'
+                    : surrounding === 'open'
+                      ? 'een open tuin kan ruimte bieden voor een RTK-installatie. Controleer de echte ontvangst op de lastigste plekken.'
+                      : 'bekijk bomen en bebouwing rond je gras voordat je een navigatiesysteem kiest.'}
+                </li>
+              </ul>
+            </div>
+            <Link
+              className="button"
+              href={`/robotmaaiers?${new URLSearchParams({ oppervlakte: String(squareMetres), draad: boundary, terrein: terrain, indeling: layout, omgeving: surrounding, ...(terrain === 'sloped' && slope ? { helling: slope } : {}) }).toString()}#selectie`}
+            >
+              Bekijk mijn selectie
+            </Link>
+            <p className="demo-note">
+              Dit is een eerste tuinadvies, geen bevestiging dat een specifiek model geschikt is.
+              Controleer altijd de handleiding en installatievoorwaarden.
+            </p>
+          </div>
+        )}
+      </div>
+      <div className="wizard-actions">
+        {step > 1 && (
+          <button
+            className="wizard-back"
+            type="button"
+            onClick={() => {
+              setError('');
+              setStep((current) => current - 1);
+            }}
+          >
+            Vorige
+          </button>
+        )}
+        {step < 6 ? (
+          <button className="button" type="submit">
+            {step === 5 ? 'Bekijk mijn tuinadvies' : 'Volgende'}
+          </button>
+        ) : (
+          <button
+            className="wizard-back"
+            type="button"
+            onClick={() => {
+              setArea('');
+              setBoundary('');
+              setTerrain('');
+              setLayout('');
+              setSurrounding('');
+              setSlope('');
+              setError('');
+              setStep(1);
+            }}
+          >
+            Opnieuw beginnen
+          </button>
+        )}
+      </div>
+    </form>
+  );
+}

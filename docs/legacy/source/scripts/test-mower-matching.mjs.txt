@@ -1,0 +1,47 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mowers } from '../src/content/mowers.ts';
+import { matchMowers } from '../src/lib/mower-matching.ts';
+
+const ids = (profile) => matchMowers(mowers, profile).matches.map(({ mower }) => mower.slug);
+test('capacity boundaries and unknown capacity never imply a fit', () => {
+  assert(ids({ area: 1200 }).includes('eufy-e18'));
+  assert.deepEqual(ids({ area: 1201 }), []);
+  assert(!ids({ area: 1 }).includes('mova-1000'));
+});
+test('a measured slope excludes unknown and insufficient limits', () => {
+  const result = ids({ area: 400, slope: 33 });
+  assert.deepEqual(result, ['mammotion-luba-mini-2-awd-1000']);
+  assert(!ids({ slope: 0 }).includes('segway-navimow-i105e'));
+  assert.deepEqual(ids({ slope: 81 }), []);
+});
+test('wireless and wire filters have separate, explicit meanings', () => {
+  assert(ids({ filter: 'wireless' }).every((id) => mowers.find((m) => m.slug === id).wireless));
+  assert.equal(ids({ filter: 'wire' }).length, 2);
+  assert(
+    ids({ filter: 'all', area: 300 }).some((id) => !mowers.find((m) => m.slug === id).wireless),
+  );
+});
+test('shelter changes the reading order without pretending RTK cannot work', () => {
+  const result = ids({ area: 300, filter: 'wireless', surroundings: 'sheltered' });
+  assert.equal(result[0], 'worx-landroid-vision-m600');
+  assert(result.includes('segway-navimow-i105e'));
+});
+test('separate lawns and unknown slopes remain explicit checks', () => {
+  const result = matchMowers(mowers, { area: 300, layout: 'separate', terrain: 'sloped' });
+  assert(
+    result.matches.every(({ checks }) =>
+      checks.some((check) => check.includes('Losse grasvelden')),
+    ),
+  );
+  assert(
+    result.matches.every(({ checks }) =>
+      checks.some((check) => check.includes('Meet de steilste helling')),
+    ),
+  );
+});
+test('every product has one unique retailer product and a primary source', () => {
+  assert.equal(mowers.length, 8);
+  assert.equal(new Set(mowers.map((m) => m.bolUrl.match(/\/(\d+)\/$/)[1])).size, 8);
+  assert(mowers.every((m) => m.source.startsWith('https://') && m.image.startsWith('https://')));
+});

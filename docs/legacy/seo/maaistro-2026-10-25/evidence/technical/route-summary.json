@@ -1,0 +1,625 @@
+[
+  {
+    "path": "/",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Maaistro — vind de robotmaaier voor jouw tuin",
+    "canonical": "http://localhost:3000",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Jij het weekend.Hij het gras.Maaistro helpt je kiezen."
+    ],
+    "word_count": 1185,
+    "error": null
+  },
+  {
+    "path": "/advies",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Koopgidsen: kies de robotmaaier voor jouw tuin | Maaistro",
+    "canonical": "http://localhost:3000/advies",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Word wijzer. Maai minder."
+    ],
+    "word_count": 312,
+    "error": null
+  },
+  {
+    "path": "/over-maaistro",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Over Maaistro: slim kiezen, eerlijk vergelijken | Maaistro",
+    "canonical": "http://localhost:3000/over-maaistro",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Jij het weekend. Hij het gras."
+    ],
+    "word_count": 310,
+    "error": null
+  },
+  {
+    "path": "/privacy",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Privacy bij Maaistro | Maaistro",
+    "canonical": "http://localhost:3000/privacy",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Jouw tuinadvies, zonder account."
+    ],
+    "word_count": 209,
+    "error": null
+  },
+  {
+    "path": "/advies/robotmaaier-zonder-draad",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Robotmaaier zonder draad: past dat bij jouw tuin? | Maaistro",
+    "canonical": "http://localhost:3000/advies/robotmaaier-zonder-draad",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Robotmaaier zonder draad: past dat bij jouw tuin?"
+    ],
+    "word_count": 417,
+    "error": null
+  },
+  {
+    "path": "/advies/robotmaaier-kleine-tuin",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Robotmaaier voor een kleine tuin: kijk verder dan de m² | Maaistro",
+    "canonical": "http://localhost:3000/advies/robotmaaier-kleine-tuin",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Robotmaaier voor een kleine tuin: kijk verder dan de m²"
+    ],
+    "word_count": 457,
+    "error": null
+  },
+  {
+    "path": "/advies/robotmaaier-grote-tuin",
+    "role": "active-maaistro",
+    "status": 200,
+    "location": null,
+    "title": "Robotmaaier voor een grote tuin: capaciteit is pas het begin | Maaistro",
+    "canonical": "http://localhost:3000/advies/robotmaaier-grote-tuin",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Robotmaaier voor een grote tuin: capaciteit is pas het begin"
+    ],
+    "word_count": 440,
+    "error": null
+  },
+  {
+    "path": "/cabinecheck",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Cabinecheck voor hond en kat | Maaistro",
+    "canonical": "http://localhost:3000/cabinecheck",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Past jouw reis in de cabine?"
+    ],
+    "word_count": 158,
+    "error": null
+  },
+  {
+    "path": "/reistassen",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Reistassen voor hond en kat in de cabine | Maaistro",
+    "canonical": "http://localhost:3000/reistassen",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Kies een tas die echt past"
+    ],
+    "word_count": 270,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Cabineregels voor huisdieren per airline | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Vind de regel voor jouw vlucht"
+    ],
+    "word_count": 174,
+    "error": null
+  },
+  {
+    "path": "/over-paspoot",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Over Paspoot: bronnen en werkwijze | Maaistro",
+    "canonical": "http://localhost:3000/over-paspoot",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Een voorbereiding die je kunt controleren"
+    ],
+    "word_count": 276,
+    "error": null
+  },
+  {
+    "path": "/nieuws",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Nieuws over vliegen met je hond of kat | Maaistro",
+    "canonical": "http://localhost:3000/nieuws",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Wat verandert er voor jouw reis?"
+    ],
+    "word_count": 92,
+    "error": null
+  },
+  {
+    "path": "/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Flypet reistas 46 × 28 × 24 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Flypet reistas 46 × 28 × 24 cm"
+    ],
+    "word_count": 158,
+    "error": null
+  },
+  {
+    "path": "/reistassen/selene-air-pet-bag-40x30x24",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Selene vliegtuigreistas 40 × 30 × 24 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/selene-air-pet-bag-40x30x24",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Selene vliegtuigreistas 40 × 30 × 24 cm"
+    ],
+    "word_count": 146,
+    "error": null
+  },
+  {
+    "path": "/reistassen/ventora-air-pet-carrier-40x30x24-expandable",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Ventora uitbreidbare reistas 40 × 30 × 24 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/ventora-air-pet-carrier-40x30x24-expandable",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Ventora uitbreidbare reistas 40 × 30 × 24 cm"
+    ],
+    "word_count": 159,
+    "error": null
+  },
+  {
+    "path": "/reistassen/pet-carrier-55x40x23-cm-airline-approved",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Flypet vliegtuigreistas 55 × 40 × 23 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/pet-carrier-55x40x23-cm-airline-approved",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Flypet vliegtuigreistas 55 × 40 × 23 cm"
+    ],
+    "word_count": 150,
+    "error": null
+  },
+  {
+    "path": "/reistassen/miravia-lufthansa-pet-carrier",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Miravia reistas 55 × 40 × 23 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/miravia-lufthansa-pet-carrier",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Miravia reistas 55 × 40 × 23 cm"
+    ],
+    "word_count": 140,
+    "error": null
+  },
+  {
+    "path": "/reistassen/miravia-brussels-airlines-pet-carrier",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Miravia Brussels reistas 55 × 40 × 23 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/miravia-brussels-airlines-pet-carrier",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Miravia Brussels reistas 55 × 40 × 23 cm"
+    ],
+    "word_count": 139,
+    "error": null
+  },
+  {
+    "path": "/reistassen/aurora-airline-pet-carrier-40x30x24",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Aurora cabinerijstas 40 × 30 × 24 cm | Maaistro",
+    "canonical": "http://localhost:3000/reistassen/aurora-airline-pet-carrier-40x30x24",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Aurora cabinerijstas 40 × 30 × 24 cm"
+    ],
+    "word_count": 122,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen/klm",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Hond of kat in de KLM-cabine: gewicht en reistas | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen/klm",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Huisdier meenemen metKLM: wat zijn de regels?"
+    ],
+    "word_count": 679,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen/transavia",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Hond of kat in de Transavia-cabine: gewicht en reistas | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen/transavia",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Huisdier meenemen metTransavia: wat zijn de regels?"
+    ],
+    "word_count": 294,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen/lufthansa",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Hond of kat in de Lufthansa-cabine: gewicht en reistas | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen/lufthansa",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Huisdier meenemen metLufthansa: wat zijn de regels?"
+    ],
+    "word_count": 273,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen/air-france",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Hond of kat in de Air France-cabine: gewicht en reistas | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen/air-france",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Huisdier meenemen metAir France: wat zijn de regels?"
+    ],
+    "word_count": 218,
+    "error": null
+  },
+  {
+    "path": "/luchtvaartmaatschappijen/brussels-airlines",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Hond of kat in de Brussels Airlines-cabine: gewicht en reistas | Maaistro",
+    "canonical": "http://localhost:3000/luchtvaartmaatschappijen/brussels-airlines",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Huisdier meenemen metBrussels Airlines: wat zijn de regels?"
+    ],
+    "word_count": 285,
+    "error": null
+  },
+  {
+    "path": "/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+    "role": "legacy-paspoot",
+    "status": 200,
+    "location": null,
+    "title": "Met je huisdier naar Groot-Brittannië? Controleer de bijgewerkte routelijst | Maaistro",
+    "canonical": "http://localhost:3000/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": [
+      "Met je huisdier naar Groot-Brittannië? Controleer de bijgewerkte routelijst"
+    ],
+    "word_count": 542,
+    "error": null
+  },
+  {
+    "path": "/robots.txt",
+    "role": "discovery-or-redirect-test",
+    "status": 200,
+    "location": null,
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/sitemap.xml",
+    "role": "discovery-or-redirect-test",
+    "status": 200,
+    "location": null,
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/llms.txt",
+    "role": "discovery-or-redirect-test",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/site.webmanifest",
+    "role": "discovery-or-redirect-test",
+    "status": 200,
+    "location": null,
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/bestaat-niet-seo-audit",
+    "role": "discovery-or-redirect-test",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/advies/bestaat-niet-seo-audit",
+    "role": "discovery-or-redirect-test",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/advies/hond-vliegtuig",
+    "role": "discovery-or-redirect-test",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/advies/robotmaaier-zonder-draad/",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/advies/robotmaaier-zonder-draad",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/volunteer",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/cabinecheck",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/projects",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/reistassen",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/projects/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/events",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/events/klm",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen/klm",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/blogs",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/advies",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/blogs/klm",
+    "role": "discovery-or-redirect-test",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen/klm",
+    "title": null,
+    "canonical": null,
+    "meta_robots": null,
+    "x_robots_tag": null,
+    "h1": null,
+    "word_count": null,
+    "error": null
+  },
+  {
+    "path": "/advies/hond-meenemen-vliegtuig",
+    "role": "linked-page",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/advies/hondenreistas-opmeten",
+    "role": "linked-page",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  },
+  {
+    "path": "/advies/kat-meenemen-vliegtuig",
+    "role": "linked-page",
+    "status": 404,
+    "location": null,
+    "title": "Pagina niet gevonden | Maaistro",
+    "canonical": null,
+    "meta_robots": "noindex, follow",
+    "x_robots_tag": null,
+    "h1": [
+      "Pagina niet gevonden"
+    ],
+    "word_count": 24,
+    "error": null
+  }
+]

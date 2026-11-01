@@ -1,0 +1,74 @@
+[
+  {
+    "source": "/advies/robotmaaier-zonder-draad/",
+    "status": 308,
+    "location": "/advies/robotmaaier-zonder-draad",
+    "target_status": 200,
+    "target_role": "active-maaistro",
+    "hops_observed": 1,
+    "comment": "Consistent trailing-slash normalization."
+  },
+  {
+    "source": "/volunteer",
+    "status": 308,
+    "location": "/cabinecheck",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/projects",
+    "status": 308,
+    "location": "/reistassen",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/projects/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "status": 308,
+    "location": "/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/events",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/events/klm",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen/klm",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/blogs",
+    "status": 308,
+    "location": "/advies",
+    "target_status": 200,
+    "target_role": "active-maaistro",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  },
+  {
+    "source": "/blogs/klm",
+    "status": 308,
+    "location": "/luchtvaartmaatschappijen/klm",
+    "target_status": 200,
+    "target_role": "legacy-paspoot",
+    "hops_observed": 1,
+    "comment": "308 is a permanent redirect; legacy pet-travel targets do not belong on Maaistro."
+  }
+]

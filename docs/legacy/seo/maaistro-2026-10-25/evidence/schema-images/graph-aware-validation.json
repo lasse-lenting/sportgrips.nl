@@ -1,0 +1,76 @@
+[
+  {
+    "page": "home",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "FAQPage",
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  },
+  {
+    "page": "about",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "BreadcrumbList",
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  },
+  {
+    "page": "advice-index",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  },
+  {
+    "page": "wireless",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "Article",
+      "BreadcrumbList",
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  },
+  {
+    "page": "small",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "Article",
+      "BreadcrumbList",
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  },
+  {
+    "page": "large",
+    "json_parse": "pass",
+    "graph_envelope": "pass",
+    "types": [
+      "Article",
+      "BreadcrumbList",
+      "Organization",
+      "WebSite"
+    ],
+    "node_checks": [],
+    "note": "Custom baseline syntax/graph consistency only. Not Google Rich Results Test or full vocabulary validation."
+  }
+]

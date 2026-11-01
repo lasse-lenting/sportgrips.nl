@@ -1,0 +1,98 @@
+[
+  {
+    "name": "home",
+    "url": "http://localhost:3000/",
+    "status": 200,
+    "bytes": 107839,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </assets/maaistro/photos/measure-lawn.webp>; rel=preload; as=\"image\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  },
+  {
+    "name": "advice-index",
+    "url": "http://localhost:3000/advies",
+    "status": 200,
+    "bytes": 52332,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  },
+  {
+    "name": "wireless",
+    "url": "http://localhost:3000/advies/robotmaaier-zonder-draad",
+    "status": 200,
+    "bytes": 50340,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  },
+  {
+    "name": "small",
+    "url": "http://localhost:3000/advies/robotmaaier-kleine-tuin",
+    "status": 200,
+    "bytes": 50917,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  },
+  {
+    "name": "large",
+    "url": "http://localhost:3000/advies/robotmaaier-grote-tuin",
+    "status": 200,
+    "bytes": 51123,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  },
+  {
+    "name": "about",
+    "url": "http://localhost:3000/over-maaistro",
+    "status": 200,
+    "bytes": 34975,
+    "headers": {
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Link": "</_next/static/media/GolosText_Variable-s.p.03hrxzhqh72zf.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/StackSansNotch_Variable-s.p.0f_x6z5821ce1.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "Cache-Control": "no-cache, must-revalidate",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 25 Oct 2026 15:20:49 GMT",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+]

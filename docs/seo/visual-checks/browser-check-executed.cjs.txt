@@ -1,0 +1,54 @@
+const {chromium}=require('/tmp/sportgrips-browser/node_modules/playwright');
+const fs=require('fs');
+const root='/Users/lasselenting/Documents/ChatGPT/gripvergelijken.nl';
+const output=root+'/docs/seo/visual-checks';fs.mkdirSync(output,{recursive:true});
+const failures=[];const errors=[];const network=[];const report={failures,errors};
+let browser;
+const assert=(ok,msg)=>{if(!ok)failures.push(msg)};
+(async()=>{
+ browser=await chromium.launch({headless:true,executablePath:'/Users/lasselenting/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell'});
+ const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+ await context.addInitScript(()=>Object.defineProperty(navigator,'webdriver',{get:()=>false}));
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/google-analytics|googletagmanager|clarity\.ms|_vercel\/insights/.test(r.url()))network.push(r.url())});
+ const dismiss=async()=>{const btn=page.getByRole('button',{name:'Alleen noodzakelijk',exact:true}).first();if(await btn.isVisible().catch(()=>false))await btn.click()};
+ const metrics=async()=>page.evaluate(()=>({sections:[...document.querySelectorAll('main > section')].map(e=>({id:e.id,class:e.className,padding:getComputedStyle(e).padding,background:getComputedStyle(e).backgroundColor,borderRadius:getComputedStyle(e).borderRadius})),h1:{fontFamily:getComputedStyle(document.querySelector('h1')).fontFamily,fontSize:getComputedStyle(document.querySelector('h1')).fontSize,fontWeight:getComputedStyle(document.querySelector('h1')).fontWeight},images:[...document.querySelectorAll('main img')].map(e=>e.getAttribute('src')),width:document.documentElement.scrollWidth,viewport:innerWidth,fonts:[...document.fonts].map(f=>({family:f.family,status:f.status}))}));
+ await page.goto('http://localhost:3025/',{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await dismiss();
+ report.desktop=await metrics();await page.screenshot({path:output+'/home-desktop.png',fullPage:true,animations:'disabled'});await page.screenshot({path:output+'/home-desktop-top.png',animations:'disabled'});
+ await page.setViewportSize({width:390,height:844});report.mobile=await metrics();await page.screenshot({path:output+'/home-mobile.png',fullPage:true,animations:'disabled'});await page.screenshot({path:output+'/home-mobile-top.png',animations:'disabled'});
+ const baseline=JSON.parse(fs.readFileSync('/tmp/sportgrips-design-baseline.json'));
+ for(const size of ['desktop','mobile']){
+   assert(JSON.stringify(report[size].sections)===JSON.stringify(baseline[size].sections),size+': section order / classes / spacing / backgrounds changed');
+   assert(JSON.stringify(report[size].h1)===JSON.stringify(baseline[size].h1),size+': h1 font changed');
+   assert(report[size].h1.fontWeight==='400',size+': H1 is not 400');
+   assert(JSON.stringify(report[size].images.map(x=>x.replace('/_next/image/?','/_next/image?')))===JSON.stringify(baseline[size].images),size+': original homepage media changed');
+   assert(report[size].width<=report[size].viewport,size+': horizontal overflow');
+ }
+ await page.getByRole('button',{name:'Menu openen',exact:true}).click();assert(await page.getByRole('link',{name:'Grips per sport',exact:true}).first().isVisible(),'mobile navigation did not open');await page.keyboard.press('Escape');assert(await page.getByRole('button',{name:'Menu openen',exact:true}).isVisible(),'Escape did not close menu');
+ await page.getByRole('button',{name:'Cookie-instellingen',exact:true}).click();await page.getByRole('button',{name:'Statistieken',exact:true}).click();assert(await page.getByText('Er zijn momenteel geen optionele meetdiensten ingeschakeld.',{exact:false}).isVisible(),'disabled analytics explanation missing');await page.getByRole('button',{name:'Alles accepteren',exact:true}).click();await page.waitForTimeout(200);assert(network.length===0,'tracking activated without identifiers');
+ await page.getByRole('button',{name:'Cookie-instellingen',exact:true}).click();await page.getByRole('button',{name:'Alleen noodzakelijk',exact:true}).last().click();await page.waitForLoadState('networkidle');
+ const flows=[['golf','base','dry','thickness','choose','/golfgrips/maat/'],['tennis','over','wet','surface','choose','/tennisgrips/overgrips/'],['tennis','base','dry','surface','choose','/tennisgrips/basisgrips/'],['tennis','unknown','varies','thickness','choose','/tennisgrips/gripmaat/'],['padel','over','wet','surface','replace','/padelgrips/vervangen/'],['badminton','over','wet','surface','replace','/badmintongrips/vervangen/'],['squash','base','varies','unsure','replace','/squashgrips/'],['hockey','unknown','dry','surface','replace','/hockeygrips/vervangen/'],['golf','base','dry','surface','care','/kennis/grips-schoonmaken/']];
+ for(const flow of flows){
+  await page.goto('http://localhost:3025/keuzehulp/',{waitUntil:'networkidle'});await dismiss();await page.getByRole('button',{name:'Start de keuzehulp',exact:true}).click();
+  await page.getByRole('button',{name:'Volgende',exact:true}).click();assert(await page.locator('#grip-error').isVisible(),'choice validation missing');
+  for(let i=0;i<5;i++){await page.locator(`input[value="${flow[i]}"]`).check({force:true});await page.getByRole('button',{name:i===4?'Bekijk mijn gripadvies':'Volgende',exact:true}).click();}
+  assert(await page.getByRole('link',{name:'Lees mijn keuzeuitleg',exact:true}).getAttribute('href')===flow[5],'wrong recommendation '+flow.join(','));
+  assert(!new URL(page.url()).search,'answers added to URL');
+  if(flow[0]==='tennis'&&flow[1]==='over'){await page.evaluate(()=>{document.activeElement?.blur();scrollTo(0,0)});await page.screenshot({path:output+'/helper-mobile-result.png',fullPage:true,animations:'disabled'});await page.getByRole('button',{name:'Vorige',exact:true}).click();assert(await page.locator('input[value="choose"]').isChecked(),'Back lost answer');await page.getByRole('button',{name:'Bekijk mijn gripadvies',exact:true}).click();}
+  await page.getByRole('button',{name:'Opnieuw beginnen',exact:true}).click();assert(await page.locator('form input:checked').count()===0,'Reset did not clear answers');
+ }
+ report.helper_flows=flows.length;report.tracking_requests=network;
+ report.routeScreens=[];
+ for(const width of [1440,390,320]){
+  await page.setViewportSize({width,height:width===1440?1000:844});
+  for(const path of ['/','/grips/','/tennisgrips/gripmaat/','/tennisgrips/overgrips/','/keuzehulp/','/privacy/','/missing/']){
+   const response=await page.goto('http://localhost:3025'+path,{waitUntil:'networkidle'});await dismiss();await page.evaluate(()=>document.fonts.ready);
+   const m=await page.evaluate(()=>({width:document.documentElement.scrollWidth,viewport:innerWidth,h1:getComputedStyle(document.querySelector('h1')).fontWeight,broken:[...document.images].filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src)}));
+   assert(m.width<=m.viewport,`${width} ${path}: horizontal overflow ${m.width}`);assert(m.h1==='400',`${width} ${path}: H1 weight`);assert(m.broken.length===0,`${width} ${path}: broken images`);
+   report.routeScreens.push({width,path,status:response.status(),...m});
+   if(path==='/tennisgrips/gripmaat/'&&width!==320)await page.screenshot({path:output+`/guide-${width===1440?'desktop':'mobile'}.png`,fullPage:true,animations:'disabled'});
+  }
+ }
+ assert(errors.length===0,'browser runtime errors');fs.writeFileSync(root+'/docs/seo/check-browser.json',JSON.stringify(report,null,2));fs.copyFileSync('/tmp/sportgrips-design-baseline.json',output+'/original-design-metrics.json');
+ console.log(JSON.stringify({failures,errors,helper_flows:flows.length,tracking_requests:network.length,viewports:3,routeChecks:report.routeScreens.length},null,2));
+ await browser.close();if(failures.length)process.exitCode=1;
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exitCode=1});

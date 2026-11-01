@@ -1,0 +1,87 @@
+import type { Mower } from '../content/mowers';
+
+export type GardenProfile = {
+  area?: number;
+  filter?: 'all' | 'wireless' | 'wire' | 'awd';
+  terrain?: string;
+  slope?: number;
+  layout?: string;
+  surroundings?: string;
+};
+
+export function matchMowers(models: Mower[], profile: GardenProfile) {
+  const matches: { mower: Mower; reasons: string[]; checks: string[] }[] = [];
+  const excluded: { mower: Mower; reason: string }[] = [];
+  for (const mower of models) {
+    const reject =
+      profile.filter === 'wireless' && !mower.wireless
+        ? 'Je wilt geen begrenzingsdraad.'
+        : profile.filter === 'wire' && mower.wireless
+          ? 'Je filtert op modellen met draad.'
+          : profile.filter === 'awd' && !mower.awd
+            ? 'Je filtert op vierwielaandrijving.'
+            : profile.area && (mower.capacityM2 === null || mower.capacityM2 < profile.area)
+              ? mower.capacityM2 === null
+                ? 'Geen rechtstreeks vergelijkbare maximale gazoncapaciteit bekend.'
+                : 'De opgegeven gazoncapaciteit is kleiner dan jouw gazon.'
+              : profile.slope !== undefined &&
+                  (mower.maxSlopePercent === null || mower.maxSlopePercent < profile.slope)
+                ? mower.maxSlopePercent === null
+                  ? 'Geen eenduidige hellinglimiet bevestigd.'
+                  : 'Jouw helling ligt boven de opgegeven limiet.'
+                : '';
+    if (reject) {
+      excluded.push({ mower, reason: reject });
+      continue;
+    }
+    const reasons: string[] = [];
+    const checks: string[] = [];
+    if (profile.area)
+      reasons.push(`Opgegeven capaciteit vanaf jouw ${profile.area.toLocaleString('nl-NL')} m².`);
+    if (profile.filter === 'wireless')
+      reasons.push('Past bij je voorkeur voor maaien zonder draad.');
+    if (profile.surroundings === 'sheltered') {
+      if (mower.technology === 'rtk')
+        checks.push(
+          'Bomen en bebouwing: laat satellietontvangst en de antenne- of netwerkvoorwaarden controleren.',
+        );
+      else
+        reasons.push(
+          'Navigatie zonder RTK-satellietpositionering; ontvangst van satellieten is hiervoor geen voorwaarde.',
+        );
+    }
+    if (profile.terrain === 'sloped' || profile.slope !== undefined) {
+      if (profile.slope !== undefined)
+        reasons.push(
+          `De opgegeven werkgebiedlimiet ligt op of boven jouw ${profile.slope}% helling.`,
+        );
+      checks.push('Controleer ook de helling aan de rand, grip en de plaats van het laadstation.');
+      if (profile.slope === undefined)
+        checks.push(
+          'Meet de steilste helling: zonder percentage kunnen we terrein niet op geschiktheid filteren.',
+        );
+    }
+    if (profile.layout === 'separate')
+      checks.push(
+        'Losse grasvelden: controleer transport, starten en laden per veld. Meerdere zones betekent niet automatisch zelfstandig oversteken.',
+      );
+    if (profile.layout === 'connected')
+      checks.push('Meet de smalste doorgang en controleer de installatievoorwaarden per zone.');
+    if (profile.area && mower.capacityM2 === profile.area)
+      checks.push(
+        'Je zit precies op de capaciteitsopgave. Controleer de beschikbare maaitijd en de omstandigheden achter die opgave.',
+      );
+    matches.push({ mower, reasons, checks });
+  }
+  // Prefer fewer unresolved reception conditions, then the smallest sufficient capacity.
+  // This is an explainable reading order, not a test score or a ranking by commission.
+  matches.sort((a, b) => {
+    const reception = (m: Mower) =>
+      profile.surroundings === 'sheltered' && m.technology === 'rtk' ? 1 : 0;
+    return (
+      reception(a.mower) - reception(b.mower) ||
+      (a.mower.capacityM2 ?? Infinity) - (b.mower.capacityM2 ?? Infinity)
+    );
+  });
+  return { matches, excluded };
+}

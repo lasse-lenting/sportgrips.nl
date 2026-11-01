@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "docs/seo/maaistro-2026-10-25/skill-source/scripts/fetch_page.py",
+    "http://localhost:3000",
+    "--output",
+    "docs/seo/maaistro-2026-10-25/evidence/baseline/homepage.html"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "/Users/lasselenting/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n  warnings.warn(\nError: Request failed: Blocked: URL resolves to private/internal IP (127.0.0.1)\n"
+}

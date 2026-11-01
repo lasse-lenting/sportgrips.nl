@@ -1,0 +1,151 @@
+{
+  "scope": "Final local production build; not deployed",
+  "checks": [
+    {
+      "path": "/cabinecheck",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/over-paspoot",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/nieuws",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/selene-air-pet-bag-40x30x24",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/ventora-air-pet-carrier-40x30x24-expandable",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/pet-carrier-55x40x23-cm-airline-approved",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/miravia-lufthansa-pet-carrier",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/miravia-brussels-airlines-pet-carrier",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/reistassen/aurora-airline-pet-carrier-40x30x24",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/klm",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/transavia",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/lufthansa",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/air-france",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/brussels-airlines",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/advies/hond-meenemen-vliegtuig",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/advies/hondenreistas-opmeten",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "path": "/advies/kat-meenemen-vliegtuig",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "asset": "favicon.ico",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "asset": "favicon-16x16.png",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "asset": "favicon-32x32.png",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "asset": "apple-touch-icon.png",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "asset": "android-chrome-192x192.png",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "asset": "android-chrome-512x512.png",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "path": "/over-maaistro",
+      "contact": "lasse@puntwerk.nl",
+      "passed": true
+    },
+    {
+      "path": "/privacy",
+      "contact": "lasse@puntwerk.nl",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

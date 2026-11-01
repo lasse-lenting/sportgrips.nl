@@ -1,0 +1,141 @@
+[
+  {
+    "id": "TECH-01",
+    "area": "Indexability / brand migration",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch gate",
+    "finding": "18 gekopieerde Paspoot-pagina’s zijn nog bereikbaar en technisch indexeerbaar op de Maaistro-runtime.",
+    "evidence": "route-inventory.json: /cabinecheck, /reistassen + 7 details, /luchtvaartmaatschappijen + 5 details, /over-paspoot, /nieuws en 1 nieuwsdetail retourneren 200, een eigen localhost-canonical en geen meta robots noindex of X-Robots-Tag; robots.txt staat / toe. src/content/news.json heeft een Paspoot-bericht met status published en historische Paspoot approvalRef.",
+    "impact": "Bij ongewijzigde publicatie kunnen ongerelateerde reisinhoud en gekopieerde content onder Maaistro crawlbaar worden. Sitemap-uitsluiting voorkomt dat niet. Dit is een bevestigd lokaal launchrisico, geen aangetoonde publieke indexatie of rankingstraf.",
+    "fix": "Verwijder de legacy routegroepen en de bijbehorende importketens uit de Maaistro-publicatie. Laat onbestaande Maaistro-URL’s 404/410 geven; behoud archief buiten publieke routes. Neem een expliciete legacy-URL denylist op in de launchcontrole. Behoud alle echte Maaistro-componenten en gedeelde code die nog nodig is. Zet gekopieerde Paspoot-publicatiegoedkeuringen niet om in Maaistro-goedkeuringen.",
+    "evidence_files": [
+      "evidence/technical/route-summary.json",
+      "evidence/technical/raw/cabinecheck.html",
+      "evidence/technical/raw/nieuws__huisdier-groot-brittannie-goedgekeurde-vliegroutes.html",
+      "evidence/technical/raw/robots.txt.txt"
+    ],
+    "effort": "M",
+    "dependency": "Voor publieke deployment"
+  },
+  {
+    "id": "TECH-02",
+    "area": "Redirects / crawl paths",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch gate",
+    "finding": "Zes van zeven geconfigureerde oude redirectregels sturen nog naar Paspoot-reisonderdelen.",
+    "evidence": "next.config.ts redirects: /volunteer -> /cabinecheck, /projects -> /reistassen, /projects/:slug -> /reistassen/:slug, /events -> /luchtvaartmaatschappijen, /events/:slug en /blogs/:slug -> /luchtvaartmaatschappijen/:slug. HTTP-steekproeven bevestigen 308 en einddoelen 200; /blogs -> /advies is de enige inhoudelijk Maaistro-passende indexredirect.",
+    "impact": "Verwijderen van zichtbare navigatie is onvoldoende zolang oude routes en redirects de reisinhoud bereikbaar houden. Een nieuw domein heeft geen bewezen behoefte aan Paspoot-historische redirects.",
+    "fix": "Verwijder Paspoot-specifieke redirectregels op Maaistro. Voeg alleen redirects toe voor werkelijk bestaande Maaistro-URL-wijzigingen met inhoudelijk gelijkwaardige bestemming. Leid oude huisdier-URL’s niet massaal naar home of een robotmaaiergids. Behoud de gebruikelijke trailing-slash-normalisatie.",
+    "evidence_files": [
+      "evidence/technical/redirect-map.json",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "Samen met TECH-01"
+  },
+  {
+    "id": "TECH-03",
+    "area": "Internal links",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 with legacy cleanup",
+    "finding": "Vijf interne links op legacy-pagina’s verwijzen naar drie niet-bestaande adviesroutes.",
+    "evidence": "/luchtvaartmaatschappijen/klm linkt naar /advies/hondenreistas-opmeten, /advies/hond-meenemen-vliegtuig en /advies/kat-meenemen-vliegtuig; het legacy-nieuwsbericht linkt naar de laatste twee. Alle drie doelen retourneren 404. Geen kapotte interne route of ontbrekend anker gevonden op de zeven bedoelde Maaistro-pagina’s binnen deze crawl.",
+    "impact": "Gebruikers van de achtergebleven inhoud lopen dood. Dit is een legacy-probleem, niet een aangetoonde fout in de huidige Maaistro-navigatie.",
+    "fix": "Los dit op door de onbedoelde legacy-pagina’s te verwijderen, niet door voor Maaistro nieuwe huisdierartikelen te schrijven. Herhaal daarna de interne-linkcrawl op de volledige publicatiebuild.",
+    "evidence_files": [
+      "evidence/technical/internal-link-issues.json"
+    ],
+    "effort": "S",
+    "dependency": "TECH-01"
+  },
+  {
+    "id": "TECH-04",
+    "area": "Canonical origin / preview protection",
+    "severity": "Warning",
+    "confidence": "Confirmed",
+    "priority": "P0 launch configuration",
+    "finding": "De metadata is nog lokaal en er bestaat geen generieke noindex-instelling voor een publiek bereikbare preview.",
+    "evidence": "Alle zeven actieve routes hebben localhost-canonicals; robots.txt verwijst naar http://localhost:3000/sitemap.xml; sitemap bevat zeven localhost-URL’s. src/lib/seo.ts gebruikt NEXT_PUBLIC_SITE_URL, anders VERCEL_PROJECT_PRODUCTION_URL, anders localhost. src/app/robots.ts bevat alleen allow:/ en disallow:/api/. De normale actieve pagina’s hebben geen noindex.",
+    "impact": "Dit is normaal voor de huidige uitsluitend lokale site en nog geen productieprobleem. Zonder expliciete releaseconfiguratie kunnen een toekomstige previewhost of localhost in canonicals/schema/sitemap terechtkomen, of kan een publieke preview worden geïndexeerd.",
+    "fix": "Stel bij lancering NEXT_PUBLIC_SITE_URL=https://maaistro.nl in; bevestig of dit de voorkeursvariant zonder www is en laat de andere publieke host + HTTP in één permanente stap naar die host verwijzen. Bescherm publieke previews via authenticatie of noindex-header en controleer dat productie juist indexeerbaar is. Crawl de echte publieke HTML, redirects, robots, schema en sitemap opnieuw na deployment.",
+    "evidence_files": [
+      "evidence/technical/raw/sitemap.xml.txt",
+      "evidence/technical/raw/robots.txt.txt",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "Domein + hosting bij launch"
+  },
+  {
+    "id": "TECH-05",
+    "area": "Rendered HTML / on-page baseline",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline",
+    "finding": "De zeven actieve Maaistro-pagina’s leveren hun hoofdinhoud en metadata al in de HTML-respons.",
+    "evidence": "Alle zeven HTTP 200; alle hebben exact één H1, een eigen title, description en canonical. De drie gidsen bevatten hun H2-koppen, alinea’s, bronnen en Article/BreadcrumbList JSON-LD in raw HTML. Alle actieve interne routes en ankers die uit de HTML werden gevonden, bestaan binnen deze crawl.",
+    "impact": "Essentiële inhoud en linkpaden zijn te lezen zonder eerst cliënt-JavaScript uit te voeren. Dit bewijst geen volledige crawler-rendering, visuele bruikbaarheid, rich-result-eligibility of indexatie.",
+    "fix": "Behoud servergerenderde inhoud; laat nieuwe gidsen dit patroon volgen. Herhaal op een productiebuild en op de uiteindelijke publieke host.",
+    "evidence_files": [
+      "evidence/technical/technical-summary.json",
+      "evidence/technical/route-inventory.json",
+      "evidence/technical/raw/advies__robotmaaier-zonder-draad.html"
+    ],
+    "effort": "S",
+    "dependency": "Regressiecontrole"
+  },
+  {
+    "id": "TECH-06",
+    "area": "Sitemap scope",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline with launch follow-up",
+    "finding": "De Maaistro-sitemap bevat uitsluitend de zeven bedoelde Maaistro-pagina’s.",
+    "evidence": "GET /sitemap.xml retourneert 200 met /, /advies, /over-maaistro, /privacy en de drie robotmaaiergidsen; alle zeven retourneren lokaal 200. Geen Paspoot-route opgenomen.",
+    "impact": "De sitemap heeft de juiste inhoudelijke scope, maar is geen toegangscontrole en verwijdert de 18 legacy-URLs niet uit crawlbaarheid. Canonical origin moet bij launch nog naar maaistro.nl.",
+    "fix": "Behoud de scope en voeg alleen goedgekeurde, canonieke publicatie-URL’s toe. Laat lastModified later per echte inhoudswijziging bepalen; nu staat overal een vaste 2026-10-25.",
+    "evidence_files": [
+      "evidence/technical/raw/sitemap.xml.txt",
+      "evidence/technical/source-snapshots.json"
+    ],
+    "effort": "S",
+    "dependency": "TECH-01 en TECH-04"
+  },
+  {
+    "id": "TECH-07",
+    "area": "404 handling / URL normalization",
+    "severity": "Pass",
+    "confidence": "Confirmed",
+    "priority": "Baseline",
+    "finding": "Onbekende routes geven echte 404-responses met noindex en een trailing slash normaliseert permanent.",
+    "evidence": "/bestaat-niet-seo-audit en /advies/bestaat-niet-seo-audit retourneren 404 met meta robots noindex, follow. /advies/robotmaaier-zonder-draad/ retourneert 308 Location:/advies/robotmaaier-zonder-draad, dat 200 geeft.",
+    "impact": "Geen soft-404 gevonden in deze steekproeven. 308 is een permanente redirect; er is geen reden om dit alleen wegens de statuscode als fout aan te merken.",
+    "fix": "Behoud dit gedrag, en controleer na legacy-verwijdering dat ook oude Paspoot-routes daadwerkelijk 404/410 geven.",
+    "evidence_files": [
+      "evidence/technical/route-summary.json",
+      "evidence/technical/redirect-map.json"
+    ],
+    "effort": "S",
+    "dependency": "Regressiecontrole"
+  },
+  {
+    "id": "TECH-08",
+    "area": "Audit limitations",
+    "severity": "Info",
+    "confidence": "Confirmed",
+    "priority": "Follow-up after deployment",
+    "finding": "Publieke HTTPS/hostredirects, indexatie, veld-CWV en echte zoekprestaties zijn nog niet meetbaar voor Maaistro.",
+    "evidence": "Gebruiker bevestigt: site is nog niet online, beoogd domein maaistro.nl. Deze controle gebruikt localhost:3000 in Next.js development mode. Geen publieke Maaistro-versie, CrUX, GSC of productiebuild werd in deze technische subaudit onderzocht. De skill-fetcher blokkeert private IPs; het meegeleverde parse_html is daarom offline op lokale raw responses toegepast.",
+    "impact": "Lokale dev-headers, laadtijden en HTML-bewijs mogen niet als publieke rankings, indexatie, securityconfiguratie of gemeten Core Web Vitals worden gepresenteerd.",
+    "fix": "Na publicatie een beperkte productiecontrole uitvoeren, Search Console eigendom + sitemap instellen, robots/canonical/redirects/noindex controleren; labmetingen en later beschikbare velddata apart rapporteren. Ontbrekende llms.txt is hier informatie, geen indexing blocker.",
+    "evidence_files": [
+      "evidence/technical/skill-fetch-attempt.txt",
+      "evidence/technical/technical-summary.json"
+    ],
+    "effort": "S",
+    "dependency": "Gebruikersgoedkeuring voor publicatie + live host"
+  }
+]

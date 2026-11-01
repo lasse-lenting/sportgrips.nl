@@ -1,0 +1,183 @@
+[
+  {
+    "slug": "robotmaaier-zonder-draad",
+    "title": "Robotmaaier zonder draad: past dat bij jouw tuin?",
+    "description": "Geen kabel langs je borders klinkt prettig. Toch begint een goede keuze bij de vraag hoe een draadloze robotmaaier zijn weg door jouw tuin vindt.",
+    "summary": "Vergelijk de manier van navigeren, de installatievoorwaarden en wat je nodig hebt om grenzen te veranderen. Draadloos is een optie om te onderzoeken, geen garantie dat ieder gazon geschikt is.",
+    "tags": ["Zonder draad", "GPS & navigatie"],
+    "image": "/assets/maaistro/photos/wireless-open-lawn.webp",
+    "body": [
+      {
+        "tag": "h2",
+        "html": "Wat betekent zonder draad?"
+      },
+      {
+        "tag": "p",
+        "html": "Bij een draadloze installatie worden de grenzen van het gazon op een andere manier vastgelegd dan met een fysieke kabel rond het gras. De gebruikte techniek verschilt per model. Kijk daarom verder dan het woord ‘draadloos’ op de verpakking."
+      },
+      {
+        "tag": "h2",
+        "html": "GPS op de doos zegt nog niet genoeg"
+      },
+      {
+        "tag": "p",
+        "html": "Een locatievoorziening kan verschillende functies hebben. Zoek expliciet uit of een model zonder begrenzingsdraad maait, hoe het zijn grenzen onthoudt en welke onderdelen daarvoor nodig zijn. Een functie voor locatie of diefstalbeveiliging beantwoordt die vragen niet vanzelf."
+      },
+      {
+        "tag": "h2",
+        "html": "Bekijk de ontvangst in jouw tuin"
+      },
+      {
+        "tag": "p",
+        "html": "Voor satellietgestuurde modellen kunnen hoge bomen en bebouwing relevant zijn. In de installatiegids van Husqvarna staan bijvoorbeeld eisen aan vrij zicht en de ontvangst van correctiegegevens. Dat is een reden om per systeem de handleiding te bekijken; je kunt de eisen van één fabrikant niet zomaar op ieder draadloos model toepassen."
+      },
+      {
+        "tag": "h2",
+        "html": "Draad of draadloos: zet dit naast elkaar"
+      },
+      {
+        "tag": "ul",
+        "html": "<li><strong>Installatie:</strong> wat moet je zelf aanleggen, plaatsen en instellen?</li><li><strong>Compleet pakket:</strong> welke antenne, verbinding of extra hardware zit bij deze uitvoering?</li><li><strong>Tuinaanpassingen:</strong> hoe wijzig je grenzen als een border of speelplek verandert?</li><li><strong>Ondersteuning:</strong> wie helpt als de maaier een deel van het gazon niet betrouwbaar bereikt?</li>"
+      },
+      {
+        "tag": "p",
+        "html": "Draad aanleggen kan een prima keuze zijn wanneer de tuinindeling lang hetzelfde blijft. Draadloos kan aantrekkelijk zijn als je flexibel met zones wilt omgaan. Laat de praktische situatie in je tuin zwaarder wegen dan een voorkeur voor de nieuwste techniek."
+      },
+      {
+        "tag": "h2",
+        "html": "Officiële uitleg om verder te lezen"
+      },
+      {
+        "tag": "p",
+        "html": "Bekijk de <a href=\"https://www.husqvarna.com/nl/leer-en-ontdek/hoe-robotmaaier-installeren/\" target=\"_blank\" rel=\"noopener noreferrer\">uitleg over installatie met fysieke en virtuele grenzen</a> en de <a href=\"https://www.husqvarna.com/nl/leer-en-ontdek/plan-draadloze-robotmaaier-installatiegids/\" target=\"_blank\" rel=\"noopener noreferrer\">installatiegids voor satellietgestuurde modellen</a> van Husqvarna. Deze pagina’s zijn op 25 oktober 2026 geraadpleegd; ze beschrijven de systemen van die fabrikant."
+      }
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "slug": "robotmaaier-kleine-tuin",
+    "title": "Robotmaaier voor een kleine tuin: kijk verder dan de m²",
+    "description": "Een klein gazon vraagt niet automatisch om de eenvoudigste maaier. De vorm van je tuin en de ruimte om te bewegen zijn minstens zo interessant.",
+    "summary": "Meet het gras, teken de doorgangen en bepaal waar het laadstation kan staan. Vergelijk vervolgens de installatie, afmetingen en service van het model dat je overweegt.",
+    "tags": ["Kleine tuin", "Slim kiezen"],
+    "image": "/assets/maaistro/photos/urban-courtyard.webp",
+    "body": [
+      {
+        "tag": "h2",
+        "html": "Meet het gras dat echt gemaaid moet worden"
+      },
+      {
+        "tag": "p",
+        "html": "Begin met een eenvoudige schets. Zet de grasvelden erop en tel hun oppervlakte bij elkaar op. Terras, oprit en borders hoef je niet mee te tellen. Bewaar je berekening, zodat je bij verschillende modellen steeds van dezelfde tuin uitgaat."
+      },
+      {
+        "tag": "h2",
+        "html": "Breng de lastige plekken in kaart"
+      },
+      {
+        "tag": "p",
+        "html": "Noteer smalle doorgangen, losse stukken gras en plekken waar de maaier moet draaien. Maak daar een foto van en meet de doorgangen. Zo kun je gericht in de handleiding opzoeken of jouw situatie binnen de installatievoorwaarden valt."
+      },
+      {
+        "tag": "h2",
+        "html": "Denk alvast aan het laadstation"
+      },
+      {
+        "tag": "p",
+        "html": "Wijs op je schets een mogelijke plek voor het laadstation aan. Zoek bij het gekozen model op welke vrije ruimte, ondergrond en stroomvoorziening nodig zijn. Begin daar vroeg mee: een technisch passend model is minder aantrekkelijk als je het station nergens handig kwijt kunt."
+      },
+      {
+        "tag": "h2",
+        "html": "Lees de specificaties van de juiste uitvoering"
+      },
+      {
+        "tag": "p",
+        "html": "Een concreet voorbeeld is de Husqvarna Aspire R4, die door de fabrikant voor maximaal 400 m² wordt opgegeven en met fysieke draad werkt. Dat maakt hem geen automatische winnaar voor iedere kleine tuin. Het laat vooral zien waarom je capaciteit en afbakening samen moet bekijken."
+      },
+      {
+        "tag": "ul",
+        "html": "<li>Past de aanbevolen grasoppervlakte bij je berekening?</li><li>Wat zegt de handleiding over jouw smalste doorgang?</li><li>Welke afstand tot muren, borders en water moet je vrijhouden?</li><li>Zijn draad, installatiemateriaal en hulp bij het instellen inbegrepen?</li><li>Waar kun je terecht voor onderhoud en onderdelen?</li>"
+      },
+      {
+        "tag": "h2",
+        "html": "Maak een korte lijst, geen functieverzameling"
+      },
+      {
+        "tag": "p",
+        "html": "Schrijf drie zaken op die voor jouw tuin echt nodig zijn. Vergelijk modellen daarop en zet de totale installatiekosten erbij. Zo voorkom je dat een lange lijst extra functies belangrijker wordt dan een maaier die praktisch bij je past."
+      },
+      {
+        "tag": "h2",
+        "html": "Bron bij het modelvoorbeeld"
+      },
+      {
+        "tag": "p",
+        "html": "De gegevens van het voorbeeld komen van de <a href=\"https://www.husqvarna.com/nl/robotmaaiers/automower-aspire-r4/\" target=\"_blank\" rel=\"noopener noreferrer\">officiële Husqvarna Aspire R4-productpagina</a>, geraadpleegd op 25 oktober 2026. Dit is een illustratie van een specificatievergelijking, geen eigen praktijktest of koopadvies voor dat model."
+      }
+    ],
+    "updatedAt": "2026-10-25"
+  },
+  {
+    "slug": "robotmaaier-grote-tuin",
+    "title": "Robotmaaier voor een grote tuin: capaciteit is pas het begin",
+    "description": "Een flinke lap gras, meerdere zones of hoogteverschillen? Maak eerst een overzicht van het werk dat de maaier moet doen.",
+    "summary": "Vergelijk capaciteit onder de juiste omstandigheden. Neem afzonderlijke grasvelden, hellingen, installatie en de gewenste maaitijden mee voordat je een model kiest.",
+    "tags": ["Grote tuin", "Capaciteit & terrein"],
+    "image": "/assets/maaistro/photos/connected-lawn-zones.webp",
+    "body": [
+      {
+        "tag": "h2",
+        "html": "Maak van je tuin een duidelijk overzicht"
+      },
+      {
+        "tag": "p",
+        "html": "Meet ieder grasveld en noteer hoe de velden met elkaar verbonden zijn. Teken hellingen, doorgangen en plekken die de maaier moet vermijden. Gebruik dit overzicht bij het vergelijken en bij een eventueel gesprek met een installateur."
+      },
+      {
+        "tag": "h2",
+        "html": "Vraag hoe de opgegeven capaciteit is bepaald"
+      },
+      {
+        "tag": "p",
+        "html": "Een oppervlaktegetal is alleen nuttig als duidelijk is voor welke uitvoering en instellingen het geldt. Bij de Husqvarna Automower 320 NERA noemt de fabrikant bijvoorbeeld verschillende capaciteiten voor een onregelmatig en een systematisch maaipatroon. Vergelijk daarom niet alleen het grootste getal uit een advertentie."
+      },
+      {
+        "tag": "h2",
+        "html": "Hellingen verdienen een aparte controle"
+      },
+      {
+        "tag": "p",
+        "html": "Bekijk het steilste stuk dat gemaaid moet worden én de situatie langs de rand van het werkgebied. Fabrikanten kunnen daar verschillende limieten voor noemen. Controleer ook de gebruikte eenheid: een percentage en een aantal graden betekenen niet hetzelfde."
+      },
+      {
+        "tag": "h2",
+        "html": "Neem je eigen planning mee"
+      },
+      {
+        "tag": "p",
+        "html": "Bepaal wanneer je de tuin wilt gebruiken en wanneer de maaier mag werken. Neem die wensen mee naar de productspecificaties of de installateur. Het doel is een praktisch werkende planning voor jouw gazon; maximale oppervlakte op papier vertelt niet het hele verhaal."
+      },
+      {
+        "tag": "ul",
+        "html": "<li><strong>Zones:</strong> kan het systeem omgaan met de manier waarop jouw grasvelden zijn verbonden?</li><li><strong>Navigatie:</strong> welke ontvangst en verbinding zijn nodig in de verste hoek?</li><li><strong>Installatie:</strong> wat kost het complete pakket, inclusief benodigde onderdelen?</li><li><strong>Service:</strong> wie helpt bij storingen en wat betekent dat voor jouw planning?</li>"
+      },
+      {
+        "tag": "h2",
+        "html": "Vraag om een beoordeling van de tuin"
+      },
+      {
+        "tag": "p",
+        "html": "Bij een ingewikkelde indeling kan een beoordeling ter plaatse zinvoller zijn dan nog meer vergelijkingslijstjes. Neem je schets en vragen mee. Vraag om uitleg wanneer een model wordt aanbevolen en laat de benodigde installatieonderdelen op de offerte zetten."
+      },
+      {
+        "tag": "h2",
+        "html": "Bron bij het capaciteitsvoorbeeld"
+      },
+      {
+        "tag": "p",
+        "html": "Bekijk de specificaties en uitleg op de <a href=\"https://www.husqvarna.com/nl/robotmaaiers/automower-320nera/\" target=\"_blank\" rel=\"noopener noreferrer\">officiële Husqvarna Automower 320 NERA-productpagina</a>, geraadpleegd op 25 oktober 2026. Het voorbeeld is bedoeld om zorgvuldig te vergelijken en is geen eigen praktijktest."
+      }
+    ],
+    "updatedAt": "2026-10-25"
+  }
+]

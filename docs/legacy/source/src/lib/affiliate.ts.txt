@@ -1,0 +1,7 @@
+export function addPaspootAffiliateRef(url: string | null) {
+  if (!url) return null;
+
+  const affiliateUrl = new URL(url);
+  affiliateUrl.searchParams.set('ref', 'paspoot');
+  return affiliateUrl.toString();
+}

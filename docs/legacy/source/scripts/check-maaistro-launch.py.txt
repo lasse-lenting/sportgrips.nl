@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+"""Read-only launch check; can target a local production build or the public site."""
+import argparse
+import json
+import sys
+import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin, urlparse
+from urllib.request import Request, urlopen
+
+
+ACTIVE = [
+    '/', '/robotmaaiers', '/advies', '/over-maaistro', '/privacy',
+    '/advies/robotmaaier-zonder-draad', '/advies/robotmaaier-kleine-tuin',
+    '/advies/robotmaaier-grote-tuin',
+]
+LEGACY = [
+    '/cabinecheck', '/reistassen', '/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm',
+    '/luchtvaartmaatschappijen', '/luchtvaartmaatschappijen/klm', '/over-paspoot',
+    '/nieuws', '/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes',
+    '/volunteer', '/projects', '/events', '/blogs',
+]
+
+
+class Page(HTMLParser):
+    def __init__(self, html):
+        super().__init__()
+        self.h1 = 0
+        self.canonical = []
+        self.robots = []
+        self.description = []
+        self.links = []
+        self.ids = set()
+        self.title_parts = []
+        self.in_title = False
+        self.feed(html)
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if a.get('id'):
+            self.ids.add(a['id'])
+        if tag == 'h1':
+            self.h1 += 1
+        if tag == 'title':
+            self.in_title = True
+        if tag == 'a' and a.get('href'):
+            self.links.append(a['href'])
+        if tag == 'link' and a.get('rel') == 'canonical':
+            self.canonical.append(a.get('href', ''))
+        if tag == 'meta':
+            name = a.get('name', '').lower()
+            if name in ('robots', 'googlebot'):
+                self.robots.append(a.get('content', '').lower())
+            if name == 'description':
+                self.description.append(a.get('content', ''))
+
+    def handle_endtag(self, tag):
+        if tag == 'title':
+            self.in_title = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.title_parts.append(data)
+
+
+def fetch(url):
+    try:
+        with urlopen(Request(url, headers={'User-Agent': 'Maaistro-Launch-Check/1.0'}), timeout=15) as r:
+            return r.status, dict(r.headers), r.read().decode('utf-8', 'replace'), r.url
+    except HTTPError as e:
+        return e.code, dict(e.headers), e.read().decode('utf-8', 'replace'), e.url
+    except (URLError, TimeoutError, OSError) as e:
+        return None, {}, '', str(e)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--base', default='https://www.maaistro.nl')
+    parser.add_argument('--canonical-origin', default='https://www.maaistro.nl')
+    parser.add_argument('--output')
+    args = parser.parse_args()
+    base, canonical = args.base.rstrip('/'), args.canonical_origin.rstrip('/')
+    checks, pages = [], {}
+
+    def check(name, passed, detail):
+        checks.append({'check': name, 'passed': bool(passed), 'detail': detail})
+
+    for path in ACTIVE:
+        status, headers, html, final = fetch(base + path)
+        page = Page(html)
+        pages[path] = page
+        check(path + ' HTTP', status == 200, {'status': status, 'final': final})
+        canonical_matches = page.canonical == [canonical + path] or (path == '/' and page.canonical == [canonical])
+        check(path + ' canonical', canonical_matches, page.canonical)
+        directives = page.robots + [v.lower() for k, v in headers.items() if k.lower() == 'x-robots-tag']
+        check(path + ' indexable', not any('noindex' in r or 'none' in r for r in directives), directives)
+        check(path + ' on-page', page.h1 == 1 and bool(''.join(page.title_parts).strip()) and bool(page.description),
+              {'h1': page.h1, 'title': ''.join(page.title_parts), 'description': page.description})
+
+    status, _, body, _ = fetch(base + '/sitemap.xml')
+    try:
+        urls = [node.text for node in ET.fromstring(body).iter() if node.tag.endswith('}loc') or node.tag == 'loc']
+    except ET.ParseError:
+        urls = []
+    check('sitemap launch allowlist', status == 200 and set(urls) == {canonical + p for p in ACTIVE},
+          {'status': status, 'urls': urls})
+
+    status, _, robots, _ = fetch(base + '/robots.txt')
+    from urllib.robotparser import RobotFileParser
+    robot = RobotFileParser()
+    robot.parse(robots.splitlines())
+    check('robots allows Googlebot', status == 200 and all(robot.can_fetch('Googlebot', canonical + p) for p in ACTIVE), robots)
+    check('robots sitemap', canonical + '/sitemap.xml' in robots, robots)
+
+    broken = []
+    for source, page in pages.items():
+        for href in page.links:
+            parsed = urlparse(urljoin(canonical + source, href))
+            if parsed.netloc not in (urlparse(canonical).netloc, urlparse(base).netloc):
+                continue
+            target = parsed.path or '/'
+            if target not in pages:
+                broken.append({'source': source, 'href': href, 'reason': 'outside current launch allowlist'})
+            elif parsed.fragment and parsed.fragment not in pages[target].ids:
+                broken.append({'source': source, 'href': href, 'reason': 'missing anchor'})
+    check('internal routes and anchors', not broken, broken)
+
+    for path in LEGACY:
+        status, _, _, final = fetch(base + path)
+        check('legacy ' + path, status in (404, 410), {'status': status, 'final': final})
+
+    result = {'auditDate': '2026-10-25', 'base': base, 'canonicalOrigin': canonical,
+              'scope': 'HTTP launch gate; not proof of Google indexing or Core Web Vitals',
+              'passed': all(c['passed'] for c in checks), 'checks': checks,
+              'passedCount': sum(c['passed'] for c in checks), 'total': len(checks)}
+    if args.output:
+        output = Path(args.output)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0 if result['passed'] else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

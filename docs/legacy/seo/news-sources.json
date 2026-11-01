@@ -1,0 +1,21 @@
+[
+  {
+    "name": "APHA — goedgekeurde huisdierroutes",
+    "url": "https://www.gov.uk/government/publications/pet-travel-approved-air-sea-and-rail-carriers-and-routes",
+    "apiUrl": "https://www.gov.uk/api/content/government/publications/pet-travel-approved-air-sea-and-rail-carriers-and-routes"
+  },
+  {
+    "name": "Europese Commissie — reizen met honden, katten en fretten",
+    "url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets_en"
+  },
+  {
+    "name": "KLM — huisdieren",
+    "url": "https://www.klm.nl/information/pets/reservation",
+    "fetchMode": "browser"
+  },
+  {
+    "name": "Lufthansa — dierenvervoer",
+    "url": "https://www.lufthansa.com/nl/en/travelling-with-animals",
+    "fetchMode": "browser"
+  }
+]

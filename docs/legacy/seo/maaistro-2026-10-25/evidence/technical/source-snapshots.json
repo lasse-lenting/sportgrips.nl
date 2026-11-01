@@ -1,0 +1,1976 @@
+[
+  {
+    "path": "src/app/robots.ts",
+    "sha256": "f5a8e30f94da4eac7a7737f3ba95520b4832bc66c5824b832c651888256511ca",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { MetadataRoute } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import { absoluteUrl } from '@/lib/seo';"
+      },
+      {
+        "line": 3,
+        "text": ""
+      },
+      {
+        "line": 4,
+        "text": "export default function robots(): MetadataRoute.Robots {"
+      },
+      {
+        "line": 5,
+        "text": "  return {"
+      },
+      {
+        "line": 6,
+        "text": "    rules: { userAgent: '*', allow: '/', disallow: '/api/' },"
+      },
+      {
+        "line": 7,
+        "text": "    sitemap: absoluteUrl('/sitemap.xml'),"
+      },
+      {
+        "line": 8,
+        "text": "  };"
+      },
+      {
+        "line": 9,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/app/sitemap.ts",
+    "sha256": "8186c8a1392f98d0f7fc3b1d197a0b6bfae3a614f62e21a9b634d287d75d761b",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { MetadataRoute } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import { adviceGuides } from '@/content/site';"
+      },
+      {
+        "line": 3,
+        "text": "import { absoluteUrl } from '@/lib/seo';"
+      },
+      {
+        "line": 4,
+        "text": "export default function sitemap(): MetadataRoute.Sitemap {"
+      },
+      {
+        "line": 5,
+        "text": "  return ["
+      },
+      {
+        "line": 6,
+        "text": "    '/',"
+      },
+      {
+        "line": 7,
+        "text": "    '/advies',"
+      },
+      {
+        "line": 8,
+        "text": "    '/over-maaistro',"
+      },
+      {
+        "line": 9,
+        "text": "    '/privacy',"
+      },
+      {
+        "line": 10,
+        "text": "    ...adviceGuides.map((guide) => `/advies/${guide.slug}`),"
+      },
+      {
+        "line": 11,
+        "text": "  ].map((path) => ({ url: absoluteUrl(path), lastModified: '2026-10-25' }));"
+      },
+      {
+        "line": 12,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/lib/seo.ts",
+    "sha256": "1796bd64b524f4d573cd28912e5e77e22cae3c8824ef8fc3579c90e8cbe1503e",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { Metadata } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": ""
+      },
+      {
+        "line": 3,
+        "text": "const vercelProductionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;"
+      },
+      {
+        "line": 4,
+        "text": ""
+      },
+      {
+        "line": 5,
+        "text": "const configuredSiteUrl = ("
+      },
+      {
+        "line": 6,
+        "text": "  process.env.NEXT_PUBLIC_SITE_URL ||"
+      },
+      {
+        "line": 7,
+        "text": "  (vercelProductionHost ? `https://${vercelProductionHost}` : 'http://localhost:3000')"
+      },
+      {
+        "line": 8,
+        "text": ").replace(/\\/$/, '');"
+      },
+      {
+        "line": 9,
+        "text": ""
+      },
+      {
+        "line": 10,
+        "text": "export const siteUrl = configuredSiteUrl;"
+      },
+      {
+        "line": 11,
+        "text": "export const siteName = 'Maaistro';"
+      },
+      {
+        "line": 12,
+        "text": "export const defaultOgImage = {"
+      },
+      {
+        "line": 13,
+        "text": "  url: '/assets/maaistro/hero-grass.jpg',"
+      },
+      {
+        "line": 14,
+        "text": "  width: 2048,"
+      },
+      {
+        "line": 15,
+        "text": "  height: 1152,"
+      },
+      {
+        "line": 16,
+        "text": "  alt: 'Een robotmaaier op een strak groen gazon — Maaistro',"
+      },
+      {
+        "line": 17,
+        "text": "};"
+      },
+      {
+        "line": 18,
+        "text": ""
+      },
+      {
+        "line": 19,
+        "text": "export function absoluteUrl(path: string) {"
+      },
+      {
+        "line": 20,
+        "text": "  return new URL(path, siteUrl).toString();"
+      },
+      {
+        "line": 21,
+        "text": "}"
+      },
+      {
+        "line": 22,
+        "text": ""
+      },
+      {
+        "line": 23,
+        "text": "/** Consistent title, description, canonical, Open Graph and Twitter metadata for one page. */"
+      },
+      {
+        "line": 24,
+        "text": "export function pageMetadata({"
+      },
+      {
+        "line": 25,
+        "text": "  title,"
+      },
+      {
+        "line": 26,
+        "text": "  description,"
+      },
+      {
+        "line": 27,
+        "text": "  path,"
+      },
+      {
+        "line": 28,
+        "text": "  image,"
+      },
+      {
+        "line": 29,
+        "text": "  type = 'website',"
+      },
+      {
+        "line": 30,
+        "text": "}: {"
+      },
+      {
+        "line": 31,
+        "text": "  title: string;"
+      },
+      {
+        "line": 32,
+        "text": "  description: string;"
+      },
+      {
+        "line": 33,
+        "text": "  path: string;"
+      },
+      {
+        "line": 34,
+        "text": "  image?: string;"
+      },
+      {
+        "line": 35,
+        "text": "  type?: 'website' | 'article';"
+      },
+      {
+        "line": 36,
+        "text": "}): Metadata {"
+      },
+      {
+        "line": 37,
+        "text": "  const images = image ? [{ url: image, alt: title }] : [defaultOgImage];"
+      },
+      {
+        "line": 38,
+        "text": "  return {"
+      },
+      {
+        "line": 39,
+        "text": "    title,"
+      },
+      {
+        "line": 40,
+        "text": "    description,"
+      },
+      {
+        "line": 41,
+        "text": "    alternates: { canonical: path },"
+      },
+      {
+        "line": 42,
+        "text": "    openGraph: {"
+      },
+      {
+        "line": 43,
+        "text": "      type,"
+      },
+      {
+        "line": 44,
+        "text": "      locale: 'nl_NL',"
+      },
+      {
+        "line": 45,
+        "text": "      siteName,"
+      },
+      {
+        "line": 46,
+        "text": "      url: path,"
+      },
+      {
+        "line": 47,
+        "text": "      title,"
+      },
+      {
+        "line": 48,
+        "text": "      description,"
+      },
+      {
+        "line": 49,
+        "text": "      images,"
+      },
+      {
+        "line": 50,
+        "text": "    },"
+      },
+      {
+        "line": 51,
+        "text": "    twitter: {"
+      },
+      {
+        "line": 52,
+        "text": "      card: 'summary_large_image',"
+      },
+      {
+        "line": 53,
+        "text": "      title,"
+      },
+      {
+        "line": 54,
+        "text": "      description,"
+      },
+      {
+        "line": 55,
+        "text": "      images: images.map((item) => item.url),"
+      },
+      {
+        "line": 56,
+        "text": "    },"
+      },
+      {
+        "line": 57,
+        "text": "  };"
+      },
+      {
+        "line": 58,
+        "text": "}"
+      },
+      {
+        "line": 59,
+        "text": ""
+      },
+      {
+        "line": 60,
+        "text": "export function breadcrumbJsonLd(items: Array<{ name: string; path: string }>) {"
+      },
+      {
+        "line": 61,
+        "text": "  return {"
+      },
+      {
+        "line": 62,
+        "text": "    '@context': 'https://schema.org',"
+      },
+      {
+        "line": 63,
+        "text": "    '@type': 'BreadcrumbList',"
+      },
+      {
+        "line": 64,
+        "text": "    itemListElement: items.map((item, index) => ({"
+      },
+      {
+        "line": 65,
+        "text": "      '@type': 'ListItem',"
+      },
+      {
+        "line": 66,
+        "text": "      position: index + 1,"
+      },
+      {
+        "line": 67,
+        "text": "      name: item.name,"
+      },
+      {
+        "line": 68,
+        "text": "      item: absoluteUrl(item.path),"
+      },
+      {
+        "line": 69,
+        "text": "    })),"
+      },
+      {
+        "line": 70,
+        "text": "  };"
+      },
+      {
+        "line": 71,
+        "text": "}"
+      },
+      {
+        "line": 72,
+        "text": ""
+      },
+      {
+        "line": 73,
+        "text": "export function articleJsonLd({"
+      },
+      {
+        "line": 74,
+        "text": "  title,"
+      },
+      {
+        "line": 75,
+        "text": "  description,"
+      },
+      {
+        "line": 76,
+        "text": "  path,"
+      },
+      {
+        "line": 77,
+        "text": "  image,"
+      },
+      {
+        "line": 78,
+        "text": "  modifiedAt,"
+      },
+      {
+        "line": 79,
+        "text": "  publishedAt,"
+      },
+      {
+        "line": 80,
+        "text": "  news = false,"
+      },
+      {
+        "line": 81,
+        "text": "}: {"
+      },
+      {
+        "line": 82,
+        "text": "  title: string;"
+      },
+      {
+        "line": 83,
+        "text": "  description: string;"
+      },
+      {
+        "line": 84,
+        "text": "  path: string;"
+      },
+      {
+        "line": 85,
+        "text": "  image: string;"
+      },
+      {
+        "line": 86,
+        "text": "  modifiedAt: string;"
+      },
+      {
+        "line": 87,
+        "text": "  publishedAt?: string;"
+      },
+      {
+        "line": 88,
+        "text": "  news?: boolean;"
+      },
+      {
+        "line": 89,
+        "text": "}) {"
+      },
+      {
+        "line": 90,
+        "text": "  return {"
+      },
+      {
+        "line": 91,
+        "text": "    '@context': 'https://schema.org',"
+      },
+      {
+        "line": 92,
+        "text": "    '@type': news ? 'NewsArticle' : 'Article',"
+      },
+      {
+        "line": 93,
+        "text": "    '@id': absoluteUrl(`${path}#article`),"
+      },
+      {
+        "line": 94,
+        "text": "    headline: title,"
+      },
+      {
+        "line": 95,
+        "text": "    description,"
+      },
+      {
+        "line": 96,
+        "text": "    image: absoluteUrl(image),"
+      },
+      {
+        "line": 97,
+        "text": "    dateModified: modifiedAt,"
+      },
+      {
+        "line": 98,
+        "text": "    ...(publishedAt ? { datePublished: publishedAt } : {}),"
+      },
+      {
+        "line": 99,
+        "text": "    inLanguage: 'nl-NL',"
+      },
+      {
+        "line": 100,
+        "text": "    mainEntityOfPage: absoluteUrl(path),"
+      },
+      {
+        "line": 101,
+        "text": "    author: {"
+      },
+      {
+        "line": 102,
+        "text": "      '@type': 'Organization',"
+      },
+      {
+        "line": 103,
+        "text": "      '@id': absoluteUrl('/#organization'),"
+      },
+      {
+        "line": 104,
+        "text": "      name: siteName,"
+      },
+      {
+        "line": 105,
+        "text": "      url: absoluteUrl('/over-maaistro'),"
+      },
+      {
+        "line": 106,
+        "text": "    },"
+      },
+      {
+        "line": 107,
+        "text": "    publisher: { '@id': absoluteUrl('/#organization') },"
+      },
+      {
+        "line": 108,
+        "text": "  };"
+      },
+      {
+        "line": 109,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "551c18df56af0c1bbef07af444d7bfaddc5e02a97015dee40acb0af8436b2bb7",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { Metadata, Viewport } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import localFont from 'next/font/local';"
+      },
+      {
+        "line": 3,
+        "text": "import { Navigation } from '@/components/navigation';"
+      },
+      {
+        "line": 4,
+        "text": "import { Footer } from '@/components/footer';"
+      },
+      {
+        "line": 5,
+        "text": "import { JsonLd } from '@/components/json-ld';"
+      },
+      {
+        "line": 6,
+        "text": "import { absoluteUrl, defaultOgImage, siteName, siteUrl } from '@/lib/seo';"
+      },
+      {
+        "line": 7,
+        "text": "import '@/styles/site.css';"
+      },
+      {
+        "line": 8,
+        "text": ""
+      },
+      {
+        "line": 9,
+        "text": "const golos = localFont({"
+      },
+      {
+        "line": 10,
+        "text": "  src: '../../public/assets/paspoot/GolosText-Variable.ttf',"
+      },
+      {
+        "line": 11,
+        "text": "  weight: '400 900',"
+      },
+      {
+        "line": 12,
+        "text": "  display: 'swap',"
+      },
+      {
+        "line": 13,
+        "text": "  variable: '--font-golos',"
+      },
+      {
+        "line": 14,
+        "text": "  fallback: ['Arial', 'sans-serif'],"
+      },
+      {
+        "line": 15,
+        "text": "});"
+      },
+      {
+        "line": 16,
+        "text": "const stackSansNotch = localFont({"
+      },
+      {
+        "line": 17,
+        "text": "  src: '../../public/assets/paspoot/StackSansNotch-Variable.ttf',"
+      },
+      {
+        "line": 18,
+        "text": "  weight: '200 800',"
+      },
+      {
+        "line": 19,
+        "text": "  display: 'swap',"
+      },
+      {
+        "line": 20,
+        "text": "  variable: '--font-stack-sans-notch',"
+      },
+      {
+        "line": 21,
+        "text": "  fallback: ['Arial', 'sans-serif'],"
+      },
+      {
+        "line": 22,
+        "text": "});"
+      },
+      {
+        "line": 23,
+        "text": ""
+      },
+      {
+        "line": 24,
+        "text": "const description ="
+      },
+      {
+        "line": 25,
+        "text": "  'Minder maaien, meer weekend. Maaistro helpt je kiezen met heldere uitleg over robotmaaiers, jouw tuin en de eigenschappen die voor jou tellen.';"
+      },
+      {
+        "line": 26,
+        "text": ""
+      },
+      {
+        "line": 27,
+        "text": "export const metadata: Metadata = {"
+      },
+      {
+        "line": 28,
+        "text": "  metadataBase: new URL(siteUrl),"
+      },
+      {
+        "line": 29,
+        "text": "  title: { default: 'Maaistro — vind de robotmaaier voor jouw tuin', template: '%s | Maaistro' },"
+      },
+      {
+        "line": 30,
+        "text": "  description,"
+      },
+      {
+        "line": 31,
+        "text": "  applicationName: siteName,"
+      },
+      {
+        "line": 32,
+        "text": "  openGraph: {"
+      },
+      {
+        "line": 33,
+        "text": "    type: 'website',"
+      },
+      {
+        "line": 34,
+        "text": "    locale: 'nl_NL',"
+      },
+      {
+        "line": 35,
+        "text": "    siteName,"
+      },
+      {
+        "line": 36,
+        "text": "    title: 'Jij het weekend. Hij het gras. Maaistro.',"
+      },
+      {
+        "line": 37,
+        "text": "    description,"
+      },
+      {
+        "line": 38,
+        "text": "    images: [defaultOgImage],"
+      },
+      {
+        "line": 39,
+        "text": "  },"
+      },
+      {
+        "line": 40,
+        "text": "  twitter: {"
+      },
+      {
+        "line": 41,
+        "text": "    card: 'summary_large_image',"
+      },
+      {
+        "line": 42,
+        "text": "    title: 'Jij het weekend. Hij het gras. Maaistro.',"
+      },
+      {
+        "line": 43,
+        "text": "    description,"
+      },
+      {
+        "line": 44,
+        "text": "    images: [defaultOgImage.url],"
+      },
+      {
+        "line": 45,
+        "text": "  },"
+      },
+      {
+        "line": 46,
+        "text": "  manifest: '/site.webmanifest',"
+      },
+      {
+        "line": 47,
+        "text": "  icons: {"
+      },
+      {
+        "line": 48,
+        "text": "    icon: ["
+      },
+      {
+        "line": 49,
+        "text": "      { url: '/favicon.ico' },"
+      },
+      {
+        "line": 50,
+        "text": "      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },"
+      },
+      {
+        "line": 51,
+        "text": "      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },"
+      },
+      {
+        "line": 52,
+        "text": "    ],"
+      },
+      {
+        "line": 53,
+        "text": "    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],"
+      },
+      {
+        "line": 54,
+        "text": "  },"
+      },
+      {
+        "line": 55,
+        "text": "};"
+      },
+      {
+        "line": 56,
+        "text": ""
+      },
+      {
+        "line": 57,
+        "text": "export const viewport: Viewport = { themeColor: '#052e2a' };"
+      },
+      {
+        "line": 58,
+        "text": ""
+      },
+      {
+        "line": 59,
+        "text": "const organization = {"
+      },
+      {
+        "line": 60,
+        "text": "  '@context': 'https://schema.org',"
+      },
+      {
+        "line": 61,
+        "text": "  '@graph': ["
+      },
+      {
+        "line": 62,
+        "text": "    {"
+      },
+      {
+        "line": 63,
+        "text": "      '@type': 'Organization',"
+      },
+      {
+        "line": 64,
+        "text": "      '@id': absoluteUrl('/#organization'),"
+      },
+      {
+        "line": 65,
+        "text": "      name: siteName,"
+      },
+      {
+        "line": 66,
+        "text": "      url: absoluteUrl('/'),"
+      },
+      {
+        "line": 67,
+        "text": "      logo: absoluteUrl('/assets/maaistro/logo.svg'),"
+      },
+      {
+        "line": 68,
+        "text": "    },"
+      },
+      {
+        "line": 69,
+        "text": "    {"
+      },
+      {
+        "line": 70,
+        "text": "      '@type': 'WebSite',"
+      },
+      {
+        "line": 71,
+        "text": "      '@id': absoluteUrl('/#website'),"
+      },
+      {
+        "line": 72,
+        "text": "      name: siteName,"
+      },
+      {
+        "line": 73,
+        "text": "      url: absoluteUrl('/'),"
+      },
+      {
+        "line": 74,
+        "text": "      inLanguage: 'nl-NL',"
+      },
+      {
+        "line": 75,
+        "text": "      publisher: { '@id': absoluteUrl('/#organization') },"
+      },
+      {
+        "line": 76,
+        "text": "    },"
+      },
+      {
+        "line": 77,
+        "text": "  ],"
+      },
+      {
+        "line": 78,
+        "text": "};"
+      },
+      {
+        "line": 79,
+        "text": ""
+      },
+      {
+        "line": 80,
+        "text": "export default function RootLayout({ children }: { children: React.ReactNode }) {"
+      },
+      {
+        "line": 81,
+        "text": "  return ("
+      },
+      {
+        "line": 82,
+        "text": "    <html"
+      },
+      {
+        "line": 83,
+        "text": "      lang=\"nl\""
+      },
+      {
+        "line": 84,
+        "text": "      data-scroll-behavior=\"smooth\""
+      },
+      {
+        "line": 85,
+        "text": "      className={`${golos.variable} ${stackSansNotch.variable}`}"
+      },
+      {
+        "line": 86,
+        "text": "    >"
+      },
+      {
+        "line": 87,
+        "text": "      <body>"
+      },
+      {
+        "line": 88,
+        "text": "        <a href=\"#main\" className=\"skip-link\">"
+      },
+      {
+        "line": 89,
+        "text": "          Ga naar de inhoud"
+      },
+      {
+        "line": 90,
+        "text": "        </a>"
+      },
+      {
+        "line": 91,
+        "text": "        <Navigation />"
+      },
+      {
+        "line": 92,
+        "text": "        <main id=\"main\">{children}</main>"
+      },
+      {
+        "line": 93,
+        "text": "        <Footer />"
+      },
+      {
+        "line": 94,
+        "text": "        <JsonLd data={organization} />"
+      },
+      {
+        "line": 95,
+        "text": "      </body>"
+      },
+      {
+        "line": 96,
+        "text": "    </html>"
+      },
+      {
+        "line": 97,
+        "text": "  );"
+      },
+      {
+        "line": 98,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "next.config.ts",
+    "sha256": "a142145abc1132bf3dc5183bd8d395ad136bd76a3cef1c5ebcc373abd376700b",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { NextConfig } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": ""
+      },
+      {
+        "line": 3,
+        "text": "const config: NextConfig = {"
+      },
+      {
+        "line": 4,
+        "text": "  poweredByHeader: false,"
+      },
+      {
+        "line": 5,
+        "text": "  images: {"
+      },
+      {
+        "line": 6,
+        "text": "    formats: ['image/avif', 'image/webp'],"
+      },
+      {
+        "line": 7,
+        "text": "    remotePatterns: [{ protocol: 'https', hostname: 'cdn.shopify.com', pathname: '/s/files/**' }],"
+      },
+      {
+        "line": 8,
+        "text": "  },"
+      },
+      {
+        "line": 9,
+        "text": "  async redirects() {"
+      },
+      {
+        "line": 10,
+        "text": "    // The old English/generic route names moved to Dutch, search-intent-matched URLs."
+      },
+      {
+        "line": 11,
+        "text": "    // Each old URL redirects straight to its final destination — never through another"
+      },
+      {
+        "line": 12,
+        "text": "    // redirect — to avoid redirect chains."
+      },
+      {
+        "line": 13,
+        "text": "    return ["
+      },
+      {
+        "line": 14,
+        "text": "      { source: '/volunteer', destination: '/cabinecheck', permanent: true },"
+      },
+      {
+        "line": 15,
+        "text": "      { source: '/projects', destination: '/reistassen', permanent: true },"
+      },
+      {
+        "line": 16,
+        "text": "      { source: '/projects/:slug', destination: '/reistassen/:slug', permanent: true },"
+      },
+      {
+        "line": 17,
+        "text": "      { source: '/events', destination: '/luchtvaartmaatschappijen', permanent: true },"
+      },
+      {
+        "line": 18,
+        "text": "      { source: '/events/:slug', destination: '/luchtvaartmaatschappijen/:slug', permanent: true },"
+      },
+      {
+        "line": 19,
+        "text": "      { source: '/blogs', destination: '/advies', permanent: true },"
+      },
+      {
+        "line": 20,
+        "text": "      // /blogs/[slug] used to duplicate the airline articles; those live only at"
+      },
+      {
+        "line": 21,
+        "text": "      // /luchtvaartmaatschappijen/[slug] now, so redirect straight there."
+      },
+      {
+        "line": 22,
+        "text": "      { source: '/blogs/:slug', destination: '/luchtvaartmaatschappijen/:slug', permanent: true },"
+      },
+      {
+        "line": 23,
+        "text": "    ];"
+      },
+      {
+        "line": 24,
+        "text": "  },"
+      },
+      {
+        "line": 25,
+        "text": "};"
+      },
+      {
+        "line": 26,
+        "text": ""
+      },
+      {
+        "line": 27,
+        "text": "export default config;"
+      }
+    ]
+  },
+  {
+    "path": ".env.example",
+    "sha256": "98dc34025ee843ecf06c6ba444aecfa3b4d332e5c41a8a166066d53fdb8bc0da",
+    "lines": [
+      {
+        "line": 1,
+        "text": "# Set the final public origin before deploying."
+      },
+      {
+        "line": 2,
+        "text": "NEXT_PUBLIC_SITE_URL=http://localhost:3000"
+      }
+    ]
+  },
+  {
+    "path": "src/content/news.ts",
+    "sha256": "f646f09876fd9cf87ff410968c11d24b0261e8f802bcd8e9c8f52c771f0def1e",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import newsData from './news.json';"
+      },
+      {
+        "line": 2,
+        "text": "import type { RichBlock } from './site';"
+      },
+      {
+        "line": 3,
+        "text": ""
+      },
+      {
+        "line": 4,
+        "text": "export type NewsArticle = {"
+      },
+      {
+        "line": 5,
+        "text": "  slug: string;"
+      },
+      {
+        "line": 6,
+        "text": "  topicKey: string;"
+      },
+      {
+        "line": 7,
+        "text": "  status: 'draft' | 'published';"
+      },
+      {
+        "line": 8,
+        "text": "  title: string;"
+      },
+      {
+        "line": 9,
+        "text": "  description: string;"
+      },
+      {
+        "line": 10,
+        "text": "  summary: string;"
+      },
+      {
+        "line": 11,
+        "text": "  eventDate: string;"
+      },
+      {
+        "line": 12,
+        "text": "  publishedAt: string | null;"
+      },
+      {
+        "line": 13,
+        "text": "  approvedAt?: string;"
+      },
+      {
+        "line": 14,
+        "text": "  approvalRef?: string;"
+      },
+      {
+        "line": 15,
+        "text": "  updatedAt: string;"
+      },
+      {
+        "line": 16,
+        "text": "  verifiedAt: string;"
+      },
+      {
+        "line": 17,
+        "text": "  image: string;"
+      },
+      {
+        "line": 18,
+        "text": "  tags: string[];"
+      },
+      {
+        "line": 19,
+        "text": "  sources: Array<{ name: string; url: string; updatedAt: string | null }>;"
+      },
+      {
+        "line": 20,
+        "text": "  relatedAdvice: string[];"
+      },
+      {
+        "line": 21,
+        "text": "  body: RichBlock[];"
+      },
+      {
+        "line": 22,
+        "text": "};"
+      },
+      {
+        "line": 23,
+        "text": ""
+      },
+      {
+        "line": 24,
+        "text": "export const newsArticles = newsData as NewsArticle[];"
+      },
+      {
+        "line": 25,
+        "text": "export const publishedNews = newsArticles"
+      },
+      {
+        "line": 26,
+        "text": "  .filter((article) => article.status === 'published' && article.publishedAt)"
+      },
+      {
+        "line": 27,
+        "text": "  .sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''));"
+      },
+      {
+        "line": 28,
+        "text": ""
+      },
+      {
+        "line": 29,
+        "text": "// Local review is explicit; drafts never enter the sitemap."
+      },
+      {
+        "line": 30,
+        "text": "export const visibleNews ="
+      },
+      {
+        "line": 31,
+        "text": "  process.env.PASPOOT_PREVIEW_DRAFTS === '1' ? newsArticles : publishedNews;"
+      }
+    ]
+  },
+  {
+    "path": "src/app/nieuws/page.tsx",
+    "sha256": "834cc8ae45fef222bd4af7a6914a18de87b5cd03763fa38c0970c35f2809a124",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import Link from 'next/link';"
+      },
+      {
+        "line": 2,
+        "text": "import { Container, SectionHeader } from '@/components/ui';"
+      },
+      {
+        "line": 3,
+        "text": "import { NewsCard } from '@/components/news-card';"
+      },
+      {
+        "line": 4,
+        "text": "import { publishedNews } from '@/content/news';"
+      },
+      {
+        "line": 5,
+        "text": "import { pageMetadata } from '@/lib/seo';"
+      },
+      {
+        "line": 6,
+        "text": ""
+      },
+      {
+        "line": 7,
+        "text": "export const metadata = {"
+      },
+      {
+        "line": 8,
+        "text": "  ...pageMetadata({"
+      },
+      {
+        "line": 9,
+        "text": "    title: 'Nieuws over vliegen met je hond of kat',"
+      },
+      {
+        "line": 10,
+        "text": "    description:"
+      },
+      {
+        "line": 11,
+        "text": "      'Volg relevante wijzigingen in huisdierreizen, airlinevoorwaarden en reisroutes. Paspoot legt uit wat ze betekenen voor jouw voorbereiding.',"
+      },
+      {
+        "line": 12,
+        "text": "    path: '/nieuws',"
+      },
+      {
+        "line": 13,
+        "text": "  }),"
+      },
+      {
+        "line": 14,
+        "text": "  // An empty hub has no news to index yet. Publication switches this automatically."
+      },
+      {
+        "line": 15,
+        "text": "  ...(publishedNews.length ? {} : { robots: { index: false, follow: true } }),"
+      },
+      {
+        "line": 16,
+        "text": "};"
+      },
+      {
+        "line": 17,
+        "text": ""
+      },
+      {
+        "line": 18,
+        "text": "export default function Page() {"
+      },
+      {
+        "line": 19,
+        "text": "  return ("
+      },
+      {
+        "line": 20,
+        "text": "    <>"
+      },
+      {
+        "line": 21,
+        "text": "      <section className=\"listing-hero\">"
+      },
+      {
+        "line": 22,
+        "text": "        <Container>"
+      },
+      {
+        "line": 23,
+        "text": "          <SectionHeader"
+      },
+      {
+        "line": 24,
+        "text": "            as=\"h1\""
+      },
+      {
+        "line": 25,
+        "text": "            eyebrow=\"Paspoot nieuws\""
+      },
+      {
+        "line": 26,
+        "text": "            title=\"Wat verandert er voor jouw reis?\""
+      },
+      {
+        "line": 27,
+        "text": "            description=\"Updates over vliegen met je hond of kat, met officiële bronnen en een concrete uitleg voor je voorbereiding.\""
+      },
+      {
+        "line": 28,
+        "text": "          />"
+      },
+      {
+        "line": 29,
+        "text": "        </Container>"
+      },
+      {
+        "line": 30,
+        "text": "      </section>"
+      },
+      {
+        "line": 31,
+        "text": "      <section className=\"listing-body blog-listing\">"
+      },
+      {
+        "line": 32,
+        "text": "        <Container>"
+      },
+      {
+        "line": 33,
+        "text": "          {publishedNews.length ? ("
+      },
+      {
+        "line": 34,
+        "text": "            <div className=\"blog-grid\">"
+      },
+      {
+        "line": 35,
+        "text": "              {publishedNews.map((article) => ("
+      },
+      {
+        "line": 36,
+        "text": "                <NewsCard key={article.slug} article={article} />"
+      },
+      {
+        "line": 37,
+        "text": "              ))}"
+      },
+      {
+        "line": 38,
+        "text": "            </div>"
+      },
+      {
+        "line": 39,
+        "text": "          ) : ("
+      },
+      {
+        "line": 40,
+        "text": "            <div className=\"rich-content\">"
+      },
+      {
+        "line": 41,
+        "text": "              <h2>We controleren het nieuws voordat we het delen</h2>"
+      },
+      {
+        "line": 42,
+        "text": "              <p>"
+      },
+      {
+        "line": 43,
+        "text": "                Er zijn nog geen nieuwsberichten gepubliceerd. Bekijk intussen onze{' '}"
+      },
+      {
+        "line": 44,
+        "text": "                <Link href=\"/advies\">praktische reisgidsen</Link> en de{' '}"
+      },
+      {
+        "line": 45,
+        "text": "                <Link href=\"/luchtvaartmaatschappijen\">regels per luchtvaartmaatschappij</Link>."
+      },
+      {
+        "line": 46,
+        "text": "              </p>"
+      },
+      {
+        "line": 47,
+        "text": "            </div>"
+      },
+      {
+        "line": 48,
+        "text": "          )}"
+      },
+      {
+        "line": 49,
+        "text": "          <p className=\"mt-10 text-muted\">"
+      },
+      {
+        "line": 50,
+        "text": "            <Link href=\"/over-paspoot\" className=\"underline\">"
+      },
+      {
+        "line": 51,
+        "text": "              Zo controleert Paspoot bronnen en wijzigingen"
+      },
+      {
+        "line": 52,
+        "text": "            </Link>"
+      },
+      {
+        "line": 53,
+        "text": "          </p>"
+      },
+      {
+        "line": 54,
+        "text": "        </Container>"
+      },
+      {
+        "line": 55,
+        "text": "      </section>"
+      },
+      {
+        "line": 56,
+        "text": "    </>"
+      },
+      {
+        "line": 57,
+        "text": "  );"
+      },
+      {
+        "line": 58,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/app/nieuws/[slug]/page.tsx",
+    "sha256": "fdfb68e601755a01a2635c463965915f7166c7b5db0b3af8a11a7a20962848bf",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { Metadata } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import { notFound } from 'next/navigation';"
+      },
+      {
+        "line": 3,
+        "text": "import { visibleNews } from '@/content/news';"
+      },
+      {
+        "line": 4,
+        "text": "import { AdviceDetail } from '@/components/page-sections';"
+      },
+      {
+        "line": 5,
+        "text": "import { JsonLd } from '@/components/json-ld';"
+      },
+      {
+        "line": 6,
+        "text": "import { articleJsonLd, breadcrumbJsonLd, pageMetadata } from '@/lib/seo';"
+      },
+      {
+        "line": 7,
+        "text": ""
+      },
+      {
+        "line": 8,
+        "text": "export const dynamicParams = false;"
+      },
+      {
+        "line": 9,
+        "text": "export function generateStaticParams() {"
+      },
+      {
+        "line": 10,
+        "text": "  return visibleNews.map(({ slug }) => ({ slug }));"
+      },
+      {
+        "line": 11,
+        "text": "}"
+      },
+      {
+        "line": 12,
+        "text": "type Props = { params: Promise<{ slug: string }> };"
+      },
+      {
+        "line": 13,
+        "text": "export async function generateMetadata({ params }: Props): Promise<Metadata> {"
+      },
+      {
+        "line": 14,
+        "text": "  const { slug } = await params;"
+      },
+      {
+        "line": 15,
+        "text": "  const article = visibleNews.find((item) => item.slug === slug);"
+      },
+      {
+        "line": 16,
+        "text": "  if (!article) return {};"
+      },
+      {
+        "line": 17,
+        "text": "  return {"
+      },
+      {
+        "line": 18,
+        "text": "    ...pageMetadata({"
+      },
+      {
+        "line": 19,
+        "text": "      title: article.title,"
+      },
+      {
+        "line": 20,
+        "text": "      description: article.description,"
+      },
+      {
+        "line": 21,
+        "text": "      path: `/nieuws/${article.slug}`,"
+      },
+      {
+        "line": 22,
+        "text": "      image: article.image,"
+      },
+      {
+        "line": 23,
+        "text": "      type: 'article',"
+      },
+      {
+        "line": 24,
+        "text": "    }),"
+      },
+      {
+        "line": 25,
+        "text": "    ...(article.status === 'draft' ? { robots: { index: false, follow: false } } : {}),"
+      },
+      {
+        "line": 26,
+        "text": "  };"
+      },
+      {
+        "line": 27,
+        "text": "}"
+      },
+      {
+        "line": 28,
+        "text": "export default async function Page({ params }: Props) {"
+      },
+      {
+        "line": 29,
+        "text": "  const { slug } = await params;"
+      },
+      {
+        "line": 30,
+        "text": "  const article = visibleNews.find((item) => item.slug === slug);"
+      },
+      {
+        "line": 31,
+        "text": "  if (!article) notFound();"
+      },
+      {
+        "line": 32,
+        "text": "  const path = `/nieuws/${article.slug}`;"
+      },
+      {
+        "line": 33,
+        "text": "  return ("
+      },
+      {
+        "line": 34,
+        "text": "    <>"
+      },
+      {
+        "line": 35,
+        "text": "      <AdviceDetail guide={article} news={article} />"
+      },
+      {
+        "line": 36,
+        "text": "      {article.status === 'published' && article.publishedAt && ("
+      },
+      {
+        "line": 37,
+        "text": "        <JsonLd"
+      },
+      {
+        "line": 38,
+        "text": "          data={articleJsonLd({"
+      },
+      {
+        "line": 39,
+        "text": "            title: article.title,"
+      },
+      {
+        "line": 40,
+        "text": "            description: article.summary,"
+      },
+      {
+        "line": 41,
+        "text": "            path,"
+      },
+      {
+        "line": 42,
+        "text": "            image: article.image,"
+      },
+      {
+        "line": 43,
+        "text": "            modifiedAt: article.updatedAt,"
+      },
+      {
+        "line": 44,
+        "text": "            publishedAt: article.publishedAt,"
+      },
+      {
+        "line": 45,
+        "text": "            news: true,"
+      },
+      {
+        "line": 46,
+        "text": "          })}"
+      },
+      {
+        "line": 47,
+        "text": "        />"
+      },
+      {
+        "line": 48,
+        "text": "      )}"
+      },
+      {
+        "line": 49,
+        "text": "      <JsonLd"
+      },
+      {
+        "line": 50,
+        "text": "        data={breadcrumbJsonLd(["
+      },
+      {
+        "line": 51,
+        "text": "          { name: 'Home', path: '/' },"
+      },
+      {
+        "line": 52,
+        "text": "          { name: 'Nieuws', path: '/nieuws' },"
+      },
+      {
+        "line": 53,
+        "text": "          { name: article.title, path },"
+      },
+      {
+        "line": 54,
+        "text": "        ])}"
+      },
+      {
+        "line": 55,
+        "text": "      />"
+      },
+      {
+        "line": 56,
+        "text": "    </>"
+      },
+      {
+        "line": 57,
+        "text": "  );"
+      },
+      {
+        "line": 58,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/app/advies/[slug]/page.tsx",
+    "sha256": "06a91acd54d01fd416fa6f42cba773060382b8eb1b25dd1b2a989d2bcdbc17d0",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { Metadata } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import { notFound } from 'next/navigation';"
+      },
+      {
+        "line": 3,
+        "text": "import { adviceGuides } from '@/content/site';"
+      },
+      {
+        "line": 4,
+        "text": "import { AdviceDetail } from '@/components/page-sections';"
+      },
+      {
+        "line": 5,
+        "text": "import { JsonLd } from '@/components/json-ld';"
+      },
+      {
+        "line": 6,
+        "text": "import { articleJsonLd, breadcrumbJsonLd, pageMetadata } from '@/lib/seo';"
+      },
+      {
+        "line": 7,
+        "text": ""
+      },
+      {
+        "line": 8,
+        "text": "export const dynamicParams = false;"
+      },
+      {
+        "line": 9,
+        "text": ""
+      },
+      {
+        "line": 10,
+        "text": "export function generateStaticParams() {"
+      },
+      {
+        "line": 11,
+        "text": "  return adviceGuides.map(({ slug }) => ({ slug }));"
+      },
+      {
+        "line": 12,
+        "text": "}"
+      },
+      {
+        "line": 13,
+        "text": ""
+      },
+      {
+        "line": 14,
+        "text": "type Props = { params: Promise<{ slug: string }> };"
+      },
+      {
+        "line": 15,
+        "text": ""
+      },
+      {
+        "line": 16,
+        "text": "export async function generateMetadata({ params }: Props): Promise<Metadata> {"
+      },
+      {
+        "line": 17,
+        "text": "  const { slug } = await params;"
+      },
+      {
+        "line": 18,
+        "text": "  const guide = adviceGuides.find((item) => item.slug === slug);"
+      },
+      {
+        "line": 19,
+        "text": "  if (!guide) return {};"
+      },
+      {
+        "line": 20,
+        "text": "  return pageMetadata({"
+      },
+      {
+        "line": 21,
+        "text": "    title: guide.title,"
+      },
+      {
+        "line": 22,
+        "text": "    description: guide.description,"
+      },
+      {
+        "line": 23,
+        "text": "    path: `/advies/${guide.slug}`,"
+      },
+      {
+        "line": 24,
+        "text": "    image: guide.image,"
+      },
+      {
+        "line": 25,
+        "text": "    type: 'article',"
+      },
+      {
+        "line": 26,
+        "text": "  });"
+      },
+      {
+        "line": 27,
+        "text": "}"
+      },
+      {
+        "line": 28,
+        "text": ""
+      },
+      {
+        "line": 29,
+        "text": "export default async function Page({ params }: Props) {"
+      },
+      {
+        "line": 30,
+        "text": "  const { slug } = await params;"
+      },
+      {
+        "line": 31,
+        "text": "  const guide = adviceGuides.find((item) => item.slug === slug);"
+      },
+      {
+        "line": 32,
+        "text": "  if (!guide) notFound();"
+      },
+      {
+        "line": 33,
+        "text": "  const path = `/advies/${guide.slug}`;"
+      },
+      {
+        "line": 34,
+        "text": ""
+      },
+      {
+        "line": 35,
+        "text": "  return ("
+      },
+      {
+        "line": 36,
+        "text": "    <>"
+      },
+      {
+        "line": 37,
+        "text": "      <AdviceDetail guide={guide} />"
+      },
+      {
+        "line": 38,
+        "text": "      <JsonLd"
+      },
+      {
+        "line": 39,
+        "text": "        data={articleJsonLd({"
+      },
+      {
+        "line": 40,
+        "text": "          title: guide.title,"
+      },
+      {
+        "line": 41,
+        "text": "          description: guide.summary,"
+      },
+      {
+        "line": 42,
+        "text": "          path,"
+      },
+      {
+        "line": 43,
+        "text": "          image: guide.image,"
+      },
+      {
+        "line": 44,
+        "text": "          modifiedAt: guide.updatedAt,"
+      },
+      {
+        "line": 45,
+        "text": "        })}"
+      },
+      {
+        "line": 46,
+        "text": "      />"
+      },
+      {
+        "line": 47,
+        "text": "      <JsonLd"
+      },
+      {
+        "line": 48,
+        "text": "        data={breadcrumbJsonLd(["
+      },
+      {
+        "line": 49,
+        "text": "          { name: 'Home', path: '/' },"
+      },
+      {
+        "line": 50,
+        "text": "          { name: 'Advies', path: '/advies' },"
+      },
+      {
+        "line": 51,
+        "text": "          { name: guide.title, path },"
+      },
+      {
+        "line": 52,
+        "text": "        ])}"
+      },
+      {
+        "line": 53,
+        "text": "      />"
+      },
+      {
+        "line": 54,
+        "text": "    </>"
+      },
+      {
+        "line": 55,
+        "text": "  );"
+      },
+      {
+        "line": 56,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "path": "src/app/not-found.tsx",
+    "sha256": "28bdc1c10c43163157d08bff75adfaf540b8c518e9f33006ba7af58f96b82684",
+    "lines": [
+      {
+        "line": 1,
+        "text": "import type { Metadata } from 'next';"
+      },
+      {
+        "line": 2,
+        "text": "import { Button } from '@/components/ui';"
+      },
+      {
+        "line": 3,
+        "text": ""
+      },
+      {
+        "line": 4,
+        "text": "export const metadata: Metadata = {"
+      },
+      {
+        "line": 5,
+        "text": "  title: 'Pagina niet gevonden',"
+      },
+      {
+        "line": 6,
+        "text": "  robots: { index: false, follow: true },"
+      },
+      {
+        "line": 7,
+        "text": "};"
+      },
+      {
+        "line": 8,
+        "text": ""
+      },
+      {
+        "line": 9,
+        "text": "export default function NotFound() {"
+      },
+      {
+        "line": 10,
+        "text": "  return ("
+      },
+      {
+        "line": 11,
+        "text": "    <section className=\"flex min-h-[70vh] flex-col items-center justify-center gap-7.5 px-5 pt-35 pb-15\">"
+      },
+      {
+        "line": 12,
+        "text": "      <h1>Pagina niet gevonden</h1>"
+      },
+      {
+        "line": 13,
+        "text": "      <p>Hier is het gras even op. Ga terug naar Maaistro.</p>"
+      },
+      {
+        "line": 14,
+        "text": "      <Button href=\"/\">Naar de homepage</Button>"
+      },
+      {
+        "line": 15,
+        "text": "    </section>"
+      },
+      {
+        "line": 16,
+        "text": "  );"
+      },
+      {
+        "line": 17,
+        "text": "}"
+      }
+    ]
+  }
+]

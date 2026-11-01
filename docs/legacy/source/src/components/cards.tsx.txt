@@ -1,0 +1,255 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { type AdviceGuide, type Project, type CharityEvent } from '@/content/site';
+import { addPaspootAffiliateRef } from '@/lib/affiliate';
+import { cn } from '@/lib/cn';
+import { formatDate } from '@/lib/format';
+import { buttonStyles, Icon } from './ui';
+
+type HeadingLevel = 'h2' | 'h3';
+/** Where a card is rendered — sent along with affiliate-click analytics. */
+export type CardPlacement = 'checker_result' | 'product_card' | 'airline_page';
+
+export function ArticleTags({ tags, className }: { tags: string[]; className?: string }) {
+  return (
+    <ul aria-label="Onderwerpen" className={cn('flex flex-wrap gap-2.5', className)}>
+      {tags.map((tag) => (
+        <li
+          key={tag}
+          className="rounded-full border border-[#2b030333] px-[15px] py-2 text-[14px] leading-none max-sm:px-3 max-sm:py-[7px] max-sm:text-[12px]"
+        >
+          {tag}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function ProjectCard({
+  project,
+  ctaLabel = 'Bekijk tas',
+  badgeLabel = 'Buitenmaat',
+  ctaHref,
+  matchLabel,
+  matchReason,
+  showProductDetails = false,
+  useAffiliate = false,
+  headingLevel: Heading = 'h3',
+  compact = false,
+  darkCta = false,
+  placement = 'product_card',
+  onAffiliateClick,
+}: {
+  project: Pick<Project, 'slug' | 'title' | 'image' | 'location' | 'raised'> & Partial<Project>;
+  badgeLabel?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  matchLabel?: string;
+  matchReason?: string;
+  showProductDetails?: boolean;
+  useAffiliate?: boolean;
+  headingLevel?: HeadingLevel;
+  /** Shorter image area, used inside the checker result. */
+  compact?: boolean;
+  darkCta?: boolean;
+  /** Only used for analytics when the card links out to Zoospot. */
+  placement?: CardPlacement;
+  /** Fired right before navigating to an affiliate destination. Never set from a Server Component. */
+  onAffiliateClick?: () => void;
+}) {
+  const affiliateHref = useAffiliate ? addPaspootAffiliateRef(project.productUrl ?? null) : null;
+  const detailHref = `/reistassen/${project.slug}`;
+  const href = ctaHref ?? affiliateHref ?? detailHref;
+  const isAffiliate = Boolean(affiliateHref && href === affiliateHref);
+
+  return (
+    <article
+      className={cn(
+        'group relative flex h-full flex-col overflow-hidden rounded-card bg-white px-[15px] pb-[15px]',
+        compact ? 'pt-[205px]' : 'pt-[280px]',
+      )}
+    >
+      <Image
+        src={project.image}
+        alt={project.title}
+        fill
+        sizes="(max-width: 679px) 100vw, (max-width: 1199px) 50vw, 400px"
+        className="object-cover transition-transform duration-1000 group-hover:scale-104"
+      />
+      <span className="absolute top-[15px] right-[15px] rounded-[5px] bg-accent p-2.5 text-[14px] leading-[18.2px] text-white">
+        <span className="text-white/80">{badgeLabel}</span> {project.raised}
+      </span>
+      <div className="relative flex flex-1 flex-col gap-5 rounded-xl bg-white p-[15px]">
+        <div className="flex-1">
+          {matchLabel && (
+            <span className="mb-[7px] inline-block text-[11px] leading-[1.25] font-semibold text-brand">
+              {matchLabel}
+            </span>
+          )}
+          <Heading className="text-[16px] leading-[1.3] font-semibold tracking-normal text-ink max-sm:text-[14px]">
+            {project.title}
+          </Heading>
+          <p className="mt-[5px] text-[14px] leading-[1.3] text-muted">{project.location}</p>
+          {matchReason && (
+            <p className="mt-[5px] text-[14px] leading-[1.3] text-muted">{matchReason}</p>
+          )}
+          {showProductDetails && (
+            <dl className="mt-3 grid gap-1.5">
+              <ProductDetail
+                label="Eigen gewicht"
+                value={
+                  project.weight == null
+                    ? 'Nog niet geverifieerd'
+                    : `${project.weight.toLocaleString('nl-NL')} kg`
+                }
+              />
+              <ProductDetail
+                label="Geschikt voor"
+                value={
+                  project.pets?.includes('dog') && project.pets?.includes('cat')
+                    ? 'Hond en kat'
+                    : project.pets?.includes('dog')
+                      ? 'Hond'
+                      : 'Kat'
+                }
+              />
+              {project.price && <ProductDetail label="Prijs" value={project.price} />}
+              {project.store && <ProductDetail label="Winkel" value={project.store} />}
+              <ProductDetail
+                label="Voorraad"
+                value={project.inStock ? 'Op voorraad' : 'Uitverkocht'}
+              />
+            </dl>
+          )}
+        </div>
+        <Link
+          href={href}
+          className={cn(
+            buttonStyles.base,
+            'w-full px-5 py-[15px]',
+            darkCta
+              ? 'bg-brand-dark-secondary text-white hover:bg-brand-dark'
+              : 'bg-brand text-brand-dark hover:bg-brand-hover',
+          )}
+          onClick={
+            isAffiliate
+              ? () => {
+                  onAffiliateClick?.();
+                }
+              : undefined
+          }
+          {...(isAffiliate
+            ? {
+                target: '_blank',
+                rel: 'sponsored noopener noreferrer',
+                'data-placement': placement,
+              }
+            : {})}
+        >
+          {ctaLabel}
+        </Link>
+        {isAffiliate && (
+          <Link
+            href={detailHref}
+            className="text-center text-[13px] font-semibold text-brand hover:underline"
+          >
+            Meer productinformatie
+          </Link>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function ProductDetail({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex justify-between gap-3 text-[11px]">
+      <dt className="text-muted">{label}</dt>
+      <dd className="text-right text-ink">{value}</dd>
+    </div>
+  );
+}
+
+export function EventCard({
+  event,
+  href,
+  metadataLabel,
+  titlePrefix = 'Cabineregels ',
+  locationLabel = 'Status',
+  headingLevel: Heading = 'h3',
+}: {
+  event: Pick<CharityEvent, 'slug' | 'title' | 'location' | 'image'> & Partial<CharityEvent>;
+  href?: string;
+  metadataLabel?: string;
+  titlePrefix?: string;
+  locationLabel?: string;
+  headingLevel?: HeadingLevel;
+}) {
+  return (
+    <Link
+      href={href ?? `/luchtvaartmaatschappijen/${event.slug}`}
+      className="group relative block aspect-[0.905] min-w-0 overflow-hidden rounded-card bg-white p-[15px] max-sm:min-h-[390px]"
+    >
+      <Image
+        src={event.image}
+        alt=""
+        fill
+        sizes="(max-width: 679px) 300px, 400px"
+        className="object-cover transition-transform duration-1000 group-hover:scale-106"
+      />
+      <div className="relative z-1 flex flex-col gap-3 rounded-xl bg-white p-[15px] shadow-[0_3px_5px_#0002]">
+        <span className="flex items-center gap-1.5 text-[14px] text-brand">
+          <Icon name="calendar" className="size-[18px]" />
+          {metadataLabel ?? (event.date ? `Gecheckt ${formatDate(event.date)}` : 'Lees meer')}
+        </span>
+        <Heading className="text-[18px] leading-[1.1] font-medium tracking-[-0.02em] text-ink max-sm:text-[16px]">
+          {titlePrefix}
+          {event.title}
+        </Heading>
+      </div>
+      <div className="absolute right-[15px] bottom-[15px] flex items-center gap-[5px] rounded-[5px] bg-white py-[5px] pr-2.5 pl-[5px] text-[14px]">
+        <span className="rounded-[3px] bg-white p-2.5 text-brand">
+          <Icon name="location" />
+        </span>
+        <div>
+          <span className="text-muted">{locationLabel}</span>
+          <p className="mt-1.5 leading-[1.3]">{event.location}</p>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+export function AdviceCard({ guide }: { guide: AdviceGuide }) {
+  const href = `/advies/${guide.slug}`;
+  return (
+    <article className="group min-w-0">
+      <Link
+        href={href}
+        tabIndex={-1}
+        aria-hidden="true"
+        className="relative block h-[340px] overflow-hidden rounded-[18px] max-sm:h-[250px]"
+      >
+        <Image
+          src={guide.image}
+          alt=""
+          fill
+          sizes="(max-width: 679px) 100vw, 600px"
+          className="object-cover [transition:transform_600ms_cubic-bezier(0.44,0,0.56,1)] group-hover:scale-[1.025]"
+        />
+      </Link>
+      <div className="px-1 pt-6">
+        <ArticleTags tags={guide.tags} className="mb-[18px]" />
+        <h2 className="max-w-[520px] text-[31px] leading-[1.08] font-normal max-sm:text-[27px]">
+          <Link href={href} className="hover:text-brand">
+            {guide.title}
+          </Link>
+        </h2>
+        <p className="mt-4 max-w-[560px] text-[16px] leading-[1.5] text-muted">{guide.summary}</p>
+        <span className="mt-[18px] block text-[13px] text-brand">
+          Bijgewerkt <time dateTime={guide.updatedAt}>{formatDate(guide.updatedAt)}</time>
+        </span>
+      </div>
+    </article>
+  );
+}

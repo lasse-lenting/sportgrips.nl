@@ -1,0 +1,110 @@
+[
+  {
+    "page": "home",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "home.parsed.json"
+  },
+  {
+    "page": "home",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "home.schema.txt"
+  },
+  {
+    "page": "home",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "home.readability.json"
+  },
+  {
+    "page": "about",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "about.parsed.json"
+  },
+  {
+    "page": "about",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "about.schema.txt"
+  },
+  {
+    "page": "about",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "about.readability.json"
+  },
+  {
+    "page": "advice-index",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "advice-index.parsed.json"
+  },
+  {
+    "page": "advice-index",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "advice-index.schema.txt"
+  },
+  {
+    "page": "advice-index",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "advice-index.readability.json"
+  },
+  {
+    "page": "wireless",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "wireless.parsed.json"
+  },
+  {
+    "page": "wireless",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "wireless.schema.txt"
+  },
+  {
+    "page": "wireless",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "wireless.readability.json"
+  },
+  {
+    "page": "small",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "small.parsed.json"
+  },
+  {
+    "page": "small",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "small.schema.txt"
+  },
+  {
+    "page": "small",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "small.readability.json"
+  },
+  {
+    "page": "large",
+    "script": "parse_html.py",
+    "exit": 0,
+    "output_file": "large.parsed.json"
+  },
+  {
+    "page": "large",
+    "script": "validate_schema.py",
+    "exit": 1,
+    "output_file": "large.schema.txt"
+  },
+  {
+    "page": "large",
+    "script": "readability.py",
+    "exit": 0,
+    "output_file": "large.readability.json"
+  }
+]

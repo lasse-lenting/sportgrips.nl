@@ -1,0 +1,327 @@
+{
+  "collected_at_utc": "2026-10-25T15:38:28.020783+00:00",
+  "scope": "After local route-removal edits, development server only, not production deployment",
+  "checks": [
+    {
+      "path": "/",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000",
+      "robots": null,
+      "location": null,
+      "title": "Maaistro — vind de robotmaaier voor jouw tuin"
+    },
+    {
+      "path": "/advies",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/advies",
+      "robots": null,
+      "location": null,
+      "title": "Koopgidsen: kies de robotmaaier voor jouw tuin | Maaistro"
+    },
+    {
+      "path": "/over-maaistro",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/over-maaistro",
+      "robots": null,
+      "location": null,
+      "title": "Over Maaistro: slim kiezen, eerlijk vergelijken | Maaistro"
+    },
+    {
+      "path": "/privacy",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/privacy",
+      "robots": null,
+      "location": null,
+      "title": "Privacy bij Maaistro | Maaistro"
+    },
+    {
+      "path": "/advies/robotmaaier-zonder-draad",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/advies/robotmaaier-zonder-draad",
+      "robots": null,
+      "location": null,
+      "title": "Robotmaaier zonder draad: past dat bij jouw tuin? | Maaistro"
+    },
+    {
+      "path": "/advies/robotmaaier-kleine-tuin",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/advies/robotmaaier-kleine-tuin",
+      "robots": null,
+      "location": null,
+      "title": "Robotmaaier voor een kleine tuin: kijk verder dan de m² | Maaistro"
+    },
+    {
+      "path": "/advies/robotmaaier-grote-tuin",
+      "expected_status": 200,
+      "actual_status": 200,
+      "pass": true,
+      "canonical": "http://localhost:3000/advies/robotmaaier-grote-tuin",
+      "robots": null,
+      "location": null,
+      "title": "Robotmaaier voor een grote tuin: capaciteit is pas het begin | Maaistro"
+    },
+    {
+      "path": "/cabinecheck",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/over-paspoot",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/nieuws",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/selene-air-pet-bag-40x30x24",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/ventora-air-pet-carrier-40x30x24-expandable",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/pet-carrier-55x40x23-cm-airline-approved",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/miravia-lufthansa-pet-carrier",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/miravia-brussels-airlines-pet-carrier",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/reistassen/aurora-airline-pet-carrier-40x30x24",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/klm",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/transavia",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/lufthansa",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/air-france",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/luchtvaartmaatschappijen/brussels-airlines",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/nieuws/huisdier-groot-brittannie-goedgekeurde-vliegroutes",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/volunteer",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/projects",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/projects/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/events",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/events/klm",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/blogs",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    },
+    {
+      "path": "/blogs/klm",
+      "expected_status": 404,
+      "actual_status": 404,
+      "pass": true,
+      "canonical": null,
+      "robots": "noindex",
+      "location": null,
+      "title": "Pagina niet gevonden | Maaistro"
+    }
+  ],
+  "all_pass": true
+}

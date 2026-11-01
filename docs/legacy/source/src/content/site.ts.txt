@@ -1,0 +1,226 @@
+import projectData from './projects.json';
+import eventData from './events.json';
+import airlineData from './airlines.json';
+import adviceData from './advice.json';
+import airlineEditorialData from './airline-editorial.json';
+
+export type RichBlock = { tag: string; html: string };
+export type Project = {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  location: string;
+  raised: string;
+  goal: string;
+  image: string;
+  dimensions: number[];
+  weight: number | null;
+  pets: Array<'dog' | 'cat'>;
+  store: string | null;
+  price: string | null;
+  priceCents: number | null;
+  inStock: boolean;
+  productUrl: string | null;
+  sourceUrl: string | null;
+  checkedAt: string;
+  manualReview: boolean;
+  airlineSlugs: string[];
+  body: RichBlock[];
+};
+export type CharityEvent = {
+  slug: string;
+  title: string;
+  description: string;
+  location: string;
+  date: string;
+  modifiedAt?: string;
+  updatedAt: string;
+  readTime: string;
+  tags: string[];
+  summary: string;
+  image: string;
+  hero: string;
+  body: RichBlock[];
+};
+export type AdviceGuide = {
+  slug: string;
+  title: string;
+  description: string;
+  summary: string;
+  updatedAt: string;
+  tags: string[];
+  image: string;
+  body: RichBlock[];
+};
+export type AirlineRule = {
+  name: string;
+  slug: string;
+  cabinAllowed: boolean | null;
+  dogAllowed: boolean | null;
+  catAllowed: boolean | null;
+  maxTotalWeight: number | null;
+  maxLength: number | null;
+  maxWidth: number | null;
+  maxHeight: number | null;
+  officialSource: string | null;
+  checkedAt: string;
+  verified: boolean;
+  automaticRecommendations: boolean;
+  manualReview: boolean;
+  manualReviewReason: string | null;
+  routeRestrictions: string[];
+  breedRestrictions: string[];
+};
+
+export const projects = projectData as Project[];
+const airlineEditorial = airlineEditorialData as Record<
+  string,
+  { verifiedAt: string; source: string; routeRestrictions: string[]; body: RichBlock[] }
+>;
+// Separate editorial additions survive the upstream travel-data sync.
+export const events: CharityEvent[] = eventData.map((event) => {
+  const editorial = airlineEditorial[event.slug];
+  return editorial
+    ? {
+        ...event,
+        modifiedAt: editorial.verifiedAt,
+        updatedAt: new Intl.DateTimeFormat('nl-NL', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          timeZone: 'UTC',
+        }).format(new Date(`${editorial.verifiedAt}T12:00:00Z`)),
+        body: editorial.body,
+      }
+    : event;
+});
+export const asset = (name: string) => `/assets/paspoot/${name}`;
+export const images = {
+  hero: '/assets/maaistro/hero-grass.jpg',
+  purpose: '/assets/maaistro/photos/measure-lawn.webp',
+  sky: '/assets/maaistro/photos/quiet-garden-background.webp',
+  logo: '/assets/maaistro/logo.svg',
+  footerLogo: '/assets/maaistro/logo.svg',
+};
+export const avatars = [
+  '/assets/maaistro/photos/detail-dew-grass.webp',
+  '/assets/maaistro/photos/detail-planter.webp',
+  '/assets/maaistro/photos/detail-mower-wheel.webp',
+  '/assets/maaistro/photos/detail-lawn-edge.webp',
+];
+export const logos = [{ name: 'Husqvarna' }, { name: 'Segway Navimow' }, { name: 'Mammotion' }];
+
+export const airlineRules = (airlineData as AirlineRule[]).map((rule) => {
+  const editorial = airlineEditorial[rule.slug];
+  return editorial
+    ? {
+        ...rule,
+        checkedAt: editorial.verifiedAt,
+        routeRestrictions: [...rule.routeRestrictions, ...editorial.routeRestrictions],
+      }
+    : rule;
+});
+export const adviceGuides = adviceData as AdviceGuide[];
+
+export const purposes = [
+  {
+    title: 'Je gazon',
+    icon: 'home',
+    text: 'Hoeveel vierkante meter gras wil je laten maaien?',
+    image: '/assets/maaistro/photos/measure-lawn.webp',
+  },
+  {
+    title: 'De grenzen',
+    icon: 'education',
+    text: 'Liever zonder draad, of vind je een kabel aanleggen prima?',
+    image: '/assets/maaistro/photos/boundary-installation.webp',
+  },
+  {
+    title: 'Het terrein',
+    icon: 'water',
+    text: 'Vlak gazon of hoogteverschillen? Kijk ook naar de steilste stukken.',
+    image: '/assets/maaistro/photos/sloping-terrain.webp',
+  },
+  {
+    title: 'Jouw keuze',
+    icon: 'check',
+    text: 'Ontdek welke eigenschappen voor jouw tuin het verschil maken.',
+    image: '/assets/maaistro/photos/weekend-patio.webp',
+  },
+];
+export const missions = [
+  {
+    title: 'Begin bij je tuin',
+    description:
+      'Kijk hoeveel gras je hebt, waar de smalle doorgangen zitten en hoe het terrein loopt. Een mooi lijstje functies zegt pas iets als de maaier ook bij jouw gazon past.',
+    note: 'Stap 1 · jouw gazon',
+    image: '/assets/maaistro/photos/garden-plan.webp',
+    color: 'sand',
+  },
+  {
+    title: 'Ontdek wat voor jou telt',
+    description:
+      'Wel of geen begrenzingsdraad? Eén grasveld of meerdere zones? We helpen je de verschillen begrijpen, zodat je gericht kunt vergelijken.',
+    note: 'Stap 2 · jouw wensen',
+    image: '/assets/maaistro/photos/narrow-passage.webp',
+    color: 'lemon',
+  },
+  {
+    title: 'Kies met een helder verhaal',
+    description:
+      'Lees de afwegingen en controleer de specificaties van het model dat je op het oog hebt. Neem installatie, accessoires en service mee in je keuze.',
+    note: 'Stap 3 · jouw maaier',
+    image: '/assets/maaistro/photos/owner-inspection.webp',
+    color: 'blue',
+  },
+];
+export const impacts = [
+  {
+    text: 'Jouw tuin staat voorop',
+    image: '/assets/maaistro/photos/family-garden.webp',
+    color: 'lemon',
+  },
+  {
+    text: 'Heldere afwegingen',
+    image: '/assets/maaistro/photos/comparison-notes.webp',
+    color: 'sand',
+  },
+  {
+    text: 'Eerlijk over samenwerkingen',
+    image: '/assets/maaistro/photos/garden-consultation.webp',
+    color: 'blue',
+  },
+];
+export const faqs = [
+  [
+    'Welke robotmaaier is de beste?',
+    'De beste robotmaaier is de maaier die bij jouw tuin past. Begin bij het grasoppervlak, de indeling en eventuele hellingen. Vergelijk daarna navigatie, installatie en service. Meer functies maken een model niet automatisch geschikter voor jouw gazon.',
+  ],
+  [
+    'Is een robotmaaier zonder draad altijd handiger?',
+    'Je hoeft geen begrenzingsdraad rond je gazon aan te leggen. Daar staat tegenover dat de navigatie en installatie bij je tuin moeten passen. Kijk bij satellietgestuurde modellen naar ontvangst, bomen en bebouwing. Controleer de eisen van het specifieke model.',
+  ],
+  [
+    'Is een robotmaaier met GPS altijd draadloos?',
+    'Nee. GPS kan ook een functie hebben voor positiebepaling of diefstalbeveiliging. Controleer expliciet of de maaier met virtuele grenzen werkt en of je daarvoor extra hardware of een verbinding nodig hebt.',
+  ],
+  [
+    'Wat levert de keuzehulp op?',
+    'Je krijgt een eerste tuinadvies en kunt direct door naar modellen, gefilterd op je grasoppervlak, draadvoorkeur en eventueel een gemeten helling. De indeling en omgeving leveren extra aandachtspunten op. Bij ieder resultaat lees je waarom je het kunt vergelijken en wat je nog moet controleren. De selectie is beperkt en vormt geen garantie dat een model geschikt is voor jouw tuin.',
+  ],
+  [
+    'Kan een robotmaaier meerdere grasvelden maaien?',
+    'Dat hangt af van het model en de verbinding tussen de grasvelden. Controleer of de maaier door de doorgangen kan en of je aparte zones of kaarten nodig hebt. Bij volledig gescheiden gazons kan verplaatsen of een extra laadstation nodig zijn.',
+  ],
+  [
+    'Moet ik de graskanten nog zelf bijwerken?',
+    'Soms wel. Een maaier kan niet bij iedere muur, border of verhoogde rand met zijn messen komen. Kijk hoe het model de randen maait en welke afstand de handleiding voorschrijft. Een vlakke overgang naar bestrating kan een ander resultaat geven dan een opstaande rand.',
+  ],
+] as const;
+export const navigation = [
+  { title: 'Keuzehulp', href: '/#volunteer-apply' },
+  { title: 'Robotmaaiers', href: '/robotmaaiers' },
+  { title: 'Koopgidsen', href: '/advies' },
+  { title: 'Over Maaistro', href: '/over-maaistro' },
+];

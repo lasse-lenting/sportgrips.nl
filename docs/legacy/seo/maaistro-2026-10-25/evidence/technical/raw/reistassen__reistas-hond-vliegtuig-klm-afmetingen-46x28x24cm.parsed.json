@@ -1,0 +1,333 @@
+{
+  "title": "Flypet reistas 46 × 28 × 24 cm | Maaistro",
+  "meta_description": "Zachte, opvouwbare vliegtuigreistas met ventilatie voor een kleine hond of kat. Buitenmaten 46 × 28 × 24 cm, 1,1 kg leeggewicht.",
+  "meta_robots": null,
+  "x_robots_tag": null,
+  "canonical": "http://localhost:3000/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+  "lang": "nl",
+  "charset": "utf-8",
+  "viewport": "width=device-width, initial-scale=1",
+  "favicon": "http://localhost:3000/favicon.ico",
+  "h1": [
+    "Flypet reistas 46 × 28 × 24 cm"
+  ],
+  "h2": [
+    "Past bij deze luchtvaartmaatschappijen",
+    "Past deze tas bij je vlucht?",
+    "Vind jouw maaier",
+    "Op de homepage",
+    "Goed om te weten"
+  ],
+  "h3": [
+    "Productgegevens",
+    "Controleer voor vertrek",
+    "Controleer jouw combinatie stap voor stap."
+  ],
+  "h4": [],
+  "h5": [],
+  "h6": [],
+  "images": [
+    {
+      "src": "http://localhost:3000/assets/maaistro/logo.svg",
+      "alt": "",
+      "width": "140",
+      "height": "34",
+      "is_responsive_fill": false,
+      "loading": null
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569",
+      "alt": "Flypet reistas 46 × 28 × 24 cm",
+      "width": null,
+      "height": null,
+      "is_responsive_fill": false,
+      "loading": null
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569",
+      "alt": "Flypet reistas 46 × 28 × 24 cm",
+      "width": null,
+      "height": null,
+      "is_responsive_fill": false,
+      "loading": null
+    },
+    {
+      "src": "http://localhost:3000/assets/maaistro/logo.svg",
+      "alt": "",
+      "width": "658",
+      "height": "150",
+      "is_responsive_fill": false,
+      "loading": null
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "http://localhost:3000/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "Keuzehulp",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#in-progress",
+        "text": "Robotmaaiers",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/advies",
+        "text": "Koopgidsen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Over Maaistro",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "Vind jouw maaier",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/reistassen",
+        "text": "Reistassen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/luchtvaartmaatschappijen/klm",
+        "text": "CabineregelsKLM",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/",
+        "text": "Homepage",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#volunteer-apply",
+        "text": "De keuzehulp",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#in-progress",
+        "text": "Jouw type tuin",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/advies",
+        "text": "Koopgidsen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Over Maaistro",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#our-purpose",
+        "text": "Wat vul je in?",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#goals",
+        "text": "Zo werkt het",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/#faq",
+        "text": "Veelgestelde vragen",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Onze werkwijze en het verdienmodel",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/privacy",
+        "text": "Privacy",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:3000/over-maaistro",
+        "text": "Eerlijk over ons advies",
+        "rel": []
+      }
+    ],
+    "external": []
+  },
+  "pagination": {
+    "prev": null,
+    "next": null
+  },
+  "resource_hints": {
+    "preload": [
+      {
+        "href": "http://localhost:3000/assets/maaistro/logo.svg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnect": [],
+    "dns-prefetch": [],
+    "prefetch": [],
+    "prerender": []
+  },
+  "schema": [
+    {
+      "@type": "BreadcrumbList",
+      "@types": [
+        "BreadcrumbList"
+      ],
+      "@id": null,
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": false,
+      "raw": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3000/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Reistassen",
+            "item": "http://localhost:3000/reistassen"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Flypet reistas 46 × 28 × 24 cm",
+            "item": "http://localhost:3000/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Unknown",
+      "@types": [
+        "Unknown"
+      ],
+      "@id": null,
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": false,
+      "from_graph": false,
+      "raw": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "http://localhost:3000/#organization",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://localhost:3000/#website",
+            "name": "Maaistro",
+            "url": "http://localhost:3000/",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "http://localhost:3000/#organization"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@types": [
+        "Organization"
+      ],
+      "@id": "http://localhost:3000/#organization",
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": true,
+      "raw": {
+        "@type": "Organization",
+        "@id": "http://localhost:3000/#organization",
+        "name": "Maaistro",
+        "url": "http://localhost:3000/",
+        "logo": "http://localhost:3000/assets/maaistro/logo.svg"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@types": [
+        "WebSite"
+      ],
+      "@id": "http://localhost:3000/#website",
+      "@context": "https://schema.org",
+      "status": "active",
+      "note": "",
+      "has_context": true,
+      "has_type": true,
+      "from_graph": true,
+      "raw": {
+        "@type": "WebSite",
+        "@id": "http://localhost:3000/#website",
+        "name": "Maaistro",
+        "url": "http://localhost:3000/",
+        "inLanguage": "nl-NL",
+        "publisher": {
+          "@id": "http://localhost:3000/#organization"
+        }
+      }
+    }
+  ],
+  "open_graph": {
+    "og:title": "Flypet reistas 46 × 28 × 24 cm",
+    "og:description": "Zachte, opvouwbare vliegtuigreistas met ventilatie voor een kleine hond of kat. Buitenmaten 46 × 28 × 24 cm, 1,1 kg leeggewicht.",
+    "og:url": "http://localhost:3000/reistassen/reistas-hond-vliegtuig-klm-afmetingen-46x28x24cm",
+    "og:site_name": "Maaistro",
+    "og:locale": "nl_NL",
+    "og:image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569",
+    "og:image:alt": "Flypet reistas 46 × 28 × 24 cm",
+    "og:type": "website"
+  },
+  "twitter_card": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Flypet reistas 46 × 28 × 24 cm",
+    "twitter:description": "Zachte, opvouwbare vliegtuigreistas met ventilatie voor een kleine hond of kat. Buitenmaten 46 × 28 × 24 cm, 1,1 kg leeggewicht.",
+    "twitter:image": "https://cdn.shopify.com/s/files/1/0880/8874/0178/files/Reistas-hond-vliegtuig-KLM-46x28x24cm-photo-1-approved-two_867f0101-99f1-42bc-857a-03cfd015f820.jpg?v=1740508569"
+  },
+  "word_count": 158,
+  "hreflang": []
+}

@@ -1,0 +1,24 @@
+{
+  "word_count": 270,
+  "sentence_count": 26,
+  "paragraph_count": 8,
+  "syllable_count": 489,
+  "avg_sentence_length": 10.4,
+  "avg_paragraph_length": 3.2,
+  "avg_syllables_per_word": 1.81,
+  "flesch_reading_ease": 43.1,
+  "flesch_kincaid_grade": 9.8,
+  "reading_level": "Difficult (9th-12th grade)",
+  "estimated_reading_time_min": 1.4,
+  "complex_words": 58,
+  "complex_word_pct": 21.5,
+  "issues": [
+    "\u2139\ufe0f Content readability is moderate (Flesch: 43.1) \u2014 suitable for educated audience",
+    "\u26a0\ufe0f 21.5% complex words (3+ syllables) \u2014 consider simplifying",
+    "\u26a0\ufe0f Thin content (270 words) \u2014 may rank poorly"
+  ],
+  "recommendations": [],
+  "sentence_rewrites": []
+}
+/Users/lasselenting/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
