@@ -1,0 +1,79 @@
+[
+  {
+    "key": "hero",
+    "path": "/assets/sportgrips/photos/hero-v1.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 343372
+  },
+  {
+    "key": "golf",
+    "path": "/assets/sportgrips/photos/golf-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 78978
+  },
+  {
+    "key": "tennis",
+    "path": "/assets/sportgrips/photos/tennis-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 224376
+  },
+  {
+    "key": "padel",
+    "path": "/assets/sportgrips/photos/padel-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139588
+  },
+  {
+    "key": "badminton",
+    "path": "/assets/sportgrips/photos/badminton-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 212836
+  },
+  {
+    "key": "squash",
+    "path": "/assets/sportgrips/photos/squash-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 143778
+  },
+  {
+    "key": "hockey",
+    "path": "/assets/sportgrips/photos/hockey-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 372424
+  },
+  {
+    "key": "hero-mobile",
+    "path": "/assets/sportgrips/photos/hero-mobile-v1.webp",
+    "width": 941,
+    "height": 1672,
+    "bytes": 172568
+  },
+  {
+    "key": "rewrap",
+    "path": "/assets/sportgrips/photos/rewrap-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 156892
+  },
+  {
+    "key": "textures",
+    "path": "/assets/sportgrips/photos/textures-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 232758
+  },
+  {
+    "key": "court-evening",
+    "path": "/assets/sportgrips/photos/court-evening-v1.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 110058
+  }
+]

@@ -3,9 +3,9 @@ import { Container, SectionHeader } from '@/components/ui';
 import { JsonLd } from '@/components/json-ld';
 import { pageMetadata, breadcrumbJsonLd } from '@/lib/seo';
 export const metadata = pageMetadata({
-  title: 'Over SPORTGRIPS: werkwijze en bronnen',
+  title: 'Over Sportgrips: werkwijze en bronnen',
   description:
-    'Lees wat SPORTGRIPS biedt, hoe de gripuitleg wordt onderbouwd en hoe je contact opneemt bij een vraag of correctie.',
+    'Lees wat Sportgrips biedt, hoe de gripuitleg wordt onderbouwd en hoe je contact opneemt bij een vraag of correctie.',
   path: '/over-sportgrips/',
 });
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <Container>
           <SectionHeader
             as="h1"
-            eyebrow="Over SPORTGRIPS"
+            eyebrow="Over Sportgrips"
             title="Goed kiezen begint bij begrijpen."
             description="Uitleg over grips voor clubs, rackets en sticks. Begin bij je sport en ontdek wat voor jou telt."
           />
@@ -24,9 +24,9 @@ export default function About() {
       <section className="listing-body">
         <Container className="max-w-[850px]">
           <div className="rich-content">
-            <h2>Wat je op SPORTGRIPS vindt</h2>
+            <h2>Wat je op Sportgrips vindt</h2>
             <p>
-              SPORTGRIPS biedt keuzeuitleg over golf-, tennis-, padel-, badminton-, squash- en
+              Sportgrips biedt keuzeuitleg over golf-, tennis-, padel-, badminton-, squash- en
               hockeygrips. De <Link href="/grips/">sportcategorieën</Link> helpen je op weg. De{' '}
               <Link href="/keuzehulp/">keuzehulp</Link> geeft op basis van vijf antwoorden een route
               naar passende uitleg.
@@ -41,8 +41,9 @@ export default function About() {
             <h2>Onderzoek en praktijktests</h2>
             <p>
               De huidige uitleg is gebaseerd op documentonderzoek. Er zijn geen eigen vergelijkende
-              praktijktests, klantreviews of testscores gepubliceerd. De bestaande illustraties en
-              achtergronden zijn geen foto’s van geteste Sportgrips-producten.
+              praktijktests, klantreviews of testscores gepubliceerd. De fotorealistische
+              sportbeelden zijn met AI gemaakte illustraties. Ze zijn geen foto’s van geteste
+              producten of eigen praktijksessies, en zijn niet werkelijk met een iPhone gemaakt.
             </p>
             <h2>Winkels en samenwerkingen</h2>
             <p>
@@ -63,7 +64,7 @@ export default function About() {
       <JsonLd
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'Over SPORTGRIPS', path: '/over-sportgrips/' },
+          { name: 'Over Sportgrips', path: '/over-sportgrips/' },
         ])}
       />
     </>

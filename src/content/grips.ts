@@ -40,4 +40,4 @@ export const collections = [
 export const labelForPath = (path: string) =>
   pageByPath(path)?.title.split(':')[0] ??
   collections.find((p) => p.path === path)?.title ??
-  'SPORTGRIPS';
+  'Sportgrips';

@@ -95,12 +95,12 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
         <div className="pl-[5px] max-lg:flex max-lg:items-center max-lg:justify-between max-lg:p-0">
           <Link
             href="/"
-            aria-label="SPORTGRIPS homepage"
+            aria-label="Sportgrips homepage"
             onClick={closeMenus}
             className="flex h-[38px] items-center"
           >
             <img
-              src="/assets/sportgrips/logo.svg"
+              src="/assets/sportgrips/logo-v2.svg"
               alt=""
               width={140}
               height={34}

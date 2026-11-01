@@ -9,9 +9,9 @@ import {
   VERCEL_ANALYTICS_ENABLED,
 } from '@/lib/analytics';
 export const metadata = pageMetadata({
-  title: 'Privacy en cookies bij SPORTGRIPS',
+  title: 'Privacy en cookies bij Sportgrips',
   description:
-    'Lees hoe de SPORTGRIPS-keuzehulp antwoorden verwerkt, welke cookies worden gebruikt en hoe je contact opneemt over privacy.',
+    'Lees hoe de Sportgrips-keuzehulp antwoorden verwerkt, welke cookies worden gebruikt en hoe je contact opneemt over privacy.',
   path: '/privacy/',
 });
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           as="h1"
           eyebrow="Privacy"
           title="Jouw gripadvies, zonder account."
-          description="Zo gaat SPORTGRIPS om met de informatie die je invult."
+          description="Zo gaat Sportgrips om met de informatie die je invult."
         />
         <div className="rich-content mt-10 max-w-[720px]">
           <h2>Contact over privacy</h2>

@@ -33,11 +33,11 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-[70px] max-sm:gap-[50px]">
           <Link
             href="/"
-            aria-label="SPORTGRIPS homepage"
+            aria-label="Sportgrips homepage"
             className="inline-block w-[min(100%,620px)] max-sm:w-[min(100%,340px)]"
           >
             <img
-              src="/assets/sportgrips/logo.svg"
+              src="/assets/sportgrips/logo-v2.svg"
               alt=""
               width={658}
               height={150}
@@ -59,7 +59,7 @@ export function Footer() {
                 Gripkennis
               </Link>
               <Link className={footerLink} href="/over-sportgrips/">
-                Over SPORTGRIPS
+                Over Sportgrips
               </Link>
             </FooterColumn>
             <FooterColumn title="Op de homepage">
@@ -78,7 +78,7 @@ export function Footer() {
               className="max-w-[360px] min-w-0 max-sm:col-span-full max-sm:max-w-full"
             >
               <p>
-                SPORTGRIPS helpt je grips kiezen op sport, dikte en gevoel. Lees de uitleg en
+                Sportgrips helpt je grips kiezen op sport, dikte en gevoel. Lees de uitleg en
                 vergelijk de eigenschappen die voor jou tellen.
               </p>
               <Link className={footerLink} href="/over-sportgrips/">
@@ -96,7 +96,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-20 flex justify-between border-t border-white/14 pt-10 text-[14px] leading-[1.3] font-medium max-lg:mt-15 max-sm:mt-10 max-sm:flex-col max-sm:gap-5 max-sm:pt-7.5 max-sm:text-[12px]">
-          <p>© {new Date().getFullYear()} SPORTGRIPS. Alle rechten voorbehouden.</p>
+          <p>© {new Date().getFullYear()} Sportgrips. Alle rechten voorbehouden.</p>
           <Link className="text-white/65 hover:text-white" href="/over-sportgrips/">
             Eerlijk over ons advies
           </Link>

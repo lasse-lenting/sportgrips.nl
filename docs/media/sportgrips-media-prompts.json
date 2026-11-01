@@ -1,0 +1,90 @@
+[
+  {
+    "key": "hero",
+    "prompt": "Use case: photorealistic-natural. Asset type: high-end Dutch sport-grip advice website hero background, landscape 16:9, highest resolution. Create a bold, believable premium sports editorial photograph with the crisp natural texture and restrained computational HDR of an excellent iPhone 17 Pro Max photograph, NOT a 3D render. Overhead-to-low oblique view of a deep forest-green outdoor sports court at dusk. At the FAR LEFT edge a tightly framed black tennis racket handle wrapped in electric lime overgrip points diagonally into frame; at the FAR RIGHT edge a white-wrapped padel racket handle and textured dark golf grip enter frame. The grip textures and clean wrap overlaps are the hero, small realistic scuffs and pores, shafts continue naturally outside the frame. A white court line cuts diagonally along the lower edge; one tennis ball near the lower-right corner. A punchy shaft of golden side light grazes the raised grip texture, deep believable shadows. Leave the CENTRAL 55% of the entire image intentionally calm, clean, dark forest green with minimal detail, specifically for large white centered website text from 25% to 65% height and a lime button beneath. Subjects concentrated near outer margins and lower edge; center must work when cropped to a narrow portrait mobile screen. No text, no letters, no logos, no brand marks, no collage or split screen, no people, no garden or lawnmower, no impossible floating items. Photoreal physical contact and perspective, sophisticated sports campaign feel but natural photograph.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-6ef99cd1-1435-46c8-917a-8d1a83fea503.png",
+    "output": "public/assets/sportgrips/photos/hero-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "golf",
+    "prompt": "Use case: photorealistic-natural. Create one high-resolution landscape 3:2 editorial sports photograph, as crisp, natural and detailed as an excellent iPhone 17 Pro Max photo. Close view of an adult golfer's two anatomically correct hands naturally holding a golf club at address, with the textured black rubber grip clearly visible and central in frame. Golf glove on the lead hand, subtle lime cuff detail on simple dark sports clothing. Realistic dark rubber stippling, shaft direction coherent, soft golden morning light, quiet out-of-focus practice range in background. Tight composition around grip and hands, no prominent face, useful in a portrait crop as well. Premium understated sports photography, realistic skin and glove weave, no beauty smoothing, no CGI, no brand names, no readable lettering, no logos, no watermarks. Generic illustrative equipment, not an advertisement for a specific model.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-13d4a8f5-ce22-4d2f-a893-691eb7386448.png",
+    "output": "public/assets/sportgrips/photos/golf-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "tennis",
+    "prompt": "Use case: photorealistic-natural. One premium landscape 3:2 sports editorial photograph with the realistic crispness of an excellent iPhone 17 Pro Max photo. A single unbranded tennis racket resting diagonally on a subtly weathered dark-green hard court next to a used tennis ball. Camera near the racket HANDLE, the electric lime overgrip and its neat overlapping winding are sharply resolved in the foreground at the center. The racket neck and believable stringed head extend into the upper background, coherent complete racket geometry, soft natural depth of field but not fake miniature bokeh. Warm late afternoon sun from the side produces beautiful tactile shadows. Racket handle central so portrait cropping preserves it. Photographic surface imperfections, crisp woven overgrip, rich natural colors, no text, no logos, no watermark, no people, not a product render.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-66fbcbab-486a-4768-8e59-1f77b9fdf25e.png",
+    "output": "public/assets/sportgrips/photos/tennis-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "padel",
+    "prompt": "Use case: photorealistic-natural. One high-resolution landscape 3:2 premium editorial sports photograph, realistic natural iPhone 17 Pro Max image quality. Close-up of an unbranded adult padel player's single hand loosely holding the HANDLE of a black perforated padel racket after a game, white overgrip winding in sharp tactile focus in the CENTER of the composition. The lower racket face extends into frame above with physically accurate holes in a solid face, NO strings. A thin black wrist cord naturally secured around the wrist, sensible anatomy with exactly five fingers on the hand. Simple charcoal sportswear, warmly lit blue-green padel court and fence softly behind, natural golden-hour light, authentic skin texture, tiny wear in white grip, restrained shadows. Croppable portrait around the centered grip. No words, no logos, no watermark, no 3D render, no exaggerated sweat or beauty smoothing.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-eb69d278-60d6-42a0-b806-405610315a81.png",
+    "output": "public/assets/sportgrips/photos/padel-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "badminton",
+    "prompt": "Use case: photorealistic-natural. One high-resolution landscape 3:2 premium natural editorial sports photo as if expertly captured on an iPhone 17 Pro Max. A real-looking badminton racket lies diagonally on a dark green indoor badminton court next to a single feather shuttlecock. The white TOWEL GRIP on the slender racket handle is in tactile sharp focus near the CENTER, cotton terry loops clearly visible, naturally wound around the narrow handle, end cap black and unbranded. Slim shaft leads to a light oval stringed badminton head further in background, coherent one-piece racket geometry. Soft window daylight and subtle sports hall lighting, realistic floor scuffs, quiet rich colors, no logos, no text, no watermark, no people, not CGI. Both wide and centered portrait crop should preserve the grip and shuttlecock.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-92bb8ead-73a6-444f-bf07-4a14e3a1436a.png",
+    "output": "public/assets/sportgrips/photos/badminton-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "squash",
+    "prompt": "Use case: photorealistic-natural. Create one high-resolution landscape 3:2 sports editorial photograph with premium realistic smartphone detail like an excellent iPhone 17 Pro Max capture. A single slender black SQUASH racket with an elongated teardrop stringed head lies near a matte-black squash ball on a light maple squash court floor. Camera very close to the charcoal gray wrapped handle, centered handle with tactile winding and subtle use marks sharply focused, elongated racket head extending towards upper background. The front-wall red line is only softly visible far behind. Realistic wood grain, natural angled daylight, clean documentary sports mood, believable equipment proportions, no words, no logos, no watermark, no people, no render, no collage. Grip must remain visible in a centered portrait crop.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-2409e204-d4d6-4e6e-939a-eb646c26989e.png",
+    "output": "public/assets/sportgrips/photos/squash-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "hockey",
+    "prompt": "Use case: photorealistic-natural. Create one high-resolution landscape 3:2 premium editorial field-hockey photograph with crisp, natural iPhone 17 Pro Max-style photographic realism. A single modern dark carbon-composite FIELD HOCKEY stick lies diagonally on a blue-green artificial field hockey pitch beside a small white dimpled hockey ball. Close low viewpoint prioritizing the black and pale lime wrapped stick HANDLE in the CENTER foreground, visible material texture and overlapping wrap. Shaft leads away to a plausible short curved field-hockey hook in the background, one coherent stick, NO ice-hockey blade. A white field line and soft sunlight make this clearly a sports pitch, not a garden. Realistic fibers, a few water droplets on the turf, soft strong directional light. No lettering, no logos, no watermark, no CGI, no people. Centered grip survives portrait cropping.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-4ce219fc-eb6e-4ee4-9117-a0105c1cb89b.png",
+    "output": "public/assets/sportgrips/photos/hockey-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "hero-mobile",
+    "prompt": "Use case: photorealistic-natural. One bold premium sports editorial photograph, PORTRAIT 9:16 composition for a mobile sport-grips website hero, highest resolution. Real natural physical detail like an excellent iPhone 17 Pro Max photo, not a render. Deep dark forest-green hard sports court at warm dusk. An unbranded tennis racket with electric lime overgrip enters diagonally from the LOWER LEFT, handle centered at 20% width and 78% height; a black perforated padel racket with a white overgrip is partially visible near the LOWER RIGHT edge; one tennis ball near bottom. All gear rests physically on the court. Strong beautiful low golden side light highlights grip texture, authentic scuffs and tiny pores. Keep the entire central region from 15% to 68% HEIGHT dark, calm and nearly empty for a large centered white heading and lime call-to-action button. This image is a background, do not include text, lettering, logos, watermarks or UI. Upper 60% should remain dark green with very little detail. Subjects visible along lower corners so the center stays readable. Crisp natural colors, tactile details, believable equipment geometry, no garden, no lawnmower, no collage.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-edd6e93f-8acb-42c2-9a16-4dd73a1b175c.png",
+    "output": "public/assets/sportgrips/photos/hero-mobile-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "rewrap",
+    "prompt": "Use case: photorealistic-natural. One landscape 3:2 high-resolution sports editorial photograph, premium but believable iPhone 17 Pro Max photographic detail. Close-up of exactly TWO anatomically correct adult hands carefully winding a fresh white overgrip around a black tennis racket handle on a warm light wooden bench beside a sports court. One hand steadies the handle; the other pulls the unwound strip with gentle realistic tension, showing the orderly overlapping spiral already completed. The racket is one coherent physical object and its shaft continues away out of frame. Center the wrapped handle, crop away wrists before any faces. One small roll of finishing tape lies on the bench. Natural overcast daylight, realistic skin pores, fingers and creases, white absorbent material has fine texture, clean calm educational composition without implying a specific brand or tested model. No text, no logos, no numbers, no watermarks, no fake extra fingers, no CGI, no staged medical imagery.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-76999b23-9578-4939-8b97-8445e07de971.png",
+    "output": "public/assets/sportgrips/photos/rewrap-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "textures",
+    "prompt": "Use case: photorealistic-natural. One high-resolution landscape 3:2 macro editorial photo of three different generic SPORT GRIP textures on real complete equipment handles lying parallel diagonally on a matte charcoal sports bench: a black stippled rubber golf-club grip, a white cotton towel badminton grip, and an electric lime finely perforated racket overgrip. Concentrate each tactile handle near the center, with the shafts naturally continuing out of frame; correct thick golf grip and thinner badminton handle proportions. Strong raking natural window daylight reveals actual pores, cotton loops and overlapping wrap, tiny real use marks. Rich crisp premium smartphone photograph like an excellent iPhone 17 Pro Max image. An interesting image about touch and material differences, NOT a floating product render. No text, no logos, no markings, no watermark, no collage, no diagram, no hands.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-e1ba8fe0-5a02-44f5-92e1-00a9a168499b.png",
+    "output": "public/assets/sportgrips/photos/textures-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  },
+  {
+    "key": "court-evening",
+    "prompt": "Use case: photorealistic-natural. One high-resolution landscape 16:9 quiet atmospheric editorial sports photograph as if expertly shot on iPhone 17 Pro Max. A pristine yet believable empty dark forest-green outdoor racket court at blue hour, white court lines near bottom, subtle court fence receding in background, warm floodlights far at the outer edges. No people. A lime-wrapped racket handle rests on a bench very near the FAR RIGHT foreground, mostly cropped out, small enough that this stays a quiet sports environment image rather than a product shot. Low natural light, dark rich green and charcoal tones, soft warm light at frame edges, fine real asphalt grain, no plastic surfaces or surreal smoothness. Left and central 70% must remain dark and very low detail for white website copy and a form overlay. No text, no logos, no watermarks, no garden, no rendering, no collage.",
+    "source": "/Users/lasselenting/.codex/generated_images/01a197b4-8751-7f93-b185-6775cc25b51b/exec-735c8a90-2653-4a20-8a6e-b4d7a17b4ba5.png",
+    "output": "public/assets/sportgrips/photos/court-evening-v1.webp",
+    "method": "built-in image_gen",
+    "nature": "AI-generated photorealistic illustration; not an actual iPhone photograph or product test"
+  }
+]

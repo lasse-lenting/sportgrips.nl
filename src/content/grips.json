@@ -6,8 +6,8 @@
     "summary": "Vergelijk de eigenschappen van golfgrips. Lees waar je op let bij materiaal, gripmaat, puttergrips en vervangen.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/robot-charging.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Begin bij het gevoel in je handen",
@@ -24,7 +24,7 @@
       {
         "heading": "Welke golfgrip is de beste?",
         "paragraphs": [
-          "Er is geen onderbouwde winnaar voor iedere golfer. Zet maat, textuur en je eigen voorkeur naast elkaar. SPORTGRIPS geeft hier keuzeuitleg; er zijn geen eigen praktijktests of scores waarop een ranglijst kan worden gebaseerd."
+          "Er is geen onderbouwde winnaar voor iedere golfer. Zet maat, textuur en je eigen voorkeur naast elkaar. Sportgrips geeft hier keuzeuitleg; er zijn geen eigen praktijktests of scores waarop een ranglijst kan worden gebaseerd."
         ]
       },
       {
@@ -54,8 +54,8 @@
     "summary": "Kies een tennisgrip op gevoel, dikte en de laag die je wilt vervangen. Vind uitleg over gripmaat, basisgrips en onderhoud.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/compact-garden.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Welke laag wil je veranderen?",
@@ -97,8 +97,8 @@
     "summary": "Lees hoe je een padelgrip kiest op dikte, oppervlak en vocht. Basisgrip en padel overgrip staan samen in één overzicht.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/large-garden.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Padelgrip of padel overgrip?",
@@ -139,8 +139,8 @@
     "summary": "Vergelijk de opbouw van een badmintongrip, van een dunne overgrip tot badstof. Lees ook waar je bij vervangen op let.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/wireless-open-lawn.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/badminton-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Dunne laag of een andere ondergrond?",
@@ -151,7 +151,7 @@
       {
         "heading": "Badstof en synthetische grips",
         "paragraphs": [
-          "Een towel grip heeft een textielachtig oppervlak. Synthetische varianten kunnen juist gladder of kleveriger aanvoelen. Yonex voert bijvoorbeeld towel grips; dit is een voorbeeld van een type, geen door SPORTGRIPS getest product."
+          "Een towel grip heeft een textielachtig oppervlak. Synthetische varianten kunnen juist gladder of kleveriger aanvoelen. Yonex voert bijvoorbeeld towel grips; dit is een voorbeeld van een type, geen door Sportgrips getest product."
         ]
       },
       {
@@ -177,8 +177,8 @@
     "summary": "Lees waar je bij een squashgrip op let: vervangende grip, buitenlaag, dikte, oppervlak en een gelijkmatige afwerking.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/urban-courtyard.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/squash-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Kijk naar de bestaande opbouw",
@@ -221,8 +221,8 @@
     "summary": "Kies een hockeygrip met aandacht voor de opbouw, dikte en het contactoppervlak. Lees over vervangen en verschillende buitenlagen.",
     "kind": "hub",
     "parent": null,
-    "image": "/assets/maaistro/photos/connected-lawn-zones.webp",
-    "tags": ["SPORTGRIPS", "Keuzeadvies"],
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Keuzeadvies"],
     "sections": [
       {
         "heading": "Controleer de grip op je stick",
@@ -263,8 +263,8 @@
     "summary": "Bepaal een eerste golfgripmaat met je handlengte en vergelijk daarna het gevoel op een club. Lees hoe maatnamen en montage samenhangen.",
     "kind": "guide",
     "parent": "/golfgrips/",
-    "image": "/assets/maaistro/photos/robot-charging.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Meet als startpunt",
@@ -307,8 +307,8 @@
     "summary": "Lees waar je bij een puttergrip op let. Vergelijk vorm, dikte en de aansluiting op je putter zonder onbewezen ranglijst.",
     "kind": "guide",
     "parent": "/golfgrips/",
-    "image": "/assets/maaistro/photos/compact-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Begin bij de vorm",
@@ -349,8 +349,8 @@
     "summary": "Bereid het vervangen van golfgrips voor. Lees over benodigdheden, montage, puttergrips en het vergelijken van montagekosten.",
     "kind": "guide",
     "parent": "/golfgrips/",
-    "image": "/assets/maaistro/photos/large-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Wanneer is een nieuwe grip nodig?",
@@ -373,7 +373,7 @@
       {
         "heading": "Kosten van zelf of laten vervangen",
         "paragraphs": [
-          "Vergelijk gripprijs × aantal clubs, tape, hulpmiddelen en montage. Vraag bij een winkel of de prijs inclusief grip en arbeid is. SPORTGRIPS beschikt niet over geverifieerde actuele montagetarieven en noemt daarom geen richtprijs."
+          "Vergelijk gripprijs × aantal clubs, tape, hulpmiddelen en montage. Vraag bij een winkel of de prijs inclusief grip en arbeid is. Sportgrips beschikt niet over geverifieerde actuele montagetarieven en noemt daarom geen richtprijs."
         ]
       },
       {
@@ -403,8 +403,8 @@
     "summary": "Vergelijk tennisovergrips op gevoel, vochtopname, dikte en gebruik. Lees welke eigenschappen je vóór aankoop kunt controleren.",
     "kind": "guide",
     "parent": "/tennisgrips/",
-    "image": "/assets/maaistro/photos/wireless-open-lawn.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Droog gevoel of kleverig contact",
@@ -466,8 +466,8 @@
     "summary": "Vergelijk een vervangende tennisgrip op dikte, oppervlak en gevoel. Lees hoe de basisgrip samenwerkt met de buitenlaag.",
     "kind": "guide",
     "parent": "/tennisgrips/",
-    "image": "/assets/maaistro/photos/urban-courtyard.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Vervang de juiste laag",
@@ -508,8 +508,8 @@
     "summary": "Bekijk de tennisgripmaten L0 tot en met L5. Meet je hand, pas het racket en neem de dikte van een eventuele overgrip mee.",
     "kind": "guide",
     "parent": "/tennisgrips/",
-    "image": "/assets/maaistro/photos/connected-lawn-zones.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Kijk op de einddop",
@@ -556,8 +556,8 @@
     "summary": "Lees hoe je het vervangen van een tennisgrip voorbereidt, de juiste laag vernieuwt en de grip netjes afwerkt.",
     "kind": "guide",
     "parent": "/tennisgrips/",
-    "image": "/assets/maaistro/photos/robot-charging.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/rewrap-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Voor je begint",
@@ -600,8 +600,8 @@
     "summary": "Lees hoe je het vervangen van een padelgrip voorbereidt, de juiste laag vernieuwt en de grip netjes afwerkt.",
     "kind": "guide",
     "parent": "/padelgrips/",
-    "image": "/assets/maaistro/photos/compact-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Voor je begint",
@@ -644,8 +644,8 @@
     "summary": "Lees hoe je het vervangen van een badmintongrip voorbereidt, de juiste laag vernieuwt en de grip netjes afwerkt.",
     "kind": "guide",
     "parent": "/badmintongrips/",
-    "image": "/assets/maaistro/photos/large-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/badminton-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Voor je begint",
@@ -688,8 +688,8 @@
     "summary": "Lees hoe je het vervangen van een hockeygrip voorbereidt, de juiste laag vernieuwt en de grip netjes afwerkt.",
     "kind": "guide",
     "parent": "/hockeygrips/",
-    "image": "/assets/maaistro/photos/wireless-open-lawn.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Voor je begint",
@@ -732,8 +732,8 @@
     "summary": "Lees wat je bij een chamois hockeygrip controleert: laagopbouw, afmetingen, gebruiksaanwijzing en onderhoud.",
     "kind": "guide",
     "parent": "/hockeygrips/",
-    "image": "/assets/maaistro/photos/urban-courtyard.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Een buitenlaag voor je stick",
@@ -744,7 +744,7 @@
       {
         "heading": "Controleer de productinstructie",
         "paragraphs": [
-          "Zoek de juiste lengte, de voorgeschreven onderlaag en de aanwijzingen voor gebruik en onderhoud op. Behandel niet ieder product met dezelfde materiaalnaam als identiek. SPORTGRIPS heeft geen vergelijkende slijtagetest uitgevoerd."
+          "Zoek de juiste lengte, de voorgeschreven onderlaag en de aanwijzingen voor gebruik en onderhoud op. Behandel niet ieder product met dezelfde materiaalnaam als identiek. Sportgrips heeft geen vergelijkende slijtagetest uitgevoerd."
         ]
       },
       {
@@ -774,8 +774,8 @@
     "summary": "Een basisgrip vormt de onderlaag; een overgrip ligt eroverheen. Lees welke laag je vernieuwt en wat dit met dikte en gevoel doet.",
     "kind": "guide",
     "parent": "/kennis/",
-    "image": "/assets/maaistro/photos/connected-lawn-zones.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/rewrap-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Wat is een basisgrip?",
@@ -812,8 +812,8 @@
     "summary": "Lees hoe je vuil en slijtage uit elkaar houdt bij sportgrips. Onderhoud hangt af van materiaal en de aanwijzingen van de fabrikant.",
     "kind": "guide",
     "parent": "/kennis/",
-    "image": "/assets/maaistro/photos/robot-charging.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/textures-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Bekijk eerst het materiaal",
@@ -856,8 +856,8 @@
     "summary": "Vergelijk vochtopname, contactgevoel en dikte als je handen vochtig worden tijdens het sporten. Vind de juiste vervolgstap per sport.",
     "kind": "guide",
     "parent": "/kennis/",
-    "image": "/assets/maaistro/photos/compact-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/textures-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Absorptie en kleverigheid zijn verschillend",
@@ -898,8 +898,8 @@
     "summary": "Vergelijk de functie van een hockeygrip en buitenlaag. Begin bij de opbouw, het gevoel en de instructies van het concrete product.",
     "kind": "guide",
     "parent": "/vergelijken/",
-    "image": "/assets/maaistro/photos/large-garden.webp",
-    "tags": ["SPORTGRIPS", "Praktische uitleg"],
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
         "heading": "Vergelijk lagen met dezelfde functie",

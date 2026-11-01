@@ -45,11 +45,11 @@ def check(base,production):
   require('noindex' in response_headers.get(base+path,{}).get('X-Robots-Tag',''),f'{path}: noindex HTTP header missing')
   require(p.canonical==['https://sportgrips.nl'+path],f'{path}: canonical {p.canonical}')
   require(p.meta.get('og:url')=='https://sportgrips.nl'+path,f'{path}: OG URL')
-  require(p.meta.get('og:site_name')=='SPORTGRIPS',f'{path}: OG name')
+  require(p.meta.get('og:site_name')=='Sportgrips',f'{path}: OG name')
   require(bool(p.meta.get('description')),f'{path}: description missing')
   require(p.title not in titles,f'{path}: duplicate title');titles.add(p.title)
   require(p.meta.get('description') not in descriptions,f'{path}: duplicate description');descriptions.add(p.meta.get('description'))
-  require('SPORTGRIPS' in p.title,f'{path}: brand missing')
+  require('Sportgrips' in p.title,f'{path}: brand missing')
   require(not re.search(r'maaistro|paspoot|robotmaaier|gazon|tuin', ' '.join(p.text),re.I),f'{path}: legacy visible copy')
   require(bool(p.jsonld),f'{path}: JSON-LD missing')
   for schema in p.jsonld:
@@ -64,7 +64,7 @@ def check(base,production):
   if path in pages and target.fragment:require(unquote(target.fragment) in pages[path].ids,f'{source}: missing anchor {link}')
  for path in ['/does-not-exist/','/robotmaaiers/','/advies/robotmaaier-zonder-draad/','/over-maaistro/','/golfgrips/golf-pride/','/golfgrips/does-not-exist/']:
   status,html=fetch(base+path);require(status==404,f'{path}: expected 404, got {status}')
-  p=Page();p.feed(html);require('noindex' in p.meta.get('robots',''),f'{path}: 404 noindex missing');require('SPORTGRIPS' in ' '.join(p.text),f'{path}: 404 brand missing')
+  p=Page();p.feed(html);require('noindex' in p.meta.get('robots',''),f'{path}: 404 noindex missing');require('Sportgrips' in ' '.join(p.text),f'{path}: 404 brand missing')
  status,xml=fetch(base+'/sitemap.xml');require(status==200,'sitemap HTTP')
  locations=[e.text for e in ElementTree.fromstring(xml).iter() if e.tag.endswith('loc')]
  require(not locations,'noindex sitemap should be empty')

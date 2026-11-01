@@ -13,12 +13,12 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: 'SPORTGRIPS — kies de grip voor jouw sport',
+    title: 'Sportgrips — kies de grip voor jouw sport',
     description:
       'Vind je weg in sportgrips. Begin bij jouw sport, ontdek de verschillen in dikte en gevoel en gebruik de gratis keuzehulp.',
     path: '/',
   }),
-  title: { absolute: 'SPORTGRIPS — kies de grip voor jouw sport' },
+  title: { absolute: 'Sportgrips — kies de grip voor jouw sport' },
 };
 
 export default function Home() {

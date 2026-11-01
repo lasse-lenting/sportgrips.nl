@@ -47,5 +47,5 @@ export const navigation: NavigationItem[] = [
       },
     ],
   },
-  { title: 'Over SPORTGRIPS', href: '/over-sportgrips/' },
+  { title: 'Over Sportgrips', href: '/over-sportgrips/' },
 ];

@@ -1,4 +1,4 @@
-/** Only configure identifiers owned by SPORTGRIPS. All services are disabled by default. */
+/** Only configure identifiers owned by Sportgrips. All services are disabled by default. */
 export const GA_MEASUREMENT_ID = /^G-[A-Z0-9]+$/.test(
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? '',
 )

@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 /*
- * SPORTGRIPS design tokens. Source of truth for colours, fonts, radii, shadows and breakpoints.
+ * Sportgrips design tokens. Source of truth for colours, fonts, radii, shadows and breakpoints.
  * The site is desktop-first: use max-lg: (<1200px), max-md: (<1000px) and max-sm: (<680px).
  */
 @theme {
@@ -2091,7 +2091,7 @@
     }
   }
 
-  /* SPORTGRIPS colours: original geometry and motion unchanged. */
+  /* Sportgrips colours: original geometry and motion unchanged. */
   :root {
     --brand-dark: #052e2a;
     --brand-dark-secondary: #0b493b;
@@ -2582,7 +2582,7 @@
   .volunteer-intro .section-heading h2 {
     color: #fff;
   }
-  .hero-grass {
+  .hero-sport {
     bottom: auto;
     height: 100%;
     filter: brightness(0.92);
@@ -2628,7 +2628,7 @@
     .hero-inner {
       padding: 100px 20px;
     }
-    .hero-grass {
+    .hero-sport {
       height: 100%;
       object-fit: cover;
       object-position: center 62%;
@@ -2832,7 +2832,7 @@
     background: transparent;
     color: var(--color-brand);
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.06em;
   }
   .article-check-card h3 {
@@ -3642,5 +3642,15 @@
     .application-form label.choice-card {
       transition: none;
     }
+  }
+}
+
+@layer components {
+  .hero .donors {
+    color: #fff;
+    text-shadow: 0 1px 8px #052e2acc;
+  }
+  .hero-heading .hero-line {
+    text-shadow: 0 2px 20px #052e2a99;
   }
 }

@@ -1,15 +1,11 @@
-// Bestaande media blijven bewust behouden; deze zijn geen SPORTGRIPS-productfoto’s.
+// Photorealistic AI illustrations; no product-test or customer photography claims.
+import { photo } from './media';
 export const images = {
-  hero: '/assets/maaistro/hero-grass.jpg',
-  purpose: '/assets/maaistro/photos/measure-lawn.webp',
-  sky: '/assets/maaistro/photos/quiet-garden-background.webp',
+  hero: photo('hero'),
+  purpose: photo('textures'),
+  sky: photo('court-evening'),
 };
-export const avatars = [
-  'detail-dew-grass.webp',
-  'detail-planter.webp',
-  'detail-mower-wheel.webp',
-  'detail-lawn-edge.webp',
-].map((p) => `/assets/maaistro/photos/${p}`);
+export const avatars = ['tennis', 'golf', 'padel', 'hockey'].map(photo);
 export const logos = ['Golf', 'Tennis', 'Padel', 'Badminton', 'Squash', 'Hockey'].map((name) => ({
   name,
 }));
@@ -18,25 +14,25 @@ export const purposes = [
     title: 'Jouw sport',
     icon: 'home',
     text: 'Voor welke sport zoek je een grip?',
-    image: '/assets/maaistro/photos/measure-lawn.webp',
+    image: photo('textures'),
   },
   {
     title: 'De onderlaag',
     icon: 'education',
     text: 'Een basisgrip vervangen of een buitenlaag kiezen?',
-    image: '/assets/maaistro/photos/boundary-installation.webp',
+    image: photo('rewrap'),
   },
   {
     title: 'Het gevoel',
     icon: 'water',
     text: 'Wat telt voor jou: dikte, oppervlak of vocht?',
-    image: '/assets/maaistro/photos/sloping-terrain.webp',
+    image: photo('golf'),
   },
   {
     title: 'Jouw keuze',
     icon: 'check',
     text: 'Lees de uitleg die aansluit bij jouw gripvraag.',
-    image: '/assets/maaistro/photos/weekend-patio.webp',
+    image: photo('padel'),
   },
 ];
 export const missions = [
@@ -45,7 +41,7 @@ export const missions = [
     description:
       'Een club, racket of stick heeft een eigen opbouw. Kies eerst je sport en bekijk welke griplaag je wilt vernieuwen.',
     note: 'Stap 1 · jouw sport',
-    image: '/assets/maaistro/photos/garden-plan.webp',
+    image: photo('tennis'),
     color: 'sand',
   },
   {
@@ -53,7 +49,7 @@ export const missions = [
     description:
       'Vergelijk dikte, oppervlak en vochtopname. Bekijk het complete handvat: de onderlaag en buitenlaag bepalen samen het gevoel.',
     note: 'Stap 2 · jouw wensen',
-    image: '/assets/maaistro/photos/narrow-passage.webp',
+    image: photo('textures'),
     color: 'lemon',
   },
   {
@@ -61,24 +57,24 @@ export const missions = [
     description:
       'Gebruik de uitleg om gerichter te vergelijken. Controleer bij een concreet product de afmetingen, montage en eigenschappen.',
     note: 'Stap 3 · jouw grip',
-    image: '/assets/maaistro/photos/owner-inspection.webp',
+    image: photo('rewrap'),
     color: 'blue',
   },
 ];
 export const impacts = [
   {
     text: 'Jouw sport staat voorop',
-    image: '/assets/maaistro/photos/family-garden.webp',
+    image: photo('hockey'),
     color: 'lemon',
   },
   {
     text: 'Heldere afwegingen',
-    image: '/assets/maaistro/photos/comparison-notes.webp',
+    image: photo('textures'),
     color: 'sand',
   },
   {
     text: 'Duidelijk over onze bronnen',
-    image: '/assets/maaistro/photos/garden-consultation.webp',
+    image: photo('badminton'),
     color: 'blue',
   },
 ];
@@ -100,11 +96,11 @@ export const faqs = [
     'Let op slijtage, loslaten en een oppervlak dat niet meer prettig aanvoelt. Materiaal en gebruik verschillen; er is geen vaste termijn voor alle sportgrips.',
   ],
   [
-    'Verkoopt SPORTGRIPS zelf grips?',
+    'Verkoopt Sportgrips zelf grips?',
     'Deze versie biedt keuzeuitleg en praktische gidsen. Er is geen webshop, winkelvoorraad of betaalfunctie ingericht.',
   ],
   [
-    'Zijn de grips door SPORTGRIPS getest?',
+    'Zijn de grips door Sportgrips getest?',
     'Nee. De uitleg is gebaseerd op de genoemde bronnen. We tonen geen eigen testscores, reviews of ranglijst van winnaars.',
   ],
 ] as const;

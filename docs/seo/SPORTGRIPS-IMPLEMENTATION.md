@@ -135,3 +135,8 @@ Daarna meldde de gebruiker dat hovermenu’s te snel sloten. De dropdowns hebben
 
 
 Het Sportgrips-SVG-logo is eveneens gecorrigeerd op verzoek: letters worden van rechts naar links getekend, zodat iedere linkerletter boven zijn rechterbuur ligt. Posities, lettervormen en kleuren zijn gelijk gebleven; alleen de vectorlaagvolgorde is aangepast. `data-letter-index` legt de oorspronkelijke horizontale volgorde vast.
+
+
+## Uitgebreide media-update — 1 november 2026
+
+Op verzoek zijn nieuwe Sportgrips-beelden gemaakt en alle actieve tuin-/robotmaaierfoto's vervangen. De schrijfwijze is nu Sportgrips, ook in het vectorwoordmerk. Logohoogte en linker-boven-rechter laagvolgorde zijn behouden. Zie `../media/SPORTGRIPS-MEDIA.md` en de volledige prompt-/assetinventaris. Oude media blijven intact bewaard. De hero heeft een eigen mobiele compositie; contrast en bronkeuze zijn in de browser gecontroleerd. De bestaande publicatieopdracht en noindex-instelling blijven van toepassing.

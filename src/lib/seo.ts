@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { photo, photoAlt } from '@/content/media';
 
 export const siteUrl = 'https://sportgrips.nl';
 // Keep every environment noindex until an explicit request to open indexing.
 export const siteIndexable = false;
-export const siteName = 'SPORTGRIPS';
+export const siteName = 'Sportgrips';
 
 export function absoluteUrl(path: string) {
   return new URL(path, siteUrl).toString();
@@ -14,7 +15,7 @@ export function pageMetadata({
   title,
   description,
   path,
-  image,
+  image = photo('hero'),
   type = 'website',
 }: {
   title: string;
@@ -23,7 +24,7 @@ export function pageMetadata({
   image?: string;
   type?: 'website' | 'article';
 }): Metadata {
-  const images = image ? [{ url: image, alt: title }] : [];
+  const images = [{ url: image, alt: photoAlt(image) }];
   return {
     title,
     description,

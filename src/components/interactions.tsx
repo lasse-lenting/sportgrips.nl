@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { faqs, purposes } from '@/content/site';
+import { photoAlt } from '@/content/media';
 import { Icon } from './ui';
 import { Reveal } from './motion';
 import { Ribbon } from './ribbon';
@@ -26,7 +27,7 @@ export function PurposeTabs() {
           <h3>Wat vul je in?</h3>
           <div
             role="tablist"
-            aria-label="Onderdelen van de SPORTGRIPS-keuzehulp"
+            aria-label="Onderdelen van de Sportgrips-keuzehulp"
             aria-orientation="vertical"
           >
             {purposes.map((p, i) => (
@@ -72,7 +73,7 @@ export function PurposeTabs() {
           aria-labelledby={`purpose-tab-${active}`}
           className="purpose-image"
         >
-          <img src={current.image} alt="" />
+          <img src={current.image} alt={photoAlt(current.image)} />
           <h3>{current.text}</h3>
         </div>
       </Reveal>

@@ -8,10 +8,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-## SPORTGRIPS design
+## Sportgrips design
 
 Read DESIGN.md before visual changes. Preserve existing layouts, media and local fonts. H1s use --font-weight-page-heading: 400.
 
-## SPORTGRIPS content
+## Sportgrips content
 
 Use docs/seo/SPORTGRIPS-IMPLEMENTATION.md and docs/seo/source/workbook.json. docs/legacy is preserved historical work, not current strategy. Do not invent products, prices, reviews, test results or business identifiers. Do not publish or deploy without explicit user instruction.
+
+The user authorized a comprehensive media refresh on 1 November 2026. Use the new photo assets under public/assets/sportgrips/photos; preserve the original assets as an archive. Brand spelling is Sportgrips, including the logo. Keep the logo canvas and optical height, page layout, H1 weight 400, and noindex configuration.

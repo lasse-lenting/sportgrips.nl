@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image, { getImageProps } from 'next/image';
+import { photo, photoAlt } from '@/content/media';
 import { avatars, images, impacts, logos, missions } from '@/content/site';
 import { Button, Container, Icon, Section, SectionHeader } from './ui';
 import { Reveal } from './motion';
@@ -8,23 +9,35 @@ import { Ribbon } from './ribbon';
 import { GripForm } from './grip-form';
 import { homeProjects as projects } from '@/content/homepage';
 export function Hero() {
+  const desktop = getImageProps({
+    src: images.hero,
+    alt: '',
+    width: 1672,
+    height: 941,
+    sizes: '100vw',
+    loading: 'eager',
+    fetchPriority: 'high',
+    className: 'hero-image hero-sport',
+  }).props;
+  const mobile = getImageProps({
+    src: photo('hero-mobile'),
+    alt: '',
+    width: 941,
+    height: 1672,
+    sizes: '100vw',
+  }).props;
   return (
     <section className="hero" id="hero">
       <div className="hero-inner">
-        <Image
-          src="/assets/maaistro/hero-grass.jpg"
-          alt=""
-          width={2048}
-          height={1152}
-          sizes="100vw"
-          preload
-          className="hero-image hero-grass"
-        />
+        <picture>
+          <source media="(max-width: 679.98px)" srcSet={mobile.srcSet} sizes="100vw" />
+          <img {...desktop} alt="" />
+        </picture>
         <div className="hero-content">
           <h1 className="hero-heading brand-heading">
             <span className="hero-line line-one">Jouw sport.</span>
             <span className="hero-pill">Jouw grip.</span>
-            <span className="hero-line line-three">Kies met SPORTGRIPS.</span>
+            <span className="hero-line line-three">Kies met Sportgrips.</span>
           </h1>
           <div className="hero-proof">
             <Button href="#volunteer-apply">Vind jouw grip</Button>
@@ -73,7 +86,7 @@ export function Purpose() {
     <section id="our-purpose" className="purpose">
       <SectionHeader
         center
-        eyebrow="De SPORTGRIPS-keuzehulp"
+        eyebrow="De Sportgrips-keuzehulp"
         title="Goed kiezen begint bij jouw grip."
         description="Een club, racket of stick: begin bij je sport en ontdek welke eigenschappen voor jou tellen."
       />
@@ -122,7 +135,7 @@ export function Mission() {
               <Reveal className="mission-art mission-art-clay">
                 <Image
                   src={m.image}
-                  alt=""
+                  alt={photoAlt(m.image)}
                   width={1536}
                   height={1024}
                   sizes="(max-width: 680px) 85vw, 45vw"
@@ -197,7 +210,7 @@ export function VolunteerSection() {
       <Container>
         <div className="volunteer-intro">
           <SectionHeader
-            eyebrow="De SPORTGRIPS-keuzehulp"
+            eyebrow="De Sportgrips-keuzehulp"
             title="Een goede grip begint bij jou."
             description="Vertel over je sport en voorkeuren. Je krijgt een leesroute met eigenschappen om te vergelijken."
             light

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { photoAlt } from '@/content/media';
 import { Button, Container, Icon, SectionHeader } from './ui';
 import { Ribbon } from './ribbon';
 import { ProjectCard } from './cards';
@@ -18,7 +19,7 @@ export function GripListing({
     <>
       <section className="listing-hero">
         <Container>
-          <SectionHeader as="h1" eyebrow="SPORTGRIPS" title={title} description={description} />
+          <SectionHeader as="h1" eyebrow="Sportgrips" title={title} description={description} />
         </Container>
         <Ribbon text="Jouw sport • Jouw grip • Helder kiezen" className="listing-ribbon" />
       </section>
@@ -80,7 +81,7 @@ export function GripDetail({ page }: { page: GripPage }) {
             <dl className="article-metadata">
               <div>
                 <dt>Door</dt>
-                <dd>SPORTGRIPS</dd>
+                <dd>Sportgrips</dd>
               </div>
               <div>
                 <dt>Werkwijze</dt>
@@ -91,7 +92,7 @@ export function GripDetail({ page }: { page: GripPage }) {
           <div className="article-hero-image">
             <Image
               src={page.image}
-              alt=""
+              alt={photoAlt(page.image)}
               width={1536}
               height={1024}
               sizes="(max-width: 679px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 80px), 550px"
@@ -125,7 +126,7 @@ export function GripDetail({ page }: { page: GripPage }) {
               </ol>
             </details>
             <div className="article-check-card">
-              <span className="eyebrow">SPORTGRIPS-keuzehulp</span>
+              <span className="eyebrow">Sportgrips-keuzehulp</span>
               <h3>Begin bij jouw sport. Ontdek wat telt.</h3>
               <Button href="/keuzehulp/">Start de keuzehulp</Button>
               <ul aria-label="Wat de keuzehulp biedt">
@@ -234,7 +235,7 @@ export function GripHelperPage() {
         <Container>
           <SectionHeader
             as="h1"
-            eyebrow="SPORTGRIPS-keuzehulp"
+            eyebrow="Sportgrips-keuzehulp"
             title="Welke grip past bij mij?"
             description="Vijf vragen over je sport en voorkeuren. Ontvang een leesroute die je helpt vergelijken."
           />

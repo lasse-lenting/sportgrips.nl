@@ -49,11 +49,11 @@ function initializeConsent() {
               '<img src="/assets/maaistro/icons/cookie.svg" alt="" width="24" height="24" aria-hidden="true">Jouw sport. Jouw keuze.',
             description: analyticsEnabled
               ? 'We onthouden je cookievoorkeuren. Optionele meetdiensten laden alleen na jouw toestemming. Lees in de privacy-uitleg welke diensten zijn ingericht.'
-              : 'SPORTGRIPS onthoudt je cookievoorkeuren. Er zijn geen optionele meetdiensten ingeschakeld. De keuzehulp werkt zonder account.',
+              : 'Sportgrips onthoudt je cookievoorkeuren. Er zijn geen optionele meetdiensten ingeschakeld. De keuzehulp werkt zonder account.',
             acceptAllBtn: 'Accepteren',
             acceptNecessaryBtn: 'Alleen noodzakelijk',
             showPreferencesBtn: 'Voorkeuren',
-            footer: '<a href="/privacy/">Privacy bij SPORTGRIPS</a>',
+            footer: '<a href="/privacy/">Privacy bij Sportgrips</a>',
           },
           preferencesModal: {
             title: 'Jouw cookievoorkeuren',
@@ -76,7 +76,7 @@ function initializeConsent() {
               {
                 title: 'Statistieken',
                 description: analyticsEnabled
-                  ? 'Alleen de voor SPORTGRIPS ingerichte meetdiensten laden na toestemming. De privacypagina beschrijft de actieve diensten. De keuzehulp verstuurt zelf geen antwoorden als meetgebeurtenis.'
+                  ? 'Alleen de voor Sportgrips ingerichte meetdiensten laden na toestemming. De privacypagina beschrijft de actieve diensten. De keuzehulp verstuurt zelf geen antwoorden als meetgebeurtenis.'
                   : 'Er zijn momenteel geen optionele meetdiensten ingeschakeld. Deze voorkeur activeert op zichzelf geen tracking.',
                 linkedCategory: 'analytics',
               },

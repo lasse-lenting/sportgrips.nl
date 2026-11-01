@@ -1,5 +1,5 @@
 {
-  "base": "https://sportgrips.vercel.app",
+  "base": "http://localhost:3029",
   "indexing": "noindex",
   "mode": "production",
   "page_count": 28,

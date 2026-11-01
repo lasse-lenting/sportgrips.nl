@@ -1,0 +1,738 @@
+{
+  "failures": [],
+  "errors": [],
+  "views": [
+    {
+      "width": 1440,
+      "path": "/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "hero": "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-v1.webp&w=1920&q=75",
+      "heroTextColor": "rgb(255, 255, 255)",
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-v1.webp&w=1920&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=32&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=750&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftextures-v1.webp&w=750&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Frewrap-v1.webp&w=750&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/court-evening-v1.webp"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/grips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/golfgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/tennisgrips/gripmaat/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/padelgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/badmintongrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/squashgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/hockeygrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 620,
+          "height": 141.328125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "hero": "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-mobile-v1.webp&w=640&q=75",
+      "heroTextColor": "rgb(255, 255, 255)",
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-mobile-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=32&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftextures-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Frewrap-v1.webp&w=384&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/court-evening-v1.webp"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/grips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=640&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/golfgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/tennisgrips/gripmaat/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/padelgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/badmintongrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/squashgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/hockeygrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 340,
+          "height": 77.5,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "hero": "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-mobile-v1.webp&w=640&q=75",
+      "heroTextColor": "rgb(255, 255, 255)",
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhero-mobile-v1.webp&w=640&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=32&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=32&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftextures-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Frewrap-v1.webp&w=384&q=75",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/hockey-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/textures-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/badminton-v1.webp",
+        "http://localhost:3025/assets/sportgrips/photos/court-evening-v1.webp"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/grips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=384&q=75",
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/golfgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fgolf-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/tennisgrips/gripmaat/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Ftennis-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/padelgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fpadel-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/badmintongrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fbadminton-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/squashgrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fsquash-v1.webp&w=384&q=75"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/hockeygrips/",
+      "overflow": false,
+      "h1": "400",
+      "legacyCopy": false,
+      "legacyImages": [],
+      "broken": [],
+      "heroTextColor": null,
+      "logo": [
+        {
+          "width": 140,
+          "height": 34,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        },
+        {
+          "width": 280,
+          "height": 63.828125,
+          "loaded": true,
+          "url": "/assets/sportgrips/logo-v2.svg"
+        }
+      ],
+      "images": [
+        "http://localhost:3025/_next/image/?url=%2Fassets%2Fsportgrips%2Fphotos%2Fhockey-v1.webp&w=384&q=75"
+      ]
+    }
+  ]
+}

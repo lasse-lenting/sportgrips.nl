@@ -23,7 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         }
       : undefined);
   if (!p) return { title: 'Pagina niet gevonden', robots: { index: false, follow: true } };
-  return pageMetadata({ title: p.title, description: p.description, path });
+  return pageMetadata({
+    title: p.title,
+    description: p.description,
+    path,
+    image: 'image' in p ? p.image : undefined,
+  });
 }
 export default async function Page({ params }: { params: Promise<{ slug: string[] }> }) {
   const path = pathFor((await params).slug);
