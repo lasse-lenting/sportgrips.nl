@@ -15,11 +15,33 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
   const header = useRef<HTMLElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
   const dropdownTriggers = useRef<Record<string, HTMLButtonElement | null>>({});
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function cancelClose() {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = null;
+  }
+
+  function scheduleClose(href: string) {
+    cancelClose();
+    closeTimer.current = setTimeout(() => {
+      setExpanded((value) => (value === href ? null : value));
+      closeTimer.current = null;
+    }, 350);
+  }
+
+  useEffect(
+    () => () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     const close = (event: KeyboardEvent) => {
       if (event.key !== 'Escape' || !header.current?.contains(document.activeElement)) return;
       if (expanded) {
+        cancelClose();
         setExpanded(null);
         dropdownTriggers.current[expanded]?.focus();
       } else if (open) {
@@ -29,6 +51,7 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
     };
     const outside = (event: PointerEvent) => {
       if (!header.current?.contains(event.target as Node)) {
+        cancelClose();
         setExpanded(null);
         setOpen(false);
       }
@@ -42,6 +65,7 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
   }, [expanded, open]);
 
   function closeMenus() {
+    cancelClose();
     setOpen(false);
     setExpanded(null);
   }
@@ -135,11 +159,14 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
                     setExpanded((value) => (value === item.href ? null : value));
                 }}
                 onPointerEnter={() => {
-                  if (desktopHover()) setExpanded(item.href);
+                  if (desktopHover()) {
+                    cancelClose();
+                    setExpanded(item.href);
+                  }
                 }}
                 onPointerLeave={(event) => {
                   if (desktopHover() && !event.currentTarget.contains(document.activeElement))
-                    setExpanded((value) => (value === item.href ? null : value));
+                    scheduleClose(item.href);
                 }}
               >
                 <button
@@ -154,14 +181,16 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
                     'flex w-full items-center justify-between gap-1.5',
                     current && 'text-brand',
                   )}
-                  onClick={(event) =>
+                  onClick={(event) => {
+                    cancelClose();
                     setExpanded(
                       active && (!desktopHover() || event.detail === 0) ? null : item.href,
-                    )
-                  }
+                    );
+                  }}
                   onKeyDown={(event) => {
                     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
                       event.preventDefault();
+                      cancelClose();
                       setExpanded(item.href);
                       const last = event.key === 'ArrowUp';
                       requestAnimationFrame(() => {

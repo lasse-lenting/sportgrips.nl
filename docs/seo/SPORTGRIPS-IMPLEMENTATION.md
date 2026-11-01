@@ -123,3 +123,15 @@ De gebruiker heeft expliciet opdracht gegeven om alles op noindex te zetten, de 
 Indexering staat nu vast uit in `src/lib/seo.ts`, onafhankelijk van omgeving of ontbrekende variabelen. Alle pagina’s hebben noindex-meta; `next.config.ts` voegt aan iedere route en public-file response `X-Robots-Tag: noindex, nofollow, noarchive` toe. De sitemap is leeg. Robots staat crawlen van de pagina’s toe zodat zoekmachines de noindex-instructie kunnen lezen; `/api/` en `/go/` blijven uitgesloten. Dit is een instructie voor zoekmachines, geen toegangsbeveiliging.
 
 De privacytekst is aangepast aan hosting bij Vercel. Eigen analytics- en verificatiecodes zijn niet aangeleverd en blijven uit. `.vercelignore` laat het behouden bronarchief en onderzoeksbestanden buiten de deployment-upload; de bestanden blijven wel in Git bewaard. Er zijn geen bestaande media-assets verwijderd.
+
+
+## Publicatieresultaat en hovergrace — 1 november 2026
+
+De bron is gepusht naar https://github.com/lasse-lenting/sportgrips.nl op `main`. Het Vercel-project `lasselentings-projects/sportgrips` is met die repository verbonden; GitHub-pushes starten de deployment. De eerste productie-deployment van `be5685185ae1a06dccb313b939041d7bc4e8e750` bereikte Ready. Publieke alias: https://sportgrips.vercel.app. Het domein is niet gekoppeld; dat doet de gebruiker zelf.
+
+Alle 28 live pagina’s, 1015 interne links, noindex-meta/HTTP-headers, canonicals, schema, lege sitemap en 404 zijn gecontroleerd zonder fouten. Ook SVG, fonts, video, robots en sitemap geven op de publieke Vercel-URL de noindex-header. Live Chromium-controle op 1440px en 390px: fonts/logo’s geladen, H1 400, geen overflow of runtimefouten. Zie `check-production.json` en `check-live-browser.json`.
+
+Daarna meldde de gebruiker dat hovermenu’s te snel sloten. De dropdowns hebben nu 350 ms sluitvertraging. Binnenkomen op de knop of het submenu annuleert de sluiting, zodat de tussenruimte en diagonale muisbewegingen bruikbaar zijn. Een sublink kiezen, buiten klikken en Escape blijven direct reageren. De timer wordt opgeruimd en een oude timer sluit geen ander menu. De gebruiker heeft publicatie van deze correctie expliciet bevestigd; noindex blijft aan.
+
+
+Het Sportgrips-SVG-logo is eveneens gecorrigeerd op verzoek: letters worden van rechts naar links getekend, zodat iedere linkerletter boven zijn rechterbuur ligt. Posities, lettervormen en kleuren zijn gelijk gebleven; alleen de vectorlaagvolgorde is aangepast. `data-letter-index` legt de oorspronkelijke horizontale volgorde vast.

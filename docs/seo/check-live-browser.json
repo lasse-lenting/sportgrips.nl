@@ -1,0 +1,82 @@
+{
+  "url": "https://sportgrips.vercel.app",
+  "views": [
+    {
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "canonical": "https://sportgrips.nl/",
+      "h1": "400",
+      "logos": [
+        {
+          "url": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        },
+        {
+          "url": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        }
+      ],
+      "loadedFonts": [
+        "golos",
+        "stackSansNotch"
+      ]
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "robots": "noindex, nofollow",
+      "canonical": "https://sportgrips.nl/",
+      "h1": "400",
+      "logos": [
+        {
+          "url": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        },
+        {
+          "url": "/assets/sportgrips/logo.svg",
+          "loaded": true
+        }
+      ],
+      "loadedFonts": [
+        "golos",
+        "stackSansNotch"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "path": "/assets/sportgrips/logo.svg",
+      "status": 200,
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "path": "/assets/paspoot/GolosText-Variable.ttf",
+      "status": 200,
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "path": "/assets/paspoot/hero-loop.mp4",
+      "status": 200,
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "path": "/not-a-real-page/",
+      "status": 404,
+      "robots": "noindex, nofollow, noarchive"
+    }
+  ],
+  "errors": []
+}

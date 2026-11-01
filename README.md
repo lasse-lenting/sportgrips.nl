@@ -1,5 +1,13 @@
 # SPORTGRIPS
 
+Live: https://sportgrips.vercel.app
+
+GitHub: https://github.com/lasse-lenting/sportgrips.nl
+
+Vercel-project: https://vercel.com/lasselentings-projects/sportgrips
+
+Het domein wordt door de eigenaar gekoppeld; canonicals gebruiken https://sportgrips.nl.
+
 SPORTGRIPS op basis van de Maaistro-layout. Indexering is voor alle omgevingen uitgeschakeld: noindex-meta, X-Robots-Tag en een lege sitemap. Verwijder dit uitsluitend na expliciete opdracht.
 
 ```sh
