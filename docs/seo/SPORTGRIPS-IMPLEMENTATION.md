@@ -140,3 +140,8 @@ Het Sportgrips-SVG-logo is eveneens gecorrigeerd op verzoek: letters worden van 
 ## Uitgebreide media-update — 1 november 2026
 
 Op verzoek zijn nieuwe Sportgrips-beelden gemaakt en alle actieve tuin-/robotmaaierfoto's vervangen. De schrijfwijze is nu Sportgrips, ook in het vectorwoordmerk. Logohoogte en linker-boven-rechter laagvolgorde zijn behouden. Zie `../media/SPORTGRIPS-MEDIA.md` en de volledige prompt-/assetinventaris. Oude media blijven intact bewaard. De hero heeft een eigen mobiele compositie; contrast en bronkeuze zijn in de browser gecontroleerd. De bestaande publicatieopdracht en noindex-instelling blijven van toepassing.
+
+
+## Logo-uppercase — 1 november 2026
+
+Op verzoek staat het SVG-woordmerk weer in hoofdletters (SPORTGRIPS). Header en footer verwijzen naar het eerder gecontroleerde uppercase `logo.svg`, met de linkerletters bovenop en dezelfde hoogte. Alle gewone tekst en metadata blijven Sportgrips. De nieuwe sportmedia, hovergrace en noindex zijn ongewijzigd.

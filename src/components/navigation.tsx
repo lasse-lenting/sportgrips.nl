@@ -100,7 +100,7 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
             className="flex h-[38px] items-center"
           >
             <img
-              src="/assets/sportgrips/logo-v2.svg"
+              src="/assets/sportgrips/logo.svg"
               alt=""
               width={140}
               height={34}

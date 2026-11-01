@@ -37,7 +37,7 @@ export function Footer() {
             className="inline-block w-[min(100%,620px)] max-sm:w-[min(100%,340px)]"
           >
             <img
-              src="/assets/sportgrips/logo-v2.svg"
+              src="/assets/sportgrips/logo.svg"
               alt=""
               width={658}
               height={150}

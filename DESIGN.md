@@ -9,7 +9,7 @@ De uitvoerbare ontwerptokens staan in `src/styles/site.css` onder `@theme`. Comp
 - Dit geldt voor de homepage, overzichtspagina’s, koopgidsen, de productselectie, Over Sportgrips, privacy en foutpagina’s.
 - Maak H1’s niet bold of semibold via componentstijlen, inline stijlen of klassen zoals `font-bold`, `font-semibold` en `font-extrabold`.
 - Grootte, regelhoogte en letterafstand kunnen per paginatype verschillen. Gewicht blijft gekoppeld aan het centrale token.
-- Het oorspronkelijke Maaistro-logo blijft bewaard. `public/assets/sportgrips/logo-v2.svg` gebruikt Sportgrips als echte vectorpaden in hetzelfde lokale Barlow Condensed Black Italic-lettertype, met de oorspronkelijke donkere contour. Geen roze of terracotta in het logo.
+- Het oorspronkelijke Maaistro-logo blijft bewaard. `public/assets/sportgrips/logo.svg` gebruikt SPORTGRIPS als echte vectorpaden in hetzelfde lokale Barlow Condensed Black Italic-lettertype, met de oorspronkelijke donkere contour. Geen roze of terracotta in het logo.
 
 ## Overige typografie
 
@@ -21,4 +21,7 @@ De bestaande componentvormen, spacing, responsive regels, fonts en achtergronden
 
 ## Media-update 1 november 2026
 
-Nieuwe fotorealistische sportbeelden vervangen de tuinbeelden in actieve onderdelen. Oude bestanden blijven intact. De hero heeft een aparte mobiele uitsnede; alleen tekstcontrast boven fotografie wordt aangepast. `logo-v2.svg` schrijft Sportgrips met dezelfde canvas- en optische hoogte als voorheen, met de linkerletters bovenop.
+Nieuwe fotorealistische sportbeelden vervangen de tuinbeelden in actieve onderdelen. Oude bestanden blijven intact. De hero heeft een aparte mobiele uitsnede; alleen tekstcontrast boven fotografie wordt aangepast. Het actieve `logo.svg` schrijft SPORTGRIPS met dezelfde canvas- en optische hoogte als voorheen, met de linkerletters bovenop.
+
+## Merktypografie
+Het getekende SVG-logo is uppercase **SPORTGRIPS**. Gewone interface-tekst, koppen, cookievenster, footer, alt-/aria-labels en metadata schrijven **Sportgrips**.
