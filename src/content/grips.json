@@ -1,346 +1,814 @@
 [
   {
     "path": "/golfgrips/",
-    "title": "Golfgrips kiezen: materiaal, maat en gevoel",
-    "description": "Vergelijk de eigenschappen van golfgrips. Lees waar je op let bij materiaal, gripmaat, puttergrips en vervangen.",
-    "summary": "Vergelijk de eigenschappen van golfgrips. Lees waar je op let bij materiaal, gripmaat, puttergrips en vervangen.",
+    "title": "Golfgrips vergelijken: vind jouw type, merk en maat",
+    "description": "Vergelijk golfgrips op materiaal, maat en gevoel. Bekijk merken, puttergrips en maatvarianten en stel een gerichte shortlist samen.",
+    "summary": "Vergelijk golfgrips op materiaal, maat en gevoel. Bekijk merken, puttergrips en maatvarianten en stel een gerichte shortlist samen.",
     "kind": "hub",
     "parent": null,
     "image": "/assets/sportgrips/photos/golf-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
+    "tags": ["Sportgrips", "Vergelijk per sport"],
     "sections": [
       {
-        "heading": "Begin bij het gevoel in je handen",
+        "heading": "Zo vergelijk je golfgrips voor jouw gebruik",
         "paragraphs": [
-          "Kijk hoe je huidige grip aanvoelt, of het oppervlak versleten is en of de dikte prettig blijft tijdens een swing. Vergelijk een nieuwe grip liefst op een club. Een materiaalnaam alleen vertelt niet hoe een grip voor jou voelt."
+          "Een golfgrip kies je op de combinatie van omvang, oppervlak en materiaalgevoel. Begin bij de club: swinggrips en puttergrips stellen andere eisen aan de vorm. Gebruik dit overzicht om door te gaan naar het type, merk of formaat dat je wilt vergelijken."
         ]
       },
       {
-        "heading": "Rubber, cord en een zachter oppervlak",
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
         "paragraphs": [
-          "Bij het vergelijken kom je onder meer rubber, een oppervlak met vezelstructuur (cord) en zachtere constructies tegen. Noteer per concreet model het materiaal, de textuur en de beschikbare maten. Trek geen conclusie over slijtage of prestaties uit alleen de merknaam."
+          "Voor je ijzers en woods vergelijk je onder meer rubber, cord en een combinatie van beide. Bij je putter begin je met profiel en handpositie. Maak die eerste keuze voordat je merken of uitvoeringen naast elkaar zet."
+        ],
+        "links": [
+          {
+            "title": "Puttergrips",
+            "href": "/golfgrips/putter/",
+            "description": "Vergelijk profiel, omvang en handpositie."
+          },
+          {
+            "title": "Gripmaat golf",
+            "href": "/golfgrips/maat/",
+            "description": "Begin met de maattabel en vergelijk de pasvorm."
+          }
         ]
       },
       {
-        "heading": "Welke golfgrip is de beste?",
+        "heading": "Vergelijk merken en modellen voor golf",
         "paragraphs": [
-          "Er is geen onderbouwde winnaar voor iedere golfer. Zet maat, textuur en je eigen voorkeur naast elkaar. Sportgrips geeft hier keuzeuitleg; er zijn geen eigen praktijktests of scores waarop een ranglijst kan worden gebaseerd."
+          "Vergelijk binnen Golf Pride de Tour Velvet, MCC en CP2 Pro. Bij Lamkin draait de vergelijking om Crossline en de cordvariant; let daar ook op de modelgeneratie. Voor de Zenergy-uitvoeringen vind je een eigen SuperStroke-overzicht."
+        ],
+        "links": [
+          {
+            "title": "Golf Pride",
+            "href": "/golfgrips/golf-pride/",
+            "description": "Vergelijk de modellen en uitvoeringen van Golf Pride."
+          },
+          {
+            "title": "Lamkin",
+            "href": "/golfgrips/lamkin/",
+            "description": "Vergelijk de modellen en uitvoeringen van Lamkin."
+          },
+          {
+            "title": "SuperStroke",
+            "href": "/golfgrips/superstroke/",
+            "description": "Vergelijk de modellen en uitvoeringen van SuperStroke."
+          }
         ]
       },
       {
-        "heading": "Golfgrips kopen: vergelijk het hele pakket",
+        "heading": "Welke golfgripmaat wil je verder vergelijken?",
         "paragraphs": [
-          "Controleer of een prijs voor één grip of een set geldt. Tel materiaal voor montage en eventuele montagekosten mee. Een aanbieding zegt weinig zonder dezelfde uitvoering en aantallen te vergelijken. We tonen hier geen actuele prijzen of winkelvoorraad."
+          "Kies eerst een maatrichting en vergelijk daarna modellen met dezelfde omvang. Undersize, midsize en oversize hebben een eigen keuzeoverzicht. Standard blijft de referentiemaat op de maatpagina."
+        ],
+        "links": [
+          {
+            "title": "Undersize",
+            "href": "/golfgrips/maat/undersize/",
+            "description": "Vergelijk een dunnere uitvoering."
+          },
+          {
+            "title": "Midsize",
+            "href": "/golfgrips/maat/midsize/",
+            "description": "Zet een vollere grip naast standard."
+          },
+          {
+            "title": "Oversize en jumbo",
+            "href": "/golfgrips/maat/oversize/",
+            "description": "Beoordeel een grotere omvang."
+          }
+        ]
+      },
+      {
+        "heading": "Welke golfgrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
         ]
       }
     ],
-    "related": ["/golfgrips/maat/", "/golfgrips/putter/", "/golfgrips/vervangen/"],
+    "related": [
+      "/golfgrips/putter/",
+      "/golfgrips/maat/",
+      "/golfgrips/vervangen/",
+      "/kennis/grips-schoonmaken/"
+    ],
     "sources": [
+      {
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — CP2 Pro",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      },
       {
         "name": "Golf Pride — gripmaat bepalen",
         "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
-      },
-      {
-        "name": "Golf Pride — onderhoud",
-        "url": "https://golfpride.com/us/en-us/grip-academy/grip-care.html"
       }
     ],
-    "table": null
+    "table": {
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
+      "rows": [
+        ["Rubber", "Vergelijk oppervlak en zachtheid", "Golf Pride / Lamkin"],
+        ["Hybride met cord", "Beoordeel de twee contactzones", "Golf Pride MCC"],
+        ["Putterprofielen", "Kies vorm en daarna omvang", "Puttergrips / SuperStroke"]
+      ]
+    },
+    "menuLabel": "Golfgrips",
+    "products": ["tour-velvet", "mcc", "crossline"]
   },
   {
-    "path": "/tennisgrips/",
-    "title": "Tennisgrips kiezen voor jouw racket",
-    "description": "Kies een tennisgrip op gevoel, dikte en de laag die je wilt vervangen. Vind uitleg over gripmaat, basisgrips en onderhoud.",
-    "summary": "Kies een tennisgrip op gevoel, dikte en de laag die je wilt vervangen. Vind uitleg over gripmaat, basisgrips en onderhoud.",
-    "kind": "hub",
-    "parent": null,
-    "image": "/assets/sportgrips/photos/tennis-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
-    "sections": [
-      {
-        "heading": "Welke laag wil je veranderen?",
-        "paragraphs": [
-          "Bekijk eerst de opbouw van het handvat. Is de onderliggende grip plat of versleten, of wil je alleen de buitenste laag opfrissen? Dat zijn verschillende aankopen. De basisgrip vormt de onderlaag; een overgrip komt daar bovenop."
-        ]
-      },
-      {
-        "heading": "Vergelijk gevoel én dikte",
-        "paragraphs": [
-          "Een zachtere grip kan anders aanvoelen dan een dunnere uitvoering. Extra lagen veranderen het handvat. Beoordeel daarom de combinatie van het racket, de basisgrip en een eventuele buitenlaag, niet alleen het losse lint."
-        ]
-      },
-      {
-        "heading": "Een passende maat als vertrekpunt",
-        "paragraphs": [
-          "De maat op de einddop beschrijft de handvatmaat. De buitenste laag kan dat gevoel veranderen. Begin bij een racket dat prettig vast te houden is en vergelijk daarna de grip die daarbij past."
-        ]
-      }
-    ],
-    "related": [
-      "/tennisgrips/overgrips/",
-      "/tennisgrips/basisgrips/",
-      "/tennisgrips/gripmaat/",
-      "/tennisgrips/vervangen/"
-    ],
-    "sources": [
-      {
-        "name": "LTA — gripmaat, overgrips en aanbrengen",
-        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/padelgrips/",
-    "title": "Padelgrips: grip en overgrip kiezen",
-    "description": "Lees hoe je een padelgrip kiest op dikte, oppervlak en vocht. Basisgrip en padel overgrip staan samen in één overzicht.",
-    "summary": "Lees hoe je een padelgrip kiest op dikte, oppervlak en vocht. Basisgrip en padel overgrip staan samen in één overzicht.",
-    "kind": "hub",
-    "parent": null,
-    "image": "/assets/sportgrips/photos/padel-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
-    "sections": [
-      {
-        "heading": "Padelgrip of padel overgrip?",
-        "paragraphs": [
-          "Controleer of je de oorspronkelijke grip wilt vervangen of een buitenlaag wilt toevoegen. Een overgrip ligt over de bestaande grip en maakt het handvat ook iets dikker. Verwijder de onderlaag dus niet automatisch bij een nieuwe buitenlaag."
-        ]
-      },
-      {
-        "heading": "Vocht, gevoel en dikte",
-        "paragraphs": [
-          "Let op het oppervlak dat je prettig vindt als je handen droog zijn én tijdens een langere speelsessie. Absorptie en een kleverig gevoel zijn verschillende eigenschappen. Zoek ze afzonderlijk op in de informatie van het model."
-        ]
-      },
-      {
-        "heading": "Niet onbeperkt dikker maken",
-        "paragraphs": [
-          "Bouw het handvat stap voor stap op en probeer het na iedere verandering. Meer lagen kunnen de vorm van het handvat minder duidelijk maken. Er is geen vast aantal overgrips dat voor iedere speler past."
-        ]
-      }
-    ],
-    "related": [
-      "/padelgrips/vervangen/",
-      "/kennis/grip-bij-zweethanden/",
-      "/kennis/verschil-basisgrip-overgrip/"
-    ],
-    "sources": [
-      {
-        "name": "Babolat — een overgrip kiezen",
-        "url": "https://help.babolat.com/hc/en-gb/articles/22997505022621-How-do-I-choose-the-right-overgrip"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/badmintongrips/",
-    "title": "Badmintongrips: kies je laag en gripgevoel",
-    "description": "Vergelijk de opbouw van een badmintongrip, van een dunne overgrip tot badstof. Lees ook waar je bij vervangen op let.",
-    "summary": "Vergelijk de opbouw van een badmintongrip, van een dunne overgrip tot badstof. Lees ook waar je bij vervangen op let.",
-    "kind": "hub",
-    "parent": null,
-    "image": "/assets/sportgrips/photos/badminton-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
-    "sections": [
-      {
-        "heading": "Dunne laag of een andere ondergrond?",
-        "paragraphs": [
-          "Bekijk welke grip nu op je badmintonracket zit. Kies een vervangende grip als je de onderlaag wilt vernieuwen. Wil je vooral het contactoppervlak aanpassen, controleer dan of de nieuwe grip bedoeld is als buitenlaag."
-        ]
-      },
-      {
-        "heading": "Badstof en synthetische grips",
-        "paragraphs": [
-          "Een towel grip heeft een textielachtig oppervlak. Synthetische varianten kunnen juist gladder of kleveriger aanvoelen. Yonex voert bijvoorbeeld towel grips; dit is een voorbeeld van een type, geen door Sportgrips getest product."
-        ]
-      },
-      {
-        "heading": "Let op de uiteindelijke dikte",
-        "paragraphs": [
-          "Lengte, breedte en overlap bepalen samen hoe je handvat uitpakt. Controleer of het lint lang genoeg is voor jouw handvat en wikkel volgens de instructie van de fabrikant."
-        ]
-      }
-    ],
-    "related": ["/badmintongrips/vervangen/", "/kennis/grip-bij-zweethanden/"],
-    "sources": [
-      {
-        "name": "Yonex — towel grip",
-        "url": "https://www.yonex.com/badminton/accessories/ac402-2"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/squashgrips/",
-    "title": "Squashgrips kiezen en vervangen",
-    "description": "Lees waar je bij een squashgrip op let: vervangende grip, buitenlaag, dikte, oppervlak en een gelijkmatige afwerking.",
-    "summary": "Lees waar je bij een squashgrip op let: vervangende grip, buitenlaag, dikte, oppervlak en een gelijkmatige afwerking.",
-    "kind": "hub",
-    "parent": null,
-    "image": "/assets/sportgrips/photos/squash-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
-    "sections": [
-      {
-        "heading": "Kijk naar de bestaande opbouw",
-        "paragraphs": [
-          "Grips voor squash worden onder meer als replacement grip aangeboden. Die vervangen de onderlaag. Een overgrip voegt juist een laag toe. Controleer de productomschrijving voordat je een oude laag verwijdert."
-        ]
-      },
-      {
-        "heading": "Gevoel zonder onnodige dikte",
-        "paragraphs": [
-          "Vergelijk hoe stevig je het racket kunt vasthouden en of de vorm van het handvat voelbaar blijft. Probeer een verandering eerst uit voordat je meerdere lagen toevoegt. Een merknaam is geen garantie voor een passende grip."
-        ]
-      },
-      {
-        "heading": "Een squashgrip vervangen",
-        "paragraphs": [
-          "Verwijder alleen de laag die je wilt vernieuwen. Bekijk de oude wikkelrichting, volg de montageaanwijzing en werk met gelijkmatige spanning. Laat geen plooien of losse eindjes zitten en controleer de bevestiging vóór het spelen."
-        ]
-      },
-      {
-        "heading": "Wanneer vervangen?",
-        "paragraphs": [
-          "Let op loslaten, een onprettig oppervlak en zichtbare slijtage. De gebruiksduur hangt af van materiaal en gebruik. We hanteren geen vaste levensduur of testscore voor alle squashgrips."
-        ]
-      }
-    ],
-    "related": ["/kennis/verschil-basisgrip-overgrip/", "/kennis/grip-bij-zweethanden/"],
-    "sources": [
-      {
-        "name": "Karakal — grips voor racketsport",
-        "url": "https://karakal.com/"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/hockeygrips/",
-    "title": "Hockeygrips: kies voor jouw stick en handen",
-    "description": "Kies een hockeygrip met aandacht voor de opbouw, dikte en het contactoppervlak. Lees over vervangen en verschillende buitenlagen.",
-    "summary": "Kies een hockeygrip met aandacht voor de opbouw, dikte en het contactoppervlak. Lees over vervangen en verschillende buitenlagen.",
-    "kind": "hub",
-    "parent": null,
-    "image": "/assets/sportgrips/photos/hockey-v1.webp",
-    "tags": ["Sportgrips", "Keuzeadvies"],
-    "sections": [
-      {
-        "heading": "Controleer de grip op je stick",
-        "paragraphs": [
-          "Bepaal of de vaste onderlaag versleten is of dat je alleen een andere buitenlaag zoekt. Die keuze bepaalt wat je verwijdert. Houd rekening met de lengte van het handvat en de afmetingen van het nieuwe lint."
-        ]
-      },
-      {
-        "heading": "Dikte en profiel vergelijken",
-        "paragraphs": [
-          "Een geprofileerd oppervlak voelt anders dan een gladde of textielachtige buitenlaag. Probeer de uiteindelijke opbouw met je normale handpositie. Extra lagen veranderen de dikte; meer materiaal is niet automatisch prettiger."
-        ]
-      },
-      {
-        "heading": "Een buitenlaag voor jouw omstandigheden",
-        "paragraphs": [
-          "Chamois wordt onder meer als overgrip aangeboden. Controleer per product hoe het moet worden aangebracht en onderhouden. Vergelijk geen algemene materiaalbelofte met een eigen praktijktest: die hebben we niet uitgevoerd."
-        ]
-      }
-    ],
-    "related": [
-      "/hockeygrips/chamois/",
-      "/hockeygrips/vervangen/",
-      "/vergelijken/chamois-vs-rubber-hockeygrip/"
-    ],
-    "sources": [
-      {
-        "name": "Grays — chamois overgrip",
-        "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/golfgrips/maat/",
-    "title": "Golfgrip maat bepalen",
-    "description": "Bepaal een eerste golfgripmaat met je handlengte en vergelijk daarna het gevoel op een club. Lees hoe maatnamen en montage samenhangen.",
-    "summary": "Bepaal een eerste golfgripmaat met je handlengte en vergelijk daarna het gevoel op een club. Lees hoe maatnamen en montage samenhangen.",
-    "kind": "guide",
+    "path": "/golfgrips/golf-pride/",
+    "title": "Golf Pride grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Golf Pride grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Golf Pride grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
     "parent": "/golfgrips/",
     "image": "/assets/sportgrips/photos/golf-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
+    "tags": ["Sportgrips", "Merkvergelijking"],
     "sections": [
       {
-        "heading": "Meet als startpunt",
+        "heading": "Zo vergelijk je Golf Pride grips op materiaal en gevoel",
         "paragraphs": [
-          "Golf Pride meet de bovenste griphand van de polsplooi tot de top van de middelvinger. Vergelijk die meting met de maattabel van het merk dat je bekijkt. Een handschoenmaat kan een eerste indicatie geven, maar is geen universele passing."
+          "Tour Velvet, MCC en CP2 Pro bedienen verschillende voorkeuren. Zet eerst rubber, een combinatie van cord en rubber, en een zacht model naast elkaar. Vergelijk vervolgens dezelfde maat; anders lopen materiaalverschil en omvang door elkaar."
         ]
       },
       {
-        "heading": "Standard en de andere maatnamen",
+        "heading": "Tour Velvet of MCC: hoeveel oppervlaktestructuur zoek je?",
         "paragraphs": [
-          "Undersize is smaller dan standard; midsize en jumbo of oversize zijn dikker. De precieze uitvoering verschilt per fabrikant. Daarom combineren we deze maatkeuzes op één pagina in plaats van losse pagina’s zonder specifieke productinformatie."
+          "De gewone Tour Velvet gebruikt een rubbermengsel. MCC combineert cord bij de bovenste hand met rubber bij de onderste hand. Kies de vergelijking op basis van het contactoppervlak dat je zoekt, zonder een cordvariant automatisch als beter te behandelen."
         ]
       },
       {
-        "heading": "Montage telt mee",
+        "heading": "Wanneer neem je CP2 Pro mee in je vergelijking?",
         "paragraphs": [
-          "De shaftdiameter, binnenmaat van de grip en gebruikte tape beïnvloeden de gemonteerde dikte. Vergelijk daarom niet alleen de naam op de verpakking. Laat bij twijfel een clubfitter de combinatie beoordelen."
+          "CP2 Pro is de zachte optie in deze selectie. Zet hem naast Tour Velvet als je het materiaalgevoel wilt veranderen. Let daarnaast op de taper: hoe het handvat naar de onderste hand toe smaller wordt, beïnvloedt de vorm die je vasthoudt."
         ]
       },
       {
-        "heading": "Kleine handen, dames en junioren",
+        "heading": "Welke maat en uitvoering passen bij je huidige set?",
         "paragraphs": [
-          "Kies op handafmetingen en gevoel. Een label voor dames of heren is geen meetmethode. Ook een dikkere grip is geen behandeling voor handklachten; deze pagina doet geen medische uitspraak."
+          "Kies eerst een maat via de maatgids en vergelijk dan binnen die maat. Controleer bij de aankoop of je de gewone uitvoering, een cordvariant of een andere modelvariant bekijkt. Een vergelijkbare naam betekent niet dat de opbouw gelijk is."
+        ]
+      },
+      {
+        "heading": "Welke Golf Pride grip zet jij op je shortlist?",
+        "paragraphs": [
+          "Begin met Tour Velvet voor een rubberen referentie, MCC voor twee contactzones of CP2 Pro wanneer je zachtheid wilt onderzoeken. Probeer waar mogelijk één club voordat je de hele set opnieuw laat voorzien. Controleer bij bol.com model, maat en aantal stuks."
         ]
       }
     ],
-    "related": ["/golfgrips/", "/golfgrips/vervangen/"],
+    "related": ["/golfgrips/", "/golfgrips/maat/", "/vergelijken/golf-pride-vs-lamkin/"],
     "sources": [
       {
-        "name": "Golf Pride — gripmaat bepalen",
-        "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — CP2 Pro",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
       }
     ],
-    "table": null
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Golf Pride Tour Velvet",
+          "Swinggrip",
+          "Rubber met oppervlaktestructuur",
+          "Undersize t/m jumbo; uitvoering controleren"
+        ],
+        [
+          "Golf Pride MCC",
+          "Swinggrip",
+          "Cord bovenaan, rubber onderaan",
+          "Standard of midsize; uitvoering controleren"
+        ],
+        [
+          "Golf Pride CP2 Pro",
+          "Swinggrip",
+          "Zacht rubber, verminderde taper",
+          "Maat per uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "Golf Pride",
+    "products": ["tour-velvet", "mcc", "cp2-pro"]
+  },
+  {
+    "path": "/golfgrips/lamkin/",
+    "title": "Lamkin grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Lamkin grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Lamkin grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/golfgrips/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Lamkin Crossline en Crossline Full Cord",
+        "paragraphs": [
+          "Begin met dezelfde maat en generatie. De oorspronkelijke Crossline en de Full Cord-variant staan in de Lamkin-catalogus met een verschillend oppervlak. Dat maakt ze bruikbaar om je voorkeur voor een patroon of cord te vergelijken."
+        ]
+      },
+      {
+        "heading": "Crossline-patroon of full cord: wat wil je in je handen voelen?",
+        "paragraphs": [
+          "De oorspronkelijke Crossline heeft een dicht oppervlaktespatroon; Full Cord voegt cord over het gripoppervlak toe. Beoordeel beide met je gebruikelijke handschoen. Een steviger of ruwer contactgevoel is een persoonlijke afweging, geen algemene kwaliteitsranglijst."
+        ]
+      },
+      {
+        "heading": "Welke invloed hebben maat en montage op jouw keuze?",
+        "paragraphs": [
+          "Vergelijk geen standard met midsize als je vooral het materiaal wilt beoordelen. De kerndiameter, shaft en tape horen bij de uiteindelijke pasvorm. Neem de bestaande montage mee als je een vertrouwde grip zo dicht mogelijk wilt benaderen."
+        ]
+      },
+      {
+        "heading": "Oorspronkelijke Crossline of Crossline 2.0: controleer de generatie",
+        "paragraphs": [
+          "De huidige Lamkin-site verwijst naar SuperStroke. Crossline 2.0 wordt daar beschreven als opvolger met een aangepaste taper en voller gedeelte bij de onderste hand. Behandel een 2.0 dus als een eigen model, niet als een identieke verpakking van de oorspronkelijke Crossline."
+        ]
+      },
+      {
+        "heading": "Welke Lamkin grip past in jouw vergelijking?",
+        "paragraphs": [
+          "Zet Crossline en Full Cord naast elkaar wanneer je hetzelfde maatbereik met een ander oppervlak wilt. Bekijk bij een aanbieding altijd de volledige modelnaam en generatie. Vergelijk je ook andere merken, gebruik dan de vergelijking Golf Pride versus Lamkin."
+        ]
+      }
+    ],
+    "related": ["/golfgrips/", "/golfgrips/maat/", "/vergelijken/golf-pride-vs-lamkin/"],
+    "sources": [
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      },
+      {
+        "name": "SuperStroke — Crossline 2.0, opvolger van Lamkin Crossline",
+        "url": "https://superstrokeusa.com/products/crossline-2-0-club-grip"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Lamkin Crossline",
+          "Swinggrip",
+          "Dicht Crossline-patroon",
+          "Maat en modelgeneratie controleren"
+        ],
+        [
+          "Lamkin Crossline Full Cord",
+          "Swinggrip",
+          "Cord over het gripoppervlak",
+          "Standard of midsize volgens oorspronkelijke catalogus"
+        ]
+      ]
+    },
+    "menuLabel": "Lamkin",
+    "products": ["crossline", "crossline-cord"]
+  },
+  {
+    "path": "/golfgrips/superstroke/",
+    "title": "SuperStroke grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk SuperStroke grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk SuperStroke grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/golfgrips/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je SuperStroke grips binnen de Zenergy-serie",
+        "paragraphs": [
+          "Beperk deze vergelijking tot de vorm en uitvoering binnen SuperStroke. Begin met het Tour-profiel tegenover de gevormde bovenkant van de Pistol-serie. De brede vergelijking met andere vormen en merken vind je op de pagina over puttergrips."
+        ]
+      },
+      {
+        "heading": "Tour of Pistol: welke vorm sluit aan op je handpositie?",
+        "paragraphs": [
+          "De Pistol-serie heeft een gevormde bovenkant voor de bovenste hand. Houd die naast het Tour-profiel met jouw gebruikelijke handpositie. Beoordeel waar je vingers rusten en of je handpositie vanzelf prettig blijft wanneer je de club neerzet."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je de formaten zonder op de naam af te gaan?",
+        "paragraphs": [
+          "Tour, 1.0 en 2.0 zijn uitvoeringsnamen; ze zijn niet uitwisselbaar met de maataanduidingen van swinggrips. Vergelijk de opgegeven breedte, lengte en het gewicht van precies de gekozen variant. Kies de vorm voordat je alleen op omvang selecteert."
+        ]
+      },
+      {
+        "heading": "Wat controleer je bij gewicht, lengte en accessoires?",
+        "paragraphs": [
+          "Een ander gripgewicht kan de balans van je club veranderen. Controleer daarom de complete specificatie en eventuele montagevereisten. SuperStroke vermeldt bij de Pistol-serie dat een CounterCore-gewicht apart verkrijgbaar is; veronderstel dus niet dat dit in elke verpakking zit."
+        ]
+      },
+      {
+        "heading": "Welke SuperStroke uitvoering wil je proberen?",
+        "paragraphs": [
+          "Neem Tour en Pistol als twee verschillende vertrekpunten. Vergelijk daarna de juiste formaten bij dezelfde serie. Gebruik de modelselectie hieronder om gerichter te zoeken en controleer bij bol.com de uitvoering en inhoud van de verpakking."
+        ]
+      }
+    ],
+    "related": ["/golfgrips/", "/golfgrips/maat/", "/vergelijken/golf-pride-vs-lamkin/"],
+    "sources": [
+      {
+        "name": "SuperStroke — Zenergy Pistol",
+        "url": "https://superstrokeusa.com/products/zenergy-pistol-tour-putter-grips"
+      },
+      {
+        "name": "SuperStroke — puttergrips",
+        "url": "https://superstrokeusa.com/collections/putter-grips"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "SuperStroke Zenergy Pistol",
+          "Puttergrip",
+          "Pistol-vorm aan de bovenkant",
+          "Tour, 1.0 of 2.0"
+        ],
+        ["SuperStroke Zenergy Tour", "Puttergrip", "Tour-profiel", "Maat per uitvoering"]
+      ]
+    },
+    "menuLabel": "SuperStroke",
+    "products": ["zenergy-pistol", "zenergy-tour"]
   },
   {
     "path": "/golfgrips/putter/",
-    "title": "Puttergrips: vorm en dikte vergelijken",
-    "description": "Lees waar je bij een puttergrip op let. Vergelijk vorm, dikte en de aansluiting op je putter zonder onbewezen ranglijst.",
-    "summary": "Lees waar je bij een puttergrip op let. Vergelijk vorm, dikte en de aansluiting op je putter zonder onbewezen ranglijst.",
-    "kind": "guide",
+    "title": "Puttergrips vergelijken: vorm, dikte en handpositie",
+    "description": "Vergelijk puttergrips op profiel, omvang en gewicht. Kies welke vorm je wilt proberen en bekijk concrete modellen voor jouw shortlist.",
+    "summary": "Vergelijk puttergrips op profiel, omvang en gewicht. Kies welke vorm je wilt proberen en bekijk concrete modellen voor jouw shortlist.",
+    "kind": "category",
     "parent": "/golfgrips/",
     "image": "/assets/sportgrips/photos/golf-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
+    "tags": ["Sportgrips", "Gripkeuze"],
     "sections": [
       {
-        "heading": "Begin bij de vorm",
+        "heading": "Zo vergelijk je puttergrips op vorm, dikte en handpositie",
         "paragraphs": [
-          "Een putterhandvat kan ronder, vlakker of gevormd zijn. Bekijk hoe beide handen op het oppervlak liggen. Vergelijk de vorm op een echte putter voordat je een keuze maakt."
+          "Begin met het profiel dat je wilt vasthouden. Een pistol-vorm geeft een andere bovenkant dan een Tour-profiel. Zet die keuze los van de dikte: een groter formaat binnen dezelfde familie is een andere stap dan een andere vorm kiezen."
         ]
       },
       {
-        "heading": "Een dikkere puttergrip",
+        "heading": "Pistol of Tour-profiel: waar rusten jouw handen?",
         "paragraphs": [
-          "Dikker beschrijft de afmeting, niet automatisch een beter resultaat. Let ook op gewicht en montage. Een andere grip kan het gevoel van de complete putter veranderen."
+          "Houd de grip met je gebruikelijke handpositie vast en zet de putter neer zoals je bij een putt zou doen. Voel waar je vingers en duimen landen. Kies op de pasvorm die je kunt beoordelen, niet op een belofte dat één profiel je slag automatisch verbetert."
         ]
       },
       {
-        "heading": "Passen en monteren",
+        "heading": "Dik of dun: vergelijk omvang binnen dezelfde vorm",
         "paragraphs": [
-          "Controleer of de grip bij de shaft past en vraag naar de juiste uitlijning. Heb je geen ervaring met montage, laat de grip dan passend installeren. De algemene montage-uitleg staat bij golfgrips vervangen."
+          "Vergelijk eerst formaten binnen één serie. Maatnamen van puttergrips zijn geen universele diametermaat en komen niet één op één overeen met swinggrips. Gebruik daarom de opgegeven breedte en de volledige productnaam."
+        ]
+      },
+      {
+        "heading": "Welk gewicht en welke montage passen bij je putter?",
+        "paragraphs": [
+          "Een ander gripgewicht kan de balans die je ervaart veranderen. Controleer daarom gewicht, lengte en de montage-instructie van de uitvoering. Let bij accessoires op wat wordt meegeleverd en wat je apart moet kopen."
+        ],
+        "links": [
+          {
+            "title": "Bekijk de vervangingsgids voor golfgrips",
+            "href": "/golfgrips/vervangen/",
+            "description": "Bereid de montage en benodigdheden voor."
+          }
+        ]
+      },
+      {
+        "heading": "Welke puttergrip wil je als eerste proberen?",
+        "paragraphs": [
+          "Vergelijk de SuperStroke Zenergy Pistol en Tour als twee verschillende profielkeuzes. Bepaal daarna de omvang die je wilt testen. Controleer bij bol.com dat je de juiste serie, maat en lengte bekijkt."
+        ],
+        "links": [
+          {
+            "title": "Vergelijk binnen SuperStroke",
+            "href": "/golfgrips/superstroke/",
+            "description": "Bekijk verschillen tussen de Zenergy-uitvoeringen."
+          }
         ]
       }
     ],
-    "related": ["/golfgrips/maat/", "/golfgrips/vervangen/"],
+    "related": ["/golfgrips/", "/golfgrips/superstroke/", "/golfgrips/vervangen/"],
+    "sources": [
+      {
+        "name": "SuperStroke — Zenergy Pistol",
+        "url": "https://superstrokeusa.com/products/zenergy-pistol-tour-putter-grips"
+      },
+      {
+        "name": "SuperStroke — puttergrips",
+        "url": "https://superstrokeusa.com/collections/putter-grips"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "SuperStroke Zenergy Pistol",
+          "Puttergrip",
+          "Pistol-vorm aan de bovenkant",
+          "Tour, 1.0 of 2.0"
+        ],
+        ["SuperStroke Zenergy Tour", "Puttergrip", "Tour-profiel", "Maat per uitvoering"]
+      ]
+    },
+    "menuLabel": "Puttergrips",
+    "products": ["zenergy-pistol", "zenergy-tour"]
+  },
+  {
+    "path": "/golfgrips/maat/",
+    "title": "Golfgripmaat vergelijken: bepaal jouw vertrekpunt",
+    "description": "Vergelijk golfgripmaten met je hand- en handschoenmaat. Kies een vertrekpunt en verdiep je daarna in een dunnere of vollere uitvoering.",
+    "summary": "Vergelijk golfgripmaten met je hand- en handschoenmaat. Kies een vertrekpunt en verdiep je daarna in een dunnere of vollere uitvoering.",
+    "kind": "category",
+    "parent": "/golfgrips/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je golfgripmaten op handmaat en pasvorm",
+        "paragraphs": [
+          "Gebruik hand- of handschoenmaat als eerste selectie, niet als definitief oordeel. De maattabel hieronder volgt de indicatie van Golf Pride. Pas daarna de gekozen omvang op een club en vergelijk met je huidige grip."
+        ]
+      },
+      {
+        "heading": "Wanneer is standard een passend vertrekpunt?",
+        "paragraphs": [
+          "Standard is de referentiemaat waarmee je een dunnere of vollere grip vergelijkt. Houd materiaal en montage gelijk wanneer je vooral omvang wilt beoordelen. Een zachter model voelt anders dan een steviger model, ook wanneer beide standard heten."
+        ]
+      },
+      {
+        "heading": "Welke maatrichting wil je verder vergelijken?",
+        "paragraphs": [
+          "Gebruik de aparte maatpagina’s om de stap naar dunner of voller te beoordelen. Daar vind je de afweging tussen pasvorm, materiaal en modelkeuze. De benaming van de maat is een vertrekpunt; probeer het formaat voordat je een hele set verandert."
+        ],
+        "links": [
+          {
+            "title": "Dunnere golfgrips vergelijken",
+            "href": "/golfgrips/maat/undersize/",
+            "description": "Voor wie een smallere omvang wil beoordelen."
+          },
+          {
+            "title": "Midsize golfgrips vergelijken",
+            "href": "/golfgrips/maat/midsize/",
+            "description": "Een voller alternatief naast standard."
+          },
+          {
+            "title": "Oversize en jumbo vergelijken",
+            "href": "/golfgrips/maat/oversize/",
+            "description": "Voor een duidelijk grotere omvang."
+          }
+        ]
+      },
+      {
+        "heading": "Hoe beïnvloeden shaft, kerndiameter en tape de pasvorm?",
+        "paragraphs": [
+          "De uiteindelijke omvang hangt samen met de shaft, binnendiameter van de grip en gebruikte tape. Controleer deze combinatie bij montage. Neem je huidige opbouw als referentie wanneer je een vertrouwd formaat wilt behouden."
+        ]
+      },
+      {
+        "heading": "Welke modellen vergelijk je binnen jouw maat?",
+        "paragraphs": [
+          "Kies eerst een maatrichting en zet daarna rubber, hybride en cord naast elkaar. Golf Pride en Lamkin hebben daarvoor verschillende modellen. Controleer bij bol.com de geselecteerde maat en generatie; de productnaam alleen is onvoldoende."
+        ]
+      }
+    ],
+    "related": ["/golfgrips/", "/golfgrips/golf-pride/", "/golfgrips/lamkin/"],
     "sources": [
       {
         "name": "Golf Pride — gripmaat bepalen",
         "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
       },
       {
-        "name": "Golf Pride — grips vervangen",
-        "url": "https://golfpride.com/us/en-us/grip-academy/grip-installation-guides/grip-replacement-basics.html"
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
       }
     ],
-    "table": null
+    "table": {
+      "headings": ["Handschoenmaat volgens Golf Pride", "Maatrichting", "Vervolg"],
+      "rows": [
+        ["Dames S/M t/m L; heren S / cadet S", "Dunner", "Vergelijk undersize en pas de grip"],
+        ["Heren M, M/L en cadet-equivalent", "Standard", "Gebruik als referentiemaat"],
+        ["Heren L of XL en cadet-equivalent", "Voller", "Vergelijk midsize met standard"],
+        ["Heren XXL / XXXL", "Groot", "Vergelijk jumbo en pas de grip"]
+      ]
+    },
+    "menuLabel": "Gripmaat golf",
+    "products": ["tour-velvet", "mcc", "crossline"]
+  },
+  {
+    "path": "/golfgrips/maat/undersize/",
+    "title": "Undersize golfgrips vergelijken: dunner dan standard",
+    "description": "Vergelijk undersize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "summary": "Vergelijk undersize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "kind": "category",
+    "parent": "/golfgrips/maat/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Dunner vergelijken zonder op dames of heren te selecteren",
+        "paragraphs": [
+          "Een undersize grip is relevant als je een kleinere omvang dan standard wilt beoordelen. Kies op je handmaat en voorkeur. Het label dames of junior zegt op zichzelf niet welke maat bij je past."
+        ]
+      },
+      {
+        "heading": "Wanneer is undersize een logische vergelijking?",
+        "paragraphs": [
+          "Gebruik je huidige club als referentie. Voelt standard te vol, vergelijk dan een dunnere uitvoering van hetzelfde model. Houd materiaal en montage zo gelijk mogelijk, zodat je vooral het verschil in omvang beoordeelt."
+        ]
+      },
+      {
+        "heading": "Rubber, cord of een zachter model: wat wil je veranderen?",
+        "paragraphs": [
+          "Beoordeel materiaal en oppervlak los van de maat. Tour Velvet is een rubberen referentie; andere modellen voegen cord, een ander patroon of een zachter materiaal toe. De juiste omvang kan bij een ander oppervlak toch anders aanvoelen."
+        ]
+      },
+      {
+        "heading": "Welke montage houdt de maatvergelijking eerlijk?",
+        "paragraphs": [
+          "Controleer shaft, kerndiameter en tape met de monteur of de montage-instructie. Het formaat op de verpakking beschrijft niet de volledige opbouw. Probeer één club voordat je de hele set laat aanpassen."
+        ],
+        "links": [
+          {
+            "title": "Terug naar de golfmaattabel",
+            "href": "/golfgrips/maat/",
+            "description": "Vergelijk je handmaat en andere maatrichtingen."
+          }
+        ]
+      },
+      {
+        "heading": "Welke undersize uitvoering zet je op je shortlist?",
+        "paragraphs": [
+          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+        ]
+      }
+    ],
+    "related": [
+      "/golfgrips/maat/",
+      "/golfgrips/golf-pride/",
+      "/golfgrips/lamkin/",
+      "/golfgrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Golf Pride — gripmaat bepalen",
+        "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
+      },
+      {
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — CP2 Pro",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Golf Pride Tour Velvet",
+          "Swinggrip",
+          "Rubber met oppervlaktestructuur",
+          "Undersize t/m jumbo; uitvoering controleren"
+        ]
+      ]
+    },
+    "menuLabel": "Undersize",
+    "products": ["tour-velvet"]
+  },
+  {
+    "path": "/golfgrips/maat/midsize/",
+    "title": "Midsize golfgrips vergelijken: omvang, materiaal en gevoel",
+    "description": "Vergelijk midsize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "summary": "Vergelijk midsize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "kind": "category",
+    "parent": "/golfgrips/maat/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Midsize tegenover standard: vergelijk dezelfde grip",
+        "paragraphs": [
+          "Een midsize grip geeft een voller vertrekpunt dan standard. Beoordeel dit bij voorkeur binnen hetzelfde model. Een maatstap en een materiaalwissel tegelijk maken het lastiger vast te stellen welke verandering je prettig vindt."
+        ]
+      },
+      {
+        "heading": "Wanneer wil je midsize naast je huidige grip proberen?",
+        "paragraphs": [
+          "Neem midsize mee wanneer je bewust meer omvang wilt onderzoeken. Een handschoenmaat L of XL komt in de Golf Pride-indicatie terug bij deze maatrichting, maar de pasvorm op de club blijft leidend."
+        ]
+      },
+      {
+        "heading": "Rubber, cord of een zachter model: wat wil je veranderen?",
+        "paragraphs": [
+          "Beoordeel materiaal en oppervlak los van de maat. Tour Velvet is een rubberen referentie; andere modellen voegen cord, een ander patroon of een zachter materiaal toe. De juiste omvang kan bij een ander oppervlak toch anders aanvoelen."
+        ]
+      },
+      {
+        "heading": "Welke montage houdt de maatvergelijking eerlijk?",
+        "paragraphs": [
+          "Controleer shaft, kerndiameter en tape met de monteur of de montage-instructie. Het formaat op de verpakking beschrijft niet de volledige opbouw. Probeer één club voordat je de hele set laat aanpassen."
+        ],
+        "links": [
+          {
+            "title": "Terug naar de golfmaattabel",
+            "href": "/golfgrips/maat/",
+            "description": "Vergelijk je handmaat en andere maatrichtingen."
+          }
+        ]
+      },
+      {
+        "heading": "Welke midsize modellen passen bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+        ]
+      }
+    ],
+    "related": [
+      "/golfgrips/maat/",
+      "/golfgrips/golf-pride/",
+      "/golfgrips/lamkin/",
+      "/golfgrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Golf Pride — gripmaat bepalen",
+        "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
+      },
+      {
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — CP2 Pro",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Golf Pride Tour Velvet",
+          "Swinggrip",
+          "Rubber met oppervlaktestructuur",
+          "Undersize t/m jumbo; uitvoering controleren"
+        ],
+        [
+          "Golf Pride MCC",
+          "Swinggrip",
+          "Cord bovenaan, rubber onderaan",
+          "Standard of midsize; uitvoering controleren"
+        ],
+        [
+          "Lamkin Crossline",
+          "Swinggrip",
+          "Dicht Crossline-patroon",
+          "Maat en modelgeneratie controleren"
+        ]
+      ]
+    },
+    "menuLabel": "Midsize",
+    "products": ["tour-velvet", "mcc", "crossline"]
+  },
+  {
+    "path": "/golfgrips/maat/oversize/",
+    "title": "Oversize golfgrips vergelijken: jumbo en vollere modellen",
+    "description": "Vergelijk oversize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "summary": "Vergelijk oversize golfgrips op omvang, oppervlak en uitvoering. Bepaal welke modellen je naast je huidige grip wilt proberen.",
+    "kind": "category",
+    "parent": "/golfgrips/maat/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Oversize en jumbo: vergelijk de werkelijke uitvoering",
+        "paragraphs": [
+          "Oversize en jumbo worden gebruikt voor grotere gripmaten. Ga niet alleen op die naam af: controleer de opgegeven afmetingen en de montage op je club. Vergelijk binnen één model voordat je een andere vorm of materiaal kiest."
+        ]
+      },
+      {
+        "heading": "Wanneer vergelijk je een grotere grip met midsize?",
+        "paragraphs": [
+          "Neem een grotere omvang mee als je die bewust prettiger vindt vasthouden. De maat op zichzelf bewijst geen effect op je swing of klachten. Beoordeel de grip in je eigen hand en vraag bij handklachten om passend advies voordat je op een productbelofte afgaat."
+        ]
+      },
+      {
+        "heading": "Rubber, cord of een zachter model: wat wil je veranderen?",
+        "paragraphs": [
+          "Beoordeel materiaal en oppervlak los van de maat. Tour Velvet is een rubberen referentie; andere modellen voegen cord, een ander patroon of een zachter materiaal toe. De juiste omvang kan bij een ander oppervlak toch anders aanvoelen."
+        ]
+      },
+      {
+        "heading": "Welke montage houdt de maatvergelijking eerlijk?",
+        "paragraphs": [
+          "Controleer shaft, kerndiameter en tape met de monteur of de montage-instructie. Het formaat op de verpakking beschrijft niet de volledige opbouw. Probeer één club voordat je de hele set laat aanpassen."
+        ],
+        "links": [
+          {
+            "title": "Terug naar de golfmaattabel",
+            "href": "/golfgrips/maat/",
+            "description": "Vergelijk je handmaat en andere maatrichtingen."
+          }
+        ]
+      },
+      {
+        "heading": "Welke oversize uitvoering wil je eerst proberen?",
+        "paragraphs": [
+          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+        ]
+      }
+    ],
+    "related": [
+      "/golfgrips/maat/",
+      "/golfgrips/golf-pride/",
+      "/golfgrips/lamkin/",
+      "/golfgrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Golf Pride — gripmaat bepalen",
+        "url": "https://golfpride.com/us/en-us/grip-academy/swing-grip-size-guide.html"
+      },
+      {
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Golf Pride — CP2 Pro",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Golf Pride Tour Velvet",
+          "Swinggrip",
+          "Rubber met oppervlaktestructuur",
+          "Undersize t/m jumbo; uitvoering controleren"
+        ],
+        [
+          "Golf Pride CP2 Pro",
+          "Swinggrip",
+          "Zacht rubber, verminderde taper",
+          "Maat per uitvoering"
+        ],
+        [
+          "Lamkin Crossline",
+          "Swinggrip",
+          "Dicht Crossline-patroon",
+          "Maat en modelgeneratie controleren"
+        ]
+      ]
+    },
+    "menuLabel": "Oversize",
+    "products": ["tour-velvet", "cp2-pro", "crossline"]
   },
   {
     "path": "/golfgrips/vervangen/",
@@ -394,160 +862,468 @@
         "url": "https://golfpride.com/us/en-us/grip-academy/grip-care.html"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Golfgrips vervangen"
   },
   {
-    "path": "/tennisgrips/overgrips/",
-    "title": "Overgrips voor tennis kiezen",
-    "description": "Vergelijk tennisovergrips op gevoel, vochtopname, dikte en gebruik. Lees welke eigenschappen je vóór aankoop kunt controleren.",
-    "summary": "Vergelijk tennisovergrips op gevoel, vochtopname, dikte en gebruik. Lees welke eigenschappen je vóór aankoop kunt controleren.",
-    "kind": "guide",
-    "parent": "/tennisgrips/",
+    "path": "/tennisgrips/",
+    "title": "Tennisgrips vergelijken: kies je type, merk en maat",
+    "description": "Vergelijk tennisgrips via basisgrips, merken en gripmaat. Vind de juiste vergelijking voor jouw racket en handcomfort.",
+    "summary": "Vergelijk tennisgrips via basisgrips, merken en gripmaat. Vind de juiste vergelijking voor jouw racket en handcomfort.",
+    "kind": "hub",
+    "parent": null,
     "image": "/assets/sportgrips/photos/tennis-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
+    "tags": ["Sportgrips", "Vergelijk per sport"],
     "sections": [
       {
-        "heading": "Droog gevoel of kleverig contact",
+        "heading": "Zo vergelijk je tennisgrips voor jouw gebruik",
         "paragraphs": [
-          "Een dry feel en een tacky feel beschrijven het contactoppervlak. Vochtopname is een aparte eigenschap. Vergelijk die punten in de modelinformatie en probeer wat prettig blijft als je handen tijdens het spelen vochtiger worden."
+          "Begin bij de laag die je wilt veranderen. De basisgrip vormt de onderbouw van het rackethandvat; de buitenlaag bepaalt het contactoppervlak. In dit overzicht kies je de vergelijking die past bij je racket, handvatmaat en voorkeur."
         ]
       },
       {
-        "heading": "Dikte en vorm van het handvat",
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
         "paragraphs": [
-          "Een overgrip voegt een dunne laag toe over de basisgrip. De einddikte hangt ook af van het wikkelen en de overlap. Als je racket al dik aanvoelt, begin dan niet met extra lagen zonder opnieuw te passen."
+          "Wil je de onderlaag vernieuwen of het basisgevoel veranderen, begin bij basisgrips. Wil je vooral vochtopname of het oppervlak aanpassen, ga dan naar de vergelijking van overgrips. De keuze voor een laag komt vóór de keuze voor een merk."
+        ],
+        "links": [
+          {
+            "title": "Basisgrips",
+            "href": "/tennisgrips/basisgrips/",
+            "description": "Vergelijk de onderlaag op dikte, materiaal en demping."
+          },
+          {
+            "title": "Overgrips",
+            "href": "/tennisgrips/overgrips/",
+            "description": "Vergelijk de buitenlaag op droogte, kleverigheid en dikte."
+          }
         ]
       },
       {
-        "heading": "Prijs per stuk en vervangmoment",
+        "heading": "Vergelijk merken en modellen voor tennis",
         "paragraphs": [
-          "Vergelijk bij een aankoop hetzelfde model en aantal. Deel de totaalprijs door het aantal grips en tel eventuele verzendkosten mee. Voor levensduur geven we geen vaste score: gebruik, vocht en slijtage verschillen per speler."
+          "Wilson en HEAD hebben in onze selectie zowel een basisgrip als een buitenlaag. Babolat biedt een vergelijking van droge en kleverige overgrips naast synthetische en leren onderlagen. Tourna en Yonex helpen je verder kiezen op het gewenste contactgevoel. Solinco kun je als extra merk meenemen wanneer je een concrete uitvoering wilt vergelijken."
+        ],
+        "links": [
+          {
+            "title": "Wilson",
+            "href": "/tennisgrips/wilson/",
+            "description": "Vergelijk de modellen en uitvoeringen van Wilson."
+          },
+          {
+            "title": "Babolat",
+            "href": "/tennisgrips/babolat/",
+            "description": "Vergelijk de modellen en uitvoeringen van Babolat."
+          },
+          {
+            "title": "Tourna",
+            "href": "/tennisgrips/tourna/",
+            "description": "Vergelijk de modellen en uitvoeringen van Tourna."
+          },
+          {
+            "title": "HEAD",
+            "href": "/tennisgrips/head/",
+            "description": "Vergelijk de modellen en uitvoeringen van HEAD."
+          },
+          {
+            "title": "Yonex",
+            "href": "/tennisgrips/yonex/",
+            "description": "Vergelijk de modellen en uitvoeringen van Yonex."
+          }
         ]
       },
       {
-        "heading": "Voor een andere sport?",
+        "heading": "Past de volledige gripopbouw bij jouw tennisracket?",
         "paragraphs": [
-          "De algemene term overgrip is hier bij tennis ondergebracht, zoals in het zoekwoordenonderzoek. Voor padel, badminton en squash vind je eigen keuzeuitleg op de sportpagina’s. Controleer altijd de lintlengte en montage van het concrete product."
+          "De maat op de einddop is je vertrekpunt. Een andere basisgrip of extra overgrip kan de totale omvang veranderen. Vergelijk daarom de complete opbouw en pas bij twijfel verschillende maten met vergelijkbare lagen."
+        ],
+        "links": [
+          {
+            "title": "Gripmaat tennis",
+            "href": "/tennisgrips/gripmaat/",
+            "description": "Beoordeel L0 tot en met L5 en de totale handvatdikte."
+          }
+        ]
+      },
+      {
+        "heading": "Welke tennisgrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
         ]
       }
     ],
     "related": [
+      "/tennisgrips/basisgrips/",
+      "/tennisgrips/overgrips/",
       "/tennisgrips/vervangen/",
-      "/tennisgrips/gripmaat/",
-      "/padelgrips/",
-      "/badmintongrips/",
-      "/squashgrips/"
+      "/kennis/grips-schoonmaken/"
     ],
     "sources": [
       {
-        "name": "Babolat — een overgrip kiezen",
-        "url": "https://help.babolat.com/hc/en-gb/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+        "name": "LTA — gripmaat en overgrips",
+        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
       },
       {
-        "name": "LTA — gripmaat, overgrips en aanbrengen",
-        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
+        "name": "Babolat — Syntec Pro",
+        "url": "https://www.babolat.com/us/syntec-pro/670051.html"
+      },
+      {
+        "name": "Wilson — Pro Overgrip",
+        "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
+      },
+      {
+        "name": "Babolat — VS Original",
+        "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+      },
+      {
+        "name": "Yonex — Super Grap AC102",
+        "url": "https://www.yonex.com/ac102"
       }
     ],
     "table": {
-      "headings": ["Eigenschap", "Wat controleer je?"],
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
       "rows": [
-        ["Gevoel", "Droog of tacky; probeer met je eigen handen"],
-        ["Dikte", "Opgegeven dikte én uiteindelijke overlap"],
-        ["Vocht", "Modelinformatie over absorptie"],
-        ["Slijtage", "Loslaten, gladheid en zichtbare beschadiging"],
-        ["Kosten", "Dezelfde uitvoering, aantal en totaalprijs"]
+        ["Onderlaag vernieuwen", "Dikte, materiaal en basisgevoel", "Basisgrips"],
+        ["Buitenoppervlak veranderen", "Droog of kleverig en dun of voller", "Overgrips"],
+        ["Twijfel over de omvang", "Maat plus volledige laagopbouw", "Gripmaat tennis"]
       ]
-    }
+    },
+    "menuLabel": "Tennisgrips",
+    "products": ["syntec-pro", "wilson-pro", "vs-original", "super-grap"]
   },
   {
-    "path": "/tennisgrips/basisgrips/",
-    "title": "Basisgrips voor tennis: de onderlaag kiezen",
-    "description": "Vergelijk een vervangende tennisgrip op dikte, oppervlak en gevoel. Lees hoe de basisgrip samenwerkt met de buitenlaag.",
-    "summary": "Vergelijk een vervangende tennisgrip op dikte, oppervlak en gevoel. Lees hoe de basisgrip samenwerkt met de buitenlaag.",
-    "kind": "guide",
+    "path": "/tennisgrips/overgrips/",
+    "title": "Tennisovergrips vergelijken: droog, kleverig en dun",
+    "description": "Vergelijk tennisovergrips op contactgevoel, dikte en vochtopname. Zet droge en kleverige modellen naast elkaar en kies een passende verpakking.",
+    "summary": "Vergelijk tennisovergrips op contactgevoel, dikte en vochtopname. Zet droge en kleverige modellen naast elkaar en kies een passende verpakking.",
+    "kind": "category",
     "parent": "/tennisgrips/",
     "image": "/assets/sportgrips/photos/tennis-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
+    "tags": ["Sportgrips", "Gripkeuze"],
     "sections": [
       {
-        "heading": "Vervang de juiste laag",
+        "heading": "Zo vergelijk je tennisovergrips op oppervlak, dikte en vocht",
         "paragraphs": [
-          "Een basisgrip vernieuwt de grip direct op het handvat. Koop dus een replacement grip als dat je bedoeling is. Een dunne overgrip is een andere laag en vervangt de basisgrip niet één op één."
+          "Begin met het probleem dat je wilt oplossen: wordt het oppervlak glad door vocht, wil je meer kleverigheid of voegt je huidige overgrip te veel volume toe? Dat geeft een bruikbaarder vertrekpunt dan één algemene lijst met beste overgrips.",
+          "Vergelijk modellen op dezelfde basisgrip en met dezelfde overlap. Zo houd je de onderbouw gelijk terwijl je de buitenlaag beoordeelt. De tabel helpt je de modellen op contactgevoel en opgegeven dikte te scheiden."
         ]
       },
       {
-        "heading": "Vergelijk de opbouw",
+        "heading": "Droog of kleverig: welk contactgevoel past bij jou?",
         "paragraphs": [
-          "Let op de opgegeven dikte, het materiaal en de lengte. Denk ook aan de buitenlaag die je er eventueel overheen wilt aanbrengen. De combinatie bepaalt hoe het racket in je hand ligt."
+          "Tourna Grip Original en Babolat VS Original zijn relevant als je een droog oppervlak zoekt. Yonex Super Grap, Babolat Pro Tour 2.0 en HEAD Prime Tour horen bij de vergelijking van kleverige opties. Kleverigheid en vochtopname zijn verschillende eigenschappen.",
+          "Kies op je ervaring tijdens het spelen. Een grip die met droge handen prettig voelt, kan bij een lange training anders aanvoelen. Begin daarom met een kleine verpakking voordat je overstapt op een doos."
         ]
       },
       {
-        "heading": "Leer of synthetisch beoordelen",
+        "heading": "Hoeveel dikte wil je aan je handvat toevoegen?",
         "paragraphs": [
-          "Controleer de eigenschappen van het specifieke model. Een materiaalcategorie zegt op zichzelf niet welke grip jij het prettigst vindt. We geven geen dempingsscore, gewicht of levensduur zonder geverifieerde modelspecificaties."
+          "VS Original is opgegeven als 0,43 mm, Dry Super Grap als 0,45 mm en Super Grap AC102 als 0,6 mm. Vergelijk deze cijfers samen met de manier waarop je wikkelt. Meer overlap voegt plaatselijk meer materiaal toe.",
+          "Heb je al een passend handvat, neem dan dunne modellen mee. Wil je het handvat voller maken, beoordeel dan de complete gripmaat; stapelen is niet hetzelfde als een vooraf passende basismaat kiezen."
+        ],
+        "links": [
+          {
+            "title": "Controleer je tennisgripmaat",
+            "href": "/tennisgrips/gripmaat/",
+            "description": "Vergelijk de uiteindelijke omvang, inclusief buitenlaag."
+          }
+        ]
+      },
+      {
+        "heading": "Zo vergelijk je verpakkingen, vervanging en prijs per stuk",
+        "paragraphs": [
+          "Deel de verpakkingsprijs door het aantal grips en tel eventuele verzendkosten mee. Vergelijk daarna hoe vaak jij de grip wilt vernieuwen. Zonder gelijke speelomstandigheden kun je van fabrikantclaims geen betrouwbare kosten per speeluur afleiden.",
+          "Kies eerst het model en daarna de verpakking. Voor padel, badminton of squash hoort de laagopbouw bij de eigen sportpagina; een bekende overgrip kan bruikbaar zijn, maar de benodigde lengte en opbouw blijven relevant."
+        ],
+        "links": [
+          {
+            "title": "Padelgrips vergelijken",
+            "href": "/padelgrips/",
+            "description": "Beoordeel de opbouw op een padelracket."
+          },
+          {
+            "title": "Badmintongrips vergelijken",
+            "href": "/badmintongrips/",
+            "description": "Vergelijk ook de keuze voor badstof."
+          },
+          {
+            "title": "Squashgrips vergelijken",
+            "href": "/squashgrips/",
+            "description": "Begin bij basisgrip en buitenlaag."
+          }
+        ]
+      },
+      {
+        "heading": "Welke tennisovergrip zet je op jouw shortlist?",
+        "paragraphs": [
+          "Begin met Original of VS Original voor een droog contactgevoel. Vergelijk Super Grap of Pro Tour 2.0 voor kleverigheid en neem Wilson Pro Overgrip mee als je een dunne, rekbare buitenlaag wilt. De selectie hieronder helpt je gericht zoeken.",
+          "Controleer bij bol.com de volledige modelnaam, het aantal stuks en de uitvoering. Kies op de eigenschappen die je nodig hebt en gebruik de actuele winkelprijs pas als laatste vergelijking."
         ]
       }
     ],
     "related": [
-      "/kennis/verschil-basisgrip-overgrip/",
+      "/tennisgrips/",
+      "/tennisgrips/basisgrips/",
+      "/vergelijken/wilson-pro-overgrip-vs-tourna-grip/",
+      "/tennisgrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Babolat — VS Original",
+        "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+      },
+      {
+        "name": "Yonex — Super Grap AC102",
+        "url": "https://www.yonex.com/ac102"
+      },
+      {
+        "name": "Yonex — badmintoncatalogus 2024, Dry Super Grap",
+        "url": "https://www.yonex.com/media/wysiwyg/2024-Yonex-Badminton-Catalog.pdf"
+      },
+      {
+        "name": "Babolat — overgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-us/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+      },
+      {
+        "name": "Tourna — overgrips",
+        "url": "https://www.tourna.com/pages/overgrips"
+      },
+      {
+        "name": "HEAD — Prime Tour",
+        "url": "https://www.head.com/product/prime-tour-285621"
+      },
+      {
+        "name": "Wilson — Pro Overgrip",
+        "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Tourna Grip Original",
+          "Overgrip",
+          "Droog, gericht op vochtopname",
+          "Lengte en uitvoering controleren"
+        ],
+        ["Babolat VS Original", "Overgrip", "Droog contactgevoel", "0,43 mm"],
+        ["Yonex Super Grap AC102", "Overgrip", "Kleverig polyurethaan", "0,6 mm"],
+        [
+          "Babolat Pro Tour 2.0",
+          "Overgrip",
+          "Kleverig contactgevoel",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "Wilson Pro Overgrip",
+          "Overgrip",
+          "Dun en rekbaar vilt",
+          "Controleer de gekozen uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "Overgrips",
+    "products": ["tourna-original", "vs-original", "super-grap", "pro-tour", "wilson-pro"]
+  },
+  {
+    "path": "/tennisgrips/basisgrips/",
+    "title": "Tennisbasisgrips vergelijken: dikte, oppervlak en gevoel",
+    "description": "Vergelijk tennisbasisgrips op dikte, materiaal en contactgevoel. Kies een onderlaag die past bij je racket, handcomfort en eventuele overgrip.",
+    "summary": "Vergelijk tennisbasisgrips op dikte, materiaal en contactgevoel. Kies een onderlaag die past bij je racket, handcomfort en eventuele overgrip.",
+    "kind": "category",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je tennisbasisgrips op dikte, oppervlak en gevoel",
+        "paragraphs": [
+          "Vergelijk eerst grips die de onderlaag vervangen. Syntec Pro, Natural Grip, Wilson Pro Performance en HEAD Hydrosorb Pro horen bij die vergelijking; een overgrip is een andere laag. Zet vervolgens de dikte, het oppervlak en de combinatie met je buitenlaag naast elkaar.",
+          "Kies je vooral op comfort, neem dan een zachtere synthetische optie mee. Wil je de kanten van het handvat directer voelen, vergelijk dan ook een stevigere of leren basisgrip. Beoordeel de grip op jouw racket, omdat de handvatvorm mede bepaalt wat je voelt."
+        ]
+      },
+      {
+        "heading": "Hoe kies je de juiste dikte voor jouw speelstijl en handcomfort?",
+        "paragraphs": [
+          "Vertrek van je huidige handvat: voelt dat passend, te vol of juist te smal? Een dikkere basisgrip verandert de totale omvang. Gebruik de opgegeven dikte als vergelijkingsgegeven, niet als garantie voor een bepaalde uiteindelijke gripmaat.",
+          "Wil je hetzelfde formaat behouden, vergelijk dan een vervanging met een vergelijkbare dikte en wikkelwijze. Wil je juist iets veranderen, wijzig eerst de onderlaag en beoordeel pas daarna of een overgrip nodig is."
+        ],
+        "links": [
+          {
+            "title": "Vergelijk de tennisgripmaten",
+            "href": "/tennisgrips/gripmaat/",
+            "description": "Neem de volledige handvatopbouw mee bij je maatkeuze."
+          }
+        ]
+      },
+      {
+        "heading": "Het verschil in oppervlak: van direct contact tot extra demping",
+        "paragraphs": [
+          "Een leren basisgrip zoals Natural Grip heeft een stevig contactgevoel; synthetische modellen verschillen onderling in zachtheid en kleverigheid. Vergelijk dus concrete modellen in plaats van alleen leer tegenover synthetisch te zetten.",
+          "Syntec Pro is met 1,9 mm een concreet meetpunt. Voor andere modellen controleer je de bijbehorende productspecificatie. Fabrikanten gebruiken verschillende omschrijvingen voor comfort; die vormen geen onderling vergelijkbare testscore."
+        ]
+      },
+      {
+        "heading": "De ideale combinatie: zo werkt je basisgrip samen met een overgrip",
+        "paragraphs": [
+          "De basisgrip bepaalt de onderbouw, de overgrip het oppervlak dat je hand raakt. Een dunne buitenlaag kan het contact veranderen zonder de onderlaag te vernieuwen. Een versleten of loszittende basisgrip vraagt juist aandacht voor die onderlaag.",
+          "Vergelijk combinaties met dezelfde overgrip als je het verschil tussen basisgrips wilt voelen. Anders verander je twee onderdelen tegelijk. Wil je vooral vochtopname of kleverigheid aanpassen, begin dan bij de vergelijking van overgrips."
+        ],
+        "links": [
+          {
+            "title": "Vergelijk tennisovergrips",
+            "href": "/tennisgrips/overgrips/",
+            "description": "Kies de buitenlaag op droogte, kleverigheid en dikte."
+          }
+        ]
+      },
+      {
+        "heading": "Welke basisgrip past bij jouw racket? Vergelijk per voorkeur",
+        "paragraphs": [
+          "Neem Syntec Pro of Hydrosorb Pro mee voor een synthetische onderlaag met nadruk op contactgevoel. Vergelijk Pro Performance als je een zachte, kleverige afwerking zoekt en Natural Grip als je leer wilt proberen. Dit zijn verschillende vertrekpunten; de beste pasvorm beoordeel je op je eigen racket.",
+          "Zoek de volledige modelnaam bij bol.com en controleer dat de aanbieding een basisgrip of replacement grip betreft. Controleer ook lengte, uitvoering en de verpakking voordat je de prijs vergelijkt."
+        ]
+      }
+    ],
+    "related": [
+      "/tennisgrips/",
+      "/tennisgrips/gripmaat/",
       "/tennisgrips/overgrips/",
       "/tennisgrips/vervangen/"
     ],
     "sources": [
       {
-        "name": "LTA — gripmaat, overgrips en aanbrengen",
-        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
-      }
-    ],
-    "table": null
-  },
-  {
-    "path": "/tennisgrips/gripmaat/",
-    "title": "Gripmaat tennis: meten en vergelijken",
-    "description": "Bekijk de tennisgripmaten L0 tot en met L5. Meet je hand, pas het racket en neem de dikte van een eventuele overgrip mee.",
-    "summary": "Bekijk de tennisgripmaten L0 tot en met L5. Meet je hand, pas het racket en neem de dikte van een eventuele overgrip mee.",
-    "kind": "guide",
-    "parent": "/tennisgrips/",
-    "image": "/assets/sportgrips/photos/tennis-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
-    "sections": [
-      {
-        "heading": "Kijk op de einddop",
-        "paragraphs": [
-          "Op de einddop staat vaak de gripmaat. De Europese nummers komen overeen met een omtrek in inches. De tabel hieronder beschrijft de gebruikelijke aanduidingen; de laag die om het handvat zit, verandert het uiteindelijke gevoel."
-        ]
+        "name": "Babolat — basisgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-gb/articles/22990875281949-How-to-choose-the-right-grip"
       },
       {
-        "heading": "Meten en daarna passen",
-        "paragraphs": [
-          "De LTA beschrijft een meting van de onderste dwarsplooi in je handpalm tot de top van je ringvinger. Gebruik dat als vertrekpunt en houd daarna een racket vast. Je vingers horen comfortabel rond het handvat te vallen zonder hard in je palm te drukken."
-        ]
+        "name": "Babolat — Syntec Pro",
+        "url": "https://www.babolat.com/us/syntec-pro/670051.html"
       },
       {
-        "heading": "L2 of L3?",
-        "paragraphs": [
-          "De maatstap tussen de aanduidingen is 1/8 inch in omtrek. Pas beide maten als je twijfelt. Neem je gebruikelijke basisgrip en overgrip mee in de vergelijking. Een extra buitenlaag maakt het handvat dikker, maar de uitkomst hangt af van materiaal en wikkelwijze."
-        ]
-      }
-    ],
-    "related": ["/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
-    "sources": [
+        "name": "Wilson — Pro Performance basisgrip",
+        "url": "https://au.wilson.com/products/pro-performance-replacement-grip"
+      },
       {
-        "name": "LTA — gripmaat, overgrips en aanbrengen",
+        "name": "HEAD — Hydrosorb Pro",
+        "url": "https://www.head.com/product/hydrosorbtm-pro-3"
+      },
+      {
+        "name": "LTA — gripmaat en overgrips",
         "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
       }
     ],
     "table": {
-      "headings": ["Aanduiding", "Omtrek in inches"],
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
       "rows": [
-        ["L0", "4"],
-        ["L1", "4 1/8"],
-        ["L2", "4 1/4"],
-        ["L3", "4 3/8"],
-        ["L4", "4 1/2"],
-        ["L5", "4 5/8"]
+        ["Babolat Syntec Pro", "Basisgrip", "Kleverig, gericht op contactgevoel", "1,9 mm"],
+        [
+          "Wilson Pro Performance",
+          "Basisgrip",
+          "Zacht en kleverig oppervlak",
+          "Controleer de modelspecificatie"
+        ],
+        [
+          "HEAD Hydrosorb Pro",
+          "Basisgrip",
+          "Kleverig, gericht op feedback",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "Babolat Natural Grip",
+          "Basisgrip",
+          "Leer, stevig contactgevoel",
+          "Controleer de gekozen uitvoering"
+        ]
       ]
-    }
+    },
+    "menuLabel": "Basisgrips",
+    "products": ["syntec-pro", "wilson-base", "head-hydro", "natural-grip"]
+  },
+  {
+    "path": "/tennisgrips/gripmaat/",
+    "title": "Tennisgripmaat vergelijken: welke maat past bij jouw hand?",
+    "description": "Vergelijk tennisgripmaten van L0 tot L5 en neem basisgrip en overgrip mee. Bepaal wat je controleert voordat je L2 of L3 kiest.",
+    "summary": "Vergelijk tennisgripmaten van L0 tot L5 en neem basisgrip en overgrip mee. Bepaal wat je controleert voordat je L2 of L3 kiest.",
+    "kind": "category",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je tennisgripmaten met je huidige racket",
+        "paragraphs": [
+          "Lees eerst de maat op de einddop en beschrijf wat je wilt veranderen. L0 tot en met L5 duiden handvatmaten aan; ze zijn niet hetzelfde als de dikte van een losse grip. Neem je huidige racket mee als referentie bij het passen."
+        ]
+      },
+      {
+        "heading": "L2 of L3: vergelijk de complete opbouw in je hand",
+        "paragraphs": [
+          "Pas beide maten met een vergelijkbare basisgrip en buitenlaag. Let op hoe natuurlijk je vingers sluiten en of je de handvatkanten prettig voelt. Alleen de losse maatcode vergelijken mist het effect van de gripopbouw."
+        ]
+      },
+      {
+        "heading": "Welke invloed heeft een nieuwe basisgrip op de maat?",
+        "paragraphs": [
+          "Een andere basisgrip kan de omvang en het contactgevoel veranderen. Vergelijk de opgegeven dikte met je huidige onderlaag. Leer en synthetische grips kunnen ook bij een vergelijkbare maat anders aanvoelen."
+        ],
+        "links": [
+          {
+            "title": "Vergelijk tennisbasisgrips",
+            "href": "/tennisgrips/basisgrips/",
+            "description": "Kies de onderlaag voordat je extra lagen toevoegt."
+          }
+        ]
+      },
+      {
+        "heading": "Dikker maken met een overgrip: welke afweging maak je?",
+        "paragraphs": [
+          "Een overgrip voegt materiaal toe, maar de uitkomst hangt af van dikte, spanning en overlap. Gebruik geen vaste omrekening waarmee elke overgrip precies één maat zou toevoegen. Beoordeel na het wikkelen opnieuw de volledige grip."
+        ],
+        "links": [
+          {
+            "title": "Vergelijk dunne en dikkere overgrips",
+            "href": "/tennisgrips/overgrips/",
+            "description": "Bekijk concrete diktes en contactoppervlakken."
+          }
+        ]
+      },
+      {
+        "heading": "Welke gripopbouw past bij jouw racketmaat?",
+        "paragraphs": [
+          "Behoud bij een passend racket eerst een vergelijkbare basisgrip. Zoek een dunne overgrip als je vooral het oppervlak wilt veranderen. Vergelijk de modellen hieronder op laagfunctie en dikte en controleer de uitvoering bij bol.com."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/basisgrips/", "/tennisgrips/overgrips/"],
+    "sources": [
+      {
+        "name": "LTA — gripmaat en overgrips",
+        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
+      },
+      {
+        "name": "Babolat — Syntec Pro",
+        "url": "https://www.babolat.com/us/syntec-pro/670051.html"
+      },
+      {
+        "name": "Babolat — VS Original",
+        "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+      },
+      {
+        "name": "Yonex — Super Grap AC102",
+        "url": "https://www.yonex.com/ac102"
+      }
+    ],
+    "table": {
+      "headings": ["Je vertrekpunt", "Vergelijk eerst", "Controleer daarna"],
+      "rows": [
+        ["Huidige maat voelt passend", "Gelijksoortige basisgrip", "Buitenlaag en overlap"],
+        ["Twijfel tussen L2 en L3", "Beide complete handvatten", "Vingerpositie en contactgevoel"],
+        ["Meer volume gewenst", "Passende basismaat en gripdikte", "Totale omvang na wikkelen"]
+      ]
+    },
+    "menuLabel": "Gripmaat tennis",
+    "products": ["syntec-pro", "vs-original", "super-grap"]
   },
   {
     "path": "/tennisgrips/vervangen/",
@@ -591,7 +1367,487 @@
         "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Tennisgrips vervangen"
+  },
+  {
+    "path": "/tennisgrips/wilson/",
+    "title": "Wilson grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Wilson grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Wilson grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Wilson grips op laag en contactgevoel",
+        "paragraphs": [
+          "Pro Overgrip en Pro Performance veranderen elk een andere laag. Vergelijk Pro Overgrip wanneer je de buitenlaag vernieuwt. Pro Performance hoort bij het vervangen van de basisgrip. Kies eerst de juiste laag, voordat je comfort of oppervlak vergelijkt."
+        ]
+      },
+      {
+        "heading": "Wanneer kies je Pro Overgrip voor je bestaande handvat?",
+        "paragraphs": [
+          "Wilson beschrijft Pro Overgrip als dun en rekbaar. Neem deze mee als je een buitenlaag zoekt zonder meteen de basisgrip te vervangen. Beoordeel de handvatdikte na het wikkelen; overlap en de bestaande onderlaag tellen allebei mee."
+        ]
+      },
+      {
+        "heading": "Wanneer past Pro Performance beter bij je doel?",
+        "paragraphs": [
+          "Pro Performance is een replacement grip met een zachte, kleverige afwerking. Vergelijk hem als de onderlaag versleten is of als je het basisgevoel wilt veranderen. Nog een overgrip toevoegen herstelt geen beschadigde of loszittende basisgrip."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je verpakkingen en kosten per speelbeurt?",
+        "paragraphs": [
+          "Controleer of je losse grips, een kleine verpakking of een grote doos vergelijkt. Deel de prijs door het aantal grips en neem verzendkosten mee. Kies een grote verpakking pas als je de uitvoering kent; een lagere stukprijs helpt weinig als het oppervlak je niet bevalt."
+        ]
+      },
+      {
+        "heading": "Welke Wilson grip hoort op jouw shortlist?",
+        "paragraphs": [
+          "Kies Pro Overgrip voor de buitenlaag en vergelijk Pro Performance voor een nieuwe onderlaag. Zoek daarna dezelfde uitvoering bij bol.com. Wil je vooral droog tegenover kleverig zetten, bekijk dan ook Wilson Pro Overgrip versus Tourna Grip."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
+    "sources": [
+      {
+        "name": "Wilson — Pro Overgrip",
+        "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
+      },
+      {
+        "name": "Wilson — Pro Performance basisgrip",
+        "url": "https://au.wilson.com/products/pro-performance-replacement-grip"
+      },
+      {
+        "name": "LTA — gripmaat en overgrips",
+        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Wilson Pro Overgrip",
+          "Overgrip",
+          "Dun en rekbaar vilt",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "Wilson Pro Performance",
+          "Basisgrip",
+          "Zacht en kleverig oppervlak",
+          "Controleer de modelspecificatie"
+        ]
+      ]
+    },
+    "menuLabel": "Wilson",
+    "products": ["wilson-pro", "wilson-base"]
+  },
+  {
+    "path": "/tennisgrips/babolat/",
+    "title": "Babolat grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Babolat grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Babolat grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Babolat grips binnen het assortiment",
+        "paragraphs": [
+          "Maak eerst onderscheid tussen overgrips en basisgrips. VS Original en Pro Tour 2.0 zijn buitenlagen; Syntec Pro en Natural Grip vernieuwen de onderlaag. Binnen die groepen vergelijk je oppervlak, dikte en het gevoel dat je zoekt."
+        ]
+      },
+      {
+        "heading": "VS Original of Pro Tour 2.0: droog of kleverig?",
+        "paragraphs": [
+          "VS Original heeft volgens de productpagina een droog contactgevoel en een dikte van 0,43 mm. Pro Tour 2.0 wordt als kleverig gepositioneerd. Zet deze twee naast elkaar als het buitenoppervlak je belangrijkste keuzecriterium is."
+        ]
+      },
+      {
+        "heading": "Syntec Pro of Natural Grip: welk basisgevoel zoek je?",
+        "paragraphs": [
+          "Syntec Pro is een kleverige basisgrip van 1,9 mm. Natural Grip is van leer en heeft een stevig contactgevoel. Vergelijk ze als complete handvatopbouw, inclusief een eventuele overgrip. Het materiaal van de onderlaag voel je anders wanneer er nog een buitenlaag overheen ligt."
+        ]
+      },
+      {
+        "heading": "Welke combinatie houdt je handvat op de juiste dikte?",
+        "paragraphs": [
+          "Wil je weinig extra volume, beoordeel dan een dunne overgrip op je bestaande basisgrip. Wil je juist de onderlaag veranderen, vergelijk eerst die laag. Verander bij voorkeur één onderdeel tegelijk, zodat je weet waardoor het gevoel verandert."
+        ]
+      },
+      {
+        "heading": "Welke Babolat modellen passen bij jouw voorkeur?",
+        "paragraphs": [
+          "Zet VS Original op je shortlist voor een dun, droog oppervlak en Pro Tour 2.0 voor kleverigheid. Vergelijk Syntec Pro en Natural Grip voor de onderlaag. Controleer bij bol.com de modelnaam, verpakking en specificaties van precies de aangeboden uitvoering."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
+    "sources": [
+      {
+        "name": "Babolat — VS Original",
+        "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+      },
+      {
+        "name": "Babolat — overgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-us/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+      },
+      {
+        "name": "Babolat — Syntec Pro",
+        "url": "https://www.babolat.com/us/syntec-pro/670051.html"
+      },
+      {
+        "name": "Babolat — basisgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-gb/articles/22990875281949-How-to-choose-the-right-grip"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        ["Babolat VS Original", "Overgrip", "Droog contactgevoel", "0,43 mm"],
+        [
+          "Babolat Pro Tour 2.0",
+          "Overgrip",
+          "Kleverig contactgevoel",
+          "Controleer de gekozen uitvoering"
+        ],
+        ["Babolat Syntec Pro", "Basisgrip", "Kleverig, gericht op contactgevoel", "1,9 mm"],
+        [
+          "Babolat Natural Grip",
+          "Basisgrip",
+          "Leer, stevig contactgevoel",
+          "Controleer de gekozen uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "Babolat",
+    "products": ["vs-original", "pro-tour", "syntec-pro", "natural-grip"]
+  },
+  {
+    "path": "/tennisgrips/tourna/",
+    "title": "Tourna grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Tourna grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Tourna grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Tourna Grip Original en Tourna Tac",
+        "paragraphs": [
+          "Binnen Tourna is het onderscheid tussen droog en kleverig een logisch vertrekpunt. Original richt zich op vochtopname; Tac biedt een kleveriger contactgevoel. Begin bij wat je tijdens het spelen aan je huidige overgrip wilt veranderen."
+        ]
+      },
+      {
+        "heading": "Wanneer is Original de relevante vergelijking?",
+        "paragraphs": [
+          "Neem Original mee wanneer je een droog oppervlak zoekt en vocht je voornaamste afweging is. Vergelijk het gevoel tijdens het spelen, niet alleen met droge handen bij het uitpakken. De fabrikantpositionering geeft richting, maar voorspelt niet jouw persoonlijke ervaring."
+        ]
+      },
+      {
+        "heading": "Wanneer wil je juist het kleverige gevoel van Tac?",
+        "paragraphs": [
+          "Tac is de optie om te vergelijken als je de Tourna-keuze wilt combineren met kleverigheid. Zet hem tegenover Original op hetzelfde racket met dezelfde basisgrip. Zo houd je de handvatopbouw gelijk en kun je gerichter beoordelen welk oppervlak je prefereert."
+        ]
+      },
+      {
+        "heading": "Welke lengte en verpakking passen bij jouw gebruik?",
+        "paragraphs": [
+          "Controleer de opgegeven lengte en de uitvoering voordat je alleen op een verpakkingsprijs afgaat. Vergelijk hoeveel complete wikkelingen de verpakking voor jouw racket oplevert. Begin klein wanneer je overstapt van een ander contactgevoel."
+        ]
+      },
+      {
+        "heading": "Welke Tourna overgrip kies je om te proberen?",
+        "paragraphs": [
+          "Begin bij Original voor een droge vergelijking of Tac voor kleverigheid. Vergelijk bij bol.com de exacte variant en het aantal stuks. Gebruik de vergelijking met Wilson Pro Overgrip als je ook buiten Tourna wilt kijken."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
+    "sources": [
+      {
+        "name": "Tourna — overgrips",
+        "url": "https://www.tourna.com/pages/overgrips"
+      },
+      {
+        "name": "Tourna — Tourna Tac",
+        "url": "https://www.tourna.com/collections/tourna-tac"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Tourna Grip Original",
+          "Overgrip",
+          "Droog, gericht op vochtopname",
+          "Lengte en uitvoering controleren"
+        ],
+        ["Tourna Tac", "Overgrip", "Kleverig contactgevoel", "Lengte en uitvoering controleren"]
+      ]
+    },
+    "menuLabel": "Tourna",
+    "products": ["tourna-original", "tourna-tac"]
+  },
+  {
+    "path": "/tennisgrips/head/",
+    "title": "HEAD grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk HEAD grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk HEAD grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je HEAD grips op onderlaag en buitenlaag",
+        "paragraphs": [
+          "Prime Tour is een overgrip; Hydrosorb Pro is een basisgrip. Ze lossen verschillende keuzevragen op. Vergelijk Prime Tour met andere overgrips als je alleen het oppervlak wilt vernieuwen en Hydrosorb Pro met replacement grips wanneer de onderlaag aan de beurt is."
+        ]
+      },
+      {
+        "heading": "Past Prime Tour bij het contactgevoel dat je zoekt?",
+        "paragraphs": [
+          "HEAD positioneert Prime Tour op kleverigheid en comfort. Zet deze overgrip naast je huidige buitenlaag en beoordeel de complete dikte. Een ander oppervlak kiezen werkt gerichter wanneer je niet tegelijk de basisgrip en het aantal lagen verandert."
+        ]
+      },
+      {
+        "heading": "Wanneer vergelijk je Hydrosorb Pro met andere basisgrips?",
+        "paragraphs": [
+          "Hydrosorb Pro richt zich op feedback, grip en comfort in de onderlaag. Neem hem mee als je het basisgevoel van het handvat wilt veranderen. Vergelijk op dezelfde handvatmaat en voeg de overgrip toe die je normaal gebruikt."
+        ]
+      },
+      {
+        "heading": "Hoe beoordeel je de totale dikte en verpakking?",
+        "paragraphs": [
+          "Controleer de modelspecificatie, het aantal stuks en of het product een overgrip of replacement grip is. Meerdere buitenlagen zijn geen neutrale vervanging van één onderlaag: ze veranderen de totale omvang en kunnen de contouren minder voelbaar maken."
+        ]
+      },
+      {
+        "heading": "Welke HEAD grip vergelijk je als volgende?",
+        "paragraphs": [
+          "Zoek Prime Tour voor de buitenlaag of Hydrosorb Pro voor de basisgrip. Zet de gekozen variant naast modellen met dezelfde laagfunctie. Bij bol.com controleer je vervolgens de uitvoering, verpakking en actuele prijs."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
+    "sources": [
+      {
+        "name": "HEAD — Prime Tour",
+        "url": "https://www.head.com/product/prime-tour-285621"
+      },
+      {
+        "name": "HEAD — Hydrosorb Pro",
+        "url": "https://www.head.com/product/hydrosorbtm-pro-3"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "HEAD Prime Tour",
+          "Overgrip",
+          "Kleverig, met comfort als uitgangspunt",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "HEAD Hydrosorb Pro",
+          "Basisgrip",
+          "Kleverig, gericht op feedback",
+          "Controleer de gekozen uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "HEAD",
+    "products": ["head-prime", "head-hydro"]
+  },
+  {
+    "path": "/tennisgrips/yonex/",
+    "title": "Yonex grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Yonex grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Yonex grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/tennisgrips/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Yonex Super Grap en Dry Super Grap",
+        "paragraphs": [
+          "Super Grap AC102 en Dry Super Grap AC149 verschillen in contactgevoel en opgegeven dikte. Gebruik de modelcode om de juiste uitvoeringen naast elkaar te zetten. De woorden Super Grap alleen zijn niet voldoende om elk model uit elkaar te houden."
+        ]
+      },
+      {
+        "heading": "Super Grap AC102: wil je een kleverig oppervlak?",
+        "paragraphs": [
+          "AC102 is een polyurethaan overgrip van 0,6 mm met een kleverig contactgevoel. Neem hem mee als je dat oppervlak prettig vindt en de basisgrip wilt behouden. De uiteindelijke handvatdikte hangt ook af van je overlap bij het wikkelen."
+        ]
+      },
+      {
+        "heading": "Dry Super Grap AC149: wanneer vergelijk je de droge variant?",
+        "paragraphs": [
+          "De Yonex-catalogus noemt voor AC149 een droog gevoel en een dikte van 0,45 mm. Dat maakt de droge uitvoering relevant wanneer je bewust een dunner buitenoppervlak zoekt. Vergelijk dit met AC102 voordat je alleen op kleur of verpakkingsgrootte kiest."
+        ]
+      },
+      {
+        "heading": "Gebruik je Yonex bij tennis of badminton?",
+        "paragraphs": [
+          "Deze pagina richt zich op de tennisvergelijking. Voor badminton hoort de afweging tussen overgrip en badstof bij de badmintonpagina. Towel Grip is een katoenen grip met een andere opbouw; behandel hem niet als dezelfde uitvoering van Super Grap."
+        ]
+      },
+      {
+        "heading": "Welke Yonex uitvoering zet je op je shortlist?",
+        "paragraphs": [
+          "Vergelijk AC102 voor kleverigheid en AC149 voor een droger, dunner oppervlak. Controleer de code op de bol.com-vermelding, want verpakking en naamgeving kunnen verschillen. Kies eerst het model en vergelijk daarna de prijs per stuk."
+        ]
+      }
+    ],
+    "related": ["/tennisgrips/", "/tennisgrips/overgrips/", "/tennisgrips/basisgrips/"],
+    "sources": [
+      {
+        "name": "Yonex — Super Grap AC102",
+        "url": "https://www.yonex.com/ac102"
+      },
+      {
+        "name": "Yonex — badmintoncatalogus 2024, Dry Super Grap",
+        "url": "https://www.yonex.com/media/wysiwyg/2024-Yonex-Badminton-Catalog.pdf"
+      },
+      {
+        "name": "Yonex — Towel Grip AC402-2",
+        "url": "https://www.yonex.com/ac402-2"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        ["Yonex Super Grap AC102", "Overgrip", "Kleverig polyurethaan", "0,6 mm"],
+        [
+          "Yonex Dry Super Grap AC149",
+          "Overgrip",
+          "Droog polyurethaan",
+          "0,45 mm volgens catalogus 2024"
+        ]
+      ]
+    },
+    "menuLabel": "Yonex",
+    "products": ["super-grap", "dry-grap"]
+  },
+  {
+    "path": "/padelgrips/",
+    "title": "Padelgrips vergelijken: oppervlak, merken en handvatdikte",
+    "description": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk Bullpadel en adidas en vind de juiste buitenlaag voor jouw padelracket.",
+    "summary": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk Bullpadel en adidas en vind de juiste buitenlaag voor jouw padelracket.",
+    "kind": "hub",
+    "parent": null,
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Vergelijk per sport"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je padelgrips voor jouw gebruik",
+        "paragraphs": [
+          "Bij een padelgrip draait je keuze vaak om de buitenlaag op het bestaande handvat. Vergelijk eerst het contactgevoel en de totale dikte. Gebruik de merkblokken en modelselectie om je keuze verder af te bakenen."
+        ]
+      },
+      {
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
+        "paragraphs": [
+          "Een buitenlaag veranderen is iets anders dan een versleten basisgrip vernieuwen. Kies bij een passende onderlaag eerst op het oppervlak dat je wilt voelen. Neem bij extra lagen mee hoeveel omvang je toevoegt; de volledige handvatopbouw bepaalt de pasvorm."
+        ],
+        "links": [
+          {
+            "title": "Grip bij zweethanden",
+            "href": "/kennis/grip-bij-zweethanden/",
+            "description": "Vergelijk de rol van vochtopname en kleverigheid."
+          },
+          {
+            "title": "Basisgrip of overgrip",
+            "href": "/kennis/verschil-basisgrip-overgrip/",
+            "description": "Bepaal welke laag je wilt veranderen."
+          }
+        ]
+      },
+      {
+        "heading": "Vergelijk merken en modellen voor padel",
+        "paragraphs": [
+          "Bullpadel en adidas hebben een eigen vergelijkingspagina. Daar vergelijk je uitvoeringen binnen het merk en de verpakking die bij je gebruik past. Head, Nox en Babolat blijven aanvullende merken om bij een concrete productkeuze mee te nemen; ze krijgen hier geen tweede pagina voor dezelfde algemene padelvraag."
+        ],
+        "links": [
+          {
+            "title": "Bullpadel",
+            "href": "/padelgrips/bullpadel/",
+            "description": "Vergelijk de modellen en uitvoeringen van Bullpadel."
+          },
+          {
+            "title": "adidas",
+            "href": "/padelgrips/adidas/",
+            "description": "Vergelijk de modellen en uitvoeringen van adidas."
+          }
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je de gewenste dikte op je padelracket?",
+        "paragraphs": [
+          "Beschrijf eerst of je huidige handvat te smal, passend of te vol voelt. Kies daarna een overgrip en beoordeel één verandering tegelijk. Een dikke opbouw is geen doel op zichzelf: voel ook of je de handvatkanten nog prettig kunt gebruiken."
+        ],
+        "links": [
+          {
+            "title": "Dikte en griplaag begrijpen",
+            "href": "/kennis/verschil-basisgrip-overgrip/",
+            "description": "Bekijk het verschil tussen onderlaag en buitenlaag."
+          }
+        ]
+      },
+      {
+        "heading": "Welke padelgrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
+        ]
+      }
+    ],
+    "related": [
+      "/kennis/grip-bij-zweethanden/",
+      "/kennis/verschil-basisgrip-overgrip/",
+      "/padelgrips/vervangen/",
+      "/kennis/grips-schoonmaken/"
+    ],
+    "sources": [
+      {
+        "name": "Bullpadel — GB-1201",
+        "url": "https://www.bullpadel.com/es/190-overgrips-bullpadel-gb-1201.html"
+      },
+      {
+        "name": "adidas / All For Padel — overgrips en grips",
+        "url": "https://allforpadel.com/en/132-overgrips-and-grips"
+      },
+      {
+        "name": "Babolat — overgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-us/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+      },
+      {
+        "name": "Babolat — VS Original",
+        "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+      }
+    ],
+    "table": {
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
+      "rows": [
+        [
+          "Kleverig oppervlak",
+          "Beoordeel contactgevoel tijdens het spelen",
+          "Concrete uitvoering vergelijken"
+        ],
+        ["Microperforaties", "Controleer de productspecificatie", "Bullpadel GB-1201"],
+        ["Kleine of grote verpakking", "Probeer het model vóór een doos", "adidas / Bullpadel"]
+      ]
+    },
+    "menuLabel": "Padelgrips",
+    "products": ["bull-1201", "adidas-3", "pro-tour", "vs-original"]
   },
   {
     "path": "/padelgrips/vervangen/",
@@ -635,7 +1891,234 @@
         "url": "https://help.babolat.com/hc/en-gb/articles/22997505022621-How-do-I-choose-the-right-overgrip"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Padelgrips vervangen"
+  },
+  {
+    "path": "/padelgrips/bullpadel/",
+    "title": "Bullpadel grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk Bullpadel grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk Bullpadel grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/padelgrips/",
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je Bullpadel overgrips op uitvoering en oppervlak",
+        "paragraphs": [
+          "Gebruik de modelcode als vertrekpunt: GB-1201 en GB-1200 zijn aparte uitvoeringen. Zet de opgegeven eigenschappen naast elkaar en vergelijk daarna de verpakking. Een grote doos is geen inhoudelijk argument om een onbekende grip te kiezen."
+        ]
+      },
+      {
+        "heading": "Wat voegt het microperforeerde oppervlak van GB-1201 toe?",
+        "paragraphs": [
+          "Bullpadel beschrijft GB-1201 met microperforaties, het HaC-systeem en een dikte van 0,5 mm. Neem deze kenmerken mee als je een buitenlaag zoekt waarbij vochtopname een belangrijke afweging is. Het blijft nodig te beoordelen hoe de grip in jouw hand voelt."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je GB-1200 zonder eigenschappen te verwisselen?",
+        "paragraphs": [
+          "Controleer de productomschrijving van de exacte GB-1200 die je bekijkt. Neem dikte, oppervlak en verpakking daaruit over; gebruik niet automatisch de cijfers van GB-1201. De modelcode voorkomt dat je verschillende uitvoeringen als hetzelfde product vergelijkt."
+        ]
+      },
+      {
+        "heading": "Welke invloed heeft je basisgrip op de keuze?",
+        "paragraphs": [
+          "Een overgrip ligt boven op de onderlaag van je padelracket. Beoordeel de combinatie op handvatdikte en voelbare contouren. Extra lagen kunnen een gewenste verandering geven, maar kies bewust hoeveel je toevoegt en vervang een versleten buitenlaag voordat je er nog een bovenop wikkelt."
+        ]
+      },
+      {
+        "heading": "Welke Bullpadel verpakking past bij jouw speelritme?",
+        "paragraphs": [
+          "Probeer een kleine verpakking als je het model nog niet kent. Vergelijk pas daarna dozen op prijs per grip, uitvoering en aantal stuks. Gebruik bol.com om de modelcode te zoeken en controleer of de aangeboden variant overeenkomt met je keuze."
+        ]
+      }
+    ],
+    "related": ["/padelgrips/", "/padelgrips/adidas/"],
+    "sources": [
+      {
+        "name": "Bullpadel — GB-1201",
+        "url": "https://www.bullpadel.com/es/190-overgrips-bullpadel-gb-1201.html"
+      },
+      {
+        "name": "Bullpadel — overgrips",
+        "url": "https://www.bullpadel.com/gb/79-overgrips"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        ["Bullpadel GB-1201", "Overgrip", "Microperforaties en HaC", "0,5 mm"],
+        [
+          "Bullpadel GB-1200",
+          "Overgrip",
+          "Controleer oppervlak per uitvoering",
+          "Controleer de gekozen uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "Bullpadel",
+    "products": ["bull-1201", "bull-1200"]
+  },
+  {
+    "path": "/padelgrips/adidas/",
+    "title": "adidas grips vergelijken: modellen en jouw keuze",
+    "description": "Vergelijk adidas grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "summary": "Vergelijk adidas grips op griplaag, oppervlak en uitvoering. Zet de modellen naast elkaar en zoek jouw selectie bij bol.com.",
+    "kind": "brand",
+    "parent": "/padelgrips/",
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je adidas padelgrips op uitvoering en verpakking",
+        "paragraphs": [
+          "All For Padel vermeldt onder meer de kleine verpakking AC2BA1 en de doos AC2TA1MX. Vergelijk de productcode en eigenschappen voordat je de prijs per grip berekent. Een grotere verpakking betekent niet automatisch een andere of betere grip."
+        ]
+      },
+      {
+        "heading": "Wanneer begin je met de verpakking van drie?",
+        "paragraphs": [
+          "AC2BA1 is de kleine verpakking in deze vergelijking. Die is praktisch wanneer je eerst het zachte contactgevoel op jouw padelracket wilt beoordelen. Test de grip met je gebruikelijke basisgrip en overlap, zodat de vergelijking met je huidige buitenlaag bruikbaar blijft."
+        ]
+      },
+      {
+        "heading": "Wanneer is een doos van 25 een logische keuze?",
+        "paragraphs": [
+          "AC2TA1MX is de grotere verpakking in het officiële overzicht. Die is pas interessant als je weet welke uitvoering je wilt blijven gebruiken. Vergelijk het aantal grips, de kleurverdeling en de totale bestelprijs voordat je op de stukprijs selecteert."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je zachtheid, vochtopname en handvatdikte?",
+        "paragraphs": [
+          "De fabrikant positioneert deze overgrips op zacht contact en vochtopname. Gebruik dat als vertrekpunt naast de concrete productgegevens. Controleer de opgegeven dikte bij de uitvoering die je koopt en beoordeel het hele handvat met de buitenlaag aangebracht."
+        ]
+      },
+      {
+        "heading": "Welke adidas overgrip neem je mee naar bol.com?",
+        "paragraphs": [
+          "Zoek met AC2BA1 of AC2TA1MX en controleer of model en verpakking overeenkomen. Begin klein bij een onbekend gevoel. Wil je een ander oppervlak vergelijken, bekijk dan ook de Bullpadel-pagina en het overzicht van padelgrips."
+        ]
+      }
+    ],
+    "related": ["/padelgrips/", "/padelgrips/bullpadel/"],
+    "sources": [
+      {
+        "name": "adidas / All For Padel — overgrips en grips",
+        "url": "https://allforpadel.com/en/132-overgrips-and-grips"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "adidas overgrip AC2BA1",
+          "Overgrip",
+          "Zacht contactgevoel volgens fabrikant",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "adidas overgrip AC2TA1MX",
+          "Overgrip",
+          "Zacht contactgevoel volgens fabrikant",
+          "Controleer de gekozen uitvoering"
+        ]
+      ]
+    },
+    "menuLabel": "adidas",
+    "products": ["adidas-3", "adidas-25"]
+  },
+  {
+    "path": "/badmintongrips/",
+    "title": "Badmintongrips vergelijken: overgrip of badstof?",
+    "description": "Vergelijk badmintongrips op materiaal, dikte en vochtopname. Zet een dunne overgrip naast badstof en bekijk de Yonex-modellen.",
+    "summary": "Vergelijk badmintongrips op materiaal, dikte en vochtopname. Zet een dunne overgrip naast badstof en bekijk de Yonex-modellen.",
+    "kind": "hub",
+    "parent": null,
+    "image": "/assets/sportgrips/photos/badminton-v1.webp",
+    "tags": ["Sportgrips", "Vergelijk per sport"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je badmintongrips voor jouw gebruik",
+        "paragraphs": [
+          "Vergelijk bij badminton eerst de opbouw die je wilt: een dunne buitenlaag op je huidige grip of een badstof grip met een ander materiaalgevoel. De laagkeuze beïnvloedt zowel het contact als de uiteindelijke omvang van het handvat."
+        ]
+      },
+      {
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
+        "paragraphs": [
+          "Een polyurethaan overgrip en een katoenen badstof grip zijn verschillende materiaalkeuzes. Vergelijk niet alleen een diktecijfer, maar ook hoe je de grip opbouwt. Controleer de montage van de specifieke uitvoering voordat je lagen verwijdert of toevoegt."
+        ],
+        "links": [
+          {
+            "title": "Grip bij zweethanden",
+            "href": "/kennis/grip-bij-zweethanden/",
+            "description": "Vergelijk vochtopname en materiaal."
+          },
+          {
+            "title": "Welke griplaag verander je?",
+            "href": "/kennis/verschil-basisgrip-overgrip/",
+            "description": "Begin bij de functie van de laag."
+          }
+        ]
+      },
+      {
+        "heading": "Vergelijk merken en modellen voor badminton",
+        "paragraphs": [
+          "Yonex is het merk dat in het zoekwoordonderzoek bij badminton terugkomt. Vergelijk hier Super Grap met Towel Grip voor de badmintonkeuze. De aparte Yonex-pagina richt zich op het verschil tussen de tennisovergrips AC102 en AC149."
+        ]
+      },
+      {
+        "heading": "Hoe kies je materiaal zonder je handvat te vol te maken?",
+        "paragraphs": [
+          "Yonex geeft voor AC102 0,6 mm op en voor Towel Grip AC402-2 1,35 mm. Deze materialen gedragen zich verschillend; de losse cijfers voorspellen niet de volledige pasvorm. Neem de onderlaag en de overlap mee en beoordeel de combinatie op je racket."
+        ],
+        "links": [
+          {
+            "title": "Yonex overgrips vergelijken",
+            "href": "/tennisgrips/yonex/",
+            "description": "Bekijk het verschil tussen kleverig en droog."
+          }
+        ]
+      },
+      {
+        "heading": "Welke badmintongrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
+        ]
+      }
+    ],
+    "related": [
+      "/kennis/grip-bij-zweethanden/",
+      "/kennis/verschil-basisgrip-overgrip/",
+      "/badmintongrips/vervangen/",
+      "/kennis/grips-schoonmaken/"
+    ],
+    "sources": [
+      {
+        "name": "Yonex — Super Grap AC102",
+        "url": "https://www.yonex.com/ac102"
+      },
+      {
+        "name": "Yonex — badmintoncatalogus 2024, Dry Super Grap",
+        "url": "https://www.yonex.com/media/wysiwyg/2024-Yonex-Badminton-Catalog.pdf"
+      },
+      {
+        "name": "Yonex — Towel Grip AC402-2",
+        "url": "https://www.yonex.com/ac402-2"
+      }
+    ],
+    "table": {
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
+      "rows": [
+        ["Polyurethaan overgrip", "Dunne buitenlaag", "Super Grap / Dry Super Grap"],
+        ["Katoenen badstof", "Andere structuur en omvang", "Towel Grip"],
+        ["Bestaande onderlaag", "Beoordeel de volledige opbouw", "Montage-instructie controleren"]
+      ]
+    },
+    "menuLabel": "Badmintongrips",
+    "products": ["super-grap", "dry-grap", "towel-grip"]
   },
   {
     "path": "/badmintongrips/vervangen/",
@@ -679,7 +2162,256 @@
         "url": "https://www.yonex.com/badminton/accessories/ac402-2"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Badmintongrips vervangen"
+  },
+  {
+    "path": "/squashgrips/",
+    "title": "Squashgrips vergelijken: basisgevoel en buitenlaag",
+    "description": "Vergelijk squashgrips op laag, oppervlak en handvatdikte. Bekijk Karakal en droge buitenlagen en kies wat je wilt veranderen.",
+    "summary": "Vergelijk squashgrips op laag, oppervlak en handvatdikte. Bekijk Karakal en droge buitenlagen en kies wat je wilt veranderen.",
+    "kind": "hub",
+    "parent": null,
+    "image": "/assets/sportgrips/photos/squash-v1.webp",
+    "tags": ["Sportgrips", "Vergelijk per sport"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je squashgrips voor jouw gebruik",
+        "paragraphs": [
+          "Wil je een versleten onderlaag vernieuwen of alleen het contactoppervlak veranderen? Bij squash geeft dat onderscheid richting aan je productkeuze. Vergelijk daarna de omvang, het oppervlak en de lengte die je voor jouw racket nodig hebt."
+        ]
+      },
+      {
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
+        "paragraphs": [
+          "Een basisgrip en een dunne overgrip veranderen niet hetzelfde. Vergelijk een replacement grip wanneer de onderlaag aan vervanging toe is. Voor een andere buitenlaag beoordeel je het materiaal op de bestaande onderbouw."
+        ],
+        "links": [
+          {
+            "title": "Basisgrip en overgrip",
+            "href": "/kennis/verschil-basisgrip-overgrip/",
+            "description": "Bepaal welke laag je wilt vernieuwen."
+          },
+          {
+            "title": "Vocht en contactgevoel",
+            "href": "/kennis/grip-bij-zweethanden/",
+            "description": "Vergelijk droogte en kleverigheid."
+          }
+        ]
+      },
+      {
+        "heading": "Vergelijk merken en modellen voor squash",
+        "paragraphs": [
+          "Karakal PU Super Grip is een concreet vertrekpunt voor de basisgripvergelijking. De fabrikant noemt hem een replacement grip. Voor een droge buitenlaag kun je Tourna Grip meenemen, met controle van de benodigde lengte en de uitvoering."
+        ]
+      },
+      {
+        "heading": "Welke lengte en dikte passen bij je squashracket?",
+        "paragraphs": [
+          "Controleer of de grip lang genoeg is voor het deel van het handvat dat je gebruikt. Karakal vermeldt dat geel een squashlengte heeft en andere kleuren een universele lengte. Kies op de volledige uitvoering, niet alleen op de merknaam of kleur."
+        ],
+        "links": [
+          {
+            "title": "Droge Tourna-grips vergelijken",
+            "href": "/tennisgrips/tourna/",
+            "description": "Vergelijk het contactgevoel en controleer de racketlengte."
+          }
+        ]
+      },
+      {
+        "heading": "Welke squashgrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
+        ]
+      }
+    ],
+    "related": [
+      "/kennis/verschil-basisgrip-overgrip/",
+      "/kennis/grip-bij-zweethanden/",
+      "/squashgrips/vervangen/",
+      "/kennis/grips-schoonmaken/"
+    ],
+    "sources": [
+      {
+        "name": "Karakal — PU Super Grip",
+        "url": "https://karakal.com/products/karakal-pu-super-grip"
+      },
+      {
+        "name": "Tourna — overgrips",
+        "url": "https://www.tourna.com/pages/overgrips"
+      }
+    ],
+    "table": {
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
+      "rows": [
+        ["Onderlaag vernieuwen", "Replacement grip", "Karakal PU Super Grip"],
+        ["Buitenlaag veranderen", "Dunne overgrip", "Lengte en contactgevoel controleren"],
+        ["Meer omvang gewenst", "Volledige opbouw vergelijken", "Basisgrip plus buitenlaag"]
+      ]
+    },
+    "menuLabel": "Squashgrips",
+    "products": ["karakal-pu", "tourna-original"]
+  },
+  {
+    "path": "/hockeygrips/",
+    "title": "Hockeygrips vergelijken: materiaal, dikte en stickgevoel",
+    "description": "Vergelijk hockeygrips op onderlaag, buitenlaag en dikte. Bekijk chamois en vind de juiste vergelijking voor jouw stick.",
+    "summary": "Vergelijk hockeygrips op onderlaag, buitenlaag en dikte. Bekijk chamois en vind de juiste vergelijking voor jouw stick.",
+    "kind": "hub",
+    "parent": null,
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Vergelijk per sport"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je hockeygrips voor jouw gebruik",
+        "paragraphs": [
+          "Begin bij wat je aan je stick wilt veranderen: de onderlaag, de buitenlaag of de complete dikte. Zo vergelijk je producten met dezelfde functie. Vanuit dit overzicht ga je naar chamois of naar de vergelijking met een rubberen oppervlak."
+        ]
+      },
+      {
+        "heading": "Vergelijk de typen en eigenschappen die voor jou tellen",
+        "paragraphs": [
+          "Een rubberen of synthetische onderlaag en een chamois overgrip hoeven geen alternatieven met dezelfde functie te zijn. Controleer of je de bestaande laag vervangt of juist een buitenlaag toevoegt. Vergelijk vervolgens hoe het volledige handvat in je hand ligt."
+        ],
+        "links": [
+          {
+            "title": "Chamois hockeygrips",
+            "href": "/hockeygrips/chamois/",
+            "description": "Vergelijk de buitenlaag en de gewenste opbouw."
+          },
+          {
+            "title": "Chamois of rubber",
+            "href": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+            "description": "Beoordeel de lagen en het materiaalgevoel."
+          }
+        ]
+      },
+      {
+        "heading": "Vergelijk merken en modellen voor hockey",
+        "paragraphs": [
+          "Grays Chamois Flou is een concreet productvoorbeeld in de selectie. Indian Maharadja en adidas staan als aanvullende merkintenties in het onderzoek. Vergelijk bij die merken steeds een specifieke grip op laagfunctie, afmetingen en materiaal; de merknaam alleen zegt niet hoe de opbouw verandert."
+        ]
+      },
+      {
+        "heading": "Welke dikte en oppervlakte passen bij jouw stick?",
+        "paragraphs": [
+          "Neem je huidige stick als referentie. Kies hoeveel handvat je wilt bedekken en met welke overlap je wikkelt. Beoordeel de volledige omvang na de verandering en controleer of de productinstructie past bij je bestaande onderlaag."
+        ],
+        "links": [
+          {
+            "title": "Grip bij zweethanden",
+            "href": "/kennis/grip-bij-zweethanden/",
+            "description": "Vergelijk vochtopname met het gewenste contactgevoel."
+          }
+        ]
+      },
+      {
+        "heading": "Welke hockeygrip past bij jouw voorkeur?",
+        "paragraphs": [
+          "Gebruik de selectie hieronder om concrete modellen op laagfunctie en oppervlak te vergelijken. Lees de keuzeafweging bij ieder model en controleer de exacte uitvoering, verpakking en actuele prijs bij bol.com."
+        ]
+      }
+    ],
+    "related": [
+      "/hockeygrips/chamois/",
+      "/vergelijken/chamois-vs-rubber-hockeygrip/",
+      "/hockeygrips/vervangen/",
+      "/kennis/grips-schoonmaken/"
+    ],
+    "sources": [
+      {
+        "name": "Grays — Chamois Flou Overgrip",
+        "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
+      }
+    ],
+    "table": {
+      "headings": ["Je vergelijking", "Belangrijkste afweging", "Ga verder met"],
+      "rows": [
+        ["Nieuwe onderlaag", "Basisgevoel en ondersteuning", "Laagfunctie controleren"],
+        ["Chamois buitenlaag", "Materiaal en omvang toevoegen", "Bestaande onderlaag meenemen"],
+        ["Onderhoud of vervanging", "Vuil en slijtage onderscheiden", "Instructie per materiaal"]
+      ]
+    },
+    "menuLabel": "Hockeygrips",
+    "products": ["grays-chamois"]
+  },
+  {
+    "path": "/hockeygrips/chamois/",
+    "title": "Chamois hockeygrips vergelijken: buitenlaag en gevoel",
+    "description": "Vergelijk chamois hockeygrips op laagfunctie, dikte en gebruik. Beoordeel of je de buitenlaag of de volledige gripopbouw wilt veranderen.",
+    "summary": "Vergelijk chamois hockeygrips op laagfunctie, dikte en gebruik. Beoordeel of je de buitenlaag of de volledige gripopbouw wilt veranderen.",
+    "kind": "category",
+    "parent": "/hockeygrips/",
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Gripkeuze"],
+    "sections": [
+      {
+        "heading": "Zo vergelijk je chamois hockeygrips op laagfunctie en gevoel",
+        "paragraphs": [
+          "Begin bij de functie van het product: een chamois overgrip is een buitenlaag, geen automatische vervanger van iedere basisgrip. Bekijk eerst welke laag op je stick zit en wat je wilt veranderen. Vergelijk daarna materiaal en de complete handvatdikte."
+        ]
+      },
+      {
+        "heading": "Chamois of een rubberen oppervlak: welke vergelijking is eerlijk?",
+        "paragraphs": [
+          "Zet buitenlagen met dezelfde functie tegenover elkaar. Wanneer je een chamois overgrip boven op een bestaande grip wikkelt, vergelijk je een combinatie met je huidige opbouw. Dat is iets anders dan twee losse basisgrips vergelijken."
+        ],
+        "links": [
+          {
+            "title": "Chamois versus rubber vergelijken",
+            "href": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+            "description": "Vergelijk de complete stickopbouw."
+          }
+        ]
+      },
+      {
+        "heading": "Welke dikte en lengte passen bij jouw stick?",
+        "paragraphs": [
+          "Controleer hoeveel van het handvat je wilt bedekken en hoeveel overlap je gebruikt. De combinatie met de bestaande grip bepaalt de uiteindelijke omvang. Kies niet alleen op kleur; lengte, laagfunctie en afwerking zijn belangrijker voor de pasvorm."
+        ]
+      },
+      {
+        "heading": "Wat controleer je voor natte omstandigheden en onderhoud?",
+        "paragraphs": [
+          "Volg de gebruiks- en onderhoudsinstructies van de gekozen uitvoering. Neem niet aan dat iedere chamois grip vooraf nat moet worden gemaakt. Controleer ook hoe de laag wordt bevestigd en wanneer slijtage reden is om hem te vervangen."
+        ],
+        "links": [
+          {
+            "title": "Hockeygrips vervangen",
+            "href": "/hockeygrips/vervangen/",
+            "description": "Bereid de montage en afwerking voor."
+          }
+        ]
+      },
+      {
+        "heading": "Welke chamois grip past op jouw shortlist?",
+        "paragraphs": [
+          "De Grays Chamois Flou is een concreet voorbeeld van een hockeyovergrip. Vergelijk de uitvoering met de gewenste lengte en laagopbouw van je stick. Zoek daarna bij bol.com en controleer of het gevonden product daadwerkelijk een chamois buitenlaag is."
+        ]
+      }
+    ],
+    "related": [
+      "/hockeygrips/",
+      "/vergelijken/chamois-vs-rubber-hockeygrip/",
+      "/hockeygrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Grays — Chamois Flou Overgrip",
+        "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
+      }
+    ],
+    "table": {
+      "headings": ["Vergelijkpunt", "Waar let je op?"],
+      "rows": [
+        ["Laagfunctie", "Buitenlaag of vervangende basisgrip"],
+        ["Omvang", "Bestaande grip plus chamois en overlap"],
+        ["Lengte", "Te bedekken deel van het handvat"],
+        ["Gebruik", "Instructies van de specifieke uitvoering"]
+      ]
+    },
+    "menuLabel": "Chamois",
+    "products": ["grays-chamois"]
   },
   {
     "path": "/hockeygrips/vervangen/",
@@ -723,49 +2455,291 @@
         "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Hockeygrips vervangen"
   },
   {
-    "path": "/hockeygrips/chamois/",
-    "title": "Chamois grip voor hockey: waar let je op?",
-    "description": "Lees wat je bij een chamois hockeygrip controleert: laagopbouw, afmetingen, gebruiksaanwijzing en onderhoud.",
-    "summary": "Lees wat je bij een chamois hockeygrip controleert: laagopbouw, afmetingen, gebruiksaanwijzing en onderhoud.",
-    "kind": "guide",
-    "parent": "/hockeygrips/",
-    "image": "/assets/sportgrips/photos/hockey-v1.webp",
-    "tags": ["Sportgrips", "Praktische uitleg"],
+    "path": "/vergelijken/golf-pride-vs-lamkin/",
+    "title": "Golf Pride versus Lamkin: grips op eigenschappen vergelijken",
+    "description": "Vergelijk Golf Pride en Lamkin met concrete modellen. Zet rubber, cord, maat en modelgeneratie naast elkaar voor jouw gripkeuze.",
+    "summary": "Vergelijk Golf Pride en Lamkin met concrete modellen. Zet rubber, cord, maat en modelgeneratie naast elkaar voor jouw gripkeuze.",
+    "kind": "comparison",
+    "parent": "/vergelijken/",
+    "image": "/assets/sportgrips/photos/golf-v1.webp",
+    "tags": ["Sportgrips", "Vergelijking"],
     "sections": [
       {
-        "heading": "Een buitenlaag voor je stick",
+        "heading": "Golf Pride of Lamkin: vergelijk eerst dezelfde gripcategorie",
         "paragraphs": [
-          "Chamois is een type grip dat onder meer als overgrip voor hockey wordt verkocht. Grays noemt zijn product expliciet een overgrip. Bekijk of dit ook geldt voor het model dat jij kiest voordat je de oorspronkelijke grip verwijdert."
+          "Een merk heeft meerdere modellen. Vergelijk Tour Velvet met Crossline als rubberen vertrekpunten en zet MCC of Full Cord apart wanneer je cord zoekt. Zo voorkom je dat een verschil tussen modellen ten onrechte een oordeel over het hele merk wordt."
         ]
       },
       {
-        "heading": "Controleer de productinstructie",
+        "heading": "Tour Velvet versus Crossline: welk patroon wil je voelen?",
         "paragraphs": [
-          "Zoek de juiste lengte, de voorgeschreven onderlaag en de aanwijzingen voor gebruik en onderhoud op. Behandel niet ieder product met dezelfde materiaalnaam als identiek. Sportgrips heeft geen vergelijkende slijtagetest uitgevoerd."
+          "Beide modellen geven je een referentie voor een gestructureerd swinggripoppervlak. Vergelijk dezelfde maat met je gebruikelijke handschoen. Neem bij Crossline de generatie mee: de oorspronkelijke Lamkin-uitvoering en Crossline 2.0 zijn niet identiek."
         ]
       },
       {
-        "heading": "Vergelijken met je huidige grip",
+        "heading": "MCC versus Crossline Full Cord: waar wil je cord?",
         "paragraphs": [
-          "Beoordeel hoe de complete opbouw in je handen ligt en wat er met de dikte gebeurt. Wil je vooral het gevoel aanpassen, vergelijk dan de buitenlaag. Wil je de vaste onderlaag vernieuwen, controleer dan eerst welk type daarvoor bedoeld is."
+          "MCC combineert cord bovenaan met rubber bij de onderste hand. Crossline Full Cord heeft cord over het gripoppervlak. Kies of je twee contactzones wilt vergelijken of juist cord over de hele lengte zoekt."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je maat, montage en prijs per club?",
+        "paragraphs": [
+          "Houd de maatrichting gelijk en controleer kerndiameter, shaft en tape. Vergelijk daarna de totale prijs voor het aantal clubs dat je wilt voorzien. Een losse grip en een set verschillen in verpakking; vergelijk de uitvoering voordat je de stukprijs berekent."
+        ]
+      },
+      {
+        "heading": "Welke modellen neem je mee naar je volgende vergelijking?",
+        "paragraphs": [
+          "Begin bij Tour Velvet of Crossline voor een rubberen referentie. Neem MCC of Crossline Full Cord mee voor cord. Beoordeel één club voordat je de hele set verandert en controleer de volledige modelnaam bij bol.com."
+        ],
+        "links": [
+          {
+            "title": "Golf Pride modellen vergelijken",
+            "href": "/golfgrips/golf-pride/",
+            "description": "Bekijk de verschillen binnen Golf Pride."
+          },
+          {
+            "title": "Lamkin modellen vergelijken",
+            "href": "/golfgrips/lamkin/",
+            "description": "Controleer ook de modelgeneratie."
+          }
         ]
       }
     ],
     "related": [
-      "/hockeygrips/",
-      "/hockeygrips/vervangen/",
-      "/vergelijken/chamois-vs-rubber-hockeygrip/"
+      "/vergelijken/",
+      "/golfgrips/",
+      "/golfgrips/golf-pride/",
+      "/golfgrips/lamkin/",
+      "/golfgrips/maat/"
     ],
     "sources": [
       {
-        "name": "Grays — chamois overgrip",
+        "name": "Golf Pride — Tour Velvet",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+      },
+      {
+        "name": "Golf Pride — MCC",
+        "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+      },
+      {
+        "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+        "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+      },
+      {
+        "name": "SuperStroke — Crossline 2.0, opvolger van Lamkin Crossline",
+        "url": "https://superstrokeusa.com/products/crossline-2-0-club-grip"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Golf Pride Tour Velvet",
+          "Swinggrip",
+          "Rubber met oppervlaktestructuur",
+          "Undersize t/m jumbo; uitvoering controleren"
+        ],
+        [
+          "Lamkin Crossline",
+          "Swinggrip",
+          "Dicht Crossline-patroon",
+          "Maat en modelgeneratie controleren"
+        ],
+        [
+          "Golf Pride MCC",
+          "Swinggrip",
+          "Cord bovenaan, rubber onderaan",
+          "Standard of midsize; uitvoering controleren"
+        ],
+        [
+          "Lamkin Crossline Full Cord",
+          "Swinggrip",
+          "Cord over het gripoppervlak",
+          "Standard of midsize volgens oorspronkelijke catalogus"
+        ]
+      ]
+    },
+    "menuLabel": "Golf Pride vs Lamkin",
+    "products": ["tour-velvet", "crossline", "mcc", "crossline-cord"]
+  },
+  {
+    "path": "/vergelijken/wilson-pro-overgrip-vs-tourna-grip/",
+    "title": "Wilson Pro Overgrip versus Tourna Grip: welke buitenlaag?",
+    "description": "Vergelijk Wilson Pro Overgrip met Tourna Grip Original op contactgevoel, vocht en handvatopbouw. Kies welke buitenlaag je wilt proberen.",
+    "summary": "Vergelijk Wilson Pro Overgrip met Tourna Grip Original op contactgevoel, vocht en handvatopbouw. Kies welke buitenlaag je wilt proberen.",
+    "kind": "comparison",
+    "parent": "/vergelijken/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Vergelijking"],
+    "sections": [
+      {
+        "heading": "Wilson Pro Overgrip of Tourna Grip: wat wil je veranderen?",
+        "paragraphs": [
+          "Vergelijk deze modellen als buitenlagen op dezelfde basisgrip. Wilson beschrijft Pro Overgrip als dun en rekbaar; Tourna richt Original op een droog gevoel en vochtopname. Begin bij wat aan je huidige buitenlaag onvoldoende bevalt."
+        ]
+      },
+      {
+        "heading": "Hoe vergelijk je het gevoel met droge en vochtige handen?",
+        "paragraphs": [
+          "Beoordeel het oppervlak tijdens het spelen. Het gevoel bij het uitpakken vertelt niet alles over een langere training. Schrijf voor jezelf op of je vooral droogte, kleverigheid of weinig extra volume zoekt."
+        ]
+      },
+      {
+        "heading": "Welke rol spelen basisgrip en overlap in de vergelijking?",
+        "paragraphs": [
+          "Houd het racket, de onderlaag en de wikkelwijze zoveel mogelijk gelijk. Anders verandert tegelijk de omvang of het basisgevoel. Controleer of de gekozen uitvoering lang genoeg is voor jouw handvat."
+        ]
+      },
+      {
+        "heading": "Welke verpakking geeft je de bruikbaarste eerste vergelijking?",
+        "paragraphs": [
+          "Begin met een kleine verpakking als je één van de modellen nog niet kent. Vergelijk daarna de prijs per stuk en de verzendkosten. Zonder eigen gebruikservaring kun je geen betrouwbare winnaar op levensduur of kosten per uur aanwijzen."
+        ]
+      },
+      {
+        "heading": "Welke overgrip neem je op jouw shortlist?",
+        "paragraphs": [
+          "Neem Tourna Original mee als je een droge buitenlaag wilt onderzoeken en Wilson Pro Overgrip voor de dunne, rekbare uitvoering. Wil je binnen Tourna juist meer kleverigheid, vergelijk dan ook Tac. Controleer model en verpakking bij bol.com."
+        ],
+        "links": [
+          {
+            "title": "Wilson grips vergelijken",
+            "href": "/tennisgrips/wilson/",
+            "description": "Bekijk ook de laagfunctie."
+          },
+          {
+            "title": "Tourna grips vergelijken",
+            "href": "/tennisgrips/tourna/",
+            "description": "Vergelijk Original met Tac."
+          }
+        ]
+      }
+    ],
+    "related": [
+      "/vergelijken/",
+      "/tennisgrips/overgrips/",
+      "/tennisgrips/wilson/",
+      "/tennisgrips/tourna/"
+    ],
+    "sources": [
+      {
+        "name": "Wilson — Pro Overgrip",
+        "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
+      },
+      {
+        "name": "Tourna — overgrips",
+        "url": "https://www.tourna.com/pages/overgrips"
+      },
+      {
+        "name": "Tourna — Tourna Tac",
+        "url": "https://www.tourna.com/collections/tourna-tac"
+      }
+    ],
+    "table": {
+      "headings": ["Model", "Griplaag", "Oppervlak", "Dikte of maat"],
+      "rows": [
+        [
+          "Wilson Pro Overgrip",
+          "Overgrip",
+          "Dun en rekbaar vilt",
+          "Controleer de gekozen uitvoering"
+        ],
+        [
+          "Tourna Grip Original",
+          "Overgrip",
+          "Droog, gericht op vochtopname",
+          "Lengte en uitvoering controleren"
+        ]
+      ]
+    },
+    "menuLabel": "Wilson Pro vs Tourna",
+    "products": ["wilson-pro", "tourna-original"]
+  },
+  {
+    "path": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+    "title": "Chamois of rubber hockeygrip: vergelijk de complete opbouw",
+    "description": "Vergelijk chamois en rubber bij hockey op laagfunctie, contactgevoel en totale dikte. Bepaal welke opbouw je op jouw stick wilt proberen.",
+    "summary": "Vergelijk chamois en rubber bij hockey op laagfunctie, contactgevoel en totale dikte. Bepaal welke opbouw je op jouw stick wilt proberen.",
+    "kind": "comparison",
+    "parent": "/vergelijken/",
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Vergelijking"],
+    "sections": [
+      {
+        "heading": "Chamois of rubber: vergelijk eerst dezelfde laagfunctie",
+        "paragraphs": [
+          "Een chamois overgrip is een buitenlaag; een rubberen grip kan de onderlaag vormen. Bepaal of je een bestaande laag wilt vervangen of een extra buitenlaag wilt toevoegen. Pas dan kun je de opbouw eerlijk vergelijken."
+        ]
+      },
+      {
+        "heading": "Welk contactgevoel wil je op je stick veranderen?",
+        "paragraphs": [
+          "Gebruik je huidige stick als referentie en beschrijf of het probleem in het oppervlak of in de omvang zit. Vergelijk een nieuwe buitenlaag op die voorkeur. Een ander materiaal is geen algemene winnaar voor alle spelers."
+        ]
+      },
+      {
+        "heading": "Hoe blijft de totale dikte passend bij je handen?",
+        "paragraphs": [
+          "Neem bestaande onderlaag, extra materiaal en overlap samen mee. Beoordeel het handvat nadat de volledige opbouw is aangebracht. Veel extra lagen kunnen meer veranderen dan alleen het oppervlak."
+        ]
+      },
+      {
+        "heading": "Wat vergelijk je bij montage en onderhoud?",
+        "paragraphs": [
+          "Volg de instructie voor de exacte uitvoering, inclusief voorbereiding, bevestiging en onderhoud. Niet iedere chamois grip vraagt dezelfde behandeling. Een versleten onderlaag herstel je niet automatisch door er een nieuwe buitenlaag over te wikkelen."
+        ]
+      },
+      {
+        "heading": "Welke gripopbouw wil je als volgende beoordelen?",
+        "paragraphs": [
+          "Behoud een passende onderlaag als je alleen het oppervlak wilt aanpassen. De Grays Chamois Flou is een concreet voorbeeld voor die buitenlaagvergelijking. Controleer het gevonden product bij bol.com op functie en afmetingen."
+        ],
+        "links": [
+          {
+            "title": "Chamois hockeygrips vergelijken",
+            "href": "/hockeygrips/chamois/",
+            "description": "Verdiep je in de buitenlaag."
+          },
+          {
+            "title": "Hockeygrips vervangen",
+            "href": "/hockeygrips/vervangen/",
+            "description": "Bereid de gekozen montage voor."
+          }
+        ]
+      }
+    ],
+    "related": [
+      "/vergelijken/",
+      "/hockeygrips/",
+      "/hockeygrips/chamois/",
+      "/hockeygrips/vervangen/"
+    ],
+    "sources": [
+      {
+        "name": "Grays — Chamois Flou Overgrip",
         "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
       }
     ],
-    "table": null
+    "table": {
+      "headings": ["Vergelijkpunt", "Chamois overgrip", "Rubberen grip"],
+      "rows": [
+        [
+          "Functie",
+          "Buitenlaag bij deze productcategorie",
+          "Controleer of het een basis- of buitenlaag is"
+        ],
+        ["Dikte", "Bestaande onderlaag telt mee", "Beoordeel de hele opbouw"],
+        ["Montage en onderhoud", "Specifieke instructie volgen", "Specifieke instructie volgen"]
+      ]
+    },
+    "menuLabel": "Chamois vs rubber",
+    "products": ["grays-chamois"]
   },
   {
     "path": "/kennis/verschil-basisgrip-overgrip/",
@@ -796,14 +2770,15 @@
         ]
       }
     ],
-    "related": ["/tennisgrips/basisgrips/", "/tennisgrips/overgrips/", "/padelgrips/"],
+    "related": ["/kennis/", "/tennisgrips/basisgrips/", "/tennisgrips/overgrips/", "/padelgrips/"],
     "sources": [
       {
         "name": "LTA — gripmaat, overgrips en aanbrengen",
         "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Basisgrip vs overgrip"
   },
   {
     "path": "/kennis/grips-schoonmaken/",
@@ -828,26 +2803,109 @@
         ]
       },
       {
-        "heading": "Een gladde grip weer stroef maken",
-        "paragraphs": [
-          "Vuil verwijderen kan het contactoppervlak veranderen, maar herstelt geen versleten of beschadigd materiaal. Blijft de grip glad, laat hij los of is het oppervlak kapot, beoordeel dan of vervangen nodig is. Smeer er niet zomaar lijm of een ander middel op."
-        ]
-      },
-      {
         "heading": "Racket- en hockeygrips",
         "paragraphs": [
           "Laat vochtige grips drogen volgens de instructie van het product. Gebruik geen agressief reinigingsmiddel zonder fabrikantadvies. Bij een versleten buitenlaag kan vervangen zinvoller zijn dan blijven schoonmaken."
         ]
+      },
+      {
+        "heading": "Blijft de grip glad na het schoonmaken?",
+        "paragraphs": [
+          "Beoordeel dan slijtage en het contactgevoel van het materiaal. Lees de aparte gids om te kiezen tussen reinigen, vervangen of een ander gripoppervlak."
+        ],
+        "links": [
+          {
+            "title": "Grip weer stroef maken",
+            "href": "/kennis/grip-stroef-maken/",
+            "description": "Bepaal welke vervolgstap bij het materiaal past."
+          }
+        ]
       }
     ],
-    "related": ["/golfgrips/vervangen/", "/tennisgrips/vervangen/", "/hockeygrips/vervangen/"],
+    "related": [
+      "/kennis/",
+      "/golfgrips/vervangen/",
+      "/tennisgrips/vervangen/",
+      "/hockeygrips/vervangen/",
+      "/kennis/grip-stroef-maken/"
+    ],
     "sources": [
       {
         "name": "Golf Pride — onderhoud",
         "url": "https://golfpride.com/us/en-us/grip-academy/grip-care.html"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Grips schoonmaken"
+  },
+  {
+    "path": "/kennis/grip-stroef-maken/",
+    "title": "Grip weer stroef maken: reinigen of vervangen?",
+    "description": "Bepaal of vuil of slijtage je grip glad maakt. Kies de passende vervolgstap voor het materiaal en vergelijk zo nodig een nieuwe grip.",
+    "summary": "Bepaal of vuil of slijtage je grip glad maakt. Kies de passende vervolgstap voor het materiaal en vergelijk zo nodig een nieuwe grip.",
+    "kind": "guide",
+    "parent": "/kennis/",
+    "image": "/assets/sportgrips/photos/textures-v1.webp",
+    "tags": ["Sportgrips", "Praktische uitleg"],
+    "sections": [
+      {
+        "heading": "Is je grip vuil, versleten of niet passend bij jouw gebruik?",
+        "paragraphs": [
+          "Bekijk waar het gladde gevoel vandaan komt. Oppervlaktevuil, een versleten laag en een contactgevoel dat je niet prettig vindt vragen verschillende vervolgstappen. Controleer het materiaal en vergelijk met de oorspronkelijke structuur."
+        ]
+      },
+      {
+        "heading": "Reinig alleen volgens de materiaalinstructie",
+        "paragraphs": [
+          "Gebruik de onderhoudsinstructie van de fabrikant en behandel leer, katoen en synthetische lagen niet automatisch hetzelfde. Voeg geen lijm of onbekend middel toe om kleverigheid te maken."
+        ],
+        "links": [
+          {
+            "title": "Grips schoonmaken per sport",
+            "href": "/kennis/grips-schoonmaken/",
+            "description": "Lees de onderhoudsafweging voor het materiaal."
+          }
+        ]
+      },
+      {
+        "heading": "Wanneer is vervangen een betere vergelijking?",
+        "paragraphs": [
+          "Bekijk loslaten, beschadiging en blijvend verlies van een prettig oppervlak. Een versleten buitenlaag vernieuwen is iets anders dan de onderlaag herstellen. Bepaal dus welke laag werkelijk het probleem vormt."
+        ],
+        "links": [
+          {
+            "title": "Alle vervangingsgidsen",
+            "href": "/kennis/#grips-vervangen",
+            "description": "Kies de instructie voor jouw sport."
+          }
+        ]
+      },
+      {
+        "heading": "Kies het contactgevoel dat bij je voorkeur past",
+        "paragraphs": [
+          "Droog en kleverig zijn verschillende materiaalvoorkeuren. Wanneer een schone, nieuwe grip nog steeds niet prettig voelt, vergelijk dan een ander oppervlak. Begin bij de eigen sportpagina en beoordeel de volledige opbouw."
+        ]
+      }
+    ],
+    "related": [
+      "/kennis/",
+      "/kennis/grips-schoonmaken/",
+      "/tennisgrips/overgrips/",
+      "/golfgrips/",
+      "/hockeygrips/"
+    ],
+    "sources": [
+      {
+        "name": "Golf Pride — onderhoud",
+        "url": "https://golfpride.com/us/en-us/grip-academy/grip-care.html"
+      },
+      {
+        "name": "Babolat — overgrips vergelijken",
+        "url": "https://help.babolat.com/hc/en-us/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+      }
+    ],
+    "table": null,
+    "menuLabel": "Grip weer stroef maken"
   },
   {
     "path": "/kennis/grip-bij-zweethanden/",
@@ -878,7 +2936,7 @@
         ]
       }
     ],
-    "related": ["/tennisgrips/overgrips/", "/padelgrips/", "/badmintongrips/"],
+    "related": ["/kennis/", "/tennisgrips/overgrips/", "/padelgrips/", "/badmintongrips/"],
     "sources": [
       {
         "name": "Babolat — een overgrip kiezen",
@@ -889,44 +2947,132 @@
         "url": "https://www.yonex.com/badminton/accessories/ac402-2"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Grip bij zweethanden"
   },
   {
-    "path": "/vergelijken/chamois-vs-rubber-hockeygrip/",
-    "title": "Chamois of rubber hockeygrip: wat vergelijk je?",
-    "description": "Vergelijk de functie van een hockeygrip en buitenlaag. Begin bij de opbouw, het gevoel en de instructies van het concrete product.",
-    "summary": "Vergelijk de functie van een hockeygrip en buitenlaag. Begin bij de opbouw, het gevoel en de instructies van het concrete product.",
+    "path": "/blog/tenniselleboog-en-grip/",
+    "title": "Tenniselleboog en grip: maat en comfort zorgvuldig beoordelen",
+    "description": "Lees hoe je gripmaat en racketopbouw kunt bespreken bij elleboogklachten. Vergelijk gripkeuzes zonder een behandelwerking te veronderstellen.",
+    "summary": "Lees hoe je gripmaat en racketopbouw kunt bespreken bij elleboogklachten. Vergelijk gripkeuzes zonder een behandelwerking te veronderstellen.",
+    "kind": "article",
+    "parent": "/blog/",
+    "image": "/assets/sportgrips/photos/tennis-v1.webp",
+    "tags": ["Sportgrips", "Achtergrond"],
+    "sections": [
+      {
+        "heading": "Wat kun je met je gripkeuze wel beoordelen?",
+        "paragraphs": [
+          "Je kunt vaststellen welke handvatmaat je gebruikt en hoe de opbouw in je hand voelt. Een andere grip is daarmee nog geen behandeling voor elleboogklachten. Gebruik een productvergelijking om maat en materiaal te beoordelen, niet om zelf de oorzaak van pijn vast te stellen."
+        ]
+      },
+      {
+        "heading": "Begin bij de volledige maat en laagopbouw",
+        "paragraphs": [
+          "De LTA behandelt een passende gripmaat als onderdeel van racketkeuze. Neem je huidige racket mee wanneer je advies vraagt en beschrijf basisgrip, buitenlaag en eventuele extra lagen. Zo wordt duidelijk wat je daadwerkelijk vasthoudt."
+        ],
+        "links": [
+          {
+            "title": "Tennisgripmaat vergelijken",
+            "href": "/tennisgrips/gripmaat/",
+            "description": "Bekijk maat en volledige opbouw."
+          }
+        ]
+      },
+      {
+        "heading": "Vergelijk comfort zonder een medische productbelofte",
+        "paragraphs": [
+          "Zacht, dik en dempend zijn productkenmerken of persoonlijke ervaringen, geen bewijs dat een grip klachten behandelt. Verander bij een vergelijking één onderdeel tegelijk en vraag bij klachten een fysiotherapeut of huisarts om advies."
+        ]
+      },
+      {
+        "heading": "Neem klachten mee in het gesprek over je racket",
+        "paragraphs": [
+          "Bespreek pijn en het ontstaan ervan met een zorgverlener. De NHS geeft algemene informatie over tenniselleboog en wanneer je hulp zoekt. Voor de productkeuze kun je daarnaast de maat en opbouw van je racket laten beoordelen; dat vervangt de beoordeling van klachten niet."
+        ],
+        "links": [
+          {
+            "title": "Basisgrips op eigenschappen vergelijken",
+            "href": "/tennisgrips/basisgrips/",
+            "description": "Vergelijk materiaal en contactgevoel."
+          }
+        ]
+      }
+    ],
+    "related": ["/blog/", "/tennisgrips/gripmaat/", "/tennisgrips/basisgrips/", "/tennisgrips/"],
+    "sources": [
+      {
+        "name": "LTA — gripmaat en overgrips",
+        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
+      },
+      {
+        "name": "NHS — tenniselleboog",
+        "url": "https://www.nhs.uk/conditions/tennis-elbow/"
+      }
+    ],
+    "table": null,
+    "menuLabel": "Tenniselleboog en grip"
+  },
+  {
+    "path": "/squashgrips/vervangen/",
+    "title": "Squashgrip vervangen: basisgrip of buitenlaag vernieuwen",
+    "description": "Bereid het vervangen van je squashgrip voor. Bepaal welke laag je vernieuwt en controleer lengte, overlap en afwerking voor jouw racket.",
+    "summary": "Bereid het vervangen van je squashgrip voor. Bepaal welke laag je vernieuwt en controleer lengte, overlap en afwerking voor jouw racket.",
     "kind": "guide",
-    "parent": "/vergelijken/",
-    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "parent": "/squashgrips/",
+    "image": "/assets/sportgrips/photos/squash-v1.webp",
     "tags": ["Sportgrips", "Praktische uitleg"],
     "sections": [
       {
-        "heading": "Vergelijk lagen met dezelfde functie",
+        "heading": "Bepaal welke griplaag aan vervanging toe is",
         "paragraphs": [
-          "Een chamois overgrip voeg je toe aan de opbouw. Een rubber grip kan juist de onderlaag zijn. Het zijn daardoor niet altijd directe vervangers. Controleer eerst wat je wilt vernieuwen."
+          "Controleer eerst of het oppervlak, de onderlaag of beide versleten zijn. Een replacement grip vernieuwt de basislaag; een overgrip vormt een buitenlaag. Kies het product dat past bij de laag die je wilt veranderen."
         ]
       },
       {
-        "heading": "Probeer de totale dikte",
+        "heading": "Kies een passende lengte en bereid je racket voor",
         "paragraphs": [
-          "Vergelijk de stick mét alle lagen zoals je hem gebruikt. Een extra buitenlaag verandert de dikte en het gevoel. Beoordeel dus niet alleen het losse lint."
+          "Bekijk de montage-instructie en verwijder de laag die je gaat vervangen. Controleer de ondergrond op losse resten en beschadigingen. Bij Karakal verschillen sommige lengtes per kleur; controleer de concrete uitvoering voordat je begint."
         ]
       },
       {
-        "heading": "Geen winnaar zonder vergelijkbare gegevens",
+        "heading": "Wikkel met een gelijkmatige overlap",
         "paragraphs": [
-          "Kijk per model naar functie, lengte, montage en onderhoud. Zonder dezelfde gebruiksomstandigheden en onderbouwde testgegevens geven we geen winnaar voor slijtage, nat weer of prijs."
+          "Volg het beginpunt en de wikkelrichting uit de productinstructie. Houd spanning en overlap gelijkmatig, zonder het materiaal verder uit te rekken dan bedoeld. Beoordeel tussendoor of het handvat de omvang krijgt die je wilt."
+        ]
+      },
+      {
+        "heading": "Werk de grip af en controleer het handvat",
+        "paragraphs": [
+          "Gebruik de bijbehorende afwerking en controleer of de grip vastligt zonder losse randen. Houd het racket vast voordat je gaat spelen. Als de grip loszit of de onderlaag beschadigd is, los dat eerst op."
+        ]
+      },
+      {
+        "heading": "Wanneer kies je een ander type in plaats van dezelfde vervanging?",
+        "paragraphs": [
+          "Komt dezelfde onprettige dikte of hetzelfde oppervlak terug, vergelijk dan eerst andere modellen. Slijtage is geen vaste kalendertermijn voor alle spelers. Gebruik de sportpagina om gericht een andere laag of een ander materiaal te kiezen."
+        ],
+        "links": [
+          {
+            "title": "Squashgrips vergelijken",
+            "href": "/squashgrips/",
+            "description": "Vergelijk laagfunctie, oppervlak en modellen."
+          }
         ]
       }
     ],
-    "related": ["/hockeygrips/", "/hockeygrips/chamois/", "/hockeygrips/vervangen/"],
+    "related": ["/squashgrips/", "/kennis/grips-schoonmaken/"],
     "sources": [
       {
-        "name": "Grays — chamois overgrip",
-        "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
+        "name": "Karakal — PU Super Grip",
+        "url": "https://karakal.com/products/karakal-pu-super-grip"
+      },
+      {
+        "name": "Tourna — overgrips",
+        "url": "https://www.tourna.com/pages/overgrips"
       }
     ],
-    "table": null
+    "table": null,
+    "menuLabel": "Squashgrips vervangen"
   }
 ]

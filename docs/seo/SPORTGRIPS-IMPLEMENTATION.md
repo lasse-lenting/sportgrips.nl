@@ -145,3 +145,9 @@ Op verzoek zijn nieuwe Sportgrips-beelden gemaakt en alle actieve tuin-/robotmaa
 ## Logo-uppercase — 1 november 2026
 
 Op verzoek staat het SVG-woordmerk weer in hoofdletters (SPORTGRIPS). Header en footer verwijzen naar het eerder gecontroleerde uppercase `logo.svg`, met de linkerletters bovenop en dezelfde hoogte. Alle gewone tekst en metadata blijven Sportgrips. De nieuwe sportmedia, hovergrace en noindex zijn ongewijzigd.
+
+## Structuur en think-content — 4 november 2026
+
+De nieuwe gebruikersopdracht vervangt de eerdere besluiten om merkenpagina’s uit te stellen, golfmaten samen te voegen, de stroef-maakintentie bij schoonmaken te houden en squashvervanging op de sporthub te laten staan. De 43 concrete URL’s uit kolom C zijn nu aanwezig; met bestaande extra routes en de losse squashvervangingsgids zijn er 47 inhoudelijke pagina’s. De zes sporten staan rechtstreeks in hoofdmenu en footer; vervangingsgidsen staan onder Gripkennis met behoud van hun sport-URL. Sportpillars hebben verwijzingsblokken en alle commerciële subpagina’s vijf vergelijkingsgerichte inhoudelijke koppen, tabellen en concrete modelselecties.
+
+Bol.com is de door de gebruiker gekozen eerste winkel. Er zijn gewone productzoeklinks toegevoegd; affiliate-tracking wacht op de echte partnerlinks. Fabrikantbronnen onderbouwen de productgegevens; er zijn geen prijzen, voorraadclaims, testscores of commerciële afspraken verzonnen. Zie `SPORTGRIPS-STRUCTURE-2026-11-04.md`, `SPORTGRIPS-URL-COVERAGE.csv` en `check-refresh-browser.json`. Na de lokale controle heeft de gebruiker expliciet opdracht gegeven deze wijzigingen naar GitHub te pushen. De bestaande GitHub/Vercel-koppeling blijft behouden. Noindex blijft ongewijzigd.

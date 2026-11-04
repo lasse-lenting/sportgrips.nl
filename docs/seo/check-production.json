@@ -1,9 +1,9 @@
 {
-  "base": "http://localhost:3029",
+  "base": "http://localhost:3028",
   "indexing": "noindex",
   "mode": "production",
-  "page_count": 28,
-  "internal_links_checked": 1015,
+  "page_count": 47,
+  "internal_links_checked": 2548,
   "public_files_preserved": 160,
   "manifest_text_updated": [
     "public/site.webmanifest"

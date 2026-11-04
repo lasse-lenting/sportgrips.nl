@@ -1,51 +1,50 @@
-import { gripPages, sportHubs } from './grips';
+import { gripPages, replacementPages, sportHubs, labelForPath } from './grips';
 
 export type NavigationLink = { title: string; href: string };
-export type NavigationGroup = NavigationLink & { links: NavigationLink[] };
+export type NavigationGroup = { title: string; href?: string; links: NavigationLink[] };
 export type NavigationItem = NavigationLink & { groups?: NavigationGroup[] };
 
-const sportNames: Record<string, string> = {
-  '/golfgrips/': 'Golfgrips',
-  '/tennisgrips/': 'Tennisgrips',
-  '/padelgrips/': 'Padelgrips',
-  '/badmintongrips/': 'Badmintongrips',
-  '/squashgrips/': 'Squashgrips',
-  '/hockeygrips/': 'Hockeygrips',
-};
+const links = (pages: typeof gripPages): NavigationLink[] =>
+  pages.map((p) => ({ title: labelForPath(p.path), href: p.path }));
 
-// Build the menu on the server and pass only labels and URLs to the client.
+// Menu placement stays independent of URL ancestry. Only labels/URLs reach the client.
 export const navigation: NavigationItem[] = [
-  { title: 'Keuzehulp', href: '/keuzehulp/' },
-  {
-    title: 'Grips per sport',
-    href: '/grips/',
-    groups: sportHubs.map((hub) => ({
-      title: sportNames[hub.path],
-      href: hub.path,
-      links: gripPages
-        .filter((page) => page.parent === hub.path)
-        .map((page) => ({ title: page.title.split(':')[0], href: page.path })),
-    })),
-  },
+  ...sportHubs.map((hub) => {
+    const children = gripPages.filter((p) => p.parent === hub.path && p.kind !== 'guide');
+    const groups: NavigationGroup[] = [
+      { title: 'Typen en maat', links: links(children.filter((p) => p.kind === 'category')) },
+      { title: 'Merken', links: links(children.filter((p) => p.kind === 'brand')) },
+      {
+        title: 'Maatvarianten',
+        links: links(gripPages.filter((p) => p.parent === `${hub.path}maat/`)),
+      },
+    ].filter((group) => group.links.length > 0);
+    return { title: labelForPath(hub.path), href: hub.path, groups };
+  }),
   {
     title: 'Gripkennis',
     href: '/kennis/',
     groups: [
       {
-        title: 'Gripkennis',
+        title: 'Gripkeuze en onderhoud',
         href: '/kennis/',
-        links: gripPages
-          .filter((page) => page.parent === '/kennis/')
-          .map((page) => ({ title: page.title, href: page.path })),
+        links: links(gripPages.filter((p) => p.parent === '/kennis/')),
+      },
+      {
+        title: 'Grips vervangen',
+        href: '/kennis/#grips-vervangen',
+        links: links(replacementPages),
       },
       {
         title: 'Grips vergelijken',
         href: '/vergelijken/',
-        links: gripPages
-          .filter((page) => page.parent === '/vergelijken/')
-          .map((page) => ({ title: page.title.split(':')[0], href: page.path })),
+        links: links(gripPages.filter((p) => p.parent === '/vergelijken/')),
+      },
+      {
+        title: 'Blog',
+        href: '/blog/',
+        links: links(gripPages.filter((p) => p.parent === '/blog/')),
       },
     ],
   },
-  { title: 'Over Sportgrips', href: '/over-sportgrips/' },
 ];

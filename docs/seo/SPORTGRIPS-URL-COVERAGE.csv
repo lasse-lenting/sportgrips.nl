@@ -1,0 +1,44 @@
+Broncel,Menulabel,URL,Paginatype,Navigatie,Status
+C3,Home,/,overzicht / algemeen,Logo / keuzehulp,Aanwezig
+C4,Golfgrips,/golfgrips/,hub,Sportmenu,Aanwezig
+C5,Golf Pride,/golfgrips/golf-pride/,brand,Sportmenu,Aanwezig
+C6,Lamkin,/golfgrips/lamkin/,brand,Sportmenu,Aanwezig
+C7,SuperStroke,/golfgrips/superstroke/,brand,Sportmenu,Aanwezig
+C8,Puttergrips,/golfgrips/putter/,category,Sportmenu,Aanwezig
+C9,Gripmaat golf,/golfgrips/maat/,category,Sportmenu,Aanwezig
+C10,Undersize,/golfgrips/maat/undersize/,category,Sportmenu,Aanwezig
+C11,Midsize,/golfgrips/maat/midsize/,category,Sportmenu,Aanwezig
+C12,Oversize,/golfgrips/maat/oversize/,category,Sportmenu,Aanwezig
+C13,Golfgrips vervangen,/golfgrips/vervangen/,guide,Gripkennis > Grips vervangen,Aanwezig
+C14,Tennisgrips,/tennisgrips/,hub,Sportmenu,Aanwezig
+C15,Overgrips,/tennisgrips/overgrips/,category,Sportmenu,Aanwezig
+C16,Basisgrips,/tennisgrips/basisgrips/,category,Sportmenu,Aanwezig
+C17,Gripmaat tennis,/tennisgrips/gripmaat/,category,Sportmenu,Aanwezig
+C18,Tennisgrips vervangen,/tennisgrips/vervangen/,guide,Gripkennis > Grips vervangen,Aanwezig
+C19,Wilson,/tennisgrips/wilson/,brand,Sportmenu,Aanwezig
+C20,Babolat,/tennisgrips/babolat/,brand,Sportmenu,Aanwezig
+C21,Tourna,/tennisgrips/tourna/,brand,Sportmenu,Aanwezig
+C22,Head,/tennisgrips/head/,brand,Sportmenu,Aanwezig
+C23,Yonex,/tennisgrips/yonex/,brand,Sportmenu,Aanwezig
+C24,Padelgrips,/padelgrips/,hub,Sportmenu,Aanwezig
+C25,Padelgrips vervangen,/padelgrips/vervangen/,guide,Gripkennis > Grips vervangen,Aanwezig
+C26,Bullpadel,/padelgrips/bullpadel/,brand,Sportmenu,Aanwezig
+C27,Adidas,/padelgrips/adidas/,brand,Sportmenu,Aanwezig
+C28,Badmintongrips,/badmintongrips/,hub,Sportmenu,Aanwezig
+C29,Badmintongrips vervangen,/badmintongrips/vervangen/,guide,Gripkennis > Grips vervangen,Aanwezig
+C30,Squashgrips,/squashgrips/,hub,Sportmenu,Aanwezig
+C31,Hockeygrips,/hockeygrips/,hub,Sportmenu,Aanwezig
+C32,Chamois,/hockeygrips/chamois/,category,Sportmenu,Aanwezig
+C33,Hockeygrips vervangen,/hockeygrips/vervangen/,guide,Gripkennis > Grips vervangen,Aanwezig
+C34,Vergelijken,/vergelijken/,overzicht / algemeen,Gripkennis,Aanwezig
+C35,Golf Pride vs Lamkin,/vergelijken/golf-pride-vs-lamkin/,comparison,Gripkennis,Aanwezig
+C36,Wilson Pro vs Tourna,/vergelijken/wilson-pro-overgrip-vs-tourna-grip/,comparison,Gripkennis,Aanwezig
+C37,Chamois vs rubber,/vergelijken/chamois-vs-rubber-hockeygrip/,comparison,Gripkennis,Aanwezig
+C38,Keuzehulp,/keuzehulp/,overzicht / algemeen,Logo / keuzehulp,Aanwezig
+C39,Kennis,/kennis/,overzicht / algemeen,Gripkennis,Aanwezig
+C40,Basisgrip vs overgrip,/kennis/verschil-basisgrip-overgrip/,guide,Gripkennis,Aanwezig
+C41,Grips schoonmaken,/kennis/grips-schoonmaken/,guide,Gripkennis,Aanwezig
+C42,Grip weer stroef maken,/kennis/grip-stroef-maken/,guide,Gripkennis,Aanwezig
+C43,Zweethanden,/kennis/grip-bij-zweethanden/,guide,Gripkennis,Aanwezig
+C44,Blog,/blog/,overzicht / algemeen,Gripkennis,Aanwezig
+C45,Tenniselleboog en grip,/blog/tenniselleboog-en-grip/,article,Gripkennis,Aanwezig

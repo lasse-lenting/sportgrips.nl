@@ -73,7 +73,7 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
   const isCurrent = (href: string) =>
     path === href || path.startsWith(`${href.replace(/\/$/, '')}/`);
   const navLink =
-    'text-[16px] font-semibold text-white/80 transition-colors duration-300 hover:text-brand aria-[current=page]:text-brand max-lg:py-[15px] max-lg:text-[14px] max-lg:leading-[1.1]';
+    'text-[14px] whitespace-nowrap font-semibold text-white/80 transition-colors duration-300 hover:text-brand aria-[current=page]:text-brand max-lg:py-[15px] max-lg:leading-[1.1]';
   const bar = 'block h-[1.5px] w-5 bg-current [transition:transform_0.4s,opacity_0.3s]';
 
   return (
@@ -127,7 +127,7 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
         <div
           id="primary-menu"
           className={cn(
-            'flex items-center gap-[25px]',
+            'flex items-center gap-3',
             open
               ? 'max-lg:flex-col max-lg:items-stretch max-lg:gap-0 max-lg:pt-3'
               : 'max-lg:hidden',
@@ -149,7 +149,12 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
             const active = expanded === item.href;
             const id = `navigation-dropdown-${index}`;
             const current =
-              isCurrent(item.href) || item.groups.some((group) => isCurrent(group.href));
+              isCurrent(item.href) ||
+              item.groups.some(
+                (group) =>
+                  (group.href && isCurrent(group.href)) ||
+                  group.links.some((link) => isCurrent(link.href)),
+              );
             return (
               <div
                 key={item.href}
@@ -169,57 +174,67 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
                     scheduleClose(item.href);
                 }}
               >
-                <button
-                  ref={(element) => {
-                    dropdownTriggers.current[item.href] = element;
-                  }}
-                  type="button"
-                  aria-expanded={active}
-                  aria-controls={id}
-                  className={cn(
-                    navLink,
-                    'flex w-full items-center justify-between gap-1.5',
-                    current && 'text-brand',
-                  )}
-                  onClick={(event) => {
-                    cancelClose();
-                    setExpanded(
-                      active && (!desktopHover() || event.detail === 0) ? null : item.href,
-                    );
-                  }}
-                  onKeyDown={(event) => {
-                    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-                      event.preventDefault();
-                      cancelClose();
-                      setExpanded(item.href);
-                      const last = event.key === 'ArrowUp';
-                      requestAnimationFrame(() => {
-                        const links = document
-                          .getElementById(id)
-                          ?.querySelectorAll<HTMLAnchorElement>('a');
-                        if (links?.length) links[last ? links.length - 1 : 0].focus();
-                      });
-                    }
-                  }}
-                >
-                  {item.title}
-                  <svg
-                    aria-hidden="true"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    className={cn('shrink-0 transition-transform', active && 'rotate-180')}
+                <div className="flex items-center gap-1 max-lg:justify-between">
+                  <Link
+                    href={item.href}
+                    onClick={closeMenus}
+                    aria-current={path === item.href ? 'page' : undefined}
+                    className={cn(navLink, current && 'text-brand')}
                   >
-                    <path
-                      d="m4 6 4 4 4-4"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
+                    {item.title}
+                  </Link>
+                  <button
+                    ref={(element) => {
+                      dropdownTriggers.current[item.href] = element;
+                    }}
+                    type="button"
+                    aria-expanded={active}
+                    aria-controls={id}
+                    aria-label={`${item.title} submenu`}
+                    className={cn(
+                      navLink,
+                      'flex min-h-9 min-w-6 items-center justify-center max-lg:min-h-11 max-lg:min-w-11',
+                      current && 'text-brand',
+                    )}
+                    onClick={(event) => {
+                      cancelClose();
+                      setExpanded(
+                        active && (!desktopHover() || event.detail === 0) ? null : item.href,
+                      );
+                    }}
+                    onKeyDown={(event) => {
+                      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+                        event.preventDefault();
+                        cancelClose();
+                        setExpanded(item.href);
+                        const last = event.key === 'ArrowUp';
+                        requestAnimationFrame(() => {
+                          const links = document
+                            .getElementById(id)
+                            ?.querySelectorAll<HTMLAnchorElement>('a');
+                          if (links?.length) links[last ? links.length - 1 : 0].focus();
+                        });
+                      }
+                    }}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      className={cn('shrink-0 transition-transform', active && 'rotate-180')}
+                    >
+                      <path
+                        d="m4 6 4 4 4-4"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
                 <div
                   id={id}
                   hidden={!active}
@@ -231,7 +246,9 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
                       onClick={closeMenus}
                       className="mb-5 inline-flex text-[14px] font-semibold text-brand hover:underline"
                     >
-                      {item.title === 'Grips per sport' ? 'Alle sportgrips' : 'Alle gripkennis'}{' '}
+                      {item.title === 'Gripkennis'
+                        ? 'Alle gripkennis'
+                        : `Alle ${item.title.toLowerCase()}`}{' '}
                       <span aria-hidden="true" className="ml-2">
                         →
                       </span>
@@ -243,15 +260,22 @@ export function Navigation({ items }: { items: NavigationItem[] }) {
                       )}
                     >
                       {item.groups.map((group) => (
-                        <div key={group.href} className="flex min-w-0 flex-col items-start gap-2.5">
-                          <Link
-                            href={group.href}
-                            onClick={closeMenus}
-                            aria-current={path === group.href ? 'page' : undefined}
-                            className="font-semibold text-white transition-colors hover:text-brand aria-[current=page]:text-brand"
-                          >
-                            {group.title}
-                          </Link>
+                        <div
+                          key={group.title}
+                          className="flex min-w-0 flex-col items-start gap-2.5"
+                        >
+                          {group.href ? (
+                            <Link
+                              href={group.href}
+                              onClick={closeMenus}
+                              aria-current={path === group.href ? 'page' : undefined}
+                              className="font-semibold text-white transition-colors hover:text-brand aria-[current=page]:text-brand"
+                            >
+                              {group.title}
+                            </Link>
+                          ) : (
+                            <span className="font-semibold text-white">{group.title}</span>
+                          )}
                           {group.links.map((link) => (
                             <Link
                               key={link.href}

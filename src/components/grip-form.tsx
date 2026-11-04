@@ -71,7 +71,7 @@ export function GripForm() {
   const recommendation =
     answers[4] === 'care'
       ? '/kennis/grips-schoonmaken/'
-      : replacing && answers[0] !== 'squash'
+      : replacing
         ? `${hub}vervangen/`
         : answers[0] === 'golf' && answers[3] === 'thickness'
           ? '/golfgrips/maat/'

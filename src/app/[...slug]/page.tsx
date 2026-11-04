@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { gripPages, collections } from '@/content/grips';
+import { gripPages, collections, pageBreadcrumbs } from '@/content/grips';
 import { GripDetail, GripListing, GripHelperPage } from '@/components/grip-pages';
 import { JsonLd } from '@/components/json-ld';
 import { pageMetadata, absoluteUrl, breadcrumbJsonLd } from '@/lib/seo';
@@ -36,15 +36,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
   const c = collections.find((p) => p.path === path);
   if (!p && !c && path !== '/keuzehulp/') notFound();
   const title = p?.title ?? c?.title ?? 'Welke grip past bij mij?';
-  const parent = p?.parent;
-  const parentTitle =
-    gripPages.find((p) => p.path === parent)?.title ??
-    collections.find((p) => p.path === parent)?.title;
-  const crumbs = [
-    { name: 'Home', path: '/' },
-    ...(parent && parentTitle ? [{ name: parentTitle, path: parent }] : []),
-    { name: title, path },
-  ];
+  const crumbs = p
+    ? pageBreadcrumbs(p)
+    : [
+        { name: 'Home', path: '/' },
+        { name: title, path },
+      ];
   return (
     <>
       {p ? <GripDetail page={p} /> : c ? <GripListing {...c} /> : <GripHelperPage />}
@@ -53,7 +50,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
         data={{
           '@context': 'https://schema.org',
           '@type': p
-            ? p.kind === 'guide'
+            ? p.kind === 'guide' || p.kind === 'article'
               ? 'Article'
               : 'WebPage'
             : c
@@ -61,7 +58,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
               : 'WebPage',
           '@id': absoluteUrl(`${path}#content`),
           name: title,
-          ...(p?.kind === 'guide'
+          ...(p && ['guide', 'article'].includes(p.kind)
             ? { headline: title, author: { '@id': absoluteUrl('/#organization') } }
             : {}),
           description: p?.description ?? c?.description ?? 'Keuzehulp voor sportgrips',

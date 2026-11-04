@@ -5,16 +5,16 @@ import { Button, Container, Icon, SectionHeader } from './ui';
 import { Ribbon } from './ribbon';
 import { ProjectCard } from './cards';
 import { GripForm } from './grip-form';
-import { pageByPath, labelForPath, type GripPage } from '@/content/grips';
-export function GripListing({
-  title,
-  description,
-  pages,
-}: {
-  title: string;
-  description: string;
-  pages: GripPage[];
-}) {
+import { GripProducts } from './grip-products';
+import {
+  pageByPath,
+  labelForPath,
+  pageBreadcrumbs,
+  type GripPage,
+  type GripTable,
+  type GripCollection,
+} from '@/content/grips';
+export function GripListing({ title, description, pages, groups }: Omit<GripCollection, 'path'>) {
   return (
     <>
       <section className="listing-hero">
@@ -25,21 +25,27 @@ export function GripListing({
       </section>
       <section className="listing-body blog-listing">
         <Container>
-          <div className="project-grid">
-            {pages.map((p) => (
-              <ProjectCard
-                key={p.path}
-                project={{
-                  slug: p.path,
-                  title: p.title,
-                  image: p.image,
-                  location: p.description,
-                  raised: p.kind === 'hub' ? 'Sport' : 'Uitleg',
-                }}
-                ctaHref={p.path}
-              />
-            ))}
-          </div>
+          {(groups ?? [{ id: undefined, title: undefined, pages }]).map((group) => (
+            <div key={group.id ?? 'all'} id={group.id} className="mb-15 scroll-mt-32">
+              {group.title && <h2 className="mb-8">{group.title}</h2>}
+              <div className="project-grid">
+                {group.pages.map((p) => (
+                  <ProjectCard
+                    key={p.path}
+                    project={{
+                      slug: p.path,
+                      title: p.title,
+                      image: p.image,
+                      location: p.description,
+                      raised:
+                        p.kind === 'hub' ? 'Sport' : p.kind === 'brand' ? 'Merk' : 'Gripkeuze',
+                    }}
+                    ctaHref={p.path}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </Container>
       </section>
     </>
@@ -53,21 +59,23 @@ const headingId = (value: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 export function GripDetail({ page }: { page: GripPage }) {
+  const crumbs = pageBreadcrumbs(page);
   return (
     <div className="event-article-page">
       <header className="article-hero">
         <div className="article-hero-inner">
           <div className="article-hero-copy">
             <nav className="breadcrumb" aria-label="Kruimelpad">
-              <Link href="/">Home</Link>
-              <Icon name="arrow" />
-              {page.parent && (
-                <>
-                  <Link href={page.parent}>{labelForPath(page.parent)}</Link>
-                  <Icon name="arrow" />
-                </>
-              )}
-              <span>{page.title}</span>
+              {crumbs.map((crumb, index) => (
+                <span key={crumb.path} className="inline-flex items-center gap-2">
+                  {index > 0 && <Icon name="arrow" />}
+                  {index === crumbs.length - 1 ? (
+                    <span aria-current="page">{crumb.name}</span>
+                  ) : (
+                    <Link href={crumb.path}>{crumb.name}</Link>
+                  )}
+                </span>
+              ))}
             </nav>
             <div className="article-tags" aria-label="Onderwerpen">
               {page.tags.map((tag) => (
@@ -76,7 +84,12 @@ export function GripDetail({ page }: { page: GripPage }) {
             </div>
             <h1>{page.title}</h1>
             <div className="article-read-time">
-              <span aria-hidden="true">◷</span> Keuzeuitleg
+              <span aria-hidden="true">◷</span>{' '}
+              {page.kind === 'hub'
+                ? 'Vergelijk per sport'
+                : page.kind === 'brand'
+                  ? 'Merkvergelijking'
+                  : 'Keuzeuitleg'}
             </div>
             <dl className="article-metadata">
               <div>
@@ -114,7 +127,7 @@ export function GripDetail({ page }: { page: GripPage }) {
                 ))}
                 {page.table && (
                   <li>
-                    <a href="#vergelijking">Vergelijking</a>
+                    <a href="#vergelijking">Vergelijkingstabel</a>
                   </li>
                 )}
                 <li>
@@ -152,47 +165,30 @@ export function GripDetail({ page }: { page: GripPage }) {
             <p>{page.summary}</p>
           </div>
           <div className="rich-content">
-            {page.sections.map((s) => (
+            {page.sections.map((s, index) => (
               <section key={s.heading}>
                 <h2 id={headingId(s.heading)}>{s.heading}</h2>
                 {s.paragraphs.map((t) => (
                   <p key={t}>{t}</p>
                 ))}
+                {index === 0 && page.table && <ComparisonTable table={page.table} />}
+                {s.links && (
+                  <div className="grip-directory">
+                    {s.links.map((link) => (
+                      <Link key={link.href} href={link.href} className="grip-directory-card">
+                        <h3>
+                          {link.title} <span aria-hidden="true">→</span>
+                        </h3>
+                        {link.description && <p>{link.description}</p>}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {index === page.sections.length - 1 && page.products && (
+                  <GripProducts ids={page.products} />
+                )}
               </section>
             ))}
-            {page.table && (
-              <section>
-                <h2 id="vergelijking">Vergelijking</h2>
-                <div className="overflow-x-auto">
-                  <table>
-                    <thead>
-                      <tr>
-                        {page.table.headings.map((h) => (
-                          <th scope="col" key={h}>
-                            {h}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {page.table.rows.map((row) => (
-                        <tr key={row[0]}>
-                          {row.map((cell, i) =>
-                            i === 0 ? (
-                              <th scope="row" key={i}>
-                                {cell}
-                              </th>
-                            ) : (
-                              <td key={i}>{cell}</td>
-                            ),
-                          )}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            )}
             <h2 id="bronnen">Bronnen en onderbouwing</h2>
             <p>
               Deze uitleg gebruikt de onderstaande bronnen. Er is geen eigen vergelijkende
@@ -225,6 +221,46 @@ export function GripDetail({ page }: { page: GripPage }) {
           </div>
         </article>
       </div>
+    </div>
+  );
+}
+
+function ComparisonTable({ table }: { table: GripTable }) {
+  return (
+    <div
+      id="vergelijking"
+      className="grip-comparison"
+      role="region"
+      aria-label="Vergelijkingstabel"
+      tabIndex={0}
+    >
+      <table>
+        <caption className="sr-only">Vergelijk de eigenschappen en keuzeafwegingen</caption>
+        <thead>
+          <tr>
+            {table.headings.map((heading) => (
+              <th scope="col" key={heading}>
+                {heading}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row) => (
+            <tr key={row[0]}>
+              {row.map((cell, index) =>
+                index === 0 ? (
+                  <th scope="row" key={index}>
+                    {cell}
+                  </th>
+                ) : (
+                  <td key={index}>{cell}</td>
+                ),
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

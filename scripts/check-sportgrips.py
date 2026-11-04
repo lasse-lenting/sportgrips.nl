@@ -36,7 +36,10 @@ def check(base,production):
  failures=[];pages={};titles=set();descriptions=set();links=set()
  def require(cond,msg):
   if not cond:failures.append(msg)
- paths=['/','/grips/','/kennis/','/vergelijken/','/keuzehulp/','/over-sportgrips/','/privacy/']+[p['path'] for p in json.loads(Path('src/content/grips.json').read_text())]
+ paths=['/','/grips/','/kennis/','/vergelijken/','/blog/','/keuzehulp/','/over-sportgrips/','/privacy/']+[p['path'] for p in json.loads(Path('src/content/grips.json').read_text())]
+ workbook=json.loads(Path('docs/seo/source/workbook.json').read_text())
+ expected={value for row in workbook['Menustructuur + URL'] for cell,value in row.items() if cell.startswith('C') and value.startswith('/')}
+ require(expected.issubset(set(paths)),f'Workbook URLs missing: {sorted(expected-set(paths))}')
  for path in paths:
   status,html=fetch(base+path);require(status==200,f'{path}: HTTP {status}')
   p=Page();p.feed(html);pages[path]=p
@@ -62,7 +65,7 @@ def check(base,production):
   target=urlsplit(urljoin('https://sportgrips.nl'+source,link));path=unquote(target.path)
   require(path in pages,f'{source}: unexpected internal link {link}')
   if path in pages and target.fragment:require(unquote(target.fragment) in pages[path].ids,f'{source}: missing anchor {link}')
- for path in ['/does-not-exist/','/robotmaaiers/','/advies/robotmaaier-zonder-draad/','/over-maaistro/','/golfgrips/golf-pride/','/golfgrips/does-not-exist/']:
+ for path in ['/does-not-exist/','/robotmaaiers/','/advies/robotmaaier-zonder-draad/','/over-maaistro/','/golfgrips/nonexistent-brand/','/golfgrips/does-not-exist/']:
   status,html=fetch(base+path);require(status==404,f'{path}: expected 404, got {status}')
   p=Page();p.feed(html);require('noindex' in p.meta.get('robots',''),f'{path}: 404 noindex missing');require('Sportgrips' in ' '.join(p.text),f'{path}: 404 brand missing')
  status,xml=fetch(base+'/sitemap.xml');require(status==200,'sitemap HTTP')

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { Container } from './ui';
 import { ConsentSettingsButton } from './consent';
+import { sportHubs, labelForPath } from '@/content/grips';
 
 function FooterColumn({
   title,
@@ -45,32 +46,31 @@ export function Footer() {
             />
           </Link>
           <div className="grid w-full grid-cols-3 gap-[clamp(30px,5vw,90px)] max-sm:grid-cols-1">
-            <FooterColumn title="Vind jouw grip">
-              <Link className={footerLink} href="/">
-                Homepage
-              </Link>
+            <FooterColumn title="Grips per sport">
+              {sportHubs.map((hub) => (
+                <Link key={hub.path} className={footerLink} href={hub.path}>
+                  {labelForPath(hub.path)}
+                </Link>
+              ))}
+            </FooterColumn>
+            <FooterColumn title="Vergelijken en gripkennis">
               <Link className={footerLink} href="/keuzehulp/">
                 De keuzehulp
               </Link>
-              <Link className={footerLink} href="/grips/">
-                Grips per sport
+              <Link className={footerLink} href="/vergelijken/">
+                Grips vergelijken
               </Link>
               <Link className={footerLink} href="/kennis/">
                 Gripkennis
               </Link>
+              <Link className={footerLink} href="/kennis/#grips-vervangen">
+                Grips vervangen
+              </Link>
+              <Link className={footerLink} href="/blog/">
+                Blog
+              </Link>
               <Link className={footerLink} href="/over-sportgrips/">
                 Over Sportgrips
-              </Link>
-            </FooterColumn>
-            <FooterColumn title="Op de homepage">
-              <Link className={footerLink} href="/#our-purpose">
-                Wat vul je in?
-              </Link>
-              <Link className={footerLink} href="/#goals">
-                Zo werkt het
-              </Link>
-              <Link className={footerLink} href="/#faq">
-                Veelgestelde vragen
               </Link>
             </FooterColumn>
             <FooterColumn
@@ -85,8 +85,8 @@ export function Footer() {
                 Onze werkwijze en bronnen
               </Link>
               <p>
-                De website bevat op dit moment geen winkel- of affiliatelinks. We geven keuzeuitleg
-                en claimen geen eigen praktijktests.
+                Vergelijk modellen en zoek je keuze bij bol.com. Onze vergelijkingen gebruiken
+                fabrikantgegevens; er zijn geen eigen praktijktests uitgevoerd.
               </p>
               <Link className={footerLink} href="/privacy/">
                 Privacy

@@ -91,11 +91,12 @@ export default function PrivacyPage() {
             wordt gehost bij Vercel. Technische verwerking voor het leveren van de website staat los
             van de optionele meetdiensten hierboven.
           </p>
-          <h2>Externe bronnen en e-mail</h2>
+          <h2>Externe bronnen, winkellinks en e-mail</h2>
           <p>
-            Bronlinks openen een andere website, waar de eigen privacy- en cookievoorwaarden gelden.
-            Klik je op het e-mailadres, dan opent je mailprogramma. De inhoud van een door jou
-            verstuurde e-mail kan worden gebruikt om je vraag te beantwoorden; vul geen
+            Bronlinks en zoeklinks naar bol.com openen een andere website, waar de eigen privacy- en
+            cookievoorwaarden gelden. De zoeklinks bevatten een productnaam, geen antwoorden uit de
+            keuzehulp. Klik je op het e-mailadres, dan opent je mailprogramma. De inhoud van een
+            door jou verstuurde e-mail kan worden gebruikt om je vraag te beantwoorden; vul geen
             persoonsgegevens in de keuzehulp in.
           </p>
           <h2>Bij verdere ontwikkeling</h2>

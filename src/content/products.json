@@ -1,0 +1,340 @@
+[
+  {
+    "id": "tour-velvet",
+    "name": "Golf Pride Tour Velvet",
+    "type": "Swinggrip",
+    "surface": "Rubber met oppervlaktestructuur",
+    "thickness": "Undersize t/m jumbo; uitvoering controleren",
+    "consideration": "Neem deze mee als je een rubberen oppervlak wilt vergelijken met cord of een zachter model.",
+    "query": "Golf Pride Tour Velvet",
+    "source": {
+      "name": "Golf Pride — Tour Velvet",
+      "url": "https://www.golfpride.com/gb/en-gb/swing-grips/tour-velvet-collection/tour-velvet.html"
+    }
+  },
+  {
+    "id": "mcc",
+    "name": "Golf Pride MCC",
+    "type": "Swinggrip",
+    "surface": "Cord bovenaan, rubber onderaan",
+    "thickness": "Standard of midsize; uitvoering controleren",
+    "consideration": "Vergelijk met Tour Velvet wanneer je bewust twee verschillende contactzones zoekt.",
+    "query": "Golf Pride MCC",
+    "source": {
+      "name": "Golf Pride — MCC",
+      "url": "https://www.golfpride.com/gb/en-gb/swing-grips/mcc-collection/mcc.html"
+    }
+  },
+  {
+    "id": "cp2-pro",
+    "name": "Golf Pride CP2 Pro",
+    "type": "Swinggrip",
+    "surface": "Zacht rubber, verminderde taper",
+    "thickness": "Maat per uitvoering",
+    "consideration": "Een vergelijkingsoptie als je zachtheid en een voller gevoel bij de onderste hand zoekt.",
+    "query": "Golf Pride CP2 Pro",
+    "source": {
+      "name": "Golf Pride — CP2 Pro",
+      "url": "https://www.golfpride.com/gb/en-gb/swing-grips/cp2-collection/cp2-pro.html"
+    }
+  },
+  {
+    "id": "crossline",
+    "name": "Lamkin Crossline",
+    "type": "Swinggrip",
+    "surface": "Dicht Crossline-patroon",
+    "thickness": "Maat en modelgeneratie controleren",
+    "consideration": "Vergelijk de oorspronkelijke Crossline met de cordvariant. Crossline 2.0 is een andere uitvoering bij SuperStroke.",
+    "query": "Lamkin Crossline",
+    "source": {
+      "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+      "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+    }
+  },
+  {
+    "id": "crossline-cord",
+    "name": "Lamkin Crossline Full Cord",
+    "type": "Swinggrip",
+    "surface": "Cord over het gripoppervlak",
+    "thickness": "Standard of midsize volgens oorspronkelijke catalogus",
+    "consideration": "Neem deze mee als je cord over de hele grip wilt; vergelijk dezelfde maat en generatie.",
+    "query": "Lamkin Crossline Full Cord",
+    "source": {
+      "name": "Lamkin — productcatalogus 2021 (oorspronkelijke Crossline)",
+      "url": "https://www.lamkingrips.com/wp-content/uploads/2020/09/Lamkin_2021_Final.pdf"
+    }
+  },
+  {
+    "id": "zenergy-pistol",
+    "name": "SuperStroke Zenergy Pistol",
+    "type": "Puttergrip",
+    "surface": "Pistol-vorm aan de bovenkant",
+    "thickness": "Tour, 1.0 of 2.0",
+    "consideration": "Begin hier als je een gevormde bovenkant wilt vergelijken; kies pas daarna de omvang.",
+    "query": "SuperStroke Zenergy Pistol",
+    "source": {
+      "name": "SuperStroke — Zenergy Pistol",
+      "url": "https://superstrokeusa.com/products/zenergy-pistol-tour-putter-grips"
+    }
+  },
+  {
+    "id": "zenergy-tour",
+    "name": "SuperStroke Zenergy Tour",
+    "type": "Puttergrip",
+    "surface": "Tour-profiel",
+    "thickness": "Maat per uitvoering",
+    "consideration": "Vergelijk de handpositie van het Tour-profiel met de Pistol-vorm voordat je een formaat kiest.",
+    "query": "SuperStroke Zenergy Tour",
+    "source": {
+      "name": "SuperStroke — puttergrips",
+      "url": "https://superstrokeusa.com/collections/putter-grips"
+    }
+  },
+  {
+    "id": "wilson-pro",
+    "name": "Wilson Pro Overgrip",
+    "type": "Overgrip",
+    "surface": "Dun en rekbaar vilt",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Een optie als je een dunne buitenlaag zoekt en het gevoel van de basisgrip wilt behouden.",
+    "query": "Wilson Pro Overgrip",
+    "source": {
+      "name": "Wilson — Pro Overgrip",
+      "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
+    }
+  },
+  {
+    "id": "wilson-base",
+    "name": "Wilson Pro Performance",
+    "type": "Basisgrip",
+    "surface": "Zacht en kleverig oppervlak",
+    "thickness": "Controleer de modelspecificatie",
+    "consideration": "Vergelijk als je de onderlaag vernieuwt en een zachte, kleverige afwerking zoekt.",
+    "query": "Wilson Pro Performance replacement grip",
+    "source": {
+      "name": "Wilson — Pro Performance basisgrip",
+      "url": "https://au.wilson.com/products/pro-performance-replacement-grip"
+    }
+  },
+  {
+    "id": "vs-original",
+    "name": "Babolat VS Original",
+    "type": "Overgrip",
+    "surface": "Droog contactgevoel",
+    "thickness": "0,43 mm",
+    "consideration": "Neem mee als je weinig dikte wilt toevoegen en de kanten van het handvat wilt blijven voelen.",
+    "query": "Babolat VS Original",
+    "source": {
+      "name": "Babolat — VS Original",
+      "url": "https://www.babolat.com/us/vs-original-x3/653040.html"
+    }
+  },
+  {
+    "id": "pro-tour",
+    "name": "Babolat Pro Tour 2.0",
+    "type": "Overgrip",
+    "surface": "Kleverig contactgevoel",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Vergelijk met VS Original als kleverigheid voor jou zwaarder weegt dan een droog oppervlak.",
+    "query": "Babolat Pro Tour 2.0",
+    "source": {
+      "name": "Babolat — overgrips vergelijken",
+      "url": "https://help.babolat.com/hc/en-us/articles/22997505022621-How-do-I-choose-the-right-overgrip"
+    }
+  },
+  {
+    "id": "syntec-pro",
+    "name": "Babolat Syntec Pro",
+    "type": "Basisgrip",
+    "surface": "Kleverig, gericht op contactgevoel",
+    "thickness": "1,9 mm",
+    "consideration": "Vergelijk deze onderlaag met een zachter of leren model; neem je overgrip mee in de totale dikte.",
+    "query": "Babolat Syntec Pro",
+    "source": {
+      "name": "Babolat — Syntec Pro",
+      "url": "https://www.babolat.com/us/syntec-pro/670051.html"
+    }
+  },
+  {
+    "id": "natural-grip",
+    "name": "Babolat Natural Grip",
+    "type": "Basisgrip",
+    "surface": "Leer, stevig contactgevoel",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Een optie voor wie het handvat direct wil voelen; vergelijk de totale opbouw met een synthetische grip.",
+    "query": "Babolat Natural Grip",
+    "source": {
+      "name": "Babolat — basisgrips vergelijken",
+      "url": "https://help.babolat.com/hc/en-gb/articles/22990875281949-How-to-choose-the-right-grip"
+    }
+  },
+  {
+    "id": "tourna-original",
+    "name": "Tourna Grip Original",
+    "type": "Overgrip",
+    "surface": "Droog, gericht op vochtopname",
+    "thickness": "Lengte en uitvoering controleren",
+    "consideration": "Vergelijk met kleverige overgrips als vocht tijdens het spelen je belangrijkste afweging is.",
+    "query": "Tourna Grip Original",
+    "source": {
+      "name": "Tourna — overgrips",
+      "url": "https://www.tourna.com/pages/overgrips"
+    }
+  },
+  {
+    "id": "tourna-tac",
+    "name": "Tourna Tac",
+    "type": "Overgrip",
+    "surface": "Kleverig contactgevoel",
+    "thickness": "Lengte en uitvoering controleren",
+    "consideration": "Vergelijk met Original als je binnen Tourna juist een kleveriger oppervlak wilt.",
+    "query": "Tourna Tac",
+    "source": {
+      "name": "Tourna — Tourna Tac",
+      "url": "https://www.tourna.com/collections/tourna-tac"
+    }
+  },
+  {
+    "id": "head-prime",
+    "name": "HEAD Prime Tour",
+    "type": "Overgrip",
+    "surface": "Kleverig, met comfort als uitgangspunt",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Neem mee als je kleverigheid en een comfortabele buitenlaag wilt combineren.",
+    "query": "HEAD Prime Tour",
+    "source": {
+      "name": "HEAD — Prime Tour",
+      "url": "https://www.head.com/product/prime-tour-285621"
+    }
+  },
+  {
+    "id": "head-hydro",
+    "name": "HEAD Hydrosorb Pro",
+    "type": "Basisgrip",
+    "surface": "Kleverig, gericht op feedback",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Kies deze vergelijking als de onderlaag aan vervanging toe is; dit is geen overgrip.",
+    "query": "HEAD Hydrosorb Pro",
+    "source": {
+      "name": "HEAD — Hydrosorb Pro",
+      "url": "https://www.head.com/product/hydrosorbtm-pro-3"
+    }
+  },
+  {
+    "id": "super-grap",
+    "name": "Yonex Super Grap AC102",
+    "type": "Overgrip",
+    "surface": "Kleverig polyurethaan",
+    "thickness": "0,6 mm",
+    "consideration": "Vergelijk met een droge overgrip wanneer je een kleverig oppervlak met vochtopname zoekt.",
+    "query": "Yonex Super Grap AC102",
+    "source": {
+      "name": "Yonex — Super Grap AC102",
+      "url": "https://www.yonex.com/ac102"
+    }
+  },
+  {
+    "id": "dry-grap",
+    "name": "Yonex Dry Super Grap AC149",
+    "type": "Overgrip",
+    "surface": "Droog polyurethaan",
+    "thickness": "0,45 mm volgens catalogus 2024",
+    "consideration": "Vergelijk met Super Grap als je een droger en dunner buitenoppervlak wilt.",
+    "query": "Yonex Dry Super Grap AC149",
+    "source": {
+      "name": "Yonex — badmintoncatalogus 2024, Dry Super Grap",
+      "url": "https://www.yonex.com/media/wysiwyg/2024-Yonex-Badminton-Catalog.pdf"
+    }
+  },
+  {
+    "id": "towel-grip",
+    "name": "Yonex Towel Grip AC402-2",
+    "type": "Badstof grip",
+    "surface": "Katoen",
+    "thickness": "1,35 mm",
+    "consideration": "Neem mee als je badstof wilt vergelijken met een dunne overgrip; let op de volledige handvatdikte.",
+    "query": "Yonex Towel Grip AC402-2",
+    "source": {
+      "name": "Yonex — Towel Grip AC402-2",
+      "url": "https://www.yonex.com/ac402-2"
+    }
+  },
+  {
+    "id": "bull-1201",
+    "name": "Bullpadel GB-1201",
+    "type": "Overgrip",
+    "surface": "Microperforaties en HaC",
+    "thickness": "0,5 mm",
+    "consideration": "Een optie als je microperforaties wilt meenemen in de vergelijking met een glad oppervlak.",
+    "query": "Bullpadel GB-1201",
+    "source": {
+      "name": "Bullpadel — GB-1201",
+      "url": "https://www.bullpadel.com/es/190-overgrips-bullpadel-gb-1201.html"
+    }
+  },
+  {
+    "id": "bull-1200",
+    "name": "Bullpadel GB-1200",
+    "type": "Overgrip",
+    "surface": "Controleer oppervlak per uitvoering",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Vergelijk met GB-1201 op de opgegeven eigenschappen en verpakkingsgrootte; de modelnaam alleen is onvoldoende.",
+    "query": "Bullpadel GB-1200",
+    "source": {
+      "name": "Bullpadel — overgrips",
+      "url": "https://www.bullpadel.com/gb/79-overgrips"
+    }
+  },
+  {
+    "id": "adidas-3",
+    "name": "adidas overgrip AC2BA1",
+    "type": "Overgrip",
+    "surface": "Zacht contactgevoel volgens fabrikant",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Begin met de kleine verpakking als je eerst wilt beoordelen hoe deze overgrip op je racket voelt.",
+    "query": "adidas padel overgrip AC2BA1 3",
+    "source": {
+      "name": "adidas / All For Padel — overgrips en grips",
+      "url": "https://allforpadel.com/en/132-overgrips-and-grips"
+    }
+  },
+  {
+    "id": "adidas-25",
+    "name": "adidas overgrip AC2TA1MX",
+    "type": "Overgrip",
+    "surface": "Zacht contactgevoel volgens fabrikant",
+    "thickness": "Controleer de gekozen uitvoering",
+    "consideration": "Een doos van 25 is pas logisch als de grip bevalt; vergelijk de prijs per stuk en de exacte uitvoering.",
+    "query": "adidas padel overgrip AC2TA1MX 25",
+    "source": {
+      "name": "adidas / All For Padel — overgrips en grips",
+      "url": "https://allforpadel.com/en/132-overgrips-and-grips"
+    }
+  },
+  {
+    "id": "karakal-pu",
+    "name": "Karakal PU Super Grip",
+    "type": "Basisgrip",
+    "surface": "Kleverig polyurethaan",
+    "thickness": "Dikke grip volgens fabrikant",
+    "consideration": "Vergelijk voor het vernieuwen van de onderlaag; let bij geel op de specifieke squashlengte.",
+    "query": "Karakal PU Super Grip",
+    "source": {
+      "name": "Karakal — PU Super Grip",
+      "url": "https://karakal.com/products/karakal-pu-super-grip"
+    }
+  },
+  {
+    "id": "grays-chamois",
+    "name": "Grays Chamois Flou Overgrip",
+    "type": "Hockeyovergrip",
+    "surface": "Chamois buitenlaag",
+    "thickness": "Controleer lengte en uitvoering",
+    "consideration": "Een optie om de buitenlaag van je stick te veranderen; controleer de montage en de bestaande onderlaag.",
+    "query": "Grays Chamois Flou Overgrip",
+    "source": {
+      "name": "Grays — Chamois Flou Overgrip",
+      "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
+    }
+  }
+]
