@@ -1,14 +1,12 @@
 # Sportgrips
 
-Live: https://sportgrips.vercel.app
+Productiedomein: https://sportgrips.nl
 
 GitHub: https://github.com/lasse-lenting/sportgrips.nl
 
 Vercel-project: https://vercel.com/lasselentings-projects/sportgrips
 
-Het domein wordt door de eigenaar gekoppeld; canonicals gebruiken https://sportgrips.nl.
-
-Sportgrips op basis van de Maaistro-layout. Indexering is voor alle omgevingen uitgeschakeld: noindex-meta, X-Robots-Tag en een lege sitemap. Verwijder dit uitsluitend na expliciete opdracht.
+Sportgrips gebruikt `https://sportgrips.nl` als canoniek domein. Alleen op dit domein is de productiebuild van Vercel indexeerbaar. Andere hosts houden de `X-Robots-Tag: noindex`. Lokale builds en previews hebben ook noindex-meta en een lege sitemap.
 
 ```sh
 npm ci

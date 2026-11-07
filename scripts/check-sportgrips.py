@@ -32,20 +32,21 @@ def fetch(url):
    response_headers[url]=r.headers
    return r.status,r.read().decode()
  except urllib.error.HTTPError as e:return e.code,e.read().decode()
-def check(base,production):
+def check(base,production,indexable):
  failures=[];pages={};titles=set();descriptions=set();links=set()
  def require(cond,msg):
   if not cond:failures.append(msg)
- paths=['/','/grips/','/kennis/','/vergelijken/','/blog/','/keuzehulp/','/over-sportgrips/','/privacy/']+[p['path'] for p in json.loads(Path('src/content/grips.json').read_text())]
+ paths=['/','/grips/','/kennis/','/vergelijken/','/keuzehulp/','/over-sportgrips/','/privacy/']+[p['path'] for p in json.loads(Path('src/content/grips.json').read_text())]
  workbook=json.loads(Path('docs/seo/source/workbook.json').read_text())
  expected={value for row in workbook['Menustructuur + URL'] for cell,value in row.items() if cell.startswith('C') and value.startswith('/')}
+ expected.difference_update(['/blog/', '/blog/tenniselleboog-en-grip/'])
  require(expected.issubset(set(paths)),f'Workbook URLs missing: {sorted(expected-set(paths))}')
  for path in paths:
   status,html=fetch(base+path);require(status==200,f'{path}: HTTP {status}')
   p=Page();p.feed(html);pages[path]=p
   require(p.h1==1,f'{path}: {p.h1} H1 elements')
-  require('noindex' in p.meta.get('robots',''),f'{path}: noindex meta missing')
-  require('noindex' in response_headers.get(base+path,{}).get('X-Robots-Tag',''),f'{path}: noindex HTTP header missing')
+  require(('noindex' in p.meta.get('robots','')) != indexable,f'{path}: unexpected robots meta')
+  require(('noindex' in response_headers.get(base+path,{}).get('X-Robots-Tag','')) != indexable,f'{path}: unexpected X-Robots-Tag')
   require(p.canonical==['https://sportgrips.nl'+path],f'{path}: canonical {p.canonical}')
   require(p.meta.get('og:url')=='https://sportgrips.nl'+path,f'{path}: OG URL')
   require(p.meta.get('og:site_name')=='Sportgrips',f'{path}: OG name')
@@ -65,22 +66,25 @@ def check(base,production):
   target=urlsplit(urljoin('https://sportgrips.nl'+source,link));path=unquote(target.path)
   require(path in pages,f'{source}: unexpected internal link {link}')
   if path in pages and target.fragment:require(unquote(target.fragment) in pages[path].ids,f'{source}: missing anchor {link}')
- for path in ['/does-not-exist/','/robotmaaiers/','/advies/robotmaaier-zonder-draad/','/over-maaistro/','/golfgrips/nonexistent-brand/','/golfgrips/does-not-exist/']:
+ for path in ['/does-not-exist/','/robotmaaiers/','/advies/robotmaaier-zonder-draad/','/over-maaistro/','/golfgrips/nonexistent-brand/','/golfgrips/does-not-exist/','/blog/tenniselleboog-en-grip/']:
   status,html=fetch(base+path);require(status==404,f'{path}: expected 404, got {status}')
   p=Page();p.feed(html);require('noindex' in p.meta.get('robots',''),f'{path}: 404 noindex missing');require('Sportgrips' in ' '.join(p.text),f'{path}: 404 brand missing')
  status,xml=fetch(base+'/sitemap.xml');require(status==200,'sitemap HTTP')
  locations=[e.text for e in ElementTree.fromstring(xml).iter() if e.tag.endswith('loc')]
- require(not locations,'noindex sitemap should be empty')
+ expected_locations=sorted('https://sportgrips.nl'+path for path in paths) if indexable else []
+ require(sorted(locations)==expected_locations,'unexpected sitemap URLs')
  require('<lastmod>' not in xml,'sitemap inherited dates')
  status,robots=fetch(base+'/robots.txt');require(status==200,'robots HTTP')
- require('Sitemap:' not in robots and 'Allow: /' in robots and 'Disallow: /\n' not in robots,'robots must allow reading noindex without advertising sitemap')
+ sitemap_lines=[line for line in robots.splitlines() if line.startswith('Sitemap:')]
+ require(sitemap_lines==(['Sitemap: https://sportgrips.nl/sitemap.xml'] if indexable else []),'unexpected robots sitemap directive')
+ require('Allow: /' in robots and 'Disallow: /\n' not in robots,'robots must allow crawling pages')
  baseline=json.loads(Path('docs/seo/media-baseline.json').read_text());modified=[]
  for name,digest in baseline.items():
   p=Path('public')/Path(name).relative_to('public')
   require(p.exists(),f'{p}: deleted asset')
   if p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()!=digest:modified.append(name)
  require(modified==['public/site.webmanifest'],f'Unexpected asset changes: {modified}')
- report={'base':base,'indexing':'noindex','mode':'production' if production else 'development','page_count':len(paths),'internal_links_checked':len(links),'public_files_preserved':len(baseline)-len(modified),'manifest_text_updated':modified,'failures':failures}
+ report={'base':base,'indexing':'indexable' if indexable else 'noindex','mode':'production' if production else 'development','page_count':len(paths),'internal_links_checked':len(links),'public_files_preserved':len(baseline)-len(modified),'manifest_text_updated':modified,'failures':failures}
  Path('docs/seo/check-'+('production' if production else 'development')+'.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return bool(failures)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--base',default='http://localhost:3027');parser.add_argument('--development',action='store_true');a=parser.parse_args();sys.exit(check(a.base.rstrip('/'),not a.development))
+ parser=argparse.ArgumentParser();parser.add_argument('--base',default='http://localhost:3027');parser.add_argument('--development',action='store_true');parser.add_argument('--indexable',action='store_true');a=parser.parse_args();sys.exit(check(a.base.rstrip('/'),not a.development,a.indexable))

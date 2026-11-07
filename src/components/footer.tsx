@@ -66,9 +66,6 @@ export function Footer() {
               <Link className={footerLink} href="/kennis/#grips-vervangen">
                 Grips vervangen
               </Link>
-              <Link className={footerLink} href="/blog/">
-                Blog
-              </Link>
               <Link className={footerLink} href="/over-sportgrips/">
                 Over Sportgrips
               </Link>
@@ -85,8 +82,8 @@ export function Footer() {
                 Onze werkwijze en bronnen
               </Link>
               <p>
-                Vergelijk modellen en zoek je keuze bij bol.com. Onze vergelijkingen gebruiken
-                fabrikantgegevens; er zijn geen eigen praktijktests uitgevoerd.
+                Vergelijk modellen en bekijk je keuze bij bol.com of bij het merk. We baseren de
+                vergelijkingen op fabrikantgegevens.
               </p>
               <Link className={footerLink} href="/privacy/">
                 Privacy

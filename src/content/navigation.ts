@@ -40,11 +40,6 @@ export const navigation: NavigationItem[] = [
         href: '/vergelijken/',
         links: links(gripPages.filter((p) => p.parent === '/vergelijken/')),
       },
-      {
-        title: 'Blog',
-        href: '/blog/',
-        links: links(gripPages.filter((p) => p.parent === '/blog/')),
-      },
     ],
   },
 ];

@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { photo, photoAlt } from '@/content/media';
+import { siteUrl } from './indexing';
 
-export const siteUrl = 'https://sportgrips.nl';
-// Keep every environment noindex until an explicit request to open indexing.
-export const siteIndexable = false;
+export { siteUrl, siteIndexable } from './indexing';
 export const siteName = 'Sportgrips';
 
 export function absoluteUrl(path: string) {

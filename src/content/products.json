@@ -336,5 +336,104 @@
       "name": "Grays — Chamois Flou Overgrip",
       "url": "https://www.grayshockey.co.za/chamois-flou-overgrip"
     }
+  },
+  {
+    "id": "raqa-core",
+    "name": "Raqa Core padel grip",
+    "type": "Basisgrip",
+    "surface": "Geprofileerde siliconen",
+    "thickness": "Vervangt de originele basis",
+    "consideration": "Bekijk de Core als je het profiel van je onderlaag wilt veranderen.",
+    "source": {
+      "name": "Raqa — Core padel grip",
+      "url": "https://raqa.nl/products/core-padel-grip"
+    }
+  },
+  {
+    "id": "raqa-elite-dry",
+    "name": "Raqa Elite dry padel overgrip",
+    "type": "Overgrip",
+    "surface": "Droog en vochtopnemend",
+    "thickness": "Een extra laag over de basis",
+    "consideration": "Vergelijk deze set van drie als je een drogere buitenlaag zoekt.",
+    "source": {
+      "name": "Raqa — Elite dry padel overgrip",
+      "url": "https://raqa.nl/products/elite-dry-padel-overgrip"
+    }
+  },
+  {
+    "id": "brabo-cushion",
+    "name": "Brabo Cushion Grip",
+    "type": "Hockeygrip",
+    "surface": "Cushion-uitvoering",
+    "thickness": "Controleer de totale omvang",
+    "consideration": "Vergelijk deze uitvoering als je de basis van je stick wilt vernieuwen.",
+    "query": "Brabo Cushion Grip",
+    "source": {
+      "name": "Brabo Hockey — collectie gripjes",
+      "url": "https://brabohockey.com/collections/gripje"
+    }
+  },
+  {
+    "id": "brabo-chamois",
+    "name": "Brabo Zeem Grip",
+    "type": "Hockeyovergrip",
+    "surface": "Vochtopnemende zeem",
+    "thickness": "Een extra laag over de basis",
+    "consideration": "Bekijk deze uitvoering als je vooral het contactoppervlak wilt veranderen.",
+    "query": "Brabo zeem hockey grip",
+    "source": {
+      "name": "Brabo Hockey — Zeem grip",
+      "url": "https://brabohockey.com/collections/gripje/products/chamois-grip-piece-320-05060"
+    }
+  },
+  {
+    "id": "ribbon-cork",
+    "name": "Ribbon Cork Grip",
+    "type": "Basisgrip",
+    "surface": "Kurk",
+    "thickness": "Afhankelijk van je overlap",
+    "consideration": "Wikkel de kurkgrip als basis en controleer daarna de handvatomvang.",
+    "source": {
+      "name": "Ribbon — Cork Grip",
+      "url": "https://ribbonsportgrip.com/products/cork-grip"
+    }
+  },
+  {
+    "id": "ribbon-sleeve",
+    "name": "Ribbon Sleeve Grip",
+    "type": "Hockeyovergrip",
+    "surface": "Krimphoes",
+    "thickness": "Past over de onderlaag",
+    "consideration": "Controleer of de hoes past bij je gripopbouw en lees de montage-instructie.",
+    "source": {
+      "name": "Ribbon — Sleeve Grip",
+      "url": "https://ribbonsportgrip.com/products/sleeve"
+    }
+  },
+  {
+    "id": "ribbon-kit",
+    "name": "Ribbon Starter Kit",
+    "type": "Basisgrip en sleeve",
+    "surface": "Kurk met een sleeve als buitenlaag",
+    "thickness": "Combinatie van twee lagen",
+    "consideration": "Bevat de Cork Grip, de Sleeve en afwerktape.",
+    "source": {
+      "name": "Ribbon — Starter Kit",
+      "url": "https://ribbonsportgrip.com/products/starter-pack"
+    }
+  },
+  {
+    "id": "karakal-xl-hockey",
+    "name": "Karakal XL PU Hockey Grip",
+    "type": "Vervangende hockeygrip",
+    "surface": "Kleverig polyurethaan",
+    "thickness": "Huidige versie 150 cm lang",
+    "consideration": "Controleer bij aankoop de lengte van de aangeboden versie.",
+    "query": "Karakal XL PU Hockey Grip",
+    "source": {
+      "name": "Karakal — XL PU Hockey Grip",
+      "url": "https://karakal.com/products/karakal-xl-pu-hockey-grip"
+    }
   }
 ]

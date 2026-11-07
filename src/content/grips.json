@@ -1741,8 +1741,8 @@
   {
     "path": "/padelgrips/",
     "title": "Padelgrips vergelijken: oppervlak, merken en handvatdikte",
-    "description": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk Bullpadel en adidas en vind de juiste buitenlaag voor jouw padelracket.",
-    "summary": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk Bullpadel en adidas en vind de juiste buitenlaag voor jouw padelracket.",
+    "description": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk de grips van Bullpadel, adidas en Raqa voor jouw padelracket.",
+    "summary": "Vergelijk padelgrips op contactgevoel, dikte en vochtopname. Bekijk de grips van Bullpadel, adidas en Raqa voor jouw padelracket.",
     "kind": "hub",
     "parent": null,
     "image": "/assets/sportgrips/photos/padel-v1.webp",
@@ -1775,7 +1775,7 @@
       {
         "heading": "Vergelijk merken en modellen voor padel",
         "paragraphs": [
-          "Bullpadel en adidas hebben een eigen vergelijkingspagina. Daar vergelijk je uitvoeringen binnen het merk en de verpakking die bij je gebruik past. Head, Nox en Babolat blijven aanvullende merken om bij een concrete productkeuze mee te nemen; ze krijgen hier geen tweede pagina voor dezelfde algemene padelvraag."
+          "Vergelijk overgrips van Bullpadel en adidas op oppervlak en verpakking. Raqa heeft daarnaast een basisgrip waarmee je de bestaande onderlaag kunt vervangen."
         ],
         "links": [
           {
@@ -1787,6 +1787,11 @@
             "title": "adidas",
             "href": "/padelgrips/adidas/",
             "description": "Vergelijk de modellen en uitvoeringen van adidas."
+          },
+          {
+            "title": "Raqa",
+            "href": "/padelgrips/raqa/",
+            "description": "Vergelijk de Core basisgrip met de Elite dry overgrip."
           }
         ]
       },
@@ -2030,6 +2035,79 @@
     "products": ["adidas-3", "adidas-25"]
   },
   {
+    "path": "/padelgrips/raqa/",
+    "title": "Raqa padelgrips vergelijken: Core en Elite dry",
+    "description": "Vergelijk de Raqa Core basisgrip met de Elite dry overgrip. Bekijk welke laag je vervangt en welke opbouw past bij jouw padelracket.",
+    "summary": "De Core vervangt de originele basisgrip. De Elite dry is een overgrip die je over de bestaande basis wikkelt. Kies op basis van wat je aan je handvat wilt veranderen.",
+    "kind": "brand",
+    "parent": "/padelgrips/",
+    "image": "/assets/sportgrips/photos/padel-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Welke Raqa grip past bij je racket?",
+        "paragraphs": [
+          "Is de basis versleten of wil je het profiel van je handvat veranderen? Kijk dan naar de Core. Voelt je huidige basis goed en wil je vooral een droger contactgevoel? Dan ligt de Elite dry als buitenlaag voor de hand."
+        ]
+      },
+      {
+        "heading": "Core padel grip voor een nieuwe basis",
+        "paragraphs": [
+          "De Core is een geprofileerde siliconen basisgrip. Je verwijdert de bestaande basis voordat je de Core monteert. Volg de montage-instructie van Raqa en beoordeel daarna de omvang van je handvat."
+        ]
+      },
+      {
+        "heading": "Elite dry als overgrip bij zweethanden",
+        "paragraphs": [
+          "Raqa levert de Elite dry per drie en richt deze uitvoering op spelers die een vochtopnemende buitenlaag zoeken. Wikkel hem over een passende basis en controleer of je het profiel van het handvat nog goed voelt."
+        ],
+        "links": [
+          {
+            "title": "Grip bij zweethanden",
+            "href": "/kennis/grip-bij-zweethanden/",
+            "description": "Vergelijk vochtopname en contactgevoel."
+          }
+        ]
+      },
+      {
+        "heading": "Core en Elite dry combineren",
+        "paragraphs": [
+          "Je kunt de Elite dry over de Core wikkelen. Probeer eerst hoe de nieuwe basis aanvoelt. Wil je een buitenlaag toevoegen, houd dan rekening met extra omvang door het materiaal en de overlap."
+        ]
+      },
+      {
+        "heading": "Bekijk de uitvoeringen bij Raqa",
+        "paragraphs": [
+          "Controleer op de productpagina welke laag je bestelt en hoeveel grips de verpakking bevat. In de collectie vind je ook de kleverige overgrips van Raqa als je liever dat contactgevoel hebt."
+        ]
+      }
+    ],
+    "related": ["/padelgrips/", "/padelgrips/vervangen/", "/kennis/verschil-basisgrip-overgrip/"],
+    "sources": [
+      {
+        "name": "Raqa — collectie padelgrips",
+        "url": "https://raqa.nl/collections/padel-grips"
+      },
+      {
+        "name": "Raqa — Core padel grip",
+        "url": "https://raqa.nl/products/core-padel-grip"
+      },
+      {
+        "name": "Raqa — Elite dry padel overgrip",
+        "url": "https://raqa.nl/products/elite-dry-padel-overgrip"
+      }
+    ],
+    "table": {
+      "headings": ["Uitvoering", "Laag", "Waar let je op?"],
+      "rows": [
+        ["Core", "Basisgrip", "Vervangt de originele onderlaag"],
+        ["Elite dry", "Overgrip", "Droger contactgevoel en extra omvang"]
+      ]
+    },
+    "menuLabel": "Raqa",
+    "products": ["raqa-core", "raqa-elite-dry"]
+  },
+  {
     "path": "/badmintongrips/",
     "title": "Badmintongrips vergelijken: overgrip of badstof?",
     "description": "Vergelijk badmintongrips op materiaal, dikte en vochtopname. Zet een dunne overgrip naast badstof en bekijk de Yonex-modellen.",
@@ -2255,8 +2333,8 @@
   {
     "path": "/hockeygrips/",
     "title": "Hockeygrips vergelijken: materiaal, dikte en stickgevoel",
-    "description": "Vergelijk hockeygrips op onderlaag, buitenlaag en dikte. Bekijk chamois en vind de juiste vergelijking voor jouw stick.",
-    "summary": "Vergelijk hockeygrips op onderlaag, buitenlaag en dikte. Bekijk chamois en vind de juiste vergelijking voor jouw stick.",
+    "description": "Vergelijk hockeygrips op materiaal, dikte en stickgevoel. Bekijk chamois en de grips van Brabo, Ribbon en Karakal.",
+    "summary": "Vergelijk hockeygrips op materiaal, dikte en stickgevoel. Bekijk chamois en de grips van Brabo, Ribbon en Karakal.",
     "kind": "hub",
     "parent": null,
     "image": "/assets/sportgrips/photos/hockey-v1.webp",
@@ -2289,7 +2367,24 @@
       {
         "heading": "Vergelijk merken en modellen voor hockey",
         "paragraphs": [
-          "Grays Chamois Flou is een concreet productvoorbeeld in de selectie. Indian Maharadja en adidas staan als aanvullende merkintenties in het onderzoek. Vergelijk bij die merken steeds een specifieke grip op laagfunctie, afmetingen en materiaal; de merknaam alleen zegt niet hoe de opbouw verandert."
+          "Brabo heeft onder meer een cushiongrip en een zeemgrip. Ribbon combineert een kurklaag met een sleeve. Karakal heeft met de XL PU een lange, zelfklevende vervangingsgrip. Kies eerst welke laag je wilt aanpassen."
+        ],
+        "links": [
+          {
+            "title": "Brabo",
+            "href": "/hockeygrips/brabo/",
+            "description": "Vergelijk de Cushion Grip en de Zeem Grip."
+          },
+          {
+            "title": "Ribbon",
+            "href": "/hockeygrips/ribbon/",
+            "description": "Bekijk de kurkbasis en sleeve als losse lagen of set."
+          },
+          {
+            "title": "Karakal",
+            "href": "/hockeygrips/karakal/",
+            "description": "Bekijk de XL PU Hockey Grip en let op de lengte."
+          }
         ]
       },
       {
@@ -2457,6 +2552,233 @@
     ],
     "table": null,
     "menuLabel": "Hockeygrips vervangen"
+  },
+  {
+    "path": "/hockeygrips/brabo/",
+    "title": "Brabo hockeygrips vergelijken: Cushion of Zeem",
+    "description": "Vergelijk de Brabo Cushion Grip en Zeem Grip op laag, materiaal en handvatdikte. Bepaal welke Brabo grip past bij je hockeystick.",
+    "summary": "Kijk bij Brabo eerst naar de laag die je wilt aanpassen. De Cushion Grip is een keuze voor een andere basis. De Zeem Grip verandert het contactoppervlak van je stick.",
+    "kind": "brand",
+    "parent": "/hockeygrips/",
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Cushion en zeem naast elkaar",
+        "paragraphs": [
+          "Beoordeel eerst de bestaande grip. Als die loslaat of versleten is, begin je bij de basis. Als de basis goed zit en je een zeemoppervlak wilt, vergelijk je de Brabo Zeem Grip als buitenlaag."
+        ]
+      },
+      {
+        "heading": "Wanneer kijk je naar de Cushion Grip?",
+        "paragraphs": [
+          "De Cushion Grip is bedoeld voor een comfortabel handvat met een zachter gevoel. Vergelijk hoe de grip aanvoelt op je eigen stick en houd rekening met de dikte die je met een gelijkmatige overlap opbouwt."
+        ]
+      },
+      {
+        "heading": "Wanneer kijk je naar de Zeem Grip?",
+        "paragraphs": [
+          "Brabo beschrijft de zeem als vochtopnemend. Dat maakt het materiaal relevant als je bij regen of vochtige handen een andere buitenlaag zoekt. Controleer de bevestiging en volg de instructies voor de gekozen uitvoering."
+        ],
+        "links": [
+          {
+            "title": "Chamois hockeygrips",
+            "href": "/hockeygrips/chamois/",
+            "description": "Bekijk waar je bij een zeemlaag op let."
+          }
+        ]
+      },
+      {
+        "heading": "Hoe verandert de omvang van je stick?",
+        "paragraphs": [
+          "Een extra laag bouwt voort op de omvang van je huidige handvat. Voel hoeveel ruimte je hand nog heeft als je van greep wisselt. Met een gelijkmatige overlap voorkom je plaatselijke verdikkingen."
+        ]
+      },
+      {
+        "heading": "Welke Brabo uitvoering zoek je?",
+        "paragraphs": [
+          "Zoek op Cushion Grip als je de basis vernieuwt, of op Zeem Grip als je zeem wilt toevoegen. Brabo groepeert ook tape bij de gripjes. Kijk daarom naar het producttype en de verpakking voordat je kiest."
+        ]
+      }
+    ],
+    "related": ["/hockeygrips/", "/hockeygrips/chamois/", "/hockeygrips/vervangen/"],
+    "sources": [
+      {
+        "name": "Brabo Hockey — collectie gripjes",
+        "url": "https://brabohockey.com/collections/gripje"
+      },
+      {
+        "name": "Brabo Hockey — Zeem grip",
+        "url": "https://brabohockey.com/collections/gripje/products/chamois-grip-piece-320-05060"
+      }
+    ],
+    "table": {
+      "headings": ["Uitvoering", "Laag", "Waar let je op?"],
+      "rows": [
+        ["Cushion Grip", "Basis", "Zacht gevoel en de totale omvang"],
+        ["Zeem Grip", "Buitenlaag", "Vochtopnemend oppervlak en bevestiging"]
+      ]
+    },
+    "menuLabel": "Brabo",
+    "products": ["brabo-cushion", "brabo-chamois"]
+  },
+  {
+    "path": "/hockeygrips/ribbon/",
+    "title": "Ribbon hockeygrips vergelijken: Cork Grip en Sleeve",
+    "description": "Bekijk hoe de Ribbon Cork Grip en Sleeve samen op een hockeystick passen. Vergelijk de losse lagen met de Starter Kit.",
+    "summary": "Ribbon bouwt de grip op uit een gewikkelde kurkbasis en een sleeve die om de basis krimpt. Beide lagen zijn los verkrijgbaar en zitten samen in de Starter Kit.",
+    "kind": "brand",
+    "parent": "/hockeygrips/",
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Wat zit er in het Ribbon systeem?",
+        "paragraphs": [
+          "De Cork Grip vormt de basis. De Sleeve gaat eroverheen en vormt het oppervlak dat je vasthoudt. In de Starter Kit zitten beide lagen en afwerktape."
+        ]
+      },
+      {
+        "heading": "Wat doet de Cork Grip?",
+        "paragraphs": [
+          "Je wikkelt de kurkgrip rond de stick. Ribbon gebruikt kurk voor een dempend gevoel. Volg de aanbevolen overlap uit de montage-uitleg, zodat de basis over de hele lengte gelijkmatig blijft."
+        ]
+      },
+      {
+        "heading": "Hoe monteer je de Sleeve Grip?",
+        "paragraphs": [
+          "De Sleeve is een krimphoes. Ribbon schrijft voor dat je de hoes met heet water om de grip laat krimpen. Bekijk de montage-instructies van Ribbon vóór je begint en controleer waar de hoes moet eindigen."
+        ]
+      },
+      {
+        "heading": "Hoe verschilt Ribbon van een chamois wikkelgrip?",
+        "paragraphs": [
+          "Een zeemgrip wikkel je om het handvat. Bij Ribbon wikkel je de basis en schuif je de sleeve eroverheen. Vergelijk de complete opbouw op jouw stick, vooral als je het handvat slank wilt houden."
+        ],
+        "links": [
+          {
+            "title": "Chamois of rubber",
+            "href": "/vergelijken/chamois-vs-rubber-hockeygrip/",
+            "description": "Vergelijk de buitenlagen op materiaalgevoel."
+          }
+        ]
+      },
+      {
+        "heading": "Losse laag of de Starter Kit?",
+        "paragraphs": [
+          "Bekijk de losse Cork Grip of Sleeve als je één onderdeel zoekt. Kijk naar de Starter Kit als je beide lagen en tape tegelijk wilt monteren."
+        ]
+      }
+    ],
+    "related": ["/hockeygrips/", "/hockeygrips/vervangen/", "/hockeygrips/chamois/"],
+    "sources": [
+      {
+        "name": "Ribbon — Cork Grip",
+        "url": "https://ribbonsportgrip.com/products/cork-grip"
+      },
+      {
+        "name": "Ribbon — Sleeve Grip",
+        "url": "https://ribbonsportgrip.com/products/sleeve"
+      },
+      {
+        "name": "Ribbon — Starter Kit",
+        "url": "https://ribbonsportgrip.com/products/starter-pack"
+      }
+    ],
+    "table": {
+      "headings": ["Uitvoering", "Laag", "Waar let je op?"],
+      "rows": [
+        ["Cork Grip", "Basis", "Wordt rond de stick gewikkeld"],
+        ["Sleeve Grip", "Buitenlaag", "Krimpt om de basis"],
+        ["Starter Kit", "Beide lagen", "Cork, Sleeve en afwerktape"]
+      ]
+    },
+    "menuLabel": "Ribbon",
+    "products": ["ribbon-cork", "ribbon-sleeve", "ribbon-kit"]
+  },
+  {
+    "path": "/hockeygrips/karakal/",
+    "title": "Karakal hockeygrips: XL PU Hockey Grip vergelijken",
+    "description": "Bekijk de Karakal XL PU Hockey Grip voor je hockeystick. Vergelijk materiaal, lengte en dikte bij het vervangen van je basisgrip.",
+    "summary": "De XL PU Hockey Grip is een lange, zelfklevende vervangingsgrip voor sticks. Controleer de lengte van de aangeboden versie en bepaal hoeveel van je handvat je wilt bedekken.",
+    "kind": "brand",
+    "parent": "/hockeygrips/",
+    "image": "/assets/sportgrips/photos/hockey-v1.webp",
+    "tags": ["Sportgrips", "Merkvergelijking"],
+    "sections": [
+      {
+        "heading": "Welke Karakal grip is bedoeld voor hockey?",
+        "paragraphs": [
+          "Zoek op de volledige naam XL PU Hockey Grip. Karakal verkoopt ook PU-grips voor rackets. Let bij gelijkende productnamen op de opgegeven sport en afmetingen."
+        ]
+      },
+      {
+        "heading": "Hoe voelt de PU buitenkant?",
+        "paragraphs": [
+          "Karakal omschrijft de XL PU als kleverig, met een dempende onderlaag. Vergelijk dat gevoel met je huidige stick. Wil je vooral een zeemoppervlak over een passende basis, bekijk dan ook een chamois overgrip."
+        ],
+        "links": [
+          {
+            "title": "Chamois hockeygrips",
+            "href": "/hockeygrips/chamois/",
+            "description": "Bekijk zeem als aparte buitenlaag."
+          }
+        ]
+      },
+      {
+        "heading": "Welke lengte heb je nodig?",
+        "paragraphs": [
+          "Meet het deel van je stick dat je wilt bedekken. Karakal vermeldt 150 cm voor de huidige XL PU, tegenover 136 cm voor de eerdere uitvoering. Controleer de lengte van de versie die de winkel aanbiedt."
+        ]
+      },
+      {
+        "heading": "Wat doet overlap met de dikte?",
+        "paragraphs": [
+          "Meer overlap maakt een gewikkelde grip plaatselijk dikker. Gebruik bij montage een vaste overlap en controleer tussendoor of je je handen makkelijk kunt verplaatsen op de stick."
+        ],
+        "links": [
+          {
+            "title": "Hockeygrips vervangen",
+            "href": "/hockeygrips/vervangen/",
+            "description": "Bereid de montage en afwerking voor."
+          }
+        ]
+      },
+      {
+        "heading": "Waar let je op bij het zoeken?",
+        "paragraphs": [
+          "Controleer of de productnaam XL PU Hockey Grip bevat en of de beschrijving de lengte vermeldt. Kijk ook naar de breedte en de afwerking als je dezelfde opbouw wilt houden."
+        ]
+      }
+    ],
+    "related": [
+      "/hockeygrips/",
+      "/hockeygrips/vervangen/",
+      "/hockeygrips/brabo/",
+      "/hockeygrips/ribbon/"
+    ],
+    "sources": [
+      {
+        "name": "Karakal — XL PU Hockey Grip",
+        "url": "https://karakal.com/products/karakal-xl-pu-hockey-grip"
+      },
+      {
+        "name": "Karakal — hockeygrips",
+        "url": "https://karakal.com/collections/karakal-grips/hockey-grips"
+      }
+    ],
+    "table": {
+      "headings": ["Uitvoering", "Laag", "Waar let je op?"],
+      "rows": [
+        [
+          "XL PU Hockey Grip",
+          "Vervangende basisgrip",
+          "Controleer de uitvoering, lengte en overlap"
+        ]
+      ]
+    },
+    "menuLabel": "Karakal",
+    "products": ["karakal-xl-hockey"]
   },
   {
     "path": "/vergelijken/golf-pride-vs-lamkin/",
@@ -2949,69 +3271,6 @@
     ],
     "table": null,
     "menuLabel": "Grip bij zweethanden"
-  },
-  {
-    "path": "/blog/tenniselleboog-en-grip/",
-    "title": "Tenniselleboog en grip: maat en comfort zorgvuldig beoordelen",
-    "description": "Lees hoe je gripmaat en racketopbouw kunt bespreken bij elleboogklachten. Vergelijk gripkeuzes zonder een behandelwerking te veronderstellen.",
-    "summary": "Lees hoe je gripmaat en racketopbouw kunt bespreken bij elleboogklachten. Vergelijk gripkeuzes zonder een behandelwerking te veronderstellen.",
-    "kind": "article",
-    "parent": "/blog/",
-    "image": "/assets/sportgrips/photos/tennis-v1.webp",
-    "tags": ["Sportgrips", "Achtergrond"],
-    "sections": [
-      {
-        "heading": "Wat kun je met je gripkeuze wel beoordelen?",
-        "paragraphs": [
-          "Je kunt vaststellen welke handvatmaat je gebruikt en hoe de opbouw in je hand voelt. Een andere grip is daarmee nog geen behandeling voor elleboogklachten. Gebruik een productvergelijking om maat en materiaal te beoordelen, niet om zelf de oorzaak van pijn vast te stellen."
-        ]
-      },
-      {
-        "heading": "Begin bij de volledige maat en laagopbouw",
-        "paragraphs": [
-          "De LTA behandelt een passende gripmaat als onderdeel van racketkeuze. Neem je huidige racket mee wanneer je advies vraagt en beschrijf basisgrip, buitenlaag en eventuele extra lagen. Zo wordt duidelijk wat je daadwerkelijk vasthoudt."
-        ],
-        "links": [
-          {
-            "title": "Tennisgripmaat vergelijken",
-            "href": "/tennisgrips/gripmaat/",
-            "description": "Bekijk maat en volledige opbouw."
-          }
-        ]
-      },
-      {
-        "heading": "Vergelijk comfort zonder een medische productbelofte",
-        "paragraphs": [
-          "Zacht, dik en dempend zijn productkenmerken of persoonlijke ervaringen, geen bewijs dat een grip klachten behandelt. Verander bij een vergelijking één onderdeel tegelijk en vraag bij klachten een fysiotherapeut of huisarts om advies."
-        ]
-      },
-      {
-        "heading": "Neem klachten mee in het gesprek over je racket",
-        "paragraphs": [
-          "Bespreek pijn en het ontstaan ervan met een zorgverlener. De NHS geeft algemene informatie over tenniselleboog en wanneer je hulp zoekt. Voor de productkeuze kun je daarnaast de maat en opbouw van je racket laten beoordelen; dat vervangt de beoordeling van klachten niet."
-        ],
-        "links": [
-          {
-            "title": "Basisgrips op eigenschappen vergelijken",
-            "href": "/tennisgrips/basisgrips/",
-            "description": "Vergelijk materiaal en contactgevoel."
-          }
-        ]
-      }
-    ],
-    "related": ["/blog/", "/tennisgrips/gripmaat/", "/tennisgrips/basisgrips/", "/tennisgrips/"],
-    "sources": [
-      {
-        "name": "LTA — gripmaat en overgrips",
-        "url": "https://www.lta.org.uk/play/tennis-equipment-guide/understanding-tennis-racket-grip-sizes-and-overgrips/"
-      },
-      {
-        "name": "NHS — tenniselleboog",
-        "url": "https://www.nhs.uk/conditions/tennis-elbow/"
-      }
-    ],
-    "table": null,
-    "menuLabel": "Tenniselleboog en grip"
   },
   {
     "path": "/squashgrips/vervangen/",

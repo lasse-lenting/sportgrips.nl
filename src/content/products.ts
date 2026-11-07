@@ -7,7 +7,7 @@ export type GripProduct = {
   surface: string;
   thickness: string;
   consideration: string;
-  query: string;
+  query?: string;
   source: { name: string; url: string };
 };
 

@@ -93,11 +93,11 @@ export default function PrivacyPage() {
           </p>
           <h2>Externe bronnen, winkellinks en e-mail</h2>
           <p>
-            Bronlinks en zoeklinks naar bol.com openen een andere website, waar de eigen privacy- en
-            cookievoorwaarden gelden. De zoeklinks bevatten een productnaam, geen antwoorden uit de
-            keuzehulp. Klik je op het e-mailadres, dan opent je mailprogramma. De inhoud van een
-            door jou verstuurde e-mail kan worden gebruikt om je vraag te beantwoorden; vul geen
-            persoonsgegevens in de keuzehulp in.
+            Bron- en winkellinks openen een andere website, waar de eigen privacy- en
+            cookievoorwaarden gelden. Zoeklinks naar bol.com bevatten een productnaam. Antwoorden
+            uit de keuzehulp worden niet meegestuurd. Klik je op het e-mailadres, dan opent je
+            mailprogramma. De inhoud van een door jou verstuurde e-mail kan worden gebruikt om je
+            vraag te beantwoorden; vul geen persoonsgegevens in de keuzehulp in.
           </p>
           <h2>Bij verdere ontwikkeling</h2>
           <p>

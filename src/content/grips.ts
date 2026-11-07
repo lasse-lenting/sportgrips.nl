@@ -56,13 +56,6 @@ export const collections: GripCollection[] = [
     description: 'Vergelijk functie, laagopbouw en gevoel voordat je een andere grip kiest.',
     pages: gripPages.filter((p) => p.path.startsWith('/vergelijken/')),
   },
-  {
-    path: '/blog/',
-    title: 'Sportgrips blog: gripkeuze in de praktijk',
-    description:
-      'Lees achtergrond bij je gripkeuze en vind de passende vergelijking voor jouw racket, club of stick.',
-    pages: gripPages.filter((p) => p.parent === '/blog/'),
-  },
 ];
 export const labelForPath = (path: string) =>
   pageByPath(path)?.menuLabel ??
