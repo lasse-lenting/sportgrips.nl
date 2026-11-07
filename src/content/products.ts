@@ -7,11 +7,11 @@ export type GripProduct = {
   surface: string;
   thickness: string;
   consideration: string;
-  query?: string;
+  bol: { url: string; image: string; variant: string };
   source: { name: string; url: string };
 };
 
-export const gripProducts = data as GripProduct[];
+export const gripProducts: GripProduct[] = data;
 export const productsByIds = (ids: string[] = []) =>
   ids.map((id) => {
     const product = gripProducts.find((p) => p.id === id);
@@ -19,7 +19,16 @@ export const productsByIds = (ids: string[] = []) =>
     return product;
   });
 
-// Search destinations make no claim about listings, prices or availability.
-// Replace with verified product/partner URLs once the bol.com partner links are supplied.
-export const bolSearchUrl = (query: string) =>
-  `https://www.bol.com/nl/nl/s/?searchtext=${encodeURIComponent(query)}`;
+const bolSiteId = '1557029';
+
+export function bolAffiliateUrl(product: GripProduct) {
+  const trackingUrl = new URL('https://partner.bol.com/click/click');
+  trackingUrl.search = new URLSearchParams({
+    t: 'url',
+    s: bolSiteId,
+    url: product.bol.url,
+    f: 'txl',
+    name: product.id,
+  }).toString();
+  return trackingUrl.href;
+}

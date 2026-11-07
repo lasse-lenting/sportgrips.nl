@@ -82,8 +82,8 @@ export function Footer() {
                 Onze werkwijze en bronnen
               </Link>
               <p>
-                Vergelijk modellen en bekijk je keuze bij bol.com of bij het merk. We baseren de
-                vergelijkingen op fabrikantgegevens.
+                Vergelijk modellen en bekijk de geselecteerde uitvoeringen bij bol.com. We baseren
+                de vergelijkingen op fabrikantgegevens.
               </p>
               <Link className={footerLink} href="/privacy/">
                 Privacy

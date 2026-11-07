@@ -6,7 +6,10 @@ const canonicalHost = new URL(siteUrl).hostname.replaceAll('.', '\\.');
 const config: NextConfig = {
   poweredByHeader: false,
   trailingSlash: true,
-  images: { formats: ['image/avif', 'image/webp'] },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [{ protocol: 'https', hostname: 'media.s-bol.com', search: '' }],
+  },
   async redirects() {
     return [{ source: '/blog/', destination: '/kennis/', permanent: true }];
   },

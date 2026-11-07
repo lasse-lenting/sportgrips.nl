@@ -47,10 +47,10 @@ export default function About() {
             </p>
             <h2>Winkels en samenwerkingen</h2>
             <p>
-              De modelselecties verwijzen naar bol.com of de website van het merk. Daar controleer
-              je de uitvoering, verpakking, actuele prijs en beschikbaarheid. Je koopt bij de
-              aanbieder. Sportgrips ontvangt momenteel geen commissie voor deze links.
-              Affiliatelinks krijgen een vermelding bij de link.
+              De productkaarten tonen een specifieke uitvoering bij bol.com. Daar zie je de actuele
+              prijs en beschikbaarheid en kun je het artikel bestellen. Als je via een affiliatelink
+              iets koopt, kan Sportgrips commissie ontvangen. De fabrikantlinks verwijzen naar de
+              bronnen voor onze productinformatie.
             </p>
             <h2>Vragen of een correctie</h2>
             <p>

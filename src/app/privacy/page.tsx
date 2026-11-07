@@ -93,11 +93,14 @@ export default function PrivacyPage() {
           </p>
           <h2>Externe bronnen, winkellinks en e-mail</h2>
           <p>
-            Bron- en winkellinks openen een andere website, waar de eigen privacy- en
-            cookievoorwaarden gelden. Zoeklinks naar bol.com bevatten een productnaam. Antwoorden
-            uit de keuzehulp worden niet meegestuurd. Klik je op het e-mailadres, dan opent je
-            mailprogramma. De inhoud van een door jou verstuurde e-mail kan worden gebruikt om je
-            vraag te beantwoorden; vul geen persoonsgegevens in de keuzehulp in.
+            Je browser laadt de productfoto’s rechtstreeks bij bol. Daarbij ontvangt bol technische
+            gegevens zoals je IP-adres. Via een affiliatelink kan bol een klik of aankoop toewijzen
+            aan Sportgrips. Op de bestemmingssite gelden de eigen privacy- en cookievoorwaarden.
+            Antwoorden uit de keuzehulp worden niet meegestuurd.
+          </p>
+          <p>
+            Klik je op het e-mailadres, dan opent je mailprogramma. We kunnen de inhoud van je
+            bericht gebruiken om je vraag te beantwoorden.
           </p>
           <h2>Bij verdere ontwikkeling</h2>
           <p>

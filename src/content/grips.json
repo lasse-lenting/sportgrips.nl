@@ -244,7 +244,7 @@
       {
         "heading": "Welke Lamkin grip past in jouw vergelijking?",
         "paragraphs": [
-          "Zet Crossline en Full Cord naast elkaar wanneer je hetzelfde maatbereik met een ander oppervlak wilt. Bekijk bij een aanbieding altijd de volledige modelnaam en generatie. Vergelijk je ook andere merken, gebruik dan de vergelijking Golf Pride versus Lamkin."
+          "Vergelijk de standaard Crossline en de Jumbo als je het oppervlak wilt behouden en vooral de maat wilt veranderen. Als je cord over de hele grip zoekt, vind je Crossline Full Cord in de Lamkin-catalogus."
         ]
       }
     ],
@@ -277,7 +277,7 @@
       ]
     },
     "menuLabel": "Lamkin",
-    "products": ["crossline", "crossline-cord"]
+    "products": ["crossline", "crossline-jumbo"]
   },
   {
     "path": "/golfgrips/superstroke/",
@@ -560,7 +560,7 @@
       {
         "heading": "Welke undersize uitvoering zet je op je shortlist?",
         "paragraphs": [
-          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+          "Bekijk hieronder een concrete undersize-uitvoering. Vergelijk de kleinere diameter met je huidige grip en probeer de maat eerst op één club."
         ]
       }
     ],
@@ -604,7 +604,7 @@
       ]
     },
     "menuLabel": "Undersize",
-    "products": ["tour-velvet"]
+    "products": ["lamkin-rel-undersize"]
   },
   {
     "path": "/golfgrips/maat/midsize/",
@@ -650,7 +650,7 @@
       {
         "heading": "Welke midsize modellen passen bij jouw voorkeur?",
         "paragraphs": [
-          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+          "Vergelijk hieronder twee midsize-uitvoeringen. De Tour Velvet heeft een rubberen oppervlak. De MCC Plus4 combineert cord met een voller profiel bij de onderste hand."
         ]
       }
     ],
@@ -706,7 +706,7 @@
       ]
     },
     "menuLabel": "Midsize",
-    "products": ["tour-velvet", "mcc", "crossline"]
+    "products": ["tour-velvet-midsize", "mcc"]
   },
   {
     "path": "/golfgrips/maat/oversize/",
@@ -752,7 +752,7 @@
       {
         "heading": "Welke oversize uitvoering wil je eerst proberen?",
         "paragraphs": [
-          "Gebruik de modellen hieronder als shortlist en zoek met de maatnaam erbij. Controleer bij bol.com de exacte uitvoering. Vergelijk pas daarna de bestelprijs en het aantal grips; een set is pas handig wanneer je de maat al kent."
+          "Vergelijk de twee jumbo-uitvoeringen hieronder op oppervlak en pasvorm. Probeer de grotere diameter eerst op één club."
         ]
       }
     ],
@@ -808,7 +808,7 @@
       ]
     },
     "menuLabel": "Oversize",
-    "products": ["tour-velvet", "cp2-pro", "crossline"]
+    "products": ["tour-velvet-jumbo", "crossline-jumbo"]
   },
   {
     "path": "/golfgrips/vervangen/",
@@ -1138,7 +1138,7 @@
       {
         "heading": "Zo vergelijk je tennisbasisgrips op dikte, oppervlak en gevoel",
         "paragraphs": [
-          "Vergelijk eerst grips die de onderlaag vervangen. Syntec Pro, Natural Grip, Wilson Pro Performance en HEAD Hydrosorb Pro horen bij die vergelijking; een overgrip is een andere laag. Zet vervolgens de dikte, het oppervlak en de combinatie met je buitenlaag naast elkaar.",
+          "Vergelijk eerst grips die de onderlaag vervangen. Syntec Pro, Natural Grip, Wilson Sublime en HEAD Hydrosorb Pro horen bij die vergelijking; een overgrip is een andere laag. Zet vervolgens de dikte, het oppervlak en de combinatie met je buitenlaag naast elkaar.",
           "Kies je vooral op comfort, neem dan een zachtere synthetische optie mee. Wil je de kanten van het handvat directer voelen, vergelijk dan ook een stevigere of leren basisgrip. Beoordeel de grip op jouw racket, omdat de handvatvorm mede bepaalt wat je voelt."
         ]
       },
@@ -1180,7 +1180,7 @@
       {
         "heading": "Welke basisgrip past bij jouw racket? Vergelijk per voorkeur",
         "paragraphs": [
-          "Neem Syntec Pro of Hydrosorb Pro mee voor een synthetische onderlaag met nadruk op contactgevoel. Vergelijk Pro Performance als je een zachte, kleverige afwerking zoekt en Natural Grip als je leer wilt proberen. Dit zijn verschillende vertrekpunten; de beste pasvorm beoordeel je op je eigen racket.",
+          "Neem Syntec Pro of Hydrosorb Pro mee voor een synthetische onderlaag met nadruk op contactgevoel. Vergelijk Sublime als je een zachte, kleverige afwerking zoekt en Natural Grip als je leer wilt proberen. Dit zijn verschillende vertrekpunten; de beste pasvorm beoordeel je op je eigen racket.",
           "Zoek de volledige modelnaam bij bol.com en controleer dat de aanbieding een basisgrip of replacement grip betreft. Controleer ook lengte, uitvoering en de verpakking voordat je de prijs vergelijkt."
         ]
       }
@@ -1201,8 +1201,8 @@
         "url": "https://www.babolat.com/us/syntec-pro/670051.html"
       },
       {
-        "name": "Wilson — Pro Performance basisgrip",
-        "url": "https://au.wilson.com/products/pro-performance-replacement-grip"
+        "name": "Wilson — Sublime Replacement Grip",
+        "url": "https://www.wilson.com/en-us/products/sublime-replacement-grip-rz42020?variant=53920971948346"
       },
       {
         "name": "HEAD — Hydrosorb Pro",
@@ -1218,7 +1218,7 @@
       "rows": [
         ["Babolat Syntec Pro", "Basisgrip", "Kleverig, gericht op contactgevoel", "1,9 mm"],
         [
-          "Wilson Pro Performance",
+          "Wilson Sublime",
           "Basisgrip",
           "Zacht en kleverig oppervlak",
           "Controleer de modelspecificatie"
@@ -1238,7 +1238,7 @@
       ]
     },
     "menuLabel": "Basisgrips",
-    "products": ["syntec-pro", "wilson-base", "head-hydro", "natural-grip"]
+    "products": ["syntec-pro", "wilson-sublime", "head-hydro", "natural-grip"]
   },
   {
     "path": "/tennisgrips/gripmaat/",
@@ -1383,7 +1383,7 @@
       {
         "heading": "Zo vergelijk je Wilson grips op laag en contactgevoel",
         "paragraphs": [
-          "Pro Overgrip en Pro Performance veranderen elk een andere laag. Vergelijk Pro Overgrip wanneer je de buitenlaag vernieuwt. Pro Performance hoort bij het vervangen van de basisgrip. Kies eerst de juiste laag, voordat je comfort of oppervlak vergelijkt."
+          "Pro Overgrip en Sublime veranderen elk een andere laag. Vergelijk Pro Overgrip wanneer je de buitenlaag vernieuwt. Sublime hoort bij het vervangen van de basisgrip. Kies eerst de juiste laag, voordat je comfort of oppervlak vergelijkt."
         ]
       },
       {
@@ -1393,9 +1393,9 @@
         ]
       },
       {
-        "heading": "Wanneer past Pro Performance beter bij je doel?",
+        "heading": "Wanneer past Sublime beter bij je doel?",
         "paragraphs": [
-          "Pro Performance is een replacement grip met een zachte, kleverige afwerking. Vergelijk hem als de onderlaag versleten is of als je het basisgevoel wilt veranderen. Nog een overgrip toevoegen herstelt geen beschadigde of loszittende basisgrip."
+          "Sublime is een basisgrip met microperforaties en een kleverig contactgevoel. Vergelijk hem als je de onderlaag wilt vernieuwen of meer demping zoekt. Houd bij je keuze rekening met de dikte van eventuele extra lagen."
         ]
       },
       {
@@ -1407,7 +1407,7 @@
       {
         "heading": "Welke Wilson grip hoort op jouw shortlist?",
         "paragraphs": [
-          "Kies Pro Overgrip voor de buitenlaag en vergelijk Pro Performance voor een nieuwe onderlaag. Zoek daarna dezelfde uitvoering bij bol.com. Wil je vooral droog tegenover kleverig zetten, bekijk dan ook Wilson Pro Overgrip versus Tourna Grip."
+          "Kies Pro Overgrip voor de buitenlaag en vergelijk Sublime voor een nieuwe onderlaag. Zoek daarna dezelfde uitvoering bij bol.com. Wil je vooral droog tegenover kleverig zetten, bekijk dan ook Wilson Pro Overgrip versus Tourna Grip."
         ]
       }
     ],
@@ -1418,8 +1418,8 @@
         "url": "https://au.wilson.com/products/tennis-pro-overgrip-3-pack"
       },
       {
-        "name": "Wilson — Pro Performance basisgrip",
-        "url": "https://au.wilson.com/products/pro-performance-replacement-grip"
+        "name": "Wilson — Sublime Replacement Grip",
+        "url": "https://www.wilson.com/en-us/products/sublime-replacement-grip-rz42020?variant=53920971948346"
       },
       {
         "name": "LTA — gripmaat en overgrips",
@@ -1436,7 +1436,7 @@
           "Controleer de gekozen uitvoering"
         ],
         [
-          "Wilson Pro Performance",
+          "Wilson Sublime",
           "Basisgrip",
           "Zacht en kleverig oppervlak",
           "Controleer de modelspecificatie"
@@ -1444,7 +1444,7 @@
       ]
     },
     "menuLabel": "Wilson",
-    "products": ["wilson-pro", "wilson-base"]
+    "products": ["wilson-pro", "wilson-sublime"]
   },
   {
     "path": "/tennisgrips/babolat/",
@@ -1539,9 +1539,9 @@
     "tags": ["Sportgrips", "Merkvergelijking"],
     "sections": [
       {
-        "heading": "Zo vergelijk je Tourna Grip Original en Tourna Tac",
+        "heading": "Zo vergelijk je Tourna Grip Original en Tourna Mega Tac",
         "paragraphs": [
-          "Binnen Tourna is het onderscheid tussen droog en kleverig een logisch vertrekpunt. Original richt zich op vochtopname; Tac biedt een kleveriger contactgevoel. Begin bij wat je tijdens het spelen aan je huidige overgrip wilt veranderen."
+          "Binnen Tourna is het onderscheid tussen droog en kleverig een logisch vertrekpunt. Original richt zich op vochtopname; Mega Tac biedt een kleveriger contactgevoel. Begin bij wat je tijdens het spelen aan je huidige overgrip wilt veranderen."
         ]
       },
       {
@@ -1551,9 +1551,9 @@
         ]
       },
       {
-        "heading": "Wanneer wil je juist het kleverige gevoel van Tac?",
+        "heading": "Wanneer wil je juist het kleverige gevoel van Mega Tac?",
         "paragraphs": [
-          "Tac is de optie om te vergelijken als je de Tourna-keuze wilt combineren met kleverigheid. Zet hem tegenover Original op hetzelfde racket met dezelfde basisgrip. Zo houd je de handvatopbouw gelijk en kun je gerichter beoordelen welk oppervlak je prefereert."
+          "Mega Tac is de optie om te vergelijken als je de Tourna-keuze wilt combineren met kleverigheid. Zet hem tegenover Original op hetzelfde racket met dezelfde basisgrip. Zo houd je de handvatopbouw gelijk en kun je gerichter beoordelen welk oppervlak je prefereert."
         ]
       },
       {
@@ -1565,7 +1565,7 @@
       {
         "heading": "Welke Tourna overgrip kies je om te proberen?",
         "paragraphs": [
-          "Begin bij Original voor een droge vergelijking of Tac voor kleverigheid. Vergelijk bij bol.com de exacte variant en het aantal stuks. Gebruik de vergelijking met Wilson Pro Overgrip als je ook buiten Tourna wilt kijken."
+          "Begin bij Original voor een droge vergelijking of Mega Tac voor kleverigheid. Vergelijk bij bol.com de exacte variant en het aantal stuks. Gebruik de vergelijking met Wilson Pro Overgrip als je ook buiten Tourna wilt kijken."
         ]
       }
     ],
@@ -1574,10 +1574,6 @@
       {
         "name": "Tourna — overgrips",
         "url": "https://www.tourna.com/pages/overgrips"
-      },
-      {
-        "name": "Tourna — Tourna Tac",
-        "url": "https://www.tourna.com/collections/tourna-tac"
       }
     ],
     "table": {
@@ -1589,11 +1585,16 @@
           "Droog, gericht op vochtopname",
           "Lengte en uitvoering controleren"
         ],
-        ["Tourna Tac", "Overgrip", "Kleverig contactgevoel", "Lengte en uitvoering controleren"]
+        [
+          "Tourna Mega Tac",
+          "Overgrip",
+          "Kleverig contactgevoel",
+          "Lengte en uitvoering controleren"
+        ]
       ]
     },
     "menuLabel": "Tourna",
-    "products": ["tourna-original", "tourna-tac"]
+    "products": ["tourna-original", "tourna-mega-tac"]
   },
   {
     "path": "/tennisgrips/head/",
@@ -2076,9 +2077,9 @@
         ]
       },
       {
-        "heading": "Bekijk de uitvoeringen bij Raqa",
+        "heading": "Bekijk de Raqa-uitvoeringen bij bol.com",
         "paragraphs": [
-          "Controleer op de productpagina welke laag je bestelt en hoeveel grips de verpakking bevat. In de collectie vind je ook de kleverige overgrips van Raqa als je liever dat contactgevoel hebt."
+          "Vergelijk hieronder de witte Core basisgrip met de Elite dry overgrip per drie. In de collectie van Raqa staan ook kleverige overgrips als je liever dat contactgevoel hebt."
         ]
       }
     ],
@@ -2428,7 +2429,7 @@
       ]
     },
     "menuLabel": "Hockeygrips",
-    "products": ["grays-chamois"]
+    "products": ["brabo-chamois"]
   },
   {
     "path": "/hockeygrips/chamois/",
@@ -2481,7 +2482,7 @@
       {
         "heading": "Welke chamois grip past op jouw shortlist?",
         "paragraphs": [
-          "De Grays Chamois Flou is een concreet voorbeeld van een hockeyovergrip. Vergelijk de uitvoering met de gewenste lengte en laagopbouw van je stick. Zoek daarna bij bol.com en controleer of het gevonden product daadwerkelijk een chamois buitenlaag is."
+          "De Brabo Zeem Grip is een concreet voorbeeld van een chamois buitenlaag. Vergelijk de uitvoering met de gewenste lengte en laagopbouw van je stick. De Grays Chamois Flou is een ander voorbeeld uit de fabrikantgegevens."
         ]
       }
     ],
@@ -2506,7 +2507,7 @@
       ]
     },
     "menuLabel": "Chamois",
-    "products": ["grays-chamois"]
+    "products": ["brabo-chamois"]
   },
   {
     "path": "/hockeygrips/vervangen/",
@@ -2666,7 +2667,7 @@
       {
         "heading": "Losse laag of de Starter Kit?",
         "paragraphs": [
-          "Bekijk de losse Cork Grip of Sleeve als je één onderdeel zoekt. Kijk naar de Starter Kit als je beide lagen en tape tegelijk wilt monteren."
+          "Bekijk de losse Cork Grip of Sleeve als je één onderdeel zoekt. Bol biedt ook een combinatie van beide lagen aan. Bij Ribbon zelf vind je de Starter Kit met afwerktape."
         ]
       }
     ],
@@ -2747,7 +2748,7 @@
       {
         "heading": "Waar let je op bij het zoeken?",
         "paragraphs": [
-          "Controleer of de productnaam XL PU Hockey Grip bevat en of de beschrijving de lengte vermeldt. Kijk ook naar de breedte en de afwerking als je dezelfde opbouw wilt houden."
+          "Bol vermeldt de blauwe PU Super Hockey Grip als stickgrip. Controleer bij de verkoper de exacte lengte van deze uitvoering als je specifiek de 150 cm van de huidige XL zoekt."
         ]
       }
     ],
@@ -2817,7 +2818,7 @@
       {
         "heading": "Welke modellen neem je mee naar je volgende vergelijking?",
         "paragraphs": [
-          "Begin bij Tour Velvet of Crossline voor een rubberen referentie. Neem MCC of Crossline Full Cord mee voor cord. Beoordeel één club voordat je de hele set verandert en controleer de volledige modelnaam bij bol.com."
+          "Begin bij Tour Velvet of Crossline voor een rubberen oppervlak. De MCC Plus4 voegt cord bovenaan en een voller profiel bij de onderste hand toe. Vergelijk voor cord over het hele oppervlak de Crossline Full Cord in de Lamkin-catalogus."
         ],
         "links": [
           {
@@ -2888,7 +2889,7 @@
       ]
     },
     "menuLabel": "Golf Pride vs Lamkin",
-    "products": ["tour-velvet", "crossline", "mcc", "crossline-cord"]
+    "products": ["tour-velvet", "crossline", "mcc"]
   },
   {
     "path": "/vergelijken/wilson-pro-overgrip-vs-tourna-grip/",
@@ -2927,7 +2928,7 @@
       {
         "heading": "Welke overgrip neem je op jouw shortlist?",
         "paragraphs": [
-          "Neem Tourna Original mee als je een droge buitenlaag wilt onderzoeken en Wilson Pro Overgrip voor de dunne, rekbare uitvoering. Wil je binnen Tourna juist meer kleverigheid, vergelijk dan ook Tac. Controleer model en verpakking bij bol.com."
+          "Neem Tourna Original mee als je een droge buitenlaag wilt onderzoeken en Wilson Pro Overgrip voor de dunne, rekbare uitvoering. Wil je binnen Tourna juist meer kleverigheid, vergelijk dan ook Mega Tac. Controleer model en verpakking bij bol.com."
         ],
         "links": [
           {
@@ -2938,7 +2939,7 @@
           {
             "title": "Tourna grips vergelijken",
             "href": "/tennisgrips/tourna/",
-            "description": "Vergelijk Original met Tac."
+            "description": "Vergelijk Original met Mega Tac."
           }
         ]
       }
@@ -2957,10 +2958,6 @@
       {
         "name": "Tourna — overgrips",
         "url": "https://www.tourna.com/pages/overgrips"
-      },
-      {
-        "name": "Tourna — Tourna Tac",
-        "url": "https://www.tourna.com/collections/tourna-tac"
       }
     ],
     "table": {
@@ -3020,7 +3017,7 @@
       {
         "heading": "Welke gripopbouw wil je als volgende beoordelen?",
         "paragraphs": [
-          "Behoud een passende onderlaag als je alleen het oppervlak wilt aanpassen. De Grays Chamois Flou is een concreet voorbeeld voor die buitenlaagvergelijking. Controleer het gevonden product bij bol.com op functie en afmetingen."
+          "Behoud een passende onderlaag als je vooral het oppervlak wilt aanpassen. Gebruik de Brabo Zeem Grip hieronder als concreet voorbeeld van een chamois buitenlaag. Controleer de afmetingen voordat je een extra laag toevoegt."
         ],
         "links": [
           {
@@ -3061,7 +3058,7 @@
       ]
     },
     "menuLabel": "Chamois vs rubber",
-    "products": ["grays-chamois"]
+    "products": ["brabo-chamois"]
   },
   {
     "path": "/kennis/verschil-basisgrip-overgrip/",

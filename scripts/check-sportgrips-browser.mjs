@@ -175,14 +175,32 @@ let browser;
           .locator('.grip-shop-link')
           .evaluateAll((els) => els.map((el) => ({ href: el.href, rel: el.rel })));
         assert(
-          external.every(
-            (el) =>
-              new URL(el.href).hostname === 'www.bol.com' &&
-              new URL(el.href).searchParams.get('searchtext') &&
-              el.rel.includes('sponsored') &&
-              el.rel.includes('noopener'),
-          ),
-          'Product destination or rel invalid',
+          external.length === 4 &&
+            external.every(({ href, rel }) => {
+              const tracking = new URL(href);
+              const destination = tracking.searchParams.get('url');
+              return (
+                tracking.origin === 'https://partner.bol.com' &&
+                tracking.pathname === '/click/click' &&
+                tracking.searchParams.get('s') === '1557029' &&
+                tracking.searchParams.get('t') === 'url' &&
+                tracking.searchParams.get('f') === 'txl' &&
+                /^https:\/\/www\.bol\.com\/nl\/nl\/p\/.+\/\d+\/$/.test(destination ?? '') &&
+                rel.includes('sponsored') &&
+                rel.includes('noopener')
+              );
+            }),
+          'Affiliate product destination or rel invalid',
+        );
+        const photos = await page
+          .locator('.grip-product-image')
+          .evaluateAll((els) => els.map((el) => ({ src: el.src, alt: el.alt })));
+        assert(
+          photos.length === 4 &&
+            photos.every(
+              ({ src, alt }) => new URL(src).origin === 'https://media.s-bol.com' && alt,
+            ),
+          'Original bol.com product image or alt missing',
         );
       }
     }
