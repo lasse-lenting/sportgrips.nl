@@ -1,6 +1,10 @@
 import data from './grips.json';
 export type GripLink = { title: string; href: string; description?: string };
 export type GripTable = { headings: string[]; rows: string[][] };
+export type GripFaqs = {
+  heading: string;
+  items: { question: string; answer: string }[];
+};
 export type GripPage = {
   path: string;
   title: string;
@@ -16,6 +20,7 @@ export type GripPage = {
   related: string[];
   sources: { name: string; url: string }[];
   table: GripTable | null;
+  faqs?: GripFaqs;
 };
 export const gripPages = data as GripPage[];
 export const sportHubs = gripPages.filter((p) => p.kind === 'hub');

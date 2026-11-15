@@ -1,0 +1,13 @@
+{
+  "base": "http://localhost:3038",
+  "faqPages": 15,
+  "faqCount": 41,
+  "checks": [
+    "All 41 FAQs rendered without JavaScript; exact source/HTML/schema match on 15 pages; Enter and Space toggle native details; table of contents and placement verified.",
+    "Padel 1440px: FAQ click, loaded fonts, H1 400 and no horizontal overflow.",
+    "Padel 390px: FAQ click, loaded fonts, H1 400 and no horizontal overflow.",
+    "Padel 320px: FAQ click, loaded fonts, H1 400 and no horizontal overflow."
+  ],
+  "browserErrors": [],
+  "status": "passed"
+}

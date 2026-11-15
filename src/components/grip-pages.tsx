@@ -6,6 +6,7 @@ import { Ribbon } from './ribbon';
 import { ProjectCard } from './cards';
 import { GripForm } from './grip-form';
 import { GripProducts } from './grip-products';
+import { CategoryFaqSection } from './category-faq-section';
 import {
   pageByPath,
   labelForPath,
@@ -130,6 +131,11 @@ export function GripDetail({ page }: { page: GripPage }) {
                     <a href="#vergelijking">Vergelijkingstabel</a>
                   </li>
                 )}
+                {!!page.faqs?.items.length && (
+                  <li>
+                    <a href="#veelgestelde-vragen">{page.faqs.heading}</a>
+                  </li>
+                )}
                 <li>
                   <a href="#bronnen">Bronnen</a>
                 </li>
@@ -189,6 +195,7 @@ export function GripDetail({ page }: { page: GripPage }) {
                 )}
               </section>
             ))}
+            {page.faqs && <CategoryFaqSection faqs={page.faqs} path={page.path} />}
             <h2 id="bronnen">Bronnen en onderbouwing</h2>
             <p>
               Deze uitleg gebruikt de onderstaande bronnen. Er is geen eigen vergelijkende

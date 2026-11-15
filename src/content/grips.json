@@ -123,7 +123,24 @@
       ]
     },
     "menuLabel": "Golfgrips",
-    "products": ["tour-velvet", "mcc", "crossline"]
+    "products": ["tour-velvet", "mcc", "crossline"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over golfgrips",
+      "items": [
+        {
+          "question": "Hoe weet ik of ik swinggrips of een puttergrip moet vervangen?",
+          "answer": "Swinggrips (voor drivers, woods, hybrides, ijzers en wedges) zijn rond en lopen taps toe; een puttergrip heeft meestal een afgeplatte bovenkant (flat front) en een ander gewicht. Vervang je swinggrips wanneer het rubber hard of glad wordt, terwijl je een puttergrip vaak pas aanpast als je de handpositie of stabiliteit tijdens het putten wilt veranderen."
+        },
+        {
+          "question": "Welke invloed heeft het materiaal van een golfgrip op mijn spel?",
+          "answer": "Rubberen grips geven directe feedback en een consistent gevoel, maar kunnen bij regen gladder worden. Cord-grips bevatten ingeweven katoenvezels voor maximale stroefheid bij vocht of zweethanden, terwijl polymeer- of multi-compound grips zachter aanvoelen en trillingen dempen."
+        },
+        {
+          "question": "Moet ik op al mijn golfclubs exact dezelfde grip zetten?",
+          "answer": "Voor een consistent gevoel en gelijke swingbalans kiezen de meeste golfers voor één type en maat grip op alle clubs waarmee een volle swing wordt gemaakt (van driver tot wedges). Alleen de putter krijgt vrijwel altijd een afwijkend profiel en gewicht."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/golf-pride/",
@@ -425,7 +442,24 @@
       ]
     },
     "menuLabel": "Puttergrips",
-    "products": ["zenergy-pistol", "zenergy-tour"]
+    "products": ["zenergy-pistol", "zenergy-tour"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over puttergrips",
+      "items": [
+        {
+          "question": "Wat is het praktische verschil tussen een Pistol- en een Tour-profiel?",
+          "answer": "Een Pistol-grip heeft een verdikking aan de bovenkant (onder de bovenste hand) die helpt om de club stevig in de handpalm te vergrendelen. Een Tour-profiel (no-taper) loopt vrijwel recht en gelijkmatig door, wat zorgt voor een gelijke drukverdeling tussen beide handen."
+        },
+        {
+          "question": "Hoe dik moet een puttergrip zijn en wanneer kies ik een dikker model?",
+          "answer": "Puttergrips lopen van slank (bijv. 1.0) tot zeer dik (bijv. 3.0 of 5.0). Een dikkere puttergrip beperkt de polsbeweging en helpt om de slag rustiger vanuit de schouders te maken, maar kan ten koste gaan van het afstandgevoel bij lange putts. Een dunnere grip geeft meer gevoel en feedback via de vingers."
+        },
+        {
+          "question": "Verandert een andere puttergrip het gewicht en de balans van mijn putter?",
+          "answer": "Ja. Een aanzienlijk zwaardere of lichtere grip verschuift het zwaartepunt (swingweight) van de putter. Een zwaardere grip laat het clubhoofd lichter aanvoelen; controleer daarom altijd het opgegeven gewicht in grammen voordat je wisselt."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/maat/",
@@ -514,7 +548,24 @@
       ]
     },
     "menuLabel": "Gripmaat golf",
-    "products": ["tour-velvet", "mcc", "crossline"]
+    "products": ["tour-velvet", "mcc", "crossline"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over gripmaat golf",
+      "items": [
+        {
+          "question": "Hoe bepaal ik of ik Undersize, Standard, Midsize of Oversize nodig heb?",
+          "answer": "De juiste gripmaat wordt primair bepaald door je handlengte (van polsplooi tot top van de middelvinger) en de lengte van je langste vinger. Als vuistregel geldt: bij het vasthouden van de club raken de toppen van je middelvinger en ringvinger net licht de bal van je duim."
+        },
+        {
+          "question": "Wat gebeurt er met mijn balvlucht als een golfgrip te dik of te dun is?",
+          "answer": "Een te dunne grip nodigt uit tot knijpen en te veel polsactiviteit, wat de kans op een gesloten clubblad (hook/pull) vergroot. Een te dikke grip kan de rotatie van de handen vertragen, waardoor het clubblad vaker open blijft staan bij impact (push/slice)."
+        },
+        {
+          "question": "Kan ik een standaardgrip ook dikker maken zonder direct naar Midsize te gaan?",
+          "answer": "Ja, door extra lagen dubbelzijdige griptape onder een standaardgrip aan te brengen (vaak 2 tot 4 extra wikkelingen) kun je de diameter in kleine stappen vergroten tot tussenmaatjes (bijvoorbeeld +1/32 inch)."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/maat/undersize/",
@@ -604,7 +655,20 @@
       ]
     },
     "menuLabel": "Undersize",
-    "products": ["lamkin-rel-undersize"]
+    "products": ["lamkin-rel-undersize"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over undersize golfgrips",
+      "items": [
+        {
+          "question": "Wanneer is een Undersize grip de juiste keuze?",
+          "answer": "Undersize (vaak ook aangeduid als Ladies of Junior) is bedoeld voor golfers met kleinere handen of kortere vingers (doorgaans een handlengte onder de 17,5 cm), waarbij een standaardgrip te dik in de vingers ligt om de club ontspannen vast te houden."
+        },
+        {
+          "question": "Is een Undersize grip alleen geschikt voor dames en jeugd?",
+          "answer": "Nee. Hoewel ze standaard vaak op damesclubs worden gemonteerd, kiezen ook heren met kleinere handen voor Undersize om te voorkomen dat de club te veel in de handpalm ligt in plaats van in de vingers."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/maat/midsize/",
@@ -706,7 +770,20 @@
       ]
     },
     "menuLabel": "Midsize",
-    "products": ["tour-velvet-midsize", "mcc"]
+    "products": ["tour-velvet-midsize", "mcc"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over midsize golfgrips",
+      "items": [
+        {
+          "question": "Wat is het verschil in dikte tussen Standard en Midsize?",
+          "answer": "Een Midsize golfgrip is doorgaans +1/16 inch (ca. 1,6 mm) dikker in diameter dan een Standard grip. Dit vult grotere handen beter op zonder dat de grip log aanvoelt."
+        },
+        {
+          "question": "Wanneer kies ik voor Midsize in plaats van Standard met extra tape?",
+          "answer": "Kies voor Midsize als je handschoenmaat L of XL hebt, of als je merkt dat je onbewust te hard knijpt met een standaardgrip. Een fabriek-af Midsize grip behoudt zijn ontworpen wanddikte en demping, terwijl meerdere lagen tape een standaardgrip iets harder laten aanvoelen."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/maat/oversize/",
@@ -808,7 +885,20 @@
       ]
     },
     "menuLabel": "Oversize",
-    "products": ["tour-velvet-jumbo", "crossline-jumbo"]
+    "products": ["tour-velvet-jumbo", "crossline-jumbo"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over oversize golfgrips",
+      "items": [
+        {
+          "question": "Voor wie is een Oversize (Jumbo) golfgrip bedoeld?",
+          "answer": "Oversize grips (+1/8 inch of ca. 3,2 mm dikker dan Standard) zijn ontworpen voor golfers met zeer grote handen (handschoenmaat XL/XXL) of voor spelers met gewrichtsklachten of artritis die met minimale knijpkracht willen swingen."
+        },
+        {
+          "question": "Welke nadelen heeft een Oversize grip om rekening mee te houden?",
+          "answer": "Een Oversize grip is zwaarder dan een standaardgrip (vaak 15 tot 25 gram extra), wat het swingweight verlaagt, en kan het moeilijker maken om de handen tijdens de swing tijdig te laten roteren."
+        }
+      ]
+    }
   },
   {
     "path": "/golfgrips/vervangen/",
@@ -989,7 +1079,24 @@
       ]
     },
     "menuLabel": "Tennisgrips",
-    "products": ["syntec-pro", "wilson-pro", "vs-original", "super-grap"]
+    "products": ["syntec-pro", "wilson-pro", "vs-original", "super-grap"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over tennisgrips",
+      "items": [
+        {
+          "question": "Gebruik ik op een tennisracket een basisgrip, een overgrip of allebei?",
+          "answer": "Elk tennisracket heeft een basisgrip (replacement grip) direct op het kale handvat voor vorm en demping. De meeste spelers wikkelen daar een dunne overgrip omheen om de stroefheid te behouden en de basisgrip te beschermen tegen slijtage en zweet."
+        },
+        {
+          "question": "Hoe dik moet mijn totale tennisgrip zijn?",
+          "answer": "De ideale totale dikte hangt af van je gripmaat (L1 t/m L5) en je speelstijl. Als je het racket vasthoudt met je gebruikelijke forehand-grip, moet er tussen je vingertoppen en je handpalm ongeveer de dikte van één wijsvinger ruimte overblijven."
+        },
+        {
+          "question": "Welke eigenschappen zijn belangrijker bij tennis: demping of gevoel van de bevels?",
+          "answer": "Speel je vaak op hardcourt of heb je snel last van je arm/pols, dan geeft een dikkere, dempende basisgrip meer comfort. Wissel je vaak tussen grepen (bijv. service, slice, topspin), dan wil je de achtkantige randen (bevels) van het handvat scherp blijven voelen via een dunnere opbouw."
+        }
+      ]
+    }
   },
   {
     "path": "/tennisgrips/overgrips/",
@@ -1123,7 +1230,24 @@
       ]
     },
     "menuLabel": "Overgrips",
-    "products": ["tourna-original", "vs-original", "super-grap", "pro-tour", "wilson-pro"]
+    "products": ["tourna-original", "vs-original", "super-grap", "pro-tour", "wilson-pro"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over overgrips",
+      "items": [
+        {
+          "question": "Kies ik een plakkerige (tacky) of een droge (dry) overgrip?",
+          "answer": "Een tacky overgrip heeft een licht kleverig polyurethaan oppervlak voor maximale grip bij droge tot matig vochtige handen. Een dry overgrip (vaak met microvezel- of vilten toplaag) neemt actief veel zweet op en wordt juist stroever naarmate hij vochtiger wordt."
+        },
+        {
+          "question": "Hoeveel dikker maakt een overgrip mijn handvat?",
+          "answer": "Een standaard overgrip is tussen de 0,40 mm en 0,75 mm dik. Door de overlap tijdens het wikkelen vergroot één overgrip de omtrek van je handvat grofweg met een halve gripmaat (ca. 1,5 tot 2 mm in diameter)."
+        },
+        {
+          "question": "Heeft de kleur van een overgrip invloed op de speeleigenschappen?",
+          "answer": "Ja, in de praktijk wel: witte overgrips bevatten geen toegevoegde kleurpigmenten en voelen daardoor vaak iets zachter, stroever en absorberender aan dan felgekleurde of zwarte varianten van hetzelfde model."
+        }
+      ]
+    }
   },
   {
     "path": "/tennisgrips/basisgrips/",
@@ -1238,7 +1362,20 @@
       ]
     },
     "menuLabel": "Basisgrips",
-    "products": ["syntec-pro", "wilson-sublime", "head-hydro", "natural-grip"]
+    "products": ["syntec-pro", "wilson-sublime", "head-hydro", "natural-grip"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over basisgrips",
+      "items": [
+        {
+          "question": "Wanneer vervang ik de basisgrip in plaats van alleen een nieuwe overgrip te wikkelen?",
+          "answer": "Vervang de basisgrip wanneer deze is ingezakt, hard is geworden, zijn demping heeft verloren of wanneer de randen onder je overgrip sponzig en rond aanvoelen. Een versleten basisgrip los je niet op met een extra overgrip."
+        },
+        {
+          "question": "Kies ik een synthetische basisgrip of een leren (leather) basisgrip?",
+          "answer": "Synthetische basisgrips (1,6 – 2,1 mm) bieden meer demping, comfort en lichter gewicht. Leren basisgrips (ca. 1,3 – 1,5 mm) zijn steviger, zwaarder (verplaatsen de balans iets richting het handvat) en laten de schuine kanten van het handvat zeer scherp voelen."
+        }
+      ]
+    }
   },
   {
     "path": "/tennisgrips/gripmaat/",
@@ -1323,7 +1460,20 @@
       ]
     },
     "menuLabel": "Gripmaat tennis",
-    "products": ["syntec-pro", "vs-original", "super-grap"]
+    "products": ["syntec-pro", "vs-original", "super-grap"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over gripmaat tennis",
+      "items": [
+        {
+          "question": "Wat betekenen de tennis gripmaten L1 tot en met L5 in millimeters?",
+          "answer": "De L-maat geeft de omtrek van het handvat in inches en millimeters aan: L1 = 4 1/8 inch (105 mm), L2 = 4 1/4 inch (108 mm), L3 = 4 3/8 inch (111 mm), L4 = 4 1/2 inch (114 mm) en L5 = 4 5/8 inch (118 mm)."
+        },
+        {
+          "question": "Kan ik beter een te kleine of een te grote gripmaat kiezen bij twijfel?",
+          "answer": "Kies bij twijfel vrijwel altijd de kleinere maat (bijvoorbeeld L2 in plaats van L3). Een te kleine grip kun je eenvoudig vergroten met één of twee overgrips of een krimpkous; een te dik handvat kun je nauwelijks dunner maken zonder de basisgrip te strippen."
+        }
+      ]
+    }
   },
   {
     "path": "/tennisgrips/vervangen/",
@@ -1853,7 +2003,28 @@
       ]
     },
     "menuLabel": "Padelgrips",
-    "products": ["bull-1201", "adidas-3", "pro-tour", "vs-original"]
+    "products": ["bull-1201", "adidas-3", "pro-tour", "vs-original"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over padelgrips",
+      "items": [
+        {
+          "question": "Hoe dik moet een padelgrip zijn voor optimale controle en polsbeweging?",
+          "answer": "Padelrackets worden standaard geleverd met één basisgrip (meestal vergelijkbaar met tennismaat L2). Veel spelers voegen 1 tot 2 overgrips toe voor minder trillingen en een stabielere grip bij volleys en smashes, terwijl spelers die veel polsactie gebruiken bij vibora's en bandejas liever een slankere grip houden."
+        },
+        {
+          "question": "Wat is het verschil tussen een standaard overgrip en een undergrip (zoals Hesacore) bij padel?",
+          "answer": "Een standaard overgrip wikkel je spiraalsgewijs om de basisgrip heen voor stroefheid en dikte. Een undergrip vervangt de basisgrip en heeft een honingraat- of ribbelstructuur die de vingers op vaste plekken ondersteunt, trillingen dempt en voorkomt dat je te hard knijpt."
+        },
+        {
+          "question": "Welke grip helpt het beste tegen trillingen en een tennis- of padelarm?",
+          "answer": "Een dikkere opbouw (bijvoorbeeld een schokdempende basisgrip of honingraat-undergrip gecombineerd met een zachte, geperforeerde overgrip) vermindert de knijpkracht die nodig is om het racket stabiel te houden bij off-center ballen."
+        },
+        {
+          "question": "Wat is het voordeel van geperforeerde padelgrips versus gladde grips?",
+          "answer": "Geperforeerde grips hebben kleine gaatjes over het hele oppervlak die vocht sneller afvoeren en iets meer veerkracht geven. Gladde grips bieden daarentegen een groter direct contactoppervlak met de huid voor maximale kleefkracht."
+        }
+      ]
+    }
   },
   {
     "path": "/padelgrips/vervangen/",
@@ -2197,7 +2368,24 @@
       ]
     },
     "menuLabel": "Badmintongrips",
-    "products": ["super-grap", "dry-grap", "towel-grip"]
+    "products": ["super-grap", "dry-grap", "towel-grip"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over badmintongrips",
+      "items": [
+        {
+          "question": "Kies ik voor badminton een PU-grip of een badstof (towel) grip?",
+          "answer": "PU-grips (polyurethaan) zijn glad of licht geprofileerd, bieden directe controle en zijn makkelijk schoon te houden. Badstof grips (100% katoen) absorberen extreem veel zweet en geven een zacht, dik gevoel, maar moeten vaker vervangen worden omdat ze hard worden na opdrogen."
+        },
+        {
+          "question": "Hoe beïnvloedt de dikte van een badmintongrip mijn vingerkracht en balans?",
+          "answer": "Badminton vraagt om snelle vinger- en polsacties en razendsnelle greepwissels (forehand naar backhand). Een dunnere grip (bijv. G5 met een dunne 0,6 mm overgrip) maakt vingerrotatie makkelijker en houdt het zwaartepunt richting het blad. Een dikkere grip verplaatst de balans iets naar het handvat en geeft meer steun bij harde smashes."
+        },
+        {
+          "question": "Moet ik een overgrip over de fabrieksgrip heen wikkelen of direct op het hout?",
+          "answer": "Beide kan, afhankelijk van je gewenste dikte. Wikkelen over de fabrieksgrip geeft extra demping en dikte; de fabrieksgrip verwijderen en een dunne cushioning wrap plus overgrip aanbrengen houdt het handvat slank en maakt de randen van het houten handvat scherper voelbaar."
+        }
+      ]
+    }
   },
   {
     "path": "/badmintongrips/vervangen/",
@@ -2329,7 +2517,24 @@
       ]
     },
     "menuLabel": "Squashgrips",
-    "products": ["karakal-pu", "tourna-original"]
+    "products": ["karakal-pu", "tourna-original"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over squashgrips",
+      "items": [
+        {
+          "question": "Waarom hebben squashgrips vaker reliëf of een dikkere opbouw dan tennisgrips?",
+          "answer": "Door het hoge tempo in een warme squashbaan is er veel sprake van transpiratie en snelle polsbewegingen. Veel squashgrips (zoals de bekende PU Super-stijl) zijn iets dikker (ca. 1,8 – 2,2 mm) of voorzien van ribbels en perforaties om wegglijden zonder te hard knijpen te voorkomen."
+        },
+        {
+          "question": "Gebruik ik op een squashracket een vervangingsgrip of een overgrip?",
+          "answer": "Veel squashers spelen direct op een hoogwaardige, zachte vervangingsgrip (replacement grip) vanwege het directe gevoel op het relatief dunne squashhandvat. Wil je het handvat iets dikker maken of vaker wisselen bij zweethanden, dan kun je daar een dunne overgrip overheen plaatsen."
+        },
+        {
+          "question": "Hoe dik moet een squashgrip zijn om de pols flexibel te houden?",
+          "answer": "Bij squash haal je veel snelheid uit de pols en onderarm. Een te dikke grip zet de pols sneller op slot; kies een dikte waarbij je het racket losjes in de vingers kunt dragen in plaats van diep in de handpalm."
+        }
+      ]
+    }
   },
   {
     "path": "/hockeygrips/",
@@ -2429,7 +2634,24 @@
       ]
     },
     "menuLabel": "Hockeygrips",
-    "products": ["brabo-chamois"]
+    "products": ["brabo-chamois"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over hockeygrips",
+      "items": [
+        {
+          "question": "Welk type hockeygrip past bij mijn speelstijl en weersomstandigheden?",
+          "answer": "PU-grips (basisgrips van polyurethaan) zijn allround, geven veel demping bij het slaan en flatsen en blijven bij droog weer erg stroef. Chamois-grips zijn ideaal voor spelers die veel op natte velden of in de regen spelen, omdat ze bij vocht juist stroever worden."
+        },
+        {
+          "question": "Hoe dik moet een hockeygrip zijn?",
+          "answer": "Hockeysticks hebben een vaste schachtdikte, maar met de grip bepaal je het eindgevoel. Een enkele basisgrip van 1,5 tot 2,0 mm geeft het meest directe balgevoel bij dribbelen en pushen. Veel spelers wikkelen echter een chamois-overgrip over de basisgrip heen voor extra schokdemping bij harde slagen en meer vulling in grotere handen."
+        },
+        {
+          "question": "Kan ik een hockeygrip dikker maken om trillingen in mijn handen te verminderen?",
+          "answer": "Ja. Een dikkere basisgrip (bijv. 2,0 mm met foam-onderlaag) of de combinatie van een basisgrip met een chamois-overgrip absorbeert aanzienlijk meer impact bij het aannemen en slaan van harde ballen, vooral bij stijve carbonsticks."
+        }
+      ]
+    }
   },
   {
     "path": "/hockeygrips/chamois/",
@@ -2507,7 +2729,24 @@
       ]
     },
     "menuLabel": "Chamois",
-    "products": ["brabo-chamois"]
+    "products": ["brabo-chamois"],
+    "faqs": {
+      "heading": "Veelgestelde vragen over chamois hockeygrips",
+      "items": [
+        {
+          "question": "Wat is een chamois grip en waarom wordt hij stroever als hij nat wordt?",
+          "answer": "Een chamois grip is gemaakt van zeemleer (natuurlijk leer of synthetisch microvezel-zeem). In tegenstelling tot glad rubber of PU, dat bij regen een waterlaagje vormt en glad wordt, absorbeert chamois vocht in de vezels waardoor de wrijving met je handschoen of hand juist toeneemt."
+        },
+        {
+          "question": "Wikkel ik een chamois grip over mijn bestaande grip heen of vervang ik die?",
+          "answer": "Een chamois grip heeft vrijwel nooit een eigen plaklaag en biedt op zichzelf weinig schokdemping. Daarom wikkel je hem in de regel als overgrip over de bestaande PU-basisgrip heen (met een stukje afplaktape aan de bovenkant)."
+        },
+        {
+          "question": "Wat is het verschil tussen natuurlijk zeemleer en synthetische chamois?",
+          "answer": "Natuurlijk zeemleer voelt zeer zacht en authentiek aan, maar kan na het opdrogen hard en stug worden totdat het weer vochtig wordt. Synthetische chamois behoudt zijn zachtheid beter na het drogen en slijt vaak iets gelijkmatiger."
+        }
+      ]
+    }
   },
   {
     "path": "/hockeygrips/vervangen/",
