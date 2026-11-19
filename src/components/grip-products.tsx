@@ -5,7 +5,7 @@ export function GripProducts({ ids }: { ids: string[] }) {
   return (
     <div className="grip-products">
       <p className="grip-shopping-note">
-        Bekijk de actuele prijs en beschikbaarheid bij bol.com. Als je via een affiliatelink iets
+        Bekijk de huidige prijs en beschikbaarheid bij bol.com. Als je via een affiliatelink iets
         koopt, kan Sportgrips commissie ontvangen.
       </p>
       {productsByIds(ids).map((product) => (

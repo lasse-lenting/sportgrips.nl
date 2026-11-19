@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       ? {
           title: 'Welke grip past bij mij? Gebruik de keuzehulp',
           description:
-            'Beantwoord vijf vragen en vind uitleg over sportgrips die aansluit bij jouw sport, griplaag en voorkeuren.',
+            'Na vijf vragen over je sport, de griplaag en je voorkeuren krijg je passende uitleg.',
         }
       : undefined);
   if (!p) return { title: 'Pagina niet gevonden', robots: { index: false, follow: true } };

@@ -11,7 +11,7 @@ import {
 export const metadata = pageMetadata({
   title: 'Privacy en cookies bij Sportgrips',
   description:
-    'Lees hoe de Sportgrips-keuzehulp antwoorden verwerkt, welke cookies worden gebruikt en hoe je contact opneemt over privacy.',
+    'Zo gaat de keuzehulp om met je antwoorden. Lees ook welke cookies Sportgrips gebruikt en waar je privacyvragen kunt stellen.',
   path: '/privacy/',
 });
 export default function PrivacyPage() {
@@ -35,29 +35,28 @@ export default function PrivacyPage() {
           <p>
             De keuzehulp vraagt naar sport, griplaag, vocht, gevoel en je doel. De antwoorden worden
             tijdens het gebruik in je browser verwerkt. Het formulier verstuurt ze niet naar een
-            database of formulierendienst en zet ze niet in het webadres. Ze verdwijnen wanneer je
-            de pagina opnieuw laadt. Je hebt geen account nodig.
+            database of formulierendienst en zet ze niet in het webadres. Ze verdwijnen als je de
+            pagina nogmaals laadt. Je hebt geen account nodig.
           </p>
           <h2>Cookies en voorkeuren</h2>
           <p>
             Het noodzakelijke cookie sportgrips_consent bewaart je cookievoorkeur maximaal 182
             dagen. Via Cookie-instellingen onderaan de pagina kun je je voorkeur aanpassen.
             Optionele metingen staan standaard uit. Intrekken van toestemming herlaadt de pagina
-            zodat de diensten niet opnieuw laden.
+            zodat de diensten niet nogmaals laden.
           </p>
           <h2>Optionele meetdiensten</h2>
           {!analyticsEnabled ? (
             <p>
-              Er zijn momenteel geen optionele meetdiensten ingeschakeld. Google Analytics,
-              Microsoft Clarity en Vercel Web Analytics laden niet. Een keuze voor statistieken
-              activeert op zichzelf geen ontbrekende meetcode.
+              Op dit moment staan alle optionele meetdiensten uit. Google Analytics, Microsoft
+              Clarity en Vercel Web Analytics laden niet. Een keuze voor statistieken activeert op
+              zichzelf geen ontbrekende meetcode.
             </p>
           ) : (
             <>
               <p>
-                De hieronder genoemde diensten zijn ingericht en laden alleen nadat je toestemming
-                voor statistieken geeft. De keuzehulp verstuurt zelf geen antwoorden als
-                meetgebeurtenis.
+                De vermelde diensten laden pas als je toestemming geeft voor statistieken. De
+                keuzehulp verstuurt zelf geen antwoorden als meetgebeurtenis.
               </p>
               <ul>
                 {GA_MEASUREMENT_ID && (
@@ -86,20 +85,20 @@ export default function PrivacyPage() {
           )}
           <h2>Technische verwerking</h2>
           <p>
-            Bij het opvragen van een webpagina ontvangt de webserver onder meer het IP-adres, de
+            Bij het opvragen van een webpagina ontvangt de webserver onder andere het IP-adres, de
             opgevraagde URL en technische browsergegevens om de pagina te kunnen leveren. De website
             wordt gehost bij Vercel. Technische verwerking voor het leveren van de website staat los
             van de optionele meetdiensten hierboven.
           </p>
           <h2>Externe bronnen, winkellinks en e-mail</h2>
           <p>
-            Je browser laadt de productfoto’s rechtstreeks bij bol. Daarbij ontvangt bol technische
+            Je browser laadt de productfoto’s direct bij bol. Daarbij ontvangt bol technische
             gegevens zoals je IP-adres. Via een affiliatelink kan bol een klik of aankoop toewijzen
             aan Sportgrips. Op de bestemmingssite gelden de eigen privacy- en cookievoorwaarden.
             Antwoorden uit de keuzehulp worden niet meegestuurd.
           </p>
           <p>
-            Klik je op het e-mailadres, dan opent je mailprogramma. We kunnen de inhoud van je
+            Je e-mailprogramma opent zodra je het e-mailadres aanklikt. We kunnen de inhoud van je
             bericht gebruiken om je vraag te beantwoorden.
           </p>
           <h2>Bij verdere ontwikkeling</h2>

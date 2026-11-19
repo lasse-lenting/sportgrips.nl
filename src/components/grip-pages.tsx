@@ -6,6 +6,8 @@ import { Ribbon } from './ribbon';
 import { ProjectCard } from './cards';
 import { GripForm } from './grip-form';
 import { GripProducts } from './grip-products';
+import { bolAffiliateUrl, productsByIds } from '@/content/products';
+import { gripRanking } from '@/content/top-ten';
 import { CategoryFaqSection } from './category-faq-section';
 import {
   pageByPath,
@@ -15,7 +17,7 @@ import {
   type GripTable,
   type GripCollection,
 } from '@/content/grips';
-export function GripListing({ title, description, pages, groups }: Omit<GripCollection, 'path'>) {
+export function GripListing({ path, title, description, pages, groups }: GripCollection) {
   return (
     <>
       <section className="listing-hero">
@@ -26,6 +28,35 @@ export function GripListing({ title, description, pages, groups }: Omit<GripColl
       </section>
       <section className="listing-body blog-listing">
         <Container>
+          {path === '/grips/' && (
+            <section className="rich-content mb-15" aria-labelledby="top-10">
+              <h2 id="top-10">Top 10 sportgrips</h2>
+              <p>
+                Begin bij je sport en kijk daarna naar de laag die je wilt vervangen. We zetten een
+                breed inzetbare overgrip bovenaan. Verderop staan onder meer een golfgrip voor
+                ijzers, een puttergrip en een buitenlaag voor je hockeystick. De volgorde is onze
+                redactionele keuze op basis van materiaal, toepassing en de gegevens van de
+                fabrikant.
+              </p>
+              <ol style={{ listStyleType: 'decimal', paddingInlineStart: '1.6em' }}>
+                {gripRanking.map(({ id, reason }) => {
+                  const [product] = productsByIds([id]);
+                  return (
+                    <li className="my-4" key={id}>
+                      <strong>{product.name}</strong>
+                      <p>{reason}</p>
+                      <a href={product.source.url}>Fabrikantgegevens</a>
+                      {' · '}
+                      <a href={bolAffiliateUrl(product)} rel="sponsored">
+                        Bekijk bij bol
+                      </a>
+                    </li>
+                  );
+                })}
+              </ol>
+              <p>Koop je via een van de bol-links, dan kan Sportgrips een commissie ontvangen.</p>
+            </section>
+          )}
           {(groups ?? [{ id: undefined, title: undefined, pages }]).map((group) => (
             <div key={group.id ?? 'all'} id={group.id} className="mb-15 scroll-mt-32">
               {group.title && <h2 className="mb-8">{group.title}</h2>}
@@ -198,8 +229,8 @@ export function GripDetail({ page }: { page: GripPage }) {
             {page.faqs && <CategoryFaqSection faqs={page.faqs} path={page.path} />}
             <h2 id="bronnen">Bronnen en onderbouwing</h2>
             <p>
-              Deze uitleg gebruikt de onderstaande bronnen. Er is geen eigen vergelijkende
-              praktijktest uitgevoerd.
+              Deze uitleg gebruikt De bronnen hieronder. Er is geen eigen vergelijkende praktijktest
+              uitgevoerd.
             </p>
             <ul>
               {page.sources.map((s) => (

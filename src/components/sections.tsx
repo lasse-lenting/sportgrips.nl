@@ -88,7 +88,7 @@ export function Purpose() {
         center
         eyebrow="De Sportgrips-keuzehulp"
         title="Goed kiezen begint bij jouw grip."
-        description="Een club, racket of stick: begin bij je sport en ontdek welke eigenschappen voor jou tellen."
+        description="Een club, racket of stick: start bij je sport en ontdek welke eigenschappen voor jou tellen."
       />
       <PurposeTabs />
     </section>
@@ -101,7 +101,7 @@ export function OngoingProjects() {
         <SectionHeader
           eyebrow="Begin bij jouw sport"
           title="Voor welke sport zoek jij grips?"
-          description="Begin met golf, tennis of padel. Via Grips per sport vind je ook badminton, squash en hockey."
+          description="Start met golf, tennis of padel. Via Grips per sport vind je ook badminton, squash en hockey."
         />
         <div className="project-grid">
           {projects.slice(0, 3).map((p, i) => (
@@ -127,7 +127,7 @@ export function Mission() {
           center
           eyebrow="Zo werkt het"
           title="Van jouw sport naar een gripkeuze"
-          description="Begin bij je sport en ontdek stap voor stap hoe je dikte, oppervlak en opbouw vergelijkt."
+          description="Start bij je sport en ontdek stap voor stap hoe je dikte, oppervlak en opbouw vergelijkt."
         />
         <div className="mission-list">
           {missions.map((m, i) => (
@@ -162,7 +162,7 @@ export function Impacts() {
         <SectionHeader
           eyebrow="Duidelijk over ons advies"
           title="Helder advies. Geen verkooppraatjes."
-          description="Je wilt begrijpen wat bij je past. We leggen eigenschappen uit en verwijzen naar bronnen, zonder zelf tests of resultaten te claimen."
+          description="Hoe weet je welke grip bij je past? We leggen eigenschappen uit en verwijzen naar bronnen, zonder zelf tests of resultaten te claimen."
         />
       </Container>
       <div className="impact-scene">
@@ -196,7 +196,7 @@ export function Questions() {
           center
           eyebrow="Veelgestelde vragen"
           title="Nog een vraag over grips?"
-          description="De belangrijkste antwoorden voordat je een andere grip kiest."
+          description="De voornaamste antwoorden voor je een andere grip kiest."
         />
         <FAQ />
       </Container>
@@ -212,7 +212,7 @@ export function VolunteerSection() {
           <SectionHeader
             eyebrow="De Sportgrips-keuzehulp"
             title="Een goede grip begint bij jou."
-            description="Vertel over je sport en voorkeuren. Je krijgt een leesroute met eigenschappen om te vergelijken."
+            description="Geef aan welke sport je speelt en wat je prettig vindt. Je krijgt een leesroute met eigenschappen om te vergelijken."
             light
           />
           <ul className="volunteer-benefits">

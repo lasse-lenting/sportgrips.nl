@@ -5,7 +5,7 @@ import { pageMetadata, breadcrumbJsonLd } from '@/lib/seo';
 export const metadata = pageMetadata({
   title: 'Over Sportgrips: werkwijze en bronnen',
   description:
-    'Lees wat Sportgrips biedt, hoe de gripuitleg wordt onderbouwd en hoe je contact opneemt bij een vraag of correctie.',
+    'Hier lees je wat Sportgrips biedt, hoe de gripuitleg wordt onderbouwd en hoe je contact opneemt bij een vraag of correctie.',
   path: '/over-sportgrips/',
 });
 export default function About() {
@@ -34,20 +34,20 @@ export default function About() {
             <h2>Hoe we de uitleg onderbouwen</h2>
             <p>
               Bij de gidsen staan verwijzingen naar sportorganisaties en fabrikanten.
-              Productspecificaties en montage-instructies kunnen per uitvoering verschillen.
-              Controleer daarom altijd het concrete product. De keuzehulp verklaart geen product
+              Productspecificaties en montage-instructies kunnen per uitvoering verschillen. Je
+              controleert daarom altijd het concrete product. De keuzehulp verklaart geen product
               automatisch geschikt.
             </p>
             <h2>Onderzoek en praktijktests</h2>
             <p>
-              De huidige uitleg is gebaseerd op documentonderzoek. Er zijn geen eigen vergelijkende
+              Voor de uitleg raadplegen we documentatie. Er zijn geen eigen vergelijkende
               praktijktests, klantreviews of testscores gepubliceerd. De fotorealistische
               sportbeelden zijn met AI gemaakte illustraties. Ze zijn geen foto’s van geteste
               producten of eigen praktijksessies, en zijn niet werkelijk met een iPhone gemaakt.
             </p>
             <h2>Winkels en samenwerkingen</h2>
             <p>
-              De productkaarten tonen een specifieke uitvoering bij bol.com. Daar zie je de actuele
+              De productkaarten tonen een specifieke uitvoering bij bol.com. Daar zie je de huidige
               prijs en beschikbaarheid en kun je het artikel bestellen. Als je via een affiliatelink
               iets koopt, kan Sportgrips commissie ontvangen. De fabrikantlinks verwijzen naar de
               bronnen voor onze productinformatie.

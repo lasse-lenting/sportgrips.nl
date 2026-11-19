@@ -97,14 +97,14 @@ export function GripForm() {
         <span className="wizard-kicker">Gratis · zonder account</span>
         <h3>Begin bij jouw sport.</h3>
         <p>
-          Vijf korte vragen over je sport, griplaag, vocht, gevoel en doel. Daarna vind je de uitleg
-          die je helpt vergelijken.
+          Beantwoord vijf korte vragen over je sport, de griplaag, vocht, het gevoel dat je zoekt en
+          je doel. Daarna vind je de uitleg die je helpt vergelijken.
         </p>
         <button className="button" type="button" onClick={() => setStarted(true)}>
           Start de keuzehulp
         </button>
         <p className="demo-note">
-          Een leesroute op basis van je antwoorden, zonder productranglijst.
+          Een leesroute aan de hand van je antwoorden, zonder productranglijst.
         </p>
       </div>
     );
@@ -217,7 +217,8 @@ export function GripForm() {
               )}
             </p>
             <p className="demo-note">
-              Dit is een leesadvies. Er zijn geen producten getest of automatisch passend verklaard.
+              Dit is een leesadvies. We hebben geen producten zelf getest. Een automatische uitkomst
+              bevestigt ook geen pasvorm.
             </p>
           </div>
         )}

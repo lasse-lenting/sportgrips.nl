@@ -75,15 +75,15 @@ export function Footer() {
               className="max-w-[360px] min-w-0 max-sm:col-span-full max-sm:max-w-full"
             >
               <p>
-                Sportgrips helpt je grips kiezen op sport, dikte en gevoel. Lees de uitleg en
-                vergelijk de eigenschappen die voor jou tellen.
+                Sportgrips helpt je grips kiezen op sport, dikte en gevoel. Raadpleeg de uitleg en
+                vergelijk de kenmerken die voor jou tellen.
               </p>
               <Link className={footerLink} href="/over-sportgrips/">
                 Onze werkwijze en bronnen
               </Link>
               <p>
-                Vergelijk modellen en bekijk de geselecteerde uitvoeringen bij bol.com. We baseren
-                de vergelijkingen op fabrikantgegevens.
+                Je kunt modellen en bekijk de geselecteerde uitvoeringen bij bol vergelijken.com. We
+                baseren de vergelijkingen op fabrikantgegevens.
               </p>
               <Link className={footerLink} href="/privacy/">
                 Privacy
